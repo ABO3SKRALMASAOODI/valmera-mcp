@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.valmera/video-editor",
+  "title": "Valmera — Agentic AI Video Editor",
+  "description": "Edit real video from the conversation: cut silences and filler words, add word-timed captions, reframe to 9:16, score and master audio, then export a full-quality MP4 from the original file. 110 tools over an edit decision list — the original upload is never modified.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/ABO3SKRALMASAOODI/valmera-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://valmera.io/mcp",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://entrepreneur-bot-backend.onrender.com/mcp"
+    }
+  ]
+}
