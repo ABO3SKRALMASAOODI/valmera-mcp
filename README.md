@@ -16,7 +16,7 @@ Claude: [calls cut_silences, remove_filler_words, add_captions, auto_reframe,
 - **Endpoint:** `https://entrepreneur-bot-backend.onrender.com/mcp`
 - **Transport:** Streamable HTTP
 - **Auth:** OAuth 2.1 with dynamic client registration + PKCE (nothing to copy/paste), or a bearer token
-- **Tools:** 110 — 99 editing tools, 11 session tools
+- **Tools:** 108 — 97 editing tools, 11 session tools
 - **Docs:** <https://valmera.io/mcp> · **Tool reference:** <https://valmera.io/mcp/tools>
 
 ---
