@@ -145,3 +145,9 @@ This repository's documentation is MIT licensed. The hosted commercial service i
 - [Maintaining directory listings](docs/PUBLISHING.md)
 
 Report documentation errors and tool issues in this repository's issue tracker.
+
+## License
+
+Note: this license covers the documentation and manifests in this repository.
+The Valmera service itself is a hosted commercial product governed by the terms
+at https://valmera.io/legal.

@@ -22,14 +22,17 @@ Avoid a fixed undated tool count in directory descriptions. Configuration can ch
 | [Public GitHub repository](https://github.com/ABO3SKRALMASAOODI/valmera-mcp) | Exists; its old README still described free credits, a trial and MCP final exports | Publish the reviewed documentation correction, then verify the default-branch content |
 | [Official MCP Registry search](https://registry.modelcontextprotocol.io/v0.1/servers?search=valmera) | `io.valmera/video-editor` version `0.1.0` is active and latest; published August 5, 2026 | Publish revised metadata as a new version after authorization; verify the returned public record |
 | [MCP Servers listing](https://mcpservers.org/fr/servers/abo3skralmasaoodi/valmera-mcp) | Listing exists and reproduces the old README; a request-update control is present | After the source correction is public, request refresh and verify the refreshed page |
-| [Glama listing](https://glama.ai/mcp/servers/ABO3SKRALMASAOODI/valmera-mcp) | Listing exists and reproduces the old README; a claim control is present | Claim or refresh through the site's supported flow and check both description and documentation |
+| [Glama server listing](https://glama.ai/mcp/servers/ABO3SKRALMASAOODI/valmera-mcp) | Mirrors the old README; license not detected, quality untested, owner unverified | Publish the reviewed metadata and license-format correction, then complete claim and verify a fresh scan |
+| [Glama hosted connector](https://glama.ai/mcp/connectors/io.valmera/video-editor) | Exists; listed as unhealthy and grouped under No Auth, although the endpoint requires authentication | Review authenticated health details with Glama; an anonymous HTTP 401 is not an authorized health test |
+| [Awesome MCP Servers submission](https://github.com/punkpeye/awesome-mcp-servers/pull/11560) | Existing PR updated with accurate paid-editing and Studio-export wording; automated check replaced missing-glama with has-glama | Glama quality evaluation and maintainer acceptance remain outstanding |
+| [appcypher/awesome-mcp-servers](https://github.com/appcypher/awesome-mcp-servers) | Archived and read-only since August 1, 2026 | Not accepting new submissions; do not create a duplicate fork merely to claim a listing |
 | Smithery, PulseMCP and other directories | This revision does not establish a completed submission or a current public listing | Inspect the actual directory before creating a duplicate or claiming success |
 
 The earlier guide's statement that the official registry was empty was a dated observation from before the August 5 publication. It is no longer the current state. Existing listings can be discovered through more than one route; do not assume an undocumented ingestion schedule.
 
 ## Publish a documentation correction
 
-1. Review the README, workflow guide, `server.json` and `smithery.yaml` against the current product.
+1. Review the README, workflow guide, `server.json`, `smithery.yaml` and `glama.json` against the current product and maintainer identity.
 2. Check that every documented tool example is available and every linked product route resolves.
 3. Publish the reviewed source changes using the repository's normal authorization and review process.
 4. Read the default-branch files again and record the commit identifier.
@@ -70,3 +73,11 @@ Read the public server card and authentication metadata. A protected endpoint re
 After connecting an authorized account, begin with a read-only project listing. Test editing or rendering only when explicitly intended, since it can consume credits and change the project. Reviewers should not need broad access to unrelated private footage.
 
 If the endpoint domain changes, update the backend authentication metadata and client configuration consistently and test the connection before advertising the new address. Do not invent a branded endpoint based on a DNS name alone.
+
+## Repository metadata and licensing
+
+`glama.json` identifies the repository owner as its maintainer using Glama's [published maintainer metadata format](https://glama.ai/mcp/servers/ABO3SKRALMASAOODI/valmera-mcp/score). It contains no credential. Metadata alone does not complete owner verification or a server quality evaluation.
+
+The original LICENSE contains the standard MIT terms followed by a hosted-service clarification. GitHub currently classifies that file as Other / NOASSERTION, and Glama reports no license. This correction retains the same MIT terms and copyright holder in a standard-format LICENSE and preserves the original clarification in the README. After publication, verify GitHub's detected license and trigger or wait for Glama's documented repository sync; do not assume recognition succeeded merely from a local text check.
+
+On September 5, both unauthenticated GET and initialize POST requests to the MCP endpoint returned HTTP 401 with a Bearer challenge linking to protected-resource metadata. That metadata and the linked authorization-server metadata returned HTTP 200. The metadata advertises OAuth dynamic registration and PKCE S256. These observations establish public authentication discovery, not authenticated tool execution or overall service health. A correction request was sent through Glama's Report Issue form; the form closed without an error, but no durable receipt or completed correction was shown. Do not submit the same report again without checking its status.
