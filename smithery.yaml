@@ -1,29 +1,25 @@
-# Smithery listing for the Valmera MCP server.
-# https://smithery.ai/docs
-#
-# Valmera is hosted, not self-run: there is nothing to install and no API key to
-# paste. The connector authenticates with OAuth 2.1 (dynamic client registration
-# + PKCE), so the client is handed a sign-in page rather than a config field.
+# Directory metadata for Valmera's hosted MCP service.
+# This file is not a receipt that a Smithery release has been published.
 
 startCommand:
   type: http
   url: https://entrepreneur-bot-backend.onrender.com/mcp
 
 name: valmera
-displayName: Valmera — Agentic AI Video Editor
+displayName: Valmera — AI Video Editor
 description: >-
-  Edit real video from the conversation. Cut silences and filler words, add
-  word-timed captions, reframe to 9:16 for TikTok, splice b-roll, score and
-  master the audio, then export a full-quality MP4 cut from your original file.
-  108 tools operating on an edit decision list — nothing is destructive and the
-  upload is never modified. Not a text-to-video generator; it edits footage you
-  already have.
+  Edit uploaded footage through an AI assistant: cut pauses and filler words,
+  add captions, reframe the picture, mix music and render review previews.
+  Edits use a versioned edit decision list and preserve the original upload.
+  The user starts the final MP4 export in Valmera Studio; MCP cannot create
+  final exports. Account creation and uploads are free; editing requires a
+  subscription. See the live server card and tool catalog for enabled tools.
 
 homepage: https://valmera.io/mcp
 repository: https://github.com/ABO3SKRALMASAOODI/valmera-mcp
 documentation: https://valmera.io/mcp/tools
+# Applies to this repository's documentation, not the hosted commercial service.
 license: MIT
-
 icon: https://valmera.io/icon-512.png
 
 categories:
@@ -38,30 +34,22 @@ tags:
   - ai-video-editor
   - captions
   - subtitles
-  - transcription
-  - ffmpeg
   - podcast
   - shorts
-  - tiktok
-  - youtube
   - reframe
-  - b-roll
-  - audio-mastering
 
 auth:
   type: oauth
   note: >-
-    OAuth 2.1 with dynamic client registration and PKCE — the client opens a
-    Valmera sign-in page and no token is ever copied by hand. Clients without
-    OAuth support can instead send `Authorization: Bearer vlm_mcp_...` using a
-    token minted at https://valmera.io/mcp.
+    OAuth with dynamic client registration and PKCE (S256). The client opens
+    Valmera's sign-in and consent flow. A compatible client can alternatively
+    use a bearer token created through https://valmera.io/mcp. Account access
+    and an editing subscription are required; client capabilities can vary.
 
 examples:
-  - prompt: Cut the dead air and the ums from this podcast, then caption it.
-    description: cut_silences → remove_filler_words → add_captions, captions timed against the new edit rather than the raw recording
-  - prompt: Make this vertical for TikTok and keep the speaker centred.
-    description: auto_reframe measures the frame before cropping, then rescales captions to the new aspect
-  - prompt: Find the strongest 45 seconds and give me just that, with music.
-    description: reads the transcript, keeps the span, scores it and ducks the music under speech
-  - prompt: Blur the license plate whenever it's visible.
-    description: blur_region follows the footage through later cuts and reframes
+  - prompt: Remove obvious dead air and filler words from this interview, add captions, and render a review preview.
+    description: Read the indexed transcript, apply supported cuts and captions, wait for the preview job, and review the output.
+  - prompt: Reframe this recording to 9:16 and check that the speaker remains visible.
+    description: Use the live framing tools, inspect representative output frames, and ask the user to review the full preview.
+  - prompt: Restore the pause before the final answer and keep the rest of the edit.
+    description: Resolve the passage against the source and current edit, restore the range, and render another preview.
