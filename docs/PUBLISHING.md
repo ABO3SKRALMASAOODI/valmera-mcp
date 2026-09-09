@@ -8,7 +8,7 @@ Verify these before publishing product claims:
 
 - [Live server card](https://entrepreneur-bot-backend.onrender.com/.well-known/mcp/server-card.json): endpoint, authentication, enabled tool groups, session tools and explicit exclusions.
 - An authenticated connection's `tools/list`: tool names, argument schemas and constraints available to that account.
-- [Plans](https://valmera.io/subscribe): current prices and included credits.
+- [Plans](https://valmera.io/subscribe): current access terms and included credits.
 - [File uploads](https://valmera.io/docs/file-uploads) and [exports](https://valmera.io/docs/publishing): input and delivery behavior.
 
 The README and directory manifests must distinguish editing/review through MCP from user-started final export in Studio. The current product offers free account creation and uploads, with a subscription required for editing. Do not advertise the withdrawn 50-credit signup offer or three-day trial. Paid exports include a brief Valmera end card after the footage.

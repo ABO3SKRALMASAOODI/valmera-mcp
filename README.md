@@ -84,19 +84,11 @@ The MCP catalog reuses the editor's tool definitions, adds project/session opera
 
 Editing the same project from Studio and MCP simultaneously is refused. Finish the current editing operation before switching control between them.
 
-## Pricing and access
+## Access and billing
 
 Account creation and uploads are free. **AI editing requires a subscription.** There is no current offer of 50 signup credits or a three-day editing trial.
 
-Monthly plans verified on September 5, 2026:
-
-| Plan | Monthly price in USD | Credits per month |
-| --- | ---: | ---: |
-| Creator | $15 | 1,000 |
-| Pro | $30 | 2,000 |
-| Frontier | $50 | 5,000 |
-
-Editing work consumes credits. Refer to the [live Plans page](https://valmera.io/subscribe) for current billing terms, included credits and annual options. A separate MCP client may have its own subscription or usage charges.
+Plan availability, included credits and billing terms can change. Refer to the [live Plans page](https://valmera.io/subscribe) before connecting the editor or making a recommendation. A separate MCP client may have its own subscription or usage charges.
 
 ## Limits to consider before choosing Valmera
 
@@ -129,7 +121,7 @@ Tools can return transcript text, analysis and requested video frames to the con
 
 **Is Valmera free to edit with?**
 
-Account creation and uploads are free; editing requires a subscription. The current entry monthly plan is Creator at $15. Check [current pricing](https://valmera.io/subscribe) before subscribing.
+Account creation and uploads are free; editing requires a subscription. Check the [current plans](https://valmera.io/subscribe) before subscribing.
 
 **Is this an open-source video editor?**
 
