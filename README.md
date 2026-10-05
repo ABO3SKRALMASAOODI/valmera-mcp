@@ -121,7 +121,7 @@ According to the live server card on October 6, 2026, the server exposes **143 t
 | "Turn this podcast into 5 shorts" | `make_shorts`, `shorts_status`, `open_short`, `apply_short_edit_batches` |
 | "Add b-roll where I mention the product" | `research_broll`, `search_stock`, `add_stock_media`, `insert_media` |
 | "Punch in on the important lines" | `suggest_emphasis`, `punch_in_on_emphasis`, `add_zoom`, `add_zoom_path` |
-| "Add music that ducks under my voice" | `find_song`, `add_music`, `set_music_fit`, `beat_align_cuts`, `set_master_loudness` |
+| "Put my track (or a song I name) under my voice" | `find_song`, `fetch_url`, `add_music`, `set_music_fit`, `beat_align_cuts`, `set_master_loudness` |
 | "Add a whoosh on each transition" | `search_sfx`, `audition_sfx_candidates`, `add_sfx` |
 | "Record a demo of my website" | `record_website`, `record_website_demo`, `enhance_cursor`, `showcase_demo` |
 | "Blur the license plate" / "remove the burned-in subtitles" | `blur_region`, `find_burned_text`, `erase_burned_text`, `erase_region` |

@@ -23,7 +23,7 @@ These are paste-ready prompts for an assistant connected to Valmera (Claude, Cha
 
 12. `Turn this 60-minute podcast into 6 vertical shorts of 30 to 60 seconds. Each one needs a complete story with a hook in the first 2 seconds, captions, and the speaker kept in frame.`
 13. `Find the most surprising or contrarian moments in this interview and make each one a short with a bold title card.`
-14. `Make one 45-second highlight reel of the funniest moments, cut to the beat of upbeat music.`
+14. `Make one 45-second highlight reel of the funniest moments, cut to the beat of my uploaded track.`
 15. `Turn this webinar into 5 clips for LinkedIn: square format, captions on, each clip answering one question from the Q&A.`
 16. `For every short you made, give me the start and end time in the original, a title, and why it works as a standalone clip.`
 
@@ -50,10 +50,10 @@ These are paste-ready prompts for an assistant connected to Valmera (Claude, Cha
 
 ## Music and sound design
 
-29. `Add calm background music that ducks under my voice, then swells for the last 5 seconds.`
-30. `Cut the montage on the beat of the music.`
+29. `Put my uploaded track calm-bed.mp3 under my voice so it ducks while I talk, then let it swell for the last 5 seconds.`
+30. `Add "Blinding Lights" by The Weeknd under the montage and cut on the beat.` (Valmera finds the named song; licensing is your responsibility.)
 31. `Add a subtle whoosh on each transition and a pop when each caption keyword appears. Keep it tasteful.`
-32. `Remove the background music from this clip, keep the voice, and add a new track.`
+32. `Remove the background music from this clip, keep the voice, and use my uploaded track instead.`
 
 ## Color and finishing
 
