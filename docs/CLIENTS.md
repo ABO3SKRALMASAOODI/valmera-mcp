@@ -13,7 +13,7 @@ The live, longer version of this page, with notes for each client, is [valmera.i
 | Client | Where the config goes | Auth | Key detail |
 | --- | --- | --- | --- |
 | Claude (web, desktop, mobile) | Settings → Connectors → Add custom connector | OAuth | Paste the URL only. Mobile can use it but not add it. |
-| Claude Code | `claude mcp add` (writes `~/.claude.json` or `.mcp.json`) | OAuth or bearer | Use `"type": "http"` when editing `.mcp.json` by hand |
+| Claude Code | `claude mcp add` (user or project scope) | OAuth or bearer | Use `"type": "http"` when editing `.mcp.json` by hand |
 | Cursor | `~/.cursor/mcp.json` or `.cursor/mcp.json` | OAuth | `mcpServers` → `url` |
 | VS Code (Copilot agent mode) | `.vscode/mcp.json` | OAuth | Top-level key is `servers`, with `"type": "http"` |
 | Codex CLI | `codex mcp add` / `~/.codex/config.toml` | OAuth | Run `codex mcp login valmera` |
@@ -175,7 +175,7 @@ If the Inspector connects and lists the tools, the server is fine and any proble
 }
 ```
 
-`mcp-remote` runs the OAuth flow in your browser and caches credentials in `~/.mcp-auth`.
+`mcp-remote` runs the OAuth flow in your browser for you.
 
 ## Discovery endpoints
 
