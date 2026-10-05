@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.valmera/video-editor",
   "title": "Valmera — agentic AI video editor",
-  "description": "Edit uploaded footage with AI tools: cuts, captions, reframing and previews. Final export in Studio.",
-  "version": "0.1.1",
+  "description": "AI video editor for real footage: cut, caption, reframe, add music and b-roll, preview, export MP4.",
+  "version": "0.2.0",
   "repository": {
     "url": "https://github.com/ABO3SKRALMASAOODI/valmera-mcp",
     "source": "github",
@@ -29,7 +29,7 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://entrepreneur-bot-backend.onrender.com/mcp"
+      "url": "https://valmera.io/mcp/server"
     }
   ]
 }

@@ -1,145 +1,192 @@
-# Valmera MCP server — AI video editing for your own footage
+# Valmera MCP server — the video editing MCP server for real footage
 
-Valmera is a hosted AI video editor for footage you have already recorded. Its Model Context Protocol (MCP) server lets an authorized AI assistant inspect a recording, cut pauses and filler words, add captions, mix music, reframe the picture, and render a review preview. You can revise the same project through conversation. **The user starts the final MP4 export in Valmera Studio; MCP cannot create final exports.**
+**Valmera** is an agentic AI video editor. This hosted [Model Context Protocol](https://modelcontextprotocol.io) server lets Claude, ChatGPT, Cursor, VS Code, Codex or any MCP client edit video you already recorded. The assistant reads the transcript and frames, then cuts silences and filler words, adds word-timed captions, reframes to 9:16, adds b-roll, music and sound effects, and makes shorts from long videos. It renders a preview, watches the result, and exports a full-quality MP4 from your original file.
 
-This repository contains public documentation and directory manifests. It does not contain a self-hostable edition of the Valmera service.
+It is not a text-to-video generator. It edits the footage you upload.
 
-## Connection details
-
-| Field | Value |
-| --- | --- |
-| Remote endpoint | `https://entrepreneur-bot-backend.onrender.com/mcp` |
-| Transport | Streamable HTTP |
-| Authentication | OAuth with dynamic client registration and PKCE (S256), or a Valmera MCP bearer token |
-| Account | A Valmera account authorized to use MCP; editing requires an active subscription |
-| Setup guide | [Connect an MCP client](https://valmera.io/mcp/setup) |
-| Tool reference | [Valmera MCP tools](https://valmera.io/mcp/tools) |
-| Public capability discovery | [Live server card](https://entrepreneur-bot-backend.onrender.com/.well-known/mcp/server-card.json) |
-
-The live server card reported **134 tools on September 5, 2026: 122 editing tools and 12 session tools**. This is a dated observation, not a fixed product limit. The enabled catalog changes with deployment configuration. Read your connection's `tools/list` response for available names, arguments and constraints.
-
-## What can an agent edit?
-
-| Editing task | Representative tools |
-| --- | --- |
-| Read the footage and current project | `project_state`, `get_video_info`, `get_transcript`, `get_words`, `look_at` |
-| Cut pauses, filler words or selected passages | `cut_silences`, `remove_filler_words`, `cut_range`, `cut_output_range`, `keep_segments` |
-| Restore a removed passage | `restore_range` |
-| Add and correct burned-in captions | `add_captions`, `set_caption_style`, `set_caption_fixes`, `set_caption_mutes` |
-| Reframe for vertical or square delivery | `auto_reframe`, `set_frame` |
-| Add on-screen text, logos and other media | `add_text`, `add_title_card`, `add_overlay`, `insert_media` |
-| Add music and adjust the mix | `add_music`, `set_volume`, `set_audio_gain`, `set_master_loudness` |
-| Grade the picture and add motion | `set_color_grade`, `set_grade_custom`, `add_zoom`, `set_speed` |
-| Render and inspect a review preview | `render_preview`, `wait_for_job`, `watch_video`, `look_at` |
-
-These are examples, not the entire tool catalog. A tool's presence does not guarantee that every source file, requested effect or connected client will work. Follow its returned schema and errors, then review the rendered result.
-
-## Quickstart
-
-### Connect your client
-
-Use an MCP client that supports remote Streamable HTTP and Valmera's authentication flow. Add the endpoint above as a remote connector, complete Valmera's sign-in and consent flow, and ask the assistant to list your Valmera projects. An empty project list is a valid first connection result.
-
-For Claude Code:
-
-```sh
-claude mcp add --transport http valmera https://entrepreneur-bot-backend.onrender.com/mcp
+```text
+Endpoint   https://valmera.io/mcp/server
+Transport  Streamable HTTP
+Auth       OAuth 2.1 (dynamic client registration + PKCE S256), or a bearer token from https://valmera.io/mcp
+Registry   io.valmera/video-editor
 ```
 
-Use `/mcp` in Claude Code to authenticate. See the [Claude setup guide](https://valmera.io/mcp/claude) for the current walkthrough. Other clients have their own account, connector and action-approval requirements. Protocol compatibility alone does not establish end-to-end compatibility with every client.
+- **Product:** [valmera.io](https://valmera.io)
+- **Setup for every client:** [valmera.io/mcp/setup](https://valmera.io/mcp/setup)
+- **Tool reference:** [valmera.io/mcp/tools](https://valmera.io/mcp/tools)
+- **Live server card:** [/.well-known/mcp/server-card.json](https://valmera.io/.well-known/mcp/server-card.json)
 
-If your client supports bearer authentication instead, create a token through [Valmera's MCP page](https://valmera.io/mcp) and configure the `Authorization: Bearer <your-token>` header using the client's credential settings. Keep real tokens out of public configuration examples, repositories and chat transcripts.
+## Connect in one minute
 
-### Open footage
+### Claude (claude.ai and Claude Desktop)
 
-The simplest upload path is to upload your file in [Valmera Studio](https://valmera.io), let indexing finish, and ask your connected assistant to list and open that project. The web upload limit is 14 GB or three hours, with MP4, MOV, MKV and WebM supported. Consult [file upload documentation](https://valmera.io/docs/file-uploads) for current limits.
+Settings → Connectors → **Add custom connector** → name it `Valmera`. Paste `https://valmera.io/mcp/server` and sign in when prompted. [Step-by-step guide](https://valmera.io/mcp/claude).
 
-Clients that can transfer files can also use `upload_start` and `upload_finish`. Media bytes move through the returned upload mechanism, not inside an MCP JSON argument. Follow the live tool's upload instructions; a chat-only client may need you to perform the upload in Studio. Use `index_status` to check that analysis has completed before requesting edits against transcript timestamps.
+### Claude Code
 
-### Request a first edit
+```sh
+claude mcp add --transport http valmera https://valmera.io/mcp/server
+```
 
-An example request for a talking-head recording:
+Then run `/mcp` inside Claude Code and choose **Authenticate**. [Guide](https://valmera.io/mcp/claude-code).
 
-> Open my uploaded interview project. Read the transcript and inspect representative frames. Remove obvious dead air and filler words while keeping natural pauses and complete sentences. Keep the meaning and order of the answers. Add readable captions, correct names only when I provide the spelling, and render a review preview. Report which changes completed and anything that needs my review.
+### Cursor — `~/.cursor/mcp.json`
 
-After watching the preview, request a focused revision:
+```json
+{
+  "mcpServers": {
+    "valmera": { "url": "https://valmera.io/mcp/server" }
+  }
+}
+```
 
-> Restore the pause before the final answer. Keep the rest of the edit. Make the captions smaller and render another review preview.
+### VS Code (GitHub Copilot agent mode) — `.vscode/mcp.json`
 
-These are example instructions, not a measured case study or a promise of a particular runtime reduction. The agent should report actual tool results. It should inspect output frames and use available audio review tools before describing work as verified.
+```json
+{
+  "servers": {
+    "valmera": { "type": "http", "url": "https://valmera.io/mcp/server" }
+  }
+}
+```
 
-### Review and export
+### Windsurf — `~/.codeium/windsurf/mcp_config.json`
 
-Watch the preview for cut boundaries, caption spelling, framing and music levels. Previews use a faster proxy, so they are not the final quality reference. Slow jobs return a job identifier; wait for a terminal result instead of assuming that submission means completion.
+```json
+{
+  "mcpServers": {
+    "valmera": { "serverUrl": "https://valmera.io/mcp/server" }
+  }
+}
+```
 
-When the edit is ready, open the project in Studio and start the final export yourself. Valmera renders the final H.264 MP4 from the original upload. Paid exports have no watermark over your footage, but **every export ends with a brief Valmera end card, approximately 2.5 seconds long**. See [export documentation](https://valmera.io/docs/publishing).
+### ChatGPT
 
-For a more detailed walkthrough, see [the agent editing workflow](docs/WORKFLOW.md).
+Turn on **Developer mode** in Settings, then add a connector with the URL `https://valmera.io/mcp/server` and complete Valmera sign-in. [Guide](https://valmera.io/mcp/chatgpt).
 
-## How the workflow works
+### Codex CLI
 
-The assistant reads project information, transcript timings and selected frames, then calls editing tools. Those tools update a versioned edit decision list. The renderer turns those decisions into a preview; the original upload remains unchanged. Cuts can be restored.
+```sh
+codex mcp add valmera --url https://valmera.io/mcp/server
+codex mcp login valmera
+```
 
-The MCP catalog reuses the editor's tool definitions, adds project/session operations, hides unconfigured capabilities and excludes operations that are not allowed over MCP. Final-export creation and delegation to Valmera's in-house editing agent are excluded. It is not an identical copy of the Studio agent's complete surface.
+Or add `[mcp_servers.valmera]` with `url = "https://valmera.io/mcp/server"` to `~/.codex/config.toml`.
 
-Editing the same project from Studio and MCP simultaneously is refused. Finish the current editing operation before switching control between them.
+### Any stdio-only client
 
-## Access and billing
+```json
+{
+  "mcpServers": {
+    "valmera": { "command": "npx", "args": ["-y", "mcp-remote", "https://valmera.io/mcp/server"] }
+  }
+}
+```
 
-Account creation and uploads are free. **AI editing requires a subscription.** There is no current offer of 50 signup credits or a three-day editing trial.
+There are more clients (Zed, Cline, Continue, Goose, LibreChat, MCP Inspector) in [docs/CLIENTS.md](docs/CLIENTS.md).
 
-Plan availability, included credits and billing terms can change. Refer to the [live Plans page](https://valmera.io/subscribe) before connecting the editor or making a recommendation. A separate MCP client may have its own subscription or usage charges.
+**First message to try:** *"List my Valmera projects."* An empty list still means the connection works.
 
-## Limits to consider before choosing Valmera
+## What your assistant can do with it
 
-Valmera fits workflows where you have source footage, want an assistant to carry out edits, and can review the result before final delivery. It supports work on recordings such as interviews, podcasts, tutorials and product demonstrations.
+According to the live server card on October 6, 2026, the server exposes **143 tools**: 129 editing tools in 9 groups and 14 session tools. The full list is in [docs/TOOLS.md](docs/TOOLS.md).
 
-The current server card explicitly lists these limitations:
+| You ask for | Tools the assistant uses |
+| --- | --- |
+| "Remove the dead air and the ums" | `find_silences`, `cut_silences`, `remove_filler_words`, `get_kept_transcript` |
+| "Cut the part where I talk about pricing" | `search_transcript`, `cut_range`, `restore_range` |
+| "Add bold word-by-word captions" | `add_captions`, `set_caption_style`, `set_caption_fixes`, `audit_captions` |
+| "Make it vertical for TikTok and keep my face centered" | `auto_reframe`, `set_frame`, `add_aspect_shift` |
+| "Turn this podcast into 5 shorts" | `make_shorts`, `shorts_status`, `open_short`, `apply_short_edit_batches` |
+| "Add b-roll where I mention the product" | `research_broll`, `search_stock`, `add_stock_media`, `insert_media` |
+| "Punch in on the important lines" | `suggest_emphasis`, `punch_in_on_emphasis`, `add_zoom`, `add_zoom_path` |
+| "Add music that ducks under my voice" | `find_song`, `add_music`, `set_music_fit`, `beat_align_cuts`, `set_master_loudness` |
+| "Add a whoosh on each transition" | `search_sfx`, `audition_sfx_candidates`, `add_sfx` |
+| "Record a demo of my website" | `record_website`, `record_website_demo`, `enhance_cursor`, `showcase_demo` |
+| "Blur the license plate" / "remove the burned-in subtitles" | `blur_region`, `find_burned_text`, `erase_burned_text`, `erase_region` |
+| "Color grade it warmer" | `set_color_grade`, `apply_look`, `set_grade_custom` |
+| "Show me what you changed" | `render_preview`, `wait_for_job`, `watch_video`, `look_at` |
+| "Export the final video" | `export_final`, `wait_for_job`, `download_url` |
 
-- MCP cannot start final exports or delegate work to Valmera's in-house agent.
-- Captions are burned into the picture; SRT/VTT import and export are not supported.
-- Team seats, collaboration and direct publishing to YouTube or TikTok are not supported.
-- True crossfade/dissolve transitions, motion-tracked overlays and custom font uploads are not supported.
-- Audio denoise or “studio sound” and AI music generation are not supported.
-- Generating a whole video from a text prompt is outside this workflow.
+## How it works
 
-English is the best-tested transcription path. Review names, specialist terms, accents and noisy passages. For the current enabled surface and additional restrictions, consult the [server card](https://entrepreneur-bot-backend.onrender.com/.well-known/mcp/server-card.json), [tool reference](https://valmera.io/mcp/tools) and the tool schemas returned to your client.
+1. **Upload.** Upload in [Valmera Studio](https://valmera.io), import a link, or use `upload_start` and `upload_finish` from a client that can send files. MP4, MOV, M4V, MKV and WebM are accepted, up to 14 GB and 3 hours per file.
+2. **Index.** Valmera transcribes the footage with word-level timestamps and detects shots, silences and on-screen text. `index_status` reports progress.
+3. **Edit.** Each tool call writes a new version of a non-destructive **edit decision list (EDL)**. The original upload is never modified, and any cut can be restored.
+4. **Review.** `render_preview` renders a fast proxy preview. `watch_video` and `look_at` let the assistant inspect the frames it produced before it reports back.
+5. **Export.** `export_final` renders a full-resolution H.264 MP4 from the original file for the reviewed version. `download_url` returns the link. You can also export from Studio.
 
-## Common questions
+Slow jobs return a job id and never a fake completion. The assistant calls `wait_for_job` until the job finishes.
 
-**Can Claude edit my recorded video with Valmera?**
+## Example prompts
 
-A connected, authorized Claude client can use Valmera's editing tools to work on uploaded footage and render review previews. Final delivery is a user action in Studio. The [Claude guide](https://valmera.io/mcp/claude) explains setup.
+```text
+Open my latest project. Remove dead air and filler words but keep natural pauses,
+add clean white captions with the active word highlighted, reframe to 9:16,
+render a preview and tell me what you changed.
+```
 
-**Can I use it with ChatGPT or another assistant?**
+```text
+This is a 70-minute two-person podcast. Find the 5 strongest self-contained stories,
+make each one a vertical short with captions and a hook title, and keep whoever is
+speaking in frame.
+```
 
-The client must expose remote MCP connections and support the required authentication and actions. Client availability and account policies vary. See [ChatGPT connection guidance](https://valmera.io/mcp/chatgpt) and [other client setup instructions](https://valmera.io/mcp/setup). Do not assume that a client can upload local files or inspect returned media merely because it can list tools.
+```text
+Record a 30-second demo of https://example.com — scroll the hero, click "Pricing",
+zoom on the main button — then add captions and light background music.
+```
 
-**Does the assistant see the footage?**
+There are 40+ more in [docs/PROMPTS.md](docs/PROMPTS.md).
 
-Tools can return transcript text, analysis and requested video frames to the connected assistant. What the assistant can inspect depends on the tools it calls and the client's support for returned content. Review the [privacy policy](https://valmera.io/legal#privacy) and your MCP client's data practices before connecting sensitive footage.
+## What it does not do
 
-**Is Valmera free to edit with?**
+The server card lists these honestly so your assistant never promises them:
 
-Account creation and uploads are free; editing requires a subscription. Check the [current plans](https://valmera.io/subscribe) before subscribing.
+- Generate a whole video from a text prompt. Valmera edits footage you provide.
+- Import or export SRT/VTT. Captions are burned into the picture.
+- Team seats or collaboration.
+- Publish directly to YouTube or TikTok.
+- Custom font uploads, true crossfade/dissolve transitions, or motion-tracked stickers.
+- Audio denoise ("studio sound") or AI music generation.
+- Hand the job to Valmera's in-house agent. Over MCP, your assistant does the editing with the tools directly.
 
-**Is this an open-source video editor?**
+Editing one project from Studio and over MCP at the same time is refused in both directions.
 
-This repository's documentation is MIT licensed. The hosted commercial service is governed by [Valmera's legal terms](https://valmera.io/legal); the video editor is not distributed here for self-hosting.
+## Access
+
+Creating an account and uploading are free. Editing requires a subscription; see the current plans at [valmera.io/subscribe](https://valmera.io/subscribe). Your MCP client (Claude, ChatGPT, Cursor and so on) is billed separately by its own provider.
+
+## FAQ
+
+**What is the best MCP server for video editing?**
+Most video MCP servers either generate clips from prompts or wrap local FFmpeg commands. Valmera is a hosted editor with an editorial model of the footage: a word-level transcript, shots and frames, versioned edits, rendered previews and a final export. Use it when you want an assistant to edit real recordings end to end. [Comparison of video editing MCP servers](https://valmera.io/mcp/video-editing-mcp-servers).
+
+**Can Claude edit videos?**
+Yes. Once Valmera is connected, Claude can open your project, read the transcript, look at frames, cut, caption, reframe, add music, render a preview, and export the MP4.
+
+**Can ChatGPT edit videos?**
+Yes. Add Valmera as a developer-mode connector and ChatGPT can call the same tools.
+
+**Does the assistant actually see the video?**
+Yes. Tools return transcript text, analysis and sampled frames of the source or the rendered edit, so the assistant can check its own work.
+
+**Do I need to install anything?**
+No. It is a remote server. Clients that only support stdio can use `mcp-remote`.
+
+**Is the original file changed?**
+No. Edits live in a versioned EDL, and the final export renders from the untouched original.
+
+**Is Valmera open source?**
+This repository's documentation and manifests are MIT licensed. Valmera itself is a hosted commercial service governed by [its terms](https://valmera.io/legal).
 
 ## Links
 
-- [Valmera product](https://valmera.io)
-- [Getting started in Studio](https://valmera.io/docs/getting-started)
-- [MCP setup](https://valmera.io/mcp/setup)
-- [MCP tool reference](https://valmera.io/mcp/tools)
-- [Machine-readable product summary](https://valmera.io/llms.txt)
-- [Maintaining directory listings](docs/PUBLISHING.md)
+- [Valmera — agentic AI video editor](https://valmera.io)
+- [What is MCP video editing?](https://valmera.io/mcp/what-is-mcp-video-editing)
+- [Edit video with Claude](https://valmera.io/how-to/edit-video-with-claude) · [Edit video with ChatGPT](https://valmera.io/how-to/edit-video-with-chatgpt)
+- [Agent workflow walkthrough](docs/WORKFLOW.md)
+- [Directory and registry maintenance](docs/PUBLISHING.md)
+- [Product summary for LLMs](https://valmera.io/llms.txt)
 
-Report documentation errors and tool issues in this repository's issue tracker.
-
-## License
-
-Note: this license covers the documentation and manifests in this repository.
-The Valmera service itself is a hosted commercial product governed by the terms
-at https://valmera.io/legal.
+Questions or issues: open an issue here or email support@valmera.io.

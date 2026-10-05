@@ -1,21 +1,28 @@
 # Maintaining Valmera's MCP directory listings
 
-This is the publication and verification guide for the public documentation repository. Checked September 5, 2026. Public listings are external records: a file update or a submitted form does not prove that a directory has refreshed, accepted or ranked the product.
+This is the publication and verification guide for the public documentation repository. Last checked October 6, 2026. Public listings are external records: a file update or a submitted form does not prove that a directory has refreshed, accepted or ranked the product.
 
 ## Source of truth
 
 Verify these before publishing product claims:
 
-- [Live server card](https://entrepreneur-bot-backend.onrender.com/.well-known/mcp/server-card.json): endpoint, authentication, enabled tool groups, session tools and explicit exclusions.
+- [Live server card](https://valmera.io/.well-known/mcp/server-card.json): endpoint, authentication, enabled tool groups, session tools and explicit exclusions.
 - An authenticated connection's `tools/list`: tool names, argument schemas and constraints available to that account.
 - [Plans](https://valmera.io/subscribe): current access terms and included credits.
 - [File uploads](https://valmera.io/docs/file-uploads) and [exports](https://valmera.io/docs/publishing): input and delivery behavior.
 
-The README and directory manifests must distinguish editing/review through MCP from user-started final export in Studio. The current product offers free account creation and uploads, with a subscription required for editing. Do not advertise the withdrawn 50-credit signup offer or three-day trial. Paid exports include a brief Valmera end card after the footage.
+The public endpoint is `https://valmera.io/mcp/server`. The older `entrepreneur-bot-backend.onrender.com/mcp` address serves the same service, but every listing should use the branded endpoint. MCP clients can export the final MP4 with `export_final` and `download_url`, and Studio export is still available. Account creation and uploads are free and editing requires a subscription. Don't put prices, trials or credit grants in directory copy; link to https://valmera.io/subscribe instead.
 
 Avoid a fixed undated tool count in directory descriptions. Configuration can change the catalog. If a count is useful, attach the date and link to the live server card.
 
-## Verified public state on September 5, 2026
+## Changes on October 6, 2026
+
+- `server.json` version `0.2.0` moves the registry remote to the branded endpoint `https://valmera.io/mcp/server` and drops the outdated "final export in Studio" wording.
+- `smithery.yaml` now uses the branded endpoint and accurate export behavior.
+- The README, `docs/CLIENTS.md`, `docs/TOOLS.md` (143 tools per the live server card) and `docs/PROMPTS.md` were rewritten or added.
+- Still open: claiming the Glama listing (needs the owner's GitHub login) and maintainer review of awesome-mcp-servers PR #11560.
+
+## Earlier record: public state on September 5, 2026
 
 | Surface | Observed state | Follow-up |
 | --- | --- | --- |

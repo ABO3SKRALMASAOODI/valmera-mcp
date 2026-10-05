@@ -3,21 +3,22 @@
 
 startCommand:
   type: http
-  url: https://entrepreneur-bot-backend.onrender.com/mcp
+  url: https://valmera.io/mcp/server
 
 name: valmera
 displayName: Valmera — AI Video Editor
 description: >-
-  Edit uploaded footage through an AI assistant: cut pauses and filler words,
-  add captions, reframe the picture, mix music and render review previews.
-  Edits use a versioned edit decision list and preserve the original upload.
-  The user starts the final MP4 export in Valmera Studio; MCP cannot create
-  final exports. Account creation and uploads are free; editing requires a
-  subscription. See the live server card and tool catalog for enabled tools.
+  Agentic AI video editor for footage you already have. Your assistant reads the
+  word-level transcript and frames, cuts silences and filler words, adds
+  word-timed captions, reframes to 9:16, adds b-roll, music and sound effects,
+  turns long videos into shorts, records website demos, renders a preview it
+  can watch, and exports a full-quality MP4 rendered from the original file.
+  Edits live in a versioned edit decision list, so any cut can be restored.
+  Account creation and uploads are free; editing requires a subscription.
 
 homepage: https://valmera.io/mcp
 repository: https://github.com/ABO3SKRALMASAOODI/valmera-mcp
-documentation: https://valmera.io/mcp/tools
+documentation: https://valmera.io/mcp/setup
 # Applies to this repository's documentation, not the hosted commercial service.
 license: MIT
 icon: https://valmera.io/icon-512.png
@@ -53,3 +54,7 @@ examples:
     description: Use the live framing tools, inspect representative output frames, and ask the user to review the full preview.
   - prompt: Restore the pause before the final answer and keep the rest of the edit.
     description: Resolve the passage against the source and current edit, restore the range, and render another preview.
+  - prompt: Turn this 60-minute podcast into 5 vertical shorts with captions, keeping whoever is speaking in frame.
+    description: Find complete stories in the transcript, create shorts, reframe and caption each, and report the source times.
+  - prompt: Export the version I approved as a full-quality MP4 and give me the link.
+    description: Call export_final for the reviewed EDL version, wait for the job, and return download_url for the final render.

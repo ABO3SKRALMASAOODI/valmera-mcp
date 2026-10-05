@@ -1,6 +1,6 @@
 # A complete agent-assisted video editing workflow
 
-This guide follows one recorded interview from project discovery through preview review and the handoff to Studio. The prompts are examples. They do not claim a measured customer result.
+This guide follows one recorded interview from project discovery through preview review to the final MP4 export. The prompts are examples. They do not claim a measured customer result.
 
 ## 1. Establish the connection without editing anything
 
@@ -61,15 +61,15 @@ The assistant may use `restore_range`, `auto_reframe`, `set_frame` and caption s
 
 Use your own licensed media or evaluate the license supplied with retrieved media for your intended use. Finding a track does not establish that every license permits every commercial use. Listen to the rendered mix rather than judging it only from a volume setting.
 
-## 7. Hand the approved project to Studio
+## 7. Export the approved edit
 
-After the last preview is approved, ask for a concise handoff:
+After you approve the last preview, ask for the finished file:
 
-> Summarize the completed edits, identify the project I should open in Studio, and list any unresolved review items. Do not attempt a final export through MCP.
+> Export the version I just approved as a full-quality MP4 and give me the download link. Tell me the final duration.
 
-Open that project in Studio and start its final export. MCP is deliberately limited to editing and review operations. The final H.264 MP4 is rendered from the original source file. Paid exports have no watermark over the footage and include an approximately 2.5-second Valmera end card after the content.
+The assistant calls `export_final` with the project id and the reviewed `edl_version`. It then polls `wait_for_job` until the job finishes and calls `download_url` with `kind="final"`. The final H.264 MP4 renders from the original source file, not the preview proxy. Export runs the same checks, queue and plan rules as Studio export, and Studio's Export button is still available if you'd rather start it yourself.
 
-Watch the downloaded final file before publishing. Confirm its duration, framing, captions, audio and ending. Preview approval alone does not verify that the final render completed successfully.
+Watch the downloaded file before publishing and check its duration, framing, captions, audio and ending. An approved preview doesn't prove the final render finished, and a job id isn't a finished MP4.
 
 ## Troubleshooting
 
@@ -82,6 +82,6 @@ Watch the downloaded final file before publishing. Confirm its duration, framing
 | A job remains in progress | Inspect the same returned job identifier rather than starting duplicate renders |
 | Studio or MCP says the project is busy | Let the active editing operation finish before switching editors |
 | Preview picture looks softer | Previews use a proxy; inspect the completed Studio final for delivery quality |
-| Final export is unavailable in MCP | This is the expected boundary; the user starts it in Studio |
+| `export_final` is missing from the tool list | Reconnect or refresh the client so it reloads the catalog; Studio Export also works |
 
-Current connection details and supported operations are in the [README](../README.md), [live server card](https://entrepreneur-bot-backend.onrender.com/.well-known/mcp/server-card.json) and [tool reference](https://valmera.io/mcp/tools).
+Current connection details and supported operations are in the [README](../README.md), the [live server card](https://valmera.io/.well-known/mcp/server-card.json), the [tool catalog](TOOLS.md) and the [tool reference](https://valmera.io/mcp/tools).
