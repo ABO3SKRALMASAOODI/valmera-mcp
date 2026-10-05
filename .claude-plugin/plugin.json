@@ -1,0 +1,11 @@
+{
+  "name": "valmera",
+  "displayName": "Valmera AI Video Editor",
+  "version": "1.0.0",
+  "description": "Edit real footage from a conversation: cut silences and filler words, add word-timed captions, reframe to 9:16, add b-roll and music, turn long videos into shorts, record website demos, preview, and export the final MP4.",
+  "author": { "name": "Valmera", "url": "https://valmera.io", "email": "support@valmera.io" },
+  "homepage": "https://valmera.io/mcp",
+  "repository": "https://github.com/ABO3SKRALMASAOODI/valmera-mcp",
+  "license": "MIT",
+  "keywords": ["video", "video-editing", "ai-video-editor", "captions", "subtitles", "shorts", "podcast", "reframe", "mcp"]
+}

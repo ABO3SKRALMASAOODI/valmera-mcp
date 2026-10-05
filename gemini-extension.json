@@ -1,0 +1,11 @@
+{
+  "name": "valmera",
+  "version": "1.0.0",
+  "description": "Edit real footage from Gemini CLI with Valmera's AI video editing tools: cuts, captions, reframing, b-roll, music, shorts, previews and MP4 export.",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "valmera": {
+      "httpUrl": "https://valmera.io/mcp/server"
+    }
+  }
+}

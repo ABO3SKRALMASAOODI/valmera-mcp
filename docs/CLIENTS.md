@@ -82,7 +82,7 @@ gemini mcp add --transport http valmera https://valmera.io/mcp/server
   "mcpServers": {
     "valmera": {
       "serverUrl": "https://valmera.io/mcp/server",
-      "headers": { "Authorization": "Bearer ${env:VALMERA_MCP_TOKEN}" }
+      "headers": { "Authorization": "Bearer <your-valmera-token>" }
     }
   }
 }
@@ -98,7 +98,7 @@ The headers block is optional if the OAuth sign-in works for you.
     "valmera": {
       "type": "streamableHttp",
       "url": "https://valmera.io/mcp/server",
-      "headers": { "Authorization": "Bearer vlm_mcp_..." },
+      "headers": { "Authorization": "Bearer <your-valmera-token>" },
       "disabled": false,
       "autoApprove": []
     }
@@ -125,7 +125,7 @@ mcpServers:
     url: https://valmera.io/mcp/server
     requestOptions:
       headers:
-        Authorization: Bearer vlm_mcp_...
+        Authorization: Bearer <your-valmera-token>
 ```
 
 ## Goose

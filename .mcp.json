@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "valmera": {
+      "type": "http",
+      "url": "https://valmera.io/mcp/server"
+    }
+  }
+}

@@ -95,6 +95,19 @@ There are more clients (Zed, Cline, Continue, Goose, LibreChat, MCP Inspector) i
 
 **First message to try:** *"List my Valmera projects."* An empty list still means the connection works.
 
+## Install as a Claude plugin (connector + editing skills)
+
+This repository is also a Claude plugin. It bundles the Valmera connector with three skills that teach Claude a reliable editing workflow: [edit-video-with-valmera](skills/edit-video-with-valmera/SKILL.md), [turn-long-video-into-shorts](skills/turn-long-video-into-shorts/SKILL.md) and [website-demo-video](skills/website-demo-video/SKILL.md).
+
+In Claude Code:
+
+```sh
+/plugin marketplace add ABO3SKRALMASAOODI/valmera-mcp
+/plugin install valmera@valmera
+```
+
+In claude.ai, go to **Customize → Plugins → Add → Add marketplace** and enter `ABO3SKRALMASAOODI/valmera-mcp`. The skills follow the open [Agent Skills](https://agentskills.io) format, so other agents that read `SKILL.md` can use them too.
+
 ## What your assistant can do with it
 
 According to the live server card on October 6, 2026, the server exposes **143 tools**: 129 editing tools in 9 groups and 14 session tools. The full list is in [docs/TOOLS.md](docs/TOOLS.md).
@@ -164,6 +177,10 @@ Editing one project from Studio and over MCP at the same time is refused in both
 ## Access
 
 Creating an account and uploading are free. Editing requires a subscription; see the current plans at [valmera.io/subscribe](https://valmera.io/subscribe). Your MCP client (Claude, ChatGPT, Cursor and so on) is billed separately by its own provider.
+
+## Data and privacy
+
+The plugin and connector send your editing instructions and tool arguments to Valmera at `https://valmera.io/mcp/server`, over HTTPS and authorized with OAuth. Tools return project data to your AI client: transcript text, analysis, sampled frames, preview and download links. Your footage is stored in your Valmera account and is never modified. Edits are saved as versions you can restore. Nothing is sent to any other destination by this plugin, which contains only configuration and Markdown. See the [privacy policy](https://valmera.io/legal#privacy) for collection, retention and deletion. Contact: support@valmera.io.
 
 ## FAQ
 
