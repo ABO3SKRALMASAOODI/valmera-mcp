@@ -1,6 +1,6 @@
 # Valmera MCP server — the video editing MCP server for real footage
 
-**Valmera** is an agentic AI video editor. This hosted [Model Context Protocol](https://modelcontextprotocol.io) server lets Claude, ChatGPT, Cursor, VS Code, Codex or any MCP client edit video you already recorded. The assistant reads the transcript and frames, then cuts silences and filler words, adds word-timed captions, reframes to 9:16, adds b-roll, music and sound effects, and makes shorts from long videos. It renders a preview, watches the result, and exports a full-quality MP4 from your original file.
+**Valmera** is an agentic AI video editor. This hosted [Model Context Protocol](https://modelcontextprotocol.io) server lets Claude, ChatGPT, Gemini CLI, Cursor, VS Code, Codex or any MCP client edit video you already recorded. The assistant reads the transcript and frames, then cuts silences and filler words, adds word-timed captions, reframes to 9:16, adds b-roll, music and sound effects, and makes shorts from long videos. It renders a preview, watches the result, and exports a full-quality MP4 from your original file.
 
 It is not a text-to-video generator. It edits the footage you upload.
 
@@ -72,6 +72,14 @@ codex mcp login valmera
 ```
 
 Or add `[mcp_servers.valmera]` with `url = "https://valmera.io/mcp/server"` to `~/.codex/config.toml`.
+
+### Gemini CLI
+
+```sh
+gemini mcp add --transport http valmera https://valmera.io/mcp/server
+```
+
+Then open Gemini CLI, run `/mcp auth valmera` and sign in.
 
 ### Any stdio-only client
 

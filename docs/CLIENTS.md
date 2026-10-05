@@ -18,6 +18,7 @@ The live, longer version of this page, with notes for each client, is [valmera.i
 | VS Code (Copilot agent mode) | `.vscode/mcp.json` | OAuth | Top-level key is `servers`, with `"type": "http"` |
 | Codex CLI | `codex mcp add` / `~/.codex/config.toml` | OAuth | Run `codex mcp login valmera` |
 | ChatGPT | Settings → developer mode → add connector | OAuth | Refresh the connector after server updates |
+| Gemini CLI | `gemini mcp add --transport http` | OAuth | Then run `/mcp auth valmera` |
 | Windsurf | `~/.codeium/windsurf/mcp_config.json` | OAuth or bearer | Key is `serverUrl`. Cascade caps tools at 100 across all servers. |
 | Zed | `settings.json` → `context_servers` | OAuth | `url` form needs a recent Zed |
 | Cline | MCP Servers → Remote Servers | Bearer | `"type": "streamableHttp"` |
@@ -64,6 +65,14 @@ Most of an edit is reading (`look_at`, `get_words`, `project_state`), so allowli
 ```sh
 codex mcp add valmera --url https://valmera.io/mcp/server
 codex mcp login valmera
+```
+
+## Gemini CLI
+
+```sh
+gemini mcp add --transport http valmera https://valmera.io/mcp/server
+# then inside Gemini CLI:
+/mcp auth valmera
 ```
 
 ## Windsurf
