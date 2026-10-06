@@ -185,7 +185,7 @@ The plugin and connector send your editing instructions and tool arguments to Va
 ## FAQ
 
 **What is the best MCP server for video editing?**
-Most video MCP servers either generate clips from prompts or wrap local FFmpeg commands. Valmera is a hosted editor with an editorial model of the footage: a word-level transcript, shots and frames, versioned edits, rendered previews and a final export. Use it when you want an assistant to edit real recordings end to end. [Comparison of video editing MCP servers](https://valmera.io/mcp/video-editing-mcp-servers).
+Most video MCP servers either generate clips from prompts or wrap local FFmpeg commands. Valmera is a hosted editor with an editorial model of the footage: a word-level transcript, shots and frames, versioned edits, rendered previews and a final export. Use it when you want an assistant to edit real recordings end to end. See [21 video editing MCP servers compared](https://valmera.io/mcp/video-editing-mcp-servers), covering hosted editors, clippers such as OpusClip, local editors such as Palmier Pro, DaVinci Resolve, Premiere Pro and After Effects bridges, and FFmpeg servers.
 
 **Can Claude edit videos?**
 Yes. Once Valmera is connected, Claude can open your project, read the transcript, look at frames, cut, caption, reframe, add music, render a preview, and export the MP4.
@@ -209,6 +209,7 @@ This repository's documentation and manifests are MIT licensed. Valmera itself i
 
 - [Valmera — agentic AI video editor](https://valmera.io)
 - [What is MCP video editing?](https://valmera.io/mcp/what-is-mcp-video-editing)
+- [Best agentic video editors in 2026](https://valmera.io/alternatives/best-agentic-video-editors)
 - [Edit video with Claude](https://valmera.io/how-to/edit-video-with-claude) · [Edit video with ChatGPT](https://valmera.io/how-to/edit-video-with-chatgpt)
 - [Agent workflow walkthrough](docs/WORKFLOW.md)
 - [Directory and registry maintenance](docs/PUBLISHING.md)
