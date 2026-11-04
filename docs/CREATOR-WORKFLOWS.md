@@ -19,6 +19,14 @@ For example:
 
 The brief gives you a review standard: can a first-time viewer follow the steps? It is more useful than asking whether the edit looks impressive.
 
+## Build a brief from your own recording
+
+The public [editing brief builder](https://valmera.io/prompts#prompt-builder) helps you choose six things: recording type, destination, target length, audience, protected material, and captions. Copy the resulting brief into Studio or your connected assistant.
+
+For a screen recording, choose **Tutorial or screen recording**, **YouTube or a website**, and a length that leaves room for every required step. In the protected-material field, name the settings, warnings, or final result that must remain. For an interview, choose **Interview or podcast** and identify the speaker’s qualification that must survive a shorter cut.
+
+The builder and prompt library are public without sign-in. Editing footage in Valmera requires an account and a subscription. See the [six-field walkthrough](https://dev.to/valmera/write-a-better-ai-video-editing-prompt-six-fields-one-brief-4258) for a complete tutorial example.
+
 ## Six starting points
 
 | Your recording | Ask for | Check before approving |
