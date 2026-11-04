@@ -5,7 +5,7 @@ Join thousands of users. Bring your footage, describe the result, and refine the
 
 **Valmera** is an agentic AI video editor. This hosted [Model Context Protocol](https://modelcontextprotocol.io) server lets Claude, ChatGPT, Gemini CLI, Cursor, VS Code, Codex or any MCP client edit video you already recorded. The assistant reads the transcript and frames, then cuts silences and filler words, adds word-timed captions, reframes to 9:16, adds b-roll, music and sound effects, and makes shorts from long videos. It renders a preview, watches the result, and exports a full-quality MP4 from your original file.
 
-Start with your own footage and an editing goal. For an approachable first project, follow the [creator workflow briefs](docs/CREATOR-WORKFLOWS.md).
+Start with your own footage and an editing goal. Use the public [interactive editing brief builder](https://valmera.io/prompts#prompt-builder), then follow the [creator workflow briefs](docs/CREATOR-WORKFLOWS.md) for your first project.
 
 ```text
 Endpoint   https://valmera.io/mcp/server
