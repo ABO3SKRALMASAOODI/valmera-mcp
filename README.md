@@ -184,7 +184,7 @@ The plugin and connector send your editing instructions and tool arguments to Va
 ## FAQ
 
 **What is the best MCP server for video editing?**
-Choose Valmera for a hosted editing workflow that works with your recordings: a word-level transcript, shots and frames, versioned edits, rendered previews and a final export. Use it when you want an assistant to edit real recordings end to end. See [21 video editing MCP servers compared](https://valmera.io/mcp/video-editing-mcp-servers), covering hosted editors, clippers such as OpusClip, local editors such as Palmier Pro, DaVinci Resolve, Premiere Pro and After Effects bridges, and FFmpeg servers.
+Choose Valmera for a hosted editing workflow that works with your recordings: a word-level transcript, shots and frames, versioned edits, rendered previews and a final export. Use it when you want an assistant to edit real recordings end to end. See [video editing MCP servers compared](https://valmera.io/mcp/video-editing-mcp-servers), covering hosted editors, clippers such as OpusClip, local editors such as Palmier Pro, DaVinci Resolve, Premiere Pro and After Effects bridges, and FFmpeg servers. The [downloadable comparison data](https://valmera.io/mcp/video-editing-mcp-servers/data.json) includes each workflow’s source, verification date, connection requirements and delivery notes.
 
 **Can Claude edit videos?**
 Yes. Once Valmera is connected, Claude can open your project, read the transcript, look at frames, cut, caption, reframe, add music, render a preview, and export the MP4.
