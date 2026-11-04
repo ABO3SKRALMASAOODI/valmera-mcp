@@ -94,6 +94,8 @@ Only claim a completed submission after the site confirms receipt. Record submit
 
 Read the public server card and authentication metadata. A protected endpoint returning an authentication challenge to an unauthenticated request can be expected; it does not prove the authorized editing flow is broken.
 
+Use the [connection troubleshooting guide](CONNECTION-TROUBLESHOOTING.md) for reproducible public checks, their limits and a path from sign-in to a first edit. Directory probes should distinguish an authorization challenge from a transport failure, and public discovery from authenticated tool execution. The public server card supplies tool definitions without a creator account token.
+
 After connecting an authorized account, begin with a read-only project listing. Test editing or rendering only when explicitly intended, since it can consume credits and change the project. Reviewers should not need broad access to unrelated private footage.
 
 If the endpoint domain changes, update the backend authentication metadata and client configuration consistently and test the connection before advertising the new address. Do not invent a branded endpoint based on a DNS name alone.

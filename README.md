@@ -201,6 +201,9 @@ You do not need to host the editing server or clone this repository. Add Valmera
 **Is the original file changed?**
 No. Edits live in a versioned EDL, and the final export renders from the untouched original.
 
+**Why does the MCP address return 401 Unauthorized?**
+The endpoint requires authentication. An anonymous 401 with a metadata challenge means it responded and is directing the client to sign in; it is not an authenticated editing test. Follow the [connection troubleshooting guide](docs/CONNECTION-TROUBLESHOOTING.md) for sign-in issues, missing tools and public checks.
+
 **Is Valmera open source?**
 This repository's documentation and manifests are MIT licensed. Valmera itself is a hosted commercial service governed by [its terms](https://valmera.io/legal).
 
@@ -211,6 +214,7 @@ This repository's documentation and manifests are MIT licensed. Valmera itself i
 - [Best agentic video editors in 2026](https://valmera.io/alternatives/best-agentic-video-editors)
 - [Edit video with Claude](https://valmera.io/how-to/edit-video-with-claude) · [Edit video with ChatGPT](https://valmera.io/how-to/edit-video-with-chatgpt)
 - [Agent workflow walkthrough](docs/WORKFLOW.md)
+- [Connection troubleshooting: 401, sign-in and missing tools](docs/CONNECTION-TROUBLESHOOTING.md)
 - [Directory and registry maintenance](docs/PUBLISHING.md)
 - [Product summary for LLMs](https://valmera.io/llms.txt)
 
