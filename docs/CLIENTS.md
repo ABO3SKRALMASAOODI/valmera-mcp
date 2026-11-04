@@ -10,6 +10,8 @@ It uses Streamable HTTP and OAuth 2.1 with dynamic client registration and PKCE 
 
 The live, longer version of this page, with notes for each client, is [valmera.io/mcp/setup](https://valmera.io/mcp/setup).
 
+Getting a 401, a sign-in loop or no tools after connecting? Use the [connection troubleshooting guide](CONNECTION-TROUBLESHOOTING.md) for symptom-specific next steps and public discovery checks that need no account or token.
+
 | Client | Where the config goes | Auth | Key detail |
 | --- | --- | --- | --- |
 | Claude (web, desktop, mobile) | Settings → Connectors → Add custom connector | OAuth | Paste the URL only. Mobile can use it but not add it. |
