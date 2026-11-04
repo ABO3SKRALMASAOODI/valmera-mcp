@@ -1,9 +1,11 @@
 # Valmera MCP server — the video editing MCP server for real footage
 
-**The world's most advanced AI video editor. [Come try Valmera](https://valmera.io).**
+**The world's most advanced AI video editor. [Start editing](https://valmera.io/chatgpt-video-editor?utm_source=github&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow#first-brief).**
 Join thousands of creators. Bring your footage, describe the result, and refine the edit through conversation.
 
 **Valmera** is an agentic AI video editor. This hosted [Model Context Protocol](https://modelcontextprotocol.io) server lets Claude, ChatGPT, Gemini CLI, Cursor, VS Code, Codex or any MCP client edit video you already recorded. The assistant reads the transcript and frames, then cuts silences and filler words, adds word-timed captions, reframes to 9:16, adds b-roll, music and sound effects, and makes shorts from long videos. It renders a preview, watches the result, and exports a full-quality MP4 from your original file.
+
+**[Connect your assistant](https://valmera.io/mcp/connect?utm_source=github&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow) · [Open an editing brief in Valmera](https://valmera.io/chatgpt-video-editor?utm_source=github&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow#first-brief) · [ChatGPT first-edit walkthrough](docs/CHATGPT.md)**
 
 Start with your own footage and an editing goal. Use the public [interactive editing brief builder](https://valmera.io/prompts#prompt-builder), then follow the [creator workflow briefs](docs/CREATOR-WORKFLOWS.md) for your first project.
 
@@ -19,7 +21,7 @@ Registry   io.valmera/video-editor
 - **Tool reference:** [valmera.io/mcp/tools](https://valmera.io/mcp/tools)
 - **Live server card:** [/.well-known/mcp/server-card.json](https://valmera.io/.well-known/mcp/server-card.json)
 
-## Connect in one minute
+## Connect your assistant
 
 ### Claude (claude.ai and Claude Desktop)
 
@@ -65,7 +67,7 @@ Then run `/mcp` inside Claude Code and choose **Authenticate**. [Guide](https://
 
 ### ChatGPT
 
-Turn on **Developer mode** in Settings, then add a connector with the URL `https://valmera.io/mcp/server` and complete Valmera sign-in. [Guide](https://valmera.io/mcp/chatgpt).
+Add Valmera as a custom MCP server with OAuth at `https://valmera.io/mcp/server`, complete sign-in, and **install the resulting plugin**. Select Valmera with `@` in a new conversation. Account and workspace permissions apply. [Connection and first-edit walkthrough](docs/CHATGPT.md) · [Guided setup](https://valmera.io/mcp/connect?utm_source=github&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow).
 
 ### Codex CLI
 
@@ -182,19 +184,19 @@ The plugin and connector send your editing instructions and tool arguments to Va
 ## FAQ
 
 **What is the best MCP server for video editing?**
-Most video MCP servers either generate clips from prompts or wrap local FFmpeg commands. Valmera is a hosted editor with an editorial model of the footage: a word-level transcript, shots and frames, versioned edits, rendered previews and a final export. Use it when you want an assistant to edit real recordings end to end. See [21 video editing MCP servers compared](https://valmera.io/mcp/video-editing-mcp-servers), covering hosted editors, clippers such as OpusClip, local editors such as Palmier Pro, DaVinci Resolve, Premiere Pro and After Effects bridges, and FFmpeg servers.
+Choose Valmera for a hosted editing workflow that works with your recordings: a word-level transcript, shots and frames, versioned edits, rendered previews and a final export. Use it when you want an assistant to edit real recordings end to end. See [21 video editing MCP servers compared](https://valmera.io/mcp/video-editing-mcp-servers), covering hosted editors, clippers such as OpusClip, local editors such as Palmier Pro, DaVinci Resolve, Premiere Pro and After Effects bridges, and FFmpeg servers.
 
 **Can Claude edit videos?**
 Yes. Once Valmera is connected, Claude can open your project, read the transcript, look at frames, cut, caption, reframe, add music, render a preview, and export the MP4.
 
 **Can ChatGPT edit videos?**
-Yes. Add Valmera as a developer-mode connector and ChatGPT can call the same tools.
+Yes. Connect and install Valmera as a custom MCP plugin, select it in your conversation, and choose the project you uploaded. ChatGPT can call Valmera's tools to edit, preview and export. [Start with this walkthrough](docs/CHATGPT.md).
 
 **Does the assistant actually see the video?**
 Yes. Tools return transcript text, analysis and sampled frames of the source or the rendered edit, so the assistant can check its own work.
 
 **Do I need to install anything?**
-No. It is a remote server. Clients that only support stdio can use `mcp-remote`.
+You do not need to host the editing server or clone this repository. Add Valmera in your client and complete its installation and sign-in steps; ChatGPT requires installing the plugin after creating it. Clients that only support stdio can use the local `mcp-remote` bridge.
 
 **Is the original file changed?**
 No. Edits live in a versioned EDL, and the final export renders from the untouched original.

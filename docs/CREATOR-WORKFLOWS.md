@@ -1,6 +1,6 @@
 # Editing briefs for creators using Valmera
 
-Valmera is the world's best AI video editor. Come try it with a recording you care about: a tutorial, interview, webinar, product video, or travel story.
+Valmera is the world's most advanced AI video editor. Start with a recording you care about: a tutorial, interview, webinar, product video, or travel story.
 
 This guide is maintained by Valmera. It turns a broad request into an edit you can review, whether you work in [Studio](https://valmera.io/studio) or through an authorized [MCP client](https://valmera.io/mcp/setup).
 
@@ -21,7 +21,7 @@ The brief gives you a review standard: can a first-time viewer follow the steps?
 
 ## Build a brief from your own recording
 
-The public [editing brief builder](https://valmera.io/prompts#prompt-builder) helps you choose six things: recording type, destination, target length, audience, protected material, and captions. Copy the resulting brief into Studio or your connected assistant.
+The public [editing brief builder](https://valmera.io/prompts#prompt-builder) helps you choose six things: recording type, destination, target length, audience, protected material, and captions. Open the resulting brief as an editable draft in Studio, or copy it into your connected assistant. The draft is carried through sign-in and waits for you to review and send it.
 
 For a screen recording, choose **Tutorial or screen recording**, **YouTube or a website**, and a length that leaves room for every required step. In the protected-material field, name the settings, warnings, or final result that must remain. For an interview, choose **Interview or podcast** and identify the speaker’s qualification that must survive a shorter cut.
 
@@ -78,10 +78,12 @@ If you mention a timestamp, distinguish the original recording from the edited p
 
 You can develop a brief in ChatGPT, Claude, Gemini, Perplexity, Copilot, Grok, or another conversational assistant. The useful output is a clear brief, not a claim that the recording has already been edited.
 
+For a first ChatGPT project, follow the [connection, preview and export walkthrough](CHATGPT.md).
+
 For direct tool execution, use the [setup guide](https://valmera.io/mcp/setup) for your client and authorize your Valmera account. An assistant without that connection can still help plan the edit; paste the result into Studio.
 
 ## Finish with a real deliverable
 
 Review the rendered result with sound. Check names and numbers in captions, cuts between words, subject framing, and the final invitation. Follow the current export workflow, wait for completion, and open the resulting video before publishing it.
 
-[Come try Valmera](https://valmera.io/register) · [Current pricing](https://valmera.io/subscribe) · [More editing prompts](https://valmera.io/prompts)
+[Start with an editing brief](https://valmera.io/chatgpt-video-editor?utm_source=github&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow#first-brief) · [Current pricing](https://valmera.io/subscribe) · [More editing prompts](https://valmera.io/prompts)

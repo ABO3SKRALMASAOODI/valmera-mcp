@@ -17,7 +17,7 @@ The live, longer version of this page, with notes for each client, is [valmera.i
 | Cursor | `~/.cursor/mcp.json` or `.cursor/mcp.json` | OAuth | `mcpServers` → `url` |
 | VS Code (Copilot agent mode) | `.vscode/mcp.json` | OAuth | Top-level key is `servers`, with `"type": "http"` |
 | Codex CLI | `codex mcp add` / `~/.codex/config.toml` | OAuth | Run `codex mcp login valmera` |
-| ChatGPT | Settings → developer mode → add connector | OAuth | Refresh the connector after server updates |
+| ChatGPT | Plugins → + → Add custom MCP server | OAuth | Install the resulting plugin, then select it with `@`; [walkthrough](CHATGPT.md) |
 | Gemini CLI | `gemini mcp add --transport http` | OAuth | Then run `/mcp auth valmera` |
 | Windsurf | `~/.codeium/windsurf/mcp_config.json` | OAuth or bearer | Key is `serverUrl`. Cascade caps tools at 100 across all servers. |
 | Zed | `settings.json` → `context_servers` | OAuth | `url` form needs a recent Zed |
@@ -27,6 +27,12 @@ The live, longer version of this page, with notes for each client, is [valmera.i
 | LibreChat | `librechat.yaml` → `mcpServers` | OAuth (per user) or headers | Omit `client_id` to use dynamic registration |
 | MCP Inspector | `npx @modelcontextprotocol/inspector` | OAuth or `--header` | Best tool for debugging a connection |
 | Anything stdio-only | That client's stdio config | OAuth via bridge | `npx -y mcp-remote <endpoint>` |
+
+## ChatGPT
+
+Follow the [ChatGPT connection and first-edit walkthrough](CHATGPT.md). Creating the connection, installing the plugin, and selecting it in a conversation are distinct steps. If custom MCP is unavailable, check your account and workspace permissions or open the editing brief directly in Valmera Studio.
+
+The [guided setup page](https://valmera.io/mcp/connect?utm_source=github&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow) confirms when Valmera receives your assistant's first request. ChatGPT connection instructions were checked against [OpenAI's guide](https://developers.openai.com/api/docs/guides/custom-mcp-server) on November 4, 2026; other client entries retain their own existing guidance.
 
 ## Claude Code
 
