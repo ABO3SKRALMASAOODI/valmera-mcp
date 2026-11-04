@@ -32,7 +32,7 @@ The live, longer version of this page, with notes for each client, is [valmera.i
 
 Follow the [ChatGPT connection and first-edit walkthrough](CHATGPT.md). Creating the connection, installing the plugin, and selecting it in a conversation are distinct steps. If custom MCP is unavailable, check your account and workspace permissions or open the editing brief directly in Valmera Studio.
 
-The [guided setup page](https://valmera.io/mcp/connect?utm_source=github&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow) confirms when Valmera receives your assistant's first request. ChatGPT connection instructions were checked against [OpenAI's guide](https://developers.openai.com/api/docs/guides/custom-mcp-server) on November 4, 2026; other client entries retain their own existing guidance.
+The [guided setup page](https://valmera.io/mcp/connect?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow) confirms when Valmera receives your assistant's first request. ChatGPT connection instructions were checked against [OpenAI's guide](https://developers.openai.com/api/docs/guides/custom-mcp-server) on November 4, 2026; other client entries retain their own existing guidance.
 
 ## Claude Code
 

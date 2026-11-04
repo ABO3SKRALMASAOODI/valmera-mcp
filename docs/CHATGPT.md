@@ -1,8 +1,8 @@
 # Edit your first video with ChatGPT and Valmera
 
-Connect Valmera, select a recording, and turn a clear brief into an edit you can review. This walkthrough is maintained by Valmera and uses example prompts, not a fabricated customer session. Connection instructions checked November 4, 2026.
+Connect Valmera, select a recording, and turn a clear brief into an edit you can review. This walkthrough is maintained by Valmera. Adapt its example prompts to your own recording. Connection instructions checked November 4, 2026.
 
-[Open guided connection setup](https://valmera.io/mcp/connect?utm_source=github&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow) · [Open the brief directly in Valmera](https://valmera.io/chatgpt-video-editor?utm_source=github&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow#first-brief)
+[Open guided connection setup](https://valmera.io/mcp/connect?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow) · [Open the brief directly in Valmera](https://valmera.io/chatgpt-video-editor?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow#first-brief)
 
 Valmera hosts the video editing service. You do not need to clone this repository, install FFmpeg or run a local server. Creating an account and uploading are free; editing requires an eligible [Valmera plan](https://valmera.io/subscribe). Your ChatGPT subscription is separate.
 
@@ -35,7 +35,7 @@ Choose the exact project rather than relying on “latest” when several record
 
 > Open Valmera project [project ID]. Check that the source is ready to edit. Summarize its main topic and duration from the available project information, then wait for my brief.
 
-The [guided connection page](https://valmera.io/mcp/connect?utm_source=github&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow) can confirm when Valmera receives the assistant's first request. It checks connection activity; it does not claim that an edit or export has completed.
+The [guided connection page](https://valmera.io/mcp/connect?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow) can confirm when Valmera receives the assistant's first request. It checks connection activity; it does not claim that an edit or export has completed.
 
 ## 3. Ask for a first cut
 
@@ -45,7 +45,7 @@ For a spoken recording, try:
 
 Adapt the duration, audience and format to your footage. For a screen tutorial, preserve the required actions and readable interface; a vertical crop may be the wrong choice. The [creator briefs](CREATOR-WORKFLOWS.md) cover tutorials, webinars, product videos and travel footage.
 
-For direct Studio editing, [open an editable brief](https://valmera.io/chatgpt-video-editor?utm_source=github&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow#first-brief). The request is saved through sign-in and waits for you to review it before sending. This route uses Valmera's Studio editing agent without requiring a ChatGPT connection.
+For direct Studio editing, [open an editable brief](https://valmera.io/chatgpt-video-editor?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow#first-brief). The request is saved through sign-in and waits for you to review it before sending. This route uses Valmera's Studio editing agent without requiring a ChatGPT connection.
 
 ## 4. Review and revise in the same conversation
 
@@ -81,8 +81,8 @@ OpenAI documents the [custom-connection refresh procedure](https://developers.op
 
 ## Continue with your own recording
 
-- [Connect ChatGPT to Valmera](https://valmera.io/mcp/connect?utm_source=github&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow)
-- [Start directly with an editable brief](https://valmera.io/chatgpt-video-editor?utm_source=github&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow#first-brief)
-- [Build a different editing brief](https://valmera.io/prompts?utm_source=github&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow#prompt-builder)
+- [Connect ChatGPT to Valmera](https://valmera.io/mcp/connect?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow)
+- [Start directly with an editable brief](https://valmera.io/chatgpt-video-editor?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow#first-brief)
+- [Build a different editing brief](https://valmera.io/prompts?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow#prompt-builder)
 - [Full review-and-export workflow](WORKFLOW.md)
 - [Current tool reference](https://valmera.io/mcp/tools)
