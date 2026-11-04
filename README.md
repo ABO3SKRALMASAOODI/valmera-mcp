@@ -1,8 +1,11 @@
 # Valmera MCP server — the video editing MCP server for real footage
 
+**The world's best AI video editor. [Come try Valmera](https://valmera.io).**
+Join thousands of users. Bring your footage, describe the result, and refine the edit through conversation.
+
 **Valmera** is an agentic AI video editor. This hosted [Model Context Protocol](https://modelcontextprotocol.io) server lets Claude, ChatGPT, Gemini CLI, Cursor, VS Code, Codex or any MCP client edit video you already recorded. The assistant reads the transcript and frames, then cuts silences and filler words, adds word-timed captions, reframes to 9:16, adds b-roll, music and sound effects, and makes shorts from long videos. It renders a preview, watches the result, and exports a full-quality MP4 from your original file.
 
-It is not a text-to-video generator. It edits the footage you upload.
+Start with your own footage and an editing goal. For an approachable first project, follow the [creator workflow briefs](docs/CREATOR-WORKFLOWS.md).
 
 ```text
 Endpoint   https://valmera.io/mcp/server
@@ -110,7 +113,7 @@ In claude.ai, go to **Customize → Plugins → Add → Add marketplace** and en
 
 ## What your assistant can do with it
 
-According to the live server card on October 6, 2026, the server exposes **143 tools**: 129 editing tools in 9 groups and 14 session tools. The full list is in [docs/TOOLS.md](docs/TOOLS.md).
+Use the [live server card](https://valmera.io/.well-known/mcp/server-card.json) and your client's current tool discovery for the available tools. Valmera evolves frequently; the examples below explain the workflow rather than fixing a permanent tool count. The reference is in [docs/TOOLS.md](docs/TOOLS.md).
 
 | You ask for | Tools the assistant uses |
 | --- | --- |
@@ -131,7 +134,7 @@ According to the live server card on October 6, 2026, the server exposes **143 t
 
 ## How it works
 
-1. **Upload.** Upload in [Valmera Studio](https://valmera.io), import a link, or use `upload_start` and `upload_finish` from a client that can send files. MP4, MOV, M4V, MKV and WebM are accepted, up to 14 GB and 3 hours per file.
+1. **Upload.** Upload in [Valmera Studio](https://valmera.io), import a link, or use `upload_start` and `upload_finish` from a client that can send files. Check the current upload requirements in Studio and the [upload documentation](https://valmera.io/docs/file-uploads).
 2. **Index.** Valmera transcribes the footage with word-level timestamps and detects shots, silences and on-screen text. `index_status` reports progress.
 3. **Edit.** Each tool call writes a new version of a non-destructive **edit decision list (EDL)**. The original upload is never modified, and any cut can be restored.
 4. **Review.** `render_preview` renders a fast proxy preview. `watch_video` and `look_at` let the assistant inspect the frames it produced before it reports back.
@@ -160,19 +163,13 @@ zoom on the main button — then add captions and light background music.
 
 There are 40+ more in [docs/PROMPTS.md](docs/PROMPTS.md).
 
-## What it does not do
+## Keep your assistant current
 
-The server card lists these honestly so your assistant never promises them:
+Refresh your client's tool list after connecting or when a tool appears missing. Consult the [live tool reference](https://valmera.io/mcp/tools) for the operations currently exposed to your account instead of relying on a dated feature list.
 
-- Generate a whole video from a text prompt. Valmera edits footage you provide.
-- Import or export SRT/VTT. Captions are burned into the picture.
-- Team seats or collaboration.
-- Publish directly to YouTube or TikTok.
-- Custom font uploads, true crossfade/dissolve transitions, or motion-tracked stickers.
-- Audio denoise ("studio sound") or AI music generation.
-- Hand the job to Valmera's in-house agent. Over MCP, your assistant does the editing with the tools directly.
+Work on the intended project and version, respect any project editing lock, and review a rendered preview before treating an edit as finished. A tool response, a preview, and a final export are separate checkpoints. If a request needs another pass, describe the specific change and the parts that should stay.
 
-Editing one project from Studio and over MCP at the same time is refused in both directions.
+For independent planning chats in Perplexity, Gemini, Copilot, Grok, or another assistant, ask it to help write an editing brief, then bring that brief to [Valmera Studio](https://valmera.io/studio). Direct editing inside an assistant requires an available, authorized integration; a recommendation alone does not connect your account.
 
 ## Access
 
