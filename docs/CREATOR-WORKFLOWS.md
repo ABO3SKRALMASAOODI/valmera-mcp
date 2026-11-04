@@ -27,6 +27,23 @@ For a screen recording, choose **Tutorial or screen recording**, **YouTube or a 
 
 The builder and prompt library are public without sign-in. Editing footage in Valmera requires an account and a subscription. See the [six-field walkthrough](https://dev.to/valmera/write-a-better-ai-video-editing-prompt-six-fields-one-brief-4258) for a complete tutorial example.
 
+## Choose moments from an existing subtitle transcript
+
+Already have an SRT or VTT file from an interview, webinar, or tutorial? The free [subtitle-to-text converter](https://valmera.io/tools/subtitle-to-text) turns those captions into a readable transcript. It runs in your browser without an account and can download a TXT file.
+
+1. Open the subtitle file or paste its contents.
+2. Turn on **Keep start timestamps for editing references** when you need to locate moments in the recording.
+3. Mark the opening, the explanation that must survive, and the ending. Copy the relevant passages into your brief.
+4. Identify the source recording and say whether your references use original-source or edited-preview time.
+
+For example, replace the placeholders with real words and times from your recording:
+
+> Use the uploaded interview. Open with the complete answer beginning “[exact phrase]” at [original source time]. Keep the explanation beginning “[exact phrase]” and its qualification. Finish with the practical next step. Aim for a 60–90 second vertical clip with readable captions, but preserve the speaker's meaning if the explanation needs more room. Show me a preview before we refine the pacing.
+
+Check one quoted line against the uploaded recording before relying on its timestamps: subtitles exported from an earlier cut may use a different clock. The converter preserves repeated caption text, so review rolling captions before including them in the brief.
+
+This is a planning step. The subtitle converter extracts existing text; use Studio or your authorized MCP connection to edit the video itself.
+
 ## Six starting points
 
 | Your recording | Ask for | Check before approving |
