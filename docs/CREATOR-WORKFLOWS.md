@@ -86,4 +86,4 @@ For direct tool execution, use the [setup guide](https://valmera.io/mcp/setup) f
 
 Review the rendered result with sound. Check names and numbers in captions, cuts between words, subject framing, and the final invitation. Follow the current export workflow, wait for completion, and open the resulting video before publishing it.
 
-[Start with an editing brief](https://valmera.io/chatgpt-video-editor?utm_source=github&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow#first-brief) · [Current pricing](https://valmera.io/subscribe) · [More editing prompts](https://valmera.io/prompts)
+[Start with an editing brief](https://valmera.io/chatgpt-video-editor?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow#first-brief) · [Current pricing](https://valmera.io/subscribe) · [More editing prompts](https://valmera.io/prompts)
