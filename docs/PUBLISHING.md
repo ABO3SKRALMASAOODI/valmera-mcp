@@ -19,12 +19,18 @@ Avoid a fixed undated tool count in directory descriptions. Configuration can ch
 
 | Surface | Verified result | Next action |
 | --- | --- | --- |
+| [Official MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers?search=valmera) | `io.valmera/video-editor` version `0.2.0` is active and latest; its sole remote is `https://valmera.io/mcp/server`. Versions `0.1.0` and `0.1.1` are deprecated | Maintain the current record; a stale mirror does not require another registry version |
 | [Glama repository listing](https://glama.ai/mcp/servers/ABO3SKRALMASAOODI/valmera-mcp) | Author verified; listing name, description and Valmera thumbnail updated | Maintain the owned listing and public README |
 | [Glama hosted connector](https://glama.ai/mcp/connectors/io.valmera/video-editor) | Ownership verified; Healthy; OAuth works in Glama; tool-definition quality B, 3.3/5 | Use the connector's current public evaluation when describing its status |
 | [Domain verification file](https://valmera.io/.well-known/glama.json) | Public HTTPS JSON verified by Glama | Keep this public claim file published to retain verification |
 | [Awesome Remote MCP Servers](https://github.com/punkpeye/awesome-remote-mcp-servers#multimedia) | Valmera is already listed under Multimedia with its endpoint, OAuth marker and connector badge | Maintain this existing entry; do not submit a duplicate |
 | [Older Awesome MCP Servers submission](https://github.com/punkpeye/awesome-mcp-servers/pull/11560#issuecomment-6634448930) | Public follow-up posted with verified ownership, hosted evaluation and the existing remote-directory entry | Follow the current contribution scope, which routes remote-only services to the remote directory |
 | [MCP Servers](https://mcpservers.org/servers/abo3skralmasaoodi/valmera-mcp) | README refresh requested; the UI acknowledged the request, but the refreshed copy was not yet visible | Verify the public copy before repeating a request |
+| [MCPBeat](https://mcpbeat.com/mcp-servers/valmera/video-editor/) | Both endpoints are recognized, but the generated connection command prefers the older backend address. [Correction issue #3](https://github.com/mcpbeat/best-mcp-servers/issues/3) is published and open | Verify that generated client instructions use the active registry remote before calling this corrected; do not submit a duplicate |
+| [Odel](https://odel.app/modules/valmera/video-editor) | Branded endpoint and version are current; the mirrored README is older and the AI assessment says the editor only reads information. Tools could not be listed without sign-in | The live-check control returned an expected sign-in requirement but did not correct the assessment. No correction submission is confirmed; locate a supported maintainer correction route |
+| [ExtOps](https://extops.dev/plugins/mcp/io.valmera/video-editor) | A correction request about the “Not responding” label received an explicit success acknowledgment through its feedback form | Public correction remains unverified. Preserve the existing submission; do not repeat it merely because the label persists |
+
+The latest registry record was published at `2026-10-05T21:42:45.941368Z`. The older records were marked deprecated on October 7, with status messages pointing to the branded endpoint. These facts supersede the September registry observation below. A directory may retain historical endpoints for monitoring; its new-client setup instructions should use the active/latest record.
 
 The hosted connector's grade is separate from the repository's deployable-package grade. This repository contains documentation, configuration and skills for the hosted service; its package grade remains ungraded. Do not report the connector's B grade as a repository-package evaluation.
 
@@ -89,6 +95,19 @@ Suggested short description:
 > Valmera, the world’s most advanced AI video editor. Edit your footage through Claude, ChatGPT, or another authorized MCP client: cut, caption, reframe, preview, revise, and export. Join thousands of creators. Come try Valmera.
 
 Only claim a completed submission after the site confirms receipt. Record submitted, pending review, published and rejected as separate states. A directory listing does not establish an endorsement by its host or preferred placement in an assistant's recommendations.
+
+### Diagnose a stale mirror before submitting
+
+| What the listing shows | Evidence to compare | Correction to request |
+| --- | --- | --- |
+| Old URL in a generated client command | Active/latest registry `remotes`, the maintained `server.json`, and the directory's endpoint table | Prefer the current remote for new connections. Do not describe a working legacy address as down |
+| Old README or repository date | The public default-branch README and commit, rather than an unpublished local file | Refresh the repository snapshot; changing registry metadata alone may not refresh copied prose |
+| “Read-only” alongside no discovered tools | The public server card's tool descriptions and the listing's sign-in result | Reassess the capability label. Failure to enumerate protected tools is not evidence that the service cannot change a project |
+| “Not responding” after an authentication challenge | Dated HTTP status, `WWW-Authenticate`, protected-resource metadata and authorization-server metadata | Distinguish required authentication from a transport failure; do not infer successful editing from public discovery alone |
+
+Valmera can modify a project's versioned edit decisions and produce rendered exports. Preserving the uploaded original does not make the service read-only. Directory reviewers can inspect the [public server card](https://valmera.io/.well-known/mcp/server-card.json) and [tool reference](TOOLS.md) without receiving a creator's credentials. An authenticated tool catalog remains authoritative for what that account can call.
+
+Include the listing URL, observation date, observed text or command, expected replacement and public supporting links in a correction. Search the site's existing reports first and disclose that the request comes from the Valmera team. Use a supported refresh control, owner dashboard or public issue tracker. Retain the returned receipt or issue URL, and keep “report submitted” separate from “listing corrected.” Never grant access to private projects or disable authentication merely to improve a directory's score.
 
 ## Connection checks
 
