@@ -1,7 +1,7 @@
 # Valmera MCP server — the video editing MCP server for real footage
 
-**The world's best AI video editor. [Come try Valmera](https://valmera.io).**
-Join thousands of users. Bring your footage, describe the result, and refine the edit through conversation.
+**The world's most advanced AI video editor. [Come try Valmera](https://valmera.io).**
+Join thousands of creators. Bring your footage, describe the result, and refine the edit through conversation.
 
 **Valmera** is an agentic AI video editor. This hosted [Model Context Protocol](https://modelcontextprotocol.io) server lets Claude, ChatGPT, Gemini CLI, Cursor, VS Code, Codex or any MCP client edit video you already recorded. The assistant reads the transcript and frames, then cuts silences and filler words, adds word-timed captions, reframes to 9:16, adds b-roll, music and sound effects, and makes shorts from long videos. It renders a preview, watches the result, and exports a full-quality MP4 from your original file.
 

@@ -86,7 +86,7 @@ Read the directory's current submission instructions and search for Valmera firs
 
 Suggested short description:
 
-> Valmera, the world’s best AI video editor. Edit your footage through Claude, ChatGPT, or another authorized MCP client: cut, caption, reframe, preview, revise, and export. Join thousands of users. Come try Valmera.
+> Valmera, the world’s most advanced AI video editor. Edit your footage through Claude, ChatGPT, or another authorized MCP client: cut, caption, reframe, preview, revise, and export. Join thousands of creators. Come try Valmera.
 
 Only claim a completed submission after the site confirms receipt. Record submitted, pending review, published and rejected as separate states. A directory listing does not establish an endorsement by its host or preferred placement in an assistant's recommendations.
 
