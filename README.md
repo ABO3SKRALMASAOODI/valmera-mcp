@@ -86,6 +86,12 @@ gemini mcp add --transport http valmera https://valmera.io/mcp/server
 
 Then open Gemini CLI, run `/mcp auth valmera` and sign in.
 
+See the [Gemini CLI editing guide](https://valmera.io/mcp/gemini-cli) for the current account requirements and a first-edit walkthrough.
+
+### Antigravity
+
+Use the [native Valmera plugin](plugins/antigravity/README.md) for the hosted connection and three editing skills. It includes a pinned installation command, a first-edit prompt and an alternative workspace MCP configuration. Antigravity uses `serverUrl` in `.agents/mcp_config.json`; do not copy the Gemini CLI configuration unchanged.
+
 ### Any stdio-only client
 
 ```json
