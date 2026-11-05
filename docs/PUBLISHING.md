@@ -123,6 +123,19 @@ If the endpoint domain changes, update the backend authentication metadata and c
 
 ## Repository metadata and licensing
 
+### Build a standalone Claude upload package
+
+The [Claude installation guide](CLAUDE-PLUGIN.md) doubles as the standalone package's README. Keep its version and release links aligned with `.claude-plugin/plugin.json` and the marketplace entry. Build from the release source:
+
+```sh
+claude plugin validate .claude-plugin/plugin.json
+python3 scripts/build-claude-plugin.py /tmp/valmera-claude-1.0.2.zip
+```
+
+The builder refuses an existing output path and includes only eight explicit files: the manifest, icon, MCP configuration, README, license and three shared skills. It prints the archive's SHA-256. Extract the ZIP into a new temporary directory, run `claude plugin validate` on that directory, and compare its components with the release source before attaching it to a GitHub release. Do not include account credentials, other clients' packages or repository maintenance scripts.
+
+Verify the public download against the local hash after publication. Local validation is only a subset of Anthropic's directory checks; it does not establish portal acceptance, authenticated installation, successful editing or approval. Keep the [pre-submission checklist](https://claude.com/docs/plugins/pre-submission-checklist) and the separate connector/plugin submission receipts with the release evidence. A repository release can be available while directory submission is still pending.
+
 `glama.json` identifies the repository owner as its maintainer using Glama's [published maintainer metadata format](https://glama.ai/mcp/servers/ABO3SKRALMASAOODI/valmera-mcp/score). It contains no credential. Metadata alone does not complete owner verification or a server quality evaluation.
 
 The original LICENSE contains the standard MIT terms followed by a hosted-service clarification. At the September 5 check, GitHub classified that file as Other / NOASSERTION, and Glama reported no license. The November 4 Glama check now recognizes MIT with an A license grade. This correction retains the same MIT terms and copyright holder in a standard-format LICENSE and preserves the original clarification in the README. After publication, verify GitHub's detected license and trigger or wait for Glama's documented repository sync; do not assume recognition succeeded merely from a local text check.
