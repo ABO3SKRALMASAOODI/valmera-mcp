@@ -110,6 +110,8 @@ There are more clients (Zed, Cline, Continue, Goose, LibreChat, MCP Inspector) i
 
 ## Install as a Claude plugin (connector + editing skills)
 
+For a standalone ZIP, connection steps and a first-edit brief, use the [Claude plugin guide](docs/CLAUDE-PLUGIN.md) and [version 1.0.2 release](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/releases/tag/claude-v1.0.2). This repository release does not imply approval in Anthropic's public directory.
+
 This repository is also a Claude plugin. It bundles the Valmera connector with three skills that teach Claude a reliable editing workflow: [edit-video-with-valmera](skills/edit-video-with-valmera/SKILL.md), [turn-long-video-into-shorts](skills/turn-long-video-into-shorts/SKILL.md) and [website-demo-video](skills/website-demo-video/SKILL.md).
 
 In Claude Code:
@@ -203,7 +205,7 @@ Creating an account and uploading are free. Editing requires a subscription; see
 
 ## Data and privacy
 
-The plugin and connector send your editing instructions and tool arguments to Valmera at `https://valmera.io/mcp/server`, over HTTPS and authorized with OAuth. Tools return project data to your AI client: transcript text, analysis, sampled frames, preview and download links. Your footage is stored in your Valmera account and is never modified. Edits are saved as versions you can restore. Nothing is sent to any other destination by this plugin, which contains only configuration and Markdown. See the [privacy policy](https://valmera.io/legal#privacy) for collection, retention and deletion. Contact: support@valmera.io.
+The plugin and connector send your editing instructions and tool arguments to Valmera at `https://valmera.io/mcp/server`, over HTTPS and authorized with OAuth. Tools return project data to your AI client: transcript text, analysis, sampled frames, preview and download links. Your footage is stored in your Valmera account and is never modified. Edits are saved as versions you can restore. The standalone Claude ZIP contains configuration, skill instructions, documentation, a license and an icon; it runs no local server or install scripts. The repository also contains maintenance scripts and packages for other clients, which are excluded from that ZIP. See the [privacy policy](https://valmera.io/legal#privacy) for collection, retention and deletion. Contact: support@valmera.io.
 
 ## FAQ
 

@@ -9,7 +9,7 @@
       "name": "valmera",
       "source": "./",
       "description": "Edit real footage from a conversation with Valmera: cuts, captions, reframing, b-roll, music, shorts, previews and MP4 export.",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "author": { "name": "Valmera", "url": "https://valmera.io" },
       "homepage": "https://valmera.io/mcp",
       "license": "MIT",
