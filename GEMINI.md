@@ -1,12 +1,13 @@
 # Valmera video editing
 
-You have the Valmera MCP server, a hosted AI video editor for footage the user uploads to https://valmera.io.
+Valmera is a hosted AI video editor connected at `https://valmera.io/mcp/server`.
 
-- Start with `list_projects`. Upload with `upload_start`/`upload_finish` or ask the user to upload in Studio, then wait for `index_status` to report done.
-- Read before you edit: `get_transcript`, `get_words`, `find_silences`, `get_shots`, `look_at`.
-- Edit with focused tools (`cut_silences`, `remove_filler_words`, `add_captions`, `auto_reframe`, `add_music`, `make_shorts`, ...). Every edit is a new, restorable version.
-- `render_preview`, then `wait_for_job`, then `watch_video` or `look_at` with `rendered=true`. Verify the result before you report.
-- When the user approves and asks for the file: `export_final`, then `wait_for_job`, then `download_url` with `kind="final"`.
-- Valmera edits existing footage. It doesn't generate whole videos from text, and captions are burned in (no SRT). Editing requires a subscription.
+- Discover the current tools and input schemas after authenticating. Use the user's intended project and editing brief.
+- Account creation and uploads are free; editing requires a paid plan. Establish the scope and cost expectations before billable work. Use an available estimate; if no exact quote is exposed, say so and obtain approval for a bounded preview. Reuse existing scope and budget approval without exceeding it.
+- Open the project with `list_projects` and `open_project`. Upload through the current `upload_start`/file-transfer/`upload_finish` protocol or Studio, then follow `index_status` until ready.
+- Read the transcript and visual evidence before editing. Apply the tools that fit the requested cuts, captions, framing, sound and supporting visuals; confirm specialized delivery requirements against current project options.
+- Render a representative preview, follow its existing job with `wait_for_job`, and inspect the result. Distinguish source times from output times when discussing revisions.
+- For an authorized final export, call `export_final` with the project and reviewed `edl_version`, then `wait_for_job`, then `download_url` with `kind="final"`. A preview or job ID is not the final file.
+- Let an active Studio or MCP edit finish before editing the same project from another client.
 
-Full workflow: https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/skills/edit-video-with-valmera/SKILL.md
+Full workflow and task-specific skills: https://github.com/ABO3SKRALMASAOODI/valmera-mcp/tree/main/skills
