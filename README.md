@@ -165,6 +165,8 @@ zoom on the main button — then add captions and light background music.
 
 There are 40+ more in [docs/PROMPTS.md](docs/PROMPTS.md).
 
+For a product walkthrough, follow the [website-demo guide](docs/WEBSITE-DEMO.md): choose a public URL or uploaded screen recording, adapt a brief, check the recorded actions and review the exported video. It includes a real capture with event evidence and a finished example. [Start from your website URL](https://valmera.io/tools/record-website-demo?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=mcp_website_demo#start-demo).
+
 ## Keep your assistant current
 
 Refresh your client's tool list after connecting or when a tool appears missing. Consult the [live tool reference](https://valmera.io/mcp/tools) for the operations currently exposed to your account instead of relying on a dated feature list.
