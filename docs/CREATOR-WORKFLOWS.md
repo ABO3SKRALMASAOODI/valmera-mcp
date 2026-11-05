@@ -60,6 +60,7 @@ Full examples, prompts, and review checklists:
 - [Remove silence naturally](https://valmera.io/blog/remove-silence-from-video-naturally)
 - [Turn horizontal footage into vertical video](https://valmera.io/blog/horizontal-to-vertical-video-without-losing-subject)
 - [Turn a webinar into social clips](https://valmera.io/blog/turn-webinar-into-social-media-clips)
+- [Make a website demo from a URL or uploaded recording](WEBSITE-DEMO.md)
 - [Edit a screen recording into a tutorial](https://valmera.io/blog/edit-screen-recording-into-product-tutorial)
 - [Edit a UGC product video](https://valmera.io/blog/edit-ugc-product-video-ad)
 - [Make a travel story from phone clips](https://valmera.io/blog/edit-travel-video-from-phone-clips)
