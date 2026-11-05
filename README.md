@@ -71,6 +71,8 @@ Add Valmera as a custom MCP server with OAuth at `https://valmera.io/mcp/server`
 
 ### Codex CLI
 
+For the connection plus guided setup and three editing workflows, see the [ChatGPT and Codex plugin package](plugins/openai/README.md). The repository supplies a marketplace for supported local clients; public Directory approval is separate.
+
 ```sh
 codex mcp add valmera --url https://valmera.io/mcp/server
 codex mcp login valmera

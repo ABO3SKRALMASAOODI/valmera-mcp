@@ -1,0 +1,20 @@
+{
+  "name": "valmera",
+  "interface": {
+    "displayName": "Valmera video editing"
+  },
+  "plugins": [
+    {
+      "name": "valmera",
+      "source": {
+        "source": "local",
+        "path": "./plugins/openai"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "name": "valmera",
+  "version": "1.0.0",
+  "description": "Edit uploaded video through Valmera, review a preview and export the approved MP4. Hosted editing requires a paid Valmera plan.",
+  "author": {
+    "name": "Valmera",
+    "email": "support@valmera.io",
+    "url": "https://valmera.io"
+  },
+  "homepage": "https://valmera.io/mcp/chatgpt",
+  "repository": "https://github.com/ABO3SKRALMASAOODI/valmera-mcp",
+  "license": "MIT",
+  "keywords": [
+    "video-editing",
+    "captions",
+    "shorts",
+    "product-demo",
+    "mcp"
+  ],
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/get-started/SKILL.md",
+      "publication": {
+        "release_notes": "Initial ChatGPT and Codex package: OAuth MCP connection, guided setup, footage editing, shorts and website-demo skills. Package validation is separate from Directory approval and authenticated editing tests."
+      }
+    }
+  },
+  "interface": {
+    "displayName": "Valmera",
+    "shortDescription": "Edit your video with AI",
+    "longDescription": "Bring your footage, describe the edit and review the result. Valmera connects your assistant to a hosted video editor for cuts, captions, framing, audio, previews and MP4 exports. Four skills help you connect, edit a recording, choose shorts from a longer video and plan a website demo. Start with a Valmera account and footage uploaded in Studio. Account creation and uploads are free; editing requires a paid Valmera plan. ChatGPT access and usage are separate. Installing the plugin does not upload footage or start an editing job.",
+    "developerName": "Valmera",
+    "category": "Productivity",
+    "capabilities": [
+      "Video editing",
+      "Captions",
+      "Video reframing",
+      "Preview and export"
+    ],
+    "websiteURL": "https://valmera.io",
+    "supportURL": "https://valmera.io/about",
+    "privacyPolicyURL": "https://valmera.io/legal#privacy",
+    "termsOfServiceURL": "https://valmera.io/legal#terms",
+    "defaultPrompt": [
+      "Show my Valmera projects and help me choose a recording to edit.",
+      "Turn my selected recording into a captioned short, then show a preview.",
+      "Help me plan a clear product-demo video from my website walkthrough."
+    ],
+    "brandColor": "#B51D1D",
+    "brandColorDark": "#FF8A80",
+    "composerIcon": "./assets/valmera.png",
+    "logo": "./assets/valmera.png"
+  },
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}

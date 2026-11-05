@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "valmera": {
+      "url": "https://valmera.io/mcp/server",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "oauth",
+            "client": {
+              "mode": "dcr"
+            }
+          }
+        }
+      }
+    }
+  }
+}
