@@ -1,31 +1,31 @@
 ---
 name: turn-long-video-into-shorts
-description: Turn a long video, podcast, interview, webinar or livestream into vertical shorts for TikTok, Instagram Reels and YouTube Shorts with the Valmera connector. Use when the user asks for clips, shorts, highlights, viral moments or a highlight reel from a longer recording.
+description: Turn a long recording, podcast, interview or webinar into individually reviewed short MP4s with Valmera. Use when the user wants several self-contained highlights with framing and captions adapted to the intended platform.
+license: MIT
 ---
 
 # Turn a long video into shorts with Valmera
 
-Valmera can split one long recording into several short projects. Each one is a complete, self-contained story with its own reframing and captions, and each can be refined and exported separately.
+Each short has its own project, edit version and final export. Select complete stories from the source, then review the framing and captions on each deliverable.
+
+## Connection and cost
+
+Connect to `https://valmera.io/mcp/server` and authenticate using the [client setup guide](https://valmera.io/mcp/setup). Discover the current tools and input schemas in the connected session; the names below describe a workflow, not a permanent catalog.
+
+Account creation and uploads are free; editing requires a paid [Valmera plan](https://valmera.io/subscribe). Before billable work, explain the intended scope and use any cost estimate exposed by the account. If an exact quote is unavailable, say so and obtain approval for a bounded preview before proceeding. Reuse an existing explicit scope and budget approval; ask again if the work would exceed it. Do not buy credits or upgrade a plan without authorization. Review a preview before an approved final export.
 
 ## Workflow
 
-1. **Set up the source.** For a podcast or long interview, create a shorts project with `create_project` and `kind="shorts"`, then upload into it. For an existing project, open it with `open_project`. Wait for `index_status` to report done.
-2. **Read the whole conversation first.** Use `get_transcript`, which has speaker labels, plus `get_editorial_map` and `find_visual_moments` for visual beats. Pick stories that:
-   - start with a hook that makes sense without context in the first two seconds,
-   - finish their thought; never cut mid-argument,
-   - fit the length the user asked for (often 30–60 seconds).
-3. **Propose before you cut** when the user hasn't chosen moments. List each candidate with its source start and end time, a working title, and one line on why it works.
-4. **Create the shorts.** Call `make_shorts` with your chosen story arcs. Track progress with `shorts_status`, and open each short with `open_short`.
-5. **Polish each short.** Reframe to 9:16 so the speaker stays in frame (`auto_reframe`, with `compose_panels` when two people matter). Add captions with an active-word highlight, a title card or hook text, and punch-ins on key lines. `apply_short_edit_batches` applies the same kinds of edits to up to 30 shorts in one call.
-6. **Review.** Render a preview of each short (`render_preview`, `wait_for_job`) and check its opening frame, captions and framing with `look_at` and `rendered=true`.
-7. **Export when asked.** For each approved short, call `export_final`, then `wait_for_job`, then `download_url` with `kind="final"`.
+1. **Set up the source.** Open the intended project, or use `create_project` with the current shorts-project schema and upload the recording. Wait for `index_status` to report ready. Reuse the user's requested count, duration, aspect ratio and audience.
+2. **Read the conversation and visual context.** Use the transcript plus available editorial and frame evidence. Choose moments that make sense without the rest of the recording, preserve the speaker's meaning and finish their thought. A hook is useful only if the rest of the clip delivers it.
+3. **Resolve the selection.** If the user has chosen moments, use them. Otherwise present candidate source ranges, a working title and a short reason when selection needs their input; proceed within an already approved selection brief.
+4. **Create and track the shorts.** Use the current `make_shorts` schema for the selected stories, follow `shorts_status`, and open each result with `open_short`. Follow existing jobs rather than resubmitting an operation that is still running.
+5. **Polish each story.** Apply the requested framing, captions, opening text and sound. Check two-person scenes and camera changes rather than assuming one crop suits the whole clip. Use `apply_short_edit_batches` when its current schema fits an approved batch; validate a representative preview before expanding the treatment.
+6. **Review each deliverable.** Render a preview, wait for its job, and inspect the opening, cut boundaries, captions and framing. Distinguish source times from output times in revision notes. Identify each short's project and reviewed edit version.
+7. **Export approved versions.** For each authorized final, call `export_final` with that short's project and reviewed `edl_version`, then `wait_for_job`, then `download_url` with `kind="final"`. Report the actual files and any unfinished shorts separately. Do not present a preview or job receipt as a final export.
 
-## Be honest about virality
+## Delivery and outcome
 
-No tool can guarantee a clip goes viral. Say that you picked complete, hook-first stories from the transcript and visuals, and suggest the user test several.
+Confirm caption language and output files against current project options. State the destination and review each aspect ratio using the [delivery guide](https://valmera.io/docs/publishing). Publishing to an account is a separate action and needs the user's authorization.
 
-## Limits
-
-- Each short is exported separately. There's no direct posting to social platforms.
-- Reframing picks crop positions section by section, so check fast camera moves in the preview.
-- Editing requires a Valmera subscription (https://valmera.io/subscribe).
+No tool can guarantee virality. Explain why the chosen stories fit the brief and which parts of the result were actually reviewed. For one finished edit rather than several stories, use `edit-video-with-valmera` when installed.

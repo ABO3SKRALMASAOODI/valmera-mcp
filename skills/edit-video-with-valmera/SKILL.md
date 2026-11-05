@@ -1,41 +1,34 @@
 ---
 name: edit-video-with-valmera
-description: Edit a real video with the Valmera connector. Use when the user wants footage cleaned up or polished, for example removing silences, pauses or filler words, cutting retakes, adding captions or subtitles, reframing to vertical 9:16, adding b-roll, music, sound effects, zooms or titles, color grading, blurring something, or exporting the finished MP4.
+description: Edit uploaded footage through Valmera's authenticated MCP connector, review a rendered preview, and deliver an MP4. Use for conversational cuts, captions, framing, sound and visual treatments on a chosen video project.
+license: MIT
 ---
 
 # Edit a video with Valmera
 
-Valmera is a hosted AI video editor. Its connector gives you editing tools that work on footage the user uploaded to Valmera. Every edit writes a new version of a non-destructive edit decision list (EDL). The original file is never changed, and any cut can be restored.
+Valmera is a hosted AI video editor. The connected assistant calls editing tools directly; it does not delegate the edit to Valmera's in-house agent. Changes create versioned editing state and preserve the original upload.
+
+## Connection and cost
+
+Connect to `https://valmera.io/mcp/server` and authenticate using the [client setup guide](https://valmera.io/mcp/setup). Discover the current tools and input schemas in the connected session; the names below describe a workflow, not a permanent catalog.
+
+Account creation and uploads are free; editing requires a paid [Valmera plan](https://valmera.io/subscribe). Before billable work, explain the intended scope and use any cost estimate exposed by the account. If an exact quote is unavailable, say so and obtain approval for a bounded preview before proceeding. Reuse an existing explicit scope and budget approval; ask again if the work would exceed it. Do not buy credits or upgrade a plan without authorization. Review a preview before an approved final export.
 
 ## Workflow
 
-1. **Find the project.** Call `list_projects`. If the user names a video, open that project with `open_project`. If there are no projects, ask the user to upload the file at https://valmera.io or, if your client can send files, use `upload_start` and `upload_finish`. A file path in the chat doesn't upload anything.
-2. **Wait for analysis.** Call `index_status` until it reports done. Transcript, shots and silences aren't available before that.
-3. **Read before you cut.** Use `get_transcript` or `get_words` for what was said, `find_silences` for pauses, `get_shots` for camera changes, and `look_at` to see frames at exact times. Summarize what you found when the brief is vague.
-4. **Edit in focused steps.** For example:
-   - Dead air and filler: `cut_silences`, `remove_filler_words`, then check `get_kept_transcript` so no sentence lost a word.
-   - Retakes or tangents: `search_transcript`, then `cut_range` or `keep_segments`. `restore_range` undoes a cut.
-   - Captions: `add_captions`, `set_caption_style` (size, color, position, active-word highlight), `set_caption_fixes` for names, then `audit_captions`.
-   - Vertical video: `auto_reframe` to 9:16, then `look_at` with `output_times` to confirm the subject is in frame.
-   - B-roll and graphics: `research_broll`, `search_stock`, `add_stock_media`, `insert_media`, `add_title_card`, `add_text`.
-   - Audio: `find_song` or the user's file, then `add_music` (it ducks under speech), `search_sfx` and `add_sfx`, `set_master_loudness`.
-   - Emphasis: `suggest_emphasis`, `punch_in_on_emphasis`, `add_zoom`.
-5. **Render and check your own work.** Call `render_preview` with `complete=true`. Slow tools return a job id: call `wait_for_job` until it's done, and never report a job id as a finished result. Then `watch_video` or `look_at` with `rendered=true` and fix anything wrong before you report.
-6. **Report clearly.** List what changed, with output times, and anything you couldn't do.
-7. **Export when asked.** When the user approves the preview and asks for the file, call `export_final` with the project id and the reviewed `edl_version`. Then call `wait_for_job`, then `download_url` with `kind="final"`, and share the link.
+1. **Choose the project and result.** Use `list_projects` and `open_project` to identify the intended recording. Reuse the user's brief; clarify only missing decisions that materially change the edit. State the destination, aspect ratio, target duration and delivery files. For new media, use Studio or the `upload_start` → file transfer → `upload_finish` protocol. A path mentioned in chat does not upload a file.
+2. **Wait for source readiness.** Follow `index_status` until analysis is ready. Read the transcript and available visual evidence before selecting cuts. `get_transcript`, `get_words`, `get_shots`, `find_silences` and `look_at` can inform the plan when available.
+3. **Apply focused changes.** Select tools from the current session for the requested treatment. For example, `cut_silences` or `keep_segments` shapes the cut; `add_captions` and `set_caption_style` handle caption appearance; `auto_reframe` changes framing; audio and visual tools add supporting material. Use each returned schema instead of guessing arguments. Check that cuts preserve the speaker's meaning.
+4. **Review a representative preview.** Call `render_preview`; follow its existing job with `wait_for_job`. Inspect the rendered result with `look_at` or `watch_video` as supported by the client. Check cut boundaries, readable text, framing and sound. Fix a small sample before repeating a treatment across a long recording.
+5. **Report the version and clock.** Identify the project and reviewed edit version. Distinguish source timestamps from output timestamps in revision notes; a time in a shortened or reordered preview may refer to a different source moment. Describe what was verified and any unresolved requirement.
+6. **Deliver the approved version.** When final export is authorized, call `export_final` with the intended `project_id` and reviewed `edl_version`, then `wait_for_job`, then `download_url` with `kind="final"`. A job ID is a receipt, not a finished video. Return the actual final link and identify the version. Verify the downloaded file when the client can inspect it; otherwise state what still needs checking.
 
-## Good defaults
+## Requirements that change the plan
 
-- Keep natural pauses between ideas. Remove dead air, not breathing room.
-- Captions: two lines at most, readable size, placed clear of faces and on-screen text.
-- Music under speech should be quiet. Let it rise only where nobody is talking.
-- Make one change at a time when the user is reviewing, and always say which version you edited.
+- Identify approved source files and any supporting material to supply, source or create. Use the [creative-media brief](https://valmera.io/docs/ai-generation) for new visual requirements.
+- Specify caption language, names, appearance and whether delivery needs burned-in text, a subtitle file or both. Confirm the required output against current project options and the [caption guide](https://valmera.io/docs/captions).
+- Name the dialogue source, music treatment and passages needing attention. Compare a sound change with the source before extending it.
+- For multiple deliverables, review each aspect ratio and export version. Use the [delivery guide](https://valmera.io/docs/publishing) for destination requirements.
+- Let an active Studio or MCP edit finish before editing the same project from another client. On a queued or running job, continue with its existing job ID; inspect a terminal failure before retrying.
 
-## Limits to tell the user about
-
-- Valmera edits footage the user provides. It doesn't generate whole videos from text.
-- Captions are burned in. There's no SRT/VTT import or export.
-- No direct posting to YouTube or TikTok. Share the download link.
-- No audio denoise or AI music generation.
-- Editing requires a Valmera subscription (https://valmera.io/subscribe). Uploading and creating an account are free.
-- If Studio has the same project open for editing, MCP editing is refused until Studio finishes.
+For a worked result, see the [original motion-graphic trim-and-reframe example](https://valmera.io/examples/trim-and-reframe). It documents an actual cuts-and-crop export; it does not demonstrate every treatment above. For multiple stories from one recording, use the `turn-long-video-into-shorts` skill when installed.
