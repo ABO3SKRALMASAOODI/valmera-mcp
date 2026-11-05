@@ -1,0 +1,29 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "valmera",
+  "displayName": "Valmera",
+  "version": "1.0.0",
+  "description": "Edit uploaded footage with AI: cut, caption, reframe, create shorts and website demos, review previews, and export MP4s. Paid Valmera editing plan required.",
+  "logo": "assets/valmera.png",
+  "suggestedPrompts": [
+    "List my Valmera projects so I can choose a recording to edit.",
+    "Help me turn my uploaded interview into three short clips, starting with a review of the source ranges.",
+    "Plan a website demo: confirm the pages, actions, duration and editing cost before recording."
+  ],
+  "author": {
+    "name": "Valmera",
+    "url": "https://valmera.io",
+    "email": "support@valmera.io"
+  },
+  "homepage": "https://valmera.io/mcp",
+  "repository": "https://github.com/ABO3SKRALMASAOODI/valmera-mcp",
+  "license": "MIT",
+  "keywords": [
+    "video-editing",
+    "ai-video-editor",
+    "captions",
+    "shorts",
+    "website-demo",
+    "mcp"
+  ]
+}
