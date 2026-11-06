@@ -227,6 +227,12 @@ For independent planning chats in Perplexity, Gemini, Copilot, Grok, or another 
 
 ### Explore the source-linked documentation
 
+Use [Valmera on Context7](https://context7.com/abo3skralmasaoodi/valmera-mcp) to retrieve source-linked connection instructions and editing guides. The library ID is `/abo3skralmasaoodi/valmera-mcp`. In an assistant that already has Context7 connected, try:
+
+> Use Context7 library /abo3skralmasaoodi/valmera-mcp to find Valmera's connection instructions and webinar editing guide. Cite the source files, explain the sign-in and subscription requirements, and distinguish source, replay and clip timestamps.
+
+You can also [browse a public connection-context example](https://context7.com/abo3skralmasaoodi/valmera-mcp/llms.txt?topic=connect+Claude+MCP+endpoint+OAuth+subscription+export&tokens=10000). Context7 retrieves documentation; editing still requires a separate, authorized Valmera connection. Check the linked source files and live tool reference when an indexed excerpt differs from the current product.
+
 Use [Valmera's DeepWiki](https://deepwiki.com/ABO3SKRALMASAOODI/valmera-mcp) to explore the public connector repository with explanations and links back to the underlying files. Start with the [client configuration matrix](https://deepwiki.com/ABO3SKRALMASAOODI/valmera-mcp/3.1-client-configuration-matrix) for connection differences, or the [format-specific guides](https://deepwiki.com/ABO3SKRALMASAOODI/valmera-mcp/5.2-format-specific-guides) for YouTube videos, website demos and webinar replays.
 
 For a useful documentation question, name the job and the decision you need to make:
