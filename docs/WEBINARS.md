@@ -26,6 +26,8 @@ Once you approve the proposed source ranges, request the edit and a rendered pre
 
 Review the result with sound. Check words at each join, the order of demonstration steps, references such as “that result,” names in captions, and slide text at the intended viewing size. Fitting a whole slide into a portrait frame does not automatically make it readable. A higher-resolution detail or a landscape excerpt may serve the explanation better.
 
+For a detailed framing decision, use [Keep webinar slides readable in vertical video](SLIDE-READABILITY.md). It explains why fitting a full slide can leave tiny labels, compares overview and detail layouts, and includes a twelve-second framing plan plus a review record.
+
 Use your client's current tool schemas rather than hard-coding a catalog or count. The [workflow guide](WORKFLOW.md) explains preview and export checkpoints; the [tool reference](TOOLS.md) links to current operations.
 
 ## 3. Keep source, replay and clip clocks separate
