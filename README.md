@@ -213,6 +213,8 @@ For a product walkthrough, follow the [website-demo guide](docs/WEBSITE-DEMO.md)
 
 For a channel episode, use the [YouTube editing workflow](docs/YOUTUBE.md): brief the story, review focused revisions, plan standalone Shorts and check the processed upload. It includes four assistant-ready revision requests.
 
+For a recorded webinar, follow the [replay-and-clips workflow](docs/WEBINARS.md): plan the source ranges, review slide framing, keep replay and clip clocks separate, and track corrections across individually reviewed exports. It includes four assistant requests and a worked 12-minute-to-8-minute teaching example.
+
 ## Keep your assistant current
 
 Refresh your client's tool list after connecting or when a tool appears missing. Consult the [live tool reference](https://valmera.io/mcp/tools) for the operations currently exposed to your account instead of relying on a dated feature list.
