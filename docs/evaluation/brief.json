@@ -1,0 +1,112 @@
+{
+  "name": "AI video editor edit-and-revise exercise",
+  "version": "1.0.0",
+  "publisher": "Valmera",
+  "purpose": "Repeatable basic editing exercise; not competitor rankings or a broad quality benchmark.",
+  "source": {
+    "filename": "original-source.mp4",
+    "url": "https://valmera.io/examples/trim-and-reframe/original-source.mp4",
+    "sha256": "24dc72de92df8e0d212fa9ca068d3ffdacab55f74b91c32249be96e9e74defdf",
+    "bytes": 287285,
+    "durationSeconds": 25,
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "hasAudioTrack": false
+  },
+  "intervalConvention": "Start inclusive, end exclusive; every range refers to original-source time.",
+  "firstEdit": {
+    "sourceRangesSeconds": [
+      [
+        3,
+        7
+      ],
+      [
+        12,
+        16
+      ],
+      [
+        19,
+        23
+      ]
+    ],
+    "programRangesSeconds": [
+      [
+        0,
+        4
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        8,
+        12
+      ]
+    ],
+    "expectedProgramSeconds": 12,
+    "expectedProgramFramesAt30Fps": 360,
+    "aspectRatio": "1:1",
+    "crop": "center",
+    "speed": 1,
+    "addAudio": false,
+    "addCaptions": false,
+    "addTransitions": false
+  },
+  "revision": {
+    "sourceRangesSeconds": [
+      [
+        3,
+        7
+      ],
+      [
+        12,
+        14
+      ],
+      [
+        19,
+        23
+      ]
+    ],
+    "programRangesSeconds": [
+      [
+        0,
+        4
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        6,
+        10
+      ]
+    ],
+    "expectedProgramSeconds": 10,
+    "expectedProgramFramesAt30Fps": 300,
+    "change": "Shorten only the middle section by two seconds; preserve all other requested settings."
+  },
+  "measurement": {
+    "branding": "Record marks and end cards separately from program duration; judge against requirements chosen before testing.",
+    "fps": "If frame rate changes, evaluate source selection and duration; do not require the original frame count.",
+    "outcomes": [
+      "Not tested",
+      "Pass",
+      "Changes needed",
+      "Blocked"
+    ],
+    "competitorResultsIncluded": false,
+    "revisionResultIncluded": false
+  },
+  "historicalExample": {
+    "date": "2026-09-06",
+    "filename": "historical-valmera-export.mp4",
+    "evidenceFilename": "historical-evidence.json",
+    "edlVersion": 4,
+    "programSeconds": 12,
+    "totalFileSeconds": 17,
+    "observedEndCardSeconds": 5,
+    "overlaidMark": true,
+    "represents": "One historical first edit, not the revision exercise or current plan guarantees."
+  }
+}

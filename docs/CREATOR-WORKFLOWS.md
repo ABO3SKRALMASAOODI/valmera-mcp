@@ -65,6 +65,10 @@ Full examples, prompts, and review checklists:
 - [Edit a UGC product video](https://valmera.io/blog/edit-ugc-product-video-ad)
 - [Make a travel story from phone clips](https://valmera.io/blog/edit-travel-video-from-phone-clips)
 
+## Compare the editing workflow on the same footage
+
+The [edit-and-revise evaluation kit](EDITOR-EVALUATION.md) provides a small source file, two precise requests, expected source-to-program mappings and a blank CSV scorecard. Use it to check a first edit, one scoped revision and the downloaded file, then repeat the process with representative footage of your own.
+
 ## Review one editorial decision at a time
 
 Get the story right before polishing its styling. First choose the sections that belong. Then tighten pacing. Next review framing and captions. Finally listen to the mix and inspect the export. This sequence makes feedback easier to understand and reduces repeated work on sections you later remove.
