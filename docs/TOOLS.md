@@ -46,6 +46,8 @@ The live card describes versioned edit decisions that preserve the uploaded orig
 
 ## Three briefs to adapt
 
+For a worked timing map and caption corrections after a cut, see [Fix AI captions after cuts](CAPTION-REVISIONS.md). It covers one-word revisions, cues that cross removed footage, and matching subtitle files to the final export.
+
 Replace the bracketed fields with the project and version returned by your connection. These are requests for an assistant to interpret, not literal API payloads.
 
 **Transcript-led rough cut**
