@@ -61,6 +61,8 @@ For a demo clip, check that the setup and visible result survive. For a teaser, 
 
 ## 5. Correct the intended version and track affected files
 
+For this example, the demo clip uses source 05:00–06:00 and the Q&A clip uses source 08:00–09:00. The teaser joins source 01:20–01:30, 06:40–06:55 and 10:40–10:45: 10 + 15 + 5 = 30 seconds.
+
 Suppose the example's recap carries an outdated offer overlay at **source 10:40–10:45**. That appears at **replay 07:40–07:45**. A separate 30-second teaser uses the same source moment at **clip 00:25–00:30**.
 
 A correction to the replay is not evidence that the teaser changed. Track both:
