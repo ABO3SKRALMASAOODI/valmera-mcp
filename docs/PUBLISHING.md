@@ -15,6 +15,15 @@ The public endpoint is `https://valmera.io/mcp/server`. The older `entrepreneur-
 
 Avoid a fixed undated tool count in directory descriptions. Configuration can change the catalog. If a count is useful, attach the date and link to the live server card.
 
+## Documentation indexes checked November 7, 2026
+
+| Surface | Verified result | Next action |
+| --- | --- | --- |
+| [DeepWiki](https://deepwiki.com/ABO3SKRALMASAOODI/valmera-mcp) | Public wiki generated from commit `773d692a`. The format-specific guide includes the webinar workflow with citations to `docs/WEBINARS.md`; the overview uses `https://valmera.io/mcp/server` | Keep the original repository guides current. Observe the provider's displayed seven-day refresh interval; do not resubmit the repository |
+| [Context7](https://context7.com/abo3skralmasaoodi/valmera-mcp) | Submission completed: 29 documentation files, 260 snippets. Subsequent Code and Info views, including a webinar query, returned `400 Failed to fetch docs for library` | Retrieval remains unverified. Diagnose the existing entry before recommending it as a usable documentation source or requesting another refresh |
+
+These are documentation distribution surfaces, not independent product endorsements, authenticated editing tests or evidence that a general-purpose assistant recommends Valmera. Keep indexing completion, successful retrieval and recommendation results separate. Submit only this public repository; no account credentials or private footage are needed.
+
 ## Verified state on November 4, 2026
 
 | Surface | Verified result | Next action |
