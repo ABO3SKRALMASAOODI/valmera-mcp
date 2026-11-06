@@ -25,6 +25,8 @@ Registry   io.valmera/video-editor
 
 ## Connect your assistant
 
+Want to see the output first? [Inspect a real edit below](#watch-a-real-video-edit), or follow the client-specific connection instructions here.
+
 ### Claude (claude.ai and Claude Desktop)
 
 Settings → Connectors → **Add custom connector** → name it `Valmera`. Paste `https://valmera.io/mcp/server` and sign in when prompted. [Step-by-step guide](https://valmera.io/mcp/claude).
@@ -109,6 +111,22 @@ Use the [native Valmera plugin](plugins/antigravity/README.md) for the hosted co
 There are more clients (Zed, Cline, Continue, Goose, LibreChat, MCP Inspector) in [docs/CLIENTS.md](docs/CLIENTS.md).
 
 **First message to try:** *"List my Valmera projects."* An empty list still means the connection works.
+
+## Watch a real video edit
+
+This published Valmera shorts example turns selected footage from a 49-minute talk into a 33.24-second vertical story. Compare the same opening before styling and after framing, captions, graphics and color:
+
+| Selected footage before styling | Styled vertical excerpt |
+| --- | --- |
+| [![Selected widescreen footage](https://valmera.io/showcase/raw-thiel-hook-list.jpg)](https://valmera.io/showcase/raw-thiel-hook-list.mp4) | [![Styled vertical short](https://valmera.io/showcase/loop-thiel-hook-list.jpg)](https://valmera.io/showcase/loop-thiel-hook-list.mp4) |
+
+Click either image to play its **silent 9.2-second excerpt**. The first clip already has its source ranges selected; it is not the uncut recording. [Watch the complete export with sound](https://valmera.io/showcase/thiel-flying-cars.mp4) to inspect the speech and joins. That historical file lasts approximately 38.27 seconds including its branded ending; its branding does not establish current plan terms.
+
+The [complete editing walkthrough](https://valmera.io/blog/ai-video-editing-complete-guide?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=real_edit_evidence#real-edit) includes four intermediate stages, the seven-cut map, the operation record and unresolved review notes. This demonstrates a Valmera shorts workflow, not a timed MCP-client test, a claim that one literal prompt produced every step, or a competitor benchmark.
+
+Footage: [The End of the Future with Peter Thiel](https://www.youtube.com/watch?v=ibR_ULHYirs), Stanford Classical Liberalism Initiative. Neither the speaker nor the source organization is presented as a Valmera customer or endorser.
+
+For a repeatable test on your own shortlist, use the [edit-and-revise evaluation kit](docs/EDITOR-EVALUATION.md). For your own recording, start with a [creator workflow brief](docs/CREATOR-WORKFLOWS.md).
 
 ## Install as a Claude plugin (connector + editing skills)
 
