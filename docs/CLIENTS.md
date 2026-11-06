@@ -56,7 +56,7 @@ claude mcp add --transport http valmera https://valmera.io/mcp/server
 }
 ```
 
-Most of an edit is reading (`look_at`, `get_words`, `project_state`), so allowlist read-only tools. Otherwise every call asks for confirmation.
+Editing tools can change a project or start billable work. Review each tool's behavior before granting permission; do not approve all Valmera tools as read-only. If you choose to allowlist inspection tools, limit that choice to the specific operations you have verified. Keep approval for project changes, rendering and export consistent with your instructions.
 
 ## VS Code
 
