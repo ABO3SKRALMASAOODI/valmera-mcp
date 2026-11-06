@@ -215,6 +215,8 @@ For a channel episode, use the [YouTube editing workflow](docs/YOUTUBE.md): brie
 
 For a recorded webinar, follow the [replay-and-clips workflow](docs/WEBINARS.md): plan the source ranges, review slide framing, keep replay and clip clocks separate, and track corrections across individually reviewed exports. It includes four assistant requests and a worked 12-minute-to-8-minute teaching example. For slide-heavy clips, use the [vertical-video readability guide](docs/SLIDE-READABILITY.md): compare full-slide and detail views, preserve the chart's context, and inspect the final file at its intended viewing size.
 
+For captions that need a correction or no longer match a revised cut, use the [caption-revision guide](docs/CAPTION-REVISIONS.md). It distinguishes offset, drift and edit changes, works through source-to-program timing, and provides focused requests plus a delivery record.
+
 For property walkthrough footage, use the [real-estate listing workflow](https://valmera.io/use-cases/real-estate?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=real_estate_workflow): confirm the walking route, map a 60-second tour and a 30-second vertical teaser, compare crop choices, and track an open-house correction across separate exports. The clearly labeled fictional example includes [two reusable editing briefs](https://valmera.io/use-cases/real-estate#real-estate-briefs) and a [downloadable blank and filled edit pack](https://valmera.io/downloads/real-estate-listing-edit-pack.txt).
 
 ## Keep your assistant current
