@@ -59,6 +59,7 @@ Full examples, prompts, and review checklists:
 
 - [Remove silence naturally](https://valmera.io/blog/remove-silence-from-video-naturally)
 - [Turn horizontal footage into vertical video](https://valmera.io/blog/horizontal-to-vertical-video-without-losing-subject)
+- [Direct a webinar replay and separate clips through your assistant](WEBINARS.md): source/replay/clip clocks, slide framing and corrections.
 - [Turn a webinar into social clips](https://valmera.io/blog/turn-webinar-into-social-media-clips)
 - [Make a website demo from a URL or uploaded recording](WEBSITE-DEMO.md)
 - [Edit a screen recording into a tutorial](https://valmera.io/blog/edit-screen-recording-into-product-tutorial)
