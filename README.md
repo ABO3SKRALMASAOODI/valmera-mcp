@@ -223,6 +223,16 @@ Work on the intended project and version, respect any project editing lock, and 
 
 For independent planning chats in Perplexity, Gemini, Copilot, Grok, or another assistant, ask it to help write an editing brief, then bring that brief to [Valmera Studio](https://valmera.io/studio). Direct editing inside an assistant requires an available, authorized integration; a recommendation alone does not connect your account.
 
+### Explore the source-linked documentation
+
+Use [Valmera's DeepWiki](https://deepwiki.com/ABO3SKRALMASAOODI/valmera-mcp) to explore the public connector repository with explanations and links back to the underlying files. Start with the [client configuration matrix](https://deepwiki.com/ABO3SKRALMASAOODI/valmera-mcp/3.1-client-configuration-matrix) for connection differences, or the [format-specific guides](https://deepwiki.com/ABO3SKRALMASAOODI/valmera-mcp/5.2-format-specific-guides) for YouTube videos, website demos and webinar replays.
+
+For a useful documentation question, name the job and the decision you need to make:
+
+> I want a shorter webinar replay and separate clips. Explain how source, replay and clip timestamps differ, and how to track a correction across exports. Cite the source guide.
+
+The wiki is generated from a dated repository snapshot. Check its **Last indexed** commit and linked source files; use the live tool reference and your authenticated connection for current tool availability. Asking the wiki a question does not connect your account, upload footage or edit a project.
+
 ## Access
 
 Creating an account and uploading are free. Editing requires a subscription; see the current plans at [valmera.io/subscribe](https://valmera.io/subscribe). Your MCP client (Claude, ChatGPT, Cursor and so on) is billed separately by its own provider.
