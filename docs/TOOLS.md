@@ -1,80 +1,77 @@
-# Valmera MCP tool catalog
+# Valmera MCP tools: find the right operation for your video edit
 
-These are the tools listed by the live server card at https://valmera.io/.well-known/mcp/server-card.json on October 6, 2026: **143 tools**, made up of 129 editing tools in 9 groups and 14 session tools.
+Use Valmera's tools to work on footage you already recorded: inspect the source, shape the edit, review a rendered version and export the approved result. The assistant chooses operations from the tools available to its connection.
 
-The catalog can change between deployments, and a tool whose backing service isn't configured is hidden from `tools/list`. Your client's own `tools/list` response is the source of truth for names and argument schemas. Human-readable descriptions are at https://valmera.io/mcp/tools.
+**Start here:** [connect your assistant](https://valmera.io/mcp/setup) · [live tool reference](https://valmera.io/mcp/tools) · [public server card](https://valmera.io/.well-known/mcp/server-card.json)
 
-## Reading the footage (20)
+The public card was checked on **November 7, 2026**. It described 217 tools: 203 editing tools across nine groups and 14 session tools. This is a dated observation, not a permanent catalog or proof that every operation succeeds for every account.
 
-Read the transcript, words, shots, silences, audio analysis, burned-in text and frames before deciding anything.
+## Discover tools before planning the edit
 
-`find_burned_text`, `find_footage`, `find_silences`, `find_song`, `find_visual_moments`, `get_audio_analysis`, `get_editorial_map`, `get_edl`, `get_kept_transcript`, `get_shots`, `get_transcript`, `get_video_info`, `get_words`, `list_assets`, `look_at`, `look_at_asset`, `read_skill`, `search_sfx`, `search_stock`, `search_transcript`
+Your authenticated client's `tools/list` response is authoritative for the tools and input schemas available to that connection. The public server card helps you discover the published catalog without sharing credentials. Project state, media, permissions and configured services still matter.
 
-## Cutting (6)
+Refresh discovery after reconnecting or when an expected tool is missing. Read the current argument schema before constructing a call. Do not invent arguments from a tool name or treat this guide's examples as a complete inventory.
 
-Remove dead air, filler words and chosen passages; keep or restore ranges against the source or the edited output.
+For example, the current public schema for `export_final` requires both `project_id` and `edl_version`: a project selected for navigation is not a substitute for an explicit export target. Record the reviewed version before requesting the final file.
 
-`cut_output_range`, `cut_range`, `cut_silences`, `keep_segments`, `remove_filler_words`, `restore_range`
+## Choose tools by the result you want
 
-## Captions and on-screen text (12)
+These are representative names present in the checked card. Follow their current descriptions and schemas for behavior and supported settings.
 
-Word-timed captions, styles, fixes and mutes, titles, kinetic text and text behind the subject.
+| Editing job | Useful starting points | What to establish before applying changes |
+| --- | --- | --- |
+| Find the right spoken passage | `get_transcript`, `get_words`, `search_transcript`, `get_kept_transcript` | Identify the passage in the source and distinguish it from the currently kept edit |
+| Understand the footage visually | `get_video_info`, `get_shots`, `find_visual_moments`, `look_at` | Inspect the relevant frames and what must remain visible |
+| Cut a passage or tighten pacing | `cut_range`, `cut_output_range`, `keep_segments`, `cut_silences`, `remove_filler_words`, `restore_range` | Name the timing basis and preserve complete meaning, speech and necessary pauses |
+| Add or revise captions | `add_captions`, `set_caption_style`, `set_caption_fixes`, `audit_captions` | Separate spelling corrections, caption appearance and changes to the spoken recording |
+| Reframe for a new format | `auto_reframe`, `set_frame`, `add_aspect_shift`, `deliver_aspects` | Specify the output format, subject and text or demonstrations that must stay readable |
+| Shape music and sound | `list_music_library`, `add_library_music`, `add_music`, `add_sfx`, `set_master_loudness`, `audit_audio_mix` | Identify the intended assets and balance them against speech in the preview |
+| Add supporting visuals or a demo | `research_broll`, `source_broll`, `insert_media`, `add_overlay`, `record_website_demo` | State the source material, placement and visible outcome; inspect captured actions |
+| Build typography and motion | `add_typeset`, `add_motion_graphic`, `compose_panels`, `import_font`, `audit_motion` | Define the visual treatment and test a representative passage before expanding it |
+| Adjust color or a region | `set_color_grade`, `match_grade`, `set_grade_window`, `blur_region`, `erase_region` | Identify the affected shot or region and what should remain unchanged |
+| Create short versions | `make_shorts`, `shorts_status`, `open_short`, `apply_short_edit_batches` | Track each child project's identity and version separately |
+| Review and deliver | `render_preview`, `wait_for_job`, `watch_video`, `export_final`, `download_url` | Distinguish an edit saved, a preview rendered and a downloadable final file |
 
-`add_captions`, `add_kinetic_text`, `add_text`, `add_text_behind`, `add_title_card`, `audit_captions`, `erase_burned_text`, `remove_text`, `set_caption_fixes`, `set_caption_mutes`, `set_caption_style`, `set_text_motion`
+The broader creative workflow is covered in [creative media and generated visuals](https://valmera.io/docs/ai-generation). Ask for the required result and let the current catalog determine the available route; the presence or absence of a name in this short table does not establish a product-wide capability limit.
 
-## Framing and motion (17)
+## From a connected account to a reviewed file
 
-Reframe to any aspect ratio, punch-in zooms and zoom paths, speed changes, freeze frames, screen frames and cursor enhancement.
+1. **Identify the project.** Use `list_projects` and inspect the intended project with `open_project` or `project_state`. Keep its explicit identifier with subsequent requests. An empty project list is different from a failed connection.
+2. **Prepare the media.** Upload through Studio, or follow `upload_start` and `upload_finish` from a client that can send the file. Use `index_status` to check when the source analysis is ready. See [file uploads](https://valmera.io/docs/file-uploads).
+3. **Agree on the edit.** Read the transcript and relevant frames. Name the desired output, required content, source ranges and parts that should stay unchanged. Use the available tools to make a versioned edit.
+4. **Review the preview.** Request a representative rendered preview, follow any job identifier until a terminal result, and inspect the actual output. Listen to speech and joins; check captions, framing and visible claims.
+5. **Export the reviewed version.** Supply the project and version required by the current export schema. A queued or running response is pending work. After completion, obtain the download link and open the resulting file.
 
-`add_aspect_shift`, `add_freeze_frame`, `add_screen_takeover`, `add_zoom`, `add_zoom_path`, `auto_reframe`, `enhance_cursor`, `remove_aspect_shift`, `remove_cursor_enhance`, `remove_screen_frame`, `remove_screen_takeover`, `remove_speed`, `remove_zoom`, `remove_zoom_path`, `set_frame`, `set_screen_frame`, `set_speed`
+The live card describes versioned edit decisions that preserve the uploaded original. It also states that simultaneous Studio and MCP editing of the same project is refused. Respect that project lock and resolve which editor is active before continuing.
 
-## Audio (20)
+## Three briefs to adapt
 
-Music selection, fit and beat alignment, sound effects, voiceover, gain, loudness and stem separation.
+Replace the bracketed fields with the project and version returned by your connection. These are requests for an assistant to interpret, not literal API payloads.
 
-`add_music`, `add_sfx`, `add_voiceover`, `add_web_sfx`, `audit_audio_mix`, `audition_sfx_candidates`, `beat_align_cuts`, `extract_audio`, `fetch_sfx`, `move_sfx`, `remove_music`, `remove_sfx`, `remove_voiceover`, `review_audio`, `separate_music`, `set_audio_gain`, `set_master_loudness`, `set_music_fit`, `set_volume`, `swap_music`
+**Transcript-led rough cut**
 
-## Colour and finishing (8)
+> In project [project ID], inspect version [version] and the source transcript. Propose a shorter explanation of [topic]. Keep the complete claim, its qualifications and the visible demonstration. List proposed source ranges before applying them. After approval, render a preview and report the new version and any unresolved review issues.
 
-Color grades and looks, stylize, enhancement, fades and transitions.
+**A caption correction without a new cut**
 
-`add_stylize`, `apply_look`, `enhance_video`, `remove_stylize`, `set_color_grade`, `set_fades`, `set_grade_custom`, `set_transitions`
+> In project [project ID], version [version], correct the caption spelling of [name] in the passage beginning [quoted words]. Keep the spoken recording, cuts, framing and duration unchanged. Discover the available caption-correction tool, apply the scoped change, then show a preview where I can check it.
 
-## Media, generation and screen capture (13)
+**A focused visual revision**
 
-Insert clips, overlays and stock media, fetch URLs, and record or showcase a website demo.
+> In project [project ID], version [version], improve the readability of [specific title or demonstration] during [identified passage]. Keep the story and spoken audio unchanged. Explain the proposed visual treatment, test it on that passage and show the rendered preview before extending it.
 
-`add_overlay`, `add_stock_media`, `fetch_url`, `insert_media`, `move_insert`, `move_overlay`, `record_website`, `record_website_demo`, `remove_insert`, `remove_overlay`, `set_insert_window`, `set_overlay_motion`, `showcase_demo`
+## Missing tools, pending jobs and explicit exclusions
 
-## Repair and censoring (6)
+A missing tool does not by itself prove that Valmera cannot perform the underlying task. Check current discovery and account requirements; the public card states that tools with unconfigured backing services are hidden. Use the [connection troubleshooting guide](CONNECTION-TROUBLESHOOTING.md) for sign-in, missing-tool and transport checks.
 
-Blur or erase regions and cover problem frames.
+Conversely, a listed name is not proof of a completed edit. Inspect the result and report unresolved work accurately. If a job remains running, continue observing that job instead of repeating the mutation merely because a wait returned.
 
-`add_color_screen`, `add_corrupt_screen`, `blur_region`, `erase_region`, `remove_blur`, `remove_erase`
+On November 7, the public card's only explicit `notSupported` entry was **delegating edits to Valmera's in-house agent**. Connected assistants use the direct editing tools. Older documentation's broader exclusion list is not the current card. Removal of an old exclusion is not a promise that every conceivable request is supported; consult current schemas and verify the requested output.
 
-## Editing (27)
+## Continue with your footage
 
-Batch edits, shorts, b-roll research, emphasis, editorial graphics, typography scenes, panels and previews.
-
-`add_custom_filter`, `add_vector_graphic`, `apply_edit_batch`, `ask_user`, `bind_motion_motif`, `compare_uploaded_media`, `compose_panels`, `expand_toolset`, `justify_verification_findings`, `make_shorts`, `open_visual_page`, `punch_in_on_emphasis`, `remove_custom_filter`, `remove_editorial_graphic`, `remove_picture_card`, `remove_stem_mix`, `remove_typography_scene`, `remove_vector_graphic`, `render_preview`, `research_broll`, `reset_edit`, `set_editorial_graphic`, `set_picture_card`, `set_typography_scene`, `set_vector_graphic`, `start_media_sequence`, `suggest_emphasis`
-
-## Session tools (14)
-
-Projects, uploads, indexing status, jobs, shorts, previews, final export and download links: the parts of Studio a headless caller needs.
-
-`apply_short_edit_batches`, `create_project`, `download_url`, `export_final`, `index_status`, `list_projects`, `open_project`, `open_short`, `project_state`, `shorts_status`, `upload_finish`, `upload_start`, `wait_for_job`, `watch_video`
-
-## Not supported
-
-The server card lists these explicitly:
-
-- delegating edits to Valmera's in-house agent
-- text-to-video generation of a whole video
-- SRT/VTT import or export (captions are burned in)
-- team seats or collaboration
-- direct publishing to YouTube or TikTok
-- custom font uploads
-- true crossfade/dissolve transitions
-- motion-tracked overlays or stickers
-- denoise / studio sound
-- AI music generation
+- [Creator workflow briefs](CREATOR-WORKFLOWS.md): choose a practical first edit.
+- [Webinar replay and clips](WEBINARS.md): preserve source, replay and clip timing.
+- [Website demos](WEBSITE-DEMO.md): inspect capture actions and the final result.
+- [Edit-and-revise evaluation kit](EDITOR-EVALUATION.md): compare tools with the same footage and evidence.
+- [Current plans](https://valmera.io/subscribe): account creation and upload are free; editing requires a subscription. Your assistant provider's billing is separate.
