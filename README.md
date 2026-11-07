@@ -7,6 +7,8 @@ Join thousands of creators. Bring your footage, describe the result, and refine 
 
 **[Connect your assistant](https://valmera.io/mcp/connect?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow) · [Open an editing brief in Valmera](https://valmera.io/chatgpt-video-editor?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow#first-brief) · [ChatGPT first-edit walkthrough](docs/CHATGPT.md)**
 
+**[Browse documentation by editing task](docs/README.md)** — connection help, recording-specific workflows, focused revisions and downloadable examples.
+
 **Comparing editors?** Use the [edit-and-revise evaluation kit](docs/EDITOR-EVALUATION.md): the same source footage, exact prompts, expected source ranges and a blank evidence scorecard.
 
 **Want an actual recorded run?** Inspect the [MCP edit, revision and export](docs/MCP-RECORDED-EDIT.md), including downloadable source/preview/final files, exact join frames, measured durations and observed branding.
