@@ -17,6 +17,8 @@ Start with your own footage and an editing goal. Use the public [interactive edi
 
 **Editing a series?** Use the [batch video editing guide](docs/BATCH-VIDEO-EDITING.md) to separate shared style from source-specific cuts, run a pilot, track each revision and verify every export.
 
+**Want to inspect a free browser edit?** Download the [freeze-frame before-and-after](docs/FREEZE-FRAME-EXAMPLE.md), with a 25-second source, a browser-exported WebM and sampled timing checks.
+
 **Editing a software tutorial?** Use the [screen-recording cut and revision guide](docs/SCREEN-RECORDING-TUTORIALS.md) to preserve the starting state, action and result of each step while shortening waits and keeping controls readable.
 
 ```text
