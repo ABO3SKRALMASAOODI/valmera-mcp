@@ -22,7 +22,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 
 | Recording or task | Guide and practical artifact |
 | --- | --- |
-| Interview | [Traceable paper edit](INTERVIEW-PAPER-EDIT.md) and [review worksheet](INTERVIEW-REVIEW-WORKSHEET.md) |
+| Interview | [Editor workflow comparison and traceable paper edit](INTERVIEW-PAPER-EDIT.md), with a [trial and review worksheet](INTERVIEW-REVIEW-WORKSHEET.md) |
 | Podcast clips | [Compare ten clipping workflows and select a complementary clip set](PODCAST-CLIPS.md), with a [blank selection and delivery worksheet](PODCAST-CLIP-WORKSHEET.md) |
 | Screen recording or software tutorial | [Preserve the starting state, action and result](SCREEN-RECORDING-TUTORIALS.md) |
 | Website demonstration | [Plan and make a website demo](WEBSITE-DEMO.md) |

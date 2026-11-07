@@ -13,6 +13,25 @@ Copy this page into your working notes. Replace the placeholders with evidence f
 - Current product, plan and assistant/client:
 - Upload permission and any access restrictions:
 
+## Optional editor comparison
+
+Use the same source passage and brief in each product. Record any different setup or manual preparation; do not describe this as a controlled comparison if the inputs differ materially.
+
+| Trial field | Observed evidence |
+| --- | --- |
+| Product, plan, date and application version if visible | [record] |
+| Source passage, exact brief and manual preparation | [record] |
+| Required claim and qualification in main story | [retained / lost / not checked, with preview time] |
+| Required claim and qualification in standalone clip | [retained / lost / not checked, with clip time] |
+| Quote traceability and verified speaker | [source reference / unresolved] |
+| Focused correction and unrelated changes | [requested change / actual result] |
+| Download or timeline import | [file and receiving app / observed result] |
+| Hands-on review time and waiting time | [record separately] |
+| Actual billed cost or credits consumed | [observed amount / not available] |
+| Remaining work | [specific issue / no issue found in stated checks] |
+
+A claim preserved in the main story can still be distorted in a standalone clip. Review and record both.
+
 ## Source ledger
 
 Use original-source times. Record ranges as start-inclusive, end-exclusive, as in the worked example; note the frame rate if using frame-accurate times. Verify speaker identity and wording against the recording. Add rows as needed.
