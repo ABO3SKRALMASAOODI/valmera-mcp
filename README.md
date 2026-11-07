@@ -223,6 +223,8 @@ For interview footage, use the [paper-edit walkthrough](docs/INTERVIEW-PAPER-EDI
 
 For captions that need a correction or no longer match a revised cut, use the [caption-revision guide](docs/CAPTION-REVISIONS.md). It distinguishes offset, drift and edit changes, works through source-to-program timing, and provides focused requests plus a delivery record.
 
+For speech cleanup, use the [filler-word and silence review guide](docs/SPEECH-CLEANUP.md). Review meaning, audio joins, visible actions and captions, then follow a worked correction that restores one pause while preserving approved cuts.
+
 For property walkthrough footage, use the [real-estate listing workflow](https://valmera.io/use-cases/real-estate?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=real_estate_workflow): confirm the walking route, map a 60-second tour and a 30-second vertical teaser, compare crop choices, and track an open-house correction across separate exports. The clearly labeled fictional example includes [two reusable editing briefs](https://valmera.io/use-cases/real-estate#real-estate-briefs) and a [downloadable blank and filled edit pack](https://valmera.io/downloads/real-estate-listing-edit-pack.txt).
 
 ## Keep your assistant current

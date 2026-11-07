@@ -60,6 +60,7 @@ For a complete interview selection record, use the [paper-edit walkthrough](INTE
 Full examples, prompts, and review checklists:
 
 - [Remove silence naturally](https://valmera.io/blog/remove-silence-from-video-naturally)
+- [Review filler-word and silence cleanup, then restore a damaged pause](SPEECH-CLEANUP.md)
 - [Turn horizontal footage into vertical video](https://valmera.io/blog/horizontal-to-vertical-video-without-losing-subject)
 - [Direct a webinar replay and separate clips through your assistant](WEBINARS.md): source/replay/clip clocks, slide framing and corrections.
 - [Turn a webinar into social clips](https://valmera.io/blog/turn-webinar-into-social-media-clips)
