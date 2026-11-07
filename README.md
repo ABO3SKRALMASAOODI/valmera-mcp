@@ -15,6 +15,8 @@ Join thousands of creators. Bring your footage, describe the result, and refine 
 
 Start with your own footage and an editing goal. Use the public [interactive editing brief builder](https://valmera.io/prompts#prompt-builder), then follow the [creator workflow briefs](docs/CREATOR-WORKFLOWS.md) for your first project.
 
+**Editing a series?** Use the [batch video editing guide](docs/BATCH-VIDEO-EDITING.md) to separate shared style from source-specific cuts, run a pilot, track each revision and verify every export.
+
 **Editing a software tutorial?** Use the [screen-recording cut and revision guide](docs/SCREEN-RECORDING-TUTORIALS.md) to preserve the starting state, action and result of each step while shortening waits and keeping controls readable.
 
 ```text

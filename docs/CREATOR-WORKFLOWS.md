@@ -72,6 +72,8 @@ Full examples, prompts, and review checklists:
 
 ## Compare the editing workflow on the same footage
 
+For a series of recordings or several layouts of one video, use the [batch editing guide](BATCH-VIDEO-EDITING.md). It includes a shared brief, source-specific notes, a pilot, a delivery queue and a worked example of changing one video without changing another.
+
 Choosing where to edit? The [AI video editing agents guide](VIDEO-EDITING-AGENTS.md) explains the Studio, connected-assistant and local-editor routes, with questions to check on your own recording.
 
 The [edit-and-revise evaluation kit](EDITOR-EVALUATION.md) provides a small source file, two precise requests, expected source-to-program mappings and a blank CSV scorecard. Use it to check a first edit, one scoped revision and the downloaded file, then repeat the process with representative footage of your own.
