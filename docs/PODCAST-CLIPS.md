@@ -1,5 +1,7 @@
 # AI podcast clip generators: choose the right workflow and build a useful clip set
 
+![Editorial illustration of a podcast microphone and a film strip beside three distinct clip cards.](assets/podcast-clip-selection.png)
+
 An AI podcast clip generator finds candidate moments in an episode and helps turn them into shorter deliverables. Start by checking whether it accepts your source and produces the format you need: an audio excerpt, an audiogram or a video clip. Then evaluate the selections as a set. Three clips that answer different audience questions can serve your episode better than three versions of the same quote.
 
 This guide is published by Valmera. The vendor comparison below summarizes linked product documentation inspected on **7 November 2026**; it is not a hands-on benchmark or a ranking. The worked episode is fictional. Use the [blank clip-selection worksheet](PODCAST-CLIP-WORKSHEET.md) with your own recording to turn the method into a reviewable result.
