@@ -8,6 +8,8 @@ This guide shows how to brief an AI video editor, plan cuts, review zooms and re
 
 Valmera edits uploaded footage, including through its hosted MCP connector. Use an authorized client and discover its current tools before editing. Account creation and uploads are free; AI editing requires a subscription. Your assistant's availability and charges are separate.
 
+For another-language subtitles with the original voice, use the [software-tutorial subtitle handoff](TUTORIAL-SUBTITLE-HANDOFF.md): visible UI labels, conditional instructions, revisions and delivery files.
+
 ## Start with the viewer's task
 
 Write the finished outcome before asking for a faster cut: “A first-time user can filter this demo report by month, apply the filter and confirm the saved result.” That gives the editor a reason to preserve the month picker and confirmation screen even if neither contains speech.

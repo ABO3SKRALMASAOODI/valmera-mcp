@@ -35,6 +35,8 @@ Use one approved passage containing a name, a number, a negation or condition, a
 | Actual cost, including revisions and export | | | |
 | Exact output filename and unresolved issues | | | |
 
+For a filled-in terminology and correction scenario, see the [software-tutorial handoff](TUTORIAL-SUBTITLE-HANDOFF.md).
+
 ## Record a correction
 
 | Cue or passage | Source meaning | Translation issue | Agreed correction | Timing or layout change | Reviewed version |

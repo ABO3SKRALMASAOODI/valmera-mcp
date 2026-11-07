@@ -38,7 +38,22 @@ These were the first ten results returned by our web search for “AI translate 
 | [Rask](https://www.rask.ai/tools/translate-text-in-video) | Translates text in the picture, including slides and burned-in subtitles, with an option to retain audio. | Are small labels, moving text and longer translations readable in the finished frame? |
 | [CapCut](https://www.capcut.com/resource/translate-a-video) | Documents bilingual captions and a separate video-dubbing path. | Are you using the caption translation control or the audio translator, and what does the export contain? |
 
-For Valmera, start with a representative passage and a specific brief through Studio or your connected assistant. Discover the available tools, request the intended text and audio treatment, and inspect the result before expanding to the full recording. The [recorded caption-style example](CAPTION-STYLE-EXAMPLE.md) demonstrates a caption revision with identical decoded audio between previews; it does **not** establish translation accuracy or a multilingual end-to-end test.
+For Valmera, start with a representative passage and a specific brief through Studio or your connected assistant. Discover the available tools, request the intended text and audio treatment, and inspect the result before expanding to the full recording. The [recorded caption-style example](CAPTION-STYLE-EXAMPLE.md) demonstrates a caption revision with identical decoded audio between previews; it does **not** establish translation accuracy. The separate [Spanish example](SUBTITLE-TRANSLATION-EXAMPLE.md) records supplied translated wording, rendering and export, with its limitations disclosed.
+
+## Compare familiar editors for a subtitle-only tutorial
+
+For an English software tutorial with Spanish subtitles, compare the complete path from source transcript to corrected text and final delivery. These additional official sources were checked November 7, 2026; they describe workflows, not measured translation quality.
+
+| Candidate | What its official documentation establishes | What to verify on your tutorial |
+| --- | --- | --- |
+| [VEED](https://support.veed.io/en/articles/11508601-how-to-translate-your-subtitles) | Adds translated subtitle tracks automatically, manually or from SRT/VTT. Its guide distinguishes editable subtitles from text already burned into the picture. | Correct a visible button name, select the intended language, and export a sample before committing to the full recording. |
+| [Adobe Premiere](https://helpx.adobe.com/premiere/desktop/add-text-images/insert-captions/translate-captions.html) | Translates generated or imported captions into a new timeline track, with track visibility and styling controls. | Check the active language track and the delivery format; translating a track is not the same operation as exporting it. |
+| [Descript](https://help.descript.com/export-and-share/subtitles) | Documents separate SRT/VTT exports and distinguishes them from captions that remain on the picture. This export source alone does not establish its translation workflow. | Confirm how reviewed Spanish text reaches both the requested video and any separate subtitle file. |
+| [Valmera recorded example](SUBTITLE-TRANSLATION-EXAMPLE.md) | Shows supplied Spanish wording rendered over English speech, matching decoded audio in the comparable previews, and a revised final MP4. | Try your terminology, passage length and requested delivery. The example is not an automatic-translation accuracy test or proof of separate SRT export. |
+
+CapCut's documented caption route appears in the table above. Use the same source passage and correction request for whichever candidates you shortlist. Record the delivered files and review effort in the [worksheet](SUBTITLE-TRANSLATION-WORKSHEET.md); do not score a vendor from the presence of a feature name alone.
+
+For a concrete 20-minute tutorial brief, a terminology table, a deliberately broken translation and a later cut, use the [software-tutorial subtitle handoff example](TUTORIAL-SUBTITLE-HANDOFF.md).
 
 ## Prepare the approved cut and a small glossary
 
