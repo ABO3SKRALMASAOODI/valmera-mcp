@@ -11,6 +11,7 @@ Start with the edit you want to make. These public guides cover connecting an as
 | Choose between your own assistant and Valmera AI | [Plans, allowances and editing routes](CLIENTS.md#choose-the-plan-for-your-editing-route) |
 | Make a first edit through ChatGPT | [ChatGPT walkthrough](CHATGPT.md) |
 | Use the Claude plugin | [Claude plugin setup](CLAUDE-PLUGIN.md) |
+| Choose a Gemini video-editing route or connect Gemini CLI | [Gemini video workflow](GEMINI-VIDEO-EDITING.md) |
 | Prepare a brief with Grok and choose an execution route | [Grok workflow](GROK.md) |
 | Resolve sign-in, authorization or missing tools | [Connection troubleshooting](CONNECTION-TROUBLESHOOTING.md) |
 | Find the operation that matches the edit | [MCP tool guide](TOOLS.md) |
