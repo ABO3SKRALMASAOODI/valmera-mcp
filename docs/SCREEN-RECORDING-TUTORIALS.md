@@ -10,6 +10,8 @@ Valmera edits uploaded footage, including through its hosted MCP connector. Use 
 
 For another-language subtitles with the original voice, use the [software-tutorial subtitle handoff](TUTORIAL-SUBTITLE-HANDOFF.md): visible UI labels, conditional instructions, revisions and delivery files.
 
+For a tutorial delivered inside a course, use the [course lesson guide and review worksheet](COURSE-LESSON-EDITING.md) to track prerequisites, practice material, caption versions and the learner-facing release.
+
 ## Start with the viewer's task
 
 Write the finished outcome before asking for a faster cut: “A first-time user can filter this demo report by month, apply the filter and confirm the saved result.” That gives the editor a reason to preserve the month picker and confirmation screen even if neither contains speech.
