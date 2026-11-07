@@ -1,0 +1,43 @@
+VALMERA — FIRST EDIT, FOCUSED REVISION, DELIVERY
+Free prompt templates for footage you already have.
+Guide: https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/PROMPTS.md
+Replace bracketed fields. These are instructions to adapt, not recorded results.
+
+FIRST EDIT
+Use [recording name or project]. Make a [format and approximate length] video
+for [audience] that helps them [understand or do one thing]. Build the story
+around [specific moments or quoted lines]. Keep [required explanation,
+qualification, demonstration or ending]. Use [caption and visual treatment];
+keep [audio preference]. Inspect the recording, make the edit and show me a
+preview. Explain any requirement you could not fulfill and identify the
+version I am reviewing.
+
+FOCUSED REVISION — USE AFTER REVIEWING THE FIRST PREVIEW
+In [preview version], at [time on that preview], change [one thing] to
+[desired result]. The moment is [exact phrase or visible action]. Preserve
+[approved cuts, other captions, framing and sound]. Render the revised version
+and identify any additional change. If this restores or removes footage,
+move later timed elements with their intended source moments.
+
+DELIVERY — USE AFTER APPROVING A VERSION
+Export the version I approved: [project and preview/version]. Use [required
+dimensions, format and delivery conditions]. Give me the completed download,
+identify the exported version and report its total duration and any branding.
+Do not substitute a different draft.
+
+KEEP WITH YOUR PROJECT
+Recording/project:
+Approved preview/version:
+Source-time references used:
+Preview-time references used:
+Requested revision:
+Revised preview/version:
+Exported file/version:
+What I checked in the downloaded file:
+Unresolved changes:
+
+Use Studio: https://valmera.io/studio
+Connect an assistant: https://valmera.io/mcp/setup
+Current plans: https://valmera.io/subscribe
+Account creation and uploads are free; AI editing needs eligible paid access.
+External assistant access and fees are separate.

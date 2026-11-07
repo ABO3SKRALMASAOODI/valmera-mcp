@@ -18,7 +18,7 @@ For free editing, use the [export check and delivery record](FREE-EXPORT-CHECK.m
 | Prepare a brief with Grok and choose an execution route | [Grok workflow](GROK.md) |
 | Resolve sign-in, authorization or missing tools | [Connection troubleshooting](CONNECTION-TROUBLESHOOTING.md) |
 | Find the operation that matches the edit | [MCP tool guide](TOOLS.md) |
-| Write a specific request | [Prompt examples](PROMPTS.md) and [creator briefs](CREATOR-WORKFLOWS.md) |
+| Write a specific request | [45 editing and revision prompts with recorded comparisons](PROMPTS.md), [downloadable handoff templates](PROMPT-HANDOFF.txt) and [creator briefs](CREATOR-WORKFLOWS.md) |
 
 Use the current tool schemas returned by your authorized connection. A successful connection check establishes access, not a completed edit. For client-neutral installation instructions, see [the agent setup guide](../llms-install.md).
 
