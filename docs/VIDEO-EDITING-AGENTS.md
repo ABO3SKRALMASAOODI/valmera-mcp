@@ -1,4 +1,4 @@
-# AI video editing agents: choose a workflow, make an edit, test the revision
+# AI video editors and editing agents for footage you already recorded
 
 An **AI video editing agent** takes an editing goal, chooses and performs a sequence of operations, and lets you refine the result in the same project. For a creator, the useful question is whether it can turn your recording into a video you can review, revise and deliver.
 
@@ -61,6 +61,11 @@ The following are vendor-described starting points, not measured scores. Read th
 
 | Product | What its own page describes | What to investigate in your trial |
 | --- | --- | --- |
+| [Descript Underlord](https://www.descript.com/underlord) | An agent that reviews video and scripts, accepts feedback and works alongside text-based editing, scenes and layouts. | After shortening an answer, can you restore its qualifying phrase without undoing the rest of the cleanup? Listen to the resulting join as well as reading the transcript. |
+| [Kapwing Kai](https://www.kapwing.com/ai/video-assistant) | A browser assistant that turns uploaded footage into a rough cut, revises the same project through follow-up prompts and works alongside manual Studio controls. | Ask for a shorter opening while preserving the ending and caption treatment. Compare both previews and the downloaded export. |
+| [ChatCut](https://chatcut.io/docs/what-is-chatcut) | An agent operating on an editable multitrack timeline, with transcript editing, project versions and web, desktop and plugin routes. | Confirm which route will render your file and preserve the source media. Its [quickstart](https://chatcut.io/docs/quickstart) says web exports render locally with the editor tab open; test that delivery on your intended device. |
+| [Adobe Premiere AI Assistant, beta](https://helpx.adobe.com/premiere/desktop/premiere-ai-assistant/overview.html) | Natural-language project organization, media preparation and rough assemblies inside Premiere, with editable results and undo/history. | Test the particular timeline operation you need. Adobe describes an early beta and recommends duplicate or fresh projects rather than client work; rough assembly support alone does not establish a complete autonomous finishing workflow. |
+| [OpusClip AI Producer](https://producer.opus.pro/) | An agent for one-person talking-head footage with audible speech, optional style references, follow-up edits in the same project, and MP4 delivery. | Check source suitability first: the page explicitly excludes multicamera edits and screen recordings. Include both the assistant plan and any OpusClip credits when measuring cost. |
 | [Tella](https://www.tella.com/blog/best-agentic-video-editors) | Screen recording and tutorial editing with its agent, plus an MCP route. | Readable controls, layout changes and the recording-to-edit handoff. |
 | [invideo Editor](https://invideo.io/news/introducing-invideo-editor/) | A browser editor with an assistant and a multitrack timeline alongside generation. | Whether your required cuts remain editable and the intended handoff preserves them. |
 | [klo](https://klo.mov/) | A native Mac editor driven by an agent, with a separate Cloud MCP route. | Which route holds your media, what leaves the device for processing, and how you retrieve the result. |
@@ -71,6 +76,18 @@ The following are vendor-described starting points, not measured scores. Read th
 | [arterialist/agentic-video-editor](https://github.com/arterialist/agentic-video-editor) | A source repository for a web editor with a timeline and multimodal model integrations. | Installation, provider requirements and an end-to-end export in your own environment. |
 
 A hosted subscription, a desktop application and a repository you operate are different commitments. Include installation, accounts, model charges, correction time and final delivery when evaluating them. Do not count an impressive demonstration as a test of your workflow.
+
+## Build a shortlist for an existing recording
+
+For the request “I have already recorded my video; let me describe changes, review them, revise one part and download the result,” compare **the complete editing route**. A chat box, a generated shot and a downloadable file each establish a different part of that route. The vendor descriptions above help identify candidates; the trial below determines whether one works for your recording.
+
+Use three concrete decisions to narrow the list:
+
+1. **Choose the material you must preserve.** For a spoken answer, identify a qualification, a name and a number that must survive. For a software tutorial, identify the setting and successful result viewers must see. This makes a shorter video measurable without rewarding a cut that removes the point.
+2. **Choose how you will correct it.** If you want manual control, inspect the transcript or timeline after the agent's pass. If you want to remain in conversation, request a specific restoration and keep the prior preview for comparison. An editable timeline and a reliable conversational revision are related but separate outcomes.
+3. **Choose the delivery before the trial.** Write down dimensions, file format, permitted branding and whether another editor needs an editable project. An MP4 is a rendered video; it is not proof of an editable handoff to another application.
+
+For Valmera, the [recorded MCP example](MCP-RECORDED-EDIT.md) makes a narrower claim you can inspect: one silent source, a first cut, one focused revision and a downloadable final. It records a 10-second revised program in a 15-second file with a five-second end card. That supports inspection of this particular selection-and-revision workflow; it does not establish speech quality or a win over the products above. Use the [same-input comparison kit](EDITOR-EVALUATION.md), then repeat the task on footage representative of your work.
 
 ## Try one complete edit, then one meaningful revision
 
