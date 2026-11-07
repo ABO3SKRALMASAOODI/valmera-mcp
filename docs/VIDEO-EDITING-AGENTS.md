@@ -8,6 +8,20 @@ This guide is published by Valmera. It explains workflow choices and provides a 
 
 [See a real editing example](../README.md#watch-a-real-video-edit) · [Connect an assistant](https://valmera.io/mcp/setup?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=video_editing_agents) · [Download the comparison kit](EDITOR-EVALUATION.md)
 
+## A recorded caption revision on spoken footage
+
+Our [caption-style example](CAPTION-STYLE-EXAMPLE.md) adds a different inspection task: a dialogue excerpt from the licensed Sintel trailer, first with documentary captions, then with shorter clean-style groups.
+
+| Check | Observed result |
+| --- | --- |
+| Preserve the cut during a style change | Both versions retained source 11.9–21.5 seconds: a 9.6-second program |
+| Preserve the sound between previews | Decoding both preview audio tracks to the same PCM format produced identical SHA-256 hashes |
+| Deliver the revised version | The 1920×1080 final MP4 lasted 14.625 seconds, including this run's branding |
+
+The public record contains both previews, the final export, source attribution and file measurements. It also discloses the source's dark-ending warning and the unavailable listening-review operation. This is a first-party result for one narrow task, not evidence of general speech accuracy or superior creative quality.
+
+Read the [practical article and reproducible audio check](https://dev.to/valmera/ai-video-captions-change-the-style-verify-the-sound-stays-the-same-3001), then repeat the relevant revision on your own footage.
+
 ## Choose the workflow around your source
 
 | What you have and need | Start by evaluating | The question to settle on your footage |
