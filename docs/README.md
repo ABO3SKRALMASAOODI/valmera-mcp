@@ -31,7 +31,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Website demonstration | [Plan and make a website demo](WEBSITE-DEMO.md) |
 | Webinar replay and clips | [Webinar workflow](WEBINARS.md) and [vertical slide readability](SLIDE-READABILITY.md) |
 | YouTube video | [Editor routes, full-episode trial and chapter timing map](YOUTUBE.md), with a [reusable trial record](YOUTUBE-EDITOR-TRIAL.md) |
-| Property walkthrough | [Real-estate shot map and revision plan](REAL-ESTATE-SHOT-MAP.md) |
+| Property walkthrough | [Compare editing routes, map the rooms and review a restoration](REAL-ESTATE-SHOT-MAP.md), with a [shared property trial record](REAL-ESTATE-EDITOR-TRIAL.md) |
 | Several recordings with one style | [Batch editing: pilot, source-specific notes and delivery tracking](BATCH-VIDEO-EDITING.md) |
 | Unwanted pauses or filler words | [Speech cleanup: compare controls, review joins and restore a pause](SPEECH-CLEANUP.md), with a [trial and repair worksheet](SPEECH-CLEANUP-WORKSHEET.md) |
 | Fan noise, hiss or distracting sound behind speech | [Compare noise-removal routes and review the exported audio](VIDEO-AUDIO-NOISE-REMOVAL.md), with a [listening and delivery worksheet](AUDIO-NOISE-REVIEW-WORKSHEET.md) |
