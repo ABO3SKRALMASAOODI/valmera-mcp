@@ -1,6 +1,6 @@
 # Maintaining Valmera's MCP directory listings
 
-This is the publication and verification guide for the public documentation repository. Last checked November 4, 2026. Public listings are external records: a file update or a submitted form does not prove that a directory has refreshed, accepted or ranked the product.
+This is the publication and verification guide for the public documentation repository. Observation dates appear with each section; they do not establish the current state of every external listing. Public listings are external records: a file update or a submitted form does not prove that a directory has refreshed, accepted or ranked the product.
 
 ## Source of truth
 
@@ -20,9 +20,17 @@ Avoid a fixed undated tool count in directory descriptions. Configuration can ch
 | Surface | Verified result | Next action |
 | --- | --- | --- |
 | [DeepWiki](https://deepwiki.com/ABO3SKRALMASAOODI/valmera-mcp) | Public wiki generated from commit `773d692a`. The format-specific guide includes the webinar workflow with citations to `docs/WEBINARS.md`; the overview uses `https://valmera.io/mcp/server` | Keep the original repository guides current. Observe the provider's displayed seven-day refresh interval; do not resubmit the repository |
-| [Context7](https://context7.com/abo3skralmasaoodi/valmera-mcp) | Submission completed: 29 documentation files, 260 snippets. Subsequent Code and Info views, including a webinar query, returned `400 Failed to fetch docs for library` | Retrieval remains unverified. Diagnose the existing entry before recommending it as a usable documentation source or requesting another refresh |
+| [Context7](https://context7.com/abo3skralmasaoodi/valmera-mcp) | Public entry shows 400 snippets and 62,139 tokens. Code view returns installation and recorded-edit examples. Info view returns the batch-editing guide, including its pilot and failed-item recovery guidance | Retrieval is verified for these observations, superseding the earlier failed-fetch result. Check the source behind a retrieved passage and verify newly published material separately; index totals do not establish that every latest commit is included |
 
 These are documentation distribution surfaces, not independent product endorsements, authenticated editing tests or evidence that a general-purpose assistant recommends Valmera. Keep indexing completion, successful retrieval and recommendation results separate. Submit only this public repository; no account credentials or private footage are needed.
+
+### Retrieve Valmera documentation through Context7
+
+Open the [existing public library](https://context7.com/abo3skralmasaoodi/valmera-mcp). For workflow prose, choose **Info**, enter a topic and select **Show Results**. On November 7, the query `Batch AI video editing shared brief source-specific pilot recover one failed item` returned passages from [BATCH-VIDEO-EDITING.md](BATCH-VIDEO-EDITING.md), including “Questions to settle before choosing a batch editor” and “Recover one failed item without duplicating the batch.” The **Code** view returned configuration and tool-call examples with repository source links.
+
+Follow the source link before reusing a command or tool call. Generated snippet headings and summaries can disagree with the included arguments. Read the surrounding explanation, distinguish an illustrative project ID from your own, and use your authorized connection's current schema. A documentation search does not execute an edit, validate an example against your account or authorize publishing a video.
+
+For maintenance, verify a distinctive passage from the new document, rather than treating a larger snippet count as proof of freshness. Record the query, returned source and observation date. If a newer passage is absent, use the current [repository documentation index](README.md) directly and report that index freshness remains unverified for that material. Use the owner's supported refresh control only when eligible; preserve an in-flight request and respect the provider's refresh limit instead of submitting duplicate libraries. No refresh was needed for the successful retrieval check above.
 
 ## Verified state on November 4, 2026
 
