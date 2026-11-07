@@ -105,6 +105,14 @@ Record actual usage units and charges when available. If a bundled allowance pre
 
 ## 6. Repeat with the footage you really edit
 
+### Start with the shared speech trial
+
+The [Sintel speech-trial worksheet](SPEECH-EDITOR-TRIAL.md) supplies one licensed source, three precise briefs and a blank results table for comparing caption presentation and a supplied Spanish subtitle revision while preserving the spoken recording.
+
+It links two recorded Valmera examples with actual previews and exports. It separates the unchanged 9.6-second comparison from a later 9.4-second delivery revision. These are first-party observations on one animated-film excerpt, not competitor scores. The trial supplies the Spanish strings to every editor; it does not test translation generation.
+
+### Then use your representative footage
+
 Passing the short exercise establishes a narrow capability on one source. Before choosing a tool for ongoing work, add a representative recording and one difficult revision:
 
 | Your work | Include in the source | Ask for a revision | Inspect closely |
