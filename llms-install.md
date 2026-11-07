@@ -30,6 +30,8 @@ Requirements: a Valmera account (free to create at https://valmera.io) and a sub
 
 ## After the connection check
 
+Use the [documentation task index](docs/README.md) to find the guide for the user's recording, including speech cleanup, caption corrections, batch editing and downloadable examples.
+
 Ask which uploaded project to edit, or use the client's supported upload flow. Calling `list_projects` proves authenticated access; it does not prove that a video was edited or exported. A file path in a chat message is not an upload.
 
 - For a first real recording, follow the [editing workflow](docs/WORKFLOW.md): inspect the source, apply the user's brief, review a preview, make a focused revision and export the reviewed version. Use the current tool schemas and the project ID returned for this account.
