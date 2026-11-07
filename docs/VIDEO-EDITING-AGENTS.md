@@ -134,7 +134,9 @@ This is a starting brief, not a promise that any editor will satisfy every reque
 
 Do not average away a meaning-changing cut or an unusable delivery with successful cosmetic details. Preserve the first attempt's outcome even if a later correction fixes it.
 
-For a small, reproducible starting check, download our [edit-and-revise evaluation kit](EDITOR-EVALUATION.md). It includes the same source file, two precise requests, expected source ranges and a blank evidence sheet. Its silent motion-graphic source tests basic selection, crop, revision and delivery; it does not test speech, creative judgment or long-project reliability. Repeat the evaluation with representative footage before choosing a regular workflow.
+For a small, reproducible starting check, download our [edit-and-revise evaluation kit](EDITOR-EVALUATION.md). It includes the same source file, two precise requests, expected source ranges and a blank evidence sheet. Its silent motion-graphic source tests basic selection, crop, revision and delivery; it does not test speech, creative judgment or long-project reliability.
+
+For spoken footage, use the [shared caption-and-audio trial](SPEECH-EDITOR-TRIAL.md): a licensed film excerpt, three copyable briefs, recorded Valmera examples and a blank results table. Compare caption presentation, applying supplied translated text, preserving the soundtrack and exporting the approved version. Keep manual steps and failed attempts in the record. Then repeat with your own representative footage before choosing a regular workflow.
 
 ## Questions creators ask
 
