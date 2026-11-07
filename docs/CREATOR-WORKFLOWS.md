@@ -67,6 +67,7 @@ Full examples, prompts, and review checklists:
 - [Edit a screen recording into a tutorial](https://valmera.io/blog/edit-screen-recording-into-product-tutorial)
 - [Edit a UGC product video](https://valmera.io/blog/edit-ugc-product-video-ad)
 - [Make a travel story from phone clips](https://valmera.io/blog/edit-travel-video-from-phone-clips)
+- [Build a real-estate listing tour from a shot map](REAL-ESTATE-SHOT-MAP.md): separate walkthroughs from highlights, preserve room connections, and verify a worked revision and each delivered file.
 
 ## Compare the editing workflow on the same footage
 
