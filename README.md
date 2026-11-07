@@ -248,6 +248,8 @@ See the [recorded Spanish-caption example](docs/SUBTITLE-TRANSLATION-EXAMPLE.md)
 
 For speech cleanup, use the [filler-word and silence review guide](docs/SPEECH-CLEANUP.md). Compare ten vendors’ documented silence-removal controls, use a shared trial brief, and review meaning, audio joins, visible actions and captions. A worked correction restores one pause while preserving approved cuts.
 
+For background removal or replacement, use the [output and edge-review guide](docs/VIDEO-BACKGROUND-REMOVAL.md). Compare ten documented routes, distinguish composites from transparent layers, and test the downloaded file in its destination editor using the [review worksheet](docs/BACKGROUND-REMOVAL-WORKSHEET.md).
+
 For property walkthrough footage, use the [real-estate listing workflow](https://valmera.io/use-cases/real-estate?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=real_estate_workflow): confirm the walking route, map a 60-second tour and a 30-second vertical teaser, compare crop choices, and track an open-house correction across separate exports. The clearly labeled fictional example includes [two reusable editing briefs](https://valmera.io/use-cases/real-estate#real-estate-briefs) and a [downloadable blank and filled edit pack](https://valmera.io/downloads/real-estate-listing-edit-pack.txt).
 
 ## Keep your assistant current
