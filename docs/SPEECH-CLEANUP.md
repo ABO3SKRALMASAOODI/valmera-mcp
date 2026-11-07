@@ -160,4 +160,6 @@ Inspect the exported file itself from start to finish. Keep unresolved defects i
 
 ## Source note
 
+If the problem is fan noise, hiss or another sound behind the voice, use the [audio noise-removal guide](VIDEO-AUDIO-NOISE-REMOVAL.md). Removing timeline pauses and reducing noise within retained speech are separate editing decisions.
+
 Existing tools distinguish different kinds of transcript edits. For example, [DreamCut's transcript-editing documentation](https://dreamcut.ai/docs/transcript-editing), checked November 7, 2026, separates caption text correction from timeline cuts and documents reversible filler and silence removal. Those are that product's documented behaviors, not a Valmera test. The decision tables, fictional timing map and correction workflow above are Valmera's editorial guidance.

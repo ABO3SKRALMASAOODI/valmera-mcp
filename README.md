@@ -9,6 +9,8 @@ Join thousands of creators. Bring your footage, describe the result, and refine 
 
 **[Browse documentation by editing task](docs/README.md)** — connection help, recording-specific workflows, focused revisions and downloadable examples.
 
+**Cleaning a noisy recording?** Use the [video audio cleanup guide](docs/VIDEO-AUDIO-NOISE-REMOVAL.md) to compare ten search-result routes, select a representative listening trial and verify the exported sound before continuing the edit.
+
 **Comparing editors?** Use the [edit-and-revise evaluation kit](docs/EDITOR-EVALUATION.md): the same source footage, exact prompts, expected source ranges and a blank evidence scorecard.
 
 **Want an actual recorded run?** Inspect the [MCP edit, revision and export](docs/MCP-RECORDED-EDIT.md), including downloadable source/preview/final files, exact join frames, measured durations and observed branding.
