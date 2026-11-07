@@ -15,7 +15,7 @@ Join thousands of creators. Bring your footage, describe the result, and refine 
 
 **Want an actual recorded run?** Inspect the [MCP edit, revision and export](docs/MCP-RECORDED-EDIT.md), including downloadable source/preview/final files, exact join frames, measured durations and observed branding.
 
-**Want a speech-caption example?** Compare [two caption styles on the same excerpt](docs/CAPTION-STYLE-EXAMPLE.md), with downloadable previews, matching decoded preview audio and a verified full-resolution export.
+**Want a speech-caption example?** [See the English-to-Spanish comparison below](#change-the-captions-keep-the-recorded-soundtrack), or compare [two English caption styles](docs/CAPTION-STYLE-EXAMPLE.md). The recorded examples include downloadable previews, decoded-audio checks and full-resolution exports.
 
 **Choosing an AI editor for recorded footage?** Read the [workflow and evaluation guide](docs/VIDEO-EDITING-AGENTS.md): source-linked comparisons including Descript, Kapwing, ChatCut, Premiere and OpusClip, plus a shared first-edit brief, revision and delivery record.
 
@@ -152,6 +152,22 @@ The [complete editing walkthrough](https://valmera.io/blog/ai-video-editing-comp
 Footage: [The End of the Future with Peter Thiel](https://www.youtube.com/watch?v=ibR_ULHYirs), Stanford Classical Liberalism Initiative. Neither the speaker nor the source organization is presented as a Valmera customer or endorser.
 
 For a repeatable test on your own shortlist, use the [edit-and-revise evaluation kit](docs/EDITOR-EVALUATION.md). For your own recording, start with a [creator workflow brief](docs/CREATOR-WORKFLOWS.md).
+
+### Change the captions, keep the recorded soundtrack
+
+These are frames from two actual Valmera previews of the same 9.6-second *Sintel* excerpt. We supplied Spanish wording for two English phrases, applied it through the product, and rendered a new preview. Click an image to open its video file.
+
+| Before: English captions, version 4 | After: supplied Spanish captions, version 5 |
+| --- | --- |
+| [![English preview at 0.4 seconds, showing “What brings”](docs/evaluation/sintel-captions-20261107/clean-0.4.png)](docs/evaluation/sintel-captions-20261107/clean-v4-preview.mp4) | [![Spanish preview at 0.4 seconds, showing “¿Qué te”](docs/evaluation/sintel-spanish-20261107/spanish-v5-0.4.png)](docs/evaluation/sintel-spanish-20261107/spanish-v5-preview.mp4) |
+
+The decoded audio samples match between these two previews. This is a caption change with the existing English soundtrack, not dubbing. The Spanish text was supplied by the assistant and has not received independent native-speaker review; this run does not establish automatic translation quality.
+
+The Spanish comparison draft needed an ending correction before export. The [recorded walkthrough](docs/SUBTITLE-TRANSLATION-EXAMPLE.md) explains that revision and provides the [version 6 final MP4](docs/evaluation/sintel-spanish-20261107/spanish-v6-final.mp4): 1920 × 1080, 14.458 seconds including Valmera branding and an end card. The audio-match finding applies to versions 4 and 5 above, not to that later export.
+
+Modified *Sintel* footage © Blender Foundation, used under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/). Valmera added the captions and selected the excerpt; [source, license and modification details](docs/evaluation/sintel-spanish-20261107/ATTRIBUTION.md). Blender Foundation does not endorse Valmera.
+
+For your own recording, [prepare a subtitle-editing brief](https://valmera.io/prompts?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=caption_comparison#prompt-builder), then use [Studio](https://valmera.io/studio) or [connect an assistant](docs/CLIENTS.md). Creating an account and uploading are free; AI editing requires eligible paid access.
 
 ## Install as a Claude plugin (connector + editing skills)
 
