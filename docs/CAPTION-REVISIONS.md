@@ -8,6 +8,8 @@ For a real run with downloadable videos, see the [recorded caption-style revisio
 
 [Connect your assistant](https://valmera.io/mcp/setup) · [Caption styling and corrections](https://valmera.io/docs/captions) · [Start an editing brief](https://valmera.io/prompts#prompt-builder)
 
+For another language, use the [subtitle translation workflow](SUBTITLE-TRANSLATION.md): choose subtitle-only or dubbing, preserve meaning and review the translated track against the same edit.
+
 ## Identify what is wrong before changing anything
 
 Listen to identifiable phrases near the beginning, middle and end of the exact video you intend to deliver. Compare the first audible word with its caption, then inspect any edit joins between those checks. Three samples help diagnose the pattern; they do not replace reviewing the complete file.

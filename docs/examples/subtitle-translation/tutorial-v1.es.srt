@@ -1,0 +1,11 @@
+1
+00:00:00,000 --> 00:00:02,000
+Abre el proyecto.
+
+2
+00:00:02,200 --> 00:00:05,200
+Conserva el audio original.
+
+3
+00:00:05,400 --> 00:00:08,000
+No cambies la velocidad.
