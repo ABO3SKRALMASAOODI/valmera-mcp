@@ -1,6 +1,17 @@
 # A complete agent-assisted video editing workflow
 
-This guide follows one recorded interview from project discovery through preview review to the final MP4 export. The prompts are examples. They do not claim a measured customer result.
+Use this workflow to edit an interview you have already recorded: identify the project, inspect the source, make a first cut, revise it and download the reviewed version. The interview prompts below are adaptable examples, not a measured interview result.
+
+## Choose your starting point
+
+| What you need now | Start here | What you get |
+| --- | --- | --- |
+| See an actual result before connecting | [Recorded MCP edit and revision](MCP-RECORDED-EDIT.md) | Downloadable source, first preview and final MP4, with the tool arguments and exact exported boundary frames |
+| Connect your assistant | [Client setup](CLIENTS.md) and [connection troubleshooting](CONNECTION-TROUBLESHOOTING.md) | The hosted endpoint, authentication steps and a read-only connection check |
+| Edit your own interview | Follow the steps below | A brief you can adapt, review criteria and a version-specific export request |
+| Compare editors on the same input | [Edit-and-revise evaluation kit](EDITOR-EVALUATION.md) | One source, two requests and a blank evidence sheet for each editor |
+
+The recorded run uses our silent motion-graphic sample. It demonstrates cuts, a square crop, a focused revision and MCP export; it does not establish interview cleanup or caption accuracy. Its first preview has 12 seconds of program, the revised preview has 10, and the final file lasts 15 seconds including a five-second branded end card. Branding also blends over the last program frame. Inspect the files and stated limitations before applying the example to your own delivery requirements.
 
 ## 1. Establish the connection without editing anything
 
@@ -45,6 +56,18 @@ Check these independent outcomes:
 
 Reference the time shown in the current preview when requesting a change. Source time and edited output time can differ after cuts; the assistant should choose the appropriate tool and time basis.
 
+Keep a short review record alongside the preview:
+
+| Field | Record |
+| --- | --- |
+| Project | The selected project's returned name and ID |
+| Reviewed version | The EDL version that produced this preview |
+| Location | Source or output clock, time range and surrounding sentence |
+| Requested change | What should change and what should remain |
+| Verification | The new version, replacement preview and any unresolved issue |
+
+For example, “In the output preview of version 7, restore the lead-in to the answer at 00:42; preserve the later answers” identifies a different scope from “cut original-source 00:42.” These identifiers are illustrative. Use the values returned for your project rather than copying another run's project ID.
+
 ## 5. Revise one issue at a time
 
 > In the current preview, the answer around 00:42 starts too abruptly. Restore the lead-in from the original recording, preserve the later edits, and render a fresh preview.
@@ -70,6 +93,8 @@ After you approve the last preview, ask for the finished file:
 The assistant calls `export_final` with the project id and the reviewed `edl_version`. It then polls `wait_for_job` until the job finishes and calls `download_url` with `kind="final"`. The final H.264 MP4 renders from the original source file, not the preview proxy. Export runs the same checks, queue and plan rules as Studio export, and Studio's Export button is still available if you'd rather start it yourself.
 
 Watch the downloaded file before publishing and check its duration, framing, captions, audio and ending. An approved preview doesn't prove the final render finished, and a job id isn't a finished MP4.
+
+Record **program duration and total file duration separately**. An appended end card extends the delivered file without restoring removed source footage. Compare the export with the preview version you approved, check any branding against your delivery requirements, and keep the file's actual dimensions with your review notes. A larger encoded frame does not establish extra source detail.
 
 ## Troubleshooting
 
