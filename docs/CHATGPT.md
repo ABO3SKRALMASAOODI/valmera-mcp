@@ -4,7 +4,7 @@ Connect Valmera, select a recording, and turn a clear brief into an edit you can
 
 [Open guided connection setup](https://valmera.io/mcp/connect?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow) · [Open the brief directly in Valmera](https://valmera.io/chatgpt-video-editor?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow#first-brief)
 
-Valmera hosts the video editing service. You do not need to clone this repository, install FFmpeg or run a local server. Creating an account and uploading are free; editing requires an eligible [Valmera plan](https://valmera.io/subscribe). Your ChatGPT subscription is separate.
+Valmera hosts the video editing service. You do not need to clone this repository, install FFmpeg or run a local server. Creating an account and uploading are free; editing requires an eligible [Valmera plan](https://valmera.io/subscribe). Your ChatGPT subscription is separate. For the distinction between Plus MCP Connect and plans that include Valmera AI, see [plans and editing routes](CLIENTS.md#choose-the-plan-for-your-editing-route).
 
 ## 1. Add, install and select Valmera
 

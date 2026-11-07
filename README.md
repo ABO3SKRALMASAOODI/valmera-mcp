@@ -273,7 +273,7 @@ The wiki is generated from a dated repository snapshot. Check its **Last indexed
 
 ## Access
 
-Creating an account and uploading are free. Editing requires a subscription; see the current plans at [valmera.io/subscribe](https://valmera.io/subscribe). Your MCP client (Claude, ChatGPT, Cursor and so on) is billed separately by its own provider.
+Creating an account and uploading are free. Editing requires a subscription. As checked November 7, 2026, Plus provides MCP Connect with your own assistant; Pro and Max include Valmera AI in Studio as well as MCP. Your external assistant provider bills separately. See the [plan and editing-route comparison](docs/CLIENTS.md#choose-the-plan-for-your-editing-route) and [current subscription terms](https://valmera.io/subscribe).
 
 ## Data and privacy
 
