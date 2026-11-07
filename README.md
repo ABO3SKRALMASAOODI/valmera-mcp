@@ -29,6 +29,12 @@ Registry   io.valmera/video-editor
 - **Tool reference:** [valmera.io/mcp/tools](https://valmera.io/mcp/tools)
 - **Live server card:** [/.well-known/mcp/server-card.json](https://valmera.io/.well-known/mcp/server-card.json)
 
+**Hosted editing, without a local video editor:** Valmera runs the MCP endpoint, stores your
+project and renders previews and exports. You connect a compatible assistant and authorize
+your account; there is no video server to deploy or API wrapper to build. See
+[what Valmera hosts and what you set up](docs/CLIENTS.md#what-valmera-hosts-and-what-you-set-up)
+for client requirements, upload and review responsibilities, and recorded workflow evidence.
+
 ## Connect your assistant
 
 Want to see the output first? [Inspect a real edit below](#watch-a-real-video-edit), or follow the client-specific connection instructions here.

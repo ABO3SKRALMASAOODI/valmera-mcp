@@ -12,6 +12,33 @@ The live, longer version of this page, with notes for each client, is [valmera.i
 
 Getting a 401, a sign-in loop or no tools after connecting? Use the [connection troubleshooting guide](CONNECTION-TROUBLESHOOTING.md) for symptom-specific next steps and public discovery checks that need no account or token.
 
+## What Valmera hosts and what you set up
+
+Valmera operates the video-editing MCP endpoint, project storage and rendering service. For
+this hosted workflow, you do not deploy a server, write an API-to-MCP wrapper, install FFmpeg
+or install a local video editor. Connect a compatible assistant to the existing endpoint above
+and authorize access to your Valmera account. Editing requires an eligible paid Valmera plan;
+your assistant may have separate access requirements or charges.
+
+| Part of the workflow | Where it happens | What you provide |
+| --- | --- | --- |
+| Conversation and tool calls | Your chosen MCP client | A client that supports the remote connection and its authentication flow |
+| Source footage and project versions | Your Valmera account | An uploaded recording or another supported import; a local file path alone is not an upload |
+| Preview rendering and final export | Valmera's hosted service | An editing brief, review decisions and authorization to run the requested operations |
+| Result inspection and download | Your client, browser or video player | Review of the actual preview and downloaded file; client display capabilities vary |
+
+A CLI client is still software you install on your computer. An optional stdio bridge is a
+local connection adapter. Neither means you must install a video-rendering engine. If your
+client cannot display a preview or download link inline, open the returned URL in a browser.
+
+The [recorded MCP run](MCP-RECORDED-EDIT.md) shows the existing project moving from a first
+preview to a focused revision and a downloaded MP4. It includes the actual source and outputs,
+edit versions and inspected export boundaries. That run used Codex and a silent sample; it
+does not establish speech quality or successful operation in every client below. Use the
+[editing workflow](WORKFLOW.md) after connecting and keep your own review record.
+
+## Client connection reference
+
 | Client | Where the config goes | Auth | Key detail |
 | --- | --- | --- | --- |
 | Claude (web, desktop, mobile) | Settings → Connectors → Add custom connector | OAuth | Paste the URL only. Mobile can use it but not add it. |
