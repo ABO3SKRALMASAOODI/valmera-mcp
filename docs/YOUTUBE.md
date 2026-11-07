@@ -38,6 +38,8 @@ Source time and preview time can differ after cuts or rearrangement. Name the ve
 
 > Review the demonstration from a first-time viewer's perspective. Keep every required setting and step. Shorten loading waits and repeated attempts, make the relevant controls readable, and preserve the final check that proves the task worked. Show a representative passage before applying the treatment to the rest.
 
+For a step map, a worked 76-to-58-second cut and a revision that updates later timestamps, use the [screen-recording tutorial guide](SCREEN-RECORDING-TUTORIALS.md).
+
 ### Refine sound without reopening the story
 
 > Keep the approved picture edit. Make the narration easy to understand, use music only where it supports the sequence, and add a few purposeful sound effects. Identify supplied, sourced or newly created audio. Show the mixed passage so I can compare speech clarity and timing before export.
