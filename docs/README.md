@@ -32,6 +32,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Property walkthrough | [Real-estate shot map and revision plan](REAL-ESTATE-SHOT-MAP.md) |
 | Several recordings with one style | [Batch editing: pilot, source-specific notes and delivery tracking](BATCH-VIDEO-EDITING.md) |
 | Unwanted pauses or filler words | [Speech cleanup: compare controls, review joins and restore a pause](SPEECH-CLEANUP.md), with a [trial and repair worksheet](SPEECH-CLEANUP-WORKSHEET.md) |
+| Translate subtitles while keeping the original voice | [Compare translation routes and review a bilingual sample](SUBTITLE-TRANSLATION.md), with a [trial and delivery worksheet](SUBTITLE-TRANSLATION-WORKSHEET.md) |
 | Incorrect captions after an edit | [Fix wording, offset, drift and cues crossing a cut](CAPTION-REVISIONS.md) |
 
 The examples and sample prompts are editing guidance. Where a guide labels a timing map as fictional, use it to understand the method and replace its timestamps with verified times from your own recording. Do not treat a worked example as proof that your requested edit succeeded.
