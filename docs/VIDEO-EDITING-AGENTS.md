@@ -142,6 +142,12 @@ For a small, reproducible starting check, download our [edit-and-revise evaluati
 
 With a supported, authorized editing connection, an assistant can call tools that perform edits. Without an editing tool or integration, a useful plan is still a plan. Follow the setup for your particular client, then confirm the project, preview and export through the actual tools. Valmera's [connection troubleshooting guide](CONNECTION-TROUBLESHOOTING.md) separates sign-in, discovery and execution problems.
 
+### Can I use Gemini for the edit?
+
+Choose the interface as well as the task. Gemini Apps' native video features, a video-analysis answer and Gemini CLI calling an external editor are different routes. Our [Gemini video-editing walkthrough](GEMINI-VIDEO-EDITING.md) covers the current documented choices, Valmera connection setup and a first edit with a focused revision.
+
+For a recorded project, connect Gemini CLI to Valmera or develop the brief in Gemini and execute it in Studio. Confirm actual tool access, then review the preview and final file. A Google subscription and a Valmera editing plan are separate entitlements. The walkthrough is documentation-checked; it does not claim a new end-to-end Gemini CLI editing test.
+
 ### Does an editing agent replace the timeline?
 
 It changes how you direct the work. Products differ in how they expose project structure, manual adjustments, revisions and handoff. Test the exact control you need; a rendered MP4 and an editable project are different deliverables.
