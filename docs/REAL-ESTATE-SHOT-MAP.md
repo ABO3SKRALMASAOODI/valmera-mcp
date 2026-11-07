@@ -6,6 +6,26 @@ A useful listing video helps a viewer understand the property: what each space l
 
 [Build your brief](https://valmera.io/prompts#prompt-builder) · [Property-video workflow](https://valmera.io/use-cases/real-estate) · [Compare editors on the same input](EDITOR-EVALUATION.md)
 
+## Compare the workflow your source material needs
+
+For recorded property footage, shortlist editors that work with the clips you filmed. For a photo-only listing, inspect a photo-sequencing or generation workflow separately. A moving camera in a generated video does not establish that somebody recorded that route through the home.
+
+The table below summarizes first-party pages checked November 7, 2026. It is a workflow comparison, not a hands-on ranking or an endorsement of the vendors' performance claims. Inspect current access, upload and export terms before committing a listing to a tool.
+
+| Editor or route | What its own page describes | What to test with your property material |
+| --- | --- | --- |
+| [VideoMotion](https://www.videomotion.studio/) | Editing filmed walkthrough clips, room detection, suggested speed ramps, branding and portrait or landscape 1080p export. Its page explicitly separates this from still-photo generation. | Keep enough of each doorway to understand the route. Review whether a speed ramp makes the room or transition hard to inspect. |
+| [Inmoedit](https://www.inmoedit.com/en/real-estate-video-editor) | Recorded walkthroughs divided into editable room sequences, with a visual timeline for ordering and duration, plus text, music, voiceover and format controls. | Correct a room boundary, restore a connecting passage and check that its label and sound remain aligned. |
+| [Shorty](https://shortyedit.com/real-estate) | Listing photos, walkthrough clips or both, directed with a brief or reference; shot planning, rendered MP4s and revisions in chat. | Use media from one property, distinguish filmed shots from photo treatments, and revise one selected passage without changing approved facts elsewhere. |
+| [Shino](https://shino.app/for/real-estate) | Conversational editing of walkthrough or talking-head footage into vertical reels with captions and listing cards; the page currently offers early access. | Confirm actual account access first. Check every number against the supplied facts and the readability of room details in the vertical composition. |
+| [Submagic's real-estate workflow](https://www.submagic.co/solutions/real-estate) | Turning walkthroughs and market updates into short-form clips, with captions, b-roll, transitions, zoom and vertical delivery. | Ask for a complete highlight rather than assuming a clip batch is a continuous tour. Review any added footage against the property's approved material. |
+| [Oveloa](https://oveloa.com/) | Generating a short property walkthrough from an ordered set of photographs, optionally guided by a floor plan. | Evaluate it as generated material: compare openings, fixtures, views and room relationships against the references. Do not count synthesized travel as filmed coverage. |
+| [Valmera](WORKFLOW.md) | Uploaded-footage editing through Studio or an authorized MCP client, with previews, focused revisions and export. | Run the same source-map and restoration trial below. Check the downloaded files, active correction time and remaining work; a successful connection is not an editing result. |
+
+Several products offer more than one route. Select the specific workflow you will use, rather than treating a company's name as a fixed capability boundary. A trial account, an AI allowance and permission to export the required file are separate questions. Record the exact plan and any additional client charges in the [property-editor trial worksheet](REAL-ESTATE-EDITOR-TRIAL.md).
+
+For a spoken agent introduction, inspect transcript edits and caption wording. For a quiet interior pan, inspect the picture and spatial context. One good result on the first input does not establish performance on the second.
+
 ## Choose the video before choosing the cuts
 
 | Deliverable | What the sequence should communicate | What to review |
@@ -81,6 +101,40 @@ From the same fictional source, use living-room seconds 18–26, kitchen seconds
 This sequence omits the connecting passage and back door. Present it as **Property highlights**, with accurate room labels, rather than a continuous walkthrough. Confirm that the four-second outro contains a complete invitation; lengthen it if necessary. An opening title can sit over a shot if readable, or take its own time. Do not count a separate title card as zero seconds.
 
 For a portrait version, inspect each room separately. A centered crop may remove the doorway in one shot and the relevant window in another. Where a crop loses essential context, request a different framing or keep the wide image inside the portrait canvas. Review the actual result on a phone at a comfortable viewing size. No one crop position works for every room.
+
+## Run the same property trial across your shortlist
+
+Use one representative recording that you have permission to upload, with a room connection, an interior wide shot, an exterior and a complete invitation. Include the same approved facts and branding assets for every candidate. Record any preparation you do outside the editor: sorting files, trimming them beforehand, writing narration or converting formats consumes time too.
+
+Ask for a landscape tour first. Request a separate vertical highlights version after reviewing the route. Keep the footage, required facts and intended deliverables constant; adapt the interaction to each editor's supported controls. Manual timeline work is a valid route, but record that effort instead of describing the result as fully automated.
+
+Review these observable decisions before comparing decorative treatments:
+
+| Trial checkpoint | Evidence to inspect | If it needs correction |
+| --- | --- | --- |
+| Room sequence | The output shows the supplied spaces in a comprehensible order, with a source reference for each shot. | Restore the missing connection or label the jump clearly; do not synthesize an unrecorded doorway as proof. |
+| Property appearance | Important walls, openings, fixtures and outside views remain consistent with the source. | Compare the affected frames with the original; revise the crop or treatment that changes the impression. |
+| Listing facts | Every displayed number, room label and invitation matches the approved facts sheet. | Change the specific field and find every deliverable that repeats it. |
+| Targeted revision | A restored source passage appears at the requested point and the other approved selections remain. | Check both new joins, later text timing and the ending. |
+| Vertical delivery | The teaser has its own complete message and readable room details. | Adjust each crop separately, or preserve a wide view inside the vertical canvas. |
+| Final download | The actual file matches the reviewed version, required format and agreed branding. | Keep it marked unfinished until the required file can be delivered and reviewed. |
+
+Exercise one focused restoration like the passage correction above. If the first cut already preserves every connection, deliberately shorten a passage on a copy, then restore it through the editor. Record that this was a controlled exercise, not a spontaneous product failure. The result should recover the selected source material without silently replacing approved room shots or facts.
+
+Then test a common listing update using fictional or approved information: replace one open-house date in the tour and teaser. Identify all instances, render both replacements and check that the previous date is absent from those delivered files. Record the file/version pair for each. An unchanged old download is still an old publication asset even when the project text has been corrected.
+
+Use the [blank property trial record](REAL-ESTATE-EDITOR-TRIAL.md) to capture the first cut, correction, export and effort for each candidate. Track processing time separately from active review time. Include failed attempts and any finishing work elsewhere. Compare cost per accepted deliverable only after defining what counts as accepted; two files that still need repair are not two completed videos. No scores are supplied here because this guide has not run a shared property-footage benchmark.
+
+## Check treatments against the property you recorded
+
+Review picture changes at normal playback speed and on representative still frames. A single attractive frame can hide warped edges during a move. Use the original recording as the reference for the affected passage.
+
+- **Stabilization:** inspect door frames and wall edges through the motion, and check whether the stabilization crop removed a feature needed for orientation.
+- **Color and exposure:** compare the room's materials, wall tones and window views. Aim for a clear, consistent presentation without making a dark source area into evidence of a feature that was not visible.
+- **Speed changes:** retain enough normal-speed coverage to understand a room and its connections. Recheck narration and labels after retiming.
+- **Added imagery:** identify which material is recorded, supplied as a still, or generated. A generic attractive kitchen is not coverage of this listing.
+
+These are editorial checks, not a statement of a destination's rules. Confirm the actual publishing requirements for the intended listing service and the person approving the property information. An editor's "unbranded" preset is also something to verify in the file, including the last frames; it does not establish acceptance by every destination.
 
 ## Add polish after the route works
 
