@@ -20,6 +20,37 @@ Correcting caption text alone does not remove its sound from the video. In trans
 
 Do not treat a word list as an editorial decision. “Like” can introduce an example, “I mean” can introduce a correction, and a repeated word can be emphasis. Listen to each candidate in its sentence and the surrounding exchange. For sensitive interview selections, use the [paper-edit guide](INTERVIEW-PAPER-EDIT.md) to preserve the question and scope of the answer.
 
+## Compare silence removers by what their controls mean
+
+A setting of “0.5 seconds” can describe which gaps qualify for a cut, how much breathing room remains, or a preset whose other decisions are hidden. These are different controls. Before comparing outputs, write down the **detection threshold**, the **retained pause or boundary padding**, and whether the tool also changes spoken material. A smaller number alone does not mean a better edit.
+
+The following snapshot summarizes the vendors' own pages, checked November 7, 2026. These were the first ten results returned by our web-search query `AI video editor remove silence keep natural pauses`; this is not a verified Google ranking, a quality ranking or hands-on testing of those products. Each product name links to its primary source. Recheck the current interface before relying on a setting.
+
+| Product and source | Documented behavior relevant to your trial |
+| --- | --- |
+| [Clipchamp](https://support.microsoft.com/en-us/clipchamp/how-to-use-silence-removal) | Suggests pauses longer than three seconds; lets you ignore a suggestion, remove one, or remove all. Short gaps may intentionally remain. |
+| [Voxcene](https://www.voxcene.com/ai/remove-silence/) | Considers gaps of at least 0.8 seconds, with 0.15-second speech margins; offers candidate review before applying cuts. |
+| [Cutmallow](https://cutmallow.com/tools/remove-silence) | Describes browser-based speech detection with Natural, Tight and Fast pacing, and individually reversible timeline cuts. |
+| [KlikFrame](https://www.video-editor.com/klikframe-tools/remove-silence) | Offers 0.3-, 0.5- or 0.8-second pause thresholds and documents undo for the operation. |
+| [aicut](https://www.aicut.pro/ai-tools/ai-auto-cut) | Includes fillers, retakes and proposed tangents as well as pauses; lists cut reasons and allows restoration. Compare the scope, not just duration saved. |
+| [Vyra](https://www.usevyra.com/tools/remove-silence-from-video) | Shows natural-language briefs with numeric thresholds and an explicitly protected source interval. Those are example requests, not measured results. |
+| [Clip Utils](https://www.cliputils.com/tools/ai-video-editor) | Says pauses over 0.7 seconds become 0.4 seconds; displays removed material for review and restoration. Detection and remaining duration differ. |
+| [Cubix](https://cubix.design/help/editing-with-cubix/remove-silences) | Documents pacing choices and warns that audio-driven removal can delete meaningful unnarrated demonstrations. |
+| [StoryCut](https://www.storycut.com/features/remove-silence) | Documents a fixed 0.5-second threshold, 0.05-second word margins and whole-pass reversal; says individual pauses cannot be protected in this feature. |
+| [Tella](https://www.tella.com/edit-with-ai/remove-silence-from-video) | Documents 800-, 500- and 300-millisecond modes, plus inspecting candidate ranges and cutting selected ranges through its MCP workflow. |
+
+Valmera's workflow in this guide uses an editing brief followed by preview review and focused correction. It has not been scored against the products above in a matched speech test. The [recorded MCP example](MCP-RECORDED-EDIT.md) uses a silent motion graphic and therefore cannot establish filler-word accuracy, natural breathing or speech-boundary quality.
+
+### Use one shared trial brief, then inspect the differences
+
+Use the same original passage for each candidate. Include one unwanted waiting gap and one protected pause, identified by what the viewer hears or sees. Keep captions, speed changes, music and reframing out of the first pass unless they are part of the question you are testing. A product that cannot isolate silence removal should be recorded as performing a broader edit, rather than compared as though the inputs were identical.
+
+> Tighten unnecessary waiting in [source range]. Preserve the pause after “[phrase]” and the quiet action at [verified source interval]. Keep complete words, original playback speed and audio/video synchronization. Do not remove retakes or rewrite speech in this pass. Show the changed ranges and a preview. If a requested protection is unavailable, report that limitation instead of silently discarding it.
+
+For every candidate, record the actual setting used, the returned duration, one successful join, any damaged word or protected moment, and whether you could repair that single edit. Keep the original and downloaded output together. Listen at normal speed and inspect the visible action; a transcript or a large runtime reduction is insufficient evidence.
+
+If a tool leaves a short pause, first check whether that pause falls below its documented threshold. If it cuts too much, separate two questions: did it identify the wrong region, or did it leave too little room around a valid cut? The former needs different selection or a protected interval; the latter needs boundary adjustment or restoration. Use the worked correction below to specify the repair without losing approved edits elsewhere.
+
 ## Start with a representative passage
 
 Choose a short passage containing ordinary speech, at least one proposed removal and a moment that should stay: a breath, a meaningful hesitation, a response or a demonstration step. Include the actual language, speaker and recording conditions you need to edit. A clean studio sample does not establish how a noisy interview or overlapping conversation will behave.
