@@ -1,0 +1,152 @@
+{
+  "recorded_date": "2026-11-07",
+  "scope": "First-party transcript-based excerpt and caption-presentation revision on licensed animated footage. No independent creative rating or customer outcome.",
+  "source": {
+    "status": "final_export_downloaded_verified",
+    "sourceUrl": "https://download.blender.org/durian/trailer/sintel_trailer-1080p.mp4",
+    "sourcePage": "https://download.blender.org/durian/trailer/",
+    "licensePage": "https://durian.blender.org/sharing/",
+    "licenseCorroboration": "https://commons.wikimedia.org/wiki/File:Sintel_trailer-1080p.ogv",
+    "license": "CC BY 3.0",
+    "credit": "(c) copyright Blender Foundation | durian.blender.org",
+    "reuseNote": "Credit and license link required; identify edits; no endorsement implied. Film footage, not a podcast or a customer project.",
+    "bytes": 14621544,
+    "sha256": "34bbd52a4b89fdf63c8ace50b268da26653a59508288100cd3c23de276db7931",
+    "duration": "52.208333",
+    "createdAt": "2026-11-07T04:31:23.514388+00:00",
+    "projectId": 5534,
+    "uploadAssetId": 40413,
+    "analysisJobId": 137436,
+    "editRequest": "Make a short dialogue excerpt with readable captions, preserve the original speech and music, then make one focused caption-style revision. Publish only measured observations with source attribution; do not claim a podcast benchmark."
+  },
+  "project_id": 5534,
+  "keep_source_seconds": [
+    [
+      11.9,
+      21.5
+    ]
+  ],
+  "timeline_duration_seconds": 9.6,
+  "versions": {
+    "documentary": 3,
+    "clean": 4
+  },
+  "assets": {
+    "documentary_preview": 40416,
+    "clean_preview": 40417,
+    "clean_final": 40418
+  },
+  "final_export_job_id": 137448,
+  "files": {
+    "documentary-v3-preview.mp4": {
+      "bytes": 1299162,
+      "sha256": "4b663fcca2dea5119b8fc3f4a5aa57ccfb4fbbafe9e6b78ce8d7fbe21b7d8fcc",
+      "duration_seconds": "9.600000",
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 854,
+          "height": 480,
+          "r_frame_rate": "24/1",
+          "duration": "9.583333",
+          "nb_frames": "230"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "r_frame_rate": "0/0",
+          "duration": "9.600000",
+          "nb_frames": "451",
+          "sample_rate": "48000",
+          "channels": 2
+        }
+      ]
+    },
+    "clean-v4-preview.mp4": {
+      "bytes": 1303803,
+      "sha256": "44b61ddd2b504b1271341b6a0e1b8805656ecc9795fe4c5f92d156410edce8d1",
+      "duration_seconds": "9.600000",
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 854,
+          "height": 480,
+          "r_frame_rate": "24/1",
+          "duration": "9.583333",
+          "nb_frames": "230"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "r_frame_rate": "0/0",
+          "duration": "9.600000",
+          "nb_frames": "451",
+          "sample_rate": "48000",
+          "channels": 2
+        }
+      ]
+    },
+    "clean-v4-final.mp4": {
+      "bytes": 5650644,
+      "sha256": "1c75c788ad1d26d88df94ca84bb9f64e709ad1dc6cba8e1072692b52597a2ada",
+      "duration_seconds": "14.625000",
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "24/1",
+          "duration": "14.625000",
+          "nb_frames": "351"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "r_frame_rate": "0/0",
+          "duration": "14.614000",
+          "nb_frames": "687",
+          "sample_rate": "48000",
+          "channels": 2
+        }
+      ]
+    }
+  },
+  "validation": {
+    "documentary-v3-preview.mp4": {
+      "decode_exit": 0,
+      "decode_errors": "",
+      "decoded_audio_sha256": "SHA256=6c92f86529b67b6bb9548e9da0ff4dde5cd299a8404d1bd1f2e839343cf78217"
+    },
+    "clean-v4-preview.mp4": {
+      "decode_exit": 0,
+      "decode_errors": "",
+      "decoded_audio_sha256": "SHA256=6c92f86529b67b6bb9548e9da0ff4dde5cd299a8404d1bd1f2e839343cf78217"
+    },
+    "clean-v4-final.mp4": {
+      "decode_exit": 0,
+      "decode_errors": "",
+      "decoded_audio_sha256": "SHA256=f86b05e4f4f577dd981ff3cc744939212007a453b2ca8aee7f57476f404e8898"
+    }
+  },
+  "review": {
+    "caption_frames_inspected": true,
+    "full_continuous_audio_listening": false,
+    "audio_model_review": false,
+    "preview_audio_samples_identical": true,
+    "preview_reported_lufs_integrated": -16.9,
+    "preview_reported_true_peak_dbtp": -1.8,
+    "final_branding_observed": "corner mark and appended end card",
+    "unresolved_warnings": [
+      "Source fades toward black before end card; preview warns 0.08s, final warns 0.17s at 9.42\u20139.58. Retained deliberately for a fixed-selection caption comparison.",
+      "set_edit_plan and review_audio rejected by live dispatch; no listening-model review succeeded."
+    ],
+    "limits": [
+      "Not a source-versus-output audio fidelity benchmark.",
+      "Not a podcast, customer session or competitive benchmark.",
+      "Sampled frames and deterministic decoding do not establish full perceptual quality."
+    ]
+  }
+}

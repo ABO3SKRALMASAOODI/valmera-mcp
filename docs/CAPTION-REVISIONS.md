@@ -4,6 +4,8 @@ When captions go out of sync after an edit, first check that the subtitle track 
 
 Use this guide to direct caption revisions through Valmera, Claude, ChatGPT or another connected assistant. It includes a worked timing map, correction prompts and a delivery record. The recording and cues below are **fictional teaching examples**, not measured Valmera outputs or an accuracy benchmark.
 
+For a real run with downloadable videos, see the [recorded caption-style revision](CAPTION-STYLE-EXAMPLE.md): two caption treatments, an unchanged selection, matching decoded preview audio and the final export.
+
 [Connect your assistant](https://valmera.io/mcp/setup) · [Caption styling and corrections](https://valmera.io/docs/captions) · [Start an editing brief](https://valmera.io/prompts#prompt-builder)
 
 ## Identify what is wrong before changing anything

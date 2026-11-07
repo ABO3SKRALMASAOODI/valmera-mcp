@@ -1,0 +1,6 @@
+4b663fcca2dea5119b8fc3f4a5aa57ccfb4fbbafe9e6b78ce8d7fbe21b7d8fcc  documentary-v3-preview.mp4
+44b61ddd2b504b1271341b6a0e1b8805656ecc9795fe4c5f92d156410edce8d1  clean-v4-preview.mp4
+1c75c788ad1d26d88df94ca84bb9f64e709ad1dc6cba8e1072692b52597a2ada  clean-v4-final.mp4
+82a2848fc6609ab62d1f06b7dbcb697dc26b35f2e92fb596e626042fcef7de15  documentary-0.4.png
+00844f248c7932aa8bd632ba9e0c6550be6798834b42cd924551a3c9b81fc8cb  clean-0.4.png
+42f2218d52ce252cc4300a10f59cf4625fd7b7c2fa36b5abe2a623a6adb17ffb  final-0.4.png
