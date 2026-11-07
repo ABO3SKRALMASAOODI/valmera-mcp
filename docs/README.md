@@ -34,6 +34,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Unwanted pauses or filler words | [Speech cleanup: compare controls, review joins and restore a pause](SPEECH-CLEANUP.md), with a [trial and repair worksheet](SPEECH-CLEANUP-WORKSHEET.md) |
 | Translate subtitles while keeping the original voice | [Compare translation routes and review a bilingual sample](SUBTITLE-TRANSLATION.md), with a [trial and delivery worksheet](SUBTITLE-TRANSLATION-WORKSHEET.md) |
 | Incorrect captions after an edit | [Fix wording, offset, drift and cues crossing a cut](CAPTION-REVISIONS.md) |
+| Remove or replace a video background | [Compare ten routes and verify the exported foreground](VIDEO-BACKGROUND-REMOVAL.md), with a [trial and delivery worksheet](BACKGROUND-REMOVAL-WORKSHEET.md) |
 
 The examples and sample prompts are editing guidance. Where a guide labels a timing map as fictional, use it to understand the method and replace its timestamps with verified times from your own recording. Do not treat a worked example as proof that your requested edit succeeded.
 
