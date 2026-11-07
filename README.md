@@ -9,6 +9,8 @@ Join thousands of creators. Bring your footage, describe the result, and refine 
 
 **Comparing editors?** Use the [edit-and-revise evaluation kit](docs/EDITOR-EVALUATION.md): the same source footage, exact prompts, expected source ranges and a blank evidence scorecard.
 
+**Choosing a video editing agent?** Read the [workflow and evaluation guide](docs/VIDEO-EDITING-AGENTS.md): built-in agents versus MCP, vendor-described editing routes, a first-edit brief, a focused revision and a delivery record.
+
 Start with your own footage and an editing goal. Use the public [interactive editing brief builder](https://valmera.io/prompts#prompt-builder), then follow the [creator workflow briefs](docs/CREATOR-WORKFLOWS.md) for your first project.
 
 ```text

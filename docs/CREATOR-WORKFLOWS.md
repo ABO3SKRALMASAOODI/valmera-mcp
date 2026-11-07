@@ -68,6 +68,8 @@ Full examples, prompts, and review checklists:
 
 ## Compare the editing workflow on the same footage
 
+Choosing where to edit? The [AI video editing agents guide](VIDEO-EDITING-AGENTS.md) explains the Studio, connected-assistant and local-editor routes, with questions to check on your own recording.
+
 The [edit-and-revise evaluation kit](EDITOR-EVALUATION.md) provides a small source file, two precise requests, expected source-to-program mappings and a blank CSV scorecard. Use it to check a first edit, one scoped revision and the downloaded file, then repeat the process with representative footage of your own.
 
 ## Review one editorial decision at a time
