@@ -6,6 +6,49 @@ Use Valmera to turn a channel brief into a video you can review: establish the s
 
 Creating an account and uploading are free; AI editing requires a subscription. An assistant's own subscription and integration availability are separate.
 
+## Choose an editor for the episode you want to publish
+
+Write the deliverable before choosing the tool. A cleaned presenter recording, a complete tutorial, three Shorts and a generated scene are different outputs. A useful shortlist starts with the footage you have and the remaining work you want the editor to do.
+
+| Your starting point | Route to inspect | What to request in a trial |
+| --- | --- | --- |
+| A presenter recording with repeated attempts | [Gling](https://www.gling.ai/) describes bad-take, silence and filler removal, captions and reframing. | A continuous episode with the intended takes retained. Inspect removed material, joins and the path to your finishing editor if you need one. |
+| A speech-led episode you want to revise through text | [Descript Underlord](https://www.descript.com/underlord) combines an assistant with transcript-based editing and production tools. | Move an explanation, restore one deleted sentence and check the corresponding picture and sound. |
+| Recorded material requiring story assembly and visual finishing | [Invideo Editor](https://invideo.io/make/ai-video-editor/) describes conversational editing, timeline controls, footage search and timeline export. | One complete episode, followed by a focused revision. If another editor must finish it, open the exported project there. |
+| A long recording you primarily want to repurpose | [OpusClip](https://www.opus.pro/) describes clipping, captioning, reframing and publishing workflows. | Distinct, complete Shorts with enough context. If you also need the long episode, include it explicitly in the trial. |
+| Missing shots to generate for an existing project | [YouTube Create's AI guidance](https://support.google.com/youtube/answer/16631240?hl=en) describes experimental generated clips with limited availability. | The required supporting shot, then a separate check of how it fits the episode. Confirm access on your account before planning around it. |
+| Your recording, directed through conversation in Studio or an MCP client | [Valmera's editing workflow](WORKFLOW.md) covers inspection, edits, previews, revisions and export. | A story cut from your source, a specific correction and the downloaded final file. Use the current tools available to your authorized account. |
+
+These are workflow descriptions checked against the linked first-party pages on November 7, 2026, not a hands-on ranking. Several tools span more than one route. Compare the requested deliverable and the work left after export, rather than treating the route labels as permanent product limits.
+
+## Test the whole episode, then one precise correction
+
+A polished thirty-second sample can help you assess captions or framing. It cannot show whether an editor sustains a six-minute explanation, remembers a required limitation, or delivers the promised conclusion. Use a small complete recording when comparing episode editing; keep a separate short sample for visual treatment experiments.
+
+Here is a fictional trial brief you can adapt. The timestamps and duration target are placeholders, not measured Valmera results:
+
+> I have a 12-minute recording demonstrating [task]. Make a 6–8 minute YouTube episode for someone doing this for the first time. Open with the actual result, then retain the required setup, the working method and the final verification. Keep the warning that [specific limitation] applies. Remove abandoned attempts only when the successful attempt supplies the same necessary explanation. Use my supplied recording and approved assets. Show a story preview before adding decorative graphics. Deliver a 16:9 video; propose two distinct Shorts separately after I approve the episode.
+
+The target duration is a preference. If the necessary explanation cannot fit, ask for the tradeoff instead of silently dropping a step. A compelling opening still needs to represent what the method actually achieves.
+
+Review the first cut in viewing order:
+
+| Moment | Question to answer from the rendered video |
+| --- | --- |
+| Opening | Is the promised result visible, and is its context accurate? |
+| Setup | Can the intended viewer identify the prerequisites and starting state? |
+| Demonstration | Does every required action lead to a visible, understandable result? |
+| Qualification | Is the limitation still attached to the claim it qualifies? |
+| Payoff | Does the ending actually verify what the opening promised? |
+
+Then request one controlled revision:
+
+> In the preview version I just reviewed, restore the omitted explanation about [required setting] between [preceding action] and [following action]. Identify its original source passage. Keep the other approved story decisions, caption style and music choices unchanged. Render the revised passage and tell me which later chapter or caption timings need updating.
+
+This tests an everyday creator need: recovering important context without rebuilding the whole video. Review the new join, the restored instruction and the surrounding approved material. A message saying the sentence was restored is not the result; the new preview must contain it.
+
+Keep one [episode trial record](YOUTUBE-EDITOR-TRIAL.md) per candidate. Record account plan, footage duration, elapsed processing time, active correction time, allowance used, unresolved work and the downloaded file. Do not call a timeline handoff a finished video, or a set of Shorts a delivered episode. For a final file, check the required format, resolution, branding and complete playback. The [export checklist](FREE-EXPORT-CHECK.md) helps separate free access from the file you can actually download.
+
 ## Connect the project to the brief
 
 Connect at `https://valmera.io/mcp/server`, sign in, and let your client discover the current tool schemas. Choose the intended project and preview version. Use the [upload guide](https://valmera.io/docs/file-uploads) when the recording is not in Valmera yet.

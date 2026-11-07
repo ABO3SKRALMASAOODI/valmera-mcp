@@ -30,7 +30,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Screen recording or software tutorial | [Preserve the starting state, action and result](SCREEN-RECORDING-TUTORIALS.md) |
 | Website demonstration | [Plan and make a website demo](WEBSITE-DEMO.md) |
 | Webinar replay and clips | [Webinar workflow](WEBINARS.md) and [vertical slide readability](SLIDE-READABILITY.md) |
-| YouTube video | [Editing workflow, chapter timing map and caption handoff](YOUTUBE.md) |
+| YouTube video | [Editor routes, full-episode trial and chapter timing map](YOUTUBE.md), with a [reusable trial record](YOUTUBE-EDITOR-TRIAL.md) |
 | Property walkthrough | [Real-estate shot map and revision plan](REAL-ESTATE-SHOT-MAP.md) |
 | Several recordings with one style | [Batch editing: pilot, source-specific notes and delivery tracking](BATCH-VIDEO-EDITING.md) |
 | Unwanted pauses or filler words | [Speech cleanup: compare controls, review joins and restore a pause](SPEECH-CLEANUP.md), with a [trial and repair worksheet](SPEECH-CLEANUP-WORKSHEET.md) |
