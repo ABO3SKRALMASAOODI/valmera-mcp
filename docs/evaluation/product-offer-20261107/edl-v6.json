@@ -1,0 +1,63 @@
+{
+  "version": 6,
+  "description": "1 segment, 19.51s kept of 19.5s, text x1 (subtitle \"Source: PetrohsW · CC BY\"@0-19.51s)",
+  "edl": {
+    "fx": [],
+    "sfx": [],
+    "keep": [
+      [
+        0,
+        19.51
+      ]
+    ],
+    "frame": null,
+    "music": [],
+    "speed": [],
+    "texts": [
+      {
+        "x": 0.5,
+        "y": 0.92,
+        "id": "tx1",
+        "box": true,
+        "end": 19.51,
+        "exit": "none",
+        "font": "Inter Display Bold",
+        "text": "Source: PetrohsW · CC BY-SA 4.0",
+        "color": null,
+        "start": 0,
+        "behind": null,
+        "italic": null,
+        "motion": null,
+        "shadow": null,
+        "entrance": "none",
+        "template": "subtitle",
+        "tracking": null,
+        "font_size": 0.0125,
+        "max_width": 0.9,
+        "uppercase": false,
+        "size_scale": null,
+        "text_align": null,
+        "accent_color": null,
+        "motion_motif": null,
+        "anchor_insert": null,
+        "mute_captions": true,
+        "outline_width": null
+      }
+    ],
+    "canvas": null,
+    "master": null,
+    "motion": [],
+    "volume": [],
+    "effects": null,
+    "inserts": [],
+    "patches": [],
+    "vectors": [],
+    "captions": null,
+    "overlays": [],
+    "stem_mix": null,
+    "voiceover": [],
+    "source_clean": null,
+    "caption_mutes": [],
+    "split_keep_boundaries": null
+  }
+}

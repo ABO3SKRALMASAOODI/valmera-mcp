@@ -1,0 +1,63 @@
+{
+  "before": {
+    "edlVersion": 5,
+    "sha256": "48603b201cca437884f694146d07a98cf1d9732327f9fa9477eb9ea9e6ba72ed",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_type": "video",
+          "width": 270,
+          "height": 480,
+          "r_frame_rate": "24833/1000",
+          "nb_read_frames": "483"
+        },
+        {
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0",
+          "nb_read_frames": "914"
+        }
+      ],
+      "format": {
+        "duration": "19.498000",
+        "size": "810788"
+      }
+    },
+    "pcmSha256": "978bb48e68a6eae5f6dc03277ce6ea9d1413433b78818a08cfd0ec106fc5240a",
+    "pcmBytes": 3743616
+  },
+  "after": {
+    "edlVersion": 6,
+    "sha256": "b916dcbd984ad15c3279f92c2f8a27b15de3a533b6040444f377d7ab7be3d691",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_type": "video",
+          "width": 270,
+          "height": 480,
+          "r_frame_rate": "24833/1000",
+          "nb_read_frames": "483"
+        },
+        {
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0",
+          "nb_read_frames": "914"
+        }
+      ],
+      "format": {
+        "duration": "19.498000",
+        "size": "806377"
+      }
+    },
+    "pcmSha256": "978bb48e68a6eae5f6dc03277ce6ea9d1413433b78818a08cfd0ec106fc5240a",
+    "pcmBytes": 3743616
+  },
+  "audioIdentical": true
+}

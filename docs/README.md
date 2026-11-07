@@ -32,6 +32,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Webinar replay and clips | [Webinar workflow](WEBINARS.md) and [vertical slide readability](SLIDE-READABILITY.md), plus a [replay publishing worksheet](WEBINAR-PUBLISHING-CHECK.md) |
 | YouTube video | [Editor routes, full-episode trial and chapter timing map](YOUTUBE.md), with a [reusable trial record](YOUTUBE-EDITOR-TRIAL.md) |
 | Property walkthrough | [Compare editing routes, map the rooms and review a restoration](REAL-ESTATE-SHOT-MAP.md), with a [shared property trial record](REAL-ESTATE-EDITOR-TRIAL.md) |
+| Product footage with an expired offer | [Recorded offer-removal example, with before/after exports](PRODUCT-OFFER-REMOVAL-EXAMPLE.md) and the [ecommerce planning guide](https://valmera.io/use-cases/ecommerce) |
 | Several recordings with one style | [Batch editing: pilot, source-specific notes and delivery tracking](BATCH-VIDEO-EDITING.md) |
 | Unwanted pauses or filler words | [Speech cleanup: compare controls, review joins and restore a pause](SPEECH-CLEANUP.md), with a [trial and repair worksheet](SPEECH-CLEANUP-WORKSHEET.md) |
 | Fan noise, hiss or distracting sound behind speech | [Compare noise-removal routes and review the exported audio](VIDEO-AUDIO-NOISE-REMOVAL.md), with a [listening and delivery worksheet](AUDIO-NOISE-REVIEW-WORKSHEET.md) |
@@ -49,6 +50,7 @@ The examples and sample prompts are editing guidance. Where a guide labels a tim
 | --- | --- | --- |
 | Can I compare two real caption treatments on spoken footage? | [Recorded caption-style revision](CAPTION-STYLE-EXAMPLE.md) | Downloadable previews and full-resolution export, identical decoded audio between previews, observed branding and disclosed limitations. |
 | Can I see translated captions with the original recording preserved? | [Recorded Spanish-caption example](SUBTITLE-TRANSLATION-EXAMPLE.md) | Supplied Spanish text, rendered artifacts, matching comparison-preview audio and an explicit export revision. |
+| Can I remove a separate offer without rebuilding the edit? | [Recorded product-offer removal](PRODUCT-OFFER-REMOVAL-EXAMPLE.md) | One identified text element removed; exact edit records, final exports, matching decoded audio, branding checks and a disclosed detector workaround. |
 | Can I inspect an actual MCP edit and focused revision? | [Recorded MCP run](MCP-RECORDED-EDIT.md) | Downloadable source, previews and final MP4; measured durations and inspected cut boundaries from one silent sample. |
 | Can I inspect a browser-generated freeze frame? | [Freeze-frame before-and-after](FREEZE-FRAME-EXAMPLE.md) | Original source, unchanged WebM, file measurements and sampled frames from a manual browser edit. |
 | Does a browser color preset reach the downloaded file? | [Color-grade before-and-after](COLOR-GRADE-EXAMPLE.md) | B&W settings, original MP4, unchanged WebM, sampled images and the observed frame-count difference. |

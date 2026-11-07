@@ -1,0 +1,16 @@
+{
+  "brief": "Use the uploaded portrait coffee-grinding footage without cutting, reframing, regenerating, speeding it up or changing its sound. Add a persistent small source credit and an explicitly fictional offer reading DEMO: 20% OFF at program 12\u201316 seconds. Render and export the version for inspection. Then remove only that offer overlay, leaving the credit, source selection, framing and audio unchanged; render and export the new version.",
+  "review": {
+    "before": "Offer visible at 12.5, 14 and 15.5 seconds; absent at 11.5 and 16.5 seconds. Persistent source credit remains.",
+    "after": "Offer absent at all three sampled interior times; source credit remains.",
+    "timing": "Compare program length, frame dimensions, frame counts and final-export branding duration.",
+    "audio": "Decode both full previews to identical PCM settings and compare hashes; do not equate hashes with a listening-quality review.",
+    "picture": "Compare sampled frames and video frames outside the changed interval. Report differences instead of asserting pixel identity."
+  },
+  "publicationConditions": [
+    "Actual before and after product outputs downloaded",
+    "Attribution and share-alike license included with derivatives",
+    "Observed findings distinguish exact measurements from sampled visual inspection",
+    "No hands-on competitor or full ecommerce campaign claim"
+  ]
+}
