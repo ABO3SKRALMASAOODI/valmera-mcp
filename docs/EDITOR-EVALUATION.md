@@ -8,6 +8,8 @@ Compare the result you can download, the revision you can make, and the work it 
 
 ## What you can test with this footage
 
+For one observed result using this procedure, see the [November 7 MCP run](MCP-RECORDED-EDIT.md). It includes source, first preview, revised final MP4, measured output properties and explicit untested criteria. It is a Valmera-authored example, not an independent comparison.
+
 The supplied source is a 25-second, silent, 1280 × 720 motion-graphic video at 30 frames per second. It already contains its wording and animation. A short, unambiguous edit makes it possible to check source selection, crop, revision preservation and export continuity without arguing about taste.
 
 Use this as a **basic editing check**. It does not test speech recognition, caption quality, noise removal, moving-person tracking, long projects, creative judgment or reliability across many runs. The real-footage extension below covers the next questions to ask.
