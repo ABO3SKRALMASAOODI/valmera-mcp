@@ -44,6 +44,8 @@ Check one quoted line against the uploaded recording before relying on its times
 
 This is a planning step. The subtitle converter extracts existing text; use Studio or your authorized MCP connection to edit the video itself.
 
+For a complete interview selection record, use the [paper-edit walkthrough](INTERVIEW-PAPER-EDIT.md) and [blank worksheet](INTERVIEW-REVIEW-WORKSHEET.md). They separate source evidence, proposed story order, preview versions and individual exports, with a fictional correction example you can check by hand.
+
 ## Six starting points
 
 | Your recording | Ask for | Check before approving |
