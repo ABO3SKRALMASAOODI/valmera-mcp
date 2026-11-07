@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-07",
+  "tool": "https://valmera.io/tools/color-grade-video",
+  "route": "Manual browser color-grading utility; no Studio or MCP edit.",
+  "source": "../recorded-run-20261107/original-source.mp4",
+  "settings": {
+    "preset": "B&W",
+    "exposure": 0,
+    "contrast": 0,
+    "saturation": 0,
+    "temperature": 0
+  },
+  "sourceMetadata": {
+    "codec": "H.264",
+    "width": 1280,
+    "height": 720,
+    "frames": 750,
+    "durationSeconds": 25,
+    "audioStreams": 0
+  },
+  "output": {
+    "file": "export.webm",
+    "bytes": 958111,
+    "codec": "VP9",
+    "width": 1280,
+    "height": 720,
+    "frames": 748,
+    "reportedFrameRate": "30/1",
+    "firstPresentationTimestampSeconds": 0,
+    "lastPresentationTimestampSeconds": 24.973,
+    "containerDuration": "not present",
+    "audioStreams": 0
+  },
+  "sampledSourceFrames": [
+    {
+      "index": 0,
+      "counter": "00:00:00"
+    },
+    {
+      "index": 300,
+      "counter": "00:10:00"
+    },
+    {
+      "index": 749,
+      "counter": "00:24:29"
+    }
+  ],
+  "sampledOutputFrames": [
+    {
+      "index": 0,
+      "counter": "00:00:00"
+    },
+    {
+      "index": 299,
+      "counter": "00:10:00"
+    },
+    {
+      "index": 747,
+      "counter": "00:24:28"
+    }
+  ],
+  "review": {
+    "fullDecode": "Completed with no decoding errors.",
+    "visual": "All six extracted PNGs inspected. B&W result visible; titles readable at the sampled moments.",
+    "timing": "Output contains two fewer decoded frames and its last sampled counter is one source frame before the source ending. Exact frame preservation failed in this run.",
+    "continuousPlayback": "Not performed.",
+    "audio": "Source is silent; audio preservation not tested.",
+    "imageExtraction": "FFmpeg selected frames by zero-based index and scaled them to 640x360 for documentation. Browser export bytes unchanged."
+  },
+  "limitations": [
+    "One browser run, not cross-browser or repeated-export reliability evidence.",
+    "Motion graphic sample does not evaluate skin tones, HDR, log footage, camera matching or creative quality.",
+    "No AI grading or customer footage used.",
+    "No claim of ranking or conversion improvement."
+  ]
+}

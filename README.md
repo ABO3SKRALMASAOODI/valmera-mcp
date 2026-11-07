@@ -21,6 +21,8 @@ Start with your own footage and an editing goal. Use the public [interactive edi
 
 **Want to inspect a free browser edit?** Download the [freeze-frame before-and-after](docs/FREEZE-FRAME-EXAMPLE.md), with a 25-second source, a browser-exported WebM and sampled timing checks.
 
+**Comparing a color preview with the actual file?** Inspect the [B&W browser export](docs/COLOR-GRADE-EXAMPLE.md), including the original MP4, downloaded WebM, settings, sampled pictures and observed frame-count difference.
+
 **Editing a software tutorial?** Use the [screen-recording cut and revision guide](docs/SCREEN-RECORDING-TUTORIALS.md) to preserve the starting state, action and result of each step while shortening waits and keeping controls readable.
 
 ```text
