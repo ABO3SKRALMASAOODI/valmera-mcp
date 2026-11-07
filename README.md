@@ -256,7 +256,7 @@ Record a 30-second demo of https://example.com — scroll the hero, click "Prici
 zoom on the main button — then add captions and light background music.
 ```
 
-There are 40+ more in [docs/PROMPTS.md](docs/PROMPTS.md).
+Use the [45-task prompt library](docs/PROMPTS.md) for first edits, focused revisions and delivery. It connects three requests to recorded before-and-after evidence and supplies [downloadable handoff templates](docs/PROMPT-HANDOFF.txt).
 
 For a product walkthrough, follow the [website-demo guide](docs/WEBSITE-DEMO.md): choose a public URL or uploaded screen recording, adapt a brief, check the recorded actions and review the exported video. It includes a real capture with event evidence and a finished example. [Start from your website URL](https://valmera.io/tools/record-website-demo?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=mcp_website_demo#start-demo).
 
