@@ -1,0 +1,154 @@
+{
+  "previewSha256": "1d81aff090268471acfed4810c350ebdc92a0b4d1394f96e879e578a760e53f0",
+  "decodeExit": 0,
+  "decodeErrors": "",
+  "decodedAudioSha256": "SHA256=6c92f86529b67b6bb9548e9da0ff4dde5cd299a8404d1bd1f2e839343cf78217",
+  "englishV4DecodedAudioSha256": "SHA256=6c92f86529b67b6bb9548e9da0ff4dde5cd299a8404d1bd1f2e839343cf78217",
+  "audioSamplesMatch": true,
+  "durationSeconds": 9.6,
+  "video": [
+    {
+      "codec_name": "h264",
+      "width": 854,
+      "height": 480,
+      "r_frame_rate": "24/1",
+      "nb_frames": "230"
+    }
+  ],
+  "inspectedFrameTimes": [
+    0.4,
+    1.2,
+    2.0,
+    6.8,
+    7.6
+  ],
+  "recordedOn": "2026-11-07",
+  "projectId": 5534,
+  "ownedDemonstration": true,
+  "comparisonVersions": {
+    "english": 4,
+    "spanish": 5
+  },
+  "comparisonSourceSeconds": [
+    11.9,
+    21.5
+  ],
+  "suppliedTranslation": [
+    "¿Qué te trae a la tierra de los guardianes?",
+    "Busco a alguien."
+  ],
+  "translationGeneratedByTool": false,
+  "nativeSpeakerApproval": false,
+  "v5PreviewReceipt": {
+    "asset_id": 40419,
+    "render_job_id": 137456,
+    "render_type": "complete_preview",
+    "quality": "draft",
+    "sha256": "1d81aff090268471acfed4810c350ebdc92a0b4d1394f96e879e578a760e53f0",
+    "timeline_ranges": null,
+    "edl_version": 5,
+    "duration_s": 9.6,
+    "audio_model_review": false,
+    "listener_policy": "deterministic_only",
+    "listen_keys_count": 0,
+    "listen_clips_count": 0,
+    "audio_reviewer_findings_count": 0,
+    "meta_sha256": "ea137e940f7fee2153fd9bdb0fd22324d8ad99f73bb25928d71327d3fb861355",
+    "download_status": "link_issued",
+    "download_job_id": 137458,
+    "deliverable": false,
+    "deliverable_next_step": "export_final(project_id=5534, edl_version=5)"
+  },
+  "v6PreviewReceipt": {
+    "asset_id": 40420,
+    "render_job_id": 137461,
+    "render_type": "complete_preview",
+    "quality": "draft",
+    "sha256": "560d246bb36f927a9fb1400888ae820ecca63ec278dd0475f5541a948db86f22",
+    "timeline_ranges": null,
+    "edl_version": 6,
+    "duration_s": 9.417,
+    "audio_model_review": false,
+    "listener_policy": "deterministic_only",
+    "listen_keys_count": 0,
+    "listen_clips_count": 0,
+    "audio_reviewer_findings_count": 0,
+    "meta_sha256": "d342f06a3256bbe17fc12d885a238115f3d123e76583a4db6ac4ea78764e8522",
+    "download_status": "link_issued",
+    "download_job_id": 137465,
+    "deliverable": false,
+    "deliverable_next_step": "export_final(project_id=5534, edl_version=6)"
+  },
+  "v5Export": {
+    "started": false,
+    "blockedBy": "vf_31645116f6542db1",
+    "reason": "0.08 seconds of black ending"
+  },
+  "v6Revision": {
+    "tool": "cut_range",
+    "sourceRemoved": [
+      21.3,
+      21.5
+    ],
+    "snapToWords": false,
+    "retainedSeconds": 9.4
+  },
+  "reviewLimits": [
+    "Sampled frames and contact sheets, not continuous audiovisual playback",
+    "No independent native-speaker review",
+    "No separate listening model",
+    "Audio identity applies to v4 versus v5 previews, not source or final export"
+  ],
+  "v6DeliveryValidation": {
+    "spanish-v6-final.mp4": {
+      "sha256": "266890c519a0dada866e7564f98ed3bb2278ff604079712db3425c3d708798bc",
+      "bytes": 5792529,
+      "decodeExit": 0,
+      "decodeErrors": "",
+      "durationSeconds": 14.458333,
+      "video": [
+        {
+          "codec_name": "h264",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "24/1",
+          "nb_frames": "347"
+        }
+      ]
+    },
+    "spanish-v6-preview.mp4": {
+      "sha256": "560d246bb36f927a9fb1400888ae820ecca63ec278dd0475f5541a948db86f22",
+      "bytes": 1282224,
+      "decodeExit": 0,
+      "decodeErrors": "",
+      "durationSeconds": 9.416667,
+      "video": [
+        {
+          "codec_name": "h264",
+          "width": 854,
+          "height": 480,
+          "r_frame_rate": "24/1",
+          "nb_frames": "226"
+        }
+      ]
+    }
+  },
+  "finalReceipt": {
+    "asset_id": 40421,
+    "edl_version": 6,
+    "render_job_id": 137464,
+    "render_type": "final_export",
+    "sha256": "266890c519a0dada866e7564f98ed3bb2278ff604079712db3425c3d708798bc",
+    "download_status": "link_issued",
+    "download_job_id": 137466
+  },
+  "finalVisualSamples": [
+    0.4,
+    9.3,
+    12.0
+  ],
+  "finalBranding": {
+    "cornerMark": "observed",
+    "endCard": "observed"
+  }
+}

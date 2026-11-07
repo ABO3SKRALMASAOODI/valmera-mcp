@@ -42,6 +42,7 @@ The examples and sample prompts are editing guidance. Where a guide labels a tim
 | Question | Public material | What it establishes |
 | --- | --- | --- |
 | Can I compare two real caption treatments on spoken footage? | [Recorded caption-style revision](CAPTION-STYLE-EXAMPLE.md) | Downloadable previews and full-resolution export, identical decoded audio between previews, observed branding and disclosed limitations. |
+| Can I see translated captions with the original recording preserved? | [Recorded Spanish-caption example](SUBTITLE-TRANSLATION-EXAMPLE.md) | Supplied Spanish text, rendered artifacts, matching comparison-preview audio and an explicit export revision. |
 | Can I inspect an actual MCP edit and focused revision? | [Recorded MCP run](MCP-RECORDED-EDIT.md) | Downloadable source, previews and final MP4; measured durations and inspected cut boundaries from one silent sample. |
 | Can I inspect a browser-generated freeze frame? | [Freeze-frame before-and-after](FREEZE-FRAME-EXAMPLE.md) | Original source, unchanged WebM, file measurements and sampled frames from a manual browser edit. |
 | Does a browser color preset reach the downloaded file? | [Color-grade before-and-after](COLOR-GRADE-EXAMPLE.md) | B&W settings, original MP4, unchanged WebM, sampled images and the observed frame-count difference. |

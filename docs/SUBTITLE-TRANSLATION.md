@@ -6,6 +6,8 @@ This guide helps you choose a route and write a precise editing brief. It includ
 
 [Start a Valmera editing brief](https://valmera.io/prompts#prompt-builder) · [Connect your assistant](CLIENTS.md) · [Current plans](https://valmera.io/subscribe)
 
+For an actual rendered example, open [Spanish captions with the original English audio](SUBTITLE-TRANSLATION-EXAMPLE.md). It includes downloadable comparison previews, supplied source/target wording, identical decoded audio between the matching previews, and an export revision that removes a black tail. The supplied translation has not received independent native-speaker approval.
+
 ## Choose the output before choosing the translator
 
 | Desired result | What changes | What to ask for |
