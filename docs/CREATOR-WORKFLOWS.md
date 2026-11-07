@@ -59,6 +59,7 @@ For a complete interview selection record, use the [paper-edit walkthrough](INTE
 
 Full examples, prompts, and review checklists:
 
+- [Choose an AI podcast clip generator and select a useful clip set](PODCAST-CLIPS.md): ten documented workflows, a five-candidate selection example and a reusable review worksheet.
 - [Remove silence naturally](https://valmera.io/blog/remove-silence-from-video-naturally)
 - [Review filler-word and silence cleanup, then restore a damaged pause](SPEECH-CLEANUP.md)
 - [Turn horizontal footage into vertical video](https://valmera.io/blog/horizontal-to-vertical-video-without-losing-subject)
