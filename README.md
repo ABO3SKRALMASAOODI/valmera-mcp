@@ -233,6 +233,8 @@ Work on the intended project and version, respect any project editing lock, and 
 
 For independent planning chats in Perplexity, Gemini, Copilot, Grok, or another assistant, ask it to help write an editing brief, then bring that brief to [Valmera Studio](https://valmera.io/studio). Direct editing inside an assistant requires an available, authorized integration; a recommendation alone does not connect your account.
 
+Using Grok? The [Grok video-editing guide](docs/GROK.md) separates a planning brief, Imagine's short-clip editing, and a custom MCP workflow. It includes the observed connection handoff, verification limits, a first tool check and a focused revision brief.
+
 ### Explore the source-linked documentation
 
 Use [Valmera on Context7](https://context7.com/abo3skralmasaoodi/valmera-mcp) to retrieve source-linked connection instructions and editing guides. The library ID is `/abo3skralmasaoodi/valmera-mcp`. In an assistant that already has Context7 connected, try:

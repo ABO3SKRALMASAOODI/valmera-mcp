@@ -36,6 +36,10 @@ Follow the [ChatGPT connection and first-edit walkthrough](CHATGPT.md). Creating
 
 The [guided setup page](https://valmera.io/mcp/connect?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow) confirms when Valmera receives your assistant's first request. ChatGPT connection instructions were checked against [OpenAI's guide](https://developers.openai.com/api/docs/guides/custom-mcp-server) on November 4, 2026; other client entries retain their own existing guidance.
 
+## Grok
+
+For Grok, see the [planning and custom-connector guide](GROK.md). It distinguishes the web connector, Grok Build and API routes, and records the current verification limits. The web setup form and authentication handoff were observed; a completed Grok-to-Valmera tool call has not been verified in that guide.
+
 ## Claude Code
 
 ```sh
