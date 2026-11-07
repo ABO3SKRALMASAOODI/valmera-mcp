@@ -96,6 +96,10 @@ Watch the downloaded file before publishing and check its duration, framing, cap
 
 Record **program duration and total file duration separately**. An appended end card extends the delivered file without restoring removed source footage. Compare the export with the preview version you approved, check any branding against your delivery requirements, and keep the file's actual dimensions with your review notes. A larger encoded frame does not establish extra source detail.
 
+## Keep the project usable for a later revision
+
+Keep the source media, project identifier, reviewed version and exported filename together. Test the supported save and reopen route before a long production depends on it. A downloaded MP4 preserves the rendered result; it does not by itself preserve separately editable titles or the project’s source references. Use the [online-editor continuity guide](ONLINE-VIDEO-EDITOR.md) and [blank handoff record](ONLINE-EDITOR-TRIAL.txt) to check a later revision or a second-device handoff.
+
 ## Troubleshooting
 
 | Symptom | Next useful check |

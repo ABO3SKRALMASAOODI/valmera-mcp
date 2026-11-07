@@ -1,0 +1,78 @@
+ONLINE VIDEO EDITOR: SAVE, REOPEN, REVISE AND DELIVER
+Blank trial record. No results are pre-filled. Updated 2026-11-07.
+Guide: https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/ONLINE-VIDEO-EDITOR.md
+
+TRIAL CONDITIONS
+Editor and current URL:
+Date:
+Device / operating system:
+Browser / version:
+Account plan / workspace (no credentials):
+Exact manual operation or AI feature:
+Source filename / duration / dimensions / format:
+Rights or permission to use the source:
+Required output format / dimensions / duration / branding:
+
+DATA AND PROJECT
+Where original source copies are retained:
+Where the editor processes this operation (documented / observed / unknown):
+Does the AI operation send different data from manual editing?:
+Editable project URL or file (private unless intentionally shared):
+Project/version identifier:
+Source media backup enabled and completed?:
+Documented retention or plan limits / source URL / checked date:
+Other files required to reopen (fonts, audio, images, linked assets):
+
+FIRST EDIT
+Requested change:
+What must remain unchanged:
+Import/upload readiness observed:
+Reviewed preview version:
+Export job identifier and status, if exposed:
+Downloaded filename:
+Actual format / dimensions / duration / frame count if measured:
+Audio and full-playback review:
+Watermark, corner branding or end card observed:
+Export block or allowance consumed:
+
+SAVE AND REOPEN
+Supported save/backup operation used:
+Save completion observed:
+Close/reopen route and account/workspace:
+Editable project available? (pass / fail / untested):
+Source picture and sound available? (pass / fail / untested):
+Separate title/overlay still editable? (pass / fail / untested):
+Missing-media or relink steps required:
+Evidence or exact message:
+
+FOCUSED REVISION
+Change only:
+Preserve:
+New reviewed version:
+Second export filename and job identifier:
+Actual format / dimensions / duration:
+Changed element verified at these output times:
+Unchanged content/audio review:
+Differences or unresolved defects:
+
+OPTIONAL SECOND-DEVICE TEST
+Needed for this workflow? (yes / no):
+Second device/browser/account route:
+Required backup or manual source transfer completed:
+Reopen, revise and export result (pass / fail / untested):
+Missing media / fonts / effects / access requirements:
+
+HANDOFF
+Source package location:
+Editable project location and access owner:
+Reviewed final version:
+Final downloaded file and optional SHA-256:
+Published destination(s), if any:
+Replacement checked at each destination?:
+Who retains the originals and project:
+Known limits / untested conditions:
+Decision and reasons:
+
+Do not put passwords, access tokens or expiring signed URLs in a public record.
+Keep originals and the last good export. Use a disposable project copy for
+recovery experiments; do not delete or clear the only working sources.
