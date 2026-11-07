@@ -37,6 +37,32 @@ edit versions and inspected export boundaries. That run used Codex and a silent 
 does not establish speech quality or successful operation in every client below. Use the
 [editing workflow](WORKFLOW.md) after connecting and keep your own review record.
 
+## Choose the plan for your editing route
+
+There are two ways to direct Valmera's editing tools: use **your own compatible AI assistant through MCP**, or use **Valmera AI inside Studio**. Opening Studio to upload, review or export a project does not by itself mean the plan includes Valmera AI.
+
+The following snapshot comes from [Valmera's subscription page](https://valmera.io/subscribe), checked **November 7, 2026**. Recheck that page and your account before buying; existing subscriptions may retain different terms.
+
+| Plan | Editing assistant | Monthly subscription | Annual payment | Monthly Valmera credits |
+| --- | --- | --- | --- | --- |
+| Plus | Your own assistant through MCP; upload, review and export in Studio. Valmera AI is not included. | US$15 | US$150 billed once yearly | 500 |
+| Pro | Valmera AI in Studio, plus MCP access for your own assistant | US$50 | US$500 billed once yearly | 1,500 |
+| Max | Valmera AI in Studio and MCP, with a larger allowance | US$100 | US$1,000 billed once yearly | 4,000 |
+
+Your external assistant provider bills separately. Having a subscription to that assistant does not include a Valmera subscription, and a Valmera plan does not grant the assistant's custom-connector permissions. Check that your chosen account or workspace supports the connection before choosing the MCP route.
+
+**For a first project:** choose the route you will actually use. With your own assistant, connect and authorize Valmera, confirm the project is accessible, then request a short representative edit. With Valmera AI, open Studio on a plan that includes it. In either case, review the preview, request a focused revision and inspect the final download. Use the [recorded caption example](CAPTION-STYLE-EXAMPLE.md) to see two preview treatments and the delivered file; its limits and branding are documented alongside the downloads.
+
+### Budget by accepted edits, not by a presumed credit-to-minute conversion
+
+The subscription page meters AI and processing work. Footage length, operations and revisions affect usage; the credit count is not a guaranteed number of finished videos. Record the actual credit use of a representative project, including the revision and export you need, before estimating a larger batch.
+
+For a **fictional budget example**, suppose you choose Plus on monthly billing and already pay for a compatible assistant. Valmera adds US$15 for that month, while your assistant's existing bill and any additional usage remain separate. If you instead need Valmera AI in Studio, the listed Pro monthly subscription is US$50. This compares access routes, not equal editing capacity, quality or total cost; the allowances differ.
+
+Annual prices are full-year payments, not monthly cancellation offers. The current page states that credits refresh monthly and unused monthly credits do not roll over, including on annual plans. It also explains annual switching and existing-subscription treatment. Read those terms at the source rather than inferring them from a monthly equivalent.
+
+Account creation and uploads are free; AI editing requires an eligible subscription. The current export FAQ states that a five-second Valmera end card is appended. Check the entire downloaded file, including its ending, against your delivery requirements.
+
 ## Client connection reference
 
 | Client | Where the config goes | Auth | Key detail |
