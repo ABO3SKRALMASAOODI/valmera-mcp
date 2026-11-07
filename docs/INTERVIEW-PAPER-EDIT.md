@@ -17,6 +17,35 @@ Published by Valmera · November 7, 2026. The recording, speakers and timings be
 
 An MP4 is not an editable timeline. Settle the required handoff before choosing a product or export route. A transcript can help locate a quote, but the recording settles words, tone, interruptions and who said them.
 
+## Compare the workflow behind “AI interview editor”
+
+An interview editor can mean an assembly tool for an existing desktop timeline, a browser editor for finishing one recording, or an agent that proposes changes for review. Choose against your required delivery, then test the same representative passage in each candidate.
+
+The table below summarizes **vendor descriptions checked November 7, 2026**, not hands-on scores. These products appeared in web search results for interview editing; their presence does not establish a Google top-ten ranking. We reviewed ten result entries, including duplicate pages from the same vendors. Four accessible primary sources support the distinctions below; this is not an exhaustive market ranking.
+
+| Product and primary source | What its page describes | What to establish in your own trial |
+| --- | --- | --- |
+| [Eddie AI](https://www.heyeddie.ai/how-to/edit-interviews-with-ai) | Import up to six angles and separate audio, generate a rough edit and social clips, then export to Premiere Pro, DaVinci Resolve or Final Cut Pro | Does your actual multicamera recording stay synchronized, and does the receiving editor relink the media and retain the structure you need? |
+| [Endroll](https://endroll.ai/best/ai-video-editors-for-interviews) | Build an editable cut from real takes using a script or selected transcript lines; render locally or send a timeline to a desktop editor | Can you trace each selected line to its source, retain the answer's qualification, and open the exported timeline in your required application? |
+| [MirrorCut](https://www.mirrorcut.ai/) | Refine an editable first cut through chat or its timeline, with changes to accept or revert; MP4 and caption exports are listed as available, while Premiere XML and OpenTimelineIO are marked “Soon” | Can a focused revision preserve the approved selections? If an editable desktop handoff is essential, do not treat a planned export as a currently available one. |
+| [CapCut](https://www.capcut.com/features/ai-interview-video-editor) | A browser workflow covering trimming, scene order, captions, audio and final export | Does the downloaded file preserve the reviewed words, timing, framing and ending? Establish the handoff format separately. |
+
+For **Valmera**, start with a recorded interview and an explicit brief in [Studio](https://valmera.io/studio?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=interview_paper_edit) or a supported connected assistant. Use the same source ledger and review steps below. This guide's fictional example is not a comparative benchmark or proof that any product preserved an interview correctly.
+
+### A small trial that answers the important questions
+
+Choose a passage containing a claim, a qualification and an interruption or repetition. Keep the source and requested outcome identical across products; note any different settings or manual preparation. Ask for a main edit and one standalone clip, then request one narrow correction.
+
+Record these observations rather than a single “AI quality” score:
+
+- **Meaning:** which required qualifications survived in each deliverable, and which were lost or remain unchecked.
+- **Traceability:** whether each used quote can be located in the original recording with the correct speaker.
+- **Revision:** whether the requested change happened and whether unrelated approved material changed.
+- **Delivery:** whether the actual download or imported timeline matches the reviewed version.
+- **Effort and cost:** hands-on review time, waiting time, billed amount or credits consumed, and any unfinished work.
+
+Keep “not checked” distinct from “passed.” A fast first render can still require substantial editorial repair. Conversely, an editor that fits a desktop handoff may be unnecessary for someone who needs only a reviewed MP4. The [worksheet](INTERVIEW-REVIEW-WORKSHEET.md) includes a repeatable trial record.
+
 ## Build a source ledger, then a paper edit
 
 A **source ledger** records what is in the original files. A **paper edit** selects those moments and places them in a proposed story order. Keep both: the proposed order cannot replace the evidence of where a quote came from.
