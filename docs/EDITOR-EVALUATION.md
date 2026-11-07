@@ -1,5 +1,7 @@
 # How to compare AI video editors: an edit-and-revise test
 
+Before choosing candidates, [identify the operation you need](VIDEO-EDITING-AGENTS.md#what-do-you-want-the-ai-to-change): timeline edits, clipping, caption revisions and visual transformations need different evidence.
+
 Compare the result you can download, the revision you can make, and the work it takes to get there. This kit gives you the same source file, starting brief, follow-up request and evidence sheet for every editor on your shortlist.
 
 **Published by Valmera, a video editor included in the comparison.** This is a repeatable test procedure, not an independent ranking or a set of competitor results. The scorecard starts with every criterion marked **Not tested**.

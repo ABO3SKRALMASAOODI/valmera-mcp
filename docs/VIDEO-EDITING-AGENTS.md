@@ -35,6 +35,45 @@ Read the [practical article and reproducible audio check](https://dev.to/valmera
 
 These are workflows, not permanent labels for companies. One product may combine a manual editor, one-click features, generation and an agent. Choose the relevant mode and plan before comparing it with another product.
 
+## What do you want the AI to change?
+
+“AI video editor” can describe several different operations. Before comparing products, name both the change and the material that must survive it. A conversation interface alone does not establish whether the result is a new shot, a rearranged timeline or corrected subtitles.
+
+| Your request | The operation to evaluate | The result to inspect |
+| --- | --- | --- |
+| Shorten a recorded answer while keeping its qualification | Select and assemble existing footage. | The full thought survives; the join sounds natural; the ending is retained. |
+| Make three standalone clips from a long interview | Find passages and produce separate edits. | Each clip has its own context, complete answer and usable framing. |
+| Translate captions but keep the speaker's voice | Revise text and layout over the existing recording. | Meaning, timing and the requested audio survive in the final file. |
+| Change the coat, weather or background within a shot | Transform visual content within the footage. | The requested change remains consistent through movement; unrelated details stay intact. |
+| Add a shot that was never recorded | Generate or source new material, then assemble it. | The new shot fits the story, continuity and intended usage rights. |
+
+Some products combine these operations. Evaluate the particular mode you will use, rather than treating the product name as a guarantee about every kind of editing.
+
+### How prominent product pages describe the difference
+
+On November 7, 2026, we inspected eight visible organic results on the first Google results page for “ai video editor,” plus the first two on the next page, from a UAE browser with personalization disabled. Ads and the AI Overview were excluded. This is a dated ten-page research sample, **not a global top-ten ranking**; the second page used Google's `start=10` offset despite eight ordinary results being visible on the first page.
+
+The linked pages below are vendor documentation and marketing descriptions, not our hands-on test results:
+
+| Workflow described | Primary pages in the sample | What that means for a useful comparison |
+| --- | --- | --- |
+| Assemble and enhance clips | [Canva](https://www.canva.com/video-editor/ai/) describes styling, cutting and sequencing clips. [VEED](https://www.veed.io/tools/ai-video/ai-video-editor) describes auto edits including captions, audio cleanup and filler removal. | Give each candidate the same recording and ask for a specific revision after its first pass. Check what changes beyond the requested operation. |
+| Combine timeline editing and AI operations | [invideo](https://invideo.io/make/ai-video-editor/) describes agent instructions and timeline controls. [Adobe Firefly](https://www.adobe.com/products/firefly/features/ai-video-editor.html) combines prompt-based and timeline tools. [Kapwing](https://www.kapwing.com/ai) lists trimming, translation and visual transformation. [Renderforest](https://www.renderforest.com/ai-video-editor) distinguishes generated-shot changes from cutting uploaded footage on a timeline. | Establish which operations the assistant performs and which require manual controls. Inspect the saved project and final export, not just the generated asset. |
+| Change the appearance or motion of a shot | [Kling](https://kling.ai/feature/ai-video-editor) describes changing subjects, backgrounds and style. [Leonardo](https://leonardo.ai/ai-video-editor) describes conversational changes to generated video. [Pollo](https://pollo.ai/ai-video-editor) describes object removal, background changes and effects from prompts. | Test input eligibility and preservation of identity, labels and movement. A convincing transformed shot does not by itself demonstrate long-form story editing. |
+| Separate long-video clipping from raw-footage editing | [OpusClip](https://www.opus.pro/ai-video-editor) offers a clipping route and an AI Producer route. | Choose the route before testing: a clip recommendation and a finished edit from raw footage are different deliverables. |
+
+### Three precise briefs for the same product demonstration
+
+Consider a fictional 45-second recording showing a presenter holding a labeled product. These are evaluation prompts, not claims that every candidate supports the requested work:
+
+- **Edit the story:** “Make a 20-second cut using the existing recording. Keep the complete explanation of who the product is for, the price qualification and the final demonstration. Preserve the actual speech. Show which passages you retained.”
+- **Change one visual element:** “Replace only the plain wall with a studio background. Preserve the presenter, hands, product label, spoken audio, timing and camera movement. Show a preview through the moment the hand passes in front of the product.”
+- **Localize the captions:** “Add reviewed Spanish captions while keeping the English recording and the existing cut. Preserve the product name, number and condition. Show the source and target wording before rendering.”
+
+For the story edit, listen for a missing qualification. For the visual change, inspect moving boundaries and label legibility throughout the shot. For localization, review wording with a language reviewer and check caption placement. A single attractive frame cannot settle all three questions.
+
+Valmera's [recorded edit and revision](MCP-RECORDED-EDIT.md), [caption-style change](CAPTION-STYLE-EXAMPLE.md) and [supplied Spanish-caption example](SUBTITLE-TRANSLATION-EXAMPLE.md) provide downloadable evidence for specific tasks. They do not establish generative object-replacement performance. Start your own comparison with the [shared speech trial](SPEECH-EDITOR-TRIAL.md) or [evaluation worksheet](EDITOR-EVALUATION.md), and add a representative test for the operation you actually need.
+
 ## What “agentic” changes in a real editing session
 
 An individual AI feature can generate captions or remove a pause. An editing agent coordinates several decisions toward a result. That distinction does not establish how well it performs them.
