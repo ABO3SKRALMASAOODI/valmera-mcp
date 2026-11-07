@@ -2,6 +2,8 @@
 
 Start with the edit you want to make. These public guides cover connecting an assistant, writing a brief, reviewing a result and correcting it. Valmera edits footage you provide through its browser Studio or hosted MCP service. Account creation and uploads are free; AI editing requires an eligible subscription. Check [current plans](https://valmera.io/subscribe).
 
+For free editing, use the [export check and delivery record](FREE-EXPORT-CHECK.md) to distinguish watermark-free files, premium export gates and separate AI allowances.
+
 ## Start an edit or connect your assistant
 
 | What you want to do | Start here |

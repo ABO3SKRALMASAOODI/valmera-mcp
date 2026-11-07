@@ -8,6 +8,8 @@ Compare the result you can download, the revision you can make, and the work it 
 
 [Download the test kit](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/releases/tag/editor-evaluation-v1.0.0) · [Blank scorecard](evaluation/scorecard.csv) · [Machine-readable brief](evaluation/brief.json) · [Compare editing workflows](https://valmera.io/alternatives/best-ai-video-editors?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=editor_evaluation)
 
+If free export is required, complete the [watermark and export check](FREE-EXPORT-CHECK.md) before comparing creative results.
+
 ## What you can test with this footage
 
 For one observed result using this procedure, see the [November 7 MCP run](MCP-RECORDED-EDIT.md). It includes source, first preview, revised final MP4, measured output properties and explicit untested criteria. It is a Valmera-authored example, not an independent comparison.
