@@ -32,6 +32,14 @@ Follow the source link before reusing a command or tool call. Generated snippet 
 
 For maintenance, verify a distinctive passage from the new document, rather than treating a larger snippet count as proof of freshness. Record the query, returned source and observation date. If a newer passage is absent, use the current [repository documentation index](README.md) directly and report that index freshness remains unverified for that material. Use the owner's supported refresh control only when eligible; preserve an in-flight request and respect the provider's refresh limit instead of submitting duplicate libraries. No refresh was needed for the successful retrieval check above.
 
+## Capability-label correction check on November 7, 2026
+
+[Odel's existing Valmera listing](https://odel.app/modules/valmera/video-editor) still describes the connector as read-only, reports no anonymously listed tools and reproduces an older README. Its public About page links to `Odel-AI/Odel`; GitHub returned repository not found during this check, so no maintainer issue was submitted. A current supported correction route remains unresolved. Do not create a second listing or share an account token to work around this.
+
+For a future correction, use the [capability explanation](CONNECTION-TROUBLESHOOTING.md#does-valmera-edit-video-or-only-read-projects), the [live server card](https://valmera.io/.well-known/mcp/server-card.json) and the downloadable recorded editing examples it links. On November 7, the card marked cut, caption-style, preview and export operations as non-read-only. The examples establish specific completed runs; they do not establish every possible capability or an authenticated Odel test.
+
+[MCPBeat issue #3](https://github.com/mcpbeat/best-mcp-servers/issues/3) remains open with only the earlier owner follow-up and no new maintainer response. The endpoint-correction request is already submitted; no duplicate comment was added.
+
 ## Verified state on November 4, 2026
 
 | Surface | Verified result | Next action |
