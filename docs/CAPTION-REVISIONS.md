@@ -23,7 +23,7 @@ Listen to identifiable phrases near the beginning, middle and end of the exact v
 | Two copies of the words appear | Text already rendered into the video plus a player caption track | Decide which delivery version and player track you need. |
 | The caption hides a face, control or chart | The actual output dimensions and viewing size | Revise placement or grouping and inspect representative frames. |
 
-For an existing SRT or VTT file with a confirmed uniform delay, the free [subtitle timing shifter](https://valmera.io/tools/subtitle-timing-shifter) can move its cues. Keep the original file. An offset tool does not determine which source passages belong in a new cut.
+For an existing SRT or VTT file with a confirmed uniform delay, the free [subtitle timing shifter](https://valmera.io/tools/subtitle-timing-shifter) can move its cues. It also supports a linear scale and offset from two reference cues. See the [recorded three-cue SRT example](SUBTITLE-SYNC-EXAMPLE.md) for the actual input, downloaded result and an independent middle-cue check. Keep the original file. A global timing rule does not determine which source passages belong in a new cut.
 
 ## A worked example: three source sections become one clip
 

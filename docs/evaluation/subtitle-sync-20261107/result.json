@@ -1,0 +1,47 @@
+{
+  "observedAt": "2026-11-07T07:46:54.499885+00:00",
+  "url": "https://valmera.io/tools/subtitle-timing-shifter",
+  "operation": "Match two cues, followed by Download .srt",
+  "sourceType": "synthetic subtitle text; no audio or video",
+  "anchorsSeconds": [
+    [
+      10,
+      9
+    ],
+    [
+      90,
+      93
+    ]
+  ],
+  "derivedScale": 1.05,
+  "derivedOffsetSeconds": -1.5,
+  "expectedAndObservedMilliseconds": [
+    [
+      9000,
+      11100
+    ],
+    [
+      51000,
+      53100
+    ],
+    [
+      93000,
+      95100
+    ]
+  ],
+  "cueTextsAndOrderPreserved": true,
+  "downloadValidated": true,
+  "input": "input.srt",
+  "actualDownloadedOutput": "browser-output.srt",
+  "screenshot": "browser-result.png",
+  "sha256": {
+    "input.srt": "762f2524e90d17f1fb7e0837a9f6925daebada4a2105851afacdee54706a125e",
+    "browser-output.srt": "807600f2671ee580c040523e81b2f3b30bdbf95bcd9de0091da9e284e93aa5cc",
+    "browser-result.png": "1e8b183a1c766e05fbd1a677d8564afbf147337987f5f833acd0dc14291bd2c4"
+  },
+  "limits": [
+    "One three-cue SRT only",
+    "No actual speech alignment or AI operation tested",
+    "No VTT, negative timestamps, overlap or player compatibility tested"
+  ]
+}
