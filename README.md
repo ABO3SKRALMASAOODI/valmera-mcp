@@ -13,6 +13,8 @@ Join thousands of creators. Bring your footage, describe the result, and refine 
 
 Start with your own footage and an editing goal. Use the public [interactive editing brief builder](https://valmera.io/prompts#prompt-builder), then follow the [creator workflow briefs](docs/CREATOR-WORKFLOWS.md) for your first project.
 
+**Editing a software tutorial?** Use the [screen-recording cut and revision guide](docs/SCREEN-RECORDING-TUTORIALS.md) to preserve the starting state, action and result of each step while shortening waits and keeping controls readable.
+
 ```text
 Endpoint   https://valmera.io/mcp/server
 Transport  Streamable HTTP
