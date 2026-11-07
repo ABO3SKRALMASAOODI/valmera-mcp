@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-07",
+  "tool": "https://valmera.io/tools/freeze-frame",
+  "route": "Free browser tool, manual controls, not Studio or MCP.",
+  "source": "../recorded-run-20261107/original-source.mp4",
+  "settings": {
+    "freezeAtSourceSeconds": 5,
+    "holdSeconds": 2.5,
+    "darkenPercent": 0,
+    "text": ""
+  },
+  "output": {
+    "file": "export.webm",
+    "codec": "VP9",
+    "width": 1280,
+    "height": 720,
+    "audioStreams": 0,
+    "decodedFrames": 825,
+    "reportedFrameRate": "30/1",
+    "uiDecodedDuration": "0:27.47",
+    "decoderFinalTimeSeconds": 27.5,
+    "containerDurationField": "not present"
+  },
+  "selectedFrames": [
+    {
+      "outputFrameIndex": 149,
+      "sourceCounter": "00:04:28"
+    },
+    {
+      "outputFrameIndex": 150,
+      "sourceCounter": "00:05:00"
+    },
+    {
+      "outputFrameIndex": 180,
+      "sourceCounter": "00:05:00"
+    },
+    {
+      "outputFrameIndex": 224,
+      "sourceCounter": "00:05:00"
+    },
+    {
+      "outputFrameIndex": 225,
+      "sourceCounter": "00:05:00"
+    },
+    {
+      "outputFrameIndex": 240,
+      "sourceCounter": "00:05:14"
+    },
+    {
+      "outputFrameIndex": 374,
+      "sourceCounter": "00:09:29"
+    },
+    {
+      "outputFrameIndex": 824,
+      "sourceCounter": "00:24:29"
+    }
+  ],
+  "review": {
+    "fullFileDecode": "Completed without a decoding error",
+    "visual": "Eight sampled output frames inspected. Contact sheet is ordered left to right, top to bottom.",
+    "continuousPlayback": "Not performed",
+    "audio": "Silent source; no audio preservation conclusion.",
+    "frameAccuracy": "Not established. Browser real-time capture can duplicate or skip source frames; do not infer frame-exact timing from nominal frame rate."
+  },
+  "limitations": [
+    "One run in the connected browser, not cross-browser or reliability testing.",
+    "No customer footage or customer project used.",
+    "No Studio or MCP editing quality claim.",
+    "Original source carries its own text; source text is not a tool-added watermark."
+  ]
+}
