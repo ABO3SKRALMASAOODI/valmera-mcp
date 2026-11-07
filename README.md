@@ -302,6 +302,9 @@ You do not need to host the editing server or clone this repository. Add Valmera
 **Is the original file changed?**
 No. Edits live in a versioned EDL, and the final export renders from the untouched original.
 
+**Is Valmera only a read-only MCP connector?**
+No. Inspection tools return project information; editing tools save revisions, render previews and export files. See the [operation-by-operation explanation and recorded evidence](docs/CONNECTION-TROUBLESHOOTING.md#does-valmera-edit-video-or-only-read-projects). A directory unable to enumerate authenticated tools has not tested an edit.
+
 **Why does the MCP address return 401 Unauthorized?**
 The endpoint requires authentication. An anonymous 401 with a metadata challenge means it responded and is directing the client to sign in; it is not an authenticated editing test. Follow the [connection troubleshooting guide](docs/CONNECTION-TROUBLESHOOTING.md) for sign-in issues, missing tools and public checks.
 
