@@ -29,7 +29,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Podcast clips | [Compare ten clipping workflows and select a complementary clip set](PODCAST-CLIPS.md), with a [blank selection and delivery worksheet](PODCAST-CLIP-WORKSHEET.md) |
 | Screen recording or software tutorial | [Preserve the starting state, action and result](SCREEN-RECORDING-TUTORIALS.md) |
 | Website demonstration | [Plan and make a website demo](WEBSITE-DEMO.md) |
-| Webinar replay and clips | [Webinar workflow](WEBINARS.md) and [vertical slide readability](SLIDE-READABILITY.md) |
+| Webinar replay and clips | [Webinar workflow](WEBINARS.md) and [vertical slide readability](SLIDE-READABILITY.md), plus a [replay publishing worksheet](WEBINAR-PUBLISHING-CHECK.md) |
 | YouTube video | [Editor routes, full-episode trial and chapter timing map](YOUTUBE.md), with a [reusable trial record](YOUTUBE-EDITOR-TRIAL.md) |
 | Property walkthrough | [Compare editing routes, map the rooms and review a restoration](REAL-ESTATE-SHOT-MAP.md), with a [shared property trial record](REAL-ESTATE-EDITOR-TRIAL.md) |
 | Several recordings with one style | [Batch editing: pilot, source-specific notes and delivery tracking](BATCH-VIDEO-EDITING.md) |
