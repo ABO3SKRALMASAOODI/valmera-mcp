@@ -134,6 +134,8 @@ codex mcp login valmera
 
 ## Gemini CLI
 
+See [Gemini video editing: native features, Studio briefs and MCP execution](GEMINI-VIDEO-EDITING.md) for a first-edit workflow and the distinction between Gemini Apps and Gemini CLI.
+
 ```sh
 gemini mcp add --transport http valmera https://valmera.io/mcp/server
 # then inside Gemini CLI:

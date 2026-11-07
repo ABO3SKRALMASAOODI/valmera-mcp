@@ -115,6 +115,7 @@ gemini mcp add --transport http valmera https://valmera.io/mcp/server
 Then open Gemini CLI, run `/mcp auth valmera` and sign in.
 
 See the [Gemini CLI editing guide](https://valmera.io/mcp/gemini-cli) for the current account requirements and a first-edit walkthrough.
+The [Gemini video workflow companion](docs/GEMINI-VIDEO-EDITING.md) explains native video features, planning in chat, and editing through the connected CLI.
 
 ### Antigravity
 
