@@ -13,6 +13,8 @@ Join thousands of creators. Bring your footage, describe the result, and refine 
 
 **Want an actual recorded run?** Inspect the [MCP edit, revision and export](docs/MCP-RECORDED-EDIT.md), including downloadable source/preview/final files, exact join frames, measured durations and observed branding.
 
+**Want a speech-caption example?** Compare [two caption styles on the same excerpt](docs/CAPTION-STYLE-EXAMPLE.md), with downloadable previews, matching decoded preview audio and a verified full-resolution export.
+
 **Choosing an AI editor for recorded footage?** Read the [workflow and evaluation guide](docs/VIDEO-EDITING-AGENTS.md): source-linked comparisons including Descript, Kapwing, ChatCut, Premiere and OpusClip, plus a shared first-edit brief, revision and delivery record.
 
 Start with your own footage and an editing goal. Use the public [interactive editing brief builder](https://valmera.io/prompts#prompt-builder), then follow the [creator workflow briefs](docs/CREATOR-WORKFLOWS.md) for your first project.

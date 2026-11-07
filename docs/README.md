@@ -38,13 +38,14 @@ The examples and sample prompts are editing guidance. Where a guide labels a tim
 
 | Question | Public material | What it establishes |
 | --- | --- | --- |
+| Can I compare two real caption treatments on spoken footage? | [Recorded caption-style revision](CAPTION-STYLE-EXAMPLE.md) | Downloadable previews and full-resolution export, identical decoded audio between previews, observed branding and disclosed limitations. |
 | Can I inspect an actual MCP edit and focused revision? | [Recorded MCP run](MCP-RECORDED-EDIT.md) | Downloadable source, previews and final MP4; measured durations and inspected cut boundaries from one silent sample. |
 | Can I inspect a browser-generated freeze frame? | [Freeze-frame before-and-after](FREEZE-FRAME-EXAMPLE.md) | Original source, unchanged WebM, file measurements and sampled frames from a manual browser edit. |
 | Does a browser color preset reach the downloaded file? | [Color-grade before-and-after](COLOR-GRADE-EXAMPLE.md) | B&W settings, original MP4, unchanged WebM, sampled images and the observed frame-count difference. |
 | How should I compare editors on the same task? | [Edit-and-revise evaluation kit](EDITOR-EVALUATION.md) | A repeatable brief and blank scorecard, rather than a completed competitive benchmark. |
 | Which AI editor fits footage I already recorded? | [Video editing agent guide](VIDEO-EDITING-AGENTS.md) | Workflow choices, primary-source product comparisons and a shortlist method to test on your footage. |
 
-The recorded examples above use a silent motion graphic. They do not establish speech-cleanup accuracy, audio preservation or creative quality. The browser freeze and color examples do not test AI editing. Review the source, method and limits with each artifact, then repeat the relevant task on representative footage.
+The cut, freeze and color examples use a silent motion graphic. The caption example uses a licensed animated-film dialogue excerpt and checks audio identity between two previews. None establishes general speech-cleanup accuracy or creative quality. The browser freeze and color examples do not test AI editing. Review the source, method and limits with each artifact, then repeat the relevant task on representative footage.
 
 When approving your own edit, identify the project, preview version and downloaded file. Check the actual result at normal playback speed; a finished render or an assistant's summary does not establish that every requested change was delivered.
 
