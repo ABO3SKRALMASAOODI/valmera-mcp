@@ -7,27 +7,35 @@ Join thousands of creators. Bring your footage, describe the result, and refine 
 
 **[Connect your assistant](https://valmera.io/mcp/connect?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow) · [Open an editing brief in Valmera](https://valmera.io/chatgpt-video-editor?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow#first-brief) · [ChatGPT first-edit walkthrough](docs/CHATGPT.md)**
 
-**[Browse documentation by editing task](docs/README.md)** — connection help, recording-specific workflows, focused revisions and downloadable examples.
+## Inspect a recorded edit
 
-**Cleaning a noisy recording?** Use the [video audio cleanup guide](docs/VIDEO-AUDIO-NOISE-REMOVAL.md) to compare ten search-result routes, select a representative listening trial and verify the exported sound before continuing the edit.
+Start with the change you need to make. These first-party examples include actual files and recorded checks; each guide explains its source, method and limits.
 
-**Comparing editors?** Use the [edit-and-revise evaluation kit](docs/EDITOR-EVALUATION.md): the same source footage, exact prompts, expected source ranges and a blank evidence scorecard.
+| Your task | Open the recorded example | What you can inspect |
+| --- | --- | --- |
+| Remove an expired offer while keeping the rest of a product video | [Product-offer revision](docs/PRODUCT-OFFER-REMOVAL-EXAMPLE.md) | Before/after final MP4s and edit records. One separate text element was removed; the two final exports have identical decoded audio under the stated settings. |
+| Restyle captions without changing an approved cut | [Caption-style comparison](docs/CAPTION-STYLE-EXAMPLE.md) | Two 9.6-second previews, sampled caption frames and the final export. The comparison previews retain the same selection and decoded audio. |
+| Display Spanish captions over the original English soundtrack | [Subtitle-language comparison](docs/SUBTITLE-TRANSLATION-EXAMPLE.md) | English/Spanish comparison previews and a later export revision. Spanish wording was supplied by the assistant; the run is not an independent translation-quality assessment. |
+| Shorten one selected passage after reviewing a first cut | [MCP cut, revision and export](docs/MCP-RECORDED-EDIT.md) | Source, previews, final MP4, exact tool arguments and sampled join frames from a silent motion graphic. |
+| Try a manual browser edit before connecting an assistant | [Freeze frame](docs/FREEZE-FRAME-EXAMPLE.md) or [B&W color preset](docs/COLOR-GRADE-EXAMPLE.md) | Original source, unchanged browser-exported WebM, sampled frames and measured timing. These runs test browser controls, not AI editing. |
 
-**Want an actual recorded run?** Inspect the [MCP edit, revision and export](docs/MCP-RECORDED-EDIT.md), including downloadable source/preview/final files, exact join frames, measured durations and observed branding.
+**Compare the final download as well as the preview.** The recorded MCP exports include Valmera branding and an end card; their runtimes differ from the edited program. The offer-removal guide also discloses an export-check workaround. Read the relevant guide before treating an example as evidence for your own task. These are individual demonstrations, not a general creative-quality score or a competitive benchmark.
 
-**Want a speech-caption example?** [See the English-to-Spanish comparison below](#change-the-captions-keep-the-recorded-soundtrack), or compare [two English caption styles](docs/CAPTION-STYLE-EXAMPLE.md). The recorded examples include downloadable previews, decoded-audio checks and full-resolution exports.
+For an embedded example, [watch the styled vertical excerpt](#watch-a-real-video-edit) or [inspect the Spanish-caption sample](#change-the-captions-keep-the-recorded-soundtrack).
 
-**Choosing an AI editor for recorded footage?** Read the [workflow and evaluation guide](docs/VIDEO-EDITING-AGENTS.md): source-linked comparisons including Descript, Kapwing, ChatCut, Premiere and OpusClip, plus a shared first-edit brief, revision and delivery record.
+## Choose your workflow
 
-Start with your own footage and an editing goal. Use the public [interactive editing brief builder](https://valmera.io/prompts#prompt-builder), then follow the [creator workflow briefs](docs/CREATOR-WORKFLOWS.md) for your first project.
+- **Choosing an online editor:** compare [ten observed Google result pages, storage approaches and a save/reopen/revise trial](docs/ONLINE-VIDEO-EDITOR.md). Use the [blank project handoff record](docs/ONLINE-EDITOR-TRIAL.txt) when testing your shortlist.
+- **Choosing an AI editing agent:** use the [source-linked workflow comparison](docs/VIDEO-EDITING-AGENTS.md), then run the [shared edit-and-revise evaluation kit](docs/EDITOR-EVALUATION.md) on the same footage.
+- **Editing your recording:** [browse guides by task](docs/README.md) for interviews, podcasts, YouTube, webinars, screen recordings, product footage and more. Guides include reusable briefs, review criteria and delivery worksheets.
+- **Working across several recordings:** start with the [batch-editing pilot and delivery record](docs/BATCH-VIDEO-EDITING.md). For software lessons, use the [screen-recording cut and revision guide](docs/SCREEN-RECORDING-TUTORIALS.md).
+- **Cleaning up sound:** use the [noise-removal comparison and listening trial](docs/VIDEO-AUDIO-NOISE-REMOVAL.md) to evaluate the exported audio on a representative passage.
 
-**Editing a series?** Use the [batch video editing guide](docs/BATCH-VIDEO-EDITING.md) to separate shared style from source-specific cuts, run a pilot, track each revision and verify every export.
+## Make your first edit
 
-**Want to inspect a free browser edit?** Download the [freeze-frame before-and-after](docs/FREEZE-FRAME-EXAMPLE.md), with a 25-second source, a browser-exported WebM and sampled timing checks.
-
-**Comparing a color preview with the actual file?** Inspect the [B&W browser export](docs/COLOR-GRADE-EXAMPLE.md), including the original MP4, downloaded WebM, settings, sampled pictures and observed frame-count difference.
-
-**Editing a software tutorial?** Use the [screen-recording cut and revision guide](docs/SCREEN-RECORDING-TUTORIALS.md) to preserve the starting state, action and result of each step while shortening waits and keeping controls readable.
+1. Choose [Valmera Studio or your own connected assistant](docs/CLIENTS.md#choose-the-plan-for-your-editing-route). Account creation and uploads are free; AI editing requires an eligible subscription. Check [current plans](https://valmera.io/subscribe); your assistant provider's charges are separate.
+2. Bring footage you can use and write a concrete brief: the desired selection, title or captions, framing, sound and output. The [interactive brief builder](https://valmera.io/prompts#prompt-builder) and [creator workflow briefs](docs/CREATOR-WORKFLOWS.md) can help.
+3. Review the preview, request one focused revision, then inspect the downloaded export. Keep the project and reviewed version so you can revise it later. Follow the [complete upload-to-export workflow](docs/WORKFLOW.md).
 
 ```text
 Endpoint   https://valmera.io/mcp/server
