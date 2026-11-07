@@ -1,0 +1,121 @@
+{
+  "testedDate": "2026-11-07",
+  "publisher": "Valmera",
+  "assistant": "Codex using the connected Valmera MCP tools",
+  "projectId": 5532,
+  "customerProject": false,
+  "source": {
+    "url": "https://valmera.io/examples/trim-and-reframe/original-source.mp4",
+    "sha256": "24dc72de92df8e0d212fa9ca068d3ffdacab55f74b91c32249be96e9e74defdf",
+    "durationSeconds": 25,
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "audioStream": false
+  },
+  "firstEdit": {
+    "edlVersion": 3,
+    "keep": [
+      [
+        3,
+        7
+      ],
+      [
+        12,
+        16
+      ],
+      [
+        19,
+        23
+      ]
+    ],
+    "frame": {
+      "ratio": "1:1",
+      "mode": "crop",
+      "focus_x": 0.5,
+      "focus_y": 0.5
+    },
+    "previewSeconds": 12,
+    "previewVideoFrames": 360,
+    "previewWidth": 720,
+    "previewHeight": 720,
+    "previewSha256": "1e06d2d4eb1b0db11b9be84867400c669b72a4bb8f1bdcb5cfb69d3521af7080"
+  },
+  "revision": {
+    "tool": "cut_range",
+    "arguments": {
+      "start": 14,
+      "end": 16,
+      "snap_to_words": false
+    },
+    "edlVersion": 4,
+    "keep": [
+      [
+        3,
+        7
+      ],
+      [
+        12,
+        14
+      ],
+      [
+        19,
+        23
+      ]
+    ],
+    "frameUnchanged": true,
+    "previewSeconds": 10
+  },
+  "export": {
+    "jobId": 137424,
+    "assetId": 40405,
+    "edlVersion": 4,
+    "sha256": "9b7f97b8e75c80b49c8e2c61f2bace1c279cc26599d65b28b5d4d394bcdc592e",
+    "downloadHashMatchesReceipt": true,
+    "programSeconds": 10,
+    "totalSeconds": 15,
+    "videoFrames": 450,
+    "width": 1080,
+    "height": 1080,
+    "fps": 30,
+    "bytes": 344539,
+    "cornerMark": true,
+    "endCardSeconds": 5,
+    "brandingOverFinalProgramFrame": true,
+    "audio": {
+      "codec": "aac",
+      "decodedMin": 0,
+      "decodedMax": 0,
+      "peakDb": "-inf"
+    }
+  },
+  "boundaryReview": {
+    "file": "export-boundaries.png",
+    "frameIndices": [
+      119,
+      120,
+      179,
+      180,
+      299,
+      300
+    ],
+    "observedSourceLabels": [
+      "00:06:29",
+      "00:12:00",
+      "00:13:29",
+      "00:19:00",
+      "00:22:29 beneath branding",
+      "branded card"
+    ],
+    "timecodeFormat": "minutes:seconds:frames, 30fps; zero-based frame indices"
+  },
+  "limits": [
+    "Single synthetic silent sample; no speech, captions, people tracking or creative-quality evaluation.",
+    "No competitor test or ranking claim.",
+    "Sampled-frame and exact-boundary visual review, not continuous independent-player full playback.",
+    "Account subscription tier, usage charges and latency not independently measured.",
+    "No plan purchase or upgrade made; existing account access used.",
+    "1080px export is scaled above the 720px source height.",
+    "Generic speaker-jump advisory occurred on this source without a speaker."
+  ]
+}
