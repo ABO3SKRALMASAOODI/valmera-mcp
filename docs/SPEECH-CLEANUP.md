@@ -51,6 +51,35 @@ For every candidate, record the actual setting used, the returned duration, one 
 
 If a tool leaves a short pause, first check whether that pause falls below its documented threshold. If it cuts too much, separate two questions: did it identify the wrong region, or did it leave too little room around a valid cut? The former needs different selection or a protected interval; the latter needs boundary adjustment or restoration. Use the worked correction below to specify the repair without losing approved edits elsewhere.
 
+## Compare filler-word removal separately from silence removal
+
+A pause is an interval; a filler is a sound or phrase used in context. A tool may recognize one and miss the other. Before choosing an editor, ask whether it shows candidates, cuts the media or only edits text, and lets you recover a single unwanted cut. Use the [speech-cleanup trial worksheet](SPEECH-CLEANUP-WORKSHEET.md) to record those answers against your own recording.
+
+We inspected the first ten results returned for `AI video editor remove filler words without cutting words` on November 7, 2026. Eight pages were retrievable in full and are summarized below. Voxcene and Fotor also appeared, but their full pages could not be retrieved, so they are not assigned detailed capabilities here. Search ordering is not verified Google placement. These are vendor descriptions, not a hands-on benchmark or a ranking of editing quality.
+
+| Product and primary source | What its page describes | What to establish in your trial |
+| --- | --- | --- |
+| [Zidi](https://docs.zidi.ai/features/ai-cleanup/) | Separate filler and silence operations create a new video; automatic filler detection is English-only. | Whether your required words are detected and how you recover a specific unwanted removal in the new version. |
+| [Tella](https://www.tella.com/edit-with-ai/remove-filler-words) | An MCP filler operation, selected transcript-word cuts, preview review and a separate optional silence pass. | Which contextual phrases you want removed and whether the surrounding words remain intact. |
+| [ByeCut](https://byecut.com/features/remove-filler-words) | A proposed edit to review before application, word restoration and captions following the revised cut. English is its most-tested language. | Whether your language and false starts are handled correctly, then inspect the actual exported captions. |
+| [Marxx](https://marxx.ai/guides/how-to-remove-filler-words-from-video) | Its own editor accepts requests to remove a particular word or line using the transcript. | Whether a single occurrence can be removed while another occurrence with meaning stays. |
+| [VidTL](https://vidtl.com/remove-filler-words/) | Transcript-dependent detection, whole-pass undo, and some long-pause removal in the same pass. Its page acknowledges missed fillers. | Whether the transcript includes quiet hesitations and whether additional pause cuts match your brief. |
+| [SilentCut](https://www.silentcut.ai/) | Separate silence, speech-cleanup and best-take stages, with uncertain decisions sent to a review list. | Which stages actually run and whether a repeated take should be selected in this task at all. |
+| [Vidonto](https://www.vidonto.com/features/remove-filler-words/) | Accept/reject suggestions and restoration; rerunning detection replaces earlier suggestions and decisions while preserving manual edits. | Whether your approved decisions survive the exact rerun or revision route you intend to use. |
+| [UGCLive Editor](https://editor.ugc.live/features/silence-remover) | Filler or phrase cuts, editable timeline boundaries and one undo for the whole request. | Whether one boundary can be repaired without losing unrelated approved cuts. |
+
+Marxx's page also describes other editors; the row above summarizes only its claim about its own product. We have not reproduced these vendors' results or verified their current account entitlements. Check the actual plan, language support and output before committing to a long recording.
+
+### Run a trial that can reveal the wrong deletion
+
+Choose a passage with a few unwanted hesitations **and** speech that must remain. Before running cleanup, listen to the original and mark each candidate as remove, preserve or undecided. Include two occurrences of the same word in different contexts when your footage contains them. Do not manufacture an expected result by accepting every candidate the tool proposes.
+
+> Remove only the unwanted hesitations we identified in [source passage]. Preserve “[meaningful phrase]”, the repetition in “[emphasis]” and the pause before “[conclusion]”. Keep the original spoken wording, speed and picture/sound synchronization. Do not choose retakes, shorten other pauses, rewrite speech or restyle captions in this pass. Show the changed source ranges and a preview. If the available operation bundles other changes, explain that before applying it.
+
+If the product cannot isolate that scope, record its actual behavior rather than silently treating a broader cleanup as the same test. Inspect the whole sample at normal speed. For each proposed cut, check the original passage, the returned words, the audible boundary and the visible action. An unreviewed join remains **unreviewed**, not passed.
+
+The worksheet distinguishes four outcomes: wanted material removed, wanted material missed, protected material removed, and damaged joins. None is interchangeable with seconds saved. For example, removing seven of eight unwanted hesitations while also cutting two meaningful phrases is not a successful edit merely because the runtime fell. First repair the missing meaning; then assess the joins and pacing.
+
 ## Start with a representative passage
 
 Choose a short passage containing ordinary speech, at least one proposed removal and a moment that should stay: a breath, a meaningful hesitation, a response or a demonstration step. Include the actual language, speaker and recording conditions you need to edit. A clean studio sample does not establish how a noisy interview or overlapping conversation will behave.
