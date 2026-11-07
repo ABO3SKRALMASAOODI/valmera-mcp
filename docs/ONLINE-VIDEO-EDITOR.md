@@ -18,22 +18,36 @@ This guide is published by Valmera. It compares documented workflows, then provi
 
 These are starting points, not a ranking. A local editor can be a better fit for a small manual job; a hosted assistant can be a better fit when you want to describe and revise an edit. Compare the task and delivered result rather than the number of AI features on the homepage.
 
-## What ten search-result pages actually tell you
+## What ten visible Google results actually tell you
 
-We opened the first ten product results returned by our web search tool for “online video editor.” This is an ordered research sample, **not a measured Google top ten**. Nine pages returned readable text; ToolBuddy could not be opened through that tool. FilmCraft's old address redirected, so we followed its current editor link. A search excerpt and a current destination can differ.
+On 7 November 2026, we inspected eight ordinary organic results visible on Google's first page for “online video editor,” then the first two results on the next page. The browser was in the UAE and Google stated that results were not personalized. Ads, the owner-only Search Console card and the AI Overview were excluded. Page two used Google's `start=10` offset despite eight ordinary results being visible on page one. This is a dated ten-page research sample, **not a universal top-ten ranking**.
+
+The table follows that observed order. We opened each linked product page; descriptions below are published capabilities, not our own hands-on results.
 
 | Product and official source | What the inspected page describes | A useful trial question |
 | --- | --- | --- |
-| [Smooth Clip](https://www.smoothclip.com/) | Browser controls with server rendering, MP4 delivery and no signup needed to start. Its FAQ distinguishes starting without an account from keeping projects with an account. | Can you reopen this project using the access method you plan to keep? |
-| [Canva](https://www.canva.com/video-editor/) | A layered editing timeline, caption controls, design templates and AI-assisted clip assembly. | Does the exported variant retain your approved layout and use assets available to your plan? |
-| [PopNow](https://popnow.ai/editor) | Local manual editing and export without an account; optional AI audio separation uploads source audio and uses credits. | Are you testing local editing or an AI operation with a different data path? |
-| [Free Photo Desk](https://freephotodesk.com/edit/) | On-device trimming, joining, picture changes, text and music. The page asks users to keep the screen on during export. | Can the intended device finish the representative project and reopen an editable version? |
-| [ToolBuddy](https://www.toolbuddy.io/video-workstation) | The search excerpt advertises on-device editing; the full page was unavailable to our retrieval tool. | Inspect the live editor and current conditions before relying on the excerpt. This row is not a verified capability assessment. |
+| [Clideo](https://clideo.com/video-editor) | Multitrack editing, separately customizable text and exporting to a device or cloud storage account. | Can you reopen the editable timeline, rather than just the downloaded video, using the route you plan to retain? |
+| [123apps Online Video Cutter](https://online-video-cutter.com/video-editor) | Uploaded footage, multiple timeline lanes, text controls and server processing for the final download. | Which project and source files are available when you return through My projects? |
+| [Canva](https://www.canva.com/video-editor/) | Layered editing, caption controls, design templates and AI-assisted clip assembly. | Does the exported variant retain your approved layout and use assets available to your plan? |
+| [invideo](https://invideo.io/make/online-video-editor/) | Manual timeline work, agent edits, collaboration, checkpoints and editable-project exports. Its FAQ separates manual editing from credit-consuming AI. | Can your chosen route reopen a checkpoint and preserve media, titles and sound in the handoff you need? |
+| [Adobe Express](https://www.adobe.com/express/feature/video/editor) | Uploading, cropping, trimming, splitting, adding sound and downloading an MP4. | Does your saved design retain a separately editable title, and are its assets eligible for the intended export? |
+| [VEED](https://www.veed.io/tools/video-editor) | Timeline and transcript editing, Auto Edits and uploaded media. The page distinguishes free watermarked exports from upgraded delivery. | Does the exact plan deliver your required file after the focused revision? |
+| [Clipchamp](https://clipchamp.com/en/video-editor-no-watermark/) | Timeline editing, text, graphics and watermark-free video delivery. Its account-specific storage documentation is explained below. | Which originals or backups are needed to reopen your account's project? |
+| [CapCut Online](https://www.capcut.com/tools/online-video-editor) | A signed-in workspace, cloud media backup, timeline controls and selectable export settings. | Are the project and required assets saved in the intended workspace before you change devices? |
 | [Kapwing](https://www.kapwing.com/video-editor) | Uploaded media, timeline controls, collaborative editing and AI operations. | Does the workspace retain the project and required assets under your plan? |
-| [AnyEdit](https://anyedit.app/video-editor/) | Local browser editing without signup. Its compatibility table separates engine-listed formats from formats the publisher has actually tested. | Can your particular camera file decode, play and export correctly? |
-| [edite](https://edite.video/) | Local multitrack editing, including text and picture-in-picture, with MP4, WebM or GIF output. | Which output does your actual browser produce, and how do you save an editable project? |
-| [FilmCraft at EasyRunCraft](https://easyruncraft.com/filmcraft/editor) | Manual browser editing and optional AI. AI requests send the context or media needed for that task. | Does your intended operation remain local, and does the device support the workload? |
-| [wide.video](https://wide.video/) | Local editing with advertised AI captions, background removal and video/audio format support. | Does the exact source, effect and output combination work on the device you will use? |
+| [Picsart](https://picsart.com/video-editor/) | Video uploads, text, sound, effects and customizable templates; storage depends on the account plan. | Does reopening preserve your title, timing and source media, and what storage limit applies? |
+
+### Additional local and mixed workflows
+
+The earlier web-search-tool sample returned a different set of products. These can still be useful alternatives when the data path or device matters:
+
+| Official page | Published distinction to investigate |
+| --- | --- |
+| [wide.video](https://wide.video/) and [edite](https://edite.video/) | Both describe on-device browser editing. Test the source, effect, saved-project route and export combination on your intended device. |
+| [Free Photo Desk](https://freephotodesk.com/edit/) and [AnyEdit](https://anyedit.app/video-editor/) | Both describe local editing. AnyEdit distinguishes engine-listed formats from publisher-tested compatibility; a supported extension alone is not a successful decode/export test. |
+| [PopNow](https://popnow.ai/editor) | Local manual editing and export are separate from optional AI audio separation, which uploads source audio and uses credits. |
+| [FilmCraft at EasyRunCraft](https://easyruncraft.com/filmcraft/editor) | Manual browser editing and optional AI have different processing paths. The old FilmCraft address redirected to this suite; follow the current editor documentation. |
+| [Smooth Clip](https://www.smoothclip.com/) | Browser controls use server rendering. Its FAQ distinguishes starting without signup from keeping projects through an account. |
 
 The questions are our evaluation criteria; they do not imply that a product failed them. No competitive result is filled in until a trial has actually been run. For prices and free export restrictions, use the [separate export check](FREE-EXPORT-CHECK.md) and the vendor's current plan information.
 
