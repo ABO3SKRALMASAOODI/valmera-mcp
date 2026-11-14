@@ -15,9 +15,10 @@ Start with the change you need to make. These first-party examples include actua
 
 | Your task | Open the recorded example | What you can inspect |
 | --- | --- | --- |
+| Show my product footage when the speaker names it | [Watch the four-second B-roll cutaway](https://valmera.io/examples/b-roll-cutaway) | The picture changes on “green” at 2.56 seconds and returns at 3.72. Play the original and the edit to hear the voice through both cuts. |
 | Remove an expired offer while keeping the rest of a product video | [Product-offer revision](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/PRODUCT-OFFER-REMOVAL-EXAMPLE.md) | Before/after final MP4s and edit records. One separate text element was removed; the two final exports have identical decoded audio under the stated settings. |
 | Restyle captions without changing an approved cut | [Caption-style comparison](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/CAPTION-STYLE-EXAMPLE.md) | Two 9.6-second previews, sampled caption frames and the final export. The comparison previews retain the same selection and decoded audio. |
-| Fix one caption word, restyle dialogue or emphasize a phrase | [Choose the caption or typography operation](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/CAPTION-STYLE-EXAMPLE.md#which-caption-change-do-you-need) | Eight requests mapped to editing tools and preview checks, with a four-second spelling correction you can play. |
+| Fix one word in an automatic caption | [Watch the corrected caption](https://valmera.io/examples/caption-word) | Pause at 1.60 seconds to see “Um,” where the first pass heard “and.” The guide links to both versions. For styling or emphasis, [choose the caption or typography operation](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/CAPTION-STYLE-EXAMPLE.md#which-caption-change-do-you-need). |
 | Display Spanish captions over the original English soundtrack | [Subtitle-language comparison](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/SUBTITLE-TRANSLATION-EXAMPLE.md) | English/Spanish comparison previews and a later export revision. Spanish wording was supplied by the assistant; the run is not an independent translation-quality assessment. |
 | Shorten one selected passage after reviewing a first cut | [MCP cut, revision and export](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/MCP-RECORDED-EDIT.md) | Source, previews, final MP4, exact tool arguments and sampled join frames from a silent motion graphic. |
 | Try a manual browser edit before connecting an assistant | [Freeze frame](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/FREEZE-FRAME-EXAMPLE.md) or [B&W color preset](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/COLOR-GRADE-EXAMPLE.md) | Original source, unchanged browser-exported WebM, sampled frames and measured timing. These runs test browser controls, not AI editing. |
@@ -146,7 +147,7 @@ Use the [native Valmera plugin](https://github.com/ABO3SKRALMASAOODI/valmera-mcp
 }
 ```
 
-For Goose, [connect a session or run the interview-selects recipe](docs/CLIENTS.md#goose). There are more clients (Zed, Cline, Continue, LibreChat, MCP Inspector) in [docs/CLIENTS.md](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/CLIENTS.md).
+For Goose, [connect a session or run the interview-selects recipe](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/CLIENTS.md#goose). There are more clients (Zed, Cline, Continue, LibreChat, MCP Inspector) in [docs/CLIENTS.md](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/CLIENTS.md).
 
 **First message to try:** *"List my Valmera projects."* An empty list still means the connection works.
 
@@ -222,7 +223,7 @@ Use the [live server card](https://valmera.io/.well-known/mcp/server-card.json) 
 | "Add bold word-by-word captions" | `add_captions`, `set_caption_style`, `set_caption_fixes`, `audit_captions` |
 | "Make it vertical for TikTok and keep my face centered" | `auto_reframe`, `set_frame`, `add_aspect_shift` |
 | "Turn this podcast into 5 shorts" | `make_shorts`, `shorts_status`, `open_short`, `apply_short_edit_batches` |
-| ["Show my product shot when I say its name"](docs/TOOLS.md#put-a-product-shot-over-a-spoken-word) | `get_words`, `get_kept_transcript`, `add_overlay`, `render_preview` |
+| ["Show my product shot when I say its name"](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/TOOLS.md#put-a-product-shot-over-a-spoken-word) | `get_words`, `get_kept_transcript`, `add_overlay`, `render_preview` |
 | "Add b-roll where I mention the product" | `research_broll`, `search_stock`, `add_stock_media`, `insert_media` |
 | "Punch in on the important lines" | `suggest_emphasis`, `punch_in_on_emphasis`, `add_zoom`, `add_zoom_path` |
 | "Put my track (or a song I name) under my voice" | `find_song`, `fetch_url`, `add_music`, `set_music_fit`, `beat_align_cuts`, `set_master_loudness` |
