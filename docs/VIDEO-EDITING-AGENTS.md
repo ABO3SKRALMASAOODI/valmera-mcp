@@ -121,7 +121,7 @@ For Valmera, use this choice:
 | Keep working inside your existing assistant | Authorized connection to `https://valmera.io/mcp/server` | Confirm that the particular client and account support the connection and tool use, and that you have an eligible editing plan. |
 | Plan with an assistant that has no editing connection | Develop a brief, then use Studio or a connected client | Treat the chat output as instructions until an editing tool actually performs them. |
 
-On the [current plan page](https://valmera.io/subscribe), checked November 7, Plus covers MCP Connect with your own assistant; Pro and Max include Valmera AI as well as MCP. External assistant billing is separate. Account creation and uploads are free; editing requires an eligible subscription. The page currently states that exports append a five-second Valmera end card, so include that in delivery planning. Check the current terms before choosing a plan.
+On November 14, the new-subscriber Plus offer included Valmera AI in Studio and MCP for US$15/month. Studio AI requires no external assistant subscription. When you use MCP, your external assistant provider bills separately. Check the [current Plus offer](https://valmera.io/subscribe) for availability. Account creation and uploads are free; editing requires an eligible subscription. The page currently states that exports append a five-second Valmera end card, so include that in delivery planning. Check the current terms before choosing a plan.
 
 Follow the [ChatGPT walkthrough](CHATGPT.md), [Claude plugin guide](CLAUDE-PLUGIN.md), or [client setup reference](CLIENTS.md). A documented custom connection is separate from approval in an assistant provider's public directory.
 

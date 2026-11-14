@@ -41,11 +41,11 @@ does not establish speech quality or successful operation in every client below.
 
 There are two ways to direct Valmera's editing tools: use **your own compatible AI assistant through MCP**, or use **Valmera AI inside Studio**. Opening Studio to upload, review or export a project does not by itself mean the plan includes Valmera AI.
 
-The following snapshot comes from [Valmera's subscription page](https://valmera.io/subscribe), checked **November 7, 2026**. Recheck that page and your account before buying; existing subscriptions may retain different terms.
+The following snapshot comes from [Valmera's subscription page](https://valmera.io/subscribe), checked **November 14, 2026**, for a new subscription. Look for “Studio AI editor + MCP” on the live Plus card. Existing subscribers can check their own account terms.
 
 | Plan | Editing assistant | Monthly subscription | Annual payment | Monthly Valmera credits |
 | --- | --- | --- | --- | --- |
-| Plus | Your own assistant through MCP; upload, review and export in Studio. Valmera AI is not included. | US$15 | US$150 billed once yearly | 500 |
+| Plus | Valmera AI in Studio and your own assistant through MCP on the offer checked | US$15 | US$150 billed once yearly | 500 |
 | Pro | Valmera AI in Studio, plus MCP access for your own assistant | US$50 | US$500 billed once yearly | 1,500 |
 | Max | Valmera AI in Studio and MCP, with a larger allowance | US$100 | US$1,000 billed once yearly | 4,000 |
 
@@ -57,7 +57,7 @@ Your external assistant provider bills separately. Having a subscription to that
 
 The subscription page meters AI and processing work. Footage length, operations and revisions affect usage; the credit count is not a guaranteed number of finished videos. Record the actual credit use of a representative project, including the revision and export you need, before estimating a larger batch.
 
-For a **fictional budget example**, suppose you choose Plus on monthly billing and already pay for a compatible assistant. Valmera adds US$15 for that month, while your assistant's existing bill and any additional usage remain separate. If you instead need Valmera AI in Studio, the listed Pro monthly subscription is US$50. This compares access routes, not equal editing capacity, quality or total cost; the allowances differ.
+**Example for a US$20 monthly budget.** On the November 14 offer, Plus cost US$15 for one month before applicable tax. Using Valmera AI inside Studio required no separate assistant subscription. To edit from another assistant, add any fee that provider charges for the account or tools you use. For a weekly series, measure one representative episode including a revision, then compare four episodes of similar work with the 500-credit monthly allowance. See the [16-editor pricing comparison and budget worksheet](https://valmera.io/ai-video-editor-pricing-comparison#sample-edit).
 
 Annual prices are full-year payments, not monthly cancellation offers. The current page states that credits refresh monthly and unused monthly credits do not roll over, including on annual plans. It also explains annual switching and existing-subscription treatment. Read those terms at the source rather than inferring them from a monthly equivalent.
 

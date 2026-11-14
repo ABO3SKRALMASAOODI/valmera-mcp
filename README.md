@@ -310,7 +310,7 @@ The wiki is generated from a dated repository snapshot. Check its **Last indexed
 
 ## Access
 
-Creating an account and uploading are free. Editing requires a subscription. As checked November 7, 2026, Plus provides MCP Connect with your own assistant; Pro and Max include Valmera AI in Studio as well as MCP. Your external assistant provider bills separately. See the [plan and editing-route comparison](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/CLIENTS.md#choose-the-plan-for-your-editing-route) and [current subscription terms](https://valmera.io/subscribe).
+Creating an account and uploading are free. Editing requires a subscription. On November 14, 2026, new subscribers could edit in Studio with Valmera AI on the US$15/month Plus plan, which also included MCP and 500 monthly credits. Check the live Plus card for current Studio access. If you edit in an external assistant through MCP, its provider bills separately. See the [plan and editing-route comparison](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/CLIENTS.md#choose-the-plan-for-your-editing-route) and [current subscription terms](https://valmera.io/subscribe).
 
 ## Data and privacy
 
