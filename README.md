@@ -273,7 +273,7 @@ For a recorded webinar, follow the [replay-and-clips workflow](https://github.co
 
 For interview footage, use the [paper-edit walkthrough](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/INTERVIEW-PAPER-EDIT.md) and [blank review worksheet](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/INTERVIEW-REVIEW-WORKSHEET.md). Trace quotes to source footage, keep qualifications with claims, and follow a worked correction across a main story and a separate clip.
 
-For captions that need a correction or no longer match a revised cut, use the [caption-revision guide](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/CAPTION-REVISIONS.md). It distinguishes offset, drift and edit changes, works through source-to-program timing, and provides focused requests plus a delivery record.
+For captions that need a correction or no longer match a revised cut, use the [caption-revision guide](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/CAPTION-REVISIONS.md). It distinguishes offset, drift and edit changes, works through source-to-program timing, and provides focused requests plus a delivery record. For a wording-only subtitle handoff, [compare two SRT files locally](docs/CAPTION-REVISIONS.md#did-correcting-a-caption-change-any-other-words-or-timestamps) to see exactly which cues and timestamps changed.
 
 For multilingual delivery, use the [subtitle translation workflow](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/SUBTITLE-TRANSLATION.md): compare ten documented routes, preserve original audio, inspect a bilingual SRT sample and track language review through export.
 

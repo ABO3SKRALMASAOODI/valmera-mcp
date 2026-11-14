@@ -40,6 +40,28 @@ The [finished MP4](evaluation/one-word-caption/final.mp4) is 1920 × 960 and las
 
 For your own export, check the spelling with sound muted, then listen to the corrected word and the next few words. Check the following caption too. A correction can move a word across a phrase break, and two clips can have the same duration while containing different audio. [Start in Valmera Studio](https://valmera.io/studio?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=caption_word) · [AI editing plans](https://valmera.io/subscribe).
 
+## Did correcting a caption change any other words or timestamps?
+
+A speaker asks you to correct the spelling of their name after approving the cut. Save the approved SRT, make the correction in a copy, and export the revised SRT against the same video. The [SRT revision checker](evaluation/check_srt_revision.py) lists every changed cue with its old and new text and reports changes to either end of its time window. It runs locally with Python 3 and reads both files.
+
+From a checkout of this repository, run the following command with your two subtitle paths.
+
+```sh
+python3 docs/evaluation/check_srt_revision.py approved.srt corrected.srt
+```
+
+Read each changed cue aloud against the recording. A spelling correction from “Sara” to “Sarah” that appears twice should produce two changed cues if those mentions are in separate cues. A third changed cue deserves a look even when all timestamps match. Line wraps and formatting tags count as text changes. Two mentions in one cue count as one changed cue.
+
+**Try a known timing change.** The [original three-cue SRT](evaluation/subtitle-sync-20261107/input.srt) and its [downloaded revision](evaluation/subtitle-sync-20261107/browser-output.srt) come from our [recorded subtitle timing example](SUBTITLE-SYNC-EXAMPLE.md). Compare them from the repository root.
+
+```sh
+python3 docs/evaluation/check_srt_revision.py docs/evaluation/subtitle-sync-20261107/input.srt docs/evaluation/subtitle-sync-20261107/browser-output.srt
+```
+
+The middle cue starts at 00:00:50,000 in the original and 00:00:51,000 in the revision. The last line of the report reads `3 cues compared. Text changed in 0. Timing changed in 3.` This is the expected result for that retiming job. It would be a reason to pause a spelling-only handoff.
+
+The checker accepts UTF-8, numbered SRT cues with plain start and end timestamps. Exit code 0 means it could pair the cues by number in sequence and all corresponding times matched. Inspect the reported wording yourself. Exit code 1 flags a timing or cue-structure change. When the cue numbers or count differ, inspect the split, joined or renumbered passages manually. Exit code 2 means a file could not be read or parsed. For captions already burned into an MP4, use the frame-and-audio comparison above. A subtitle file alone cannot show which words the player actually displayed.
+
 ## Identify what is wrong before changing anything
 
 Listen to identifiable phrases near the beginning, middle and end of the exact video you intend to deliver. Compare the first audible word with its caption, then inspect any edit joins between those checks. Three samples help diagnose the pattern; they do not replace reviewing the complete file.
