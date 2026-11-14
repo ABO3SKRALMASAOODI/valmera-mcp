@@ -20,6 +20,25 @@ On November 7, 2026, we ran Valmera's public edit-and-revise exercise through it
 
 The final file's 1080-pixel dimensions exceed the 720-pixel source height. That is output scaling, not evidence of additional source detail. The preview was 720 × 720.
 
+## Reopen the cut decisions with the source media
+
+[Download the rough-cut comparison ZIP](https://valmera.io/downloads/valmera-rough-cut-comparison.zip) and extract the whole folder. It contains the source, the actual revised delivery, the public edit record, and two versions of both a Shotcut project and a CMX 3600 list. We prepared the timelines from the retained source ranges in this recorded run. This package documents a handoff for this example.
+
+Open `first-cut.mlt` and `revised-cut.mlt` in Shotcut. Keep `original-source.mp4` beside both files. In an editor importing a CMX list, select 30 fps non-drop-frame and relink the SOURCE reel to that same file. The three pieces should appear on a single video track.
+
+| Timeline frame | First cut, source clock | Revised cut, source clock |
+| ---: | --- | --- |
+| 119 | 00:00:06:29 | 00:00:06:29 |
+| 120 | 00:00:12:00 | 00:00:12:00 |
+| 179 | 00:00:13:29 | 00:00:13:29 |
+| 180 | 00:00:14:00 | 00:00:19:00 |
+
+The last number in each clock is a frame count. In the revised project, advance from frame 179 to 180. The final scene now opens two seconds earlier. Both editable timelines preserve the landscape source. The packaged Valmera MP4 shows the separate square framing and branded delivery.
+
+**How we checked the package.** We extracted the published package layout into a different folder, read both CMX files with OpenTimelineIO’s CMX adapter at 30 fps, and rendered both MLT projects with the renderer bundled with Shotcut (MLT 7.41.0). We compared the decoded luma plane of every rendered frame with the source frame selected by the recorded decisions. All 360 frames of the first cut and all 300 frames of the revision matched. This checks source selection and order. The automated check did not exercise an interactive GUI, audio, captions or project exchange in a commercial editor.
+
+To compare another AI editor, ask it to keep 3–7, 12–16 and 19–23 seconds, then shorten only the middle range to end at 14 seconds. Ask the finishing editor to reopen what they receive, relink the source and move a cut. Play the separate reference render to check the intended framing and ending. [Compare both pictures at six seconds](https://valmera.io/ai-video-editor#timeline-handoff).
+
 ## Verify the downloaded export
 
 The mcp.film curator independently downloaded this run’s MP4, matched the file hash to the receipt, inspected the video stream and sampled frames for branding. The curator also checked the public endpoint’s authentication challenge and OAuth metadata. The authenticated editing steps above were run by Valmera. [Read the curator’s notes](https://mcp.film/mcps/valmera/).
