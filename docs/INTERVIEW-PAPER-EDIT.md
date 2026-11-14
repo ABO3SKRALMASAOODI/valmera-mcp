@@ -4,7 +4,17 @@ An interview can become shorter while its meaning becomes less accurate. A usefu
 
 **Use Valmera to turn recorded interviews into a main story and separately reviewed clips.** Start with the [interview workflow](https://valmera.io/use-cases/interviews?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=interview_paper_edit), or connect a compatible assistant through the [setup guide](https://valmera.io/mcp/setup?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=interview_paper_edit). This companion gives you a worked paper edit, a correction example and a [copyable worksheet](INTERVIEW-REVIEW-WORKSHEET.md). It is an editorial planning method, not an executable edit file or a guarantee of the agent's output.
 
-Published by Valmera · November 7, 2026. The recording, speakers and timings below are **fictional teaching data**, not a customer testimonial or a measured product run.
+Published by Valmera · November 7, 2026. The paper edit below uses fictional speakers and timings. The separate exercise in the next section uses an archived NASA interview.
+
+## Reproduce a caption revision on an archived interview
+
+NASA Goddard published a 4:41 interview with Jim Garvin in September 2017. Open the [NASA source page](https://svs.gsfc.nasa.gov/12713/) and select his interview and matching English captions. The [machine-readable brief](evaluation/interview-flyby.json) includes the original media links, caption checksum, source ranges and the two requested edits.
+
+1. Find the answer about the Earth flyby in source cues 13–22, around 00:49–01:30. The opening answer is a different selection. Choose the spoken boundaries with the recording, then render and record a first preview.
+2. Source cue 14 spells a word “vendezous.” Request the subtitle spelling “rendezvous” and keep the audio and Bennu’s name intact. If the first preview already has the right spelling, request a line break before Bennu instead. Reference the cue in the **current preview** when issuing the revision.
+3. Record the changed cue, adjacent captions and the output’s opening and ending. Save the actual editing and review time, credit use, and any manual step needed to finish. Use the [review worksheet](INTERVIEW-REVIEW-WORKSHEET.md) to compare a second editor.
+
+For a month-to-month purchase, check which workflow your plan includes and whether it can accept the original interview. The [one-month budget comparison](https://valmera.io/blog/ai-video-editors-20-dollar-budget#one-month) covers four editing routes.
 
 ## Choose the deliverable before selecting quotes
 
