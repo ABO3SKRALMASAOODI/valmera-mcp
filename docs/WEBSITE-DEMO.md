@@ -16,7 +16,9 @@ This guide is written by the Valmera team. Creating an account and uploading are
 
 A URL recording does not inherit the login session in your own browser. For an authenticated workflow, start with your own recording rather than supplying a password to a recording step.
 
-You can start directly in [Valmera's website-demo workspace](https://valmera.io/tools/record-website-demo?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=mcp_website_demo#start-demo). Enter your domain or full public URL and continue through sign-in. Review the proposed sequence before recording.
+You can start directly in [Valmera's website-demo workspace](https://valmera.io/tools/record-website-demo?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=mcp_website_demo#start-demo). Choose **20-second vertical showcase** for a portrait tour, or **Landscape product walkthrough** to demonstrate a task. For a walkthrough, enter the public URL and describe the result a first-time viewer should be able to reproduce. Select **Preview walkthrough brief** to read the proposed request. Copy it into a connected assistant or select **Open walkthrough brief in Studio** to take the draft through sign-in.
+
+For example, start with `https://valmera.io/docs/getting-started` and enter “Open Captions in the sidebar, then show the heading that confirms the Captions guide loaded.” The brief carries both the URL and the requested action. Review it in Studio, then send it when ready. Preparing and copying the brief are free. The recording runs through your editing plan. You can compare the resulting navigation with the [public source footage and click record](https://valmera.io/examples/website-capture).
 
 For direct editing from an assistant, follow the [client setup guide](https://valmera.io/mcp/setup) and authorize `https://valmera.io/mcp/server`. Refresh the available tools and select the intended project. An assistant without that connection can help write the brief; bring the brief to Valmera to execute it.
 
