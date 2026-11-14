@@ -44,6 +44,16 @@ A creator has a narrated video and a close-up of the product. They want the clos
 
 In our four-second sample, the speaker says “use the green one for print.” The overlay starts on “green” at 2.56 seconds. Its authored duration is 1.12 seconds. At 25 fps the swatches still appear at 3.68 seconds and the waveform returns at 3.72. The final voice matches the original during the middle of the cutaway (correlation 0.999999 at equal timestamps). The nine-second download includes a five-second branded ending. [Play the example and download both inputs](https://valmera.io/tools/add-b-roll#cutaway-example) · [Read the measurements](https://valmera.io/examples/b-roll-cutaway/measurements.json)
 
+## Move a sound effect onto the reveal frame
+
+At 25 fps, five frames last 0.200 seconds. In the four-second swatch example, the picture changes at 2.560 s. The first preview places a short library click at 2.760 s. To revise a cue like this in your own project:
+
+1. Call `list_sound_library` with `role="click"`. For library recordings, the `at` argument to `add_sfx` identifies the intended **hit** in program seconds. Valmera accounts for the quiet lead-in of the selected sound.
+2. Keep the effect ID returned by `add_sfx`. In this example the revision used `move_sfx(project_id=PROJECT_ID, id="sx1", at=2.56)`. Use the ID from your own edit. Moving the existing cue preserves the recording and gain.
+3. Render the revised preview. To check the result, step to the first reveal frame in the downloaded MP4 and compare it with the click transient. In our two decoded files the peak moved from 2.7594 s to 2.5594 s. The reveal stayed at 2.560 s.
+
+[Hear the two mixes and inspect the measurements](https://valmera.io/tools/add-sound-effects#hear-the-click)
+
 ## From a connected account to a reviewed file
 
 1. **Identify the project.** Use `list_projects` and inspect the intended project with `open_project` or `project_state`. Keep its explicit identifier with subsequent requests. An empty project list is different from a failed connection.
