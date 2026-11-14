@@ -4,7 +4,7 @@ Use Valmera's tools to work on footage you already recorded: inspect the source,
 
 **Start here:** [connect your assistant](https://valmera.io/mcp/setup) · [live tool reference](https://valmera.io/mcp/tools) · [public server card](https://valmera.io/.well-known/mcp/server-card.json)
 
-The public card was checked on **November 7, 2026**. It described 217 tools: 203 editing tools across nine groups and 14 session tools. This is a dated observation, not a permanent catalog or proof that every operation succeeds for every account.
+On **November 14, 2026**, the public card listed 222 operations, including 15 session tools. Use the live card to check the current names and arguments.
 
 ## Discover tools before planning the edit
 
@@ -23,7 +23,7 @@ These are representative names present in the checked card. Follow their current
 | Find the right spoken passage | `get_transcript`, `get_words`, `search_transcript`, `get_kept_transcript` | Identify the passage in the source and distinguish it from the currently kept edit |
 | Understand the footage visually | `get_video_info`, `get_shots`, `find_visual_moments`, `look_at` | Inspect the relevant frames and what must remain visible |
 | Cut a passage or tighten pacing | `cut_range`, `cut_output_range`, `keep_segments`, `cut_silences`, `remove_filler_words`, `restore_range` | Name the timing basis and preserve complete meaning, speech and necessary pauses |
-| Add or revise captions | `add_captions`, `set_caption_style`, `set_caption_fixes`, `audit_captions` | Separate spelling corrections, caption appearance and changes to the spoken recording |
+| Add or revise captions | `add_captions`, `set_caption_style`, `set_caption_fixes`, `audit_captions` | [Choose a caption operation by the change you want on screen](CAPTION-STYLE-EXAMPLE.md#which-caption-change-do-you-need) |
 | Reframe for a new format | `auto_reframe`, `set_frame`, `add_aspect_shift`, `deliver_aspects` | Specify the output format, subject and text or demonstrations that must stay readable |
 | Shape music and sound | `list_music_library`, `add_library_music`, `add_music`, `add_sfx`, `set_master_loudness`, `audit_audio_mix` | Identify the intended assets and balance them against speech in the preview |
 | Add supporting visuals or a demo | `research_broll`, `source_broll`, `insert_media`, `add_overlay`, `record_website_demo` | State the source material, placement and visible outcome; inspect captured actions |
