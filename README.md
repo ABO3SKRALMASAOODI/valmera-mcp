@@ -1,5 +1,7 @@
 # Valmera MCP server — the video editing MCP server for real footage
 
+[![Featured on TrustedMCP](https://trustedmcp.io/badge/s/ljx3k5z8vx50peqclcdk.svg)](https://trustedmcp.io/l/ljx3k5z8vx50peqclcdk)
+
 **The world's most advanced AI video editor. [Start editing](https://valmera.io/chatgpt-video-editor?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow#first-brief).**
 Join thousands of creators. Bring your footage, describe the result, and refine the edit through conversation.
 
