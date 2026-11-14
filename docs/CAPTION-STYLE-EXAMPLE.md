@@ -4,6 +4,25 @@ Changing captions should not silently change the footage you approved. In this r
 
 You can inspect the two previews and the full-resolution export below. This is one narrow, first-party demonstration recorded on **7 November 2026** using animated film footage. It is not a podcast benchmark, an independent quality rating or a comparison with other editors.
 
+## Which caption change do you need?
+
+If the preview spells a name incorrectly, marking the right word and time gives the editor a smaller, clearer job than asking it to “redo the captions.” If the spelling is right but the line covers the speaker’s face, the words can stay exactly as they are.
+
+| What you want on screen | What to ask the connected assistant to use | What to check in the preview |
+| --- | --- | --- |
+| Subtitles for the whole conversation | `add_captions` from the word-timed transcript | Play the first line, a cut and the last line with sound. |
+| One misspelled name fixed at one occurrence | `set_caption_fixes` with an appended replacement bounded to that occurrence in **edited-program time** | Inspect the corrected word and an unaffected occurrence. Listen for the original voice. |
+| The same captions in a different color or font | `set_caption_style` with only the fields you want to change | Compare the same frame at phone size and listen through the same sentence. |
+| Hide burned captions while a chart fills the screen | `set_caption_mutes` with the complete list of spans to hide, including any earlier ones you want to keep | Play across both boundaries. The speaker should remain audible and the captions should return after the chart. |
+| Give one spoken phrase a designed layout around the subject | `add_typeset` for that phrase | Check the subject’s face and each word onset. This treatment replaces the ordinary captions for those words. |
+| Animate several phrases across a passage | `add_kinetic_text` with an explicit start and end | Check the first and last affected phrases. Omitting the window can apply the treatment to the whole program. |
+| Show footage inside large letters | `add_type_window` with the lettering and fill source | Inspect what is visible inside the glyphs and whether the word reads at delivery size. |
+| Pause the footage for a full-frame chapter heading | `add_title_card` with a program position and duration | The inserted card moves later material. Check the first spoken word after the card against the revised timeline. |
+
+The style example below shows two different treatments of the same approved passage. For a spelling-only revision, [play the four-second before and after clips](https://valmera.io/blog/add-captions-to-videos-with-ai#one-word-correction). At 1.60 seconds the caption changes from “and” to “Um,” while the two previews have identical decoded audio. The [recorded call and file measurements](CAPTION-REVISIONS.md#correct-a-single-misheard-word-and-verify-the-downloaded-video) show how to repeat the check.
+
+To try this with your footage, [start a caption brief for a tutorial or a vertical clip](https://valmera.io/tools/add-captions-to-video?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=caption_tool_choice#start-captioning). You can read both briefs before signing in. Editing in Studio requires an eligible subscription. For connected assistants, the [live tool schemas](https://valmera.io/.well-known/mcp/server-card.json) describe the available arguments.
+
 ## Watch the files and compare the same moment
 
 | File | What it contains | Measured file duration |
