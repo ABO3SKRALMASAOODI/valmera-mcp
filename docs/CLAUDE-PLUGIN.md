@@ -37,6 +37,20 @@ Confirm the project and cost expectations before billable work. Show me the
 rendered preview, explain what changed, and wait for approval before export.
 ```
 
+## Can Claude place my product shot on a specific word?
+
+Yes. The Valmera connector exposes a full-frame overlay that keeps the underlying narration and program timing. If Claude has only found the automatic first-cut tool, ask it to inspect the tools for this specific edit. Checking the schemas works before choosing a project or starting a render.
+
+> Check whether Valmera can show my product clip when I say its name. Use `expand_toolset` with the description request below and tell me which clock the overlay uses.
+
+```json
+{"describe":["get_kept_transcript","get_words","add_overlay"]}
+```
+
+For the edit, provide the narrated recording, the supporting clip and the exact phrase. Use the current edit’s transcript to locate the word on the program clock. The overlay takes the project ID, supporting asset key, program-time start and duration. Set `fit` to `cover` for an edge-to-edge shot. In the complete preview, review the first covered frame and the first frame back with the original voice playing through both.
+
+In the public example, the picture changes on “green” at 2.56 seconds and returns after “print” at 3.72 seconds. [Watch the cutaway with its transcript](https://valmera.io/examples/b-roll-cutaway) or [download the export and see how its audio was compared](https://valmera.io/tools/add-b-roll#cutaway-example).
+
 ## Three workflows
 
 | Skill | Use it for | Review before delivery |
