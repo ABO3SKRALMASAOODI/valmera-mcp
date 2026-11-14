@@ -44,7 +44,7 @@ These are reusable brief formulations for operations in recorded Valmera demonst
 | --- | --- | --- |
 | “Shorten only the middle section from source 12–16 to 12–14. Keep source 3–7 and 19–23, their order, square framing and normal speed.” | [Cut and revision](MCP-RECORDED-EDIT.md) | A silent source, recorded operations, previews, final MP4 and timing checks. This does not test spoken-word editing. |
 | “Change the captions to shorter groups. Preserve the selected passage, original sound, framing and speed.” | [Caption-style revision](CAPTION-STYLE-EXAMPLE.md) | Two 9.6-second previews of the same dialogue passage, with identical decoded audio between previews. The branded final export is longer. |
-| “Remove only the separate text reading ‘DEMO OFFER: 20% OFF’ at program 12–16 seconds. Retain the source credit and the rest of the approved edit.” | [Offer removal](PRODUCT-OFFER-REMOVAL-EXAMPLE.md) | One identified text element removed between versions 5 and 6, with matching other edit fields and matching decoded final-file audio. Includes an export-check workaround. |
+| “Remove only the separate text reading ‘DEMO OFFER: 20% OFF’ at program 12–16 seconds. Retain the source credit and the rest of the approved edit.” | [Play both exports together](https://valmera.io/blog/ai-video-editing-prompts?utm_source=github&utm_medium=docs&utm_campaign=offer_revision#worked-revision) · [Verify the title and audio](PRODUCT-OFFER-REMOVAL-EXAMPLE.md#replay-the-revision-and-verify-the-exports) | One identified text element removed between versions 5 and 6, with matching other edit fields and matching decoded final-file audio. Includes an export-check workaround. |
 
 Inspect the same moment in the caption previews:
 
