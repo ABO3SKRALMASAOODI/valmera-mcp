@@ -53,6 +53,14 @@ For a second run, download the four-second [speech test clip](https://valmera.io
 
 We tested both downloads on the live site on November 14, 2026. The speech file reported a duration of 2.02 seconds. Matching its waveform to the source placed the cut at 0.496 seconds for the requested 0.5-second start. We also compared three decoded frames of the silent export against source seconds 3, 4 and 6. The [verification record](evaluation/first-cut-mp4/verification.json) includes file hashes and measurements. Browser codec support varies. To request a second pass by chat, use **Use this cut in Studio**, upload the matching original and review the saved brief before sending.
 
+## Keep one spoken sentence as an MP4
+
+Open the [free transcript cutter](https://valmera.io/free-ai-video-editor#free-trim). Select “I like the blue label” or “Um, use the green one for print.” Play the source at the selected cue, adjust the start or end if you hear a clipped syllable, then choose **Create trimmed MP4** and download it. The sample includes its transcript.
+
+For your own recording, choose the video and its matching SRT or WebVTT file. Select a timed passage from the menu. The browser uses the cue’s source timestamps to create the clip locally. A line in a subtitle file can split a sentence, so listen to both boundaries. Set the times manually if you have the video alone. Creating the local MP4 requires no account. Agent editing in Studio requires an eligible plan.
+
+To reproduce the import with public media, download the [spoken source](https://valmera.io/examples/filler-word-cut/original.mp4) and its [matching WebVTT](https://valmera.io/examples/filler-word-cut/original.vtt). Select the second passage, from 1.56 to 3.73 seconds. In our Chrome check the downloaded MP4 ran 2.20 seconds and its audio aligned to 1.556 seconds in the source. Encoder padding and video frame boundaries can affect the reported duration.
+
 ## Inspect a freeze-frame export
 
 The [recorded freeze-frame run](FREEZE-FRAME-EXAMPLE.md) provides a 25-second silent source and the unmodified downloaded WebM. A 2.5-second hold produced 825 decoded frames at a reported 30 fps, corresponding to 27.5 seconds. The output was 1280×720 VP9, with no audio stream; the source was silent too.
