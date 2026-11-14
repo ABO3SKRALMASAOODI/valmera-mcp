@@ -22,6 +22,33 @@ The two images below are frames at output 14 seconds from downloaded final expor
 
 The MP4 exports include a corner brand mark and an end card. The preview files are low-resolution checks without those delivery additions. Compare the final files when approving placement and runtime.
 
+## Replay the revision and verify the exports
+
+[Play the six-second comparison](https://valmera.io/blog/ai-video-editing-prompts?utm_source=github&utm_medium=docs&utm_campaign=offer_revision#worked-revision). The left half plays version 5 and the right half plays version 6. Both start at export 00:11. At comparison time 00:01 the title appears on the left. Follow the motion and the credit along the bottom through 00:05, when the title ends. This excerpt is silent. The complete MP4s above include the branded ending.
+
+To reproduce the edit-record check, run this from the repository root with jq installed:
+
+```sh
+cd docs/evaluation/product-offer-20261107
+jq -e -s '
+  .[0].edl as $before | .[1].edl as $after |
+  ($before.texts | map(select(.id == "tx2") | [.text, .start, .end])) == [["DEMO OFFER: 20% OFF", 12, 16]]
+  and (($before | .texts |= map(select(.id != "tx2"))) == $after)
+' edl-v5.json edl-v6.json
+```
+
+A result of `true` verifies the offer wording and time range and checks every other field in the edit decision list. To test the **audio in the two finished files**, run this in the same directory with FFmpeg installed:
+
+```sh
+for file in before-final.mp4 after-final.mp4
+do
+  echo "$file"
+  ffmpeg -v error -i "$file" -map 0:a:0 -ar 48000 -ac 2 -c:a pcm_s16le -f hash -hash sha256 -
+done
+```
+
+Compare the two hashes from your run. Equal values mean both soundtracks decoded to the same samples with your FFmpeg build. Still inspect the picture at 00:14 and the finished ending at 00:22. A matching audio hash alone cannot tell you whether a title or the credit moved.
+
 ## The request and the actual operation
 
 The demonstration used a new account-owned project, not a customer's project. Its input was the unmodified source file. The source has audio but no detected speech transcript; no captions, voiceover or music were requested.
