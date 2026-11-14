@@ -145,7 +145,7 @@ Use the [native Valmera plugin](https://github.com/ABO3SKRALMASAOODI/valmera-mcp
 }
 ```
 
-There are more clients (Zed, Cline, Continue, Goose, LibreChat, MCP Inspector) in [docs/CLIENTS.md](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/CLIENTS.md).
+For Goose, [connect a session or run the interview-selects recipe](docs/CLIENTS.md#goose). There are more clients (Zed, Cline, Continue, LibreChat, MCP Inspector) in [docs/CLIENTS.md](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/CLIENTS.md).
 
 **First message to try:** *"List my Valmera projects."* An empty list still means the connection works.
 

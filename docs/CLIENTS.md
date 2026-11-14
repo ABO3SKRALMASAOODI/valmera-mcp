@@ -199,6 +199,14 @@ mcpServers:
 
 ## Goose
 
+With a configured Goose CLI, start one session with Valmera attached:
+
+```sh
+goose session --with-streamable-http-extension "https://valmera.io/mcp/server"
+```
+
+Complete Valmera's browser sign-in when prompted. Ask Goose to list your projects and identify the recording by its title and ID. For repeated sessions, add Valmera under the existing `extensions` section in your Goose config:
+
 ```yaml
 extensions:
   valmera:
@@ -209,6 +217,20 @@ extensions:
     uri: https://valmera.io/mcp/server
     timeout: 60
 ```
+
+### Prepare interview selects with source timecodes
+
+The [Goose interview recipe](examples/goose-interview-selects.yaml) asks for up to three excerpts from an indexed recording. It gives you source in/out times, opening and closing words, and a note when an answer needs its preceding question. The recipe exposes three inspection tools. It can prepare a paper edit without changing the timeline.
+
+Download the recipe, then substitute your own project ID and editorial question:
+
+```sh
+curl -fL https://raw.githubusercontent.com/ABO3SKRALMASAOODI/valmera-mcp/main/docs/examples/goose-interview-selects.yaml -o goose-interview-selects.yaml
+goose recipe validate ./goose-interview-selects.yaml
+goose run --recipe ./goose-interview-selects.yaml --params project_id=YOUR_PROJECT_ID --params 'story=What changed the speaker’s mind, and why?'
+```
+
+To inspect the substituted prompt and tool list locally, add `--render-recipe` to the last command. Running the recipe against footage requires a configured Goose model and access to the indexed Valmera project. Check each proposed boundary against the original recording before requesting a cut in an editing session. [Goose extension setup](https://goose.vcorp.ai/docs/getting-started/using-extensions/) · [Practice on a public interview](INTERVIEW-PAPER-EDIT.md)
 
 ## LibreChat
 
