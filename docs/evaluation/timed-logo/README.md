@@ -18,8 +18,14 @@ The [HTML composition](index.html) places the logo at 20% of frame width. The ce
 
 To test a revision, change the logo’s duration from 19 seconds to 17. At 30 fps the revised last active frame should be 599. The verifier reports the detected range. Its `onlyExpectedFramesActive` field refers to the original brief, so it should now be false.
 
+## Export a revision in your browser
+
+Open the [free timed watermark editor](https://valmera.io/tools/add-logo-to-video) to try this fixture without installing the renderer. The sample starts with the logo visible from 3 to 22 seconds. Change **Hide at** to **20**, export the MP4 and run the verifier on your download. Expect the first logo frame at 90 and the last at 599. You can also choose your own clip and transparent logo, change the corner, width or opacity, and carry those instructions into Studio.
+
+For a reference run using the original 3–22 second interval, download the [browser export](https://valmera.io/examples/timed-watermark/browser-export.mp4) and [frame measurements](https://valmera.io/examples/timed-watermark/frame-check.json). This browser export retains all 750 source frames. The logo detector found the mark on exactly the 570 requested frames.
+
 ## Try the same brief through an assistant
 
 Upload the clip and logo to a Valmera project with AI editing access. Give your connected assistant the timing and size above. Review the preview, request the two-second revision and export the revised video. Check the downloaded file against the source. [Valmera overlay instructions](https://valmera.io/docs/text-and-overlays).
 
-The two published files came from authored renderer instructions, an HTML composition in HyperFrames and a supplied edit decision list in Valmera. An assistant run on your project exercises a separate part of the workflow. [Original Valmera render record](https://valmera.io/examples/logo-overlay/evidence.json).
+The original two renderer files came from authored renderer instructions, an HTML composition in HyperFrames and a supplied edit decision list in Valmera. An assistant run on your project exercises a separate part of the workflow. [Original Valmera render record](https://valmera.io/examples/logo-overlay/evidence.json).
