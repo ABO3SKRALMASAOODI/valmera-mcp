@@ -121,6 +121,14 @@ For revising an existing graphic, name its exact words and time window. The [off
 
 A track name alone does not supply a licensed audio file. For cleanup, compare the result at similar listening levels; louder can sound better without actually being clearer. See [noise removal](VIDEO-AUDIO-NOISE-REMOVAL.md).
 
+### Plan music cuts in frames
+
+[Mark cuts on your soundtrack](https://valmera.io/tools/beat-sync-video?utm_source=github&utm_medium=docs&utm_campaign=beat_markers#beat-markers). The free browser tool plays a local file, lets you mark a cut by ear and exports a CSV with seconds and zero-based frame numbers. To use a steady tempo, pause on an audible beat and choose how many beats to leave between cuts. Upload your track separately when you take the brief into Studio.
+
+For a product reel at 30 fps with music starting at program zero, try the 120 BPM practice loop. Four beats last two seconds. Switch from the wide product shot to a detail at frame 60, to the product in use at frame 120, and to the result at frame 180. Play the joins with sound. If a hand is still opening the product at frame 120, let the action finish and try the next accent.
+
+For footage with a pickup before the first beat, measure from the actual accent. At 29.97 fps (30000/1001), a first beat at 0.375 seconds followed by two beats at 120 BPM gives a target of 1.375 seconds. The closest frame is 41, starting at approximately 1.368 seconds. Use the exported frame number when giving a revision. If the music starts later on the video timeline, add its placement offset before rounding.
+
 ## Color and finishing
 
 33. **Warm treatment:** “Give [recording] a warm treatment while preserving natural skin tones and the real color of [product]. Keep detail in bright windows and dark clothing. Show the same frame before and after plus a preview across the lighting changes.”
