@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-14",
+  "testedPage": "https://valmera.io/ai-video-editor#free-trim",
+  "frontendRevision": "28620e261fb9a58784f26f3b18bcc904eafde7f8",
+  "samples": [
+    {
+      "source": "https://valmera.io/examples/trim-and-reframe/original-source.mp4",
+      "sourceSHA256": "24dc72de92df8e0d212fa9ca068d3ffdacab55f74b91c32249be96e9e74defdf",
+      "requestedSourceSeconds": [
+        3,
+        7
+      ],
+      "file": "motion-trim.mp4",
+      "fileSHA256": "524e8ce4b86b91f4ee4c1ef7dbab6a78ee49b06138cf3269aaaec0202611c1a0"
+    },
+    {
+      "source": "https://valmera.io/examples/filler-word-cut/original.mp4",
+      "sourceSHA256": "437fe11667dbe2d1c7bf4d14b6d3cedd95eaf76ffeb062e2f94dcdcb7d551630",
+      "requestedSourceSeconds": [
+        0.5,
+        2.5
+      ],
+      "file": "speech-trim.mp4",
+      "fileSHA256": "af9ebb7760c8d1bf972c52ce782edcacb59ae44f89c03a18a6438dc013cc7643"
+    }
+  ],
+  "decodedMediaChecks": {
+    "sampleFrameMeanAbsoluteRGBErrors": [
+      2.25,
+      0.7,
+      0.65
+    ],
+    "referenceSourceSeconds": [
+      3,
+      4,
+      6
+    ],
+    "outputSeconds": [
+      0,
+      1,
+      3
+    ],
+    "speechAlignmentSourceSeconds": 0.4957,
+    "speechAlignmentCorrelation": 0.9993
+  }
+}
