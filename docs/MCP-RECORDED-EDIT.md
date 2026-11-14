@@ -20,6 +20,21 @@ On November 7, 2026, we ran Valmera's public edit-and-revise exercise through it
 
 The final file's 1080-pixel dimensions exceed the 720-pixel source height. That is output scaling, not evidence of additional source detail. The preview was 720 × 720.
 
+## Verify the downloaded export
+
+The mcp.film curator independently downloaded this run’s MP4, matched the file hash to the receipt, inspected the video stream and sampled frames for branding. The curator also checked the public endpoint’s authentication challenge and OAuth metadata. The authenticated editing steps above were run by Valmera. [Read the curator’s notes](https://mcp.film/mcps/valmera/).
+
+To repeat the file check on macOS or Linux, download the recorded revision and run:
+
+```sh
+curl --fail --location --output revised-final.mp4 \
+  https://raw.githubusercontent.com/ABO3SKRALMASAOODI/valmera-mcp/798e873006467bb0bab6f5332e83f9b99e69aba9/docs/evaluation/recorded-run-20261107/revised-final.mp4
+shasum -a 256 revised-final.mp4
+ffprobe -v error -select_streams v:0 -show_entries stream=width,height,avg_frame_rate,nb_frames:format=duration -of json revised-final.mp4
+```
+
+The expected SHA-256 is `9b7f97b8e75c80b49c8e2c61f2bace1c279cc26599d65b28b5d4d394bcdc592e`. The video stream should report 1080 × 1080, 30 frames per second and 450 frames. Play the ending to see how the ten-second program becomes a 15-second delivery. [Compare the saved measurements](evaluation/recorded-run-20261107/final-metadata.json).
+
 ## 1. Use a source other people can inspect
 
 The [public example](https://valmera.io/examples/trim-and-reframe) supplies this clip. We downloaded it, checked its SHA-256, created a new project and uploaded it using `upload_start` and `upload_finish`. Editing began after `index_status` returned `done`.
