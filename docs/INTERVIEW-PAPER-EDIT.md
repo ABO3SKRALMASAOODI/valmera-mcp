@@ -4,7 +4,22 @@ An interview can become shorter while its meaning becomes less accurate. A usefu
 
 **Use Valmera to turn recorded interviews into a main story and separately reviewed clips.** Start with the [interview workflow](https://valmera.io/use-cases/interviews?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=interview_paper_edit), or connect a compatible assistant through the [setup guide](https://valmera.io/mcp/setup?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=interview_paper_edit). This companion gives you a worked paper edit, a correction example and a [copyable worksheet](INTERVIEW-REVIEW-WORKSHEET.md). It is an editorial planning method, not an executable edit file or a guarantee of the agent's output.
 
-Published by Valmera · November 7, 2026. The paper edit below uses fictional speakers and timings. The separate exercise in the next section uses an archived NASA interview.
+Published by Valmera · November 7, 2026. The paper edit below uses fictional speakers and timings. The source-based exercises use two interviews released by NASA Goddard in 2017.
+
+## Cut two interviews together and revise the ending
+
+In September 2017, Jim Garvin described what OSIRIS-REx would do at Bennu. Michelle Thaller explained how Earth’s gravity would help the spacecraft reach it. This assembly lets one scientist introduce the mission and the other explain the maneuver. Keep their separate recording names on every passage. [NASA Goddard source recordings and captions](https://svs.gsfc.nasa.gov/12713/)
+
+| Speaker | Cues in the original SRT (inclusive) | Time within that interview | Time in the first assembly |
+| --- | --- | --- | --- |
+| Jim Garvin | 3–11 | 00:08.090–00:45.060 | 00:00.000–00:36.970 |
+| Michelle Thaller | 17–24 | 00:49.380–01:13.830 | 00:36.970–01:01.420 |
+
+Open the [multi-interview paper edit](https://valmera.io/use-cases/interviews?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=interview_assembly#paper-edit). Download the paper edit to get the quote text beside both clocks. Download the SRT to get captions on the assembly clock. To try your own recordings, remove the starter passages and open their caption files. The planner reads those files in your browser.
+
+For the revision, end Thaller’s passage after she explains how the maneuver saves time. Select her recording, set the last cue to 22 and replace passage 2. The source now ends at 01:07.770. The planned cut ends at 00:55.360. Garvin’s nine opening cues keep their original words and output timestamps. Compare the [17-cue first assembly](examples/interview-paper-edit/first-assembly.srt) with the [15-cue revision](examples/interview-paper-edit/shorter-ending.srt). Both files come from the planner and retain the source caption spellings.
+
+To make a video, open the assembly brief in Studio or give the same recording names and ranges to a connected assistant. Supply the matching footage, ask for original dialogue with hard cuts and review the transition between speakers before exporting. These reference files establish caption timing for the proposed assembly. Any change to a speech boundary, gap or transition in the video requires another timing check.
 
 ## Reproduce a caption revision on an archived interview
 
