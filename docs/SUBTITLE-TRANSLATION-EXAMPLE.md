@@ -6,6 +6,8 @@ This is a small, reproducible product demonstration published by Valmera on Nove
 
 [Plan your own subtitle translation](SUBTITLE-TRANSLATION.md) · [Connect an assistant](CLIENTS.md) · [Open Valmera Studio](https://valmera.io/dashboard)
 
+[Ejercicio en español: recorta la respuesta y ajusta los subtítulos](RECORTAR-VIDEO-POR-SUBTITULOS.md).
+
 ## Open the actual files
 
 | Artifact | What to inspect |
