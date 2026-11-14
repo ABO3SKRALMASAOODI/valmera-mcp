@@ -52,7 +52,26 @@ At 25 fps, five frames last 0.200 seconds. In the four-second swatch example, th
 2. Keep the effect ID returned by `add_sfx`. In this example the revision used `move_sfx(project_id=PROJECT_ID, id="sx1", at=2.56)`. Use the ID from your own edit. Moving the existing cue preserves the recording and gain.
 3. Render the revised preview. To check the result, step to the first reveal frame in the downloaded MP4 and compare it with the click transient. In our two decoded files the peak moved from 2.7594 s to 2.5594 s. The reveal stayed at 2.560 s.
 
-[Hear the two mixes and inspect the measurements](https://valmera.io/tools/add-sound-effects#hear-the-click)
+The recorded revision used these MCP arguments. Substitute the project and effect IDs from your own edit before calling `move_sfx`.
+
+```json
+{"project_id":5807,"id":"sx1","at":2.56}
+```
+
+### Check the click timing in the downloaded previews
+
+With Python 3 and FFmpeg on your path, run these commands from the root of this repository. They download the three public MP4s to the current directory. The checker scales the original narration to match the rendered voice, subtracts it, and compares the strongest remaining audio peak with the first light swatch frame.
+
+```sh
+curl -fLO https://valmera.io/examples/b-roll-cutaway/preview.mp4
+curl -fLO https://valmera.io/examples/sound-effect-timing/late.mp4
+curl -fLO https://valmera.io/examples/sound-effect-timing/aligned.mp4
+python3 docs/evaluation/check_reveal_click.py preview.mp4 late.mp4 aligned.mp4
+```
+
+The late preview measures approximately **+199 ms** and the aligned preview **−1 ms**, rounded to the nearest millisecond. Positive means the sound follows the picture. This check uses the known 25 fps swatch sequence and a copy of its narration without the click. For other footage, choose the reveal frame and isolate the sound against its own original mix.
+
+[Hear both mixes in the browser](https://valmera.io/tools/add-sound-effects#hear-the-click) · [Read the sample checker](evaluation/check_reveal_click.py)
 
 ## From a connected account to a reviewed file
 
