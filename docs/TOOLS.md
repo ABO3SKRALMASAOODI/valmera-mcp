@@ -44,6 +44,14 @@ A creator has a narrated video and a close-up of the product. They want the clos
 
 In our four-second sample, the speaker says “use the green one for print.” The overlay starts on “green” at 2.56 seconds. Its authored duration is 1.12 seconds. At 25 fps the swatches still appear at 3.68 seconds and the waveform returns at 3.72. The final voice matches the original during the middle of the cutaway (correlation 0.999999 at equal timestamps). The nine-second download includes a five-second branded ending. [Play the example and download both inputs](https://valmera.io/tools/add-b-roll#cutaway-example) · [Read the measurements](https://valmera.io/examples/b-roll-cutaway/measurements.json)
 
+### Mark a cutaway using two local clips
+
+Use the [free B-roll timing planner](https://valmera.io/tools/add-b-roll#cutaway-planner) when the editor needs to know which part of a supporting shot to show. For example, the speaker may name the product at 1.12 seconds, but a hand blocks the label at the start of the close-up. Open the narration under **Main recording**, mark 1.12 seconds as the cutaway start, and mark 1.96 seconds as the return. Under **Supporting shot**, scrub past the hand and mark 0.12 seconds as the source start.
+
+The resulting brief requests 0.84 seconds of picture from the supporting file, covering 0.12–0.96 seconds of that file. The original voice continues throughout. A supporting clip ending at 0.90 seconds is six hundredths of a second short. Move the source start earlier or shorten the picture change. The planner checks both durations before enabling the handoff.
+
+Download the brief to share the file names and timings with an editor, or carry it into Studio. The free planner reads the clips locally. To run the AI edit, add those same two files to the intended project. If the main cut has since changed, find the phrase on its new timeline before applying the brief. This timing example illustrates the calculation. The four-second rendered sample above supplies separate evidence of an executed edit.
+
 ## Move a sound effect onto the reveal frame
 
 At 25 fps, five frames last 0.200 seconds. In the four-second swatch example, the picture changes at 2.560 s. The first preview places a short library click at 2.760 s. To revise a cue like this in your own project:
