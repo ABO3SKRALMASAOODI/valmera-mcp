@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-14",
+  "source": "https://valmera.io/examples/filler-word-cut/original.mp4",
+  "project": 5802,
+  "firstPreviewVersion": 2,
+  "correctedVersion": 3,
+  "exportJob": 138761,
+  "finalAsset": 41441,
+  "correction": {
+    "from": "and",
+    "to": "Um,",
+    "start": 1.44,
+    "end": 1.84
+  },
+  "files": {
+    "original.mp4": {
+      "bytes": 74834,
+      "sha256": "437fe11667dbe2d1c7bf4d14b6d3cedd95eaf76ffeb062e2f94dcdcb7d551630",
+      "containerSeconds": 4.0,
+      "width": 800,
+      "height": 400,
+      "videoFrames": 100,
+      "frameRate": "25/1",
+      "decodedStereo48kS16leSHA256": "2d3575edb4e694fb2cb3180ccbd5672e8cdf28f7f51076d9b1e5929e932c62f1"
+    },
+    "after.mp4": {
+      "bytes": 175024,
+      "sha256": "0220164a6c46dec616a9f58b1427e830346ff5a9deac6a3be0df2175b49ec604",
+      "containerSeconds": 4.0,
+      "width": 800,
+      "height": 400,
+      "videoFrames": 100,
+      "frameRate": "25/1",
+      "decodedStereo48kS16leSHA256": "5acd734c35714ff7ba17620b16434d2a30917435c8372e0c8a6323f25f231c42"
+    },
+    "before.mp4": {
+      "bytes": 176311,
+      "sha256": "ddf3d735fb2da99b6cba83c9f86ac4903c5fe19ae2c232d888a07aca2649a69a",
+      "containerSeconds": 4.0,
+      "width": 800,
+      "height": 400,
+      "videoFrames": 100,
+      "frameRate": "25/1",
+      "decodedStereo48kS16leSHA256": "5acd734c35714ff7ba17620b16434d2a30917435c8372e0c8a6323f25f231c42"
+    },
+    "final.mp4": {
+      "bytes": 310901,
+      "sha256": "fd1dc58b0e74ecce6c5b63817ef729d0488159ea52b2bf7f2b1d3abcb41415d0",
+      "containerSeconds": 9.0,
+      "width": 1920,
+      "height": 960,
+      "videoFrames": 225,
+      "frameRate": "25/1",
+      "decodedStereo48kS16leSHA256": "2f11c568861b9572b52581e6076c7e9d78f73dd2a281fd4cbb18ad0bde2489e0"
+    }
+  },
+  "previewVsFinalAudio": {
+    "sampleRate": 48000,
+    "channel": "left",
+    "programWindowSeconds": [
+      0.25,
+      3.5
+    ],
+    "pearsonCorrelation": 0.999867
+  },
+  "frameCheckSeconds": 1.6,
+  "endCardCheck": {
+    "automatedStatus": "MISSING OR ALTERED",
+    "automatedMatch": 0.784,
+    "observed": "Visible Valmera end card at final file second 7"
+  }
+}

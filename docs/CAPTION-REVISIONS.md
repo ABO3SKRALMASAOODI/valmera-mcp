@@ -10,6 +10,36 @@ For a real run with downloadable videos, see the [recorded caption-style revisio
 
 For another language, use the [subtitle translation workflow](SUBTITLE-TRANSLATION.md): choose subtitle-only or dubbing, preserve meaning and review the translated track against the same edit.
 
+## Correct a single misheard word and verify the downloaded video
+
+On November 14, 2026, we uploaded Valmera’s [four-second synthetic speech sample](https://valmera.io/examples/filler-word-cut/original.mp4) to a new project. The source says “Um, use the green one for print.” The automatic transcript heard “and” at 1.44–1.84 seconds and flagged that word for review. The large lettering at the top is already in the original. Look at the smaller caption over the waveform.
+
+| Before correction at 1.60 seconds | After correction at 1.60 seconds |
+| --- | --- |
+| ![The lower caption reads “and use the green one for print.”](evaluation/one-word-caption/before.png) | ![The lower caption ends with the corrected “Um,”.](evaluation/one-word-caption/after.png) |
+| [Download the first preview](evaluation/one-word-caption/before.mp4) | [Download the revised preview](evaluation/one-word-caption/after.mp4) |
+
+We enabled captions from the transcript with the documentary preset, then appended one displayed-word correction. The start and end refer to the **edited program clock**. Read the word timing in your own project and map it to the current cut before applying a correction. This demo kept the entire original in order at normal speed, so both clocks agreed.
+
+```json
+{"operation":"append","replacements":[{"from":"and","to":"Um,","start":1.44,"end":1.84}]}
+```
+
+Supply those fields and your own project ID to `set_caption_fixes`. Then call `audit_captions`, render a complete preview and inspect the word in the actual picture. In this run, “Um,” moved into the preceding caption group. The voice continued through the same four seconds. To request this by chat, try “In this preview, correct the caption at 1.6 seconds from ‘and’ to ‘Um,’. Keep the hesitation audible. Keep every cut, the original voice and the existing caption style. Show me the revised passage.”
+
+**Check the result yourself.** Both previews contained 100 frames at 25 fps. Decoding both audio streams with the same settings produced identical samples. On macOS or Linux with FFmpeg installed, run the following in the folder containing the two downloaded previews. Compare the final hash on each output line.
+
+```sh
+for file in before.mp4 after.mp4
+do
+  ffmpeg -v error -i "$file" -map 0:a:0 -ar 48000 -ac 2 -c:a pcm_s16le -f hash -hash sha256 -
+done
+```
+
+The [finished MP4](evaluation/one-word-caption/final.mp4) is 1920 × 960 and lasts nine seconds, including the branded ending. Its [frame at 1.60 seconds](evaluation/one-word-caption/final.png) shows the corrected lower caption. The final uses a separate encode. We compared the left-channel waveform with the revised preview from 0.25 to 3.50 seconds at the same timestamps and measured a correlation of 0.999867. The final checker flagged the end card, although the decoded frame at seven seconds shows it. [File hashes and measurements](evaluation/one-word-caption/measurements.json).
+
+For your own export, check the spelling with sound muted, then listen to the corrected word and the next few words. Check the following caption too. A correction can move a word across a phrase break, and two clips can have the same duration while containing different audio. [Start in Valmera Studio](https://valmera.io/studio?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=caption_word) · [AI editing plans](https://valmera.io/subscribe).
+
 ## Identify what is wrong before changing anything
 
 Listen to identifiable phrases near the beginning, middle and end of the exact video you intend to deliver. Compare the first audible word with its caption, then inspect any edit joins between those checks. Three samples help diagnose the pattern; they do not replace reviewing the complete file.
