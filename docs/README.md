@@ -51,6 +51,7 @@ The examples and sample prompts are editing guidance. Where a guide labels a tim
 
 | Question | Public material | What it establishes |
 | --- | --- | --- |
+| Does a logo appear and disappear on the requested frames? | [Reproduce the timed logo overlay](evaluation/timed-logo/README.md) | Two local renderer exports, HTML composition, verifier and measured frame boundaries. |
 | Can I compare two real caption treatments on spoken footage? | [Recorded caption-style revision](CAPTION-STYLE-EXAMPLE.md) | Downloadable previews and full-resolution export, identical decoded audio between previews, observed branding and disclosed limitations. |
 | Can I see translated captions with the original recording preserved? | [Recorded Spanish-caption example](SUBTITLE-TRANSLATION-EXAMPLE.md) | Supplied Spanish text, rendered artifacts, matching comparison-preview audio and an explicit export revision. |
 | Can I remove a separate offer without rebuilding the edit? | [Recorded product-offer removal](PRODUCT-OFFER-REMOVAL-EXAMPLE.md) | One identified text element removed; exact edit records, final exports, matching decoded audio, branding checks and a disclosed detector workaround. |

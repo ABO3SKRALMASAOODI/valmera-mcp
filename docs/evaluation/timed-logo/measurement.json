@@ -1,0 +1,58 @@
+{
+  "sourceFrames": 750,
+  "probeWidth": 320,
+  "probeHeight": 180,
+  "sampleRegionXYXY": [
+    241,
+    7,
+    310,
+    30
+  ],
+  "thresholdMeanChannelDifference": 5,
+  "outputs": {
+    "valmera": {
+      "frames": 749,
+      "activeCount": 570,
+      "firstActiveFrame": 90,
+      "lastActiveFrame": 659,
+      "onlyExpectedFramesActive": true,
+      "meanBackgroundDifference": 0.11,
+      "maxBackgroundDifference": 0.156,
+      "boundaryReadings": {
+        "89": 0.005,
+        "90": 29.089,
+        "659": 29.1,
+        "660": 0.083
+      },
+      "sha256": "74bb73be71ecda7e60d9584dfb97c68cf6fa85992705422387dc26d4a2d5a0fd"
+    },
+    "hyperframes": {
+      "frames": 750,
+      "activeCount": 570,
+      "firstActiveFrame": 90,
+      "lastActiveFrame": 659,
+      "onlyExpectedFramesActive": true,
+      "meanBackgroundDifference": 0.627,
+      "maxBackgroundDifference": 0.786,
+      "boundaryReadings": {
+        "89": 0.798,
+        "90": 29.506,
+        "659": 29.508,
+        "660": 0.426
+      },
+      "sha256": "616f29a5e524c4164d24ac394ffdf7ca713eff3d1e4bf4554cb696b0529a4be5"
+    }
+  },
+  "sourceSha256": "24dc72de92df8e0d212fa9ca068d3ffdacab55f74b91c32249be96e9e74defdf",
+  "hyperframesVersion": "0.9.48",
+  "source": "original-source.mp4",
+  "sample": "Valmera-authored silent frame-counter recording and transparent logo",
+  "requestedOverlay": {
+    "startSeconds": 3,
+    "endSecondsExclusive": 22,
+    "widthFraction": 0.2,
+    "centerX": 0.86,
+    "centerY": 0.1
+  },
+  "method": "Decoded each file in presentation order, downscaled to 320 by 180 RGB with area resampling, and compared the same frame index to the original. Each pixel channel ranges from 0 to 255. Region end coordinates are exclusive. Both runs used authored edit instructions. No natural-language agent was tested."
+}

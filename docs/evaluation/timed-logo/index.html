@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Timed logo over existing footage</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: black; }
+    main { position: relative; width: 1280px; height: 720px; overflow: hidden; }
+    video { position: absolute; inset: 0; width: 100%; height: 100%; }
+    #brand { position: absolute; width: 256px; height: auto; left: 86%; top: 10%; transform: translate(-50%, -50%); z-index: 1; }
+  </style>
+</head>
+<body>
+  <main data-no-timeline id="overlay-test" data-composition-id="overlay-test" data-width="1280" data-height="720" data-start="0" data-duration="25" data-fps="30">
+    <video id="source" class="clip" data-start="0" data-duration="25" data-track-index="0" src="original-source.mp4" muted playsinline></video>
+    <img id="brand" class="clip" data-start="3" data-duration="19" data-track-index="1" src="logo.png" alt="Valmera">
+  </main>
+</body>
+</html>
