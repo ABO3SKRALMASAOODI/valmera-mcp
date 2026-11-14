@@ -4,6 +4,32 @@ Changing the preview is only half the job. The downloaded video should carry the
 
 **Published by Valmera; recorded November 7, 2026.** We used the manual B&W preset on a silent motion graphic. This is a specific browser-export example, not a test of AI grading, skin-tone accuracy, audio preservation or competing editors.
 
+## Try the eight-step grayscale clip
+
+[Download the two-second reference MP4](https://raw.githubusercontent.com/ABO3SKRALMASAOODI/valmera-mcp/main/docs/evaluation/color-strip/shadow-highlight-steps.mp4) and open it in the [free color grader](https://valmera.io/tools/color-grade-video#free-color-grade-preview). It is an original Valmera test pattern with eight equal-width gray strips. Every frame shows the same strips, so seeking slightly earlier or later gives you the same reference picture. The 320 × 180 H.264 file contains 48 frames and no audio.
+
+1. Pause at one second, select **Cinematic** and leave all four adjustments at zero.
+2. Select **Measure current frame**. Read the two percentages beside each brightness range. The first and last pairs of strips each occupy a quarter of the original frame.
+3. Look at the three darkest strips. Can you still distinguish their edges after grading? Repeat for the three brightest. Two looks can put the same percentage in an end bin and still look different within that bin.
+4. Change contrast and measure again. **Copy frame reading** gives you the source timestamp and both percentages to paste into an editing brief. Repeat in another editor with the same file and export settings.
+
+| Sample at one second | Near black, 0–7 | Near white, 248–255 |
+| --- | ---: | ---: |
+| Original strips | 25.0% | 25.0% |
+| Cinematic, default adjustments | 37.5% | 37.5% |
+
+These are Chrome readings of browser-decoded pixels. For an independent check, we decoded one source frame with FFmpeg and sampled the center of each strip. The 8-bit RGB levels, from left to right, were 0, 2, 10, 30, 222, 242, 250 and 253, with equal red, green and blue in each strip. The two ranges therefore contain two strips apiece. Color-space conversion and decoding can change individual pixel values slightly. The MP4’s SHA-256 is `cb9d626a935daa8bb07b19eb37128e480a4ba86d14bdd56ec1f5d1ce0ef19bf0`.
+
+**Try a real subject next.** Choose the coffee sample in the same tool. At 2.00 seconds, Cinematic with zero adjustments moved the near-black share from 10.3% to 23.3% in our browser. Inspect the dark beans and decide how much texture the shot needs. A pile-up on the left can include a naturally dark object. The histogram alone cannot tell whether the texture you care about survived.
+
+### Compare grading tools with the same shot
+
+- To inspect where levels fall across the image, try the waveform in KlikFrame and locate which part of your shot produces the peak. Its product guide also describes an RGB parade, histogram and vectorscope. [KlikFrame scopes](https://www.video-editor.com/klikframe-tools/color-grading)
+- To test a LUT across several clips, Tellers documents local batch processing and H.264 export on compatible browsers. Apply the same LUT to the strips and a real subject, then compare the downloads. [Tellers standalone grader](https://tellers.ai/free-standalone-tools/color-grade-video)
+- To adjust a clip in a timeline, Clipchamp documents exposure, contrast, saturation and temperature controls. Compare the shot with its adjacent clip and use the reset control to recover the source look. [Microsoft’s color adjustment guide](https://support.microsoft.com/en-gb/clipchamp/how-to-change-the-color-of-a-video)
+
+Those links describe each vendor’s workflow. The measurements above were taken in Valmera. Valmera’s histogram samples approximate brightness from decoded RGB on a reduced frame. Choose a color-managed scope to check HDR delivery or individual channel clipping.
+
 ## Download both files
 
 - [Original MP4](evaluation/recorded-run-20261107/original-source.mp4): 25 seconds, 1280×720, H.264, 750 frames at 30 fps, no audio track.
