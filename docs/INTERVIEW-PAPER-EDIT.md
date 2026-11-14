@@ -16,6 +16,20 @@ NASA Goddard published a 4:41 interview with Jim Garvin in September 2017. Open 
 
 For a month-to-month purchase, check which workflow your plan includes and whether it can accept the original interview. The [one-month budget comparison](https://valmera.io/blog/ai-video-editors-20-dollar-budget#one-month) covers four editing routes.
 
+## Check whether a highlight can be traced back to its source
+
+Start with the [interactive interview transcript](https://valmera.io/long-video-ai-editing#interview-select). The sample opens on Garvin’s full flyby explanation, from original **00:49.090 to 01:30.050**. Search for **Antarctica**. The matching cue begins at **01:09.660**, halfway through a sentence. Read the preceding cue and play the original recording to hear what is flying and why. A word match locates a passage. The question you want to answer determines where the clip should begin.
+
+| What you need to verify | What to collect |
+| --- | --- |
+| Can someone find the quote tomorrow? | Recording filename or ID, speaker, source in/out and opening and closing words. |
+| Which clock does a correction use? | Keep the source range alongside the preview version and its time. If the sample answer starts at preview zero and plays continuously at normal speed, source 01:09.660 falls at preview 00:20.570. |
+| Can a second editor confirm the cut? | Give them the original and your selection record. Ask them to play across both joins and check the question, qualifications and ending against the preview. |
+
+For your own recording, open an SRT or WebVTT from the same source in the picker. The filename and caption times let you carry the passage into a Studio brief. If your captions came from an already-trimmed export, their clock belongs to that export. Use the matching recording or recover the original time mapping first.
+
+If a producer needs a document that identifies the source file for every excerpt in an assembled reel, Reduct documents a Word export with those references. Its transcript interface also lets an editor jump from a word to the recording. For a Valmera handoff, copy the selected range and boundary words, then record the actual preview version and cut times in the [review worksheet](INTERVIEW-REVIEW-WORKSHEET.md). [Reduct transcript exports](https://help.reduct.video/en/articles/export-transcripts) · [Reduct video-text interface](https://help.reduct.video/en/articles/video-text-interface)
+
 ## Choose the deliverable before selecting quotes
 
 | Deliverable | What the selection must do | What you review |
