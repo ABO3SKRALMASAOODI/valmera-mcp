@@ -34,6 +34,16 @@ These are representative names present in the checked card. Follow their current
 
 The broader creative workflow is covered in [creative media and generated visuals](https://valmera.io/docs/ai-generation). Ask for the required result and let the current catalog determine the available route; the presence or absence of a name in this short table does not establish a product-wide capability limit.
 
+## Put a product shot over a spoken word
+
+A creator has a narrated video and a close-up of the product. They want the close-up to appear when they name the product, with their voice continuing underneath. Use the supplied clip as a full-frame overlay on the current edit. An insertion that moves later speech would change the timing of the program.
+
+1. Open the intended project. Identify the main recording and the asset key of the supporting clip. Read the words and the kept transcript. If earlier cuts shortened the recording, map the spoken phrase onto **edited program time** before placing the overlay.
+2. Call `add_overlay` with that project's `project_id`, the supporting clip's `asset_key`, the program-time `start`, the `duration_s` and `fit="cover"`. The recorded example used a silent clip. If the supporting clip has its own sound, listen for competing audio in the preview.
+3. Render a complete preview of the edited version. Inspect the last frame before the cutaway, the first covered frame and the first frame back. Play the entire phrase to catch duplicated or missing speech. Export the reviewed version and repeat the check on the downloaded MP4.
+
+In our four-second sample, the speaker says “use the green one for print.” The overlay starts on “green” at 2.56 seconds. Its authored duration is 1.12 seconds. At 25 fps the swatches still appear at 3.68 seconds and the waveform returns at 3.72. The final voice matches the original during the middle of the cutaway (correlation 0.999999 at equal timestamps). The nine-second download includes a five-second branded ending. [Play the example and download both inputs](https://valmera.io/tools/add-b-roll#cutaway-example) · [Read the measurements](https://valmera.io/examples/b-roll-cutaway/measurements.json)
+
 ## From a connected account to a reviewed file
 
 1. **Identify the project.** Use `list_projects` and inspect the intended project with `open_project` or `project_state`. Keep its explicit identifier with subsequent requests. An empty project list is different from a failed connection.
