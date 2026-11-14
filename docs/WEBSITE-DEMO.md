@@ -48,6 +48,17 @@ For direct editing from an assistant, follow the [client setup guide](https://va
 
 If you need an agent to follow a public path and return footage you can revise by chat, start with the [Valmera capture and finished MP4](https://valmera.io/examples/product-demo). Demosmith describes an agent-operated workflow that also returns a clickable demo and written instructions. If someone on your team will perform each action and the viewer needs to explore hotspots, Supademo documents a guided capture and Arcade offers an interactive recorder. Arcade also offers a separate AI video workflow. The [product demo maker comparison](https://valmera.io/use-cases/saas-demos#interactive) links the providers’ capture and delivery documentation.
 
+### Compare coding-agent recorders by what you can take away
+
+| What you need after the click | Option to evaluate | What to open during the trial |
+| --- | --- | --- |
+| A capture you can revise in a hosted editing project | Valmera | Compare the [source capture and action log](https://valmera.io/examples/website-capture), then inspect the [separate edited demo](https://valmera.io/examples/product-demo). For your own trial, request a longer hold on the result and play the revised preview. |
+| A repeatable local filming recipe for a product that changes | DemoBites Agentic Recorder | Its [recorder guide](https://demobites.com/docs/bites/agentic-recorder) describes a local browser recording and a saved recipe. Change a label in a test app, retake the tour, and check that the new label appears. |
+| A shareable recording another agent can inspect | Clipy | Use the [MCP recorder](https://clipy.online/mcp) for capture and its [reader skill](https://clipy.online/docs/skill) for the handoff. Give the resulting link to a second reviewer and check whether they can locate the result. |
+| Local MP4s and a manifest for scripted browser scenarios | ItachiDevv’s Claude screen recorder | Its [repository](https://github.com/ItachiDevv/claude-screen-recorder) documents JSON actions and the output folder. Open the MP4 and match the visible result to the scenario you supplied. |
+
+The alternative workflows above come from their maintainers’ documentation. The paired frame checks below apply to Valmera’s published capture.
+
 For a short trial, ask each tool to show monthly pricing, switch to annual billing, and hold on the new amount. Use a public pricing page where both states are visible. In a creator-operated recorder, perform the same steps yourself. Record who operated the page and the times when the control moved and the new amount appeared. Open the downloaded MP4. Can you read the amount and billing period, and can you locate the action that changed them? If your buyer needs a branching tour, also open the shared interactive link and take a second path.
 
 ## Plan one visible outcome
