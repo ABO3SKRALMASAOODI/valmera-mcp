@@ -222,6 +222,7 @@ Use the [live server card](https://valmera.io/.well-known/mcp/server-card.json) 
 | "Add bold word-by-word captions" | `add_captions`, `set_caption_style`, `set_caption_fixes`, `audit_captions` |
 | "Make it vertical for TikTok and keep my face centered" | `auto_reframe`, `set_frame`, `add_aspect_shift` |
 | "Turn this podcast into 5 shorts" | `make_shorts`, `shorts_status`, `open_short`, `apply_short_edit_batches` |
+| ["Show my product shot when I say its name"](docs/TOOLS.md#put-a-product-shot-over-a-spoken-word) | `get_words`, `get_kept_transcript`, `add_overlay`, `render_preview` |
 | "Add b-roll where I mention the product" | `research_broll`, `search_stock`, `add_stock_media`, `insert_media` |
 | "Punch in on the important lines" | `suggest_emphasis`, `punch_in_on_emphasis`, `add_zoom`, `add_zoom_path` |
 | "Put my track (or a song I name) under my voice" | `find_song`, `fetch_url`, `add_music`, `set_music_fit`, `beat_align_cuts`, `set_master_loudness` |
