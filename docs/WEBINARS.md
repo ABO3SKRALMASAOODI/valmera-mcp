@@ -70,6 +70,21 @@ That distinction matters when giving feedback:
 
 Write chapters from the exact final replay export. Here they start at 00:00, 02:00, 05:00 and 07:00. If you change a cut, speed or opening-card duration, check the mapping and every affected chapter again. These are publishing timestamps, not a claim that chapters have been embedded or uploaded automatically.
 
+### Recalculate chapters after a revision
+
+Paste these kept passages into the [replay chapter calculator](https://valmera.io/long-video-ai-editing?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=replay_chapters#chapter-planner). Times in the left two columns refer to the original recording. Copy the resulting chapter list for the replay.
+
+```text
+01:00 | 03:00 | Topic and setup
+04:00 | 07:00 | Demonstration
+08:00 | 10:00 | Questions and answers
+10:00 | 11:00 | Recap
+```
+
+Suppose the speaker repeats a step at the end of the demonstration. Review the last 30 seconds of that passage. If you approve removing them, change its end from 07:00 to 06:30. The demonstration still begins at replay 02:00. Questions now start at 04:30 and the recap at 06:30. The revised replay lasts 07:30. A global 30-second shift would put the opening chapters in the wrong place.
+
+Ask the assistant to preview the last complete instruction before the cut and the first question after it. For the published chapter list, play the final export at 04:30 and 06:30 and confirm what the audience hears. If you add an opening card or change the playback speed, take the chapter times from that version.
+
 ## 4. Make a clip with its own context and review
 
 Choose source ranges after reviewing the replay, then apply the approved editorial decisions deliberately to each clip. Do not assume a separate clip project inherits later changes to the replay.
