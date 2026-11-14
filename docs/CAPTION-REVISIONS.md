@@ -44,6 +44,10 @@ For your own export, check the spelling with sound muted, then listen to the cor
 
 A speaker asks you to correct the spelling of their name after approving the cut. Save the approved SRT, make the correction in a copy, and export the revised SRT against the same video. The [SRT revision checker](evaluation/check_srt_revision.py) lists every changed cue with its old and new text and reports changes to either end of its time window. It runs locally with Python 3 and reads both files.
 
+For a browser review, open [Compare two SRT files](https://valmera.io/tools/compare-srt-files). Open the approved file under **Original** and the candidate under **Revised**, then select **Compare subtitles**. If cue 18 was meant to change spelling only, check its before-and-after text and confirm its start and end are identical. Add the exact delivery cut under **Reference video** to hear the change in context. **Download full report** includes every changed cue even when the on-screen list spans several pages.
+
+Choose **Try the caption example** to hear the four-second recording from the case study above. Two teaching SRTs isolate “and” → “Um,” at 1.44 seconds. The video is the actual first preview. A cue’s **Use this correction in Valmera** action carries the old text, revised text and time window into a Studio brief. Open the matching footage and review the request before starting a paid AI edit.
+
 From a checkout of this repository, run the following command with your two subtitle paths.
 
 ```sh
