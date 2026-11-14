@@ -22,6 +22,12 @@ For example, start with `https://valmera.io/docs/getting-started` and enter “O
 
 For direct editing from an assistant, follow the [client setup guide](https://valmera.io/mcp/setup) and authorize `https://valmera.io/mcp/server`. Refresh the available tools and select the intended project. An assistant without that connection can help write the brief; bring the brief to Valmera to execute it.
 
+## Which demo maker should operate the browser?
+
+If you need an agent to follow a public path and return footage you can revise by chat, start with the [Valmera capture and finished MP4](https://valmera.io/examples/product-demo). Demosmith describes an agent-operated workflow that also returns a clickable demo and written instructions. If someone on your team will perform each action and the viewer needs to explore hotspots, Supademo documents a guided capture and Arcade offers an interactive recorder. Arcade also offers a separate AI video workflow. The [product demo maker comparison](https://valmera.io/use-cases/saas-demos#interactive) links the providers’ capture and delivery documentation.
+
+For a short trial, ask each tool to show monthly pricing, switch to annual billing, and hold on the new amount. Use a public pricing page where both states are visible. In a creator-operated recorder, perform the same steps yourself. Record who operated the page and the times when the control moved and the new amount appeared. Open the downloaded MP4. Can you read the amount and billing period, and can you locate the action that changed them? If your buyer needs a branching tour, also open the shared interactive link and take a second path.
+
 ## Plan one visible outcome
 
 A useful short demo answers one question: “How do I accomplish this task?” Use this four-part sequence, filling in the actual controls from your website:
