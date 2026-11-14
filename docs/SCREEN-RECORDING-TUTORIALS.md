@@ -2,7 +2,7 @@
 
 A useful software tutorial lets someone repeat the task. Its edit must preserve three things for each step: **the starting state, the action and the visible result**. Removing a silent pause is helpful when it removes waiting; it is harmful when it removes the only view of a setting the viewer must copy.
 
-This guide shows how to brief an AI video editor, plan cuts, review zooms and revise a tutorial without losing that chain. The worked example is fictional teaching material, not a recorded Valmera test or a performance claim.
+This guide shows how to brief an AI video editor, plan cuts, review zooms and revise a tutorial without losing that chain. The first exercise uses a public Valmera capture. The later month-picker walkthrough is a fictional exercise for planning a longer lesson.
 
 [Build a brief for your recording](https://valmera.io/prompts?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=screen_recording_tutorials#prompt-builder) · [Connect Valmera to your assistant](https://valmera.io/mcp/setup) · [Current plans](https://valmera.io/subscribe)
 
@@ -19,6 +19,19 @@ Write the finished outcome before asking for a faster cut: “A first-time user 
 Record the application's version or recording date, starting screen, required account role and any prerequisite setup. Use a demonstration account and sample data when recording. If a prerequisite happens outside the recording, explain it in the introduction rather than implying that the filmed steps are sufficient on their own.
 
 Keep the original capture. A native recorder project may contain separate camera, microphone or cursor tracks that a flattened MP4 does not. An imported MP4 contains only the pointer that was rendered into it, if any; do not assume that a new editor can independently restyle it or recover click events. Ask what the actual file and current editing tools support.
+
+## Find the missing click in an actual screen recording
+
+Play the [two cuts of the Captions walkthrough](https://valmera.io/blog/edit-screen-recording-into-product-tutorial#example). Try the shorter one first. Can you point to the sidebar control that opened the new page? In the six-second version you can see the pointer reach it. The same silent interaction matters even when a speech transcript is empty.
+
+Both excerpts start at 2.50 seconds in the [original MP4](https://valmera.io/examples/website-capture/public-docs-walkthrough.mp4). The [recorder's event log](https://valmera.io/examples/website-capture/evidence.json) places the click at 3.57 seconds. These are zero-based source frame ranges at 30 fps, with the end excluded.
+
+| Excerpt | Source frames kept | Frames in the clip | What happens at the join |
+| --- | --- | ---: | --- |
+| [Short cut](https://valmera.io/examples/tutorial-click/missing-click.mp4) | 75–102, then 123–255 | 159 | At output 0.90 s the picture jumps to the destination. |
+| [Revised cut](https://valmera.io/examples/tutorial-click/restored-click.mp4) | 75–255 | 180 | The click occurs around output 1.07 s. The viewer sees how to open the guide. |
+
+To reproduce the cuts in a frame-based editor, set the source in point to frame 75 and the last included frame to 254. Duplicate that sequence. In the duplicate, delete source frames 102 through 122 and close the gap. Scrub across output frame 27 in each sequence and compare the sidebar and page heading. The two published clips were prepared with FFmpeg from the same capture.
 
 ## Make a step map before removing pauses
 
