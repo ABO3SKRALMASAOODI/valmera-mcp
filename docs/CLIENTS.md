@@ -59,6 +59,8 @@ The subscription page meters AI and processing work. Footage length, operations 
 
 **Example for a US$20 monthly budget.** On the November 14 offer, Plus cost US$15 for one month before applicable tax. Using Valmera AI inside Studio required no separate assistant subscription. To edit from another assistant, add any fee that provider charges for the account or tools you use. For a weekly series, measure one representative episode including a revision, then compare four episodes of similar work with the 500-credit monthly allowance. See the [16-editor pricing comparison and budget worksheet](https://valmera.io/ai-video-editor-pricing-comparison#sample-edit).
 
+For an interview project, test one selection and one caption correction with the [NASA interview exercise](INTERVIEW-PAPER-EDIT.md#reproduce-a-caption-revision-on-an-archived-interview) before estimating a batch.
+
 Annual prices are full-year payments, not monthly cancellation offers. The current page states that credits refresh monthly and unused monthly credits do not roll over, including on annual plans. It also explains annual switching and existing-subscription treatment. Read those terms at the source rather than inferring them from a monthly equivalent.
 
 Account creation and uploads are free; AI editing requires an eligible subscription. The current export FAQ states that a five-second Valmera end card is appended. Check the entire downloaded file, including its ending, against your delivery requirements.

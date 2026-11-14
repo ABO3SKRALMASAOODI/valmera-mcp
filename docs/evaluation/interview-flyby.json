@@ -1,0 +1,39 @@
+{
+  "title": "Interview revision exercise: the OSIRIS-REx Earth flyby",
+  "publisher": "Valmera",
+  "source": {
+    "credit": "NASA Goddard, interview with Jim Garvin, September 2017",
+    "page": "https://svs.gsfc.nasa.gov/12713/",
+    "video": "https://svs.gsfc.nasa.gov/vis/a010000/a012700/a012713/Garvin_canned.mp4",
+    "captions": "https://svs.gsfc.nasa.gov/vis/a010000/a012700/a012713/Garvin_canned_FINAL.en_US.srt",
+    "captionFileSHA256": "13362b0ba77a7ead03a8ef3e1f89eced4e9b43423690371ef4ed6654ee712fef"
+  },
+  "reference": {
+    "clock": "original source; SRT cue bounds are search aids, not frame-accurate edit points",
+    "answerCues": [
+      13,
+      22
+    ],
+    "sourceRangeSeconds": [
+      49.09,
+      90.05
+    ],
+    "correctionCue": 14,
+    "correctionSourceRangeSeconds": [
+      53.15,
+      57.21
+    ],
+    "sourceCaptionSpelling": "vendezous",
+    "correctSpelling": "rendezvous",
+    "properName": "Bennu"
+  },
+  "firstPass": "Select the complete Earth-flyby explanation and caption the answer. Keep the original voice and question context. Render a preview and record the project version.",
+  "revision": "Correct the spelling to rendezvous in the approved answer. If it is already correct, request a line break before Bennu in that caption. Keep the original audio and approved cut.",
+  "checks": [
+    "Record which workflow took the full interview as input.",
+    "Distinguish the Earth-flyby answer from the earlier mission overview.",
+    "Play the changed cue and check spelling against the recording.",
+    "Compare the first and last words and adjacent captions across versions.",
+    "Play the downloaded revision and record any branding, credit usage and hands-on review time."
+  ]
+}
