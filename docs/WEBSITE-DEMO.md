@@ -70,6 +70,33 @@ The first two requests produced recordings but reported no completed click. The 
 
 That is a dated example from one public site, not a guarantee that an arbitrary page or selector will work. Inspect the current page and current tool schema for a new recording. The raw capture is separate from the [finished product-demo example](https://valmera.io/examples/product-demo), which shows an edited result.
 
+## Check whether the recorded click reached its destination
+
+The task in this example was to open **Captions** from the Getting Started guide, then scroll the destination. Scrolling alone can make an unsuccessful capture look convincing. Here is how to tell what happened from the saved files.
+
+| Attempt | Click target in the request | What the recorder reported | What you can inspect |
+| --- | --- | --- | --- |
+| 1 | The visible label `Captions` | Zero clicks, two scrolls | [13-second capture](https://valmera.io/examples/website-capture/first-attempt.mp4). At 10 seconds the Getting Started instructions are still on screen. |
+| 2 | `a[href='/docs/captions']` | Zero clicks, one scroll | The [request and event record](https://valmera.io/examples/website-capture/evidence.json) covers this run. Only the first and third recordings were checked frame by frame for file readability. |
+| 3 | `.docs-sidebar a[href='/docs/captions']` | One click at 3.57 seconds, then one scroll at 5.72 seconds | [10.83-second capture](https://valmera.io/examples/website-capture/public-docs-walkthrough.mp4). At 4 seconds the page heading reads “AI Captions: Edit Text, Timing & Styles in Valmera.” |
+
+**First attempt.** The second frame shows the next section of the original guide.
+
+![Getting Started at 1 second and its step-by-step list at 10 seconds](evaluation/website-click/first-attempt.jpg)
+
+**Third attempt.** At 3.50 seconds the pointer is near the sidebar link. By 4.00 seconds the destination heading is visible.
+
+![Getting Started at 3.50 seconds and the Captions guide at 4.00 seconds](evaluation/website-click/public-docs-walkthrough.jpg)
+
+To reproduce the second comparison, download the third capture and run these commands in its folder with FFmpeg installed. Open both PNG files and compare the page heading.
+
+```sh
+ffmpeg -v error -ss 3.50 -i public-docs-walkthrough.mp4 -frames:v 1 before-click.png
+ffmpeg -v error -ss 4.00 -i public-docs-walkthrough.mp4 -frames:v 1 after-click.png
+```
+
+For your own demo, write down the text or state that should appear after the action. If two controls share the same label, identify the visible navigation region and give the recorder a target within it. Review that short passage before asking for zooms or narration. On a signed-in dashboard, supply your own screen recording with demonstration data. Valmera’s public URL recorder starts in a separate browser session.
+
 ## Review and revise precisely
 
 - **Actions:** Did each intended click, scroll or page change happen in order?
