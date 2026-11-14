@@ -54,6 +54,20 @@ Two public examples provide stronger evidence than a capability label:
 
 Download the artifacts and read the method to see what those runs establish. For your own footage, identify the project and approved scope, make the requested edit, review its preview and inspect the downloaded final file. That sequence establishes an outcome for your recording; a directory badge or tool count does not.
 
+## Is this the official Valmera video editing connector?
+
+When a directory lists a video editor under a personal GitHub account, compare its remote URL with the publisher’s domain. The [official MCP Registry record](https://registry.modelcontextprotocol.io/v0.1/servers/io.valmera%2Fvideo-editor/versions/latest) names `io.valmera/video-editor`, links the public `ABO3SKRALMASAOODI/valmera-mcp` repository, and points to `https://valmera.io/mcp/server`. The [server card on valmera.io](https://valmera.io/.well-known/mcp/server-card.json) independently publishes the same remote. The repository contains the connector documentation and client integrations. Valmera operates the editing engine on its hosted service.
+
+**What will signing in authorize?** The [authorization server](https://valmera.io/.well-known/oauth-authorization-server) and [protected resource](https://valmera.io/.well-known/oauth-protected-resource) both advertise the `valmera.edit` scope. On November 15, 2026, this was the only advertised scope. An assistant that just needs to inspect a project can limit its calls to inspection tools, but its authorized connection still has editing scope. Use a separate project account when a reviewer should see only demonstration footage. The public [TrustedMCP assessment](https://trustedmcp.io/servers/valmera-mcp) graded the connector **B** and identified broad access as a consideration. Its assessment draws on public signals. For evidence of an executed edit, inspect the [recorded preview and exported MP4](MCP-RECORDED-EDIT.md).
+
+**Check a listing before connecting an assistant.** From a checkout of this repository, run the [public connector checker](evaluation/check_connector_identity.py). It uses the Python 3 standard library, makes anonymous GET requests, and compares the registry, Valmera’s domain, the OAuth challenge and the directory’s endpoint lookup.
+
+```sh
+python3 docs/evaluation/check_connector_identity.py
+```
+
+Read the named checks and the values returned. On November 15 the official registry returned version `0.2.1`, the directory lookup returned grade `B`, and the endpoint returned HTTP 401 with the protected-resource metadata address. A later grade or version can change independently of the endpoint. A failed comparison identifies a record to inspect. A successful comparison identifies agreement among the public records. To test your own account’s project access, use the read-only inspection request above.
+
 ## Check public discovery without an account
 
 These commands make public requests only. They do not upload footage, register a client, sign in, create a project or run an editing tool. Run them in a terminal with `curl`. No token is needed. The requests have time limits so an unavailable endpoint does not leave the check running indefinitely.

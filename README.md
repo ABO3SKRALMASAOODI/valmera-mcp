@@ -52,6 +52,7 @@ Registry   io.valmera/video-editor
 
 - **Product:** [valmera.io](https://valmera.io)
 - **Setup for every client:** [valmera.io/mcp/setup](https://valmera.io/mcp/setup)
+- **Verify the publisher and editing permissions:** [Compare the registry, OAuth scope and TrustedMCP assessment](docs/CONNECTION-TROUBLESHOOTING.md#is-this-the-official-valmera-video-editing-connector) before connecting an assistant.
 - **Tool reference:** [valmera.io/mcp/tools](https://valmera.io/mcp/tools)
 - **Live server card:** [/.well-known/mcp/server-card.json](https://valmera.io/.well-known/mcp/server-card.json)
 
