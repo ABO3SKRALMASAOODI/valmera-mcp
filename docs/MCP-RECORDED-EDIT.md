@@ -39,6 +39,14 @@ The last number in each clock is a frame count. In the revised project, advance 
 
 To compare another AI editor, ask it to keep 3–7, 12–16 and 19–23 seconds, then shorten only the middle range to end at 14 seconds. Ask the finishing editor to reopen what they receive, relink the source and move a cut. Play the separate reference render to check the intended framing and ending. [Compare both pictures at six seconds](https://valmera.io/ai-video-editor#timeline-handoff).
 
+## Inspect the same cuts as Premiere XML
+
+The [Premiere comparison and download](https://valmera.io/compare/valmera-vs-premiere-pro#timeline-handoff) includes a pair of Final Cut Pro 7 XML sequences, the 25-second original and the revised Valmera MP4. The XML is also available here as plain text. [First sequence](evaluation/recorded-run-20261107/premiere/first-cut.xml) · [Revised sequence](evaluation/recorded-run-20261107/premiere/revised-cut.xml).
+
+In Premiere, use **File → Import** for each XML and locate `original-source.mp4` if asked. Both sequences use one video track at 30 fps. Source frames 570–689 make up the last shot in both cuts. That shot starts at frame 240 in the first assembly and at frame 180 after the revision. Leave the source linked and step across the join to check the picture counter. [Adobe media relinking](https://helpx.adobe.com/premiere/desktop/organize-media/ingest-proxy-workflow/relink-offline-clips.html).
+
+These example sequences reconstruct the recorded cut decisions. The final square framing, branding and end card are visible in the delivered MP4. We checked XML source and sequence ranges with OpenTimelineIO. Desktop Premiere import remains untested.
+
 ## Verify the downloaded export
 
 The mcp.film curator independently downloaded this run’s MP4, matched the file hash to the receipt, inspected the video stream and sampled frames for branding. The curator also checked the public endpoint’s authentication challenge and OAuth metadata. The authenticated editing steps above were run by Valmera. [Read the curator’s notes](https://mcp.film/mcps/valmera/).

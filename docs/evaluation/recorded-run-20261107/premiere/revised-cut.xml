@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xmeml>
+<xmeml version="4">
+  <project>
+    <name>Valmera Revised Cut</name>
+    <children>
+      <sequence id="sequence-1">
+        <name>Valmera Revised Cut</name>
+        <duration>300</duration>
+        <rate>
+          <timebase>30</timebase>
+          <ntsc>FALSE</ntsc>
+        </rate>
+        <media>
+          <video>
+            <format>
+              <samplecharacteristics>
+                <width>1280</width>
+                <height>720</height>
+                <anamorphic>FALSE</anamorphic>
+                <pixelaspectratio>square</pixelaspectratio>
+                <fielddominance>none</fielddominance>
+                <rate>
+                  <timebase>30</timebase>
+                  <ntsc>FALSE</ntsc>
+                </rate>
+              </samplecharacteristics>
+            </format>
+            <track>
+              <clipitem frameBlend="FALSE" id="clipitem-1">
+                <file id="file-1">
+                  <pathurl>file://localhost/original-source.mp4</pathurl>
+                  <name>original-source.mp4</name>
+                  <rate>
+                    <timebase>30</timebase>
+                    <ntsc>FALSE</ntsc>
+                  </rate>
+                  <duration>750</duration>
+                  <timecode>
+                    <rate>
+                      <timebase>30</timebase>
+                      <ntsc>FALSE</ntsc>
+                    </rate>
+                    <string>00:00:00:00</string>
+                    <frame>0</frame>
+                    <displayformat>NDF</displayformat>
+                  </timecode>
+                  <media>
+                    <video>
+                      <samplecharacteristics>
+                        <width>1280</width>
+                        <height>720</height>
+                        <anamorphic>FALSE</anamorphic>
+                        <pixelaspectratio>square</pixelaspectratio>
+                        <fielddominance>none</fielddominance>
+                        <rate>
+                          <timebase>30</timebase>
+                          <ntsc>FALSE</ntsc>
+                        </rate>
+                      </samplecharacteristics>
+                    </video>
+                  </media>
+                </file>
+                <name>original-source.mp4</name>
+                <rate>
+                  <timebase>30</timebase>
+                  <ntsc>FALSE</ntsc>
+                </rate>
+                <rate>
+                  <timebase>30</timebase>
+                  <ntsc>FALSE</ntsc>
+                </rate>
+                <duration>120</duration>
+                <start>0</start>
+                <end>120</end>
+                <in>90</in>
+                <out>210</out>
+              </clipitem>
+              <clipitem frameBlend="FALSE" id="clipitem-2">
+                <file id="file-1" />
+                <name>original-source.mp4</name>
+                <rate>
+                  <timebase>30</timebase>
+                  <ntsc>FALSE</ntsc>
+                </rate>
+                <rate>
+                  <timebase>30</timebase>
+                  <ntsc>FALSE</ntsc>
+                </rate>
+                <duration>60</duration>
+                <start>120</start>
+                <end>180</end>
+                <in>360</in>
+                <out>420</out>
+              </clipitem>
+              <clipitem frameBlend="FALSE" id="clipitem-3">
+                <file id="file-1" />
+                <name>original-source.mp4</name>
+                <rate>
+                  <timebase>30</timebase>
+                  <ntsc>FALSE</ntsc>
+                </rate>
+                <rate>
+                  <timebase>30</timebase>
+                  <ntsc>FALSE</ntsc>
+                </rate>
+                <duration>120</duration>
+                <start>180</start>
+                <end>300</end>
+                <in>570</in>
+                <out>690</out>
+              </clipitem>
+            </track>
+          </video>
+          <audio />
+        </media>
+      </sequence>
+    </children>
+  </project>
+</xmeml>
