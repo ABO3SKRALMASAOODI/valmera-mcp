@@ -212,6 +212,8 @@ npx skills@1.7.6 add ABO3SKRALMASAOODI/valmera-mcp@v1.0.1 --skill edit-video-wit
 
 Use `-a claude-code` or `-a cursor` for those clients. Select `turn-long-video-into-shorts` or `website-demo-video` instead when that matches the job. Then [connect and authenticate Valmera](https://valmera.io/mcp/setup). The skill prompts the assistant to discover current tool schemas, establish the scope and cost expectations, review a preview, and export the approved version.
 
+For a public website, [install the website walkthrough skill and review two sample captures](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/WEBSITE-DEMO.md#install-the-website-walkthrough-skill). One recording scrolls past a missed click. The other reaches the requested page. The MP4s, event times and comparison frames are public.
+
 For an actual result, see the [trim-and-reframe example](https://valmera.io/examples/trim-and-reframe): original motion-graphic footage, selected source ranges, a square crop and the rendered export.
 
 ## What your assistant can do with it

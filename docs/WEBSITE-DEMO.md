@@ -6,6 +6,28 @@ Turn a public product page into a short walkthrough with Valmera, or edit a scre
 
 This guide is written by the Valmera team. Creating an account and uploading are free; recording and AI editing require a subscription. See [current plans](https://valmera.io/subscribe). Your assistant provider's access and billing are separate.
 
+## Install the website walkthrough skill
+
+In a project using Node.js 22.20 or later, run the command for your client. Each installs the same [MIT-licensed skill file](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/v1.0.1/skills/website-demo-video/SKILL.md) from release `v1.0.1`. Choose a project-local install when prompted, then refresh your agent session.
+
+**Claude Code**
+
+```sh
+npx skills@1.7.6 add ABO3SKRALMASAOODI/valmera-mcp@v1.0.1 --skill website-demo-video -a claude-code
+```
+
+**Codex**
+
+```sh
+npx skills@1.7.6 add ABO3SKRALMASAOODI/valmera-mcp@v1.0.1 --skill website-demo-video -a codex
+```
+
+The [install guide](https://valmera.io/mcp/skills#install-website-demo-video) also includes the Cursor command. You can try the review step with the public recordings before connecting an account. Download the [first capture](https://valmera.io/examples/website-capture/first-attempt.mp4) and [third capture](https://valmera.io/examples/website-capture/public-docs-walkthrough.mp4) into your project. In an agent that can inspect local video or extract frames, try this request:
+
+> Use website-demo-video to review the two MP4s in this project. The brief was to open Captions from the Getting Started sidebar. For each recording, report the heading visible after the attempted click and the time of the frame you inspected. Which recording would you keep? Use the supplied footage only.
+
+Check the answer against the [paired frames and recorded click times](#check-whether-the-recorded-click-reached-its-destination). If your client cannot inspect video, open the paired frames there. For a new recording on your own site, connect Valmera using the steps below.
+
 ## Choose the starting material
 
 | Starting material | Use this route | Include in the brief |
