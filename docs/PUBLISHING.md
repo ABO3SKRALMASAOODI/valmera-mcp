@@ -15,6 +15,10 @@ The public endpoint is `https://valmera.io/mcp/server`. The older `entrepreneur-
 
 Avoid a fixed undated tool count in directory descriptions. Configuration can change the catalog. If a count is useful, attach the date and link to the live server card.
 
+## Official MCP Registry update on November 14, 2026
+
+Version `0.2.1` is active and marked latest. Its website link opens the client setup guide, and its remote is `https://valmera.io/mcp/server`. The registry returned this entry for both `valmera` and `video-editor`. Searches for `video editor` and `video editing` each returned zero records across the registry on this check. [Version 0.2.1](https://registry.modelcontextprotocol.io/v0.1/servers/io.valmera%2Fvideo-editor/versions/0.2.1) · [Client setup](https://valmera.io/mcp/setup)
+
 ## Documentation indexes checked November 7, 2026
 
 | Surface | Verified result | Next action |
@@ -55,7 +59,7 @@ For a future correction, use the [capability explanation](CONNECTION-TROUBLESHOO
 | [Odel](https://odel.app/modules/valmera/video-editor) | Branded endpoint and version are current; the mirrored README is older and the AI assessment says the editor only reads information. Tools could not be listed without sign-in | The live-check control returned an expected sign-in requirement but did not correct the assessment. No correction submission is confirmed; locate a supported maintainer correction route |
 | [ExtOps](https://extops.dev/plugins/mcp/io.valmera/video-editor) | A correction request about the “Not responding” label received an explicit success acknowledgment through its feedback form | Public correction remains unverified. Preserve the existing submission; do not repeat it merely because the label persists |
 
-The latest registry record was published at `2026-10-05T21:42:45.941368Z`. The older records were marked deprecated on October 7, with status messages pointing to the branded endpoint. These facts supersede the September registry observation below. A directory may retain historical endpoints for monitoring; its new-client setup instructions should use the active/latest record.
+The latest registry record at the November 4 check was published at `2026-10-05T21:42:45.941368Z`. The older records were marked deprecated on October 7, with status messages pointing to the branded endpoint. These facts supersede the September registry observation below. A directory may retain historical endpoints for monitoring; its new-client setup instructions should use the active/latest record.
 
 MCPBeat ownership was confirmed using [`mcpbeat-verification.txt`](../mcpbeat-verification.txt), published in [PR #12](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/pull/12). Keep the public proof file available. The owner dashboard acknowledged saving [the official setup guide](https://valmera.io/mcp/setup), and the public listing showed both that link and the owner-confirmed badge. Those two changes are complete; the generated endpoint correction is not. Verify the generated command itself before updating that status.
 
