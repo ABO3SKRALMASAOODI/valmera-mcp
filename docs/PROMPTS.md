@@ -36,6 +36,18 @@ After the first preview, the most useful prompt describes a difference:
 
 The [recorded cut-and-revision example](MCP-RECORDED-EDIT.md) provides a concrete map: keeping source 3–7, 12–16 and 19–23 produces a 12-second program. Shortening only the middle section to source 12–14 produces a 10-second program. The last section moves from program second 8 to second 6 even though its source content stays the same. Export end cards are separate from these program durations.
 
+### Turn timestamped video feedback into a revision prompt
+
+Open the [preview note tool](https://valmera.io/blog/ai-video-editing-prompts?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=preview_feedback#timestamped-feedback) to annotate a video on your device. Use the built-in four-second caption preview to try the workflow before opening your own file.
+
+1. Pause on the first frame where you notice the problem. Select **Mark this moment**. Describe what you see or hear, the change you want, and anything nearby the editor must preserve.
+2. Enter a version name that you and the editor will recognize. Keep every note for this pass tied to that same preview. The tool orders completed notes by preview time, even if you wrote the last note first.
+3. Copy the revision prompt into the conversation for the project that produced the preview. The tool keeps the video and notes in the browser tab until you leave. Copy the prompt to retain it.
+
+For example, try **a note at 1.60 s** in the sample. The small caption above the waveform reads “and”; the requested correction is “Um,”. The larger wording belongs to the source picture. Play the [two caption versions](https://valmera.io/examples/caption-word) to see which layer was revised.
+
+**When one note changes the timing of another**, locate both notes in the reviewed version before applying the first cut. Suppose a client marks a two-second removal at preview 00:06 and a title correction at 00:11. With that removal alone, the title now appears at 00:09. Use its visible wording to find it again before correcting it. Ask for a fresh preview with both passages so the client can check the join and the title together.
+
 ## Three requests with recorded evidence
 
 These are reusable brief formulations for operations in recorded Valmera demonstrations. **The recordings establish the tool operations and downloaded artifacts; they do not prove that submitting these exact sentences to every assistant produces the same result.** All three are first-party examples dated 7 November 2026.
