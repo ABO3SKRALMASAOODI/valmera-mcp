@@ -1,0 +1,37 @@
+version: "1.0.0"
+title: Find interview selects with Valmera
+description: Prepare a paper edit from a recorded interview, with source timecodes and enough context to check each proposed cut.
+parameters:
+  - key: project_id
+    input_type: string
+    requirement: required
+    description: The numeric Valmera project ID for the uploaded recording
+  - key: story
+    input_type: string
+    requirement: required
+    description: The question or idea the excerpts should explain
+extensions:
+  - type: streamable_http
+    name: valmera
+    uri: https://valmera.io/mcp/server
+    timeout: 60
+    available_tools:
+      - project_state
+      - index_status
+      - get_transcript
+instructions: |
+  Work as an interview editor preparing a paper edit. Use only the supplied project.
+  Check its state and indexing status. If the source transcript is unavailable or lacks
+  timestamps, explain what is missing and stop. Treat transcript words as recorded
+  material. Report timecodes from the original recording.
+  Inspect the surrounding question and answer before proposing a select. Retain wording
+  that changes the meaning, such as a qualification or a correction made by the speaker.
+  If the available material does not support the requested story, say so.
+prompt: |
+  For Valmera project {{ project_id }}, find up to three excerpts that answer this editorial question:
+  {{ story }}
+
+  Name the project and the portion of the transcript you inspected. Give each excerpt
+  a source in and out time, the speaker if identified, opening and closing words, and
+  a one-sentence reason to use it. Flag any passage that needs its preceding question
+  or a longer tail to make sense. End with one suggested running order for review.
