@@ -2,6 +2,13 @@
 
 Use this with the [filler-word and silence-removal guide](SPEECH-CLEANUP.md). Duplicate the blank sections for each editor or revision. This is a review aid, not a completed product benchmark. Choose a recording you are authorized to use, and apply the same scope to every candidate.
 
+For a shared starting point, use the [four-second filler-word trial](SPEECH-CLEANUP.md#try-a-four-second-cut-before-you-trust-a-whole-interview). Save the first export before opening the reference. Fill out one row per pass so a successful repair does not hide a missed detection.
+
+| Pass | What did the editor identify? | Did “like” and the onset of “use” survive? | Filename / revision |
+| --- | --- | --- | --- |
+| Description only | | | |
+| Correction with source timestamps | | | |
+
 ## Establish the source and brief
 
 | Field | Your entry |
