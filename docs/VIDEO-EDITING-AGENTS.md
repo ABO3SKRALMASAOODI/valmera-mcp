@@ -4,9 +4,26 @@ An **AI video editing agent** takes an editing goal, chooses and performs a sequ
 
 **Valmera edits recorded footage through conversation.** Work with Valmera AI in [Studio](https://valmera.io/studio?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=video_editing_agents), or connect your own compatible assistant to its hosted editing tools. Start with a recording, explain the outcome, review the preview and request a focused revision before exporting.
 
-This guide is published by Valmera. It explains workflow choices and provides a practical evaluation; it is not an independent ranking or a claim that we tested every product below. Vendor descriptions were checked on **November 7, 2026**.
+Valmera publishes this guide. The four MCP workflows below were checked against first-party documentation on **November 14, 2026**. The broader product survey reflects vendor descriptions checked on November 7.
 
 [See a real editing example](../README.md#watch-a-real-video-edit) · [Connect an assistant](https://valmera.io/mcp/setup?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=video_editing_agents) · [Download the comparison kit](EDITOR-EVALUATION.md)
+
+## Which video editing MCP server fits my recording?
+
+Where will you watch the cut, and what do you need to take away when you approve it? Those two choices narrow the field quickly.
+
+| If you want to… | Start here | How you review and deliver |
+| --- | --- | --- |
+| Upload existing footage and have your own assistant revise a hosted project | **Valmera** | Review a rendered preview, ask for a change against the same project, then export the approved edit as an MP4. Editing requires a subscription. You can play the published example before connecting. [Recorded revision](https://valmera.io/ai-agent-that-edits-video#recorded-revision) · [Setup and access](https://valmera.io/mcp/setup) |
+| Rework a screen tutorial in your Tella workspace | **Tella** | Inspect the storyboard, change a zoom or layout, then ask for a preview of the affected passage. Export an MP4 or give the viewer a share link. Tella recordings with separate camera and screen layers allow layout changes after recording. [Tella editing walkthrough](https://www.tella.com/edit-with-ai/edit-video-with-mcp) |
+| Keep the editor open on your desktop while an assistant works | **Velorn** | Connect to the local server in the app, inspect the open timeline, preview a proposed edit, then apply it. Use the export queue for delivery. Its editing and export tools work without installing ComfyUI. [Velorn workstation and agent setup](https://github.com/VelornLabs/velorn#ai-agents-mcp) |
+| Run a headless edit and pass the timeline to another application | **Cuttingfloor** | Keep the timeline ID from each revision so you can return to an earlier cut. Inspect frames, then download a render or an interchange file such as FCPXML. The hosted cache expires, so save media and timeline data you need later. [Cuttingfloor workflow and storage](https://github.com/Mvp2o-ai/cuttingfloor) |
+
+### Check that a revision preserves the shots you approved
+
+Use the [25-second silent source and comparison kit](EDITOR-EVALUATION.md). Ask each agent, “Keep source seconds 3–7, 12–16 and 19–23, in that order. Show me the preview.” Save that preview. Then ask, “Shorten the middle shot by two seconds at its end. Keep the opening and closing shots intact.”
+
+The closing shot should now start at **second 6** of the edit and show **second 19** of the source. Watch that boundary in the downloaded file as well as the preview. A ten-second runtime alone cannot tell you whether the agent shortened the correct shot. In Valmera’s recorded run the revised program lasted ten seconds and the final MP4 lasted fifteen, including a five-second end card. The other three entries above describe their vendors’ workflows. [Inspect the source, previews and final MP4](MCP-RECORDED-EDIT.md)
 
 ## A recorded caption revision on spoken footage
 
