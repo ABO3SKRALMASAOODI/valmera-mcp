@@ -10,6 +10,8 @@ Compare the result you can download, the revision you can make, and the work it 
 
 If free export is required, complete the [watermark and export check](FREE-EXPORT-CHECK.md) before comparing creative results.
 
+For a speaker-framing test, [compare a wide lecture shot with its portrait render](PORTRAIT-CROP-EXAMPLE.md). Reproduce the crop across 276 frames, then try the same brief on a passage with more movement.
+
 ## What you can test with this footage
 
 For one observed result using this procedure, see the [November 7 MCP run](MCP-RECORDED-EDIT.md). It includes source, first preview, revised final MP4, measured output properties and explicit untested criteria. It is a Valmera-authored example, not an independent comparison.
