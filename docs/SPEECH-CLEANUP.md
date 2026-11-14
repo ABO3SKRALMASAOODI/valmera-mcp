@@ -4,7 +4,26 @@ The useful result of speech cleanup is a clearer recording that still sounds lik
 
 Use [Valmera's filler-word editing workflow](https://valmera.io/tools/remove-filler-words-from-video?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=speech_cleanup) for recorded speech, then use this guide to review the preview and request a precise correction. It covers interviews, talking-head videos and narrated demonstrations. For a connected assistant, start with the [MCP setup](https://valmera.io/mcp/setup) and [client reference](CLIENTS.md). Editing requires an eligible paid plan; see [current plans](https://valmera.io/subscribe).
 
-Published by Valmera · November 7, 2026. The timings and recording below are **fictional teaching examples**, not a customer recording, a product test or a measured quality result. Prompts express the desired outcome; inspect the actual output before approving it.
+Published by Valmera · Updated November 14, 2026. The four-second exercise below uses downloadable media. The later interview timing map is a fictional teaching example.
+
+## Try a four-second cut before you trust a whole interview
+
+[Download the original MP4](https://valmera.io/examples/filler-word-cut/original.mp4). A synthetic voice says: “I like the blue label. Um, use the green one for print.” There is one unwanted hesitation. “Like” is the main verb in the first sentence; removing it changes what the speaker says.
+
+1. **Test the editor’s judgment.** Give it the original and ask: “Remove the hesitation. Keep both complete sentences and the speaker’s pace. Show me the cut.” Save that first result before giving it timestamps. Play it with the captions hidden if possible: does “like” survive, and can you hear the start of “use”? The source video has text on screen, so this is not an audio-only detection test.
+2. **Test your ability to correct it.** [Listen to the original and the reference cut together](https://valmera.io/tools/remove-filler-words-from-video?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=speech_cleanup_trial#listen-to-the-cut). The reference removes **1.56–1.88 seconds of source time**: eight frames at 25 fps. If the first pass missed, ask for just that interval to be removed from the original. Record the correction separately. Getting the second pass right tells you whether you can direct the edit; it does not give the first pass credit for finding the filler.
+
+In a hosted Valmera MCP run on this clip, a transcript warning called the scripted “um” **“and.”** We supplied the two source intervals to keep, 0–1.56 and 1.88–4.00, with word snapping off. Reading back the saved timeline confirmed a 3.68-second program. The [downloadable reference MP4](https://valmera.io/examples/filler-word-cut/reference-cut.mp4) was prepared separately; it is a listening target, not the output of that run.
+
+### Check whether the speech moved by exactly eight frames
+
+If you have Python 3 and FFmpeg, download the two MP4s and [the audio check](evaluation/check_speech_cut.py) to the same folder. Run:
+
+```sh
+python3 check_speech_cut.py original.mp4 reference-cut.mp4
+```
+
+The script compares a short stretch before the join at the same timestamp, then compares source 2.40–2.90s with output 2.08–2.58s. For the reference, both waveform correlations rounded to **1.000**. As a control, pass the unedited original as both arguments: the first stays **1.000**, but the second drops to **0.142** because the speech never moved. Substitute your own export to try it. This checks alignment in two windows at 16 kHz. A different but good edit can score lower; listen across the join itself for a clipped syllable, click or rushed pause.
 
 ## Decide what you mean by cleanup
 
