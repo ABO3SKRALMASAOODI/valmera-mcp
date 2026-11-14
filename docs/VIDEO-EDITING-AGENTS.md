@@ -4,7 +4,7 @@ An **AI video editing agent** takes an editing goal, chooses and performs a sequ
 
 **Valmera edits recorded footage through conversation.** Work with Valmera AI in [Studio](https://valmera.io/studio?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=video_editing_agents), or connect your own compatible assistant to its hosted editing tools. Start with a recording, explain the outcome, review the preview and request a focused revision before exporting.
 
-Valmera publishes this guide. The four MCP workflows below were checked against first-party documentation on **November 14, 2026**. The broader product survey reflects vendor descriptions checked on November 7.
+Valmera publishes this guide. The first four MCP workflows were checked against first-party documentation on **November 14, 2026**, and the hosted services in the permissions comparison on **November 15, 2026**. The broader product survey reflects vendor descriptions checked on November 7.
 
 [See a real editing example](../README.md#watch-a-real-video-edit) · [Connect an assistant](https://valmera.io/mcp/setup?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=video_editing_agents) · [Download the comparison kit](EDITOR-EVALUATION.md)
 
@@ -18,6 +18,20 @@ Where will you watch the cut, and what do you need to take away when you approve
 | Rework a screen tutorial in your Tella workspace | **Tella** | Inspect the storyboard, change a zoom or layout, then ask for a preview of the affected passage. Export an MP4 or give the viewer a share link. Tella recordings with separate camera and screen layers allow layout changes after recording. [Tella editing walkthrough](https://www.tella.com/edit-with-ai/edit-video-with-mcp) |
 | Keep the editor open on your desktop while an assistant works | **Velorn** | Connect to the local server in the app, inspect the open timeline, preview a proposed edit, then apply it. Use the export queue for delivery. Its editing and export tools work without installing ComfyUI. [Velorn workstation and agent setup](https://github.com/VelornLabs/velorn#ai-agents-mcp) |
 | Run a headless edit and pass the timeline to another application | **Cuttingfloor** | Keep the timeline ID from each revision so you can return to an earlier cut. Inspect frames, then download a render or an interchange file such as FCPXML. The hosted cache expires, so save media and timeline data you need later. [Cuttingfloor workflow and storage](https://github.com/Mvp2o-ai/cuttingfloor) |
+
+### Which hosted video MCP server fits the project and permissions I need?
+
+Start with the object you want to change. If the price in a coffee ad has expired, a template field, a title on a timeline and the finished video asset each need a different revision. Valmera's [two coffee-ad exports](https://valmera.io/blog/ai-video-editing-prompts#worked-revision) show what happened when an assistant removed an editable title. Watch the six-second comparison and check the coffee shot and source credit at the moment the price disappears.
+
+| Starting material and task | Publisher and connection | What to inspect before delivery |
+| --- | --- | --- |
+| A recording in a saved edit, with a title to remove | Valmera hosts `https://valmera.io/mcp/server`. Its authorization server advertises the account's editing scope, `valmera.edit`. [Verify the publisher and scope](CONNECTION-TROUBLESHOOTING.md#is-this-the-official-valmera-video-editing-connector) | Ask for a preview of the changed passage, export the reviewed version and play the MP4. New AI edits require paid access. |
+| A product promo assembled from a reusable template | Creatomate hosts its [own MCP server](https://creatomate.com/docs/fundamentals/getting-started/mcp-integration) at `https://api.creatomate.com/mcp`. Sign in and choose one project for the connection. | Update the field in that project and inspect a test render. Keep the template identity for the next revision. |
+| A composition the assistant should build and render | [Shotstack's beta MCP](https://help.shotstack.io/en/articles/16332341-using-shotstack-agents-cli-mcp-server) uses `https://mcp.shotstack.io/`. The guide covers browser OAuth and API-key headers for headless use. | Review the inline preview or share link, then request a render when ready. |
+| An existing asset needing a different crop or delivery treatment | [Cloudinary Asset Management](https://cloudinary.com/documentation/cloudinary_llm_mcp) has a hosted OAuth flow in which you choose the product environment. | Open the derived asset's delivery URL. If a price is baked into the source pixels, check whether the crop keeps the product visible. |
+| A finished replacement ready for streaming | [Mux](https://www.mux.com/docs/integrations/mcp-server) hosts `https://mcp.mux.com`. SDK operations run with the authorized environment and token. Its guide includes inspection with a read-only token. | Verify the asset status and playback ID against the replacement. Check the actual player where viewers will see the ad. |
+
+These four external workflows are based on their publishers’ documentation. The linked Valmera exports come from a recorded edit. The [full comparison and downloadable records](https://valmera.io/mcp/video-editing-mcp-servers#hosted-video) include connection details and source dates.
 
 ### Check that a revision preserves the shots you approved
 
