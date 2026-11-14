@@ -2,7 +2,7 @@
 
 You can use Grok to plan an edit, use a native Imagine video feature, or connect an external editor through MCP. Choose the route around your source and deliverable. A written edit plan, a transformed shot and a revised project are different outcomes.
 
-**Published by Valmera. Sources and setup interface checked November 7, 2026.** Valmera edits recorded footage in [Studio](https://valmera.io/studio?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=grok_workflow) and exposes a hosted MCP endpoint for compatible assistants. This guide explains the documented Grok routes and what to verify before relying on a connection. It does not claim a completed Grok-to-Valmera edit or public catalog approval.
+**Published by Valmera. Grok web setup observed November 7, 2026. Grok Bot instructions checked against its desktop documentation November 15, 2026.** Valmera edits recorded footage in [Studio](https://valmera.io/studio?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=grok_workflow) and exposes a hosted MCP endpoint for compatible assistants. This guide explains the documented Grok routes and what to verify before relying on a connection. It does not claim a completed Grok-to-Valmera edit or public catalog approval.
 
 ## Choose your route
 
@@ -46,6 +46,16 @@ The server URL is public. Your account token is not: do not paste a bearer token
 In our November 7 browser check, searching the connector catalog for **Valmera** returned no matching connector. The custom form accepted the name and public endpoint, then displayed **“Complete authentication in the popup window…”**. The popup was not available in that browser session, so we did not complete authentication, discover tools or run an edit through Grok.
 
 This confirms the visible setup route and authentication handoff only. It does not establish end-to-end compatibility. A custom connection is also separate from inclusion in Grok's public catalog. If the same handoff stalls for you, inspect whether an authentication window opened or was blocked, then check the connector's current state before creating another copy. Use [connection troubleshooting](CONNECTION-TROUBLESHOOTING.md) or the Studio route while the connection remains unresolved.
+
+## Edit uploaded footage with Grok Bot desktop
+
+In Grok Bot desktop, open **Connect apps**. Select **Add a custom connector**, name it **Valmera**, choose **Remote HTTPS**, and enter `https://valmera.io/mcp/server` in **Server URL**. Select **Add plugin**. If the Bot shows a Connect card, open it and sign in to the Valmera account that owns your footage. A team policy can disable the connector. Your team admin can check the server's status under **Plugins & MCPs**. [Grok Bot desktop instructions](https://docs.x.ai/grok-bot/computer-and-apps) · [Team connector settings](https://docs.x.ai/grok-bot/teams-and-enterprises)
+
+For a first test, upload a disposable recording to Valmera Studio and give it a recognizable name. Ask the Bot to list your Valmera projects and return the matching project ID. Look for the tool result in the conversation. If it returns your project, try this caption revision on the test recording:
+
+> On project [ID], preview the caption at [time]. Change the displayed spelling from [old] to [new] and render another preview. Show me the same moment in both versions so I can check the word and its timing before export.
+
+The [recorded caption revision](https://valmera.io/examples/caption-word) shows what to inspect in the resulting video. The desktop setup above follows the provider's instructions. Our recorded example demonstrates the edit in Valmera. An authenticated edit from Grok Bot desktop still needs a live test.
 
 ## Verify tools before requesting a video edit
 

@@ -93,7 +93,7 @@ The [guided setup page](https://valmera.io/mcp/connect?utm_source=valmera_mcp_do
 
 ## Grok
 
-For Grok, see the [planning and custom-connector guide](GROK.md). It distinguishes the web connector, Grok Build and API routes, and records the current verification limits. The web setup form and authentication handoff were observed; a completed Grok-to-Valmera tool call has not been verified in that guide.
+For the Grok web app, see the [planning and custom-connector guide](GROK.md). In Grok Bot desktop, use the [Remote HTTPS setup and first caption test](GROK.md#edit-uploaded-footage-with-grok-bot-desktop). It distinguishes the web connector, Grok Build and API routes, and records the current verification limits. The web setup form and authentication handoff were observed; a completed Grok-to-Valmera tool call has not been verified in that guide.
 
 ## Claude Code
 
