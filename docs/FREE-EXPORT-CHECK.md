@@ -23,7 +23,7 @@ Write your actual requirement first: “A 60-second 1080p MP4 with reviewed capt
 | [Clipchamp](https://support.microsoft.com/en-us/clipchamp/does-clipchamp-add-a-watermark-to-videos) | Microsoft says the editor adds no watermark. On personal accounts, premium assets or features outside the plan can prevent exporting until the required plan is available. | Check the actual project for premium items before relying on its free export. |
 | [Adobe Premiere on mobile](https://www.adobe.com/products/premiere/app.html) | Adobe describes free core editing and unlimited watermark-free 4K exports. Firefly generation uses credits, and its page distinguishes platform availability. | Separate ordinary mobile editing from the generative operation you need. Do not transfer mobile-plan claims to desktop Premiere. |
 | [Renderforest](https://www.renderforest.com/ai-video-editor) | Its page describes free timeline editing, with free exports limited to 720p, a watermark and three minutes. AI panels use credits. | Decide whether that delivered file meets the job; access to editing controls alone is insufficient. |
-| [Valmera browser utilities](https://valmera.io/free-ai-video-editor) | Free manual utilities are separate from paid Studio/MCP AI editing. The recorded freeze-frame example below produced a WebM through browser controls. | Use a focused utility when it fits the task. Do not treat that result as free AI-agent editing or proof of MP4 delivery. |
+| [Valmera browser utilities](https://valmera.io/free-ai-video-editor) | Free manual utilities are separate from paid Studio/MCP AI editing. The freeze-frame example below produced WebM. The single-range trimmer produces an MP4 in a supported browser. | Choose the operation you need and examine the downloaded file. Studio AI editing requires an eligible subscription. |
 
 For Valmera AI, use the [current plans](https://valmera.io/subscribe). Account creation and uploads are free; eligible paid access is needed for AI editing. The [recorded Studio/MCP examples](MCP-RECORDED-EDIT.md) include export branding, so a paid subscription should not be assumed to mean an unbranded file.
 
@@ -40,7 +40,20 @@ Use a short passage from footage you own or are authorized to upload. Include sp
 
 Do not use a silent source to conclude that speech or music is preserved. Do not remove a source creator's branding to manufacture a clean comparison. Distinguish marks already present in the source from marks added by the editor.
 
-## An inspectable Valmera utility export
+## Download a single cut without an account
+
+Open the [free video trimmer](https://valmera.io/tools/cut-video-online#free-trim). For a first run, keep seconds **3 through 7** of the [25-second sample](https://valmera.io/examples/trim-and-reframe/original-source.mp4), choose **Create trimmed MP4**, then download the file. Open it in a separate player. You should see four seconds from the original 1280 × 720 motion graphic. The original has no audio track.
+
+For a second run, download the four-second [speech test clip](https://valmera.io/examples/filler-word-cut/original.mp4) and choose it in the trimmer. Set the start to **0.5** and the end to **2.5**. Listen to the export. Those numbers deliberately cut into the spoken passage, so the words at the boundaries give you a way to catch a file that starts at the wrong point. This is a timestamp test. To remove a hesitation cleanly, listen for its actual boundaries and revise the selection.
+
+| Output from the recorded browser check | Requested interval | Decoded file |
+| --- | --- | --- |
+| [Silent motion graphic](evaluation/first-cut-mp4/motion-trim.mp4) | Source 3.0–7.0 s | 1280 × 720, 4.00 seconds, one video track |
+| [Speech excerpt](evaluation/first-cut-mp4/speech-trim.mp4) | Source 0.5–2.5 s | 800 × 400, 2.02 seconds, video and audio |
+
+We tested both downloads on the live site on November 14, 2026. The speech file reported a duration of 2.02 seconds. Matching its waveform to the source placed the cut at 0.496 seconds for the requested 0.5-second start. We also compared three decoded frames of the silent export against source seconds 3, 4 and 6. The [verification record](evaluation/first-cut-mp4/verification.json) includes file hashes and measurements. Browser codec support varies. To request a second pass by chat, use **Use this cut in Studio**, upload the matching original and review the saved brief before sending.
+
+## Inspect a freeze-frame export
 
 The [recorded freeze-frame run](FREEZE-FRAME-EXAMPLE.md) provides a 25-second silent source and the unmodified downloaded WebM. A 2.5-second hold produced 825 decoded frames at a reported 30 fps, corresponding to 27.5 seconds. The output was 1280×720 VP9, with no audio stream; the source was silent too.
 
