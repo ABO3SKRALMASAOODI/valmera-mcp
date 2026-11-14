@@ -44,6 +44,21 @@ A creator has a narrated video and a close-up of the product. They want the clos
 
 In our four-second sample, the speaker says “use the green one for print.” The overlay starts on “green” at 2.56 seconds. Its authored duration is 1.12 seconds. At 25 fps the swatches still appear at 3.68 seconds and the waveform returns at 3.72. The final voice matches the original during the middle of the cutaway (correlation 0.999999 at equal timestamps). The nine-second download includes a five-second branded ending. [Play the example and download both inputs](https://valmera.io/tools/add-b-roll#cutaway-example) · [Read the measurements](https://valmera.io/examples/b-roll-cutaway/measurements.json)
 
+### Inspect the four frames at the cutaway boundaries
+
+![Four frames in reading order. The original waveform is visible at 2.52 seconds, print swatches at 2.56 and 3.68, and the waveform again at 3.72.](assets/broll-boundary-frames.jpg)
+
+At 25 frames per second, adjacent frames are 0.04 seconds apart. Read the top row left to right to check when the close-up appears. Read the bottom row left to right to check when the main picture returns. The written brief gives the intended interval. The decoded output shows which frame the viewer actually sees at its boundary.
+
+To recreate this sheet from the [four-second preview](https://valmera.io/examples/b-roll-cutaway/preview.mp4), run these commands in a folder where you want to keep the MP4 and JPEG. FFmpeg counts the first decoded frame as zero.
+
+```sh
+curl -fsS https://valmera.io/examples/b-roll-cutaway/preview.mp4 -o cutaway-preview.mp4
+ffmpeg -v error -i cutaway-preview.mp4 \
+  -vf "select='eq(n,63)+eq(n,64)+eq(n,92)+eq(n,93)',scale=320:-1,tile=2x2" \
+  -frames:v 1 cutaway-boundaries.jpg
+```
+
 ### Mark a cutaway using two local clips
 
 Use the [free B-roll timing planner](https://valmera.io/tools/add-b-roll#cutaway-planner) when the editor needs to know which part of a supporting shot to show. For example, the speaker may name the product at 1.12 seconds, but a hand blocks the label at the start of the close-up. Open the narration under **Main recording**, mark 1.12 seconds as the cutaway start, and mark 1.96 seconds as the return. Under **Supporting shot**, scrub past the hand and mark 0.12 seconds as the source start.
