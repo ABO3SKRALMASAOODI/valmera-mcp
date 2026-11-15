@@ -4,7 +4,7 @@ Use Valmera's tools to work on footage you already recorded: inspect the source,
 
 **Start here:** [connect your assistant](https://valmera.io/mcp/setup) · [live tool reference](https://valmera.io/mcp/tools) · [public server card](https://valmera.io/.well-known/mcp/server-card.json)
 
-On **November 14, 2026**, the public card listed 222 operations, including 15 session tools. Use the live card to check the current names and arguments.
+For current tool counts, read-only annotations, and example inputs, [run the public connector check](CONNECTION-TROUBLESHOOTING.md#check-a-directory-listing-without-signing-in). The [dated result](evaluation/public-connector-check/2026-11-15.json) includes the registry endpoint and a SHA-256 check of a recorded export.
 
 ## Discover tools before planning the edit
 

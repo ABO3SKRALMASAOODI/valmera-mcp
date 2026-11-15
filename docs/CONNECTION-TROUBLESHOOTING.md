@@ -24,7 +24,19 @@ If setup is unavailable in your assistant or workspace, [open Valmera Studio](ht
 
 **Valmera is an editing connector, not a read-only project catalog.** It includes inspection tools alongside operations that save edits, render previews and export videos. An anonymous directory probe can fail to enumerate authenticated tools without establishing that the service is read-only.
 
-The public [server card](https://valmera.io/.well-known/mcp/server-card.json), inspected November 7, 2026, distinguishes these operations:
+### Check a directory listing without signing in
+
+Download the [public connector check](../scripts/check-public-connector.py) and run it with Python 3. It reads the official registry entry, the endpoint’s anonymous authentication challenge, the OAuth resource metadata, the published tool schemas and one recorded delivery. It needs no credentials or project ID.
+
+```sh
+python3 check-public-connector.py
+```
+
+The [November 15 result](evaluation/public-connector-check/2026-11-15.json) found 224 published tool definitions. Of those, 48 carried `readOnlyHint: true` and 176 carried `readOnlyHint: false`. A false hint means a client should allow for side effects. To understand a particular tool, read its description and inputs. For example, `cut_range` takes a project and source interval, while `export_final` requires the project and reviewed edit version.
+
+The anonymous request returned **401**. Its challenge pointed to metadata advertising the **valmera.edit** scope. The check also downloaded the November 7 final MP4 and matched its SHA-256 to the pinned receipt. These observations answer three different questions: where sign-in begins, which operations the publisher declares, and whether the published file matches a recorded export. To test your account’s access, sign in through your client, list its tools and run a new edit on your own footage.
+
+The [public server card](https://valmera.io/.well-known/mcp/server-card.json) describes the following operations:
 
 | Stage | Example operation | What the published definition describes | Evidence to inspect |
 | --- | --- | --- | --- |

@@ -9,6 +9,8 @@ Join thousands of creators. Bring your footage, describe the result, and refine 
 
 **[Connect your assistant](https://valmera.io/mcp/connect?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow) · [Open an editing brief in Valmera](https://valmera.io/chatgpt-video-editor?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow#first-brief) · [ChatGPT first-edit walkthrough](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/CHATGPT.md)**
 
+**Checking Valmera for a directory or a team?** The public connector card identifies `list_projects` as read-only and `cut_range`, `render_preview` and `export_final` as operations with side effects. [Check the live declarations and verify a recorded MP4 without signing in](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/CONNECTION-TROUBLESHOOTING.md#check-a-directory-listing-without-signing-in).
+
 ## Hand an AI rough cut to a human editor
 
 For one source recording, ask Valmera for the approved source ranges and open the [editable timeline builder](https://valmera.io/blog/ai-rough-cut-to-editable-timeline). Download a Shotcut project and a CMX picture edit list, then open them with the original media. The guide includes a working source clip and a frame check for the revised cut.
