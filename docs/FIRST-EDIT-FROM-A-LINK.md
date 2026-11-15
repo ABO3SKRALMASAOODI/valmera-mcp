@@ -16,7 +16,7 @@ Keep the full picture and normal speed. The recording is silent.
 Render the four-second preview and give me a playback link.
 ```
 
-Watch the first join at 0:02. “Start with your footage” should give way to “Keep what serves the story.” The small clock in the picture jumps from the opening shot to source second 12. [Play the four-second preview](https://raw.githubusercontent.com/ABO3SKRALMASAOODI/valmera-mcp/main/docs/evaluation/first-edit-from-link/first-preview.mp4).
+Watch the first join at 0:02. “Start with your footage” should give way to “Keep what serves the story.” The small clock in the picture jumps from the opening shot to source second 12. [Download the four-second preview MP4](https://raw.githubusercontent.com/ABO3SKRALMASAOODI/valmera-mcp/main/docs/evaluation/first-edit-from-link/first-preview.mp4).
 
 ## 2. Give one follow-up in the same conversation
 
@@ -25,7 +25,11 @@ In the same project, append source seconds 19–21 to the end.
 Keep the first four seconds as reviewed. Render the revised preview.
 ```
 
-At output second 4, the revised preview should show “Share the finished cut.” During the first four seconds, each of the 120 frames in our revised preview matched its counterpart in the first preview after downscaling to 96 × 54 grayscale. [Play the six-second revision](https://raw.githubusercontent.com/ABO3SKRALMASAOODI/valmera-mcp/main/docs/evaluation/first-edit-from-link/revised-preview.mp4).
+At output second 4, the revised preview should show “Share the finished cut.” During the first four seconds, each of the 120 frames in our revised preview matched its counterpart in the first preview after downscaling to 96 × 54 grayscale. [Download the six-second revised preview MP4](https://raw.githubusercontent.com/ABO3SKRALMASAOODI/valmera-mcp/main/docs/evaluation/first-edit-from-link/revised-preview.mp4).
+
+The animation below samples the revised preview at six frames per second. The picture changes at 0:02 and again at 0:04.
+
+![Six-second preview cycling through the opening, middle and appended closing shot.](evaluation/first-edit-from-link/revised-preview.gif)
 
 ## 3. Ask for the file you just reviewed
 
@@ -33,7 +37,7 @@ At output second 4, the revised preview should show “Share the finished cut.�
 Export the version I just reviewed. Wait for it to finish and give me the final MP4.
 ```
 
-The MP4 from this run contains six seconds of edited footage and a five-second Valmera ending. The corner mark and ending are visible in the exported file. Its 1920 × 1080 output scales the 1280 × 720 original. The frames below are from the delivered MP4 at 1, 3, 5 and 7 seconds. [Play or download the final MP4](https://raw.githubusercontent.com/ABO3SKRALMASAOODI/valmera-mcp/main/docs/evaluation/first-edit-from-link/revised-final.mp4) · [Inspect the hashes and frame checks](evaluation/first-edit-from-link/measurements.json).
+The MP4 from this run contains six seconds of edited footage and a five-second Valmera ending. The corner mark and ending are visible in the exported file. Its 1920 × 1080 output scales the 1280 × 720 original. The frames below are from the delivered MP4 at 1, 3, 5 and 7 seconds. [Download the final MP4](https://raw.githubusercontent.com/ABO3SKRALMASAOODI/valmera-mcp/main/docs/evaluation/first-edit-from-link/revised-final.mp4) · [Inspect the hashes and frame checks](evaluation/first-edit-from-link/measurements.json).
 
 ![At one second the opening shot is visible, at three seconds the middle shot, at five seconds the closing shot, and at seven seconds the Valmera end card.](evaluation/first-edit-from-link/final-sequence.jpg)
 
