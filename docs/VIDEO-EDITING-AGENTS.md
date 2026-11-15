@@ -8,6 +8,14 @@ Valmera publishes this guide. The first four MCP workflows were checked against 
 
 [See a real editing example](../README.md#watch-a-real-video-edit) · [Connect an assistant](https://valmera.io/mcp/setup?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=video_editing_agents) · [Download the comparison kit](EDITOR-EVALUATION.md)
 
+## Can a human editor finish my AI rough cut?
+
+For one constant-frame-rate recording, take the approved keep ranges from Valmera to the [editable rough-cut builder](https://valmera.io/blog/ai-rough-cut-to-editable-timeline#make-timeline). It creates a Shotcut project linked to your original media and a CMX 3600 picture cut list in your browser. Give the finishing editor the recording, the project, the source frame rate and the reference MP4.
+
+Ask the connected assistant to read the approved version with `get_edl`. Request the keep ranges in **timeline order**, expressed as elapsed seconds from the first source frame. Include repeated uses. Use one pair per continuous span at normal speed. Keep the approved reference alongside the timeline so a second editor can restore crops, graphics and the mix.
+
+Try the recorded revision with `[[3,7],[12,14],[19,23]]` and the [25-second source](https://valmera.io/examples/trim-and-reframe/original-source.mp4) at 30 fps. The closing shot begins at record frame 180 and source frame 570. The [full recorded edit](MCP-RECORDED-EDIT.md) includes the earlier revision and final delivery.
+
 ## Which video editing MCP server fits my recording?
 
 Where will you watch the cut, and what do you need to take away when you approve it? Those two choices narrow the field quickly.
