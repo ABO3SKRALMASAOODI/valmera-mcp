@@ -193,7 +193,7 @@ For your own recording, [prepare a subtitle-editing brief](https://valmera.io/pr
 
 ## Install as a Claude plugin (connector + editing skills)
 
-For a standalone ZIP, connection steps and a first-edit brief, use the [Claude plugin guide](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/CLAUDE-PLUGIN.md) and [version 1.0.2 release](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/releases/tag/claude-v1.0.2). This repository release does not imply approval in Anthropic's public directory.
+For a standalone ZIP, connection steps and a first-edit brief, use the [Claude plugin guide](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/CLAUDE-PLUGIN.md) and [version 1.0.3 download](https://valmera.io/downloads/valmera-claude-1.0.3.zip). This repository release does not imply approval in Anthropic's public directory.
 
 This repository is also a Claude plugin. It bundles the Valmera connector with three skills that teach Claude a reliable editing workflow: [edit-video-with-valmera](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/skills/edit-video-with-valmera/SKILL.md), [turn-long-video-into-shorts](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/skills/turn-long-video-into-shorts/SKILL.md) and [website-demo-video](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/skills/website-demo-video/SKILL.md).
 

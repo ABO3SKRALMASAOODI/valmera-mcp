@@ -1,6 +1,6 @@
 {
   "name": "valmera",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Edit uploaded video through Valmera, review a preview and export the approved MP4. Hosted editing requires a paid Valmera plan.",
   "author": {
     "name": "Valmera",
