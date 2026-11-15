@@ -247,6 +247,7 @@ Use the [live server card](https://valmera.io/.well-known/mcp/server-card.json) 
 ## How it works
 
 1. **Upload.** Upload in [Valmera Studio](https://valmera.io), import a link, or use `upload_start` and `upload_finish` from a client that can send files. Check the current upload requirements in Studio and the [upload documentation](https://valmera.io/docs/file-uploads).
+   For a long recording, check the [current direct-upload settings](https://valmera.io/api-backend/video/limits) and [map the passage you want](https://valmera.io/tools/long-video-upload-checker). Studio indexes the first three hours of a main file. A passage at 03:20:00 in the original is at 00:20:00 in an excerpt that starts at hour three. The [webinar guide](docs/WEBINARS.md#find-an-answer-after-hour-three) includes both sample videos and the caption boundary test.
 2. **Index.** Valmera transcribes the footage with word-level timestamps and detects shots, silences and on-screen text. `index_status` reports progress.
 3. **Edit.** Each tool call writes a new version of a non-destructive **edit decision list (EDL)**. The original upload is never modified, and any cut can be restored.
 4. **Review.** `render_preview` renders a fast proxy preview. `watch_video` and `look_at` let the assistant inspect the frames it produced before it reports back.

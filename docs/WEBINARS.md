@@ -37,6 +37,20 @@ Use this planning request after replacing the brackets:
 
 This separates the editorial choice from execution. A sensible target length follows what the audience needs to understand.
 
+### Find an answer after hour three
+
+Keep two timestamps for a late Q&A passage. One locates it in the original event. The other locates it in the section the assistant can edit. Studio accepts a main video within its byte limit and indexes its first three hours. A supporting video clip also needs to fit the duration limit. Read the [current direct-upload settings](https://valmera.io/api-backend/video/limits) before planning a large transfer.
+
+If a four-hour webinar has a passage at **03:20:00** and the prepared section begins at **03:00:00**, ask for **00:20:00 in that section**. If the section starts at **02:50:00**, the same passage begins at **00:30:00**. Use the actual source boundary for the exported part. An approximate filename such as “last hour” cannot establish the offset.
+
+The [long video upload checker](https://valmera.io/tools/long-video-upload-checker) reads local file metadata, estimates transfer time, maps the moment and retimes an original SRT to the selected section. Try the [four-hour source clock](https://valmera.io/examples/long-recording/source-clock.mp4), the [one-hour excerpt](https://valmera.io/examples/long-recording/final-hour.mp4) and the [original captions](https://valmera.io/examples/long-recording/source-clock.srt). Both videos are silent timing fixtures. At minute 20 of the excerpt, the burned-in source clock reads 03:20:00.
+
+A source caption at 02:59:58.500–03:00:04.250 crosses the cut. The excerpt keeps it at 00:00:00.000–00:00:04.250. Play across the actual cut before approving captions. On speech, listen for a leading syllable or a speaker label that still belongs to the previous section.
+
+Use this request after uploading the prepared media:
+
+> In the final-hour section of the webinar, find the answer at local 00:20:00, corresponding to original 03:20:00. Identify its full question and any qualification the speaker adds. Report the proposed source ranges on both clocks before cutting.
+
 ## 2. Ask for a replay you can check
 
 Once you approve the proposed source ranges, request the edit and a rendered preview. Specify what should stay unchanged when refining an existing version.
