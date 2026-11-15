@@ -10,6 +10,20 @@ For a real run with downloadable videos, see the [recorded caption-style revisio
 
 For another language, use the [subtitle translation workflow](SUBTITLE-TRANSLATION.md): choose subtitle-only or dubbing, preserve meaning and review the translated track against the same edit.
 
+## Convert word-level timestamps to subtitle files
+
+Download the [four-second source video](https://valmera.io/examples/filler-word-cut/original.mp4) and its [12 word records](evaluation/one-word-caption/word-timestamps.json). Valmera's `get_words` returned these source times. We arranged the result as JSON with seconds and confidence values. The speaker is synthetic. This is one recording with a known caption error.
+
+| Source word | Start | End | What to check |
+| --- | ---: | ---: | --- |
+| label | 0.88 s | 1.44 s | Listen to the end of “label” before the hesitation. |
+| and | 1.44 s | 1.84 s | The automatic transcript says “and.” The audio and reviewed caption say “Um,”. |
+| use | 1.84 s | 2.32 s | Keep this word and its start time when fixing the previous caption. |
+
+Open the [word timestamp converter](https://valmera.io/glossary/word-level-timestamps#word-subtitle-converter), keep the sample in seconds and select cue 6. Enter **Um,** as its caption text. For another recording, paste its word-timed JSON first, select the correct time unit and open the matching media to hear the passage before revising it. The tool runs locally in the browser. It uses timing supplied with the transcript.
+
+**Expected files.** Compare the [original SRT](evaluation/one-word-caption/source-words.srt), [corrected SRT](evaluation/one-word-caption/corrected-words.srt) and [corrected WebVTT](evaluation/one-word-caption/corrected-words.vtt). Each contains 12 single-word cues. In both SRT files, cue 6 spans `00:00:01,440 --> 00:00:01,840`. Only its displayed word changes. These sidecars were generated from the word records. The burned-in caption examples below group several words on screen.
+
 ## Correct a single misheard word and verify the downloaded video
 
 On November 14, 2026, we uploaded Valmera’s [four-second synthetic speech sample](https://valmera.io/examples/filler-word-cut/original.mp4) to a new project. The source says “Um, use the green one for print.” The automatic transcript heard “and” at 1.44–1.84 seconds and flagged that word for review. The large lettering at the top is already in the original. Look at the smaller caption over the waveform.
