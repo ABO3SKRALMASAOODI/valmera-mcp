@@ -12,6 +12,8 @@ If free export is required, complete the [watermark and export check](FREE-EXPOR
 
 For a speaker-framing test, [compare a wide lecture shot with its portrait render](PORTRAIT-CROP-EXAMPLE.md). Reproduce the crop across 276 frames, then try the same brief on a passage with more movement.
 
+For a three-shot picture edit, [run the MP4 revision check in Colab](https://colab.research.google.com/github/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/examples/video-edit-revision/check-revision.ipynb). Compare the frames before and after the requested join with the source clock. The notebook includes the 12-second first cut, the revised export and a field for an MP4 from another editor.
+
 ## Check one change at the same timestamp
 
 The [playable before-and-after gallery](https://valmera.io/examples) uses a separate four-second sample with synthetic speech. Select a timestamp once and switch versions. Playback pauses at the same point in the new version.
