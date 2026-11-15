@@ -32,6 +32,23 @@ Use the same source passage and brief in each product. Record any different setu
 
 A claim preserved in the main story can still be distorted in a standalone clip. Review and record both.
 
+## Price a self-serve interview edit against an editing service
+
+Give the service and the software the same source file and desired deliverable. Decide who selects the passages. Supplying highlights with timecodes removes work from a service quote and adds it to your own time. If an external assistant charges separately for MCP access or usage, include the amount attributable to this trial.
+
+| Record one pilot batch | Self-serve editor | Editing service |
+| --- | --- | --- |
+| Cash for the same period, including extra usage, revision fees and required export options | | |
+| Your minutes preparing the brief, locating moments and correcting cuts | | |
+| Your minutes reviewing and playing back the downloads | | |
+| Calendar time until approval, including waiting for the next cut | | |
+| Candidate clips, followed by the number you would publish | | |
+| Reason and source time for each rejection (changed meaning, caption error, unusable framing or ending) | | |
+
+Price your time at the same hourly rate in both columns. Add its value to cash, then divide by the clips you would publish. With zero approvals, record the spend and the rejection reasons. Leave cost per approved clip undefined. Track calendar time separately to see whether either option misses the publication date.
+
+**Worked pilot budget.** Suppose a service quotes $250 for ten reels and the self-serve software costs $15 for that batch. At $60 per hour, outsourcing must save 235 minutes to cover the $235 cash difference if both routes deliver ten clips you accept. At five hours of your own work with software versus 50 minutes with the service, the totals are $315 and $300. If only eight self-serve clips pass review, its cost becomes $39.38 per accepted clip. These time and acceptance figures are illustrative. Use the [current service quotes, editable calculator and copyable commissioning brief](https://valmera.io/blog/how-much-does-ai-video-editing-cost#service-quotes) to substitute your own numbers.
+
 ## Source ledger
 
 Use original-source times. Record ranges as start-inclusive, end-exclusive, as in the worked example; note the frame rate if using frame-accurate times. Verify speaker identity and wording against the recording. Add rows as needed.
