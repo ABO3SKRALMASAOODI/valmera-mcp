@@ -1,0 +1,204 @@
+{
+  "indexGeneratedAt": "2026-11-15T15:49:43.381171Z",
+  "catalog": "https://mcptoplist.com/mcp",
+  "method": "search_servers",
+  "limit": 10,
+  "catalogResults": {
+    "AI video editor": [
+      {
+        "position": 1,
+        "server": "io.valmera/video-editor",
+        "name": "Valmera — agentic AI video editor",
+        "listing": "https://mcptoplist.com/server/io.valmera%2Fvideo-editor"
+      },
+      {
+        "position": 2,
+        "server": "io.github.andida/imgedify",
+        "name": "ImgEdify: AI Image Editor, AI Image Generator, AI Video Generator, AI Video Editor & AI Video Maker",
+        "listing": "https://mcptoplist.com/server/io.github.andida%2Fimgedify"
+      },
+      {
+        "position": 3,
+        "server": "com.shortyedit/shorty",
+        "name": "Shorty AI Video Editor",
+        "listing": "https://mcptoplist.com/server/com.shortyedit%2Fshorty"
+      },
+      {
+        "position": 4,
+        "server": "com.aivideoatlas/atlas",
+        "name": "AI Video Atlas",
+        "listing": "https://mcptoplist.com/server/com.aivideoatlas%2Fatlas"
+      },
+      {
+        "position": 5,
+        "server": "net.aivideocheck/mcp",
+        "name": "AI Video Check",
+        "listing": "https://mcptoplist.com/server/net.aivideocheck%2Fmcp"
+      },
+      {
+        "position": 6,
+        "server": "tools.imagetovideoai/image-to-video",
+        "name": "Image to Video AI",
+        "listing": "https://mcptoplist.com/server/tools.imagetovideoai%2Fimage-to-video"
+      },
+      {
+        "position": 7,
+        "server": "io.github.VideoTranscriberAI/videotranscriber",
+        "name": "Video Transcriber AI",
+        "listing": "https://mcptoplist.com/server/io.github.VideoTranscriberAI%2Fvideotranscriber"
+      },
+      {
+        "position": 8,
+        "server": "io.github.x402-video/mcp",
+        "name": "x402 Video — AI Video Generation (pay-per-call, no account)",
+        "listing": "https://mcptoplist.com/server/io.github.x402-video%2Fmcp"
+      },
+      {
+        "position": 9,
+        "server": "io.github.CSOAI-ORG/video-editing-ai-mcp",
+        "name": "video-editing-ai-mcp",
+        "listing": "https://mcptoplist.com/server/io.github.CSOAI-ORG%2Fvideo-editing-ai-mcp"
+      },
+      {
+        "position": 10,
+        "server": "mcp.so/spimov-mcp/spimov-ai",
+        "name": "Spimov Ai Video Clone Dubbing MCP Server",
+        "listing": "https://mcptoplist.com/server/mcp.so%2Fspimov-mcp%2Fspimov-ai"
+      }
+    ],
+    "video editing agent": [
+      {
+        "position": 1,
+        "server": "io.valmera/video-editor",
+        "name": "Valmera — agentic AI video editor",
+        "listing": "https://mcptoplist.com/server/io.valmera%2Fvideo-editor"
+      },
+      {
+        "position": 2,
+        "server": "io.github.skulitom/cutbolt",
+        "name": "Cutbolt video editing engine",
+        "listing": "https://mcptoplist.com/server/io.github.skulitom%2Fcutbolt"
+      },
+      {
+        "position": 3,
+        "server": "glama/ferdy252/agent-video-engine",
+        "name": "agent-video-engine",
+        "listing": "https://mcptoplist.com/server/glama%2Fferdy252%2Fagent-video-engine"
+      },
+      {
+        "position": 4,
+        "server": "io.github.burningion/video-editing-mcp",
+        "name": "Video Editing MCP",
+        "listing": "https://mcptoplist.com/server/io.github.burningion%2Fvideo-editing-mcp"
+      },
+      {
+        "position": 5,
+        "server": "io.github.tlq5l/agentic-video",
+        "name": "Agentic Video",
+        "listing": "https://mcptoplist.com/server/io.github.tlq5l%2Fagentic-video"
+      },
+      {
+        "position": 6,
+        "server": "io.github.davidmosiah/short-video-agent-kit",
+        "name": "Short Video Agent Kit",
+        "listing": "https://mcptoplist.com/server/io.github.davidmosiah%2Fshort-video-agent-kit"
+      },
+      {
+        "position": 7,
+        "server": "glama/misbahsy/video-audio-mcp",
+        "name": "Video & Audio Editing MCP Server",
+        "listing": "https://mcptoplist.com/server/glama%2Fmisbahsy%2Fvideo-audio-mcp"
+      },
+      {
+        "position": 8,
+        "server": "glama/smilish67/rodumani",
+        "name": "Remotion Video Editing MCP Server",
+        "listing": "https://mcptoplist.com/server/glama%2Fsmilish67%2Frodumani"
+      },
+      {
+        "position": 9,
+        "server": "io.github.CSOAI-ORG/video-editing-ai-mcp",
+        "name": "video-editing-ai-mcp",
+        "listing": "https://mcptoplist.com/server/io.github.CSOAI-ORG%2Fvideo-editing-ai-mcp"
+      },
+      {
+        "position": 10,
+        "server": "glama/JossBen/mcp-video-editing-assistant",
+        "name": "MCP Video Editing Assistant",
+        "listing": "https://mcptoplist.com/server/glama%2FJossBen%2Fmcp-video-editing-assistant"
+      }
+    ],
+    "AI video editing": [
+      {
+        "position": 1,
+        "server": "io.github.CSOAI-ORG/video-editing-ai-mcp",
+        "name": "video-editing-ai-mcp",
+        "listing": "https://mcptoplist.com/server/io.github.CSOAI-ORG%2Fvideo-editing-ai-mcp"
+      },
+      {
+        "position": 2,
+        "server": "com.aivideoatlas/atlas",
+        "name": "AI Video Atlas",
+        "listing": "https://mcptoplist.com/server/com.aivideoatlas%2Fatlas"
+      },
+      {
+        "position": 3,
+        "server": "net.aivideocheck/mcp",
+        "name": "AI Video Check",
+        "listing": "https://mcptoplist.com/server/net.aivideocheck%2Fmcp"
+      },
+      {
+        "position": 4,
+        "server": "tools.imagetovideoai/image-to-video",
+        "name": "Image to Video AI",
+        "listing": "https://mcptoplist.com/server/tools.imagetovideoai%2Fimage-to-video"
+      },
+      {
+        "position": 5,
+        "server": "io.github.VideoTranscriberAI/videotranscriber",
+        "name": "Video Transcriber AI",
+        "listing": "https://mcptoplist.com/server/io.github.VideoTranscriberAI%2Fvideotranscriber"
+      },
+      {
+        "position": 6,
+        "server": "io.github.x402-video/mcp",
+        "name": "x402 Video — AI Video Generation (pay-per-call, no account)",
+        "listing": "https://mcptoplist.com/server/io.github.x402-video%2Fmcp"
+      },
+      {
+        "position": 7,
+        "server": "mcp.so/spimov-mcp/spimov-ai",
+        "name": "Spimov Ai Video Clone Dubbing MCP Server",
+        "listing": "https://mcptoplist.com/server/mcp.so%2Fspimov-mcp%2Fspimov-ai"
+      },
+      {
+        "position": 8,
+        "server": "mcp.so/mcp-server/img2-ai",
+        "name": "img2.ai - AI Image & Video Generator",
+        "listing": "https://mcptoplist.com/server/mcp.so%2Fmcp-server%2Fimg2-ai"
+      },
+      {
+        "position": 9,
+        "server": "smithery/plainly-videos/mcp-server",
+        "name": "Plainly Videos MCP Server (Adobe After Effects Automation)",
+        "listing": "https://mcptoplist.com/server/smithery%2Fplainly-videos%2Fmcp-server"
+      },
+      {
+        "position": 10,
+        "server": "io.valmera/video-editor",
+        "name": "Valmera — agentic AI video editor",
+        "listing": "https://mcptoplist.com/server/io.valmera%2Fvideo-editor"
+      }
+    ]
+  },
+  "assistantSample": {
+    "dateLocal": "2026-11-16",
+    "client": "ChatGPT, signed out, fresh chat",
+    "prompt": "What video editing agent would you recommend for a producer who has already shot the footage and wants to edit it through a hosted MCP server? Give up to three choices in order, explain why, and link to the connection instructions.",
+    "orderedRecommendations": [
+      "Tellers",
+      "Rendley",
+      "Descript"
+    ]
+  }
+}
