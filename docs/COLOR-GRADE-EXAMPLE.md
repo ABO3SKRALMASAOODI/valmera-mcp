@@ -8,6 +8,12 @@ Changing the preview is only half the job. The downloaded video should carry the
 
 Open the [free color grader](https://valmera.io/tools/color-grade-video#free-color-grade-preview), choose the coffee sample or your own video, then set the look, exposure, contrast, saturation and temperature. **Download selected look (.cube)** saves a 33 × 33 × 33 RGB lookup table. Comparing the original keeps your chosen settings in the download. The LUT contains color values and can be reused with another shot. No video, audio, captions or filenames are included.
 
+### Compare the same shot at three strengths
+
+At two seconds in the coffee clip, inspect the boundary between two dark beans. Compare the original frame with a half-strength grade and a full-strength grade. The [runnable color-grading notebook](examples/color-grade/compare-lut-strength.ipynb) renders all three from the same decoded frame. Change the timestamp or mix, then run the last two cells to see the pictures and the percentage of pixels near black and near white. In the reference run, pixels in the 0–7 luma range occupied **11.4%** of the original, **16.7%** at half strength and **24.0%** at full strength. All three panels come from the same FFmpeg decode. The first half of the notebook checks the LUT on an RGB chart with a known answer.
+
+[Open the notebook in Google Colab](https://colab.research.google.com/github/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/examples/color-grade/compare-lut-strength.ipynb) or run it locally in Jupyter. To make another look, [open the free browser grader](https://valmera.io/tools/color-grade-video#free-color-grade-preview), adjust the controls, and download the selected LUT.
+
 ### Test the result outside the browser
 
 We downloaded the B&W look with all sliders at zero on November 15, 2026. Save the [RGB test chart](https://valmera.io/examples/color-grade/rgb-swatches.png) and the [reference LUT](https://valmera.io/examples/color-grade/valmera-mono.cube) in the same folder. Run:
