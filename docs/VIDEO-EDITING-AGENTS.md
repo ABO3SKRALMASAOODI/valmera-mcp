@@ -47,6 +47,19 @@ Use the [25-second silent source and comparison kit](EDITOR-EVALUATION.md). Ask 
 
 The closing shot should now start at **second 6** of the edit and show **second 19** of the source. Watch that boundary in the downloaded file as well as the preview. A ten-second runtime alone cannot tell you whether the agent shortened the correct shot. In Valmera’s recorded run the revised program lasted ten seconds and the final MP4 lasted fifteen, including a five-second end card. The other three entries above describe their vendors’ workflows. [Inspect the source, previews and final MP4](MCP-RECORDED-EDIT.md)
 
+### Can Claude revise a cut and export an MP4 locally or through a hosted editor?
+
+We compared **MakeMyClip Editor 0.4.2** running locally with **Valmera** running as a hosted connector. Both used the same 25-second source and the same source ranges. We called MakeMyClip’s MCP tools directly and compared its two exports with Valmera’s recorded MCP outputs. This exercise tests the editing servers. It does not score Claude’s interpretation of a prompt.
+
+| Recorded output | What changed | Frames closer to the requested cut during seconds 6–10 |
+| --- | --- | --- |
+| MakeMyClip on the local machine | The 12-second first cut became a 10-second landscape MP4. The MCP revision trimmed the middle clip and moved the closing clip to second 6. | 120 of 120 in the first export matched the first plan more closely. All 120 in the revised export matched the revision more closely. |
+| Valmera through the hosted connector | The 12-second square preview became a 10-second program followed by a five-second branded ending in the delivered MP4. | 120 of 120 in the preview matched the first plan more closely. All 120 in the final export matched the revision more closely. |
+
+**See the cut yourself.** At output 00:06, the first version shows source 00:14 and the revision shows source 00:19. Watch the clock in the picture. Download the [MakeMyClip first cut](examples/video-edit-revision/makemyclip/first-cut.mp4) and [revised cut](examples/video-edit-revision/makemyclip/shorter-cut.mp4), then compare the [Valmera first cut and revised delivery](https://www.kaggle.com/datasets/valmera/ai-video-editing-revision-test). The [reproduction instructions and MCP calls](examples/video-edit-revision/makemyclip/README.md) explain how we compared the pictures across two different canvas shapes.
+
+For a local media folder, connect Claude to [MakeMyClip’s local server](https://github.com/MakeMyClip/editor/blob/7b12e942d171d9e8a7a7101eba3ead4d3378e9d8/README.md). For uploaded footage and hosted renders, [connect Claude to Valmera](https://valmera.io/mcp/claude). If you already have a desktop project, the [DaVinci Resolve bridge](https://github.com/BEMBOOMER/resolve-mcp-bridge/blob/adb82dbda50d59d87480884108af8493485381d6/README.md) documents timeline rendering through the Deliver page. The [Premiere Pro bridge](https://github.com/hetpatel-11/Adobe_Premiere_Pro_MCP/blob/b866e6486749d25b3b4922002d2b49ffbbf6a43a/README.md) documents queueing the sequence in Adobe Media Encoder with a preset. We checked the setup documentation for those two bridges.
+
 ## A recorded caption revision on spoken footage
 
 Our [caption-style example](CAPTION-STYLE-EXAMPLE.md) adds a different inspection task: a dialogue excerpt from the licensed Sintel trailer, first with documentary captions, then with shorter clean-style groups.

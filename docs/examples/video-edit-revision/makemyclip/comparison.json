@@ -1,0 +1,147 @@
+{
+  "source": "https://valmera.io/examples/trim-and-reframe/original-source.mp4",
+  "sourceSHA256": "24dc72de92df8e0d212fa9ca068d3ffdacab55f74b91c32249be96e9e74defdf",
+  "localServer": "@makemyclip/editor@0.4.2",
+  "localMcpTransport": "stdio",
+  "localCanvas": "1920x1080, 30 fps",
+  "calls": [
+    {
+      "tool": "timeline_show",
+      "arguments": {}
+    },
+    {
+      "tool": "timeline_edit",
+      "arguments": {
+        "verbs": [
+          {
+            "verb": "add_media",
+            "id": "opening",
+            "path": "original-source.mp4",
+            "sourceInSec": 3,
+            "sourceOutSec": 7
+          },
+          {
+            "verb": "add_media",
+            "id": "middle",
+            "path": "original-source.mp4",
+            "sourceInSec": 12,
+            "sourceOutSec": 16
+          },
+          {
+            "verb": "add_media",
+            "id": "closing",
+            "path": "original-source.mp4",
+            "sourceInSec": 19,
+            "sourceOutSec": 23
+          }
+        ]
+      }
+    },
+    {
+      "tool": "timeline_show",
+      "arguments": {}
+    },
+    {
+      "tool": "timeline_export",
+      "arguments": {
+        "format": "mp4",
+        "output": "first-cut.mp4"
+      }
+    },
+    {
+      "tool": "timeline_edit",
+      "arguments": {
+        "verbs": [
+          {
+            "verb": "trim",
+            "clipId": "middle",
+            "sourceInSec": 12,
+            "sourceOutSec": 14
+          },
+          {
+            "verb": "move",
+            "clipId": "closing",
+            "startSec": 6
+          }
+        ]
+      }
+    },
+    {
+      "tool": "timeline_show",
+      "arguments": {}
+    },
+    {
+      "tool": "timeline_export",
+      "arguments": {
+        "format": "mp4",
+        "output": "shorter-cut.mp4"
+      }
+    }
+  ],
+  "scoredOutputFrameRange": {
+    "first": 180,
+    "lastInclusive": 299
+  },
+  "scores": [
+    {
+      "label": "Valmera first",
+      "file": "first-preview.mp4",
+      "sha256": "1e06d2d4eb1b0db11b9be84867400c669b72a4bb8f1bdcb5cfb69d3521af7080",
+      "video": {
+        "width": 720,
+        "height": 720,
+        "r_frame_rate": "30/1",
+        "duration": "12.000000",
+        "nb_frames": "360"
+      },
+      "nearFirst": 120,
+      "nearRevised": 0,
+      "ties": 0
+    },
+    {
+      "label": "Valmera revision",
+      "file": "revised-final.mp4",
+      "sha256": "9b7f97b8e75c80b49c8e2c61f2bace1c279cc26599d65b28b5d4d394bcdc592e",
+      "video": {
+        "width": 1080,
+        "height": 1080,
+        "r_frame_rate": "30/1",
+        "duration": "15.000000",
+        "nb_frames": "450"
+      },
+      "nearFirst": 0,
+      "nearRevised": 120,
+      "ties": 0
+    },
+    {
+      "label": "MakeMyClip first",
+      "file": "first-cut.mp4",
+      "sha256": "a6a42eb859b0e372c262b750eafd5b1e65afab6fca6dd09554d890a054664ad9",
+      "video": {
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1",
+        "duration": "12.000000",
+        "nb_frames": "360"
+      },
+      "nearFirst": 120,
+      "nearRevised": 0,
+      "ties": 0
+    },
+    {
+      "label": "MakeMyClip revision",
+      "file": "shorter-cut.mp4",
+      "sha256": "b9e1624b9cfa8de31fde0c44e2afd41b9218de970268d16403c390c882356f5e",
+      "video": {
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1",
+        "duration": "10.000000",
+        "nb_frames": "300"
+      },
+      "nearFirst": 0,
+      "nearRevised": 120,
+      "ties": 0
+    }
+  ]
+}
