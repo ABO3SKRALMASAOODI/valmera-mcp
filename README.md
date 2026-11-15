@@ -19,6 +19,7 @@ To see what changes in a single frame, open the [before-and-after video gallery]
 
 | Your task | Open the recorded example | What you can inspect |
 | --- | --- | --- |
+| Turn photos into a slideshow with music | [Make and revise a photo sequence](docs/PHOTO-SLIDESHOW.md) | Three source photos, two downloadable MP4s and the playback times where the shot changes. |
 | Turn a landscape talk into a vertical clip | [Compare the measured crop with a centered crop](https://valmera.io/tools/auto-reframe?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=portrait_crop#portrait-example) | Two silent previews show the same 9.21 seconds. [Reproduce the frame comparison](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/PORTRAIT-CROP-EXAMPLE.md) to see where the 9:16 window sits. |
 | Show my product footage when the speaker names it | [Watch the four-second B-roll cutaway](https://valmera.io/examples/b-roll-cutaway) | The picture changes on “green” at 2.56 seconds and returns at 3.72. Play the original and the edit to hear the voice through both cuts. |
 | Remove an expired offer while keeping the rest of a product video | [Product-offer revision](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/PRODUCT-OFFER-REMOVAL-EXAMPLE.md) | Before/after final MP4s and edit records. One separate text element was removed; the two final exports have identical decoded audio under the stated settings. |
