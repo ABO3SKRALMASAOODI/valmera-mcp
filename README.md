@@ -11,7 +11,7 @@ Join thousands of creators. Bring your footage, describe the result, and refine 
 
 ## Inspect a recorded edit
 
-Start with the change you need to make. These first-party examples include actual files and recorded checks; each guide explains its source, method and limits.
+To see what changes in a single frame, open the [before-and-after video gallery](https://valmera.io/examples). Pause at 1.60 seconds and switch from automatic to corrected captions to inspect the word “um.” At 2.80 seconds, switch from the original to the B-roll cutaway to see which picture changed.
 
 | Your task | Open the recorded example | What you can inspect |
 | --- | --- | --- |
