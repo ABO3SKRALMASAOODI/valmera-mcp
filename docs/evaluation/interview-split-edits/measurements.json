@@ -1,0 +1,69 @@
+{
+  "framesPerSecond": 24,
+  "sourceSha256": "cce194211f9a3e60b20802ee479b38a64eb9712d4176628e6d4670e964a19cec",
+  "sourceOffsetAfterCut": 3.75,
+  "audioCutSeconds": 2.625,
+  "files": {
+    "straight": {
+      "pictureFrames": 138,
+      "lastFrameBeforeSplice": 62,
+      "firstFrameAfterSplice": 63,
+      "meanLumaErrorMax": 0.268,
+      "decodedAudioSha256": "a6a8ed82fb04c5afc790ceae0fcfad3a86ab561371853539b5cd14c36c7432c6",
+      "sha256": "060c4fc9825a268809beea017a164981dfe122e0efce28b0e8308165dfc00a21"
+    },
+    "j-cut": {
+      "pictureFrames": 138,
+      "lastFrameBeforeSplice": 77,
+      "firstFrameAfterSplice": 78,
+      "meanLumaErrorMax": 0.271,
+      "decodedAudioSha256": "a6a8ed82fb04c5afc790ceae0fcfad3a86ab561371853539b5cd14c36c7432c6",
+      "sha256": "1b424e3b8d2fd4f195a5588f09d431dcfc3872a707018de5605a3d17d60dd41a"
+    },
+    "l-cut": {
+      "pictureFrames": 138,
+      "lastFrameBeforeSplice": 47,
+      "firstFrameAfterSplice": 48,
+      "meanLumaErrorMax": 0.264,
+      "decodedAudioSha256": "a6a8ed82fb04c5afc790ceae0fcfad3a86ab561371853539b5cd14c36c7432c6",
+      "sha256": "b08cb9edfd37241b2a39244eef18231bd8d558e2702b54923aece5f177c99bca"
+    }
+  },
+  "audioWindows": [
+    {
+      "output": 0.4,
+      "source": 0.4,
+      "correlation": 0.99982
+    },
+    {
+      "output": 2.1,
+      "source": 2.1,
+      "correlation": 0.99998
+    },
+    {
+      "output": 2.46,
+      "source": 2.46,
+      "correlation": 0.99999
+    },
+    {
+      "output": 2.65,
+      "source": 6.4,
+      "correlation": 1.0
+    },
+    {
+      "output": 2.85,
+      "source": 6.6,
+      "correlation": 0.99999
+    },
+    {
+      "output": 3.5,
+      "source": 7.25,
+      "correlation": 0.99952
+    },
+    {
+      "output": 5.4,
+      "source": 9.15,
+      "correlation": 0.9999
+    }
+  ]
+}
