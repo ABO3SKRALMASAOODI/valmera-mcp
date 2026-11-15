@@ -10,6 +10,8 @@
 
 ## Try an edit
 
+- [Make a first edit from a direct video URL](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/FIRST-EDIT-FROM-A-LINK.md). A fresh project, a four-second first preview, a six-second revision and the delivered MP4. Includes pasteable prompts and a separate route for local files.
+
 - [Turn photos and music into an MP4](https://valmera.io/tools/ai-slideshow-maker#photo-sequence). Arrange photos in a free browser editor and check two exports of the same six-second sequence. An eligible Studio account can take the sequence as an AI editing brief.
 
 - [Hand a client an MP4 or editable picture cut](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/VIDEO-EDITING-AGENTS.md#what-files-can-i-hand-to-a-client): Studio and MCP render a finished MP4. The separate single-source rough-cut builder creates Shotcut MLT and CMX files. Reopen the three-shot example to test which parts remain editable.

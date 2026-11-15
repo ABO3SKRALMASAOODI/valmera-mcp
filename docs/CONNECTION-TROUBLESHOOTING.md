@@ -117,6 +117,8 @@ This dated check establishes public reachability and authentication discovery fr
 
 ## Continue from connection to a first edit
 
+If the tools are visible but you have no project with footage, [start with one public MP4 and an empty project](FIRST-EDIT-FROM-A-LINK.md). If the assistant already imported your clip, inspect the returned asset and place it on the timeline before rendering.
+
 After signing in, ask your assistant:
 
 > List my Valmera projects so I can choose the video. Do not change or render anything yet.

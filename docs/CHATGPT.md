@@ -23,7 +23,11 @@ Use ChatGPT on the web. Custom MCP availability follows your account and workspa
 
 Creating the connection does not replace installing the plugin. See [OpenAI's custom MCP instructions](https://developers.openai.com/api/docs/guides/custom-mcp-server) for account restrictions and installation behavior.
 
-## 2. Confirm the account and choose your footage
+## 2. Choose a recording
+
+**Just connected and have no footage ready?** [Make your first cut from a public video link](FIRST-EDIT-FROM-A-LINK.md). The first prompt creates a fresh project, imports the sample and asks for a four-second preview. The second adds one shot. You can play both reference previews before trying the prompts.
+
+### Use a project you already uploaded
 
 Send:
 
