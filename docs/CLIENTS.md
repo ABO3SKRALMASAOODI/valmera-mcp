@@ -72,7 +72,7 @@ Account creation and uploads are free; AI editing requires an eligible subscript
 | Claude (web, desktop, mobile) | Settings → Connectors → Add custom connector | OAuth | Paste the URL only. Mobile can use it but not add it. |
 | Claude Code | `claude mcp add` (user or project scope) | OAuth or bearer | Use `"type": "http"` when editing `.mcp.json` by hand |
 | Cursor | `~/.cursor/mcp.json` or `.cursor/mcp.json` | OAuth | `mcpServers` → `url` |
-| VS Code (Copilot agent mode) | `.vscode/mcp.json` | OAuth | Top-level key is `servers`, with `"type": "http"` |
+| GitHub Copilot (VS Code or CLI) | `~/.copilot/mcp-config.json` | OAuth | Native Copilot uses `mcpServers` with HTTP. The editor-managed VS Code file uses `servers`. |
 | Codex CLI | `codex mcp add` / `~/.codex/config.toml` | OAuth | Run `codex mcp login valmera` |
 | ChatGPT | Plugins → + → Add custom MCP server | OAuth | Install the resulting plugin, then select it with `@`; [walkthrough](CHATGPT.md) |
 | Gemini CLI | `gemini mcp add --transport http` | OAuth | Then run `/mcp auth valmera` |
@@ -119,13 +119,42 @@ Editing tools can change a project or start billable work. Review each tool's be
 
 ## VS Code
 
+### Connect GitHub Copilot to a Valmera project
+
+Choose **Chat: Open Customizations → MCP Servers** in a Copilot session, then add an HTTP server named `valmera` at `https://valmera.io/mcp/server`. For personal use, choose **Global → Copilot Global**. In the terminal, Copilot CLI can write that configuration for you:
+
+```sh
+copilot mcp add --transport http valmera https://valmera.io/mcp/server
+copilot mcp get valmera --json
+```
+
+The second command reads the saved definition. On November 15, 2026, Copilot CLI 1.0.112 reported an enabled HTTP server with the Valmera URL from an isolated user configuration. This verified configuration discovery. The test ended before OAuth or an editing request.
+
+| Where you want the connection | File | Top-level key |
+| --- | --- | --- |
+| Personal GitHub Copilot sessions on this host | `$COPILOT_HOME/mcp-config.json`, usually `~/.copilot/mcp-config.json` | `mcpServers` |
+| Team members using a trusted workspace in Copilot | `.mcp.json` in the workspace root | `mcpServers` |
+| VS Code’s editor-managed workspace configuration | `.vscode/mcp.json` | `servers` |
+
+If editing a native Copilot file by hand, merge the following entry with the servers already in it. The tool selector exposes the available editing tools. Copilot handles approval for individual calls separately.
+
 ```json
 {
-  "servers": {
-    "valmera": { "type": "http", "url": "https://valmera.io/mcp/server" }
+  "mcpServers": {
+    "valmera": {
+      "type": "http",
+      "url": "https://valmera.io/mcp/server",
+      "tools": ["*"]
+    }
   }
 }
 ```
+
+**Confirm account access.** Choose **Authenticate** in the server actions, or enter `/mcp auth valmera` in Copilot CLI when prompted. Sign in to the Valmera account that owns the recording. Ask “List my Valmera projects.” An empty list is a valid authenticated result. If the command-line configuration appears in one session and is missing in another, check which host, destination and file the current session reads.
+
+**Make a first edit.** Upload footage to a Valmera project and select that project by name. Try “Find the first point where I show the finished product. Keep the sentence that explains it, cut the repeated take, and show me the preview.” After checking the preview, request one change and approve an export. AI editing requires an eligible plan. [Connect GitHub Copilot](https://valmera.io/mcp/connect?client=copilot) · [Compare the first preview with a recorded MCP export](MCP-RECORDED-EDIT.md#watch-what-changed-at-six-seconds).
+
+Microsoft documents the installation destinations, configuration keys and sign-in options. [Add an MCP server in VS Code](https://code.visualstudio.com/docs/agent-customization/mcp-servers) · [MCP configuration reference](https://code.visualstudio.com/docs/agents/reference/mcp-configuration).
 
 ## Codex CLI
 
