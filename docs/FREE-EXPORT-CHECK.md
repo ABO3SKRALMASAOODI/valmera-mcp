@@ -4,6 +4,25 @@ A free editor is useful only if it delivers the file your project needs. Check t
 
 This guide is published by Valmera. It complements the [free-editor comparison](https://valmera.io/free-ai-video-editor) with a short export trial and a record you can reuse. Vendor terms below were checked November 7, 2026; they are published claims, not hands-on competitor test results.
 
+## Reproduce one cut and inspect the downloaded files
+
+On November 15, 2026, we opened a four-second dialogue recording in Valmera’s free browser cutter and Ezgif’s free video cutter. In each tool we selected the same range, from 0.200 to 1.450 seconds, removed it and downloaded the default MP4. This tests a manual cut. The target end time was 2.750 seconds.
+
+| File | Picture | Last video timestamp, including final frame duration | Last audio timestamp, including final packet duration | Audio | File size |
+| --- | --- | ---: | ---: | --- | ---: |
+| [Valmera export](https://valmera.io/examples/filler-word-cut/first-sentence-removed.mp4) | 800 × 400 H.264 | 2.750 s | 2.750 s | 48 kHz stereo PCM | 587,214 bytes |
+| [Ezgif export](https://valmera.io/examples/export-check/ezgif-sentence-removed.mp4) | 800 × 400 H.264 | 2.840 s | 2.888 s | 16 kHz AAC | 59,073 bytes |
+
+The larger file contains 528,000 bytes of uncompressed audio. Its higher sample rate cannot restore detail missing from the 16 kHz source. For a strict duration limit, check where both tracks end. In the Ezgif export, the picture starts at 0.080 s and the audio at zero. A rounded player display can show three seconds for either file.
+
+To repeat the test, download the [source recording](https://valmera.io/examples/filler-word-cut/original.mp4). Listen through the join. You should hear “Um, use the green one for print.” For a subtitle handoff, open the [retimed SRT](https://valmera.io/examples/filler-word-cut/first-sentence-removed.srt) alongside the Valmera file and check the surviving line at 0.310 s. The [browser inspector and full comparison](https://valmera.io/blog/check-video-editor-export#inspect) let you compare your own two files on your device.
+
+To check the container and stream metadata independently, run this command on each download. For streams with nonzero starts, add the reported stream duration to its start time to interpret the end on the presentation timeline. Some demuxers handle audio priming and padding differently.
+
+```sh
+ffprobe -v error -show_entries format=duration,size:stream=codec_type,codec_name,codec_tag_string,width,height,start_time,duration,sample_rate,channels -of json downloaded.mp4
+```
+
 ## Separate the promises before choosing a tool
 
 | Wording | What you still need to establish |
