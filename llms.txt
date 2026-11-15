@@ -4,6 +4,8 @@
 
 ## Inspect an exported recording
 
+- [Watch a recorded video editing agent revision](https://valmera.io/examples/rough-cut-revision). Codex used Valmera MCP to shorten the middle shot. The page links both versions at six seconds, the source and the editable handoff.
+
 - [Find a source phrase in two edited files](https://valmera.io/blog/check-video-editor-export#compare-speech). The same 720 ms excerpt occurs at different times after two manual sentence cuts and keeps its original time under an MCP picture cutaway. [Reproduce the checks directly from the MP4s](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/FREE-EXPORT-CHECK.md#locate-the-surviving-speech-after-a-cut).
 
 ## Try an edit

@@ -6,6 +6,8 @@ On November 7, 2026, we ran Valmera's public edit-and-revise exercise through it
 
 [Source MP4](evaluation/recorded-run-20261107/original-source.mp4) · [First preview, 12 seconds](evaluation/recorded-run-20261107/first-preview.mp4) · [Revised final MP4, 15 seconds including branding](evaluation/recorded-run-20261107/revised-final.mp4) · [Evidence JSON](evaluation/recorded-run-20261107/evidence.json) · [Repeat the evaluation](EDITOR-EVALUATION.md)
 
+[Watch the delivered MP4 on Valmera](https://valmera.io/examples/rough-cut-revision). The watch page links directly to both players at six seconds and to the source download.
+
 ## Watch what changed at six seconds
 
 Play the first preview and the revised export side by side below. Both start five seconds into the edit. Watch the heading on the right at **6.0 seconds**. It changes to “Share the finished cut” while the first preview still reads “Keep what serves the story.” The first preview reaches that same heading at **8.0 seconds**. Removing two seconds from the middle brings the last shot forward by exactly that amount.

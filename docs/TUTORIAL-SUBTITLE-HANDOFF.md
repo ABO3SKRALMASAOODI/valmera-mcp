@@ -62,4 +62,4 @@ Associate both language tracks with v2 and verify the first cue after the cut, t
 
 These filenames are examples, not downloadable exports. Record an unavailable sidecar or unresolved translation as remaining work instead of calling the entire package finished.
 
-To apply the brief in Valmera, [open Studio](https://valmera.io/dashboard) or [connect your assistant](CLIENTS.md), then start with your representative passage. AI editing requires eligible paid access; [check current plans](https://valmera.io/subscribe). Use the [subtitle worksheet](SUBTITLE-TRANSLATION-WORKSHEET.md) to compare the actual outputs and correction effort across editors.
+To apply the brief in Valmera, [open Studio](https://valmera.io/studio) or [connect your assistant](CLIENTS.md), then start with your representative passage. AI editing requires eligible paid access; [check current plans](https://valmera.io/subscribe). Use the [subtitle worksheet](SUBTITLE-TRANSLATION-WORKSHEET.md) to compare the actual outputs and correction effort across editors.
