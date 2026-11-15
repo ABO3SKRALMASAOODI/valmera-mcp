@@ -6,6 +6,8 @@ Turn one recorded webinar into a useful replay, a demo clip and a complete Q&A a
 
 For the visual walkthrough and editable starting briefs, open the [webinar replay guide](https://valmera.io/use-cases/webinars?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=webinar_workflow#webinar-briefs). Download its [plain-text edit pack](https://valmera.io/downloads/webinar-replay-edit-pack.txt) to keep your cut map, clip plan and correction record together.
 
+To give viewers a chapter menu in the downloaded replay, [add chapters to your finished MP4](examples/replay-chapters/README.md). The worked file shows how a two-second trim changes the start of the next chapter.
+
 ## Choose an editing route for the deliverable
 
 A webinar replay, a promotional clip and a replacement recording on an event page are three different jobs. Start with the destination your audience already uses, then compare the editing workflow. An exported MP4 is useful, but it does not by itself update a replay link sent to registrants.
