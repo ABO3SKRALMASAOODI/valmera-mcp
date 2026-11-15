@@ -1,0 +1,31 @@
+{
+  "comparison": "Original talk.mp4 from bilingual-webvtt-player.zip vs. sintel-legendas.mp4",
+  "originalSha256": "cce194211f9a3e60b20802ee479b38a64eb9712d4176628e6d4670e964a19cec",
+  "outputSha256": "3bc60ff256311c1a8fdba8a6a5bcb18d71a952a9662e74916e843f6155227855",
+  "streams": {
+    "pcmStereo48k": {
+      "bytes": 1843200,
+      "sha256": "4cb04d3105a453d6eb88ff8c408fffa2a0ad341ad398d809915d3c10f098cce8",
+      "stereoSampleFrames": 460800,
+      "identicalEncodedPacketsAndTimestamps": true
+    },
+    "decodedYuv420p": {
+      "bytes": 178848000,
+      "sha256": "6313a697e47ada6dbefe04eb42e6c7fb8c622b5bc1f96b6f8ad0fa7f771c3990",
+      "frames": 230,
+      "identicalEncodedPacketsAndTimestamps": true
+    }
+  },
+  "subtitles": [
+    {
+      "language": "por",
+      "handlerName": "Português (Brasil)",
+      "matches": "dialogo.pt-BR.srt"
+    },
+    {
+      "language": "eng",
+      "handlerName": "English",
+      "matches": "dialogo.en.srt"
+    }
+  ]
+}
