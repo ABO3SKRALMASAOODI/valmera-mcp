@@ -33,6 +33,14 @@ Both excerpts start at 2.50 seconds in the [original MP4](https://valmera.io/exa
 
 To reproduce the cuts in a frame-based editor, set the source in point to frame 75 and the last included frame to 254. Duplicate that sequence. In the duplicate, delete source frames 102 through 122 and close the gap. Scrub across output frame 27 in each sequence and compare the sidebar and page heading. The two published clips were prepared with FFmpeg from the same capture.
 
+## Put a click ring on an already recorded MP4
+
+[Open the click highlighter with this capture](https://valmera.io/tools/enhance-cursor#click-highlighter). The sidebar click is already placed at 3.57 seconds, 6% across and 20% down the original frame. Scrub back to 3.50 seconds and then forward to 3.70. The yellow ring appears around the control while the page changes. [Download the highlighted MP4](https://valmera.io/examples/website-capture/highlighted-click.mp4) to inspect it alongside the [original](https://valmera.io/examples/website-capture/public-docs-walkthrough.mp4).
+
+For the revised six-second cut above, the clock changes. Its first frame comes from source time 2.50 seconds, so the same click falls at **1.07 seconds** in the revision. The coordinates stay the same because the frame was never cropped. If you move the ring to a portrait reframe, pick its position again on that picture.
+
+For your own screen recording, choose the local file, scrub to the frame where the action begins and tap its location. A keyboard user can enter the horizontal and vertical percentages under **Place a ring by coordinates**. Export and watch the marked clip, or carry the chosen times and positions into Studio to request further edits. The browser exercise uses manual markers and processes the file on your device. The public sample has no soundtrack.
+
 ## Make a step map before removing pauses
 
 For each important step, identify the frame before the action, the action itself and the resulting state. A transcript is useful for speech; it cannot, by itself, prove which field was selected or whether the save succeeded.
