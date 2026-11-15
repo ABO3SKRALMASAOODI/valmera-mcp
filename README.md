@@ -9,6 +9,10 @@ Join thousands of creators. Bring your footage, describe the result, and refine 
 
 **[Connect your assistant](https://valmera.io/mcp/connect?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow) · [Open an editing brief in Valmera](https://valmera.io/chatgpt-video-editor?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow#first-brief) · [ChatGPT first-edit walkthrough](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/CHATGPT.md)**
 
+## Hand an AI rough cut to a human editor
+
+For one source recording, ask Valmera for the approved source ranges and open the [editable timeline builder](https://valmera.io/blog/ai-rough-cut-to-editable-timeline). Download a Shotcut project and a CMX picture edit list, then open them with the original media. The guide includes a working source clip and a frame check for the revised cut.
+
 ## Inspect a recorded edit
 
 To see what changes in a single frame, open the [before-and-after video gallery](https://valmera.io/examples). Pause at 1.60 seconds and switch from automatic to corrected captions to inspect the word “um.” At 2.80 seconds, switch from the original to the B-roll cutaway to see which picture changed.
