@@ -24,6 +24,20 @@ Open the [word timestamp converter](https://valmera.io/glossary/word-level-times
 
 **Expected files.** Compare the [original SRT](evaluation/one-word-caption/source-words.srt), [corrected SRT](evaluation/one-word-caption/corrected-words.srt) and [corrected WebVTT](evaluation/one-word-caption/corrected-words.vtt). Each contains 12 single-word cues. In both SRT files, cue 6 spans `00:00:01,440 --> 00:00:01,840`. Only its displayed word changes. These sidecars were generated from the word records. The burned-in caption examples below group several words on screen.
 
+## Turn Whisper word timestamps into highlighted captions
+
+To keep a phrase on screen while only the spoken word changes color, open the [word-timestamp converter](https://valmera.io/glossary/word-level-timestamps#word-subtitle-converter). Paste Whisper JSON containing `segments[].words` and select seconds. A segment-level transcript alone has no per-word boundaries. Listen to the matching source and correct any misheard text. To choose a phrase boundary, select its first word and check **Start a new highlighted phrase at this word**. Download **highlighted ASS**. This browser workflow is free and needs no account.
+
+In the [four-second example](https://valmera.io/glossary/word-level-timestamps#highlighted-export), cue 6 reads “Um,” for 1.44–1.84 s. At 1.84 s, “use” takes the highlight. Play the [rendered MP4](https://valmera.io/examples/caption-word/highlighted-words.mp4) or download the [matching ASS file](https://valmera.io/examples/caption-word/highlighted-words.ass) and [source MP4](https://valmera.io/examples/filler-word-cut/original.mp4). The original and highlighted export have the same AAC audio payload.
+
+With FFmpeg built with libass, render the example in the folder containing the two downloads:
+
+```sh
+ffmpeg -i original.mp4 -vf ass=highlighted-words.ass -c:v libx264 -pix_fmt yuv420p -c:a copy highlighted.mp4
+```
+
+The ASS file uses hundredths of a second. It groups up to four words and starts a new group after a gap of 0.60 s. Choose one speaker’s records when word intervals overlap. If the video has been cut since transcription, map the words onto the edited clock before rendering. The [FFmpeg ASS filter](https://ffmpeg.org/ffmpeg-filters.html#ass) burns the color into the picture.
+
 ## Correct a single misheard word and verify the downloaded video
 
 On November 14, 2026, we uploaded Valmera’s [four-second synthetic speech sample](https://valmera.io/examples/filler-word-cut/original.mp4) to a new project. The source says “Um, use the green one for print.” The automatic transcript heard “and” at 1.44–1.84 seconds and flagged that word for review. The large lettering at the top is already in the original. Look at the smaller caption over the waveform.
