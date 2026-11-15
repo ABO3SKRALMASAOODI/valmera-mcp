@@ -1,0 +1,64 @@
+{
+  "project": "new Valmera-owned public tutorial",
+  "client": "Codex using hosted Valmera MCP",
+  "sourceUrl": "https://valmera.io/examples/trim-and-reframe/original-source.mp4",
+  "sourceSha256": "24dc72de92df8e0d212fa9ca068d3ffdacab55f74b91c32249be96e9e74defdf",
+  "timelineFps": 30,
+  "firstPreviewFrames": 120,
+  "revisedPreviewFrames": 180,
+  "finalFrames": 330,
+  "comparison": "Decoded luma, each frame downscaled to 96 by 54 using FFmpeg. Mean absolute difference (MAE) uses 8-bit samples.",
+  "previewPrefixMAE": 0.0,
+  "sampledFrames": [
+    {
+      "output_frame": 0,
+      "expected_source_frame": 90,
+      "preview_MAE": 0.038,
+      "final_MAE": 1.738
+    },
+    {
+      "output_frame": 59,
+      "expected_source_frame": 149,
+      "preview_MAE": 0.013,
+      "final_MAE": 1.738
+    },
+    {
+      "output_frame": 60,
+      "expected_source_frame": 360,
+      "preview_MAE": 0.031,
+      "final_MAE": 1.733
+    },
+    {
+      "output_frame": 119,
+      "expected_source_frame": 419,
+      "preview_MAE": 0.018,
+      "final_MAE": 1.732
+    },
+    {
+      "output_frame": 120,
+      "expected_source_frame": 570,
+      "preview_MAE": 0.027,
+      "final_MAE": 1.731
+    },
+    {
+      "output_frame": 178,
+      "expected_source_frame": 628,
+      "preview_MAE": 0.023,
+      "final_MAE": 20.241
+    }
+  ],
+  "files": {
+    "first-preview.mp4": {
+      "bytes": 107524,
+      "sha256": "1c6f74ac030e6f5a8e908801fc0c1c9e7798c850bf0a861ab577976eb5a98853"
+    },
+    "revised-final.mp4": {
+      "bytes": 271650,
+      "sha256": "3e932daf892cec2bc92c972d16ccad2b819ea3596e8e13ffda8844dcd64b0c8e"
+    },
+    "revised-preview.mp4": {
+      "bytes": 157203,
+      "sha256": "ff4fe00c56610e6611fe5d9e2acd21591034141e0d71de3d4fa0db02738c492a"
+    }
+  }
+}

@@ -12,6 +12,7 @@ For free editing, use the [export check and delivery record](FREE-EXPORT-CHECK.m
 | Go from an uploaded recording to a reviewed export | [Complete editing workflow](WORKFLOW.md) |
 | Connect Claude, ChatGPT or another compatible client | [Client setup and hosted-service responsibilities](CLIENTS.md) |
 | Choose between your own assistant and Valmera AI | [Plans, allowances and editing routes](CLIENTS.md#choose-the-plan-for-your-editing-route) |
+| Make a first edit from a public video link | [Two prompts, both previews and the final MP4](FIRST-EDIT-FROM-A-LINK.md) |
 | Make a first edit through ChatGPT | [ChatGPT walkthrough](CHATGPT.md) |
 | Use the Claude plugin | [Claude plugin setup](CLAUDE-PLUGIN.md) |
 | Choose a Gemini video-editing route or connect Gemini CLI | [Gemini video workflow](GEMINI-VIDEO-EDITING.md) |

@@ -119,6 +119,8 @@ Authenticate when prompted and ask Copilot to list your Valmera projects. [Open 
 
 ### ChatGPT
 
+Already connected? [Give ChatGPT a public video link and ask for a four-second first cut](docs/FIRST-EDIT-FROM-A-LINK.md). The source, two reference previews and the final MP4 are available before you upload your own footage.
+
 Add Valmera as a custom MCP server with OAuth at `https://valmera.io/mcp/server`, complete sign-in, and **install the resulting plugin**. Select Valmera with `@` in a new conversation. Account and workspace permissions apply. [Connection and first-edit walkthrough](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/CHATGPT.md) · [Guided setup](https://valmera.io/mcp/connect?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=mcp_chatgpt_workflow).
 
 ### Codex CLI
