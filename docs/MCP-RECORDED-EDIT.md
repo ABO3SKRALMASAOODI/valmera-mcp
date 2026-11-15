@@ -30,6 +30,8 @@ The excerpt samples every third frame of each 30 fps file from output seconds 5 
 
 The final file's 1080-pixel dimensions exceed the 720-pixel source height. That is output scaling, not evidence of additional source detail. The preview was 720 × 720.
 
+[Run the frame comparison in Colab](https://colab.research.google.com/github/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/examples/video-edit-revision/check-revision.ipynb) or [view the executed notebook](examples/video-edit-revision/check-revision.ipynb). In the four seconds where the two requests differ, all 120 sampled frames of the first preview were closer to the first cut’s source pictures. All 120 sampled frames of the revised export were closer to the revised source pictures. The notebook shows both sides of the six-second join and accepts another editor’s export of the same brief.
+
 ## Reopen the cut decisions with the source media
 
 [Download the rough-cut comparison ZIP](https://valmera.io/downloads/valmera-rough-cut-comparison.zip) and extract the whole folder. It contains the source, the actual revised delivery, the public edit record, and two versions of both a Shotcut project and a CMX 3600 list. We prepared the timelines from the retained source ranges in this recorded run. This package documents a handoff for this example.
