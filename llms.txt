@@ -4,6 +4,8 @@
 
 ## Try an edit
 
+- [Hand a client an MP4 or editable picture cut](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/VIDEO-EDITING-AGENTS.md#what-files-can-i-hand-to-a-client): Studio and MCP render a finished MP4. The separate single-source rough-cut builder creates Shotcut MLT and CMX files. Reopen the three-shot example to test which parts remain editable.
+
 - [Compare actual edits](https://valmera.io/examples): Switch between source and edit at the same moment. At 1.60 seconds in the caption example, inspect the corrected word. At 2.80 seconds in the B-roll example, compare the pictures and listen to the voice across the cut.
 - [Recorded MCP edit and final file](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/MCP-RECORDED-EDIT.md): A silent three-shot fixture, a two-second revision to the middle shot, tool arguments, previews and the downloaded MP4. The final file includes branding and an end card.
 - [Evaluate a video editor](https://valmera.io/ai-video-editor-pricing-comparison): Use the same source and one revision to compare an editor's preview, downloaded result and cost. Account creation and uploads are free in Valmera. Hosted AI editing requires eligible paid access. See [current plans](https://valmera.io/subscribe).
