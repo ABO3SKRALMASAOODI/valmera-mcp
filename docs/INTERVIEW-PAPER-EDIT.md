@@ -2,7 +2,7 @@
 
 An interview can become shorter while its meaning becomes less accurate. A useful AI editing workflow keeps the question, the answer's scope and the source footage connected—even when the final video rearranges the conversation.
 
-**Use Valmera to turn recorded interviews into a main story and separately reviewed clips.** Start with the [interview workflow](https://valmera.io/use-cases/interviews?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=interview_paper_edit), or connect a compatible assistant through the [setup guide](https://valmera.io/mcp/setup?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=interview_paper_edit). This companion gives you a worked paper edit, a correction example and a [copyable worksheet](INTERVIEW-REVIEW-WORKSHEET.md). It is an editorial planning method, not an executable edit file or a guarantee of the agent's output.
+**Use Valmera to turn recorded interviews into a main story and separately reviewed clips.** Start with the [interview workflow](https://valmera.io/use-cases/interviews?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=interview_paper_edit), or connect a compatible assistant through the [setup guide](https://valmera.io/mcp/setup?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=interview_paper_edit). This companion gives you a worked paper edit, a correction example and a [copyable worksheet](INTERVIEW-REVIEW-WORKSHEET.md). The browser planner also exports a frame-aligned timeline and captions for editors who want to finish the cut themselves.
 
 Published by Valmera · November 7, 2026. The paper edit below uses fictional speakers and timings. The source-based exercises use two interviews released by NASA Goddard in 2017.
 
@@ -20,6 +20,39 @@ Open the [multi-interview paper edit](https://valmera.io/use-cases/interviews?ut
 For the revision, end Thaller’s passage after she explains how the maneuver saves time. Select her recording, set the last cue to 22 and replace passage 2. The source now ends at 01:07.770. The planned cut ends at 00:55.360. Garvin’s nine opening cues keep their original words and output timestamps. Compare the [17-cue first assembly](examples/interview-paper-edit/first-assembly.srt) with the [15-cue revision](examples/interview-paper-edit/shorter-ending.srt). Both files come from the planner and retain the source caption spellings.
 
 To make a video, open the assembly brief in Studio or give the same recording names and ranges to a connected assistant. Supply the matching footage, ask for original dialogue with hard cuts and review the transition between speakers before exporting. These reference files establish caption timing for the proposed assembly. Any change to a speech boundary, gap or transition in the video requires another timing check.
+
+## Hand off the two-speaker cut as an editable timeline
+
+Download the [two OTIO timelines and their matching SRT files](https://valmera.io/downloads/interview-rough-cut-handoff.zip). The [interview planner](https://valmera.io/use-cases/interviews#paper-edit) writes the same package contents individually for your chosen passages. Open its editable timeline export, choose the project frame rate and identify the video for each transcript. The timeline holds references to the recordings. Place both original MP4s beside it and import the corresponding SRT at the beginning of the sequence. The ZIP's README links directly to the NASA recordings.
+
+Here is what to check at 25 fps. Frame numbers are zero-based, with exclusive ends.
+
+| Check | First assembly | Shorter ending |
+| --- | ---: | ---: |
+| Garvin source frames | 202–1127 | 202–1127 |
+| First Thaller frame on the edit timeline | 925 | 925 |
+| Thaller source frames | 1235–1846 | 1235–1694 |
+| Total frames | 1536 | 1384 |
+| Caption cues | 17 | 15 |
+
+Why does the first cut run 61.440 seconds when the paper edit says 61.420? The paper edit uses milliseconds from the original captions. The handoff rounds each source in and out to a frame. Garvin therefore ends at 37.000 on the cut clock. The matching SRT places Thaller on that same clock. After a revision, import the SRT exported with that version.
+
+You can inspect the files before opening a desktop editor. With the official Python package installed, run this from the unzipped directory. It prints each source filename, its starting frame and its length on both tracks. [OpenTimelineIO project and installation](https://github.com/AcademySoftwareFoundation/OpenTimelineIO)
+
+```python
+import opentimelineio as otio
+
+for name in ("first-assembly", "shorter-ending"):
+    timeline = otio.adapters.read_from_file(name + ".otio")
+    print(name, timeline.duration())
+    for track in timeline.tracks:
+        for clip in track:
+            span = clip.source_range
+            print(track.kind, clip.media_reference.target_url,
+                  int(span.start_time.value), int(span.duration.value))
+```
+
+In your editor, step across frames 924 and 925 to see the switch between speakers. Listen to the opening words on both sides and play the last sentence with captions enabled. This exercise checks an editor handoff. For the AI portion, send the approved source ranges to Studio or a connected assistant with the matching recordings and review its rendered output.
 
 ## Reproduce a caption revision on an archived interview
 
