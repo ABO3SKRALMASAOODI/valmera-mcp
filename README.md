@@ -13,7 +13,7 @@ Join thousands of creators. Bring your footage, describe the result, and refine 
 
 ## Hand an AI rough cut to a human editor
 
-For one source recording, ask Valmera for the approved source ranges and open the [editable timeline builder](https://valmera.io/blog/ai-rough-cut-to-editable-timeline). Download a Shotcut project and a CMX picture edit list, then open them with the original media. The guide includes a working source clip and a frame check for the revised cut.
+Try the [three-shot revision exercise](docs/examples/video-edit-revision/README.md) with the included footage or your own recording. In the [browser timeline builder](https://valmera.io/blog/ai-rough-cut-to-editable-timeline#make-timeline), export the first and revised MP4s, then hand the source and editable Shotcut project or CMX edit list to a human editor.
 
 ## Inspect a recorded edit
 
