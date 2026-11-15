@@ -9,6 +9,22 @@ For a shared starting point, use the [four-second filler-word trial](SPEECH-CLEA
 | Description only | | | |
 | Correction with source timestamps | | | |
 
+## Delete one sentence and check the subtitle clock
+
+Open the [free transcript cutter](https://valmera.io/free-ai-video-editor#free-trim). With the built-in four-second recording, select “Remove this passage and join the rest” and the first sentence, “I like the blue label.” Create the MP4 and download both the MP4 and the SRT. To test your own recording, open its video and a matching source SRT or VTT. The browser reads those local files. Hosted editing in Studio is a separate workflow.
+
+| Check | Expected for this sample |
+| --- | --- |
+| Original range to remove | 0.200–1.450 seconds, a 1.250-second cut |
+| Picture and sound that remain | Source 0.000–0.200 followed by 1.450–4.000, for a 2.750-second program |
+| Point to audition | At output 0.200 the source clock jumps to 1.450. Listen through the pause into the correction. |
+| Captions after the cut | One cue, “Um, use the green one for print.” Source 1.560–3.730 becomes output 0.310–2.480. |
+| If a cue straddles the removal | Play the joined audio, revise the words and check both cue boundaries before delivery. Timing alone cannot identify the removed words. |
+
+[Original video](https://valmera.io/examples/filler-word-cut/original.mp4) · [Original WebVTT](https://valmera.io/examples/filler-word-cut/original.vtt) · [Reference MP4](https://valmera.io/examples/filler-word-cut/first-sentence-removed.mp4) · [Reference SRT](https://valmera.io/examples/filler-word-cut/first-sentence-removed.srt)
+
+To repeat the cut through a connected editing assistant, give it the original source range, ask for a preview that preserves the surrounding speech, then check the junction in the exported video. Check separately whether your delivery route can supply a subtitle sidecar. The free browser cutter can produce it from the matching timing file.
+
 ## Establish the source and brief
 
 | Field | Your entry |
