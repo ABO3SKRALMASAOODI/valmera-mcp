@@ -42,6 +42,20 @@ The first line uses *guardianes* for *gatekeepers*. A translator familiar with t
 
 *Frame at 7.6 seconds of Spanish v5. The second phrase is displayed in successive chunks.*
 
+## Test switchable subtitles on the same scene
+
+[Download the bilingual HTML player and media](https://raw.githubusercontent.com/ABO3SKRALMASAOODI/valmera-mcp/main/docs/evaluation/sintel-spanish-20261107/bilingual-webvtt-player.zip). This companion example pairs the original 9.6-second clip with two separate subtitle files. The Spanish MP4 previews above have captions rendered into their frames.
+
+Unzip the package, run `python3 serve.py` in the extracted folder and open `http://127.0.0.1:8000`. The included server listens on your computer and serves the subtitle files as `text/vtt`. Choose a language in the player’s subtitle menu and seek to these points.
+
+| Player time | English | Español |
+| --- | --- | --- |
+| 1 second | What brings you to the land of the gatekeepers? | ¿Qué te trae a la tierra de los guardianes? |
+| 4 seconds | No subtitle | No subtitle |
+| 7 seconds | I'm searching for someone. | Busco a alguien. |
+
+Switch subtitles off at seven seconds. The picture stays clear and the English audio continues. To check your own SRT conversion, replace one file in the `subtitles` folder with the converted VTT, reload the page and seek inside a cue. Keep the source credit and licence with the clip when you share it.
+
 ## What the assistant actually did
 
 1. Inspected the retained phrases with `retypeset_language`, `lang: "es"` and `list_phrases: true`. That inspection ran as a background job and took approximately six minutes to finish; it did not change version 4.
