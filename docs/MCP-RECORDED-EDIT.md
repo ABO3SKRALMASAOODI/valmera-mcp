@@ -32,6 +32,8 @@ The final file's 1080-pixel dimensions exceed the 720-pixel source height. That 
 
 [Download the rough-cut comparison ZIP](https://valmera.io/downloads/valmera-rough-cut-comparison.zip) and extract the whole folder. It contains the source, the actual revised delivery, the public edit record, and two versions of both a Shotcut project and a CMX 3600 list. We prepared the timelines from the retained source ranges in this recorded run. This package documents a handoff for this example.
 
+To identify the original frame behind a review note, [open the source-timecode lookup](https://valmera.io/glossary/edit-decision-list#frame-lookup). Switch between **First cut** and **Revised cut** with record timecode `00:00:06:00`. For the reverse check, select **Source timecode** and enter `00:00:19:00`. That frame appears at record `00:00:08:00` in the first cut and `00:00:06:00` in the revision. Include the version, reel and both clocks in a handoff note.
+
 Open `first-cut.mlt` and `revised-cut.mlt` in Shotcut. Keep `original-source.mp4` beside both files. In an editor importing a CMX list, select 30 fps non-drop-frame and relink the SOURCE reel to that same file. The three pieces should appear on a single video track.
 
 | Timeline frame | First cut, source clock | Revised cut, source clock |
