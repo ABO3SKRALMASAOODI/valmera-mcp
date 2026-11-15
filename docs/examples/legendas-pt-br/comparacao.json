@@ -1,0 +1,41 @@
+{
+  "summary": "2 cues compared. Text changed in 2. Timing changed in 0.",
+  "changes": [
+    {
+      "first": {
+        "id": 1,
+        "start": 0.1,
+        "end": 2.5,
+        "timing": "00:00:00,100 --> 00:00:02,500",
+        "text": "What brings you to the land of the gatekeepers?"
+      },
+      "second": {
+        "id": 1,
+        "start": 0.1,
+        "end": 2.5,
+        "timing": "00:00:00,100 --> 00:00:02,500",
+        "text": "O que te traz à terra dos guardiões?"
+      },
+      "textChanged": true,
+      "timingChanged": false
+    },
+    {
+      "first": {
+        "id": 2,
+        "start": 6.55,
+        "end": 8,
+        "timing": "00:00:06,550 --> 00:00:08,000",
+        "text": "I'm searching for someone."
+      },
+      "second": {
+        "id": 2,
+        "start": 6.55,
+        "end": 8,
+        "timing": "00:00:06,550 --> 00:00:08,000",
+        "text": "Estou procurando alguém."
+      },
+      "textChanged": true,
+      "timingChanged": false
+    }
+  ]
+}

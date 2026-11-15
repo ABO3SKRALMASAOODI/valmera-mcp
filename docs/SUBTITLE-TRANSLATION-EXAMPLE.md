@@ -8,6 +8,8 @@ This is a small, reproducible product demonstration published by Valmera on Nove
 
 [Ejercicio en español: recorta la respuesta y ajusta los subtítulos](RECORTAR-VIDEO-POR-SUBTITULOS.md).
 
+[Exemplo em português: baixe um MP4 com duas faixas selecionáveis](examples/legendas-pt-br/README.md). Switch between Brazilian Portuguese and English in one file, extract the SRTs, and inspect the decoded picture and audio checks.
+
 ## Open the actual files
 
 | Artifact | What to inspect |

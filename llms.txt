@@ -24,6 +24,8 @@
 
 ## Find a workflow
 
+- [Legendas em português no MP4 com o áudio original](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/tree/main/docs/examples/legendas-pt-br). Download a bilingual MP4 and both SRT files. The Portuguese guide includes cue times, a browser comparison report and decoded picture and sound checks.
+
 - [Compare a video color grade on the same shot at three strengths](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/examples/color-grade/compare-lut-strength.ipynb). Runnable notebook with public footage, a downloadable LUT, a six-patch reference, and near-black and near-white pixel measurements.
 
 - [Fix one timed word and download SRT or WebVTT](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/CAPTION-REVISIONS.md#convert-word-level-timestamps-to-subtitle-files): Open a four-second recording and its 12 source-word records, change cue six from “and” to “Um,” and compare the downloadable subtitle files. The free browser converter also accepts your own word-timed JSON and matching media.
