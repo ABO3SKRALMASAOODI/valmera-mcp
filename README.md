@@ -89,15 +89,17 @@ Then run `/mcp` inside Claude Code and choose **Authenticate**. [Guide](https://
 }
 ```
 
-### VS Code (GitHub Copilot agent mode) — `.vscode/mcp.json`
+### GitHub Copilot in VS Code or Copilot CLI
 
-```json
-{
-  "servers": {
-    "valmera": { "type": "http", "url": "https://valmera.io/mcp/server" }
-  }
-}
+In a VS Code Copilot session, run **Chat: Open Customizations**, open **MCP Servers**, and add an HTTP server. Use `https://valmera.io/mcp/server`, name it `valmera`, and choose **Global → Copilot Global** for a personal connection.
+
+In Copilot CLI, add the same server from your terminal:
+
+```sh
+copilot mcp add --transport http valmera https://valmera.io/mcp/server
 ```
+
+Authenticate when prompted and ask Copilot to list your Valmera projects. [Open the guided connection](https://valmera.io/mcp/connect?client=copilot) or [see both config formats and the first editing request](docs/CLIENTS.md#vs-code).
 
 ### Windsurf — `~/.codeium/windsurf/mcp_config.json`
 
