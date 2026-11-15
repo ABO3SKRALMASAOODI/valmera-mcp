@@ -59,6 +59,18 @@ In Premiere, use **File → Import** for each XML and locate `original-source.mp
 
 These example sequences reconstruct the recorded cut decisions. The final square framing, branding and end card are visible in the delivered MP4. We checked XML source and sequence ranges with OpenTimelineIO. Desktop Premiere import remains untested.
 
+### Check an XML returned by another editor
+
+Use the two requests in this guide with the supplied `original-source.mp4`. If the editor returns a Final Cut Pro 7 XML, save our [picture-cut checker](https://raw.githubusercontent.com/ABO3SKRALMASAOODI/valmera-mcp/main/docs/evaluation/check_rough_cut_xml.py) beside the file. With Python 3 installed, run:
+
+```sh
+python3 check_rough_cut_xml.py your-revision.xml
+```
+
+The checker reads the XML locally. It compares which source frame plays at **every output frame**. A correct revision matches all 300. As a negative control, run it against the supplied `first-cut.xml` with the default settings. It reports that output frame 180 uses source frame 420 where the revision needs frame 570. To check the original request instead, add `--cut first`. Splitting a clip into two adjacent pieces is fine if the output still uses the same frames.
+
+This exercise uses one enabled picture track, straight cuts, the original source filename and 30 fps. A filter, nested sequence or transition needs review in the destination editor. A passing result establishes the cut decisions written in the XML. Relink the media and review captions, sound, framing and the rendered MP4 separately. The checker reads file references and does not authenticate the media bytes.
+
 ## Verify the downloaded export
 
 The mcp.film curator independently downloaded this run’s MP4, matched the file hash to the receipt, inspected the video stream and sampled frames for branding. The curator also checked the public endpoint’s authentication challenge and OAuth metadata. The authenticated editing steps above were run by Valmera. [Read the curator’s notes](https://mcp.film/mcps/valmera/).
