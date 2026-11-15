@@ -26,7 +26,9 @@ Compare your file with the [PNG rendered by FFmpeg](https://valmera.io/examples/
 
 The green patch should be the brightest of those three. The blue patch goes black under this grade. For a product shoot, check that blue fabric, packaging or lettering keeps the detail you want after the conversion. To test the temperature control independently, choose Warm, set only Temperature to +50 and export the new LUT. In our FFmpeg run the same three patches became (230, 15, 10), (45, 240, 22) and (12, 8, 211).
 
-The browser samples the grade at 8-bit precision. This example uses an SDR RGB chart. For camera log or HDR footage, account for the input and output transforms and apply the creative look once. When comparing two applications, check the same source frame in the same color pipeline. The [FFmpeg lut3d reference](https://ffmpeg.org/ffmpeg-filters.html#lut3d-1) documents the interpolation options.
+For a comparison against the actual preview, open the [two-second chart video](https://valmera.io/examples/color-grade/rgb-swatches.webm) and capture its original, B&W and Warm (+50 Temperature) views. In our browser the original red patch displayed near (234, 52, 35). Feeding the pure-red PNG to FFmpeg would compare different inputs. We applied each LUT to the ungraded browser capture and compared the median of a 5 × 5 interior area on each of six top-row patches with the graded preview. The largest per-channel difference across all six patches was 1 code value for B&W and 3 for Warm on a 0–255 scale. The [patch-by-patch measurements](https://valmera.io/examples/color-grade/preview-lut-measurements.json) include the original browser values and both outputs.
+
+The browser samples the grade at 8-bit precision. This example uses an SDR RGB chart. For camera log or HDR footage, account for the input and output transforms and apply the creative look once. When comparing two applications, check the same source frame in the same color pipeline. The [FFmpeg lut3d reference](https://ffmpeg.org/ffmpeg-filters.html#lut3d) documents the interpolation options.
 
 ## Try the eight-step grayscale clip
 
