@@ -1,0 +1,12 @@
+{
+  "tool": "record_website_demo",
+  "arguments": {
+    "url": "https://valmera.io/tools/ai-slideshow-maker#photo-sequence",
+    "orientation": "landscape",
+    "steps": [
+      {"do": "hover", "selector": "button[aria-label='Move photo 3 earlier']", "seconds": 1.8},
+      {"do": "click", "selector": "button[aria-label='Move photo 3 earlier']", "seconds": 2.5},
+      {"do": "wait", "seconds": 1}
+    ]
+  }
+}
