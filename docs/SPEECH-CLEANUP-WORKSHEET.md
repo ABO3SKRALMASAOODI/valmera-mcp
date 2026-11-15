@@ -93,3 +93,18 @@ Record the version that actually contains the restored material. If a direct res
 | What remains unresolved? | |
 
 A completed render is not approval. Keep the output unapproved if it removes required meaning or still has unresolved damaging cuts. When ready to try the workflow, [open Valmera Studio](https://valmera.io/studio?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=speech_cleanup_worksheet) or [connect an authorized assistant](https://valmera.io/mcp/setup). AI editing requires an eligible subscription; check [current plans](https://valmera.io/subscribe).
+
+## Retime an SRT after several cuts
+
+When you already have the revised video, use the original SRT and the list of deleted ranges. A global shift would move the first caption even if the first cut happens ten minutes later. Each later caption needs only the accumulated time removed **before its own position**.
+
+The [SRT retiming script](evaluation/retime_srt_after_cuts.py) uses the [SRT reader](evaluation/check_srt_revision.py) in the same directory. From the root of this repository, run it with Python 3 and write the result to a new file. Give every interval in seconds from the **original** video, with up to three decimal places.
+
+```sh
+python3 docs/evaluation/retime_srt_after_cuts.py docs/evaluation/sentence-cut-original.srt \
+  --remove 0.200 1.450 --remove 3.800 4.000 > revised.srt
+```
+
+With the [original subtitles](evaluation/sentence-cut-original.srt) in this example, the first deletion removes the blue-label line. The second trims the tail after the green-label line and leaves that cue at 0.310–2.480. If you instead cut a word inside a cue, the script clips the cue's timing, preserves its wording and prints the cue number and output time to review. It cannot hear which word disappeared. Adjacent or overlapping removals count once. Inline text markup and line breaks are preserved for supported numbered UTF-8 SubRip input. For a reordered scene or a speed change, use the edit timeline to establish the new timing.
+
+Run the [browser example](https://valmera.io/free-ai-video-editor#free-trim) if you also need an edited MP4 from a single removal.
