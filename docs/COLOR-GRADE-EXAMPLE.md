@@ -4,6 +4,30 @@ Changing the preview is only half the job. The downloaded video should carry the
 
 **Published by Valmera; recorded November 7, 2026.** We used the manual B&W preset on a silent motion graphic. This is a specific browser-export example, not a test of AI grading, skin-tone accuracy, audio preservation or competing editors.
 
+## Reuse a browser grade as a .cube LUT
+
+Open the [free color grader](https://valmera.io/tools/color-grade-video#free-color-grade-preview), choose the coffee sample or your own video, then set the look, exposure, contrast, saturation and temperature. **Download selected look (.cube)** saves a 33 × 33 × 33 RGB lookup table. Comparing the original keeps your chosen settings in the download. The LUT contains color values and can be reused with another shot. No video, audio, captions or filenames are included.
+
+### Test the result outside the browser
+
+We downloaded the B&W look with all sliders at zero on November 15, 2026. Save the [RGB test chart](https://valmera.io/examples/color-grade/rgb-swatches.png) and the [reference LUT](https://valmera.io/examples/color-grade/valmera-mono.cube) in the same folder. Run:
+
+```sh
+ffmpeg -i rgb-swatches.png -vf lut3d=file=valmera-mono.cube -frames:v 1 graded.png
+```
+
+Compare your file with the [PNG rendered by FFmpeg](https://valmera.io/examples/color-grade/rgb-swatches-mono.png). The first three patches on the top row give you an easy channel-order check.
+
+| Input patch (8-bit RGB) | Measured output (8-bit RGB) |
+| --- | --- |
+| Red (255, 0, 0) | (42, 42, 42) |
+| Green (0, 255, 0) | (189, 189, 189) |
+| Blue (0, 0, 255) | (0, 0, 0) |
+
+The green patch should be the brightest of those three. The blue patch goes black under this grade. For a product shoot, check that blue fabric, packaging or lettering keeps the detail you want after the conversion. To test the temperature control independently, choose Warm, set only Temperature to +50 and export the new LUT. In our FFmpeg run the same three patches became (230, 15, 10), (45, 240, 22) and (12, 8, 211).
+
+The browser samples the grade at 8-bit precision. This example uses an SDR RGB chart. For camera log or HDR footage, account for the input and output transforms and apply the creative look once. When comparing two applications, check the same source frame in the same color pipeline. The [FFmpeg lut3d reference](https://ffmpeg.org/ffmpeg-filters.html#lut3d-1) documents the interpolation options.
+
 ## Try the eight-step grayscale clip
 
 [Download the two-second reference MP4](https://raw.githubusercontent.com/ABO3SKRALMASAOODI/valmera-mcp/main/docs/evaluation/color-strip/shadow-highlight-steps.mp4) and open it in the [free color grader](https://valmera.io/tools/color-grade-video#free-color-grade-preview). It is an original Valmera test pattern with eight equal-width gray strips. Every frame shows the same strips, so seeking slightly earlier or later gives you the same reference picture. The 320 × 180 H.264 file contains 48 frames and no audio.
