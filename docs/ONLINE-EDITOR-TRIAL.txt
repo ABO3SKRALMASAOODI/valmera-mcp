@@ -31,6 +31,10 @@ Reviewed preview version:
 Export job identifier and status, if exposed:
 Downloaded filename:
 Actual format / dimensions / duration / frame count if measured:
+Shot order in the downloaded sequence:
+Expected / observed time of each cut:
+Last audible word or sound before the cut:
+First audible word, sound or intentional silence after the cut:
 Audio and full-playback review:
 Watermark, corner branding or end card observed:
 Export block or allowance consumed:
