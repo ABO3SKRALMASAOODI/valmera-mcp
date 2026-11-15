@@ -1,0 +1,17 @@
+1
+00:00:00,120 --> 00:00:02,820
+OSIRIS-REx is a wonderfully
+exciting mission.
+
+2
+00:00:02,980 --> 00:00:04,760
+We're actually going out to an asteroid.
+
+3
+00:00:05,300 --> 00:00:07,240
+And the reason asteroids are so exciting
+
+4
+00:00:07,240 --> 00:00:09,860
+is that they're actually a little bit
+of the early solar system.

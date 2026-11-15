@@ -8,6 +8,8 @@ Published by Valmera · November 7, 2026. The paper edit below uses fictional sp
 
 When the dialogue is approved, try holding the listener for a few frames as the answer starts. [Play the same exchange as a straight cut, J-cut and L-cut](INTERVIEW-SPLIT-EDITS.md) and compare the exported audio.
 
+To revise a short after preview, [try three openings for one captioned interview answer](examples/interview-opening/README.md). Hear the original and the later start, download the matching captions, or recreate the vertical exports.
+
 ## Cut two interviews together and revise the ending
 
 In September 2017, Jim Garvin described what OSIRIS-REx would do at Bennu. Michelle Thaller explained how Earth’s gravity would help the spacecraft reach it. This assembly lets one scientist introduce the mission and the other explain the maneuver. Keep their separate recording names on every passage. [NASA Goddard source recordings and captions](https://svs.gsfc.nasa.gov/12713/)
