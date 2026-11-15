@@ -1,0 +1,57 @@
+{
+  "checkedUtc": "2026-11-15T17:09:13.093302+00:00",
+  "registry": {
+    "record": "https://registry.modelcontextprotocol.io/v0.1/servers/io.valmera%2Fvideo-editor/versions/latest",
+    "version": "0.2.1",
+    "remote": {
+      "type": "streamable-http",
+      "url": "https://valmera.io/mcp/server"
+    }
+  },
+  "anonymousEndpointStatus": 401,
+  "protectedResourceMetadata": "https://valmera.io/.well-known/oauth-protected-resource",
+  "scopesAdvertised": [
+    "valmera.edit"
+  ],
+  "publicCard": "https://valmera.io/.well-known/mcp/server-card.json",
+  "publishedToolCount": 224,
+  "readOnlyHintCounts": {
+    "true": 48,
+    "false": 176,
+    "unspecified": 0
+  },
+  "declaredOperations": {
+    "list_projects": {
+      "readOnlyHint": true,
+      "requiredInputs": []
+    },
+    "cut_range": {
+      "readOnlyHint": false,
+      "requiredInputs": [
+        "start",
+        "end",
+        "project_id"
+      ]
+    },
+    "render_preview": {
+      "readOnlyHint": false,
+      "requiredInputs": [
+        "project_id"
+      ]
+    },
+    "export_final": {
+      "readOnlyHint": false,
+      "requiredInputs": [
+        "project_id",
+        "edl_version"
+      ]
+    }
+  },
+  "recordedDelivery": {
+    "runDate": "2026-11-07",
+    "receipt": "https://raw.githubusercontent.com/ABO3SKRALMASAOODI/valmera-mcp/798e873006467bb0bab6f5332e83f9b99e69aba9/docs/evaluation/recorded-run-20261107/evidence.json",
+    "mp4": "https://raw.githubusercontent.com/ABO3SKRALMASAOODI/valmera-mcp/798e873006467bb0bab6f5332e83f9b99e69aba9/docs/evaluation/recorded-run-20261107/revised-final.mp4",
+    "sha256": "9b7f97b8e75c80b49c8e2c61f2bace1c279cc26599d65b28b5d4d394bcdc592e"
+  },
+  "authenticatedEditPerformedByThisCheck": false
+}
