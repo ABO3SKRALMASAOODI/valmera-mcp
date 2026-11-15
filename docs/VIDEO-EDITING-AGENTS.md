@@ -18,7 +18,7 @@ Try the recorded revision with `[[3,7],[12,14],[19,23]]` and the [25-second sour
 
 ## Which video editing MCP server fits my recording?
 
-Where will you watch the cut, and what do you need to take away when you approve it? Those two choices narrow the field quickly.
+Where will you watch the cut, and what do you need to take away when you approve it? Those two choices narrow the field quickly. Compare [Valmera, Tellers, Rendley and Descript for a producer with existing footage](HOSTED-VIDEO-EDITOR-DISCOVERY.md), including what you can review before publishing and what the next editor can reopen.
 
 | If you want to… | Start here | How you review and deliver |
 | --- | --- | --- |
