@@ -23,6 +23,26 @@ To check the container and stream metadata independently, run this command on ea
 ffprobe -v error -show_entries format=duration,size:stream=codec_type,codec_name,codec_tag_string,width,height,start_time,duration,sample_rate,channels -of json downloaded.mp4
 ```
 
+## Locate the surviving speech after a cut
+
+We used the same source excerpt, from 2.560 to 3.280 seconds, in three downloaded edits. The first two editors performed a manually selected removal from 0.200 to 1.450. For the third edit Valmera’s MCP connector placed a product shot over the original narration. All times below are relative to the beginning of the decoded audio track.
+
+| Download | Expected start | Located start | Difference |
+| --- | ---: | ---: | ---: |
+| [Valmera removal](https://valmera.io/examples/filler-word-cut/first-sentence-removed.mp4) | 1.310 s | 1.310 s | 0 ms |
+| [Ezgif removal](https://valmera.io/examples/export-check/ezgif-sentence-removed.mp4) | 1.310 s | 1.430 s | 120 ms later |
+| [Valmera MCP cutaway](https://valmera.io/examples/b-roll-cutaway/final.mp4) | 2.560 s | 2.560 s | 0 ms |
+
+[Try the waveform finder](https://valmera.io/blog/check-video-editor-export#compare-speech) to locate the excerpt automatically, compare your own files locally or check the removed portion at 0.440–1.200 s. A repeated excerpt can produce multiple plausible positions. If the narration has been replaced, sped up or mixed with music, listen to the result when the match is uncertain.
+
+For an independent numeric check, download the [original MP4](https://valmera.io/examples/filler-word-cut/original.mp4), the Ezgif removal and the [Python checker](evaluation/check_speech_cut.py). With FFmpeg on your path, compare the expected position with the measured one in the same file:
+
+```sh
+python3 check_speech_cut.py original.mp4 ezgif-sentence-removed.mp4 --window 2560 1310 720 --window 2560 1430 720
+```
+
+At the expected 1.310 s position we measured −0.017. At 1.430 s the value rounded to 1.000. The checker decodes directly from the MP4s to mono at 16 kHz and computes a normalized correlation for each specified window. A value near one indicates similar waveforms at the supplied positions. This check locates the same speech within an edit. Confirm picture-to-sound sync by watching a visible event on the target player.
+
 ## Separate the promises before choosing a tool
 
 | Wording | What you still need to establish |
