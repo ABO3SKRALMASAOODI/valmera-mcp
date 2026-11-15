@@ -12,6 +12,17 @@ If free export is required, complete the [watermark and export check](FREE-EXPOR
 
 For a speaker-framing test, [compare a wide lecture shot with its portrait render](PORTRAIT-CROP-EXAMPLE.md). Reproduce the crop across 276 frames, then try the same brief on a passage with more movement.
 
+## Check one change at the same timestamp
+
+The [playable before-and-after gallery](https://valmera.io/examples) uses a separate four-second sample with synthetic speech. Select a timestamp once and switch versions. Playback pauses at the same point in the new version.
+
+| Question | Where to look | What the recorded versions show |
+| --- | --- | --- |
+| Did the correction fix what the speaker said? | At 1.60 seconds, switch between **Auto captions** and **Corrected captions**. Read the smaller caption over the waveform. | The first pass heard “and.” The revision reads “Um,” and moves the phrase break. The large text belongs to the original picture. |
+| Did the cutaway change the right part of the shot? | At 2.80 seconds, compare **Original** with **B-roll cutaway**. Then play through 3.72 seconds with sound on. | The print swatches cover the waveform during the product mention. The waveform returns as the sentence ends, while the narration continues. |
+
+For another editor, record the source timestamp, the revision timestamp and which element changed. If the revision shortened the timeline, first locate the same spoken word or source frame in both versions. Equal playback times alone can then point to different material.
+
 ## What you can test with this footage
 
 For one observed result using this procedure, see the [November 7 MCP run](MCP-RECORDED-EDIT.md). It includes source, first preview, revised final MP4, measured output properties and explicit untested criteria. It is a Valmera-authored example, not an independent comparison.
