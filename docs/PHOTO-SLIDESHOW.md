@@ -24,4 +24,4 @@ Both reference files were exported from the browser editor. At 0:02 the revision
 
 ## Hand the sequence to the AI editor
 
-Choose **Use this sequence in Studio** to carry the filenames, order, holds, framing and soundtrack instructions into the editing brief. Attach the original files in Studio. For the sample, unpack the source ZIP and attach the three JPEGs. After reviewing the preview, ask for a revision in terms you can check at playback, such as “Move lunar-module.jpg to second place. Keep its one-second hold and keep Earthrise first.” [AI editing access and pricing](https://valmera.io/pricing).
+Choose **Use this sequence in Studio** to carry the filenames, order, holds, framing and soundtrack instructions into the editing brief. Attach the original files in Studio. For the sample, unpack the source ZIP and attach the three JPEGs. After reviewing the preview, ask for a revision in terms you can check at playback, such as “Move lunar-module.jpg to second place. Keep its one-second hold and keep Earthrise first.” [AI editing access and pricing](https://valmera.io/subscribe).

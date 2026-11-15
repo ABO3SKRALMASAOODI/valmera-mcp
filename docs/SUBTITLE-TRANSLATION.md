@@ -93,7 +93,7 @@ Replace the bracketed fields with your actual project and reviewed media version
 
 > In project [ID], use approved version [version]. Prepare [language and locale] subtitles for the passage [program time range]. Keep the existing spoken audio, music, mix, cuts, speed and framing. Correct the source transcript against the recording first. Use this glossary: [terms]. Preserve numbers, negations and qualifications. Show the source and translated text for review, then preview the agreed subtitle treatment. Identify the project version and any remaining uncertainty. Deliver [selectable subtitle file / burned-in video / both] if available through the current tools, and identify any unfinished delivery step.
 
-Test a passage containing a name, a number, a conditional sentence and the densest on-screen layout. This reveals more than translating a greeting. Start in [Valmera Studio](https://valmera.io/dashboard) or use the [assistant connection guide](CLIENTS.md). Account creation and uploads are free; AI editing requires an eligible subscription, and an external assistant's billing is separate.
+Test a passage containing a name, a number, a conditional sentence and the densest on-screen layout. This reveals more than translating a greeting. Start in [Valmera Studio](https://valmera.io/studio) or use the [assistant connection guide](CLIENTS.md). Account creation and uploads are free; AI editing requires an eligible subscription, and an external assistant's billing is separate.
 
 For a focused revision:
 

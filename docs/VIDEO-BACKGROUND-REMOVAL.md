@@ -4,7 +4,7 @@ To remove a video background successfully, specify what you need to receive: a f
 
 This guide compares ten search results, explains a practical trial, and includes a [background-removal review worksheet](BACKGROUND-REMOVAL-WORKSHEET.md). It is published by Valmera and reflects a documentation review on November 7, 2026, not a hands-on quality ranking. We did not upload footage to the compared services or measure their processing speed.
 
-[Start an editing brief](https://valmera.io/prompts#prompt-builder) · [Open Valmera Studio](https://valmera.io/dashboard) · [Connect your assistant](CLIENTS.md)
+[Start an editing brief](https://valmera.io/prompts#prompt-builder) · [Open Valmera Studio](https://valmera.io/studio) · [Connect your assistant](CLIENTS.md)
 
 ## Decide what “remove the background” means
 
@@ -88,7 +88,7 @@ Check import interpretation before increasing erosion or cutting deeper into the
 
 For Valmera, the current MCP `set_background` tool describes background replacement over a program window, including solid, gradient, blur and source-based treatments. That supports writing a scoped replacement brief. It does **not** by itself establish a transparent-alpha export route, and this guide does not claim a recorded Valmera background-removal benchmark. Ask the assistant to use the live tools, preview the result and verify the requested delivery.
 
-You can begin in [Studio](https://valmera.io/dashboard) or through a [connected assistant](CLIENTS.md). Account creation and uploads are free; AI editing requires an eligible plan. [Current subscriptions](https://valmera.io/subscribe) distinguish external-assistant MCP access from Studio AI editing. For a recorded example of checking an unchanged soundtrack after a visual revision, see the [Spanish-caption demonstration](SUBTITLE-TRANSLATION-EXAMPLE.md).
+You can begin in [Studio](https://valmera.io/studio) or through a [connected assistant](CLIENTS.md). Account creation and uploads are free; AI editing requires an eligible plan. [Current subscriptions](https://valmera.io/subscribe) distinguish external-assistant MCP access from Studio AI editing. For a recorded example of checking an unchanged soundtrack after a visual revision, see the [Spanish-caption demonstration](SUBTITLE-TRANSLATION-EXAMPLE.md).
 
 ## Finish with a handoff that another editor can use
 

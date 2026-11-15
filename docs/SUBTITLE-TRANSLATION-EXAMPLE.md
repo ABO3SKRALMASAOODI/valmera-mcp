@@ -4,7 +4,7 @@ We supplied two Spanish subtitle translations to Valmera, rendered them on a lic
 
 This is a small, reproducible product demonstration published by Valmera on November 7, 2026. It is not a translation-quality benchmark. The Spanish wording was supplied by the assistant running the demonstration, and has not received independent native-speaker approval. Valmera's `retypeset_language` tool applied that supplied wording; this run does not demonstrate the tool generating a translation itself.
 
-[Plan your own subtitle translation](SUBTITLE-TRANSLATION.md) · [Connect an assistant](CLIENTS.md) · [Open Valmera Studio](https://valmera.io/dashboard)
+[Plan your own subtitle translation](SUBTITLE-TRANSLATION.md) · [Connect an assistant](CLIENTS.md) · [Open Valmera Studio](https://valmera.io/studio)
 
 [Ejercicio en español: recorta la respuesta y ajusta los subtítulos](RECORTAR-VIDEO-POR-SUBTITULOS.md).
 
@@ -99,4 +99,4 @@ This example verifies a narrow operation on two sentences. It does not test long
 
 Use the [subtitle review worksheet](SUBTITLE-TRANSLATION-WORKSHEET.md) to record the language reviewer, exact media version and unresolved items. For choosing among subtitle-only, bilingual and dubbed outputs, read the [translation workflow and ten-provider documentation comparison](SUBTITLE-TRANSLATION.md). For the preceding English style revision, see the [caption-style experiment](CAPTION-STYLE-EXAMPLE.md).
 
-To try the workflow, bring a short licensed passage to [Valmera Studio](https://valmera.io/dashboard) or [connect your assistant](CLIENTS.md). Account creation and uploads are free; AI editing requires an eligible plan. Check [current subscriptions](https://valmera.io/subscribe), including the distinction between external-assistant MCP access and Studio AI editing.
+To try the workflow, bring a short licensed passage to [Valmera Studio](https://valmera.io/studio) or [connect your assistant](CLIENTS.md). Account creation and uploads are free; AI editing requires an eligible plan. Check [current subscriptions](https://valmera.io/subscribe), including the distinction between external-assistant MCP access and Studio AI editing.
