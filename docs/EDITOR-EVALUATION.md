@@ -23,6 +23,8 @@ The [playable before-and-after gallery](https://valmera.io/examples) uses a sepa
 
 For another editor, record the source timestamp, the revision timestamp and which element changed. If the revision shortened the timeline, first locate the same spoken word or source frame in both versions. Equal playback times alone can then point to different material.
 
+When an editor offers an editable handoff, put its Final Cut Pro 7 XML through the [frame-by-frame picture-cut check](MCP-RECORDED-EDIT.md#check-an-xml-returned-by-another-editor). The two supplied example timelines give you a positive and a negative control for the revision request.
+
 ## What you can test with this footage
 
 For one observed result using this procedure, see the [November 7 MCP run](MCP-RECORDED-EDIT.md). It includes source, first preview, revised final MP4, measured output properties and explicit untested criteria. It is a Valmera-authored example, not an independent comparison.
