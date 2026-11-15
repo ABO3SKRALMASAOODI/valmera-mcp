@@ -4,7 +4,32 @@ Turn a public product page into a short walkthrough with Valmera, or edit a scre
 
 **[Start from your website URL](https://valmera.io/tools/record-website-demo?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=mcp_website_demo#start-demo)** · [Choose a ready-to-edit brief](https://valmera.io/tools/record-website-demo?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=mcp_website_demo#demo-briefs) · [Watch a finished example](https://valmera.io/examples/product-demo)
 
-This guide is written by the Valmera team. Creating an account and uploading are free; recording and AI editing require a subscription. See [current plans](https://valmera.io/subscribe). Your assistant provider's access and billing are separate.
+## What can I try before signing up?
+
+Play the finished demo below, inspect its frames or prepare a walkthrough brief for free. To make a fresh website recording in Studio, choose a plan that includes **Record website demo**. Studio offers the feature on Pro and Max. A trial or new Plus account can see an upgrade card before any recording starts. If you edit through a connected assistant, check your account’s MCP editing access. The assistant provider bills separately. [Compare current plans](https://valmera.io/subscribe).
+
+## Record a button click and prove it changed the page
+
+Imagine reviewing a demo on mute. A cursor reaches **Earlier**, but did the photo actually move? The Valmera team recorded its public slideshow builder using the included NASA Apollo 11 photos. The third photo moves to second place while the URL stays the same.
+
+**[Download the finished 1080p MP4 (2.4 MB)](https://raw.githubusercontent.com/ABO3SKRALMASAOODI/valmera-mcp/main/docs/examples/website-photo-reorder/reorder.mp4)** · [Open the two frames at full size](examples/website-photo-reorder/frames.jpg) · [Get the capture steps](examples/website-photo-reorder/recording.json)
+
+| Time in the exported MP4 | What to look for |
+| --- | --- |
+| 3.00 s | The strip reads **1. Earthrise, 2. Bootprint, 3. Lunar module**. Bootprint has three seconds assigned to it. |
+| 4.30 s | The recorder logs a click on **Earlier** under the third photo. Listen for the single click or watch the pointer. |
+| 5.40 s | **2. Lunar module** now has one second and **3. Bootprint** has three. The durations moved with their photos. Earthrise stayed first. |
+| 8.00 s | The camera pushes closer so the new order is readable. The 9.4-second demonstration is followed by Valmera’s five-second end card. |
+
+![Crops of the exported video at 3.00 and 5.40 seconds. The lunar module moves ahead of the bootprint.](examples/website-photo-reorder/frames.jpg)
+
+**Try the same brief in a connected assistant**
+
+> Record the photo sequence on https://valmera.io/tools/ai-slideshow-maker#photo-sequence in landscape. Show all three cards, then move Lunar module ahead of Bootprint. Keep the new order on screen and move closer so I can read the labels. Play the preview before exporting.
+
+For a repeatable take, give the assistant the capture steps above and the ID of your own project. The page has several controls labeled **Earlier**. The recording targets the third photo by its accessible button name, **Move photo 3 earlier**. After recording, place the clip on the timeline with `showcase_demo`. Review the order in the preview, then export that reviewed edit version. Starting another capture creates another recording.
+
+To adapt the test to your site, write down two visible values before recording. For a calculator, use the input and the displayed total. For a settings page, use the old and new setting. A recorded click identifies where to look. The changed value in the downloaded MP4 tells you whether the demo delivered the result.
 
 ## Install the website walkthrough skill
 
