@@ -36,9 +36,19 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("original", help="Original four-second MP4")
     parser.add_argument("candidate", help="Reference cut or your exported edit")
+    parser.add_argument(
+        "--window", nargs=3, action="append", type=int,
+        metavar=("SOURCE_MS", "EDIT_MS", "LENGTH_MS"),
+        help="Compare these two positions within the first four decoded seconds. Repeat to check other positions.",
+    )
     args = parser.parse_args()
+    windows = [("Before cut", 350, 350, 400), ("After cut", 2400, 2080, 500)]
+    if args.window:
+        windows = []
+        for src_ms, edit_ms, length_ms in args.window:
+            if min(src_ms, edit_ms) < 0 or length_ms <= 0 or max(src_ms, edit_ms) + length_ms > 4000:
+                parser.error("Choose a positive window within the first four seconds of both tracks.")
+            windows.append((f"Source {src_ms} ms / edit {edit_ms} ms", src_ms, edit_ms, length_ms))
     source, edit = decode(args.original), decode(args.candidate)
-    for label, src_ms, edit_ms, length_ms in [
-        ("Before cut", 350, 350, 400), ("After cut", 2400, 2080, 500)
-    ]:
+    for label, src_ms, edit_ms, length_ms in windows:
         print(f"{label}: r = {compare(source, edit, src_ms, edit_ms, length_ms)}")
