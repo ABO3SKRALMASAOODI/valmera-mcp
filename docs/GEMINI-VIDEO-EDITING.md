@@ -4,7 +4,7 @@
 
 For a recorded interview, tutorial or social clip, you can direct a Valmera project through **Gemini CLI** or bring a Gemini-written brief into **Valmera Studio**. This guide helps you choose, connect and review the result.
 
-Published by Valmera · Sources checked November 7, 2026. Setup commands were checked against current documentation and this repository's configuration. This article does **not** report a new end-to-end Gemini CLI editing test or a Gemini Apps marketplace listing.
+Published by Valmera · Sources checked November 7, 2026. Installation rechecked November 15, 2026, with Gemini CLI 0.68.0. This article does **not** report a new end-to-end Gemini CLI editing test or a Gemini Apps marketplace listing.
 
 ## Start with the result you need
 
@@ -39,11 +39,26 @@ For an interview, the [paper-edit guide](INTERVIEW-PAPER-EDIT.md) keeps a claim 
 
 These commands configure **Gemini CLI**, the terminal client. They are not instructions to paste into the Gemini Apps chat box. Google's [MCP documentation](https://geminicli.com/docs/tools/mcp-server/) covers HTTP server configuration, OAuth and connection diagnostics.
 
-If you already installed the Valmera extension, check its existing connection before adding another configuration. Otherwise, from your intended project directory, run:
+### Install the extension and check what loaded
+
+In a terminal, install the [versioned Valmera release](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/releases/tag/v1.0.2):
+
+```sh
+gemini extensions install https://github.com/ABO3SKRALMASAOODI/valmera-mcp --ref v1.0.2
+gemini extensions list
+```
+
+On November 15 we tested both the pinned command and an install without `--ref` in separate empty configurations using Gemini CLI 0.68.0. Both reported `valmera (1.0.2)`, source type `github-release`, release tag `v1.0.2`, the `valmera` MCP server, and the three skills for footage editing, long-video shorts and website demos. This check runs before Valmera sign-in. The [two downloadable cuts](https://valmera.io/ai-agent-that-edits-video#recorded-revision) demonstrate an earlier edit made through the same connector in Codex.
+
+### Connect manually or sign in to the installed extension
+
+If you installed the extension, proceed directly to sign-in below. For a manual connection, from the intended project directory run:
 
 ```sh
 gemini mcp add --transport http valmera https://valmera.io/mcp/server
 ```
+
+If the CLI reports `Cannot modify settings in an untrusted workspace`, the add command stops before writing the server configuration. Open a folder you trust and review its trust setting with `/permissions` inside Gemini CLI. When we retried in a trusted folder, the command wrote `mcpServers.valmera.url` and `type: "http"` into the project’s `.gemini/settings.json`. [Google’s trusted folders guide](https://geminicli.com/docs/cli/trusted-folders/).
 
 Then, inside Gemini CLI:
 
