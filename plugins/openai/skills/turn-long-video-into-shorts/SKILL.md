@@ -14,6 +14,12 @@ Connect to `https://valmera.io/mcp/server` and authenticate using the [client se
 
 Account creation and uploads are free; editing requires a paid [Valmera plan](https://valmera.io/subscribe). Before billable work, explain the intended scope and use any cost estimate exposed by the account. If an exact quote is unavailable, say so and obtain approval for a bounded preview before proceeding. Reuse an existing explicit scope and budget approval; ask again if the work would exceed it. Do not buy credits or upgrade a plan without authorization. Review a preview before an approved final export.
 
+## Clips from a multi-hour recording
+
+Check the indexed coverage before searching a late passage. Studio indexes the first three hours of a main recording. For a passage outside that window, use a section containing the full question and answer. Keep the original time range and the section’s actual start time in the brief. A passage at 03:20:00 in the original starts at 00:30:00 in an excerpt beginning at 02:50:00. Select the story on the excerpt’s clock and use the original clock when telling the creator where it came from.
+
+The [long-video checker](https://valmera.io/tools/long-video-upload-checker) reads current upload limits and can convert an original SRT into captions for the section. Rebase source captions once. Captions generated from the excerpt already use its clock. Check the first and last cues against the excerpt and review timing again after cuts.
+
 ## Workflow
 
 1. **Set up the source.** Open the intended project, or use `create_project` with the current shorts-project schema and upload the recording. Wait for `index_status` to report ready. Reuse the user's requested count, duration, aspect ratio and audience.

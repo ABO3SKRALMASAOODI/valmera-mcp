@@ -1,0 +1,23 @@
+# Valmera video editing agent
+
+> Valmera edits recordings you supply. In Studio or a supported assistant, select your project, describe the edit, review a rendered preview and export the approved version as an MP4.
+
+## Try an edit
+
+- [Compare actual edits](https://valmera.io/examples): Switch between source and edit at the same moment. At 1.60 seconds in the caption example, inspect the corrected word. At 2.80 seconds in the B-roll example, compare the pictures and listen to the voice across the cut.
+- [Recorded MCP edit and final file](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/MCP-RECORDED-EDIT.md): A silent three-shot fixture, a two-second revision to the middle shot, tool arguments, previews and the downloaded MP4. The final file includes branding and an end card.
+- [Evaluate a video editor](https://valmera.io/ai-video-editor-pricing-comparison): Use the same source and one revision to compare an editor's preview, downloaded result and cost. Account creation and uploads are free in Valmera. Hosted AI editing requires eligible paid access. See [current plans](https://valmera.io/subscribe).
+
+## Find a workflow
+
+- [Edit a long webinar](https://valmera.io/tools/long-video-upload-checker): Check upload size and indexed duration, then map a passage from the original recording to an excerpt. A passage at 03:20:00 in a four-hour source starts at 00:20:00 in a section beginning at 03:00:00. Download the section's time map and rebased captions. The [worked webinar example](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/WEBINARS.md#find-an-answer-after-hour-three) includes both timing fixtures.
+- [Turn an interview into shorts](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/PODCAST-CLIPS.md): Select a complete exchange, preserve the speaker's meaning, and review each short's crop and captions.
+- [Correct subtitle drift](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/SUBTITLE-SYNC-EXAMPLE.md): Use two known cue times to correct scale and offset. Check a third cue independently.
+- [Hand a rough cut to a human editor](https://valmera.io/blog/ai-rough-cut-to-editable-timeline): Open a single-source picture cut in Shotcut or download a CMX edit list with the original media.
+- [More editing workflows](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/README.md): Browse guides for tutorials, real estate, courses, YouTube and other recording types.
+
+## Connect an assistant
+
+- [Client setup](https://valmera.io/mcp/setup): The editing server uses Streamable HTTP at https://valmera.io/mcp/server and requires authentication. Select the project that owns the recording and discover the tools available in that session.
+- [Claude plugin](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/CLAUDE-PLUGIN.md), [ChatGPT](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/CHATGPT.md), [Gemini CLI](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/GEMINI-VIDEO-EDITING.md) and [Grok](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/GROK.md): Check the specific client and account requirements before connecting or handing off a brief.
+- [Video editing tool reference](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/TOOLS.md): For an approved final export, call export_final on the reviewed version, follow its job and retrieve the final download URL.

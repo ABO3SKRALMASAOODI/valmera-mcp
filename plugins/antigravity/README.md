@@ -11,7 +11,7 @@ Install [Antigravity CLI](https://antigravity.google/docs/getting-started/) and 
 Clone the pinned plugin release into a new directory, then install this package:
 
 ```sh
-git clone --branch antigravity-v1.0.0 --depth 1 https://github.com/ABO3SKRALMASAOODI/valmera-mcp.git valmera-antigravity
+git clone --branch antigravity-v1.0.1 --depth 1 https://github.com/ABO3SKRALMASAOODI/valmera-mcp.git valmera-antigravity
 agy plugin validate --strict ./valmera-antigravity/plugins/antigravity
 agy plugin install ./valmera-antigravity/plugins/antigravity
 agy plugin list --json

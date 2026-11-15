@@ -4,9 +4,9 @@ Bring a recording, describe the result and refine your video through conversatio
 
 ## Choose your installation route
 
-The [Claude plugin 1.0.2 release](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/releases/tag/claude-v1.0.2) includes `valmera-claude-1.0.2.zip`, a standalone package for manual upload. This is a Valmera repository release, not an approved Anthropic directory listing.
+[Download the Claude plugin 1.0.3 ZIP](https://valmera.io/downloads/valmera-claude-1.0.3.zip) for manual upload. Valmera distributes this package directly. The shorts skill includes timestamp and caption handling for excerpts of multi-hour recordings.
 
-**Claude chat or Cowork:** download the ZIP from the release, then use **Customize → Plugins → Add → Upload plugin** in claude.ai. After installation, open the plugin's **Connectors** tab and connect Valmera. Complete sign-in with the Valmera account that owns your recording. Installing the skills and authenticating the editor are separate steps. Available controls depend on your plan and organization policies; an organization owner may need to add the connector first.
+**Claude chat or Cowork:** download the linked ZIP, then use **Customize → Plugins → Add → Upload plugin** in claude.ai. After installation, open the plugin's **Connectors** tab and connect Valmera. Complete sign-in with the Valmera account that owns your recording. Installing the skills and authenticating the editor are separate steps. Available controls depend on your plan and organization policies; an organization owner may need to add the connector first.
 
 **Claude Code:** add Valmera's repository marketplace and install the plugin inside a Claude Code session:
 
@@ -15,7 +15,7 @@ The [Claude plugin 1.0.2 release](https://github.com/ABO3SKRALMASAOODI/valmera-m
 /plugin install valmera@valmera
 ```
 
-Open `/mcp` and authenticate the Valmera connection. These commands follow the marketplace's current version; the downloadable ZIP is the fixed 1.0.2 package. If you already added Valmera as a separate MCP server, inspect your connections before enabling a second copy.
+Open `/mcp` and authenticate the Valmera connection. These commands follow the marketplace's current version; the downloadable ZIP is the fixed 1.0.3 package. If you already added Valmera as a separate MCP server, inspect your connections before enabling a second copy.
 
 **Connection only:** follow the [Claude custom-connector guide](https://valmera.io/mcp/claude). That adds the editing tools without these bundled skills. Do not install another route just because an existing connection needs authentication.
 
