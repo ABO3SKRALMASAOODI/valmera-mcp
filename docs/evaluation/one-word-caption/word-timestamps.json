@@ -1,0 +1,19 @@
+{
+  "source": "https://valmera.io/examples/filler-word-cut/original.mp4",
+  "method": "Valmera get_words on the four-second public caption correction recording",
+  "unit": "seconds",
+  "words": [
+    {"word":"I","start":0,"end":0.32,"confidence":0.998},
+    {"word":"like","start":0.32,"end":0.56,"confidence":0.997},
+    {"word":"the","start":0.56,"end":0.72,"confidence":0.996},
+    {"word":"blue","start":0.72,"end":0.88,"confidence":0.997},
+    {"word":"label","start":0.88,"end":1.44,"confidence":0.997},
+    {"word":"and","start":1.44,"end":1.84,"confidence":0.492},
+    {"word":"use","start":1.84,"end":2.32,"confidence":0.954},
+    {"word":"the","start":2.32,"end":2.56,"confidence":0.999},
+    {"word":"green","start":2.56,"end":2.8,"confidence":1},
+    {"word":"one","start":2.8,"end":3.04,"confidence":1},
+    {"word":"for","start":3.04,"end":3.28,"confidence":0.997},
+    {"word":"print.","start":3.28,"end":3.68,"confidence":0.999}
+  ]
+}
