@@ -213,7 +213,7 @@ The skills are MIT-licensed Markdown instructions; the hosted editing service re
 With Node.js 22.20 or later, install the editing skill into the current project using the pinned [Skills CLI](https://github.com/vercel-labs/skills):
 
 ```sh
-npx skills@1.7.6 add ABO3SKRALMASAOODI/valmera-mcp@v1.0.1 --skill edit-video-with-valmera -a codex
+npx skills@1.7.6 add ABO3SKRALMASAOODI/valmera-mcp@v1.0.2 --skill edit-video-with-valmera -a codex
 ```
 
 Use `-a claude-code` or `-a cursor` for those clients. Select `turn-long-video-into-shorts` or `website-demo-video` instead when that matches the job. Then [connect and authenticate Valmera](https://valmera.io/mcp/setup). The skill prompts the assistant to discover current tool schemas, establish the scope and cost expectations, review a preview, and export the approved version.
