@@ -1,0 +1,7 @@
+1
+00:00:00,200 --> 00:00:01,450
+I like the blue label.
+
+2
+00:00:01,560 --> 00:00:03,730
+Um, use the green one for print.
