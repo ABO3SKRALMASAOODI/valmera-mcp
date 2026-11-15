@@ -6,6 +6,8 @@ An interview can become shorter while its meaning becomes less accurate. A usefu
 
 Published by Valmera · November 7, 2026. The paper edit below uses fictional speakers and timings. The source-based exercises use two interviews released by NASA Goddard in 2017.
 
+When the dialogue is approved, try holding the listener for a few frames as the answer starts. [Play the same exchange as a straight cut, J-cut and L-cut](INTERVIEW-SPLIT-EDITS.md) and compare the exported audio.
+
 ## Cut two interviews together and revise the ending
 
 In September 2017, Jim Garvin described what OSIRIS-REx would do at Bennu. Michelle Thaller explained how Earth’s gravity would help the spacecraft reach it. This assembly lets one scientist introduce the mission and the other explain the maneuver. Keep their separate recording names on every passage. [NASA Goddard source recordings and captions](https://svs.gsfc.nasa.gov/12713/)
