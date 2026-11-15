@@ -15,6 +15,8 @@ Published by Valmera · Updated November 14, 2026. The four-second exercise belo
 
 In a hosted Valmera MCP run on this clip, a transcript warning called the scripted “um” **“and.”** We supplied the two source intervals to keep, 0–1.56 and 1.88–4.00, with word snapping off. Reading back the saved timeline confirmed a 3.68-second program. The [downloadable reference MP4](https://valmera.io/examples/filler-word-cut/reference-cut.mp4) was prepared separately; it is a listening target, not the output of that run.
 
+If you need to remove a whole sentence and deliver an SRT, try the [four-second middle cut with expected subtitle times](SPEECH-CLEANUP-WORKSHEET.md#delete-one-sentence-and-check-the-subtitle-clock). It includes the original and shortened MP4s and both caption files.
+
 ### Check whether the speech moved by exactly eight frames
 
 If you have Python 3 and FFmpeg, download the two MP4s and [the audio check](evaluation/check_speech_cut.py) to the same folder. Run:
