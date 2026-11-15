@@ -17,6 +17,8 @@ For one source recording, ask Valmera for the approved source ranges and open th
 
 ## Inspect a recorded edit
 
+To choose between hosted and local editing in Claude, [compare four MP4 exports from Valmera and MakeMyClip](docs/VIDEO-EDITING-AGENTS.md#can-claude-revise-a-cut-and-export-an-mp4-locally-or-through-a-hosted-editor). Both editors shortened the same middle shot. The downloads and frame check show exactly where the closing shot moved.
+
 To see what changes in a single frame, open the [before-and-after video gallery](https://valmera.io/examples). Pause at 1.60 seconds and switch from automatic to corrected captions to inspect the word “um.” At 2.80 seconds, switch from the original to the B-roll cutaway to see which picture changed.
 
 | Your task | Open the recorded example | What you can inspect |
