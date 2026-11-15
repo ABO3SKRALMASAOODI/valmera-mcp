@@ -71,6 +71,31 @@ Play the downloaded file outside the editor, including its ending. In the record
 
 Record what happens in your run, including a blocked export. Do not quietly trim a difficult ending, switch plans or move to another application and describe the first attempt as successful. Corrections may produce a useful delivery; they also belong in the result.
 
+## Price a clip with separate subtitles
+
+Suppose a client buys eight interview clips a month and uploads the captions separately. Time how long it takes to deliver an approved MP4 **and** a subtitle file, including any retiming after the client changes the cut. A burned-in preview alone cannot tell you whether the platform will place the separate captions correctly.
+
+Try the handoff with a small public example before uploading a client interview. In the [four-second original](https://valmera.io/examples/filler-word-cut/original.mp4), the second caption starts at 1.56 seconds. The revised cut removes the first 1.25 seconds. Listen for “Um, use the green one for print,” then turn the separate subtitles on and off in your player. The cue should run from 0.31 to 2.48 seconds in the revised file.
+
+If you have FFmpeg installed, run these commands in an empty directory to check exactly what was delivered:
+
+```sh
+curl -fLo revised.mp4 https://valmera.io/examples/filler-word-cut/first-sentence-removed.mp4
+curl -fLo revised.srt https://valmera.io/examples/filler-word-cut/first-sentence-removed.srt
+ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 revised.mp4
+ffprobe -v error -select_streams s:0 -show_entries packet=pts_time,duration_time -of csv=p=0 revised.srt
+```
+
+The MP4 reports `2.750000` seconds. The subtitle packet reports `0.310000,2.170000` for start and duration. Add those numbers to get the 2.48-second end time. Play the pair together to judge the wording and sync. To repeat the test with a different cut, [use the free clip editor](https://valmera.io/tools/text-based-video-editing#free-trim) and compare its two downloads.
+
+| Record this for each editor | How to use it in the buying decision |
+| --- | --- |
+| Extra monthly fee for every seat that needs the export | Compare the actual invoice difference for the same billing term. |
+| Minutes spent fixing the final clip and its captions | Time both workflows on the same revision. Include checks and retries. |
+| Deliveries accepted per month | Count each approved pair once, including the work that went into rejected drafts. |
+
+For example, an extra $11 per month at a $30 hourly editing rate needs **22 minutes saved per month** to break even. Across eight accepted clips, that is **2 minutes 45 seconds per clip**. At four minutes saved per clip, the time is worth $16 per month, leaving $5 after the fee. Those are illustrative inputs. Use the [editing cost calculator](https://valmera.io/tools/video-editing-cost-calculator#calculator) for your own quotes, usage charges and review time.
+
 ## Fill the results after inspection
 
 Duplicate this table for each editor. Begin with **Not tested**. Use **Pass**, **Changes needed** or **Blocked** after inspecting the relevant artifact. Evaluate the requirements important to your work before choosing a winner.
