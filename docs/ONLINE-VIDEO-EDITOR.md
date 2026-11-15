@@ -6,6 +6,20 @@ For a quick manual trim with no media upload, investigate a local browser editor
 
 This guide is published by Valmera. It compares documented workflows, then provides a reusable [project-continuity trial record](ONLINE-EDITOR-TRIAL.txt). It is not a hands-on benchmark of the competing products. Sources were checked on 7 November 2026.
 
+## Join two clips locally and check the sound at the cut
+
+For a straight join, try the [Valmera browser clip merger](https://valmera.io/tools/merge-videos-online). The free tool accepts 2–12 files up to two minutes total. Choose the order, create the MP4 and play through each cut. The files stay on your device. The first clip sets the output shape. Other shots fit completely inside it, including clips recorded with a different orientation.
+
+The included test has a [four-second discussion](https://valmera.io/examples/filler-word-cut/original.mp4) and [two seconds of silent print swatches](https://valmera.io/examples/b-roll-cutaway/print-swatches.mp4). In the [downloaded six-second join](https://valmera.io/examples/b-roll-cutaway/merged-sequence.mp4), the voice ends before the swatches appear at 4.00 seconds. Move the swatches first and export again. You should now hear two seconds of silence before the discussion starts. Comparing a frame from either side of each boundary catches a misplaced shot. Listening to both sides catches sound that drifted or carried over.
+
+| Deliverable | What to ask for | What to inspect |
+| --- | --- | --- |
+| One file played end to end | Play the two source clips in order and keep the sound of each shot. | Six seconds in the sample. The cut is at 4.00 seconds, or 2.00 seconds after reversing the order. |
+| A detail shot during the same sentence | Cover the relevant phrase with the swatches and leave the original voice running. | The [recorded Valmera cutaway](https://valmera.io/tools/add-b-roll) retains a four-second program. The swatches appear during the sentence. |
+| A saved project for further AI revisions | Carry the shot order into Studio and upload the original clips before sending the brief. | The local tool transfers the written brief. Studio editing uses a subscription. Confirm the uploaded files and inspect the preview. |
+
+For a travel sequence, the [phone-clip editing guide](https://valmera.io/blog/edit-travel-video-from-phone-clips) works through the cut times for a market entrance, a tea pour and the cup reaching the table.
+
 ## Choose by the work you need to finish
 
 | Your priority | Route to investigate | Check before the full edit |
