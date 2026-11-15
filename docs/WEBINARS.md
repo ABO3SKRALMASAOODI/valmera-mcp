@@ -37,6 +37,20 @@ Use this planning request after replacing the brackets:
 
 This separates the editorial choice from execution. A sensible target length follows what the audience needs to understand.
 
+### Which AI clipper can use a four-hour webinar?
+
+Suppose you have an **8 GB, four-hour MP4 at 30 fps**. Your speaker answers a question at **03:20:00**, and you want a 45-second clip with captions. If you know where the answer is, you can narrow the work to a 40-minute section. If you need an editor to find it, first check how much of the original it can search.
+
+| Editor | Can it use this original to find the answer? | How to get the late answer into the edit |
+| --- | --- | --- |
+| OpusClip | The example fits its published local-file limits of 10 GB and 10 hours. Its help page also specifies whole-number frame rates. | Submit the original. Select 02:50:00–03:30:00 in the processing timeframe to search those 40 minutes. At the published rate, processing that range uses 40 credits. Processing all four hours uses 240. [Local upload limits](https://help.opus.pro/docs/article/local-file-uploads) · [Timeframe](https://help.opus.pro/docs/article/select-timeframe) · [Credit rules](https://help.opus.pro/docs/article/how-are-credits-consumed) |
+| Kapwing | The file exceeds its published 6 GB paid upload limit. Its upload guide also says it cannot process videos longer than two hours. A 45-second export target still leaves both source constraints. | Trim a copy locally to the 40-minute section and check its actual size against your plan before uploading. Kapwing lists the finished-video duration separately on its pricing page. [Upload guide](https://www.kapwing.com/help/upload/) · [Plan limits](https://www.kapwing.com/pricing) |
+| Valmera | The original fits the direct main-upload byte limit. Valmera indexes its first three hours, so the searchable portion ends 20 minutes before the answer. | Upload the 40-minute section as its own main recording. Ask the connected assistant for the answer at local 00:30:00, review the cut and request the approved MP4. Editing requires eligible paid access. Credit use depends on the work and revisions. [Live limits](https://valmera.io/api-backend/video/limits) · [Upload checker](https://valmera.io/tools/long-video-upload-checker) · [Plans](https://valmera.io/subscribe) · [Recorded MCP export](MCP-RECORDED-EDIT.md) |
+
+These routes use vendor documentation checked **15 November 2026**. The 8 GB file is a planning example. For a real event, take the size and frame rate from your recording and check the price or credit estimate shown for the selected interval.
+
+**Caption check.** A cue beginning at original 03:20:02.000 appears at 00:30:02.000 in the 40-minute section. If the finished clip begins at original 03:19:57.000 and runs continuously at normal speed, the same cue starts at **00:00:05.000** in the clip. If you remove a pause before the cue, subtract that pause as well. Review the exported clip with its final captions before posting.
+
 ### Find an answer after hour three
 
 Keep two timestamps for a late Q&A passage. One locates it in the original event. The other locates it in the section the assistant can edit. Studio accepts a main video within its byte limit and indexes its first three hours. A supporting video clip also needs to fit the duration limit. Read the [current direct-upload settings](https://valmera.io/api-backend/video/limits) before planning a large transfer.
