@@ -67,6 +67,20 @@ The resulting brief requests 0.84 seconds of picture from the supporting file, c
 
 Download the brief to share the file names and timings with an editor, or carry it into Studio. The free planner reads the clips locally. To run the AI edit, add those same two files to the intended project. If the main cut has since changed, find the phrase on its new timeline before applying the brief. This timing example illustrates the calculation. The four-second rendered sample above supplies separate evidence of an executed edit.
 
+### Compare exports from different AI video editors
+
+Use the [two-clip editing test](https://valmera.io/ai-video-editor#test-an-ai-video-editor) to download the synthetic narration and silent product clip. Give each editor the same brief, export the result, and open it beside the reference in your browser. Check the last waveform frame at 2.52 seconds, the first swatches at 2.56, the last swatches at 3.68 and the return at 3.72. Play through the whole sentence to hear whether the voice survives both cuts.
+
+For a review you can share with another editor, save the measurements as CSV. From the repository root, with Python 3 and FFmpeg on your path, run the following commands. Supply your own export in place of `my-export.mp4`. Align the first frame of the program with the beginning of the narration.
+
+```sh
+curl -fLO https://valmera.io/examples/filler-word-cut/original.mp4
+curl -fLO https://valmera.io/examples/b-roll-cutaway/preview.mp4
+python3 docs/evaluation/compare_cutaway_export.py original.mp4 preview.mp4 my-export.mp4 > cutaway-review.csv
+```
+
+The four picture rows compare corresponding RGB frames after resampling to 25 fps and 32 × 16 pixels. A difference of zero means the small frames match, on a scale from 0 to 255. A shifted cut, crop, letterbox or color change can all increase the difference. The audio row compares the original and delivered mono waveforms at equal times from 2.625 to 3.550 seconds. A correlation near one indicates similar waveform shape during that interval. Listen for volume changes and watch the full file, including any added ending.
+
 ## Move a sound effect onto the reveal frame
 
 At 25 fps, five frames last 0.200 seconds. In the four-second swatch example, the picture changes at 2.560 s. The first preview places a short library click at 2.760 s. To revise a cue like this in your own project:
