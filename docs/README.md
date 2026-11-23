@@ -42,6 +42,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Unwanted pauses or filler words | [Speech cleanup: compare controls, review joins and restore a pause](SPEECH-CLEANUP.md), with a [trial and repair worksheet](SPEECH-CLEANUP-WORKSHEET.md) |
 | Fan noise, hiss or distracting sound behind speech | [Compare noise-removal routes and review the exported audio](VIDEO-AUDIO-NOISE-REMOVAL.md), with a [listening and delivery worksheet](AUDIO-NOISE-REVIEW-WORKSHEET.md) |
 | Translate subtitles while keeping the original voice | [Compare translation routes and review a bilingual sample](SUBTITLE-TRANSLATION.md), with a [trial and delivery worksheet](SUBTITLE-TRANSLATION-WORKSHEET.md) |
+| دمج ترجمة عربية في فيديو | [فيديو MP4 وملف SRT لاختبار ترتيب النص العربي والإنجليزي](ARABIC-SUBTITLES-MP4.md) |
 | Recortar una entrevista por texto en español | [Editor en español con MP4 y SRT de ejemplo](RECORTAR-VIDEO-POR-SUBTITULOS.md) |
 | Spanish subtitles for an English software tutorial | [Worked handoff: visible labels, conditional instructions and a later cut](TUTORIAL-SUBTITLE-HANDOFF.md) |
 | One word is wrong but the voice is right | [Compare the first preview, corrected preview, audio and final MP4](CAPTION-REVISIONS.md#correct-a-single-misheard-word-and-verify-the-downloaded-video) |
