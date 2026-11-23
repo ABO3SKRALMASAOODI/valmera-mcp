@@ -163,6 +163,14 @@ ffmpeg -v error -ss 4.00 -i public-docs-walkthrough.mp4 -frames:v 1 after-click.
 
 For your own demo, write down the text or state that should appear after the action. If two controls share the same label, identify the visible navigation region and give the recorder a target within it. Review that short passage before asking for zooms or narration. On a signed-in dashboard, supply your own screen recording with demonstration data. Valmera’s public URL recorder starts in a separate browser session.
 
+## Check that every deliverable shows the same outcome
+
+Use the [demo delivery review sheet](examples/website-demo-delivery-check.csv). It includes two completed rows from the public recordings above and blank rows for a finished MP4, clickable walkthrough and written guide.
+
+First write down the exact result that proves the action worked. Review each output from its own starting state. For the MP4, log the time at which a viewer can read the changed screen. For a clickable walkthrough, take the documented path in an incognito tab and check the final state. For a guide, follow the steps in a demo account without watching the video. Write down where a viewer gets stuck even if the other outputs pass.
+
+When a product change affects one step, update every version a customer might use. Have a reviewer repeat the task from each published link. Check each version again when a page label, permission or menu location changes.
+
 ## Review and revise precisely
 
 - **Actions:** Did each intended click, scroll or page change happen in order?
