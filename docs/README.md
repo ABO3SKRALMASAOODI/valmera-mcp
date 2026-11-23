@@ -54,6 +54,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | A published walkthrough shows an old UI | [Replace the changed action and update the chapters](REFRESH-PUBLISHED-PRODUCT-DEMOS.md), with a [delivery sheet for live copies](DEMO-REFRESH-DELIVERY.csv) |
 | Hire a service to maintain a help-center video library | [Compare four providers with a five-video quote and one pilot](OUTSOURCE-HELP-CENTER-VIDEO-MAINTENANCE.md) |
 | Monter une capture d’écran en démonstration produit | [Guide en français avec deux aperçus comparables](DEMONSTRATION-PRODUIT-FR.md) |
+| Remove breaks from a webinar and correct chapter timestamps | [Retime chapters and verify them against an exported edit](RETIME-WEBINAR-CHAPTERS-AFTER-CUTS.md) |
 | Webinar replay and clips | [Webinar workflow](WEBINARS.md) and [vertical slide readability](SLIDE-READABILITY.md), plus a [replay publishing worksheet](WEBINAR-PUBLISHING-CHECK.md) |
 | Conference footage that needs a sponsor proof cut | [Compare event editors and plan the approval](CONFERENCE-SPONSOR-PROOF-VIDEO.md), with a [source and output timing sheet](CONFERENCE-SPONSOR-PROOF-DELIVERY.csv) |
 | YouTube video | [Editor routes, full-episode trial and chapter timing map](YOUTUBE.md), with a [reusable trial record](YOUTUBE-EDITOR-TRIAL.md) |
