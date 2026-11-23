@@ -1,0 +1,48 @@
+{
+  "example": "Reference comparison created from held Sintel trailer images and the same dialogue excerpt.",
+  "source": "docs/examples/two-speaker-portrait/single-speaker.mp4",
+  "width": 640,
+  "height": 360,
+  "fps": 25,
+  "durationSeconds": 2.4,
+  "pictureChangedAtSeconds": {
+    "startInclusive": 0.8,
+    "endExclusive": 1.6
+  },
+  "changedFrameIndicesZeroBased": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39
+  ],
+  "exports": {
+    "speaker-cut.mp4": {
+      "bytes": 69004,
+      "sha256": "58b1780e28dfacf534450700fd172bc94a401ebd6b9dc478012c5ac2d1d0b398",
+      "decodedPcmSha256": "4863c60df0a5e23b283135ef18ce6df778d36254db78c4e8c985ff4912a27f7f",
+      "frames": 60
+    },
+    "reaction-cut.mp4": {
+      "bytes": 66733,
+      "sha256": "cb5e0cc4968392d7d93845ff4f049d9f02bf6a62331b5766ec2e320b3417ced7",
+      "decodedPcmSha256": "4863c60df0a5e23b283135ef18ce6df778d36254db78c4e8c985ff4912a27f7f",
+      "frames": 60
+    }
+  }
+}
