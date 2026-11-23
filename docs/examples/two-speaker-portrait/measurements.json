@@ -1,0 +1,84 @@
+{
+  "sourceSha256": "34bbd52a4b89fdf63c8ace50b268da26653a59508288100cd3c23de276db7931",
+  "source": "Sintel trailer, Blender Foundation, CC BY 3.0",
+  "sourceAudioWindowsSeconds": [
+    [
+      11.9,
+      15.05
+    ],
+    [
+      18.525,
+      20.275
+    ]
+  ],
+  "audioOverlapSeconds": [
+    2.5,
+    3.15
+  ],
+  "stackedWindowSeconds": [
+    2.5,
+    3.2
+  ],
+  "comparisonFrameSeconds": 2.8,
+  "formats": {
+    "single-speaker.mp4": {
+      "bytes": 242481,
+      "durationSeconds": 5,
+      "frames": 150,
+      "width": 540,
+      "height": 960,
+      "fps": 30,
+      "audioPcmSha256": "bbda09433dc29ce69a06ca0eca2ee4f0d4e86867cfd3bdf5e4c9a4cc245257d3",
+      "sampledPanelMarkers": [
+        {
+          "timeSeconds": 2.4,
+          "visiblePanels": [
+            "question"
+          ]
+        },
+        {
+          "timeSeconds": 2.8,
+          "visiblePanels": [
+            "reply"
+          ]
+        },
+        {
+          "timeSeconds": 3.3,
+          "visiblePanels": [
+            "reply"
+          ]
+        }
+      ]
+    },
+    "stacked-on-overlap.mp4": {
+      "bytes": 306358,
+      "durationSeconds": 5,
+      "frames": 150,
+      "width": 540,
+      "height": 960,
+      "fps": 30,
+      "audioPcmSha256": "bbda09433dc29ce69a06ca0eca2ee4f0d4e86867cfd3bdf5e4c9a4cc245257d3",
+      "sampledPanelMarkers": [
+        {
+          "timeSeconds": 2.4,
+          "visiblePanels": [
+            "question"
+          ]
+        },
+        {
+          "timeSeconds": 2.8,
+          "visiblePanels": [
+            "question",
+            "reply"
+          ]
+        },
+        {
+          "timeSeconds": 3.3,
+          "visiblePanels": [
+            "reply"
+          ]
+        }
+      ]
+    }
+  }
+}

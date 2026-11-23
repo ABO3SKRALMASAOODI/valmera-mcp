@@ -38,6 +38,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Keep stock B-roll out of paid versions of a client edit | [Test the last frame and log approval by destination](APPROVE-B-ROLL-FOR-CLIENT-ADS.md) |
 | Choosing a talking-head editor | [Takehound vs Valmera and how to test a second episode](TAKEHOUND-VS-VALMERA.md) |
 | Podcast clips | [Compare ten clipping workflows and select a complementary clip set](PODCAST-CLIPS.md), with a [blank selection and delivery worksheet](PODCAST-CLIP-WORKSHEET.md) |
+| Both speakers talk at once in a vertical podcast clip | [Compare single-speaker and stacked views with the same audio](KEEP-BOTH-SPEAKERS-IN-VERTICAL-PODCAST-CLIPS.md) |
 | Outsource a recurring video podcast with a full edit and clips | [Compare five services and test a two-episode delivery and revision](OUTSOURCE-WEEKLY-VIDEO-PODCAST-EDITING.md) |
 | A long podcast needs a full episode and clips | [Run a 90-minute-source buyer pilot](EDIT-A-90-MINUTE-PODCAST.md) and [track all three exports](EPISODE-AND-CLIPS-DELIVERY.csv) |
 | Outsource highlight edits for a sports tournament | [Compare routes, scope a two-file pilot and price the delivery schedule](TOURNAMENT-HIGHLIGHT-EDITING-SERVICE.md) |
