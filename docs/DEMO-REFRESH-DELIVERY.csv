@@ -1,0 +1,4 @@
+surface,destination,previous_version,target_version,old_seconds,new_seconds,expected_screen_action,caption_check,owner,live_verified_at
+Help article chapter,https://example.com/help/invite,v1,v2,42,47,Open the invite form from Settings,Check captions at 47 seconds,Docs,
+Sales enablement timestamp,https://example.com/sales/invite,v1,v2,64,66,Confirmation appears after sending the invite,Check spoken confirmation and caption,Enablement,
+Course download,https://example.com/course/invite,v1,v2,,,Play the complete updated workflow from prompt to result,Check the new separate captions file,Training,

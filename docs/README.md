@@ -35,6 +35,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Recorded course lesson | [Compare search-result routes and preserve the teaching sequence](COURSE-LESSON-EDITING.md), with a [lesson trial and release worksheet](COURSE-LESSON-REVIEW.md) |
 | Website demonstration | [Plan and make a website demo](WEBSITE-DEMO.md) |
 | Outsource recurring SaaS launch edits | [Compare providers, review dates and final deliverables](SAAS-DEMO-EDITING-SERVICES.md) |
+| A published walkthrough shows an old UI | [Replace the changed action and update the chapters](REFRESH-PUBLISHED-PRODUCT-DEMOS.md), with a [delivery sheet for live copies](DEMO-REFRESH-DELIVERY.csv) |
 | Monter une capture d’écran en démonstration produit | [Guide en français avec deux aperçus comparables](DEMONSTRATION-PRODUIT-FR.md) |
 | Webinar replay and clips | [Webinar workflow](WEBINARS.md) and [vertical slide readability](SLIDE-READABILITY.md), plus a [replay publishing worksheet](WEBINAR-PUBLISHING-CHECK.md) |
 | YouTube video | [Editor routes, full-episode trial and chapter timing map](YOUTUBE.md), with a [reusable trial record](YOUTUBE-EDITOR-TRIAL.md) |
