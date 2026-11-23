@@ -1,0 +1,11 @@
+example_id,source_id,deliverable,example_source_ranges,previous_file,release_file,status,review_seconds,release_check
+A-00,A,Full episode,As edited,A-master-v1.mp4,A-master-v2.mp4,Replace,2400,Open v2 and verify correction in audio and captions
+A-01,A,Captioned vertical clip,00:02:15-00:03:00,,A-01-v1.mp4,Keep approved,45,Confirm unrelated interval
+A-02,A,Captioned vertical clip,00:09:32-00:10:17,A-02-v1.mp4,A-02-v2.mp4,Replace,45,Open v2 and verify wording and context
+A-03,A,Captioned vertical clip,00:18:00-00:18:45,,A-03-v1.mp4,Keep approved,45,Confirm unrelated interval
+A-04,A,Captioned vertical clip,00:30:44-00:31:29,,A-04-v1.mp4,Keep approved,45,Confirm unrelated interval
+B-00,B,Full episode,As edited,,B-master-v1.mp4,Keep approved,2400,Check delivery stays on schedule
+B-01,B,Captioned vertical clip,00:03:22-00:04:07,,B-01-v1.mp4,Keep approved,45,Confirm approved master and correct captions
+B-02,B,Captioned vertical clip,00:10:19-00:11:04,,B-02-v1.mp4,Keep approved,45,Confirm approved master and correct captions
+B-03,B,Captioned vertical clip,00:21:14-00:21:59,,B-03-v1.mp4,Keep approved,45,Confirm approved master and correct captions
+B-04,B,Captioned vertical clip,00:39:25-00:40:10,,B-04-v1.mp4,Keep approved,45,Confirm approved master and correct captions
