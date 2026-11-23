@@ -1,0 +1,54 @@
+{
+  "scope": "Locally rendered teaching ads with fictional offers. No ads purchased or run. This is not Valmera product output.",
+  "fps": 25,
+  "aspectRatio": "9:16",
+  "openingEndTimeSeconds": 2.0,
+  "comparedFromFrame": 50,
+  "lastFrame": 149,
+  "files": {
+    "hook-a": {
+      "decodedFrames": 150,
+      "durationSeconds": 6.0,
+      "changedFramesAfterHook": [],
+      "sha256": "3e37048e0eb09ad6a9e13b0b6f470e68831ad5aab26ea65dd9256c5ed70dd610"
+    },
+    "hook-b": {
+      "decodedFrames": 150,
+      "durationSeconds": 6.0,
+      "changedFramesAfterHook": [],
+      "sha256": "e2e7a7a081ace4e21f18f752b5c684011a38a354cc93551d661a6d8b4d330fee"
+    },
+    "hook-b-changed-offer": {
+      "decodedFrames": 150,
+      "durationSeconds": 6.0,
+      "changedFramesAfterHook": [
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124
+      ],
+      "sha256": "bac1e61fbcffd3c2915dc447470186d75850f81f9178087365ddfdf929e63a44"
+    }
+  }
+}

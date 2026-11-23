@@ -62,6 +62,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | YouTube video | [Editor routes, full-episode trial and chapter timing map](YOUTUBE.md), with a [reusable trial record](YOUTUBE-EDITOR-TRIAL.md) |
 | Property walkthrough | [Compare editing routes, map the rooms and review a restoration](REAL-ESTATE-SHOT-MAP.md), with a [shared property trial record](REAL-ESTATE-EDITOR-TRIAL.md) |
 | Product footage with an expired offer | [Recorded offer-removal example, with before/after exports](PRODUCT-OFFER-REMOVAL-EXAMPLE.md) and the [ecommerce planning guide](https://valmera.io/use-cases/ecommerce) |
+| Compare two ad hooks while preserving the approved offer | [Play the three exports and scope a hook-only revision](PAID-SOCIAL-HOOK-TEST-FROM-EXISTING-FOOTAGE.md) |
 | Outsource recurring paid-social ads from creator footage | [Compare UGC editors with one six-file pilot](OUTSOURCE-UGC-AD-VARIANTS.md) and [track each approved export](UGC-AD-VARIANT-DELIVERY.csv) |
 | Batch edit product demos with different waits | [Run a two-source pilot and inspect the two equal-length exports](BATCH-AI-VIDEO-EDITING-PRODUCT-DEMO-PILOT.md) |
 | Several recordings with one style | [Batch editing: pilot, source-specific notes and delivery tracking](BATCH-VIDEO-EDITING.md) |
