@@ -33,6 +33,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | B-roll over an exact phrase | [Compare placement workflows and check four frames in the export](OWN-FOOTAGE-B-ROLL-CUTAWAY-TEST.md) |
 | Choosing a talking-head editor | [Takehound vs Valmera and how to test a second episode](TAKEHOUND-VS-VALMERA.md) |
 | Podcast clips | [Compare ten clipping workflows and select a complementary clip set](PODCAST-CLIPS.md), with a [blank selection and delivery worksheet](PODCAST-CLIP-WORKSHEET.md) |
+| A long podcast needs a full episode and clips | [Run a 90-minute-source buyer pilot](EDIT-A-90-MINUTE-PODCAST.md) and [track all three exports](EPISODE-AND-CLIPS-DELIVERY.csv) |
 | Highlight reels from existing footage | [FullVideoTools vs Valmera and a test for a quiet must-keep moment](FULLVIDEOTOOLS-VS-VALMERA-HIGHLIGHT-REELS.md) |
 | Revise one clip in an approved batch | [Check unchanged MP4s locally and review the replacement](PODCAST-CLIP-BATCH-REVIEW.md) |
 | Screen recording or software tutorial | [Preserve the starting state, action and result](SCREEN-RECORDING-TUTORIALS.md) |

@@ -1,0 +1,5 @@
+Source file,Source duration,Deliverable,Output format,Approved master version,Output version,Source anchor,Output anchor,What must remain or change,Transfer minutes,Preparation minutes,Active review minutes,Correction rounds,Elapsed minutes to approval,Downloaded file,Approval status
+sample-episode.mp4,01:30:00,Full episode,16:9 MP4,Episode v2,Episode v2,01:21:00,01:09:28,Late answer and its qualifying sentence,,,,,,sample-episode-v2.mp4,Worked example
+sample-episode.mp4,01:30:00,Early explanation,9:16 MP4,Episode v2,Short A v1,00:11:45,00:00:18,Keep the exception that follows the main claim,,,,,,sample-short-a-v1.mp4,Worked example
+sample-episode.mp4,01:30:00,Late answer,9:16 MP4,Episode v2,Short B v2,01:21:00,00:00:14,Tighten open while keeping the question and the first correct word,,,,,,sample-short-b-v2.mp4,Worked example
+,,,,,,,,,,,,,,,
