@@ -39,6 +39,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Hire a service to maintain a help-center video library | [Compare four providers with a five-video quote and one pilot](OUTSOURCE-HELP-CENTER-VIDEO-MAINTENANCE.md) |
 | Monter une capture d’écran en démonstration produit | [Guide en français avec deux aperçus comparables](DEMONSTRATION-PRODUIT-FR.md) |
 | Webinar replay and clips | [Webinar workflow](WEBINARS.md) and [vertical slide readability](SLIDE-READABILITY.md), plus a [replay publishing worksheet](WEBINAR-PUBLISHING-CHECK.md) |
+| Conference footage that needs a sponsor proof cut | [Compare event editors and plan the approval](CONFERENCE-SPONSOR-PROOF-VIDEO.md), with a [source and output timing sheet](CONFERENCE-SPONSOR-PROOF-DELIVERY.csv) |
 | YouTube video | [Editor routes, full-episode trial and chapter timing map](YOUTUBE.md), with a [reusable trial record](YOUTUBE-EDITOR-TRIAL.md) |
 | Property walkthrough | [Compare editing routes, map the rooms and review a restoration](REAL-ESTATE-SHOT-MAP.md), with a [shared property trial record](REAL-ESTATE-EDITOR-TRIAL.md) |
 | Product footage with an expired offer | [Recorded offer-removal example, with before/after exports](PRODUCT-OFFER-REMOVAL-EXAMPLE.md) and the [ecommerce planning guide](https://valmera.io/use-cases/ecommerce) |

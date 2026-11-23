@@ -1,0 +1,5 @@
+deliverable_id,format,source_asset,source_in,source_out,output_in,output_out,expected_evidence,approver,caption_check,approved_version
+SPONSOR-A,16x9,stage_A.mp4,00:14:18,00:14:25,00:00:06,00:00:13,Full spoken acknowledgement,Sponsor,Check approved sponsor and speaker spelling,
+SPONSOR-A,16x9,roaming_B.mp4,00:02:31,00:02:36,00:00:16,00:00:21,Wide shot links placement to this event,Sponsor,Check shot and graphic leave captions readable,
+RECAP-01,16x9,roaming_B.mp4,00:02:31,00:02:36,00:00:11,00:00:16,Wide shot gives context for the session,Event producer,Confirm speaker and event names,
+SOCIAL-01,9x16,stage_A.mp4,00:16:04,00:16:27,00:00:00,00:00:23,Speaker gives a complete takeaway,Speaker reviewer,Check name and caption crop on phone,
