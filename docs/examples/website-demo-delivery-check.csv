@@ -1,0 +1,6 @@
+run,deliverable,starting_state,required_action,expected_result,evidence_time,observed_result,decision,evidence_url
+"Valmera capture attempt 1","Raw MP4","Getting Started","Open Captions from the sidebar","Captions page heading visible","10.00 s","Getting Started remains visible after scrolling","Redo capture","https://valmera.io/examples/website-capture/first-attempt.mp4#t=10"
+"Valmera capture attempt 3","Raw MP4","Getting Started","Open Captions from the sidebar","Captions page heading visible","3.57 s click / 4.00 s result","The destination heading reads AI Captions: Edit Text, Timing & Styles in Valmera","Ready for editing","https://valmera.io/examples/website-capture/public-docs-walkthrough.mp4#t=3.50"
+,"Finished MP4",,,,,,,
+,"Clickable walkthrough",,,,,,,
+,"Written guide",,,,,,,
