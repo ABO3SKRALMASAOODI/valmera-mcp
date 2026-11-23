@@ -1,0 +1,125 @@
+{
+  "source": "https://valmera.io/tools/ai-slideshow-maker#photo-sequence",
+  "action": "Move photo 3 earlier",
+  "coordinateBasis": "CSS pixels from the document origin. Photo box dimensions reflect images including black padding.",
+  "control": "Desktop Chromium in a clean browser context. Narrow portrait is a responsive viewport, without emulating a phone.",
+  "testedOn": "2026-11-23",
+  "layouts": [
+    {
+      "layout": "desktop",
+      "viewportCssPixels": {
+        "width": 1280,
+        "height": 800
+      },
+      "documentWidthCssPixels": 1280,
+      "before": {
+        "photos": [
+          {
+            "name": "Earthrise",
+            "seconds": 2,
+            "x": 313,
+            "y": 760,
+            "width": 193
+          },
+          {
+            "name": "Bootprint",
+            "seconds": 3,
+            "x": 544,
+            "y": 760,
+            "width": 193
+          },
+          {
+            "name": "Lunar module",
+            "seconds": 1,
+            "x": 774,
+            "y": 760,
+            "width": 193
+          }
+        ]
+      },
+      "after": {
+        "photos": [
+          {
+            "name": "Earthrise",
+            "seconds": 2,
+            "x": 313,
+            "y": 760,
+            "width": 193
+          },
+          {
+            "name": "Lunar module",
+            "seconds": 1,
+            "x": 544,
+            "y": 760,
+            "width": 193
+          },
+          {
+            "name": "Bootprint",
+            "seconds": 3,
+            "x": 774,
+            "y": 760,
+            "width": 193
+          }
+        ]
+      }
+    },
+    {
+      "layout": "portrait",
+      "viewportCssPixels": {
+        "width": 390,
+        "height": 844
+      },
+      "documentWidthCssPixels": 390,
+      "before": {
+        "photos": [
+          {
+            "name": "Earthrise",
+            "seconds": 2,
+            "x": 35,
+            "y": 958,
+            "width": 320
+          },
+          {
+            "name": "Bootprint",
+            "seconds": 3,
+            "x": 35,
+            "y": 1381,
+            "width": 320
+          },
+          {
+            "name": "Lunar module",
+            "seconds": 1,
+            "x": 35,
+            "y": 1805,
+            "width": 320
+          }
+        ]
+      },
+      "after": {
+        "photos": [
+          {
+            "name": "Earthrise",
+            "seconds": 2,
+            "x": 35,
+            "y": 958,
+            "width": 320
+          },
+          {
+            "name": "Lunar module",
+            "seconds": 1,
+            "x": 35,
+            "y": 1381,
+            "width": 320
+          },
+          {
+            "name": "Bootprint",
+            "seconds": 3,
+            "x": 35,
+            "y": 1805,
+            "width": 320
+          }
+        ]
+      }
+    }
+  ]
+}
