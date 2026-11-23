@@ -38,6 +38,7 @@
 - [Turn an interview into shorts](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/PODCAST-CLIPS.md): Select a complete exchange, preserve the speaker's meaning, and review each short's crop and captions.
 - [Correct subtitle drift](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/SUBTITLE-SYNC-EXAMPLE.md): Use two known cue times to correct scale and offset. Check a third cue independently.
 - [Hand a rough cut to a human editor](https://valmera.io/blog/ai-rough-cut-to-editable-timeline): Open a single-source picture cut in Shotcut or download a CMX edit list with the original media.
+- [Compare editing services for recurring SaaS product demo videos](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/SAAS-DEMO-EDITING-SERVICES.md): Compare documented delivery steps for ContentBeta, Shootsta, Video Husky and Valmera Enterprise using the same brief for master walkthroughs, cutdowns and updates.
 - [More editing workflows](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/README.md): Browse guides for tutorials, real estate, courses, YouTube and other recording types.
 
 ## Connect an assistant
