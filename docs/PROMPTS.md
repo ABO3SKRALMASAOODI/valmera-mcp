@@ -6,6 +6,8 @@ These requests are for **footage you already have**. Use them in [Valmera Studio
 
 [Build a brief interactively](https://valmera.io/prompts?utm_source=github&utm_medium=docs&utm_campaign=editing_prompts#prompt-builder) · [Download the first-edit, revision and export templates](PROMPT-HANDOFF.txt) · [Inspect recorded examples](#three-requests-with-recorded-evidence)
 
+To choose an editor, use the [comparison of AI video editors that take text prompts](COMPARE-PROMPT-BASED-VIDEO-EDITORS.md) and run the same first cut and revision on each candidate.
+
 ## Choose your starting point
 
 | Your next decision | Go directly to |
