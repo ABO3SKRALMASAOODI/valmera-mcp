@@ -1,0 +1,31 @@
+{
+  "inputBandsNits": [
+    18,
+    100,
+    400,
+    1000
+  ],
+  "framesPerClip": 120,
+  "sourceSamples": [
+    369,
+    509,
+    636,
+    723
+  ],
+  "retaggedSamples": [
+    369,
+    509,
+    636,
+    723
+  ],
+  "toneMappedSamples": [
+    493,
+    802,
+    913,
+    940
+  ],
+  "sourceRetaggedPixelsIdentical": true,
+  "sourceTags": "hevc (Main 10) (hvc1 / 0x31637668), yuv420p10le(tv, bt2020nc/bt2020/smpte2084, progressive), 640x360, 17 kb/s, 30 fps, 30 tbr, 15360 tbn (default)",
+  "retaggedTags": "hevc (Main 10) (hvc1 / 0x31637668), yuv420p10le(tv, bt709, progressive), 640x360, 17 kb/s, 30 fps, 30 tbr, 15360 tbn (default)",
+  "toneMappedTags": "hevc (Main 10) (hvc1 / 0x31637668), yuv420p10le(tv, bt709, progressive), 640x360, 19 kb/s, 30 fps, 30 tbr, 15360 tbn (default)"
+}
