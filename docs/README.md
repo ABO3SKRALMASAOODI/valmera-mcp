@@ -32,6 +32,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Weekly talking-head recordings | [Two-recording editor pilot and timed cutaway](WEEKLY-TALKING-HEAD-EDITOR-PILOT.md) |
 | Choosing a talking-head editor | [Takehound vs Valmera and how to test a second episode](TAKEHOUND-VS-VALMERA.md) |
 | Podcast clips | [Compare ten clipping workflows and select a complementary clip set](PODCAST-CLIPS.md), with a [blank selection and delivery worksheet](PODCAST-CLIP-WORKSHEET.md) |
+| Highlight reels from existing footage | [FullVideoTools vs Valmera and a test for a quiet must-keep moment](FULLVIDEOTOOLS-VS-VALMERA-HIGHLIGHT-REELS.md) |
 | Revise one clip in an approved batch | [Check unchanged MP4s locally and review the replacement](PODCAST-CLIP-BATCH-REVIEW.md) |
 | Screen recording or software tutorial | [Preserve the starting state, action and result](SCREEN-RECORDING-TUTORIALS.md) |
 | Choosing a product-demo editor | [Cubix vs Valmera for an uploaded recording or public URL](CUBIX-VS-VALMERA-PRODUCT-DEMOS.md) |
