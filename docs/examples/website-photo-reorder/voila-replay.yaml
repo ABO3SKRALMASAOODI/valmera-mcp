@@ -1,0 +1,7 @@
+- action: hover
+  selector: "button[aria-label='Move photo 3 earlier']"
+  caption: "Move Lunar module one position earlier"
+- action: click
+  selector: "button[aria-label='Move photo 3 earlier']"
+- action: wait
+  ms: 2500
