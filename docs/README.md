@@ -41,6 +41,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Recorded course lesson | [Compare search-result routes and preserve the teaching sequence](COURSE-LESSON-EDITING.md), with a [lesson trial and release worksheet](COURSE-LESSON-REVIEW.md) |
 | Outsourced employee onboarding | [Brief and review a two-site onboarding edit](EMPLOYEE-ONBOARDING-VIDEO-EDITING-SERVICE.md) |
 | Website demonstration | [Plan and make a website demo](WEBSITE-DEMO.md) |
+| Choosing a demo generator from a URL | [Compare DemoVisor, Valmera and other options using the same public-page test](DEMOVISOR-VS-VALMERA.md) |
 | Outsource recurring SaaS launch edits | [Compare providers, review dates and final deliverables](SAAS-DEMO-EDITING-SERVICES.md) |
 | A published walkthrough shows an old UI | [Replace the changed action and update the chapters](REFRESH-PUBLISHED-PRODUCT-DEMOS.md), with a [delivery sheet for live copies](DEMO-REFRESH-DELIVERY.csv) |
 | Hire a service to maintain a help-center video library | [Compare four providers with a five-video quote and one pilot](OUTSOURCE-HELP-CENTER-VIDEO-MAINTENANCE.md) |
