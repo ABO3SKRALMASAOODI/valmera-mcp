@@ -1,0 +1,31 @@
+{
+  "url": "https://valmera.io/tools/record-website-demo#start-demo",
+  "viewport": {
+    "height": 800,
+    "width": 1200
+  },
+  "submitted": false,
+  "stages": [
+    {
+      "name": "01-blank",
+      "address": "",
+      "invalid": false,
+      "canContinue": false,
+      "hint": "Enter a domain or a full link. We’ll carry it through sign-in so you can review it in Studio before starting the recording."
+    },
+    {
+      "name": "02-invalid",
+      "address": "not a url",
+      "invalid": false,
+      "canContinue": true,
+      "hint": "Enter a domain or a full link. We’ll carry it through sign-in so you can review it in Studio before starting the recording."
+    },
+    {
+      "name": "03-example-domain",
+      "address": "https://example.com",
+      "invalid": false,
+      "canContinue": true,
+      "hint": "Enter a domain or a full link. We’ll carry it through sign-in so you can review it in Studio before starting the recording."
+    }
+  ]
+}

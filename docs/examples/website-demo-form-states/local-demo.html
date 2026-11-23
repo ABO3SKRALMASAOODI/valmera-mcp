@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; form-action 'none'; base-uri 'none'">
+<title>Website address demo with no submission</title>
+<style>
+  body { margin: 0; background: #f2f5f8; color: #202a38; font: 16px/1.55 system-ui, sans-serif; }
+  main { box-sizing: border-box; width: calc(100% - 32px); max-width: 620px; margin: 12vh auto; padding: clamp(20px, 5vw, 40px); background: white; border: 1px solid #cdd8e5; border-radius: 16px; }
+  h1 { margin: 0 0 8px; font-size: clamp(25px, 6vw, 36px); line-height: 1.15; }
+  p { margin: 0 0 18px; }
+  label { display: block; font-weight: 650; }
+  input, button { box-sizing: border-box; padding: 10px 12px; border-radius: 8px; font: inherit; }
+  input { width: 100%; border: 1px solid #7c8b9c; margin: 6px 0; }
+  input[aria-invalid="true"] { border-color: #a62626; }
+  [aria-invalid="true"] + p { color: #a62626; }
+  button { background: #1d4d79; border: 1px solid #1d4d79; color: #fff; font-weight: 650; }
+  button:disabled { background: #e4e8ed; border-color: #b3bcc8; color: #475569; }
+</style>
+<main>
+  <h1>Prepare a website walkthrough</h1>
+  <p>This local demo checks an example address on your device. It sends nothing.</p>
+  <label for="address">Website address</label>
+  <input id="address" type="url" autocomplete="off" spellcheck="false" placeholder="https://example.com" aria-describedby="status" required>
+  <p id="status" role="status">Enter an HTTPS address.</p>
+  <button id="preview" type="button" disabled>Preview example</button>
+</main>
+<script>
+  const address = document.getElementById('address');
+  const status = document.getElementById('status');
+  const preview = document.getElementById('preview');
+
+  address.addEventListener('input', () => {
+    const empty = address.value.trim() === '';
+    const ready = address.validity.valid && address.value.startsWith('https://');
+    address.setAttribute('aria-invalid', String(!empty && !ready));
+    preview.disabled = !ready;
+    status.textContent = ready ? 'Address format accepted.' : empty ? 'Enter an HTTPS address.' : 'Use a full HTTPS address, such as https://example.com.';
+  });
+
+  preview.addEventListener('click', () => {
+    status.textContent = 'Local preview ready. No data was sent.';
+  });
+</script>
