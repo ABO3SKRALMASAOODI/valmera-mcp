@@ -1,0 +1,80 @@
+{
+  "fps": 30,
+  "deletedSourceFramesInclusive": [
+    75,
+    119
+  ],
+  "deletedSourceIntervalSecondsStartInclusiveEndExclusive": [
+    2.5,
+    4.0
+  ],
+  "comparisonFrameInShortExports": 90,
+  "outputs": {
+    "full-pause.mp4": {
+      "durationSeconds": 7.6,
+      "frames": 228,
+      "firstCloseUpFrame": 126,
+      "lastCloseUpFrame": 181,
+      "sha256": "2ba6cdd92dcd7285990cc518c1a66524a71b177b35f11fd3e87d2d307f41d57b",
+      "decodedPCM16Sha256": "3679e4b4287af719b0b07d27686d6e6746e1b6ed63c96d47972c07965c597fa9",
+      "detectedSilenceIntervalsSeconds": [
+        [
+          0.0,
+          0.256188
+        ],
+        [
+          2.173375,
+          4.227542
+        ],
+        [
+          6.025479,
+          7.616
+        ]
+      ]
+    },
+    "stale-cutaway.mp4": {
+      "durationSeconds": 6.1,
+      "frames": 183,
+      "firstCloseUpFrame": 126,
+      "lastCloseUpFrame": 181,
+      "sha256": "475a33f36b2b4bbd9e85b608accd72e0ca188c21caea543a713f5c1b16c3954f",
+      "decodedPCM16Sha256": "3db3d1930ee59a64511920ea42783dbf7c68dbfca3a0d173e7f1f7de3d6db0de",
+      "detectedSilenceIntervalsSeconds": [
+        [
+          0.0,
+          0.256188
+        ],
+        [
+          2.173375,
+          2.7265
+        ],
+        [
+          4.5255,
+          6.101333
+        ]
+      ]
+    },
+    "synced-cutaway.mp4": {
+      "durationSeconds": 6.1,
+      "frames": 183,
+      "firstCloseUpFrame": 81,
+      "lastCloseUpFrame": 136,
+      "sha256": "383c5706a810bc039eb1fddc252088146dc01e4625bc71c4e49984a1c6b8fbf6",
+      "decodedPCM16Sha256": "3db3d1930ee59a64511920ea42783dbf7c68dbfca3a0d173e7f1f7de3d6db0de",
+      "detectedSilenceIntervalsSeconds": [
+        [
+          0.0,
+          0.256188
+        ],
+        [
+          2.173375,
+          2.7265
+        ],
+        [
+          4.5255,
+          6.101333
+        ]
+      ]
+    }
+  }
+}
