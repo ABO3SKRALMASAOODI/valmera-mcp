@@ -1,0 +1,23 @@
+{
+  "channels": 1,
+  "sampleRateHz": 48000,
+  "bitsPerSample": 16,
+  "samplesPerFile": 144000,
+  "durationSeconds": 3,
+  "joinSeconds": 1.5,
+  "changedWindowSeconds": [
+    1.49,
+    1.51
+  ],
+  "identicalOutsideWindow": true,
+  "hardJoin": {
+    "adjacentStepAtJoinCounts": 14336,
+    "maxAdjacentStepInWindowCounts": 14336,
+    "maxAdjacentStepInWindowPercentFullScale": 43.7513
+  },
+  "smoothedJoin": {
+    "adjacentStepAtJoinCounts": 57,
+    "maxAdjacentStepInWindowCounts": 151,
+    "maxAdjacentStepInWindowPercentFullScale": 0.4608
+  }
+}

@@ -44,6 +44,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Highlight reels from existing footage | [FullVideoTools vs Valmera and a test for a quiet must-keep moment](FULLVIDEOTOOLS-VS-VALMERA-HIGHLIGHT-REELS.md) |
 | Replace your podcast clip editor and deliver a separate SRT | [Reap alternatives with a playable MP4/SRT handoff test](REAP-ALTERNATIVES-CAPTION-HANDOFF.md) |
 | Podcast captions flash by too fast | [Compare the same clip and words before and after retiming](FIX-FAST-CAPTIONS-IN-PODCAST-CLIPS.md) |
+| A podcast cut leaves a click at the join | [Listen to two same-length WAVs and check what changed](FIX-AN-AUDIO-CLICK-AT-A-VIDEO-CUT.md) |
 | Revise one clip in an approved batch | [Check unchanged MP4s locally and review the replacement](PODCAST-CLIP-BATCH-REVIEW.md) |
 | Customer testimonial from a recorded interview | [Compare AI editors with an approved-quote test and two playable cuts](CUSTOMER-TESTIMONIAL-VIDEO-EDITORS.md) |
 | Screen recording or software tutorial | [Preserve the starting state, action and result](SCREEN-RECORDING-TUTORIALS.md) |
