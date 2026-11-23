@@ -73,6 +73,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Hire a service to maintain a help-center video library | [Compare four providers with a five-video quote and one pilot](OUTSOURCE-HELP-CENTER-VIDEO-MAINTENANCE.md) |
 | Monter une capture d’écran en démonstration produit | [Guide en français avec deux aperçus comparables](DEMONSTRATION-PRODUIT-FR.md) |
 | Remove breaks from a webinar and correct chapter timestamps | [Retime chapters and verify them against an exported edit](RETIME-WEBINAR-CHAPTERS-AFTER-CUTS.md) |
+| A long webinar needs a separate MP4 for each selected topic | [Check two source ranges and plan a repeatable delivery](EXPORT-SEPARATE-TOPIC-VIDEOS-FROM-A-WEBINAR.md) |
 | Webinar replay and clips | [Webinar workflow](WEBINARS.md) and [vertical slide readability](SLIDE-READABILITY.md), plus a [replay publishing worksheet](WEBINAR-PUBLISHING-CHECK.md) |
 | A separate microphone falls out of sync in a long recording | [Two-hour fixture, diagnosis and export verification](FIX-AUDIO-DRIFT-IN-LONG-RECORDINGS.md) |
 | A phone HDR edit needs an SDR Rec.709 MP4 | [Test whether the export converted the picture or only changed its tags](CHECK-HDR-TO-SDR-PHONE-VIDEO-EXPORT.md) |

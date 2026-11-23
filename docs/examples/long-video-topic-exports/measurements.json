@@ -1,0 +1,25 @@
+{
+  "sourceDurationSeconds": 955.46,
+  "sourceFileSha256": "9ee7749bcfd742ec1e8f2b0e75232126c1f3e54e14d79e356cfda5e3b46ca4a6",
+  "frameRate": "30000/1001",
+  "source": "https://svs.gsfc.nasa.gov/97/",
+  "samplePurpose": "Silent reference excerpts for checking timestamp boundaries.",
+  "exports": {
+    "ozone-sample.mp4": {
+      "startFrame": 3600,
+      "endFrameExclusive": 3720,
+      "durationSeconds": 4.004,
+      "decodedFrames": 120,
+      "sha256": "808ed60ad370cef925f5c79351a0b785dee81a864e8a7a2ae8296b28bdc278eb",
+      "sizeBytes": 27928
+    },
+    "galaxy-sample.mp4": {
+      "startFrame": 21600,
+      "endFrameExclusive": 21720,
+      "durationSeconds": 4.004,
+      "decodedFrames": 120,
+      "sha256": "6f27f201f664009a01b73d47fa77293e6a6033677f9c1915945bfbbde3abe86e",
+      "sizeBytes": 44838
+    }
+  }
+}
