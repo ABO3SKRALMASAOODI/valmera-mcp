@@ -41,3 +41,21 @@ For a pilot, choose two clips with a shared change after first review, such as r
 [Estimate your software and review budget](https://valmera.io/tools/video-editing-cost-calculator?utm_source=github.com&utm_medium=referral&utm_campaign=editing_service_capacity_quote#calculator) if you are comparing self-serve and done-for-you editing. Use the same definition of an accepted video for each route.
 
 [Send Valmera Enterprise your editing queue](https://valmera.io/subscribe?inquiry=video-editing-service&utm_source=github.com&utm_medium=referral&utm_campaign=editing_service_capacity_quote#enterprise) if you need recurring delivery. Include your normal and peak volumes, the next deadline and the person who will approve the pilot.
+
+## Quote a recurring batch of 48 training videos
+
+For an illustrative four-week rollout, 48 two-minute lessons means **12 approved videos and 24 finished minutes per week**. Send the provider your normal and longest raw takes as examples. Confirm which days footage arrives, how many first cuts the provider sends in parallel, and who owns final approval. On a holiday week, agree whether the same volume moves earlier or carries into the following week.
+
+| What to put in the quote | How to test it in a two-lesson pilot |
+| --- | --- |
+| First-cut and final deadlines for each weekly batch | Send a typical talking-head lesson and one with a screen insert. Log when first cuts arrive, when you return notes and when you receive both accepted files. Ask the provider for a schedule covering all 12. |
+| Revision rounds and whether drafts waiting on notes occupy an editing slot | Request one shared terminology or lower-third correction after the first review. Check both revisions and confirm whether other lessons can keep moving while notes are open. |
+| Caption format and review | Specify separate SRT or WebVTT, burned-in captions, or both. Supply a short term list. Compare the revised track to the approved version and listen at every changed cue. [Try a wording-only SRT example](https://valmera.io/tools/compare-srt-files). |
+| Master and learning-platform deliverables | Request a 4K master where source footage supports it and specify a separate web copy if your platform needs one. Open the downloaded files, check their pixel dimensions and test one lesson in the actual learner player. |
+| Visual and audio consistency | Check the same title, logo placement, speech level and headroom on both lessons. Keep the approved examples and the versioned glossary with the next batch. |
+
+Reserve reviewer time as well as editing capacity. If each lesson takes eight minutes for the first review and four for the revised delivery, 12 lessons need **2 hours and 24 minutes of reviewer time per week**. Add time for any subject-matter approvals. Use measured review times from your pilot for the next estimate.
+
+> We need 12 approved two-minute training lessons each week for four delivery weeks. We will send recorded takes, slides, a graphics example and a term list together. Please quote a two-lesson pilot, then show the weekly schedule for first cuts, notes and final files. Tell us how waiting for reviewer notes affects your queue, which revision rounds are included, and which caption files and master resolutions are in scope.
+
+[Send this training batch to Valmera Enterprise for a quote](https://valmera.io/subscribe?inquiry=training-video-editing-service&utm_source=github.com&utm_medium=referral&utm_campaign=training_batch_quote#enterprise). Share your delivery window, source format and expected monthly volume so the quote can cover the actual schedule.
