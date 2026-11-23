@@ -43,6 +43,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Outsource a recurring video podcast with a full edit and clips | [Compare five services and test a two-episode delivery and revision](OUTSOURCE-WEEKLY-VIDEO-PODCAST-EDITING.md) |
 | A long podcast needs a full episode and clips | [Run a 90-minute-source buyer pilot](EDIT-A-90-MINUTE-PODCAST.md) and [track all three exports](EPISODE-AND-CLIPS-DELIVERY.csv) |
 | Outsource highlight edits for a sports tournament | [Compare routes, scope a two-file pilot and price the delivery schedule](TOURNAMENT-HIGHLIGHT-EDITING-SERVICE.md) |
+| Webinar highlights with a quiet product demo | [Compare four editors and test one focused revision](AI-WEBINAR-HIGHLIGHT-REEL-EDITORS.md) |
 | Highlight reels from existing footage | [FullVideoTools vs Valmera and a test for a quiet must-keep moment](FULLVIDEOTOOLS-VS-VALMERA-HIGHLIGHT-REELS.md) |
 | Replace your podcast clip editor and deliver a separate SRT | [Reap alternatives with a playable MP4/SRT handoff test](REAP-ALTERNATIVES-CAPTION-HANDOFF.md) |
 | Podcast captions flash by too fast | [Compare the same clip and words before and after retiming](FIX-FAST-CAPTIONS-IN-PODCAST-CLIPS.md) |
