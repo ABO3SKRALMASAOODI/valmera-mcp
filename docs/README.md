@@ -56,6 +56,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Product footage with an expired offer | [Recorded offer-removal example, with before/after exports](PRODUCT-OFFER-REMOVAL-EXAMPLE.md) and the [ecommerce planning guide](https://valmera.io/use-cases/ecommerce) |
 | Outsource recurring paid-social ads from creator footage | [Compare UGC editors with one six-file pilot](OUTSOURCE-UGC-AD-VARIANTS.md) and [track each approved export](UGC-AD-VARIANT-DELIVERY.csv) |
 | Several recordings with one style | [Batch editing: pilot, source-specific notes and delivery tracking](BATCH-VIDEO-EDITING.md) |
+| A week of short clips for a brand | [Compare four editors and approve a three-clip pilot from the downloaded files](SOCIAL-MEDIA-MANAGER-EDITOR-PILOT.md) |
 | Outsource a busy week of multi-client edits | [Work backward from approvals and track which exports need a revision](AGENCY-VIDEO-EDITING-DELIVERY-WEEK.md) |
 | Unwanted pauses or filler words | [Speech cleanup: compare controls, review joins and restore a pause](SPEECH-CLEANUP.md), with a [trial and repair worksheet](SPEECH-CLEANUP-WORKSHEET.md) |
 | Fan noise, hiss or distracting sound behind speech | [Compare noise-removal routes and review the exported audio](VIDEO-AUDIO-NOISE-REMOVAL.md), with a [listening and delivery worksheet](AUDIO-NOISE-REVIEW-WORKSHEET.md) |
