@@ -38,6 +38,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Property walkthrough | [Compare editing routes, map the rooms and review a restoration](REAL-ESTATE-SHOT-MAP.md), with a [shared property trial record](REAL-ESTATE-EDITOR-TRIAL.md) |
 | Product footage with an expired offer | [Recorded offer-removal example, with before/after exports](PRODUCT-OFFER-REMOVAL-EXAMPLE.md) and the [ecommerce planning guide](https://valmera.io/use-cases/ecommerce) |
 | Several recordings with one style | [Batch editing: pilot, source-specific notes and delivery tracking](BATCH-VIDEO-EDITING.md) |
+| Outsource a busy week of multi-client edits | [Work backward from approvals and track which exports need a revision](AGENCY-VIDEO-EDITING-DELIVERY-WEEK.md) |
 | Unwanted pauses or filler words | [Speech cleanup: compare controls, review joins and restore a pause](SPEECH-CLEANUP.md), with a [trial and repair worksheet](SPEECH-CLEANUP-WORKSHEET.md) |
 | Fan noise, hiss or distracting sound behind speech | [Compare noise-removal routes and review the exported audio](VIDEO-AUDIO-NOISE-REMOVAL.md), with a [listening and delivery worksheet](AUDIO-NOISE-REVIEW-WORKSHEET.md) |
 | Translate subtitles while keeping the original voice | [Compare translation routes and review a bilingual sample](SUBTITLE-TRANSLATION.md), with a [trial and delivery worksheet](SUBTITLE-TRANSLATION-WORKSHEET.md) |
