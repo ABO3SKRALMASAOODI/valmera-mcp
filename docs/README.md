@@ -30,6 +30,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | --- | --- |
 | Interview | [Editor workflow comparison and traceable paper edit](INTERVIEW-PAPER-EDIT.md), with a [trial and review worksheet](INTERVIEW-REVIEW-WORKSHEET.md) and [three playable dialogue cuts](INTERVIEW-SPLIT-EDITS.md) |
 | Weekly talking-head recordings | [Two-recording editor pilot and timed cutaway](WEEKLY-TALKING-HEAD-EDITOR-PILOT.md) |
+| Choosing a talking-head editor | [Takehound vs Valmera and how to test a second episode](TAKEHOUND-VS-VALMERA.md) |
 | Podcast clips | [Compare ten clipping workflows and select a complementary clip set](PODCAST-CLIPS.md), with a [blank selection and delivery worksheet](PODCAST-CLIP-WORKSHEET.md) |
 | Revise one clip in an approved batch | [Check unchanged MP4s locally and review the replacement](PODCAST-CLIP-BATCH-REVIEW.md) |
 | Screen recording or software tutorial | [Preserve the starting state, action and result](SCREEN-RECORDING-TUTORIALS.md) |
