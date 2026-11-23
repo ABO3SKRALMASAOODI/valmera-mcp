@@ -1,0 +1,32 @@
+{
+  "fixture": "Synthetic public teaching sample with fictional account label and tone. Local renders, not Valmera product output.",
+  "fps": 30,
+  "decodedFrames": 180,
+  "confirmationTimeSeconds": 4,
+  "audioRMSRelativeToFullScale": {
+    "source": {
+      "opening": 0.17221,
+      "demo_value": 0.17264,
+      "confirmation": 0.17207
+    },
+    "picture-only": {
+      "opening": 0.17221,
+      "demo_value": 0.17264,
+      "confirmation": 0.17207
+    },
+    "cleaned": {
+      "opening": 0.17221,
+      "demo_value": 0.0,
+      "confirmation": 0.17258
+    }
+  },
+  "decodedFrameChecks": {
+    "matchingConfirmationFrame": 120,
+    "sameCoveredPictureAtMiddleFrame": 90
+  },
+  "mp4Sha256": {
+    "source.mp4": "d7c28b9d7fb653f802c6077db729936dbfac67560718a35e6260a9f0995fba1a",
+    "picture-only.mp4": "37cd785bc204d1ca75ce117b1dcd83eeea469c158eaabef856100f3156598e6f",
+    "cleaned.mp4": "129635ede4a56da9df45ee6c7bce698865e415e6e8d10e93a58171ca9a5929c1"
+  }
+}

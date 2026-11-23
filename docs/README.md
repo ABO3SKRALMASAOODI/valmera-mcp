@@ -46,6 +46,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Choosing a product-demo editor | [Cubix vs Valmera for an uploaded recording or public URL](CUBIX-VS-VALMERA-PRODUCT-DEMOS.md) |
 | Recorded course lesson | [Compare search-result routes and preserve the teaching sequence](COURSE-LESSON-EDITING.md), with a [lesson trial and release worksheet](COURSE-LESSON-REVIEW.md) |
 | Outsourced employee onboarding | [Brief and review a two-site onboarding edit](EMPLOYEE-ONBOARDING-VIDEO-EDITING-SERVICE.md) |
+| Turn an existing onboarding call into a standalone product demo | [Compare workflows and play the three release examples](ONBOARDING-CALL-TO-PRODUCT-DEMO.md) |
 | Website demonstration | [Plan and make a website demo](WEBSITE-DEMO.md) |
 | Choosing a demo generator from a URL | [Compare DemoVisor, Valmera and other options using the same public-page test](DEMOVISOR-VS-VALMERA.md) |
 | Outsource recurring SaaS launch edits | [Compare providers, review dates and final deliverables](SAAS-DEMO-EDITING-SERVICES.md) |
