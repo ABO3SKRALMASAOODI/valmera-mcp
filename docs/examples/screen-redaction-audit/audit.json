@@ -1,0 +1,30 @@
+{
+  "fixture": "Synthetic interface and fictional DEMO-4276 marker.",
+  "frameIndexing": "Zero-based. Frame 72 starts at 3.000 seconds.",
+  "files": {
+    "source.mp4": {
+      "sha256": "27d54f41faff82b8390fa1cd5ba34336cf89a288af6f15211588e4c7e926c37d",
+      "decodedFrames": 144,
+      "fps": 24.0,
+      "exposedFrameCount": 144,
+      "firstExposedFrame": 0,
+      "lastExposedFrame": 143
+    },
+    "one-frame-leak.mp4": {
+      "sha256": "df34dab994592b3d4d95cee44664cc1c927f5ff57a1149ab70192fe1127fb74a",
+      "decodedFrames": 144,
+      "fps": 24.0,
+      "exposedFrameCount": 1,
+      "firstExposedFrame": 72,
+      "lastExposedFrame": 72
+    },
+    "covered.mp4": {
+      "sha256": "2242d97fee1e2eeea5abe12ed8cc266a55fde3969e175216e026b20776aa04d2",
+      "decodedFrames": 144,
+      "fps": 24.0,
+      "exposedFrameCount": 0,
+      "firstExposedFrame": null,
+      "lastExposedFrame": null
+    }
+  }
+}

@@ -38,6 +38,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Revise one clip in an approved batch | [Check unchanged MP4s locally and review the replacement](PODCAST-CLIP-BATCH-REVIEW.md) |
 | Customer testimonial from a recorded interview | [Compare AI editors with an approved-quote test and two playable cuts](CUSTOMER-TESTIMONIAL-VIDEO-EDITORS.md) |
 | Screen recording or software tutorial | [Preserve the starting state, action and result](SCREEN-RECORDING-TUTORIALS.md) |
+| Private values in a recorded demo | [Test a moving cover and catch a one-frame leak in the downloaded MP4](SCREEN-RECORDING-REDACTION-AUDIT.md) |
 | Choosing a product-demo editor | [Cubix vs Valmera for an uploaded recording or public URL](CUBIX-VS-VALMERA-PRODUCT-DEMOS.md) |
 | Recorded course lesson | [Compare search-result routes and preserve the teaching sequence](COURSE-LESSON-EDITING.md), with a [lesson trial and release worksheet](COURSE-LESSON-REVIEW.md) |
 | Outsourced employee onboarding | [Brief and review a two-site onboarding edit](EMPLOYEE-ONBOARDING-VIDEO-EDITING-SERVICE.md) |
