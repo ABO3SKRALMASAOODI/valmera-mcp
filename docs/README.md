@@ -34,6 +34,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Replace one shot in an approved edit at the same duration | [Play the one-frame overrun and check the export boundaries](REPLACE-ONE-SHOT-WITHOUT-MOVING-THE-EDIT.md) |
 | Replace a B-roll shot in an MP4 that already has captions | [Play the covered and restored exports](REPLACE-B-ROLL-WITH-BURNED-IN-CAPTIONS.md) |
 | B-roll over an exact phrase | [Compare placement workflows and check four frames in the export](OWN-FOOTAGE-B-ROLL-CUTAWAY-TEST.md) |
+| Keep stock B-roll out of paid versions of a client edit | [Test the last frame and log approval by destination](APPROVE-B-ROLL-FOR-CLIENT-ADS.md) |
 | Choosing a talking-head editor | [Takehound vs Valmera and how to test a second episode](TAKEHOUND-VS-VALMERA.md) |
 | Podcast clips | [Compare ten clipping workflows and select a complementary clip set](PODCAST-CLIPS.md), with a [blank selection and delivery worksheet](PODCAST-CLIP-WORKSHEET.md) |
 | Outsource a recurring video podcast with a full edit and clips | [Compare five services and test a two-episode delivery and revision](OUTSOURCE-WEEKLY-VIDEO-PODCAST-EDITING.md) |

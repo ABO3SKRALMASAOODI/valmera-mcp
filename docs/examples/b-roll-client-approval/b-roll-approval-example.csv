@@ -1,0 +1,4 @@
+asset_id,source_or_library,approval_record,client_or_project,permitted_uses,approved_by,approval_date,output_filename,placement,from_seconds,to_seconds_exclusive,first_frame_checked,last_frame_checked,review_result
+ST-014,Synthetic stock card,Fictional approval A,Sample product campaign,Organic only,Sample reviewer,2026-11-23,organic-landscape.mp4,Organic landscape,3.000,5.000,90,149,pass
+CL-021,Synthetic client card,Fictional approval B,Sample product campaign,Paid and organic,Sample reviewer,2026-11-23,paid-vertical-stale.mp4,Paid vertical,3.000,5.000,90,149,fail: ST-014 remains in frame 149
+CL-021,Synthetic client card,Fictional approval B,Sample product campaign,Paid and organic,Sample reviewer,2026-11-23,paid-vertical-approved.mp4,Paid vertical,3.000,5.000,90,149,pass
