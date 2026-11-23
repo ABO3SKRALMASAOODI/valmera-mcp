@@ -1,0 +1,87 @@
+{
+  "sourceSha256": "34bbd52a4b89fdf63c8ace50b268da26653a59508288100cd3c23de276db7931",
+  "sourceStartSeconds": 11.9,
+  "requestedDurationSeconds": 9.6,
+  "sampleTimeSeconds": 1.9,
+  "readingMetric": "Visible text characters including punctuation and spaces, with line breaks treated as single spaces, per cue duration in seconds.",
+  "fastCues": [
+    {
+      "text": "What brings you",
+      "startMs": 0,
+      "endMs": 650,
+      "characters": 15,
+      "longestLine": 15,
+      "charactersPerSecond": 23.08
+    },
+    {
+      "text": "to the land of\nthe gatekeepers?",
+      "startMs": 650,
+      "endMs": 1500,
+      "characters": 31,
+      "longestLine": 16,
+      "charactersPerSecond": 36.47
+    },
+    {
+      "text": "I'm searching",
+      "startMs": 6625,
+      "endMs": 7125,
+      "characters": 13,
+      "longestLine": 13,
+      "charactersPerSecond": 26.0
+    },
+    {
+      "text": "for someone.",
+      "startMs": 7125,
+      "endMs": 7675,
+      "characters": 12,
+      "longestLine": 12,
+      "charactersPerSecond": 21.82
+    }
+  ],
+  "retimedCues": [
+    {
+      "text": "What brings you to the\nland of the gatekeepers?",
+      "startMs": 0,
+      "endMs": 3125,
+      "characters": 47,
+      "longestLine": 24,
+      "charactersPerSecond": 15.04
+    },
+    {
+      "text": "I'm searching for someone.",
+      "startMs": 6625,
+      "endMs": 8375,
+      "characters": 26,
+      "longestLine": 26,
+      "charactersPerSecond": 14.86
+    }
+  ],
+  "video": {
+    "uncaptioned.mp4": {
+      "width": 432,
+      "height": 768,
+      "r_frame_rate": "24/1",
+      "nb_frames": "230",
+      "duration": "9.583333"
+    },
+    "fast-cues.mp4": {
+      "width": 432,
+      "height": 768,
+      "r_frame_rate": "24/1",
+      "nb_frames": "230",
+      "duration": "9.583333"
+    },
+    "retimed-cues.mp4": {
+      "width": 432,
+      "height": 768,
+      "r_frame_rate": "24/1",
+      "nb_frames": "230",
+      "duration": "9.583333"
+    }
+  },
+  "decodedPcmS16leSha256": {
+    "uncaptioned.mp4": "d7a720b8004e88d61885b92cb7bcf66a0b7f6af991e4630d5204d4060856e53e",
+    "fast-cues.mp4": "d7a720b8004e88d61885b92cb7bcf66a0b7f6af991e4630d5204d4060856e53e",
+    "retimed-cues.mp4": "d7a720b8004e88d61885b92cb7bcf66a0b7f6af991e4630d5204d4060856e53e"
+  }
+}
