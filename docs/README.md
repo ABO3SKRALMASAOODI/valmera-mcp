@@ -28,6 +28,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Recording or task | Guide and practical artifact |
 | --- | --- |
 | Interview | [Editor workflow comparison and traceable paper edit](INTERVIEW-PAPER-EDIT.md), with a [trial and review worksheet](INTERVIEW-REVIEW-WORKSHEET.md) and [three playable dialogue cuts](INTERVIEW-SPLIT-EDITS.md) |
+| Weekly talking-head recordings | [Two-recording editor pilot and timed cutaway](WEEKLY-TALKING-HEAD-EDITOR-PILOT.md) |
 | Podcast clips | [Compare ten clipping workflows and select a complementary clip set](PODCAST-CLIPS.md), with a [blank selection and delivery worksheet](PODCAST-CLIP-WORKSHEET.md) |
 | Screen recording or software tutorial | [Preserve the starting state, action and result](SCREEN-RECORDING-TUTORIALS.md) |
 | Recorded course lesson | [Compare search-result routes and preserve the teaching sequence](COURSE-LESSON-EDITING.md), with a [lesson trial and release worksheet](COURSE-LESSON-REVIEW.md) |
