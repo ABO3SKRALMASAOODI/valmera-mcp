@@ -1,0 +1,51 @@
+{
+  "source": {
+    "download": "https://valmera.io/examples/filler-word-cut/original.mp4",
+    "sha256": "437fe11667dbe2d1c7bf4d14b6d3cedd95eaf76ffeb062e2f94dcdcb7d551630",
+    "pictureFramemd5LogSha256": "e5985920917c10c974bf0d8979fd7ef02611a43461e39a79451199f427f237b7",
+    "frames": 100,
+    "width": 800,
+    "height": 400,
+    "fps": 25,
+    "durationSeconds": 4
+  },
+  "method": "One common narration PCM stream at 0.7 gain. Test tone A, tone B or both are mixed before AAC encoding. Picture copied unchanged. Marker levels are decoded peak sinusoidal amplitude in dBFS over seconds 0.5\u20133.5, not loudness.",
+  "markerAHz": 997,
+  "markerBHz": 1373,
+  "narrationBaselineMarkerdBFS": {
+    "A": -102.6,
+    "B": -85.5
+  },
+  "outputs": {
+    "previous-mix.mp4": {
+      "decodedMarkerdBFS": {
+        "A": -23.3,
+        "B": -85.5
+      },
+      "decodedPictureMatchesAll100Frames": true,
+      "narrationPcmUnchangedAtMixInput": true,
+      "durationSeconds": 4,
+      "bytes": 119939
+    },
+    "layered-by-mistake.mp4": {
+      "decodedMarkerdBFS": {
+        "A": -23.3,
+        "B": -23.3
+      },
+      "decodedPictureMatchesAll100Frames": true,
+      "narrationPcmUnchangedAtMixInput": true,
+      "durationSeconds": 4,
+      "bytes": 120346
+    },
+    "replacement-mix.mp4": {
+      "decodedMarkerdBFS": {
+        "A": -99.9,
+        "B": -23.3
+      },
+      "decodedPictureMatchesAll100Frames": true,
+      "narrationPcmUnchangedAtMixInput": true,
+      "durationSeconds": 4,
+      "bytes": 119796
+    }
+  }
+}
