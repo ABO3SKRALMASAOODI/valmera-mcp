@@ -1,0 +1,35 @@
+{
+  "scope": "Synthetic reference renders with a shared test tone. These are not editor-comparison or Valmera product outputs.",
+  "fps": 25,
+  "requestedFrameRange": [
+    50,
+    100
+  ],
+  "rangeEndIsExclusive": true,
+  "files": {
+    "approved": {
+      "frames": 150,
+      "durationSeconds": 6.0,
+      "framesThatDifferFromApproved": 0,
+      "changedOutsideRange": [],
+      "mp4Sha256": "46757e77cb3fb3dc48574c3828e88c17aea018968cc1c2185de5fb180585394d"
+    },
+    "corrected": {
+      "frames": 150,
+      "durationSeconds": 6.0,
+      "framesThatDifferFromApproved": 50,
+      "changedOutsideRange": [],
+      "mp4Sha256": "9e9450e16267d8a836ee08846fd16f161d5e3bdc46ebd46ca000e9bf45a1ccc8"
+    },
+    "one-extra-frame": {
+      "frames": 150,
+      "durationSeconds": 6.0,
+      "framesThatDifferFromApproved": 51,
+      "changedOutsideRange": [
+        100
+      ],
+      "mp4Sha256": "fdf756bf22a9dd175a15f3aa13d2a912f792730f76cbffa37b17c7c898bc9910"
+    }
+  },
+  "allDecodedAudioSha256": "4f9de8b21614c184e80895d403f05cfb212a0595f87e4660eeb32fb3ba8a857d"
+}
