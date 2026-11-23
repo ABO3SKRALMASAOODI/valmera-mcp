@@ -37,4 +37,17 @@ The restoration adds 32 frames and retains source intervals **0.00–1.56** and 
 
 With your own footage, choose one spoken qualification and an unrelated cut that must stay. If the editor removed visual or caption material during the first pass, check whether those layers also need restoration. Compare the two MP4s at the join. Confirm the intended words, the sound and the total duration. For a separate subtitle file, play it beside the final cut and check that the restored words have the new times.
 
+## Check that the other cuts survived
+
+If your editor exposes the retained source ranges, keep a copy from each version. The [source-range checker](evaluation/check_selective_restore.py) compares the revised list with the first cut plus the single interval you requested. It works on a single chronological source track. Copy the ranges in your original recording’s seconds, with the start included and the end excluded.
+
+Run this against the cut and restoration from the reference files above:
+
+```sh
+python3 docs/evaluation/check_selective_restore.py \
+  '[[0,0.20],[1.48,1.56],[1.88,4]]' '[[0,1.56],[1.88,4]]' 0.20 1.48
+```
+
+The expected result retains **0–1.56 and 1.88–4.00 seconds**, so the 0.32-second hesitation is still out. As a control, use `'[[0,4]]'` as the revised ranges. The checker then reports that source coverage differs because the unrelated cut was also undone. On a real job, the comparison checks retention only. Play the downloaded MP4 and any separate caption track to verify timing, sound and other edit layers.
+
 [Try a written revision in Valmera](https://valmera.io/ai-video-editor?utm_source=github.com&utm_medium=referral&utm_campaign=editwithchat_targeted_restore) or [request a recurring interview editing pilot](https://valmera.io/subscribe?inquiry=testimonial-video-editing-service&utm_source=github.com&utm_medium=referral&utm_campaign=editwithchat_targeted_restore#enterprise). Include the number of recordings, target formats and who signs off on changes to quoted speech.
