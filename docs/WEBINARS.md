@@ -1,5 +1,7 @@
 # Edit a webinar into a replay and clips with an AI assistant
 
+For recurring done-for-you editing, [compare monthly webinar services and scope a one-event pilot](OUTSOURCE-MONTHLY-B2B-WEBINAR-EDITING.md).
+
 Turn one recorded webinar into a useful replay, a demo clip and a complete Q&A answer. This guide is for directing Valmera from a connected assistant such as Claude or ChatGPT. It focuses on the decisions to make, the evidence to request and the revisions to review.
 
 **Start here:** [connect your assistant](https://valmera.io/mcp/setup), upload your recording in [Valmera Studio](https://valmera.io/studio), then identify the project in your conversation. Account creation and uploads are free; editing requires a [subscription](https://valmera.io/subscribe). Your assistant provider's charges and connection permissions are separate.

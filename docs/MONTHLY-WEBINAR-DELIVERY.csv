@@ -1,0 +1,19 @@
+event_id,asset,suggested_filename,timing_reference,first_review_due,publication_due,review_owner,approved_filename,status
+event-01,Full replay,event-01-replay-v1.mp4,Approved replay,,,,,Awaiting brief
+event-01,Replay captions,event-01-replay-v1.en.srt,Approved replay,,,,,Awaiting brief
+event-01,Replay chapter list,event-01-replay-v1-chapters.txt,Approved replay,,,,,Awaiting brief
+event-01,Social clip 1,event-01-clip-1-v1.mp4,Approved clip 1,,,,,Awaiting brief
+event-01,Social clip 2,event-01-clip-2-v1.mp4,Approved clip 2,,,,,Awaiting brief
+event-01,Social clip 3,event-01-clip-3-v1.mp4,Approved clip 3,,,,,Awaiting brief
+event-02,Full replay,event-02-replay-v1.mp4,Approved replay,,,,,Awaiting brief
+event-02,Replay captions,event-02-replay-v1.en.srt,Approved replay,,,,,Awaiting brief
+event-02,Replay chapter list,event-02-replay-v1-chapters.txt,Approved replay,,,,,Awaiting brief
+event-02,Social clip 1,event-02-clip-1-v1.mp4,Approved clip 1,,,,,Awaiting brief
+event-02,Social clip 2,event-02-clip-2-v1.mp4,Approved clip 2,,,,,Awaiting brief
+event-02,Social clip 3,event-02-clip-3-v1.mp4,Approved clip 3,,,,,Awaiting brief
+event-03,Full replay,event-03-replay-v1.mp4,Approved replay,,,,,Awaiting brief
+event-03,Replay captions,event-03-replay-v1.en.srt,Approved replay,,,,,Awaiting brief
+event-03,Replay chapter list,event-03-replay-v1-chapters.txt,Approved replay,,,,,Awaiting brief
+event-03,Social clip 1,event-03-clip-1-v1.mp4,Approved clip 1,,,,,Awaiting brief
+event-03,Social clip 2,event-03-clip-2-v1.mp4,Approved clip 2,,,,,Awaiting brief
+event-03,Social clip 3,event-03-clip-3-v1.mp4,Approved clip 3,,,,,Awaiting brief
