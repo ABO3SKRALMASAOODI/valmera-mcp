@@ -59,6 +59,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Monter une capture d’écran en démonstration produit | [Guide en français avec deux aperçus comparables](DEMONSTRATION-PRODUIT-FR.md) |
 | Remove breaks from a webinar and correct chapter timestamps | [Retime chapters and verify them against an exported edit](RETIME-WEBINAR-CHAPTERS-AFTER-CUTS.md) |
 | Webinar replay and clips | [Webinar workflow](WEBINARS.md) and [vertical slide readability](SLIDE-READABILITY.md), plus a [replay publishing worksheet](WEBINAR-PUBLISHING-CHECK.md) |
+| A separate microphone falls out of sync in a long recording | [Two-hour fixture, diagnosis and export verification](FIX-AUDIO-DRIFT-IN-LONG-RECORDINGS.md) |
 | Conference footage that needs a sponsor proof cut | [Compare event editors and plan the approval](CONFERENCE-SPONSOR-PROOF-VIDEO.md), with a [source and output timing sheet](CONFERENCE-SPONSOR-PROOF-DELIVERY.csv) |
 | YouTube video | [Editor routes, full-episode trial and chapter timing map](YOUTUBE.md), with a [reusable trial record](YOUTUBE-EDITOR-TRIAL.md) |
 | Property walkthrough | [Compare editing routes, map the rooms and review a restoration](REAL-ESTATE-SHOT-MAP.md), with a [shared property trial record](REAL-ESTATE-EDITOR-TRIAL.md) |
