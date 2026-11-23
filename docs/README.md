@@ -45,6 +45,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Website demonstration | [Plan and make a website demo](WEBSITE-DEMO.md) |
 | Choosing a demo generator from a URL | [Compare DemoVisor, Valmera and other options using the same public-page test](DEMOVISOR-VS-VALMERA.md) |
 | Outsource recurring SaaS launch edits | [Compare providers, review dates and final deliverables](SAAS-DEMO-EDITING-SERVICES.md) |
+| Compare monthly video editing quotes | [Price the approved videos you can deliver by the deadline](VIDEO-EDITING-SERVICE-QUOTE-CAPACITY.md) |
 | A published walkthrough shows an old UI | [Replace the changed action and update the chapters](REFRESH-PUBLISHED-PRODUCT-DEMOS.md), with a [delivery sheet for live copies](DEMO-REFRESH-DELIVERY.csv) |
 | Hire a service to maintain a help-center video library | [Compare four providers with a five-video quote and one pilot](OUTSOURCE-HELP-CENTER-VIDEO-MAINTENANCE.md) |
 | Monter une capture d’écran en démonstration produit | [Guide en français avec deux aperçus comparables](DEMONSTRATION-PRODUIT-FR.md) |
