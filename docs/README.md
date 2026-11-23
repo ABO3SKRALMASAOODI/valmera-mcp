@@ -32,6 +32,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Interview | [Editor workflow comparison and traceable paper edit](INTERVIEW-PAPER-EDIT.md), with a [trial and review worksheet](INTERVIEW-REVIEW-WORKSHEET.md) and [three playable dialogue cuts](INTERVIEW-SPLIT-EDITS.md) |
 | Weekly talking-head recordings | [Two-recording editor pilot and timed cutaway](WEEKLY-TALKING-HEAD-EDITOR-PILOT.md) |
 | Replace one shot in an approved edit at the same duration | [Play the one-frame overrun and check the export boundaries](REPLACE-ONE-SHOT-WITHOUT-MOVING-THE-EDIT.md) |
+| Send an exact revision at 29.97 drop-frame | [Compare the two ten-minute pictures and copy a review brief](FRAME-ACCURATE-REVIEW-AT-29-97-DF.md) |
 | Replace a B-roll shot in an MP4 that already has captions | [Play the covered and restored exports](REPLACE-B-ROLL-WITH-BURNED-IN-CAPTIONS.md) |
 | B-roll over an exact phrase | [Compare placement workflows and check four frames in the export](OWN-FOOTAGE-B-ROLL-CUTAWAY-TEST.md) |
 | Keep stock B-roll out of paid versions of a client edit | [Test the last frame and log approval by destination](APPROVE-B-ROLL-FOR-CLIENT-ADS.md) |
