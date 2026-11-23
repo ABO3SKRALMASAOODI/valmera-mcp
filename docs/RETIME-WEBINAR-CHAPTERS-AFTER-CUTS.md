@@ -29,6 +29,8 @@ In this planning example, remove `00:00–05:00`, `28:00–35:00` and `58:00–1
 
 ## Verify on a real exported edit
 
+For a replay handoff with both chapter and subtitle files, [run the combined MP4, SRT and chapter test](EDIT-FULL-WEBINAR-REPLAY-KEEP-CAPTIONS-CHAPTERS.md).
+
 Save the [remapping script](examples/replay-chapters/remap_after_cuts.py), [timestamp helper](examples/replay-chapters/chapters.py), [source chapters](examples/replay-chapters/recorded-source-chapters.txt) and [removed range](examples/replay-chapters/recorded-removed-ranges.txt) together. Run with Python 3.
 
 ```sh
