@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Valmera product demo loop</title>
+<style>
+  body {
+    max-width: 60rem;
+    margin: 3rem auto;
+    padding: 0 1rem;
+    font: 1rem/1.5 system-ui, sans-serif;
+    color: #171723;
+    background: #f6f6f8;
+  }
+  h1 { line-height: 1.1; }
+  video {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    background: #fff;
+    border-radius: .5rem;
+  }
+</style>
+<main>
+  <h1>Move a photo earlier in a slideshow</h1>
+  <video
+    width="960" height="540"
+    controls muted playsinline preload="none"
+    poster="product-demo-poster.jpg"
+    aria-label="Silent slideshow reordering demo"
+  >
+    <source src="product-demo-loop.mp4" type="video/mp4">
+    <a href="product-demo-loop.mp4">Download the MP4</a>
+  </video>
+  <p>Select Earlier on the Lunar module photo to move it from third to second. Its one-second duration moves with it. The clip returns to the starting order when it loops.</p>
+  <p>Sample photos courtesy of NASA. Demo recorded with Valmera.</p>
+</main>
+<script>
+  const video = document.querySelector('video');
+  const motion = matchMedia('(prefers-reduced-motion: reduce)');
+
+  if (!motion.matches) {
+    video.loop = true;
+    video.play().catch(() => {
+      // The poster and native play control remain available.
+    });
+  }
+
+  motion.addEventListener('change', ({ matches }) => {
+    video.loop = !matches;
+    if (matches) video.pause();
+  });
+</script>
+</html>

@@ -55,6 +55,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Outsourced employee onboarding | [Brief and review a two-site onboarding edit](EMPLOYEE-ONBOARDING-VIDEO-EDITING-SERVICE.md) |
 | Turn an existing onboarding call into a standalone product demo | [Compare workflows and play the three release examples](ONBOARDING-CALL-TO-PRODUCT-DEMO.md) |
 | Website demonstration | [Plan and make a website demo](WEBSITE-DEMO.md) |
+| A homepage needs a short silent product demo | [Download a measured MP4 loop, result poster and keyboard-operable player](MAKE-A-MUTED-PRODUCT-DEMO-LOOP.md) |
 | Record one website workflow for desktop and portrait | [Compare the live responsive layouts and inspect the successful click](RECORD-DESKTOP-AND-PORTRAIT-WEBSITE-DEMO.md) |
 | A demo links to a separate browser tab | [Test the handoff and verify the result in one MP4](RECORD-A-WEBSITE-DEMO-ACROSS-BROWSER-TABS.md) |
 | Film a form demo and stop before submitting | [Check what the button actually signals and practice on a local fixture](RECORD-A-FORM-DEMO-WITHOUT-SUBMITTING.md) |

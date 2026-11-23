@@ -1,0 +1,31 @@
+{
+  "source": {
+    "relativePath": "../website-photo-reorder/reorder.mp4",
+    "bytes": 2385527,
+    "width": 1920,
+    "height": 1080,
+    "durationSeconds": 14.4,
+    "sha256": "b613e1040519ef3cfe49c5103912342236bf2e0f6fc0b80aa0744872538db34f"
+  },
+  "loop": {
+    "sourceStartSeconds": 3.2,
+    "bytes": 693753,
+    "width": 960,
+    "height": 540,
+    "durationSeconds": 5.6,
+    "frames": 168,
+    "fps": 30,
+    "audioTracks": 0,
+    "topLevelMp4Boxes": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ],
+    "sha256": "09ac100eab1b902b7cf1fff13a9e3bdf4fa139fef7eec73600f96ff7cb8d84cd"
+  },
+  "poster": {
+    "loopTimeSeconds": 4.8,
+    "bytes": 44210
+  }
+}
