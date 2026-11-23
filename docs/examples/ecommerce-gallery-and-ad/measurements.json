@@ -1,0 +1,65 @@
+{
+  "gallery.mp4": {
+    "size": [
+      640,
+      360
+    ],
+    "frames": 120,
+    "durationSeconds": 4.8,
+    "fps": 25,
+    "audioTracks": 0,
+    "bytes": 65348,
+    "fileSha256": "06eff271eb9cd9d3c9514c4757d298c07480dd88c7434fbe8b7d81881fe44088",
+    "cuts": [
+      {
+        "sourceInSeconds": 0.28,
+        "frames": 36,
+        "label": "Whole beans"
+      },
+      {
+        "sourceInSeconds": 2.4,
+        "frames": 58,
+        "label": "In motion"
+      },
+      {
+        "sourceInSeconds": 15.2,
+        "frames": 26,
+        "label": "Ground coffee"
+      }
+    ]
+  },
+  "vertical-ad.mp4": {
+    "size": [
+      270,
+      480
+    ],
+    "frames": 120,
+    "durationSeconds": 4.8,
+    "fps": 25,
+    "audioTracks": 0,
+    "bytes": 47240,
+    "fileSha256": "0c6537ec1544fbd59a7b1d0bd3307f77d281c684002b4b34888d6d9bea91ef8e",
+    "cuts": [
+      {
+        "sourceInSeconds": 15.2,
+        "frames": 28,
+        "label": "Ground coffee"
+      },
+      {
+        "sourceInSeconds": 0.28,
+        "frames": 26,
+        "label": "Whole beans"
+      },
+      {
+        "sourceInSeconds": 2.4,
+        "frames": 40,
+        "label": "In motion"
+      },
+      {
+        "sourceInSeconds": 15.2,
+        "frames": 26,
+        "label": "Ground coffee"
+      }
+    ]
+  }
+}

@@ -80,6 +80,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | YouTube video | [Editor routes, full-episode trial and chapter timing map](YOUTUBE.md), with a [reusable trial record](YOUTUBE-EDITOR-TRIAL.md) |
 | Property walkthrough | [Compare editing routes, map the rooms and review a restoration](REAL-ESTATE-SHOT-MAP.md), with a [shared property trial record](REAL-ESTATE-EDITOR-TRIAL.md) |
 | Product footage with an expired offer | [Recorded offer-removal example, with before/after exports](PRODUCT-OFFER-REMOVAL-EXAMPLE.md) and the [ecommerce planning guide](https://valmera.io/use-cases/ecommerce) |
+| One product shoot needs a gallery video and a portrait ad | [Compare two edits and download a SKU delivery sheet](EDIT-A-SHOPIFY-PRODUCT-VIDEO-AND-VERTICAL-AD.md) |
 | Compare two ad hooks while preserving the approved offer | [Play the three exports and scope a hook-only revision](PAID-SOCIAL-HOOK-TEST-FROM-EXISTING-FOOTAGE.md) |
 | A TikTok ad needs different music | [Compare the three mixes and check that the old bed is gone](REPLACE-TIKTOK-AD-MUSIC-KEEP-VOICEOVER.md) |
 | Keep captions and the final call to action visible in vertical ads | [Compare two exports under player controls](CHECK-CAPTIONS-AND-CTA-IN-VERTICAL-ADS.md) |
