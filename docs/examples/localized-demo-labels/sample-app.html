@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Northwind Reports — demo fixture</title>
+<style>
+  :root { color: #102726; background: #f6f4eb; font: 17px/1.45 system-ui, sans-serif; }
+  body { margin: 0; }
+  header { display: flex; justify-content: space-between; align-items: center; color: white; background: #153e3a; padding: 1.15rem clamp(1rem, 5vw, 4rem); }
+  header strong { font-size: 1.3rem; letter-spacing: -.025em; }
+  nav { display: flex; gap: .6rem; }
+  nav a { color: white; padding: .3rem .65rem; border-radius: .3rem; }
+  nav a[aria-current] { background: #e8f5ef; color: #153e3a; }
+  main { max-width: 52rem; margin: 3rem auto 7rem; padding: 0 1rem; }
+  h1 { margin: .25rem 0 1rem; font-size: clamp(2rem, 5vw, 3rem); letter-spacing: -.04em; }
+  .panel { background: white; border: 1px solid #b7ccc1; padding: 1.45rem; border-radius: .65rem; }
+  .panel h2 { margin: 0 0 .35rem; font-size: 1.45rem; }
+  .panel p { margin: .35rem 0 1.1rem; }
+  .action { display: inline-block; padding: .65rem 1rem; background: #246957; border-radius: .35rem; color: white; font-weight: 680; }
+  #confirmation { min-height: 1.5rem; margin: 1rem 0 0; font-weight: 660; color: #174331; }
+  :focus-visible { outline: 3px solid #db8635; outline-offset: 3px; }
+</style>
+<header>
+  <strong>Northwind Reports</strong>
+  <nav aria-label="Language">
+    <a href="?lang=en" id="en" lang="en">English</a>
+    <a href="?lang=es" id="es" lang="es">Español</a>
+  </nav>
+</header>
+<main>
+  <h1 id="heading"></h1>
+  <section class="panel" aria-labelledby="report">
+    <h2 id="report"></h2>
+    <p id="detail"></p>
+    <a id="export" href="sample-report.csv" download class="action"></a>
+    <p id="confirmation" aria-live="polite"></p>
+  </section>
+</main>
+<script>
+  const locales = {
+    en: {
+      heading: 'Monthly reports',
+      report: 'Orders by region',
+      detail: 'October sample data · 3 regions',
+      export: 'Download CSV',
+      confirmation: 'CSV download started.',
+      nav: 'Language'
+    },
+    es: {
+      heading: 'Informes mensuales',
+      report: 'Pedidos por región',
+      detail: 'Datos de ejemplo de octubre · 3 regiones',
+      export: 'Descargar CSV',
+      confirmation: 'Descarga del CSV iniciada.',
+      nav: 'Idioma'
+    }
+  };
+
+  const lang = new URLSearchParams(location.search).get('lang') === 'es' ? 'es' : 'en';
+  const copy = locales[lang];
+  document.documentElement.lang = lang;
+  document.querySelector('nav').setAttribute('aria-label', copy.nav);
+  document.getElementById(lang).setAttribute('aria-current', 'page');
+  for (const id of ['heading', 'report', 'detail', 'export']) {
+    document.getElementById(id).textContent = copy[id];
+  }
+  document.getElementById('export').addEventListener('click', () => {
+    document.getElementById('confirmation').textContent = copy.confirmation;
+  });
+</script>
+</html>

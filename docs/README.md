@@ -87,6 +87,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Recortar una entrevista por texto en español | [Editor en español con MP4 y SRT de ejemplo](RECORTAR-VIDEO-POR-SUBTITULOS.md) |
 | Editar un video con IA por chat | [Compara editores en español y revisa dos MP4](EDITAR-VIDEOS-CON-IA-POR-CHAT.md) |
 | Spanish subtitles for an English software tutorial | [Worked handoff: visible labels, conditional instructions and a later cut](TUTORIAL-SUBTITLE-HANDOFF.md) |
+| A Spanish demo needs UI labels that match the captions | [Compare the same cues over English and Spanish screens and verify the download](LOCALIZE-A-SOFTWARE-DEMO-WITH-MATCHING-UI.md) |
 | One word is wrong but the voice is right | [Compare the first preview, corrected preview, audio and final MP4](CAPTION-REVISIONS.md#correct-a-single-misheard-word-and-verify-the-downloaded-video) |
 | Incorrect captions after an edit | [Fix wording, offset, drift and cues crossing a cut](CAPTION-REVISIONS.md) |
 | An existing subtitle file gradually drifts out of sync | [Repeat a two-cue correction with downloadable SRT files and a middle-cue check](SUBTITLE-SYNC-EXAMPLE.md) |

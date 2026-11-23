@@ -1,0 +1,47 @@
+{
+  "comparisonScope": "Browser screenshots from a fictional reporting UI, assembled as a held before-and-after cut. Spanish captions are identical across both exports.",
+  "captionTimingSeconds": [
+    [
+      0,
+      3
+    ],
+    [
+      3,
+      7.5
+    ]
+  ],
+  "sameCaptionFile": "shared-spanish.srt",
+  "video": {
+    "english": {
+      "file": "english-ui-spanish-captions.mp4",
+      "bytes": 42377,
+      "durationSeconds": 7.5,
+      "frames": 180,
+      "fps": 24,
+      "locale": "en",
+      "actualControl": "Download CSV",
+      "actualConfirmation": "CSV download started.",
+      "instructedControl": "Descargar CSV",
+      "controlMatchesCaption": false
+    },
+    "spanish": {
+      "file": "spanish-ui-spanish-captions.mp4",
+      "bytes": 44896,
+      "durationSeconds": 7.5,
+      "frames": 180,
+      "fps": 24,
+      "locale": "es",
+      "actualControl": "Descargar CSV",
+      "actualConfirmation": "Descarga del CSV iniciada.",
+      "instructedControl": "Descargar CSV",
+      "controlMatchesCaption": true
+    }
+  },
+  "exportCheck": {
+    "path": "sample-report.csv",
+    "serverSuccessesObservedAfterTwoUIActions": 2,
+    "rowsExcludingHeader": 3,
+    "sha256": "7602b3522644a7cbcc1a80ad46ceb1ec1ac203f25f6992473639390179cc5ef3",
+    "sameResourceInBothLocales": true
+  }
+}
