@@ -132,6 +132,16 @@ The [Sintel speech-trial worksheet](SPEECH-EDITOR-TRIAL.md) supplies one license
 
 It links two recorded Valmera examples with actual previews and exports. It separates the unchanged 9.6-second comparison from a later 9.4-second delivery revision. These are first-party observations on one animated-film excerpt, not competitor scores. The trial supplies the Spanish strings to every editor; it does not test translation generation.
 
+### Check what happens when a script calls for a missing shot
+
+Use the [script coverage pilot](https://valmera.io/blog/ai-rough-cut-from-script?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=script_rough_cut). It pairs a supplied motion graphic with a three-beat script: two visible headings and a live-action approval shot that the recording lacks.
+
+1. Give each editor the same file and script. Ask for a preview, source ranges for the two headings, and a pickup list.
+2. Compare the ranges with the clock printed in the original. Check that the preview displays both headings in order at readable size.
+3. Record where each editor reports the missing shot. If it substitutes a shot for the one you requested, save the first preview and note what had to be corrected.
+
+The [recorded revision](MCP-RECORDED-EDIT.md) documents a timed cut on this source. The script coverage pilot tests a separate task. Record the preview and pickup list from each run before reaching a conclusion.
+
 ### Then use your representative footage
 
 Passing the short exercise establishes a narrow capability on one source. Before choosing a tool for ongoing work, add a representative recording and one difficult revision:
