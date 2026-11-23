@@ -1,0 +1,35 @@
+{
+  "scope": "Locally generated synthetic clips. The fixture illustrates the buyer test, not a Valmera batch output.",
+  "frameRate": 25,
+  "sampleMethod": "Decoded all frames and identified the green confirmation marker at its fixed stage position.",
+  "files": {
+    "source-a": {
+      "frames": 200,
+      "durationSeconds": 8.0,
+      "firstConfirmationFrame": 75,
+      "firstConfirmationSecond": 3.0,
+      "sha256": "6108f82a5fda3093da58b3e7541b86969e28b6d5311b58491613d7fa713a30fd"
+    },
+    "source-b": {
+      "frames": 200,
+      "durationSeconds": 8.0,
+      "firstConfirmationFrame": 125,
+      "firstConfirmationSecond": 5.0,
+      "sha256": "4339c2a2a56bf7f7f3de3d74c264c95d8db60879cda7c7bf5cd6e5004c8e2fb6"
+    },
+    "fixed-b": {
+      "frames": 125,
+      "durationSeconds": 5.0,
+      "firstConfirmationFrame": null,
+      "firstConfirmationSecond": null,
+      "sha256": "0269bb70022a13084c33d684ae9cdac0921e76f9780182da28a4444cd09b7350"
+    },
+    "result-kept-b": {
+      "frames": 125,
+      "durationSeconds": 5.0,
+      "firstConfirmationFrame": 75,
+      "firstConfirmationSecond": 3.0,
+      "sha256": "abdb0e9c4e917a2cd986f48cd9cf057d773853612f7e0b40078fc214d830131f"
+    }
+  }
+}
