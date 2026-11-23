@@ -20,6 +20,8 @@ Valmera published an example using its documentation site. The [10.83-second sou
 
 Suppose the same demo used to open Settings at 00:18, invite a teammate at 00:42 and show confirmation at 01:04. The new Settings sequence grows by five seconds, and a wait before confirmation shrinks by three. The invitation moves to about **00:47**, while confirmation moves to about **01:06**. Check where the step actually begins in the final file. An anchor inside the replaced section needs to be found again by its screen action or spoken line.
 
+For one replacement that changes the runtime, [calculate the revised chapter time and check both sides of the join](https://valmera.io/blog/update-help-center-video-after-ui-change?utm_source=github.com&utm_medium=referral&utm_campaign=help_video_refresh_guide#chapter-calculator).
+
 Use the [demo refresh delivery sheet](DEMO-REFRESH-DELIVERY.csv) to give each live destination its own row. The supplied rows are illustrative and use reserved example links. Record which version each destination should serve, who can update it, and which event to expect after opening an old chapter or timestamped link.
 
 | Publishing surface | Verify after replacement |
