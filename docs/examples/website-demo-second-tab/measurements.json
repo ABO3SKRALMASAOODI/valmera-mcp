@@ -1,0 +1,26 @@
+{
+  "entryURL": "https://valmera.io/tools/record-website-demo",
+  "entryURLAfterClick": "https://valmera.io/tools/record-website-demo",
+  "newTabURL": "https://valmera.io/tools/review-product-demo",
+  "newTabHeading": "Review two cuts of a product demo",
+  "tabCount": 2,
+  "linkLabel": "Compare two versions and mark the exact moment to revise.",
+  "manualGesture": "Open link in a new tab with the platform shortcut",
+  "viewport": {
+    "width": 1200,
+    "height": 800
+  },
+  "secondTabResult": {
+    "action": "Match the result",
+    "seconds": [
+      1.2,
+      1.9
+    ]
+  },
+  "separateCaptureCheck": {
+    "status": 200,
+    "url": "https://valmera.io/tools/review-product-demo",
+    "heading": "Review two cuts of a product demo",
+    "privateSession": false
+  }
+}

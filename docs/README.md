@@ -54,6 +54,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Turn an existing onboarding call into a standalone product demo | [Compare workflows and play the three release examples](ONBOARDING-CALL-TO-PRODUCT-DEMO.md) |
 | Website demonstration | [Plan and make a website demo](WEBSITE-DEMO.md) |
 | Record one website workflow for desktop and portrait | [Compare the live responsive layouts and inspect the successful click](RECORD-DESKTOP-AND-PORTRAIT-WEBSITE-DEMO.md) |
+| A demo links to a separate browser tab | [Test the handoff and verify the result in one MP4](RECORD-A-WEBSITE-DEMO-ACROSS-BROWSER-TABS.md) |
 | Choosing a demo generator from a URL | [Compare DemoVisor, Valmera and other options using the same public-page test](DEMOVISOR-VS-VALMERA.md) |
 | Outsource recurring SaaS launch edits | [Compare providers, review dates and final deliverables](SAAS-DEMO-EDITING-SERVICES.md) |
 | Compare monthly video editing quotes | [Price the approved videos you can deliver by the deadline](VIDEO-EDITING-SERVICE-QUOTE-CAPACITY.md) |
