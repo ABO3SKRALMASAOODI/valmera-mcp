@@ -30,6 +30,8 @@ The preview still runs four seconds. The nine-second archival final includes a f
 
 [Compare this cutaway with Shorty’s published product-clip revision](SHORTY-VS-VALMERA-PRODUCT-B-ROLL.md) and see the four frames at the two B-roll boundaries.
 
+[Play a two-insert example](REPLACE-SECOND-B-ROLL-INSERT.md) in which only the second cutaway changes and the downloaded narration stays identical.
+
 ## Run the same revision using your own footage
 
 1. Pick a short passage containing two distinct spoken phrases and an approved clip. Write down the filename, first and last words, and whether text or captions must remain visible.

@@ -1,0 +1,30 @@
+{
+  "scope": "Local demonstration using public Valmera footage and a synthetic result clip. It demonstrates an output check.",
+  "frame_rate": 25,
+  "frames_each": 100,
+  "first_insert_frames_inclusive": [
+    16,
+    35
+  ],
+  "replaced_insert_frames_inclusive": [
+    64,
+    88
+  ],
+  "identical_decoded_frames": 75,
+  "audio": {
+    "format": "signed 16-bit PCM, mono, 16000 Hz",
+    "decoded_bytes_each": 129024,
+    "sha256": "993569d9204405aec0d3c53cf722ff50799839c14f5b42f958b3d49836b823d1",
+    "matches_original_decoded_audio": true
+  },
+  "files": {
+    "first-cut.mp4": {
+      "sha256": "ca669d493c96da4bb59dfe2efddd1869f7fc70184e8de2ff0db6d47e546a9655",
+      "bytes": 85953
+    },
+    "second-insert-revised.mp4": {
+      "sha256": "65006ddda1a6c9d86f09777d42d21d8ca74a96026c7e7d7298e7fa95c0690ba7",
+      "bytes": 85588
+    }
+  }
+}
