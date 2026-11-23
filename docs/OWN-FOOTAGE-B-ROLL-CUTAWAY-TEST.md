@@ -28,6 +28,8 @@ The preview still runs four seconds. The nine-second archival final includes a f
 
 [Original recording](https://valmera.io/examples/filler-word-cut/original.mp4) · [Approved swatch shot](https://valmera.io/examples/b-roll-cutaway/print-swatches.mp4) · [Preview](https://valmera.io/examples/b-roll-cutaway/preview.mp4) · [Export](https://valmera.io/examples/b-roll-cutaway/final.mp4) · [Original measurement record](https://valmera.io/examples/b-roll-cutaway/measurements.json)
 
+[Compare this cutaway with Shorty’s published product-clip revision](SHORTY-VS-VALMERA-PRODUCT-B-ROLL.md) and see the four frames at the two B-roll boundaries.
+
 ## Run the same revision using your own footage
 
 1. Pick a short passage containing two distinct spoken phrases and an approved clip. Write down the filename, first and last words, and whether text or captions must remain visible.
