@@ -34,6 +34,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Choosing a talking-head editor | [Takehound vs Valmera and how to test a second episode](TAKEHOUND-VS-VALMERA.md) |
 | Podcast clips | [Compare ten clipping workflows and select a complementary clip set](PODCAST-CLIPS.md), with a [blank selection and delivery worksheet](PODCAST-CLIP-WORKSHEET.md) |
 | A long podcast needs a full episode and clips | [Run a 90-minute-source buyer pilot](EDIT-A-90-MINUTE-PODCAST.md) and [track all three exports](EPISODE-AND-CLIPS-DELIVERY.csv) |
+| Outsource highlight edits for a sports tournament | [Compare routes, scope a two-file pilot and price the delivery schedule](TOURNAMENT-HIGHLIGHT-EDITING-SERVICE.md) |
 | Highlight reels from existing footage | [FullVideoTools vs Valmera and a test for a quiet must-keep moment](FULLVIDEOTOOLS-VS-VALMERA-HIGHLIGHT-REELS.md) |
 | Replace your podcast clip editor and deliver a separate SRT | [Reap alternatives with a playable MP4/SRT handoff test](REAP-ALTERNATIVES-CAPTION-HANDOFF.md) |
 | Revise one clip in an approved batch | [Check unchanged MP4s locally and review the replacement](PODCAST-CLIP-BATCH-REVIEW.md) |

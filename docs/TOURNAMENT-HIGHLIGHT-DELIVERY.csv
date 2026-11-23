@@ -1,0 +1,11 @@
+example_id,source_ids,output_name,format,required_event,review_by_local,approved_by_local,time_zone,approver,public_use_check,status
+01,M1,match-01-recap.mp4,1920x1080,M1 approved scoring sequence,Sat 15:30,Sat 16:00,America/Chicago,Match editor,Confirm assets,Example only
+02,M1,match-01-vertical.mp4,1080x1920,M1 buildup and finish,Sat 15:30,Sat 16:15,America/Chicago,Social producer,Confirm assets,Example only
+03,M2,match-02-recap.mp4,1920x1080,M2 receiving player and result,Sat 16:30,Sat 17:00,America/Chicago,Match editor,Confirm assets,Example only
+04,M2,match-02-vertical.mp4,1080x1920,M2 receiving player and ball in frame,Sat 16:30,Sat 17:15,America/Chicago,Social producer,Confirm assets,Example only
+05,M3,match-03-recap.mp4,1920x1080,M3 approved scoring sequence,Sat 17:30,Sat 18:00,America/Chicago,Match editor,Confirm assets,Example only
+06,M3,match-03-vertical.mp4,1080x1920,M3 buildup and finish,Sat 17:30,Sat 18:15,America/Chicago,Social producer,Confirm assets,Example only
+07,M4,match-04-recap.mp4,1920x1080,M4 approved final sequence,Sat 18:30,Sat 19:00,America/Chicago,Match editor,Confirm assets,Example only
+08,M4,match-04-vertical.mp4,1080x1920,M4 buildup and final sequence,Sat 18:30,Sat 19:15,America/Chicago,Social producer,Confirm assets,Example only
+09,M1|M2|M3|M4,event-recap.mp4,1920x1080,Opening and final celebration,Sun 09:00,Sun 10:00,America/Chicago,Event producer,Confirm assets,Example only
+10,M1|M2|M3|M4|BROLL,event-sponsor-proof.mp4,1920x1080,Agreed actual placement,Sun 09:30,Sun 11:00,America/Chicago,Sponsor approver,Confirm artwork and footage,Example only
