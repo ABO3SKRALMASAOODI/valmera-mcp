@@ -1,0 +1,42 @@
+{
+  "sourceSha256": "b613e1040519ef3cfe49c5103912342236bf2e0f6fc0b80aa0744872538db34f",
+  "sourceStartSeconds": 3.2,
+  "sampleSourceSeconds": 4.0,
+  "sampleExportSeconds": 0.8,
+  "comparisonRegionPixels": {
+    "x": 1068,
+    "y": 562,
+    "width": 300,
+    "height": 116
+  },
+  "measurement": "Mean absolute difference in 8-bit grayscale values derived from decoded RGB frames. The sample crop includes the Show whole photo control and nearby interface detail.",
+  "commonOutput": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "frames": 168,
+    "durationSeconds": 5.6,
+    "audioTracks": 0
+  },
+  "outputs": {
+    "original-size.mp4": {
+      "process": "Native-size export",
+      "bytes": 1532256,
+      "lumaMeanAbsoluteError": 0.89,
+      "sha256": "761ad8ba699f131311ed88a07d06e9cc0403d5540a8d856c864f20867ea9fd61"
+    },
+    "from-540p.mp4": {
+      "process": "540p intermediate",
+      "bytes": 1607109,
+      "lumaMeanAbsoluteError": 2.68,
+      "sha256": "5bc4e25887bd1e589b5eca78804c8c398a34618eedab6c7f54fc7e474eddf86c"
+    },
+    "from-270p.mp4": {
+      "process": "270p intermediate",
+      "bytes": 1538603,
+      "lumaMeanAbsoluteError": 9.49,
+      "sha256": "1868416b6bbb6a86cf8a654a7d3de6b35be078407448c9ac0a8d8858f739abba"
+    }
+  }
+}
