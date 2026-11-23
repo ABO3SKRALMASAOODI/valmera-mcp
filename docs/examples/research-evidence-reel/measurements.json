@@ -1,0 +1,36 @@
+{
+  "video_file": "evidence-reel.mp4",
+  "sha256": "76e5f8f5893af47fb9f59191d8f46cbe52feb1c7573ee0706007fc4000612086",
+  "reel_seconds": "20.68",
+  "frames": 517,
+  "frame_rate": 25,
+  "frame_ranges": "Zero-based with exclusive end frames. Inputs were resampled to 25 fps.",
+  "source": "NASA Goddard Scientific Visualization Studio, https://svs.gsfc.nasa.gov/12713/",
+  "audio_method": "Compared a two-second decoded mono window starting two seconds into each excerpt with the corresponding source window at 24 kHz. The excerpts retain recorded speech.",
+  "excerpts": [
+    {
+      "excerpt_id": "E01",
+      "reel_frames": [
+        0,
+        311
+      ],
+      "source_seconds": [
+        "9.40",
+        "21.84"
+      ],
+      "two_second_audio_sample_correlation": 0.992455
+    },
+    {
+      "excerpt_id": "E02",
+      "reel_frames": [
+        311,
+        517
+      ],
+      "source_seconds": [
+        "36.84",
+        "45.08"
+      ],
+      "two_second_audio_sample_correlation": 0.993872
+    }
+  ]
+}
