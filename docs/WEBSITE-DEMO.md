@@ -75,6 +75,8 @@ For direct editing from an assistant, follow the [client setup guide](https://va
 
 If you need an agent to follow a public path and return footage you can revise by chat, start with the [Valmera capture and finished MP4](https://valmera.io/examples/product-demo). Demosmith describes an agent-operated workflow that also returns a clickable demo and written instructions. If someone on your team will perform each action and the viewer needs to explore hotspots, Supademo documents a guided capture and Arcade offers an interactive recorder. Arcade also offers a separate AI video workflow. The [product demo maker comparison](https://valmera.io/use-cases/saas-demos#interactive) links the providers’ capture and delivery documentation.
 
+For a demo you need to re-record after each release, [compare saved recipes and run one repeatable click test](RECORD-A-REPEATABLE-PRODUCT-DEMO.md).
+
 For a person-operated browser recorder that adds zooms on clicks, [compare Cursorful and Valmera on the same website walkthrough](CURSORFUL-VS-VALMERA-WEBSITE-WALKTHROUGHS.md). The test checks who operates the browser and whether the downloaded MP4 shows the requested destination.
 
 ### Compare coding-agent recorders by what you can take away
