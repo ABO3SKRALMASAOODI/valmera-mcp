@@ -1,0 +1,24 @@
+{
+  "fixture": "Original synthetic teaching sample, caption labels and reference tone. Local renders, not Valmera output.",
+  "resolution": [
+    640,
+    360
+  ],
+  "fps": 30,
+  "decodedFrameCountPerVideo": 180,
+  "changedFramesInclusive": [
+    60,
+    119
+  ],
+  "matchingOutsideFramesChecked": [
+    59,
+    120
+  ],
+  "decodedAudioMonoSamplesPerVideo": 288768,
+  "decodedAudioPCM16Sha256": "e0c801d2ceeaa1609f70cfa8caf093fa18b77f0c831150fcb074c71d7667ac06",
+  "assetSha256": {
+    "covered.mp4": "2267620d839a3cbd0fa49a4f1542ccedee14189c1e31f5a479112e34c1f42df4",
+    "original.mp4": "53aa2873ea0a3df6fb0b16d934dfed2d5bd2ac173ad0cd5ff5097fe67cc8f730",
+    "restored.mp4": "91d334482d561be1f4b74b7342bf4e48369c64691b6a95bc464e8eb29e0292c3"
+  }
+}

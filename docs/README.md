@@ -30,6 +30,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | --- | --- |
 | Interview | [Editor workflow comparison and traceable paper edit](INTERVIEW-PAPER-EDIT.md), with a [trial and review worksheet](INTERVIEW-REVIEW-WORKSHEET.md) and [three playable dialogue cuts](INTERVIEW-SPLIT-EDITS.md) |
 | Weekly talking-head recordings | [Two-recording editor pilot and timed cutaway](WEEKLY-TALKING-HEAD-EDITOR-PILOT.md) |
+| Replace a B-roll shot in an MP4 that already has captions | [Play the covered and restored exports](REPLACE-B-ROLL-WITH-BURNED-IN-CAPTIONS.md) |
 | B-roll over an exact phrase | [Compare placement workflows and check four frames in the export](OWN-FOOTAGE-B-ROLL-CUTAWAY-TEST.md) |
 | Choosing a talking-head editor | [Takehound vs Valmera and how to test a second episode](TAKEHOUND-VS-VALMERA.md) |
 | Podcast clips | [Compare ten clipping workflows and select a complementary clip set](PODCAST-CLIPS.md), with a [blank selection and delivery worksheet](PODCAST-CLIP-WORKSHEET.md) |
