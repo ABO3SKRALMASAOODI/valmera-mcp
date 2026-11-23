@@ -12,6 +12,7 @@ For free editing, use the [export check and delivery record](FREE-EXPORT-CHECK.m
 | Go from an uploaded recording to a reviewed export | [Complete editing workflow](WORKFLOW.md) |
 | Connect Claude, ChatGPT or another compatible client | [Client setup and hosted-service responsibilities](CLIENTS.md) |
 | Choose between your own assistant and Valmera AI | [Plans, allowances and editing routes](CLIENTS.md#choose-the-plan-for-your-editing-route) |
+| Compare EditWithChat alternatives on a targeted speech revision | [Play the two cuts and run the same restoration test](EDITWITHCHAT-ALTERNATIVES-TARGETED-RESTORE.md) |
 | Compare Action Editor and Valmera for an assistant-led edit | [Browser access, MCP and a first-cut-to-export test](ACTION-EDITOR-VS-VALMERA.md) |
 | Make a first edit from a public video link | [Two prompts, both previews and the final MP4](FIRST-EDIT-FROM-A-LINK.md) |
 | Make a first edit through ChatGPT | [ChatGPT walkthrough](CHATGPT.md) |

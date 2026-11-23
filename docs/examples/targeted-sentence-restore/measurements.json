@@ -1,0 +1,48 @@
+{
+  "scope": "Local reference edits from a published synthetic Valmera voice sample, not new Valmera agent renders.",
+  "source": "https://valmera.io/examples/filler-word-cut/original.mp4",
+  "sourceSha256": "437fe11667dbe2d1c7bf4d14b6d3cedd95eaf76ffeb062e2f94dcdcb7d551630",
+  "retainedTailCheck": "Compared source seconds 2.08\u20133.28 with matching output interval at 48 kHz mono.",
+  "restorationCheck": "Compared source seconds 0.24\u20131.24 with the same output interval at 48 kHz mono.",
+  "results": {
+    "over-cut": {
+      "retainedSourceSeconds": [
+        [
+          0,
+          0.2
+        ],
+        [
+          1.48,
+          1.56
+        ],
+        [
+          1.88,
+          4
+        ]
+      ],
+      "videoFrames": 60,
+      "fps": 25,
+      "programSeconds": 2.4,
+      "suffixAudioCorrelation": 1.0,
+      "sha256": "6c521c9677c01ee6bd4889c7d3c81f53c0fe3fb8a8387129020e1ec5cad6c42e"
+    },
+    "targeted-restore": {
+      "retainedSourceSeconds": [
+        [
+          0,
+          1.56
+        ],
+        [
+          1.88,
+          4
+        ]
+      ],
+      "videoFrames": 92,
+      "fps": 25,
+      "programSeconds": 3.68,
+      "suffixAudioCorrelation": 1.0,
+      "sha256": "8cd7096bbdc7610e2bdd3db3f5616e7efa64194d17f20f28f7a1c2cfeed66326",
+      "restoredSentenceAudioCorrelation": 0.999996
+    }
+  }
+}
