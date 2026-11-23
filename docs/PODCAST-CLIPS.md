@@ -99,6 +99,8 @@ In the fictional example, C's qualification is the reason it was chosen. If it d
 
 Keep A and D's approved references while C returns to review. Do not silently replace an approved file with a new export using the same unlabeled name. If the editor cannot isolate the correction, inspect every affected deliverable again.
 
+When delivering the batch as MP4s, [verify the other approved files locally](PODCAST-CLIP-BATCH-REVIEW.md) before reopening the revised clip.
+
 Use separate fields for **source range**, **preview version**, **program duration** and **downloaded file duration**. An end card can make the file longer than the selected content. Valmera's [recorded MCP example](MCP-RECORDED-EDIT.md) illustrates that distinction with a ten-second program inside a fifteen-second MP4; that silent example does not establish podcast speech quality.
 
 ## Measure the useful output, not the candidate count
