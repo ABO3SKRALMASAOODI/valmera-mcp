@@ -1,0 +1,4 @@
+event_id,spoken_cue,picture_file,picture_in_seconds,picture_out_seconds,audio_file,audio_in_seconds,audio_out_seconds,reel_in_seconds,reel_out_seconds
+E01,Today we’re launching the review queue.,camera-a.mp4,1.00,2.50,camera-a.mp4,1.00,2.50,0.00,1.50
+E01,Today we’re launching the review queue.,camera-b.mp4,4.50,6.00,camera-a.mp4,2.50,4.00,1.50,3.00
+E02,The first report is ready.,camera-b.mp4,6.00,8.00,camera-b.mp4,6.00,8.00,3.00,5.00

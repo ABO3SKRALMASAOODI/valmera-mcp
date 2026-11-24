@@ -109,6 +109,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | A phone HDR edit needs an SDR Rec.709 MP4 | [Test whether the export converted the picture or only changed its tags](CHECK-HDR-TO-SDR-PHONE-VIDEO-EXPORT.md) |
 | Outsource separate conference session edits across multiple rooms | [Check two simultaneous recordings and scope the delivery](OUTSOURCE-MULTI-ROOM-CONFERENCE-SESSION-EDITS.md) |
 | Conference footage that needs a sponsor proof cut | [Compare event editors and plan the approval](CONFERENCE-SPONSOR-PROOF-VIDEO.md), with a [source and output timing sheet](CONFERENCE-SPONSOR-PROOF-DELIVERY.csv) |
+| Edit one recap from overlapping event camera recordings | [Compare four workflows, play the duplicate and corrected reels, and trace the angles](EDIT-A-MULTICAMERA-EVENT-RECAP.md) |
 | YouTube video | [Editor routes, full-episode trial and chapter timing map](YOUTUBE.md), with a [reusable trial record](YOUTUBE-EDITOR-TRIAL.md) |
 | Property walkthrough | [Compare editing routes, map the rooms and review a restoration](REAL-ESTATE-SHOT-MAP.md), with a [shared property trial record](REAL-ESTATE-EDITOR-TRIAL.md) |
 | Product footage with an expired offer | [Recorded offer-removal example, with before/after exports](PRODUCT-OFFER-REMOVAL-EXAMPLE.md) and the [ecommerce planning guide](https://valmera.io/use-cases/ecommerce) |
