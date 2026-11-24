@@ -1,0 +1,49 @@
+{
+  "date_utc": "2026-11-24",
+  "methode": "Images vérifiées avec OpenCV. Pistes audio décodées avec afconvert en PCM 16 bits mono, 16 kHz, puis comparées aux mêmes instants.",
+  "intervalle_audio_secondes": [
+    2.625,
+    3.55
+  ],
+  "source": "https://valmera.io/examples/filler-word-cut/original.mp4",
+  "images": [
+    {
+      "numero": 63,
+      "seconde": 2.52,
+      "visible": "Forme d’onde"
+    },
+    {
+      "numero": 64,
+      "seconde": 2.56,
+      "visible": "Premier échantillon"
+    },
+    {
+      "numero": 92,
+      "seconde": 3.68,
+      "visible": "Dernier échantillon"
+    },
+    {
+      "numero": 93,
+      "seconde": 3.72,
+      "visible": "Forme d’onde"
+    }
+  ],
+  "fichiers": {
+    "preview": {
+      "url": "https://valmera.io/examples/b-roll-cutaway/preview.mp4",
+      "sha256": "55dbd09c57d9bff28112b33fedca130c8bd12a30c08864a38386e166f8defa9e",
+      "images_par_seconde": 25,
+      "nombre_images": 100,
+      "correlation": 0.999396137,
+      "ecart_rms_db": -0.002535
+    },
+    "final": {
+      "url": "https://valmera.io/examples/b-roll-cutaway/final.mp4",
+      "sha256": "798d484242fc63f25f756d940214701a0ca9b90cc65679721def30bf1dd729f8",
+      "images_par_seconde": 25,
+      "nombre_images": 225,
+      "correlation": 0.999396747,
+      "ecart_rms_db": -0.002378
+    }
+  }
+}
