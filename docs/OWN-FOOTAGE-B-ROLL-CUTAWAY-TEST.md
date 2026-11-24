@@ -32,6 +32,8 @@ The preview still runs four seconds. The nine-second archival final includes a f
 
 [Play a two-insert example](REPLACE-SECOND-B-ROLL-INSERT.md) in which only the second cutaway changes and the downloaded narration stays identical.
 
+[Replay the two existing-footage reference edits](REPLAY-EXISTING-FOOTAGE-EDITING-TEST.md) to verify which request removes narration and which preserves it.
+
 ## Run the same revision using your own footage
 
 1. Pick a short passage containing two distinct spoken phrases and an approved clip. Write down the filename, first and last words, and whether text or captions must remain visible.
