@@ -25,7 +25,7 @@ For the baseline quote, count **12 MP4s and 24 caption files per month**. A vert
 
 Download the approved [Valmera MP4](examples/uae-bilingual-video-editing/product-demo.mp4) and its [English WebVTT](examples/uae-bilingual-video-editing/product-demo.en.vtt) and [Arabic WebVTT](examples/uae-bilingual-video-editing/product-demo.ar.vtt). The [sample folder](examples/uae-bilingual-video-editing) also includes a browser player for both tracks. In the published clip the guide-opening cue starts at **1.900 seconds** in both files. Switch tracks near that point and check that the visible label `Captions` keeps its spelling inside the Arabic line.
 
-To use the included player, save all four files in the same folder, run `python3 -m http.server --bind 127.0.0.1 8000` from that folder, and open `http://127.0.0.1:8000/`. You can also load the MP4 and each WebVTT into your own player.
+To use the included player, save the files from the sample folder together, run `python3 serve.py` from that folder, and open `http://127.0.0.1:8000/`. You can also load the MP4 and each WebVTT into your own player.
 
 1. **Check sync after a real edit.** For the example brief, trimming 0.500 seconds from the beginning with no other timing changes would move the opening cue to 1.400 seconds. Reload both revised files against the new MP4. Check the on-screen action and both tracks in the player your viewers will use.
 2. **Check the words that must survive.** Give an Arabic-language reviewer your glossary. Have them check product names, numbers, punctuation and mixed Arabic and English text on the finished player, including on mobile if your audience uses it.
