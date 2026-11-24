@@ -50,6 +50,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Outsource highlight edits for a sports tournament | [Compare routes, scope a two-file pilot and price the delivery schedule](TOURNAMENT-HIGHLIGHT-EDITING-SERVICE.md) |
 | Make a goalkeeper highlight reel | [Compare two cuts and keep distinct plays with a match-clock log](GOALKEEPER-HIGHLIGHT-REEL-PLAY-LOG.md) |
 | A recruiting reel loses the athlete or ball in portrait | [Compare a marked wide play, a center crop and a fitted portrait export](MARK-PLAYER-IN-RECRUITING-HIGHLIGHT-REEL.md) |
+| A basketball reel misses the screen before the basket | [Compare the full play, a finish-only cut and a marked seven-second export](BASKETBALL-HIGHLIGHT-REEL-KEEP-THE-SCREEN.md) |
 | Webinar highlights with a quiet product demo | [Compare four editors and test one focused revision](AI-WEBINAR-HIGHLIGHT-REEL-EDITORS.md) |
 | Make a GoPro highlight reel from consecutive camera chapters | [Compare two real clips and check continuity across the join](GOPRO-HIGHLIGHT-REEL-CHAPTERS.md) |
 | Highlight reels from existing footage | [FullVideoTools vs Valmera and a test for a quiet must-keep moment](FULLVIDEOTOOLS-VS-VALMERA-HIGHLIGHT-REELS.md) |
