@@ -1,0 +1,20 @@
+{
+  "beispiel": "Fiktive Oberfläche, synthetische deutsche Stimme und lokal erstellte Untertitel.",
+  "bilder_pro_sekunde": 30,
+  "quelle_sekunden": 10,
+  "schnitt_sekunden": 8,
+  "entferntes_quellintervall_sekunden": [
+    4,
+    6
+  ],
+  "satz_1_start_quelle_und_schnitt": 0.4,
+  "satz_2_start_quelle": 6.4,
+  "satz_2_start_schnitt": 4.4,
+  "identische_bilder_aus_beibehaltenen_bereichen": 240,
+  "sha256": {
+    "quelle.mp4": "c957084c01393c049635fbfc505abed4687f50a573577d272e06b700b20df0c4",
+    "gekuerzt.mp4": "80bf5eb9e983da39c42a08d53113760907dfdd00bdc5a598b8b4eaa8893c2970",
+    "quelle.srt": "939c8e7dda216c3c0103b4fa8ed3d6ea1dfe0450fdf2295af32a4985c158a22e",
+    "korrigiert.srt": "a99cce850104a46e3b099a74e612b21504ae3a4b9f2b43b61616c82b8fb84e88"
+  }
+}
