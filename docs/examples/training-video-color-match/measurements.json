@@ -1,0 +1,48 @@
+{
+  "source": "docs/examples/research-evidence-reel/evidence-reel.mp4",
+  "sourceCutSeconds": [
+    14.4,
+    18.6
+  ],
+  "width": 864,
+  "height": 292,
+  "fps": 25,
+  "durationSeconds": 4.2,
+  "frames": 105,
+  "audioTracks": 0,
+  "castGainsRGB": [
+    1.16,
+    0.98,
+    0.8
+  ],
+  "castOffsetsRGB": [
+    3.0,
+    3.0,
+    4.0
+  ],
+  "medianDecodedPatchRGB": {
+    "Approved reference": [
+      126,
+      126,
+      126
+    ],
+    "Warm cast added": [
+      150,
+      126,
+      104
+    ],
+    "Cast corrected": [
+      126,
+      126,
+      126
+    ]
+  },
+  "meanAbsoluteDecodedImageErrorFromReference": {
+    "warmCast": 7.56,
+    "corrected": 2.21
+  },
+  "fileSha256": {
+    "color-match-review.mp4": "83a67d372e204edfd43eaae04f881e300531a437f0fff972fa6ebdc761858a69",
+    "comparison.jpg": "d7886cd185ee09c4187aca51e6a89538634ee9efacd00f0302b09dbf4ebafb0f"
+  }
+}

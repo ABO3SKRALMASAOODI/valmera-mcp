@@ -59,6 +59,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Recorded course lesson | [Compare search-result routes and preserve the teaching sequence](COURSE-LESSON-EDITING.md), with a [lesson trial and release worksheet](COURSE-LESSON-REVIEW.md) |
 | Deliver approved training videos and SRT captions to an LMS | [Verify the batch locally and reproduce a stale-caption mix-up](VERIFY-TRAINING-VIDEO-HANDOFF.md) |
 | Outsourced employee onboarding | [Brief and review a two-site onboarding edit](EMPLOYEE-ONBOARDING-VIDEO-EDITING-SERVICE.md) |
+| Training videos recorded with different cameras or lighting | [Compare three grades and brief a repeatable color-matching pilot](MATCH-COLOR-ACROSS-TRAINING-VIDEOS.md) |
 | Turn an existing onboarding call into a standalone product demo | [Compare workflows and play the three release examples](ONBOARDING-CALL-TO-PRODUCT-DEMO.md) |
 | Website demonstration | [Plan and make a website demo](WEBSITE-DEMO.md) |
 | Blurry text in a 1080p screen recording | [Compare three exports and find where the text goes soft](KEEP-SCREEN-RECORDING-TEXT-SHARP-AT-EXPORT.md) |
