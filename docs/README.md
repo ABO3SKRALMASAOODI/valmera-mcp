@@ -61,6 +61,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | A podcast cut leaves a click at the join | [Listen to two same-length WAVs and check what changed](FIX-AN-AUDIO-CLICK-AT-A-VIDEO-CUT.md) |
 | Revise one clip in an approved batch | [Check unchanged MP4s locally and review the replacement](PODCAST-CLIP-BATCH-REVIEW.md) |
 | Customer testimonial from a recorded interview | [Compare AI editors with an approved-quote test and two playable cuts](CUSTOMER-TESTIMONIAL-VIDEO-EDITORS.md) |
+| Record a tooltip in a website demo | [Compare two MP4s with different hover holds](RECORD-HOVER-TOOLTIP-IN-WEBSITE-DEMO.md) |
 | Screen recording or software tutorial | [Preserve the starting state, action and result](SCREEN-RECORDING-TUTORIALS.md) |
 | Embed a product demo on a website | [Compare the same six seconds as an MP4 and GIF](WEBSITE-DEMO-GIF-OR-MP4.md) |
 | Audio drifts in a screen recording | [Compare three MP4s and verify sync before editing](FIX-SCREEN-RECORDING-AUDIO-DRIFT.md) |

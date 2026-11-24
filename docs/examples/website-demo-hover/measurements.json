@@ -1,0 +1,31 @@
+{
+  "capture": "Controlled Chromium screenshots. Static states are held for exact frame counts in the two silent local MP4s.",
+  "chromium_version": "131.0.6778.33",
+  "viewport": [
+    768,
+    432
+  ],
+  "fps": 24,
+  "video_frames": 108,
+  "keyboard_focus_reveals_tooltip": true,
+  "pixel_used_for_tooltip": [
+    294,
+    171
+  ],
+  "tooltip_frames_inclusive": {
+    "quick-hover.mp4": [
+      24,
+      29
+    ],
+    "held-hover.mp4": [
+      24,
+      59
+    ]
+  },
+  "tooltip_frame_count": {
+    "quick-hover.mp4": 6,
+    "held-hover.mp4": 36
+  },
+  "preview_result_start_frame": 66,
+  "comparison_frame": 42
+}
