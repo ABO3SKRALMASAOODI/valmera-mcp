@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arabic and English subtitle sample</title>
+  <style>
+    body { max-width: 52rem; margin: 2rem auto; padding: 0 1rem; font: 1rem/1.5 system-ui, sans-serif; }
+    video { width: 100%; }
+  </style>
+</head>
+<body>
+  <h1>Arabic and English subtitle sample</h1>
+  <video controls playsinline preload="metadata" aria-label="Product demo showing the Captions guide">
+    <source src="product-demo.mp4" type="video/mp4">
+    <track kind="subtitles" src="product-demo.en.vtt" srclang="en" label="English" default>
+    <track kind="subtitles" src="product-demo.ar.vtt" srclang="ar" label="العربية">
+  </video>
+  <p>Use the player's subtitle control to switch languages. The Captions guide cue starts at 1.900 seconds on both tracks.</p>
+</body>
+</html>

@@ -4,11 +4,11 @@ Use one product walkthrough to compare done-for-you editing providers before you
 
 ## Four providers to compare
 
-We are Valmera. We checked each provider's public service page on November 24, 2026. The table describes advertised scope. We played and inspected our own sample. Scope the 12-recording example with each provider to confirm availability and the actual quote.
+We are Valmera. We checked each provider's public service page on November 24, 2026. The table describes advertised scope. We checked the caption timings and the visible product label on our own sample. Scope the 12-recording example with each provider to confirm availability and the actual quote.
 
 | Provider | What the provider publishes | What to ask for in your quote |
 | --- | --- | --- |
-| [Valmera Enterprise](https://valmera.io/ar/video-editing-services-uae?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=enterprise_uae_vendor_pilot) | Recurring editing from your existing footage. Play the same product edit with English and Arabic tracks and download both WebVTT files. | Confirm who supplies the approved translations, your separate caption-file format and how revisions and cutdowns count toward the monthly scope. |
+| [Valmera Enterprise](https://valmera.io/ar/video-editing-services-uae?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=enterprise_uae_vendor_pilot) | Recurring editing from your existing footage. The sample below includes the same product edit with separate English and Arabic WebVTT files. | Confirm who supplies the approved translations, your separate caption-file format and how revisions and cutdowns count toward the monthly scope. |
 | [The Arabic Studio](https://thearabicstudio.com/video-editing/) | Editing with approved multilingual assets. Separate subtitle or audio deliverables and review rounds are scoped for the project. | Ask for editing and translation as separate quote lines if you need both. Confirm the monthly delivery calendar. |
 | [Ranku](https://ranku.ae/video-editing-dubai/) | A published monthly pack for eight short videos, English and Arabic subtitles, and two creative revision rounds. | Ask whether your product walkthroughs count as short edits and whether the subtitle tracks are delivered as files you can upload separately. |
 | [Progmize](https://progmize.ae/en/services/video-editing) | A monthly editing service with Arabic and English subtitles. Product demos are among its listed formats. | Confirm how many edits the monthly quote covers, the revision allowance and separate subtitle-file delivery. |
@@ -23,11 +23,13 @@ For the baseline quote, count **12 MP4s and 24 caption files per month**. A vert
 
 ## Check the files before you approve the pilot
 
-Start with this [public Valmera sample](https://valmera.io/ar/video-editing-services-uae). Download the [English WebVTT](https://valmera.io/examples/demo-localization/product-demo.en.vtt) and [Arabic WebVTT](https://valmera.io/examples/demo-localization/product-demo.ar.vtt). In the published clip the guide-opening cue starts at **1.900 seconds** in both files. Switch tracks near that point and check that the visible label `Captions` keeps its spelling inside the Arabic line.
+Download the approved [Valmera MP4](examples/uae-bilingual-video-editing/product-demo.mp4) and its [English WebVTT](examples/uae-bilingual-video-editing/product-demo.en.vtt) and [Arabic WebVTT](examples/uae-bilingual-video-editing/product-demo.ar.vtt). The [sample folder](examples/uae-bilingual-video-editing) also includes a browser player for both tracks. In the published clip the guide-opening cue starts at **1.900 seconds** in both files. Switch tracks near that point and check that the visible label `Captions` keeps its spelling inside the Arabic line.
+
+To use the included player, save all four files in the same folder, run `python3 -m http.server --bind 127.0.0.1 8000` from that folder, and open `http://127.0.0.1:8000/`. You can also load the MP4 and each WebVTT into your own player.
 
 1. **Check sync after a real edit.** For the example brief, trimming 0.500 seconds from the beginning with no other timing changes would move the opening cue to 1.400 seconds. Reload both revised files against the new MP4. Check the on-screen action and both tracks in the player your viewers will use.
 2. **Check the words that must survive.** Give an Arabic-language reviewer your glossary. Have them check product names, numbers, punctuation and mixed Arabic and English text on the finished player, including on mobile if your audience uses it.
 3. **Check the delivery as a set.** Put the filenames for the approved MP4 and both matching tracks in one manifest. Include format, language, version and review status. Open the delivery link as a reviewer to make sure they can access every file.
 4. **Price the change at volume.** Ask the provider to put the full monthly deliverable count, included revisions, first review date and any translation work in writing. Separate additional exports from new editorial cuts so you can compare quotes on the same scope.
 
-To ask Valmera about the batch, [open Enterprise contact on /subscribe](https://valmera.io/subscribe#enterprise). Include your monthly recording count, the two subtitle languages, and the first review date.
+To ask Valmera about the batch, [open Enterprise contact on /subscribe](https://valmera.io/subscribe#enterprise). Include your monthly recording count, the two subtitle languages, and the first review date. If the contact page is unavailable, [email Valmera Enterprise](mailto:support@valmera.io?subject=Enterprise%20editing%20inquiry%20-%20UAE%20bilingual%20pilot) with the same details.
