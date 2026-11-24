@@ -57,6 +57,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | A recruiting reel loses the athlete or ball in portrait | [Compare a marked wide play, a center crop and a fitted portrait export](MARK-PLAYER-IN-RECRUITING-HIGHLIGHT-REEL.md) |
 | A basketball reel misses the screen before the basket | [Compare the full play, a finish-only cut and a marked seven-second export](BASKETBALL-HIGHLIGHT-REEL-KEEP-THE-SCREEN.md) |
 | Verify subtitle timing after a webinar highlight cut | [Map cues from original time to the approved export and review each join](VERIFY-SUBTITLE-TIMING-IN-A-HIGHLIGHT-REEL.md) |
+| Turn a 90-minute webinar into one 10-minute recap | [Run a first cut and revision with a downloadable cut sheet](EDIT-90-MINUTE-WEBINAR-INTO-10-MINUTE-RECAP.md) |
 | Webinar highlights with a quiet product demo | [Compare four editors and test one focused revision](AI-WEBINAR-HIGHLIGHT-REEL-EDITORS.md) |
 | Webinar Q&A clips that must preserve a qualification | [Compare source and two playable edits, then test with someone who missed the webinar](EDIT-WEBINAR-QA-CLIPS-WITH-CONTEXT.md) |
 | Make a GoPro highlight reel from consecutive camera chapters | [Compare two real clips and check continuity across the join](GOPRO-HIGHLIGHT-REEL-CHAPTERS.md) |
