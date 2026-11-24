@@ -1,0 +1,6 @@
+case,approved_mp4,revised_mp4,expected_changed_start,expected_changed_end_exclusive,alternate_source,alternate_source_range,observed_first_changed_frame,observed_first_unchanged_frame_after_swap,fps,quote_and_qualifier_preserved,captions_readable_and_aligned,release_mp4_opens,review_minutes,outcome
+example_pass,case-study-v1.mp4,case-study-v2.mp4,00:27.000,00:31.000,event-check-in-wide.mp4,00:03.000–00:07.000,810,930,30,yes,yes,yes,8,approve
+example_one_frame_spill,case-study-v1.mp4,case-study-v2-spill.mp4,00:27.000,00:31.000,event-check-in-wide.mp4,00:03.000–00:07.000,810,931,30,yes,yes,yes,8,restore frame 930
+example_qualifier_dropped,case-study-v1.mp4,case-study-v2-audio.mp4,00:27.000,00:31.000,event-check-in-wide.mp4,00:03.000–00:07.000,810,930,30,no,yes,yes,8,restore approved interview audio
+example_captions_obscured,case-study-v1.mp4,case-study-v2-captions.mp4,00:27.000,00:31.000,event-check-in-wide.mp4,00:03.000–00:07.000,810,930,30,yes,no,yes,8,restore caption readability
+your_pilot,,,,,,,,,,,,,,
