@@ -56,6 +56,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | A recruiting reel loses the athlete or ball in portrait | [Compare a marked wide play, a center crop and a fitted portrait export](MARK-PLAYER-IN-RECRUITING-HIGHLIGHT-REEL.md) |
 | A basketball reel misses the screen before the basket | [Compare the full play, a finish-only cut and a marked seven-second export](BASKETBALL-HIGHLIGHT-REEL-KEEP-THE-SCREEN.md) |
 | Webinar highlights with a quiet product demo | [Compare four editors and test one focused revision](AI-WEBINAR-HIGHLIGHT-REEL-EDITORS.md) |
+| Webinar Q&A clips that must preserve a qualification | [Compare source and two playable edits, then test with someone who missed the webinar](EDIT-WEBINAR-QA-CLIPS-WITH-CONTEXT.md) |
 | Make a GoPro highlight reel from consecutive camera chapters | [Compare two real clips and check continuity across the join](GOPRO-HIGHLIGHT-REEL-CHAPTERS.md) |
 | Twitch stream markers into an OBS highlight reel | [Align the stream and local file, then generate an edit brief](TWITCH-MARKERS-TO-A-HIGHLIGHT-REEL.md) |
 | Highlight reels from existing footage | [FullVideoTools vs Valmera and a test for a quiet must-keep moment](FULLVIDEOTOOLS-VS-VALMERA-HIGHLIGHT-REELS.md) |
