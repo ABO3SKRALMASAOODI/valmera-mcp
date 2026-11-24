@@ -1,0 +1,45 @@
+{
+  "kind": "locally rendered fictional software training example using synthetic speech",
+  "duration_seconds": 15,
+  "video_frames_matching": 450,
+  "video_frame_rate": 30,
+  "width": 640,
+  "height": 360,
+  "audio_sample_rate": 48000,
+  "cues": [
+    {
+      "kind": "narration",
+      "start": 0.5,
+      "end": 2.537,
+      "text": "Open Permissions for this workspace.",
+      "relative_decoded_narration_rms_difference": 0.0
+    },
+    {
+      "kind": "description",
+      "start": 4.15,
+      "end": 6.577,
+      "text": "The role is Viewer. The status says Draft.",
+      "standard_peak_pcm": 0,
+      "described_peak_pcm": 18508
+    },
+    {
+      "kind": "narration",
+      "start": 9.15,
+      "end": 11.829,
+      "text": "After changing the role, save your changes.",
+      "relative_decoded_narration_rms_difference": 0.04182
+    },
+    {
+      "kind": "description",
+      "start": 12.15,
+      "end": 14.275,
+      "text": "The role is now Publisher. Saved.",
+      "standard_peak_pcm": 0,
+      "described_peak_pcm": 19752
+    }
+  ],
+  "mp4_sha256": {
+    "standard.mp4": "1817eec38af6de55c3704ca4d1e3d585a4766b7f5181476f4b0ce395521203ce",
+    "described.mp4": "dc3d7baa54bd6b9c91e6d23e7647d11c593e31c7f8893fb98edf890307369410"
+  }
+}
