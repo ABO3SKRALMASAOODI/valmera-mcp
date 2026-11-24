@@ -50,6 +50,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Podcast clips | [Compare ten clipping workflows and select a complementary clip set](PODCAST-CLIPS.md), with a [blank selection and delivery worksheet](PODCAST-CLIP-WORKSHEET.md) |
 | Both speakers talk at once in a vertical podcast clip | [Compare single-speaker and stacked views with the same audio](KEEP-BOTH-SPEAKERS-IN-VERTICAL-PODCAST-CLIPS.md) |
 | A multicamera podcast cut misses a quiet reaction | [Compare a speaker cut and a picture-only guest shot with the same dialogue](KEEP-A-QUIET-REACTION-IN-A-MULTICAM-PODCAST.md) |
+| Request done-for-you video editing at volume | [Scope a recurring batch and email Valmera Enterprise](REQUEST-ENTERPRISE-VIDEO-EDITING.md) |
 | Outsource a recurring video podcast with a full edit and clips | [Compare five services and test a two-episode delivery and revision](OUTSOURCE-WEEKLY-VIDEO-PODCAST-EDITING.md) |
 | A long podcast needs a full episode and clips | [Run a 90-minute-source buyer pilot](EDIT-A-90-MINUTE-PODCAST.md) and [track all three exports](EPISODE-AND-CLIPS-DELIVERY.csv) |
 | Edit a passage that starts after hour three | [Extract a five-second sample and verify the source-to-excerpt time map](EDIT-PAST-THREE-HOURS-KEEP-SOURCE-TIMESTAMPS.md) |
