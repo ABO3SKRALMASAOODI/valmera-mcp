@@ -72,6 +72,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Replace one cutaway in an approved case-study video | [Run a four-second revision pilot and check the quote, captions and downloaded MP4](CASE-STUDY-CUTAWAY-REVISION.md), with a [review sheet](CASE-STUDY-CUTAWAY-REVISION.csv) |
 | Record a tooltip in a website demo | [Compare two MP4s with different hover holds](RECORD-HOVER-TOOLTIP-IN-WEBSITE-DEMO.md) |
 | Screen recording or software tutorial | [Preserve the starting state, action and result](SCREEN-RECORDING-TUTORIALS.md) |
+| Record a keyboard-only software tutorial | [Rehearse Tab, Enter and Escape and verify the focus in the edited MP4](RECORD-A-KEYBOARD-ONLY-SOFTWARE-TUTORIAL.md) |
 | Embed a product demo on a website | [Compare the same six seconds as an MP4 and GIF](WEBSITE-DEMO-GIF-OR-MP4.md) |
 | Audio drifts in a screen recording | [Compare three MP4s and verify sync before editing](FIX-SCREEN-RECORDING-AUDIO-DRIFT.md) |
 | Trim a training video with selectable English and Spanish audio | [Inspect both tracks and test the exported join](TRIM-VIDEO-WITH-TWO-AUDIO-LANGUAGES.md) |
