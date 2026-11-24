@@ -100,6 +100,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Translate subtitles while keeping the original voice | [Compare translation routes and review a bilingual sample](SUBTITLE-TRANSLATION.md), with a [trial and delivery worksheet](SUBTITLE-TRANSLATION-WORKSHEET.md) |
 | دمج ترجمة عربية في فيديو | [فيديو MP4 وملف SRT لاختبار ترتيب النص العربي والإنجليزي](ARABIC-SUBTITLES-MP4.md) |
 | Recortar una entrevista por texto en español | [Editor en español con MP4 y SRT de ejemplo](RECORTAR-VIDEO-POR-SUBTITULOS.md) |
+| Deutschsprachiges Video schneiden und Untertitel prüfen | [Beispiel mit zwei MP4-Dateien und passender SRT](KI-VIDEOEDITOR-DEUTSCHE-UNTERTITEL.md) |
 | Editar un video con IA por chat | [Compara editores en español y revisa dos MP4](EDITAR-VIDEOS-CON-IA-POR-CHAT.md) |
 | Spanish subtitles for an English software tutorial | [Worked handoff: visible labels, conditional instructions and a later cut](TUTORIAL-SUBTITLE-HANDOFF.md) |
 | A Spanish demo needs UI labels that match the captions | [Compare the same cues over English and Spanish screens and verify the download](LOCALIZE-A-SOFTWARE-DEMO-WITH-MATCHING-UI.md) |
