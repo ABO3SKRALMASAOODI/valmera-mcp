@@ -33,6 +33,8 @@ To adapt the test to your site, write down two visible values before recording. 
 
 Use the same recording to [check whether a vertical cut preserves the visible result](VERTICAL-PRODUCT-DEMO.md).
 
+If the recorded action creates a downloadable file, [verify the confirmation and the downloaded CSV](RECORD-A-PRODUCT-DEMO-THAT-EXPORTS-CSV.md) with an offline demo workspace.
+
 ## Install the website walkthrough skill
 
 In a project using Node.js 22.20 or later, run the command for your client. Each installs the same [MIT-licensed skill file](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/v1.0.1/skills/website-demo-video/SKILL.md) from release `v1.0.1`. Choose a project-local install when prompted, then refresh your agent session.
