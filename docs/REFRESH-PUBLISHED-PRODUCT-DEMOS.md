@@ -14,7 +14,7 @@ Use a demo account with sample data. Match the original viewport, zoom and theme
 
 ## Check that a viewer can still follow the action
 
-Valmera published an example using its documentation site. The [10.83-second source](https://valmera.io/examples/website-capture/public-docs-walkthrough.mp4) shows the pointer opening Captions around 3.57 seconds. In the [six-second edited MP4](https://valmera.io/examples/tutorial-click/restored-click.mp4), the viewer can still see the pointer reach the link and the resulting heading. Play both, then describe which control opened the new screen. The example demonstrates what a cut needs to preserve. It is a revision of one source recording, with no change to the underlying app. [Example and edit notes](https://valmera.io/product-demo-video-editing-service)
+Valmera published an example using its documentation site. The [10.83-second source](examples/product-demo-refresh/source-recording.mp4) shows the pointer opening Captions around 3.57 seconds. In the [six-second edited MP4](examples/uae-bilingual-video-editing/product-demo.mp4), the viewer can still see the pointer reach the link and the resulting heading. Play both, then describe which control opened the new screen. The example demonstrates what a cut needs to preserve. It is a revision of one source recording, with no change to the underlying app. [Example and edit notes](https://valmera.io/product-demo-video-editing-service)
 
 ## Map chapters, captions and links to the new cut
 
@@ -47,7 +47,18 @@ python3 verify_published_demo.py --approved approved.mp4 https://example.com/dem
 
 The script checks the link from the network where you run it. A revalidated response only describes that request, so retain the result of the normal request too. For adaptive streams or hosts that serve different versions by device, play the viewer-facing embed on the relevant devices and compare the updated screen directly. [HTTP request revalidation](https://www.rfc-editor.org/rfc/rfc9111.html#section-5.2.1.4)
 
-To see the two outcomes, save the [revised Captions walkthrough](https://valmera.io/examples/tutorial-click/restored-click.mp4) as `approved.mp4` and check its public URL. At publication it matched at **1,016,111 bytes**. Check the [earlier cut](https://valmera.io/examples/tutorial-click/missing-click.mp4) against the same local file and the script returns `different`. Both are playable MP4s, so a browser can open either even when only one is approved.
+### Run both checks on the recorded demo
+
+Use the [approved Captions walkthrough](examples/uae-bilingual-video-editing/product-demo.mp4) and the [earlier cut](examples/product-demo-refresh/earlier-cut.mp4). Both MP4s can play. Only the approved version serves the expected file. With the repository checked out, run these commands from its root.
+
+```sh
+valmera_demo=https://raw.githubusercontent.com/ABO3SKRALMASAOODI/valmera-mcp/main/docs/examples
+valmera_approved=docs/examples/uae-bilingual-video-editing/product-demo.mp4
+python3 docs/evaluation/verify_published_demo.py --approved "$valmera_approved" "$valmera_demo/uae-bilingual-video-editing/product-demo.mp4"
+python3 docs/evaluation/verify_published_demo.py --approved "$valmera_approved" "$valmera_demo/product-demo-refresh/earlier-cut.mp4"
+```
+
+The first command returns `match` (exit 0) at **1,016,111 bytes**. The second returns `different` (exit 1). Play the source and both cuts to see why checking that the file opens is only one part of approval.
 
 ## Brief a pilot before assigning the full library
 
@@ -55,6 +66,6 @@ To see the two outcomes, save the [revised Captions walkthrough](https://valmera
 
 Use the approved pilot to estimate recurring scope. List the number of walkthroughs, replacement sections, caption languages and downstream copies. Decide who checks timing after the edit and who replaces and verifies the file on each live destination.
 
-**[Scope recurring demo refreshes with Valmera Enterprise](https://valmera.io/subscribe?inquiry=product-demo-video-editing-service&utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=published_demo_refresh#enterprise)**. Include one old link, what changed and when you need the replacement.
+**[Scope recurring demo refreshes with Valmera Enterprise](https://valmera.io/subscribe?inquiry=product-demo-video-editing-service&utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=published_demo_refresh#enterprise)**. Include one old link, what changed and when you need the replacement. If the contact page is unavailable, [email the same brief](mailto:support@valmera.io?subject=Enterprise%20editing%20inquiry%20-%20product%20demo%20refresh).
 
 For a self-serve edit, [record a clean demo from a public URL or bring your own capture](https://valmera.io/tools/record-website-demo?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=published_demo_refresh). Hosted AI editing requires eligible paid access.
