@@ -9,6 +9,7 @@ For free editing, use the [export check and delivery record](FREE-EXPORT-CHECK.m
 | What you want to do | Start here |
 | --- | --- |
 | Choose an online editor and keep the project editable | [Browser workflows, source storage and a reopen/revise trial](ONLINE-VIDEO-EDITOR.md), with a [blank handoff record](ONLINE-EDITOR-TRIAL.txt) |
+| Edit a large video before a deadline | [Calculate transfer and review time before committing the full recording](PLAN-A-LONG-VIDEO-UPLOAD-BEFORE-YOU-BUY.md) |
 | Go from an uploaded recording to a reviewed export | [Complete editing workflow](WORKFLOW.md) |
 | Connect Claude, ChatGPT or another compatible client | [Client setup and hosted-service responsibilities](CLIENTS.md) |
 | Choose between your own assistant and Valmera AI | [Plans, allowances and editing routes](CLIENTS.md#choose-the-plan-for-your-editing-route) |
