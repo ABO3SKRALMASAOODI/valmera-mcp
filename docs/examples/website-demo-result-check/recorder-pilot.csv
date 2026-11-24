@@ -1,0 +1,6 @@
+Recorder,Run,Capture decision,MP4 or capture file,Expected result,Observed result,Action time seconds,Result checked at seconds,Opening preserved,Label readable at delivery size,Review minutes,Re-record required,Approval
+Valmera,Recorded example 1,Attempted website capture,https://valmera.io/examples/website-capture/first-attempt.mp4,Open AI Captions through the sidebar,Getting Started still visible and no click reported,,7.90,,,,yes,fail
+Valmera,Recorded example 3,Recaptured with sidebar-specific target,https://valmera.io/examples/website-capture/public-docs-walkthrough.mp4,Open AI Captions through the sidebar,AI Captions heading and click ring visible,3.57,4.00,,,,yes,capture confirmed
+,Baseline,,,"Named control opens the expected screen",,,,,,,,
+,Caption revision,,,"Change only the approved caption",,,,,,,,
+,Navigation revision,,,"Use the revised route and hold on the same result",,,,,,,,
