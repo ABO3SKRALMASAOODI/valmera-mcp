@@ -1,0 +1,38 @@
+{
+  "fixture": "Synthetic render of a fictional product. Cutaway variants differ in the rear panel and its label.",
+  "fps": 24,
+  "frame_count": 144,
+  "duration_seconds": 6,
+  "audio": "No audio tracks.",
+  "changed_portrait_frames_inclusive": [
+    24,
+    95
+  ],
+  "unchanged_portrait_frames": 72,
+  "files": {
+    "store-gallery-pro.mp4": {
+      "replace_range_frames": [
+        24,
+        96
+      ],
+      "product_in_cutaway": "A20 Pro",
+      "sha256": "6672c2025e55b0c8635626e9792ece49784a545ecc64f9bda13fc45ba061cf19"
+    },
+    "portrait-wrong-variant.mp4": {
+      "replace_range_frames": [
+        24,
+        96
+      ],
+      "product_in_cutaway": "A20",
+      "sha256": "074c323e5704fc990d00478aacc4ec1c561aea4e8eada4f41883e4e1954c419a"
+    },
+    "portrait-corrected.mp4": {
+      "replace_range_frames": [
+        24,
+        96
+      ],
+      "product_in_cutaway": "A20 Pro",
+      "sha256": "10553cca2bca04f283a8a9d6a4a97854dddbd51a672cc79354f64c054ab6ecdb"
+    }
+  }
+}

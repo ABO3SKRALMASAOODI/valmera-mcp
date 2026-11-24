@@ -121,6 +121,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Product footage with an expired offer | [Recorded offer-removal example, with before/after exports](PRODUCT-OFFER-REMOVAL-EXAMPLE.md) and the [ecommerce planning guide](https://valmera.io/use-cases/ecommerce) |
 | Outsource Arabic product video editing for the UAE and Saudi Arabia | [Compare three MP4s and scope a market-specific Enterprise pilot](OUTSOURCE-ARABIC-PRODUCT-VIDEO-EDITING.md) |
 | One product shoot needs a gallery video and a portrait ad | [Compare two edits and download a SKU delivery sheet](EDIT-A-SHOPIFY-PRODUCT-VIDEO-AND-VERTICAL-AD.md) |
+| Check the same SKU in a store video and a portrait ad | [Spot a wrong-variant cutaway and download a comparison sheet](VERIFY-PRODUCT-VARIANTS-IN-VIDEO-EXPORTS.md) |
 | Compare two ad hooks while preserving the approved offer | [Play the three exports and scope a hook-only revision](PAID-SOCIAL-HOOK-TEST-FROM-EXISTING-FOOTAGE.md) |
 | A TikTok ad needs different music | [Compare the three mixes and check that the old bed is gone](REPLACE-TIKTOK-AD-MUSIC-KEEP-VOICEOVER.md) |
 | Keep captions and the final call to action visible in vertical ads | [Compare two exports under player controls](CHECK-CAPTIONS-AND-CTA-IN-VERTICAL-ADS.md) |
