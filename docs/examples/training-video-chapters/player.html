@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Training video playback check</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+    body { margin: 0; padding: 24px 16px; }
+    main { max-width: 720px; margin-inline: auto; }
+    h1 { margin-top: 0; }
+    video { display: block; width: 100%; height: auto; background: #101827; }
+    ul { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; list-style: none; }
+    button { font: inherit; padding: 8px 12px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Change a workspace role</h1>
+    <video controls playsinline preload="metadata" width="640" height="360"
+           aria-label="Change a workspace role">
+      <source src="../described-training-video/standard.mp4" type="video/mp4">
+      <track kind="captions" label="English" srclang="en"
+             src="../described-training-video/standard.vtt">
+      <track id="chapter-track" kind="chapters" label="Lesson chapters"
+             srclang="en" src="chapters.vtt">
+      <a href="../described-training-video/standard.mp4">Download the lesson MP4</a>
+    </video>
+    <section aria-labelledby="chapter-heading">
+      <h2 id="chapter-heading">Chapters</h2>
+      <ul id="chapter-buttons"></ul>
+      <p id="chapter-status" role="status">Loading chapter markers…</p>
+    </section>
+    <details>
+      <summary>Transcript and on-screen actions</summary>
+      <p>Open Permissions for this workspace. The role is Viewer and the status is Draft.
+        After changing the role, save your changes. The role is now Publisher and the status is Saved.</p>
+    </details>
+  </main>
+  <script>
+    const video = document.querySelector('video');
+    const chapterFile = document.querySelector('#chapter-track');
+    const buttons = document.querySelector('#chapter-buttons');
+    const status = document.querySelector('#chapter-status');
+
+    function showChapters() {
+      const cues = Array.from(chapterFile.track.cues ?? []);
+      buttons.replaceChildren();
+      for (const cue of cues) {
+        const item = document.createElement('li');
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.textContent = cue.text;
+        button.addEventListener('click', () => {
+          video.currentTime = cue.startTime;
+        });
+        item.append(button);
+        buttons.append(item);
+      }
+      status.textContent = cues.length ? '' : 'No chapter markers were found. Use the video controls to seek.';
+    }
+
+    chapterFile.addEventListener('load', showChapters);
+    chapterFile.addEventListener('error', () => {
+      status.textContent = 'Chapter markers could not load. Use the video controls to seek.';
+    });
+    chapterFile.track.mode = 'hidden';
+    if (chapterFile.readyState === 2) showChapters();
+  </script>
+</body>
+</html>
