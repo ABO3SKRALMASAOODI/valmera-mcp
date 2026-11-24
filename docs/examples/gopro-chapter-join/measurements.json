@@ -1,0 +1,39 @@
+{
+  "normalized_fps": 30,
+  "width": 320,
+  "height": 180,
+  "illustrative_split_source_frame": 180,
+  "duration_seconds_each": 8,
+  "examples": {
+    "continuous": {
+      "kept_normalized_source_frames_end_exclusive": [
+        [
+          60,
+          180
+        ],
+        [
+          180,
+          300
+        ]
+      ],
+      "output_frames": 240,
+      "verified_lossless_render_frames": 240,
+      "sha256": "713543b109b73761f21d5c3237c26b57e1fd3df58ef6db77d725d159a17ef324"
+    },
+    "skipped-frames": {
+      "kept_normalized_source_frames_end_exclusive": [
+        [
+          60,
+          180
+        ],
+        [
+          198,
+          318
+        ]
+      ],
+      "output_frames": 240,
+      "verified_lossless_render_frames": 240,
+      "sha256": "687536752224328b6497a3677d26552766febfba250910695a94175c7aa79dda"
+    }
+  }
+}
