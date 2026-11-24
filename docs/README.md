@@ -15,6 +15,7 @@ For free editing, use the [export check and delivery record](FREE-EXPORT-CHECK.m
 | Compare EditWithChat alternatives on a targeted speech revision | [Play the two cuts and run the same restoration test](EDITWITHCHAT-ALTERNATIVES-TARGETED-RESTORE.md), then [check the retained source ranges](EDITWITHCHAT-ALTERNATIVES-TARGETED-RESTORE.md#check-that-the-other-cuts-survived) |
 | Use Claude Code to cut and revise existing footage | [Compare four editing routes and verify a 300-frame MP4](EDIT-EXISTING-VIDEO-WITH-CLAUDE-CODE.md) |
 | Compare Action Editor and Valmera for an assistant-led edit | [Browser access, MCP and a first-cut-to-export test](ACTION-EDITOR-VS-VALMERA.md) |
+| Compare octuedit and Valmera for existing footage | [Desktop or hosted editing, with a revision and handoff trial](OCTUEDIT-VS-VALMERA.md) |
 | Make a first edit from a public video link | [Two prompts, both previews and the final MP4](FIRST-EDIT-FROM-A-LINK.md) |
 | Make a first edit through ChatGPT | [ChatGPT walkthrough](CHATGPT.md) |
 | Use the Claude plugin | [Claude plugin setup](CLAUDE-PLUGIN.md) |
