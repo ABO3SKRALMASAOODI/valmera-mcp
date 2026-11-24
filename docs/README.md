@@ -67,6 +67,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Private values in a recorded demo | [Test a moving cover and catch a one-frame leak in the downloaded MP4](SCREEN-RECORDING-REDACTION-AUDIT.md) |
 | Choosing a product-demo editor | [Cubix vs Valmera for an uploaded recording or public URL](CUBIX-VS-VALMERA-PRODUCT-DEMOS.md) |
 | Recorded course lesson | [Compare search-result routes and preserve the teaching sequence](COURSE-LESSON-EDITING.md), with a [lesson trial and release worksheet](COURSE-LESSON-REVIEW.md) |
+| Send a recurring training batch with duplicate camera filenames | [Try two decoded MP4s and scope an editor handoff pilot](VIDEO-EDITING-SOURCE-HANDOFF-DUPLICATE-FILENAMES.md) |
 | Deliver approved training videos and SRT captions to an LMS | [Verify the batch locally and reproduce a stale-caption mix-up](VERIFY-TRAINING-VIDEO-HANDOFF.md) |
 | Deliver captions and chapter navigation to a course player | [Try an MP4 and two WebVTT tracks, and decide when to ask for SCORM](TRAINING-VIDEO-MP4-WEBVTT-OR-SCORM.md) |
 | Outsource recurring software tutorials with captions and audio description | [Compare two exports and scope a paid pilot](OUTSOURCE-TRAINING-VIDEO-CAPTIONS-AUDIO-DESCRIPTION.md) |
