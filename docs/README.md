@@ -79,6 +79,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | A homepage needs a short silent product demo | [Download a measured MP4 loop, result poster and keyboard-operable player](MAKE-A-MUTED-PRODUCT-DEMO-LOOP.md) |
 | Record one website workflow for desktop and portrait | [Compare the live responsive layouts and inspect the successful click](RECORD-DESKTOP-AND-PORTRAIT-WEBSITE-DEMO.md) |
 | A demo links to a separate browser tab | [Test the handoff and verify the result in one MP4](RECORD-A-WEBSITE-DEMO-ACROSS-BROWSER-TABS.md) |
+| A webcam tile hides the result of a click | [Play three exports and check the visible confirmation](KEEP-WEBCAM-OVERLAY-CLEAR-OF-ACTION-RESULTS.md) |
 | Film a form demo and stop before submitting | [Check what the button actually signals and practice on a local fixture](RECORD-A-FORM-DEMO-WITHOUT-SUBMITTING.md) |
 | Choosing a demo generator from a URL | [Compare DemoVisor, Valmera and other options using the same public-page test](DEMOVISOR-VS-VALMERA.md) |
 | Outsource recurring SaaS launch edits | [Compare providers, review dates and final deliverables](SAAS-DEMO-EDITING-SERVICES.md) |
