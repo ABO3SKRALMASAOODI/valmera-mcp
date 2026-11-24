@@ -1,0 +1,62 @@
+{
+  "scope": "Synthetic speech and cards rendered locally. RMS values describe a fixture; values are not loudness targets.",
+  "sample_rate_hz": 48000,
+  "host_check_seconds": [
+    0.3,
+    2.7
+  ],
+  "guest_check_seconds": [
+    3.3,
+    5.7
+  ],
+  "cases": {
+    "split-mic-source": {
+      "sha256": "788bf661e44ca98d55a4e841c253812c4bd85a0bc12af91e4217dd54ece5bdf1",
+      "decoded_video_hash": "SHA256=b78aee7d7435d2d28ef6f56b57216fa57a9a13cb06e4096ee85574823cc8ab97",
+      "frames": 144,
+      "fps": 24,
+      "audio_pcm16_rms_in_sample_units": {
+        "host_interval": [
+          3135.56,
+          0.0
+        ],
+        "guest_interval": [
+          0.0,
+          4098.25
+        ]
+      }
+    },
+    "left-mic-only": {
+      "sha256": "17229f7abba036626f0fa8cee7c7bf4a4cd7a5898cdb8f78e0499798f7498ac5",
+      "decoded_video_hash": "SHA256=b78aee7d7435d2d28ef6f56b57216fa57a9a13cb06e4096ee85574823cc8ab97",
+      "frames": 144,
+      "fps": 24,
+      "audio_pcm16_rms_in_sample_units": {
+        "host_interval": [
+          3129.72,
+          3129.72
+        ],
+        "guest_interval": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "both-mics-centered": {
+      "sha256": "7101e941b457d9e235333f40161a1f39a919861b25b8169d45e7f9ae85e5f210",
+      "decoded_video_hash": "SHA256=b78aee7d7435d2d28ef6f56b57216fa57a9a13cb06e4096ee85574823cc8ab97",
+      "frames": 144,
+      "fps": 24,
+      "audio_pcm16_rms_in_sample_units": {
+        "host_interval": [
+          1565.46,
+          1565.46
+        ],
+        "guest_interval": [
+          2047.67,
+          2047.67
+        ]
+      }
+    }
+  }
+}

@@ -62,6 +62,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Replace your podcast clip editor and deliver a separate SRT | [Reap alternatives with a playable MP4/SRT handoff test](REAP-ALTERNATIVES-CAPTION-HANDOFF.md) |
 | Podcast captions flash by too fast | [Compare the same clip and words before and after retiming](FIX-FAST-CAPTIONS-IN-PODCAST-CLIPS.md) |
 | A podcast cut leaves a click at the join | [Listen to two same-length WAVs and check what changed](FIX-AN-AUDIO-CLICK-AT-A-VIDEO-CUT.md) |
+| A camera puts the host on the left and guest on the right | [Listen to three exports and verify both microphones in the final mix](KEEP-BOTH-MICS-IN-A-PODCAST-VIDEO.md) |
 | Revise one clip in an approved batch | [Check unchanged MP4s locally and review the replacement](PODCAST-CLIP-BATCH-REVIEW.md) |
 | Customer testimonial from a recorded interview | [Compare AI editors with an approved-quote test and two playable cuts](CUSTOMER-TESTIMONIAL-VIDEO-EDITORS.md) |
 | Record a tooltip in a website demo | [Compare two MP4s with different hover holds](RECORD-HOVER-TOOLTIP-IN-WEBSITE-DEMO.md) |
