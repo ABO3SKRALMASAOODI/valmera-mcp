@@ -1,0 +1,44 @@
+{
+  "method": "Playwright checked the selected option and saved label independently. The decoded video was compared with the browser screenshot in two pixel crops around the dropdown text and the saved label. Consecutive matching frames at the end establish the final-state hold. All footage is an original localhost fixture.",
+  "files": [
+    {
+      "file": "01-selection-only.mp4",
+      "selected_value": "Weekly",
+      "asserted_saved_label": "Saved schedule: Monthly",
+      "width": 1024,
+      "height": 576,
+      "frame_rate": 25.0,
+      "decoded_frames": 95,
+      "duration_seconds": 3.8,
+      "final_visible_hold_seconds": 3.04,
+      "sha256": "1536a4d859d67e46165889a9c5240b3ac2ef02c4d8d6fe8f6e4b3f9398c1952c"
+    },
+    {
+      "file": "02-selection-saved.mp4",
+      "selected_value": "Weekly",
+      "asserted_saved_label": "Saved schedule: Weekly",
+      "width": 1024,
+      "height": 576,
+      "frame_rate": 25.0,
+      "decoded_frames": 93,
+      "duration_seconds": 3.72,
+      "final_visible_hold_seconds": 2.36,
+      "sha256": "bc701c3fdf85737099fb92521b7d6ebd252c628b55db321e583130d3093695b2"
+    }
+  ],
+  "match_regions_xyxy": [
+    [
+      161,
+      285,
+      285,
+      325
+    ],
+    [
+      160,
+      352,
+      410,
+      405
+    ]
+  ],
+  "mean_absolute_error_threshold_per_crop": 4.0
+}

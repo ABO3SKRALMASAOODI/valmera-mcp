@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Release Preview · Digest Settings</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; color: #172332; background: #edf2f5; font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    header { background: #112635; color: #f8fafb; padding: 22px 64px; font-weight: 650; }
+    main { width: min(768px, calc(100% - 48px)); margin: 38px auto; }
+    h1 { font-size: 42px; line-height: 1.15; letter-spacing: -.025em; margin: 0 0 9px; }
+    p { margin: 0; color: #475569; }
+    section { margin-top: 30px; padding: 26px; border: 1px solid #cdd8df; border-radius: 10px; background: #fff; }
+    label { font-weight: 650; display: block; margin-bottom: 7px; }
+    select, button { height: 46px; padding: 6px 14px; border-radius: 6px; font: inherit; }
+    select { min-width: 230px; border: 1px solid #657a8c; background: #fff; color: #172332; }
+    button { margin-left: 10px; border: 1px solid #0e574c; background: #0e574c; color: #fff; font-weight: 650; cursor: pointer; }
+    output { display: block; margin-top: 23px; padding: 12px 15px; background: #ebf2f4; border-left: 4px solid #4b6574; font-weight: 650; }
+    output[data-saved="weekly"] { background: #e5f5ef; border-color: #0e574c; color: #0e5248; }
+  </style>
+</head>
+<body>
+  <header>Release Preview</header>
+  <main>
+    <h1>Digest settings</h1>
+    <p>Choose when to receive your project summary.</p>
+    <section aria-label="Digest schedule">
+      <label for="schedule">Digest schedule</label>
+      <select id="schedule"><option>Monthly</option><option>Weekly</option></select>
+      <button type="button">Save changes</button>
+      <output aria-live="polite" data-saved="monthly">Saved schedule: Monthly</output>
+    </section>
+  </main>
+  <script>
+    const schedule = document.querySelector('select');
+    const result = document.querySelector('output');
+    document.querySelector('button').addEventListener('click', () => {
+      result.dataset.saved = schedule.value.toLowerCase();
+      result.textContent = `Saved schedule: ${schedule.value}`;
+    });
+  </script>
+</body>
+</html>
