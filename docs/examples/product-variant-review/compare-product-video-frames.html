@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Compare frames from two video exports at named times without uploading footage.">
+  <title>Product Video Frame Review | Valmera</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font: 16px/1.55 system-ui, sans-serif;
+      color: #142921;
+      background: #f0f3eb;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    main { max-width: 65rem; margin: auto; padding: clamp(1rem, 5vw, 3.5rem); }
+    header { max-width: 48rem; }
+    h1 { margin: 0; font-size: clamp(2.15rem, 6vw, 4rem); line-height: 1.06; letter-spacing: -.053em; }
+    header p, .hint { color: #4a6256; }
+    form, section { margin-top: 1rem; padding: clamp(1rem, 4vw, 1.7rem); border: 1px solid #c7d4c4; border-radius: 1rem; background: #fefffc; }
+    h2 { margin: 0 0 .6rem; font-size: 1.25rem; }
+    .files { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+    fieldset { margin: 0; min-width: 0; padding: .85rem; border: 1px solid #c7d4c4; border-radius: .65rem; }
+    legend { font-weight: 720; }
+    label { display: grid; gap: .28rem; margin-bottom: .8rem; }
+    input, button { font: inherit; border: 1px solid #b3c6b7; border-radius: .4rem; }
+    input { width: 100%; background: #fff; color: #142921; padding: .4rem; }
+    button { margin-top: .8rem; padding: .56rem .9rem; background: #205a41; color: #fff; cursor: pointer; }
+    button:disabled { opacity: .6; cursor: default; }
+    :focus-visible { outline: 3px solid #29775d; outline-offset: 2px; }
+    canvas { display: block; width: 100%; height: auto; border: 1px solid #c7d4c4; border-radius: .42rem; }
+    a { color: #205a41; text-underline-offset: .18em; }
+    [hidden] { display: none; }
+    @media (max-width: 40rem) { .files { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Product video frame review</h1>
+      <p>Compare the same product cue in two MP4 or WebM exports. Use the sheet to check the variant, packaging and visible feature in each cut.</p>
+    </header>
+    <form id="review">
+      <div class="files">
+        <fieldset>
+          <legend>First export</legend>
+          <label>First video <input id="first-file" type="file" accept="video/mp4,video/webm" required></label>
+          <label>Times in seconds <input id="first-times" value="0.5, 2.5, 4.5" required></label>
+        </fieldset>
+        <fieldset>
+          <legend>Second export</legend>
+          <label>Second video <input id="second-file" type="file" accept="video/mp4,video/webm" required></label>
+          <label>Times in seconds <input id="second-times" value="0.5, 2.5, 4.5" required></label>
+        </fieldset>
+      </div>
+      <p class="hint">Enter up to six comma-separated times per video, in matching shot order. Your browser reads the files locally.</p>
+      <button id="build" type="submit">Build frame sheet</button>
+      <p id="status" role="status"></p>
+    </form>
+    <section id="result" aria-labelledby="result-title" hidden>
+      <h2 id="result-title">Frame sheet</h2>
+      <canvas id="sheet" role="img" aria-label="Side-by-side frames from the two chosen video exports"></canvas>
+      <button id="download" type="button">Download frame sheet PNG</button>
+      <p class="hint">Times are browser seek positions. Review the full cutaway in both exports before approving delivery.</p>
+    </section>
+    <noscript><p>Enable JavaScript to generate the frame sheet.</p></noscript>
+  </main>
+  <script>
+    const byId = id => document.getElementById(id);
+    const form = byId('review');
+    const button = byId('build');
+    const status = byId('status');
+    const canvas = byId('sheet');
+    const rowWidth = 1056;
+    const cellWidth = 504;
+    const frameHeight = 330;
+    const padding = 16;
+
+    function parseTimes(text, label) {
+      const times = text.split(',').map(value => value.trim());
+      if (times.length > 6 || times.some(value => !/^\d+(\.\d+)?$/.test(value))) {
+        throw new Error(`${label} needs one to six comma-separated times in seconds.`);
+      }
+      const seconds = times.map(Number);
+      if (seconds.some(time => !Number.isFinite(time))) {
+        throw new Error(`${label} contains a time outside the supported range.`);
+      }
+      return seconds;
+    }
+
+    function waitForVideo(video, event, message) {
+      return new Promise((resolve, reject) => {
+        const finish = callback => {
+          clearTimeout(timer);
+          video.removeEventListener(event, ready);
+          video.removeEventListener('error', failed);
+          callback();
+        };
+        const ready = () => finish(resolve);
+        const failed = () => finish(() => reject(new Error(message)));
+        const timer = setTimeout(failed, 10000);
+        video.addEventListener(event, ready, { once: true });
+        video.addEventListener('error', failed, { once: true });
+      });
+    }
+
+    async function drawFrames(file, times, column) {
+      const video = document.createElement('video');
+      const src = URL.createObjectURL(file);
+      video.preload = 'auto';
+      video.muted = true;
+      video.playsInline = true;
+      const context = canvas.getContext('2d');
+      try {
+        const loaded = waitForVideo(video, 'loadeddata', `Your browser could not decode ${file.name}.`);
+        video.src = src;
+        await loaded;
+        if (Number.isFinite(video.duration) && times.some(time => time >= video.duration)) {
+          throw new Error(`Choose times below ${video.duration.toFixed(2)} seconds for ${file.name}.`);
+        }
+        const x = padding + column * (cellWidth + padding);
+        context.fillStyle = '#edf6ed';
+        context.fillRect(x, padding, cellWidth, 42);
+        context.fillStyle = '#142921';
+        context.font = 'bold 18px system-ui';
+        context.fillText(file.name, x + 12, 43, cellWidth - 24);
+        for (const [index, seconds] of times.entries()) {
+          if (Math.abs(video.currentTime - seconds) > 0.001) {
+            const ready = waitForVideo(video, 'seeked', `Could not open ${file.name} at ${seconds} seconds.`);
+            video.currentTime = seconds;
+            await ready;
+            if (Math.abs(video.currentTime - seconds) > 0.08) {
+              throw new Error(`No frame found at ${seconds} seconds in ${file.name}.`);
+            }
+          }
+          const y = 68 + (frameHeight + 42) * index;
+          context.fillStyle = '#202b26';
+          context.fillRect(x, y, cellWidth, frameHeight);
+          const scale = Math.min(cellWidth / video.videoWidth, frameHeight / video.videoHeight);
+          const width = video.videoWidth * scale;
+          const height = video.videoHeight * scale;
+          context.drawImage(video, x + (cellWidth - width) / 2, y + (frameHeight - height) / 2, width, height);
+          context.fillStyle = '#142921';
+          context.font = '16px system-ui';
+          context.fillText(`Cue ${index + 1} · ${seconds} s`, x + 10, y + frameHeight + 25);
+        }
+      } finally {
+        video.removeAttribute('src');
+        video.load();
+        URL.revokeObjectURL(src);
+      }
+    }
+
+    form.addEventListener('submit', async event => {
+      event.preventDefault();
+      button.disabled = true;
+      byId('result').hidden = true;
+      status.textContent = 'Reading frames…';
+      try {
+        const first = parseTimes(byId('first-times').value, 'First export');
+        const second = parseTimes(byId('second-times').value, 'Second export');
+        if (first.length !== second.length) throw new Error('Enter the same number of cues for both videos.');
+        canvas.width = rowWidth;
+        canvas.height = 68 + (frameHeight + 42) * first.length;
+        const context = canvas.getContext('2d');
+        context.fillStyle = '#f7faf3';
+        context.fillRect(0, 0, canvas.width, canvas.height);
+        const firstFile = byId('first-file').files[0];
+        const secondFile = byId('second-file').files[0];
+        await drawFrames(firstFile, first, 0);
+        await drawFrames(secondFile, second, 1);
+        byId('result').hidden = false;
+        status.textContent = 'Frame sheet ready.';
+      } catch (error) {
+        status.textContent = error.message;
+      } finally {
+        button.disabled = false;
+      }
+    });
+
+    byId('download').addEventListener('click', () => {
+      const link = document.createElement('a');
+      link.href = canvas.toDataURL('image/png');
+      link.download = 'product-video-frame-sheet.png';
+      link.click();
+    });
+  </script>
+</body>
+</html>
