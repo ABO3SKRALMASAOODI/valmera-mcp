@@ -140,6 +140,10 @@ codex mcp login valmera
 
 Or add `[mcp_servers.valmera]` with `url = "https://valmera.io/mcp/server"` to `~/.codex/config.toml`.
 
+### Kiro
+
+Open **Powers → Add Custom Power → Import power from a repository URL**, then paste the [Valmera Power folder](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/tree/main/powers/valmera-video-editor). Sign in to Valmera when prompted and list your projects. [Kiro setup and editing brief](docs/KIRO.md).
+
 ### Gemini CLI
 
 ```sh
