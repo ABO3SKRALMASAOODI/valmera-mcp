@@ -17,6 +17,8 @@ Try the [three-shot revision exercise](docs/examples/video-edit-revision/README.
 
 ## Inspect a recorded edit
 
+For direct MP4 delivery checks, the [verify-published-demo skill](skills/verify-published-demo/SKILL.md) gives coding agents a public test and an exit code they can verify without signing in.
+
 If your team outsources a monthly batch, use the [Arabic–English video editing pilot](docs/UAE-BILINGUAL-VIDEO-EDITING-PILOT.md) to compare quotes and check that both subtitle tracks stay in sync after a revision.
 
 To choose between hosted and local editing in Claude, [compare four MP4 exports from Valmera and MakeMyClip](docs/VIDEO-EDITING-AGENTS.md#can-claude-revise-a-cut-and-export-an-mp4-locally-or-through-a-hosted-editor). Both editors shortened the same middle shot. The downloads and frame check show exactly where the closing shot moved.
