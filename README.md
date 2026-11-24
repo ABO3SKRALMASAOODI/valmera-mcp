@@ -65,7 +65,7 @@ Registry   io.valmera/video-editor
 - **Product:** [valmera.io](https://valmera.io)
 - **Versioned installs:** [Claude plugin ZIP](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/releases/tag/claude-v1.0.3) · [ChatGPT and Codex package](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/releases/tag/openai-v1.0.1) · [Gemini CLI extension](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/releases/tag/v1.0.2) · [Antigravity plugin ZIP](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/releases/tag/antigravity-v1.0.1). Choose the release for the client you use. Each release links to its setup and the recorded edit.
 - **Setup for every client:** [valmera.io/mcp/setup](https://valmera.io/mcp/setup)
-- **Verify the publisher and editing permissions:** [Compare the registry, OAuth scope and TrustedMCP assessment](docs/CONNECTION-TROUBLESHOOTING.md#is-this-the-official-valmera-video-editing-connector) before connecting an assistant.
+- **Verify the publisher and editing permissions:** [Compare the registry, OAuth scope and TrustedMCP assessment](docs/CONNECTION-TROUBLESHOOTING.md#is-this-the-official-valmera-video-editing-connector) before connecting an assistant. [Report a security issue privately](SECURITY.md).
 - **Tool reference:** [valmera.io/mcp/tools](https://valmera.io/mcp/tools)
 - **Live server card:** [/.well-known/mcp/server-card.json](https://valmera.io/.well-known/mcp/server-card.json)
 
