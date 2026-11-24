@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Long video upload deadline planner</title>
+<style>
+  :root { color-scheme: light; color: #172535; background: #edf2f6; font: 16px/1.5 system-ui, sans-serif; }
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  dl[hidden] { display: none; }
+  main { width: min(100% - 32px, 760px); margin: clamp(1rem, 6vw, 4rem) auto; padding: clamp(1.1rem, 4vw, 2rem);
+    background: white; border: 1px solid #d4dfe9; border-radius: 16px; }
+  h1 { margin: 0; font-size: clamp(1.55rem, 5vw, 2.4rem); line-height: 1.15; }
+  h2 { margin: 0 0 10px; font-size: 1.2rem; }
+  p { color: #405770; }
+  form { display: grid; gap: 14px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  label { display: flex; flex-direction: column; gap: .35rem; font-weight: 600; }
+  input, select { width: 100%; color: #172535; font: inherit; border: 1px solid #8198ad; border-radius: 6px; padding: 8px; }
+  input:focus-visible, select:focus-visible, a:focus-visible { outline: 3px solid #9e5500; outline-offset: 2px; }
+  .results { background: #e8f0ff; border: 1px solid #c3d6f5; border-radius: 10px; padding: 16px; margin-top: 20px; }
+  .results p { margin: 6px 0; }
+  .results output { font-weight: 650; color: #172535; }
+  dl { display: grid; grid-template-columns: 1.2fr 1fr; gap: 4px 12px; }
+  dd { margin: 0; font-weight: 650; }
+  a { color: #164b9b; }
+  @media (max-width: 520px) { form, dl { grid-template-columns: 1fr; } }
+</style>
+<main>
+  <h1>Will your video upload before review?</h1>
+  <p>Enter the original file size and the sustained speed you measured on your upload connection. Reserve time for processing and review after transfer.</p>
+  <form id="planner">
+    <label>File size <input id="size" type="number" min="0.001" max="100000" step="any" required value="20"></label>
+    <label>Size unit
+      <select id="unit">
+        <option value="1000000000">GB (decimal)</option>
+        <option value="1073741824">GiB (binary)</option>
+      </select>
+    </label>
+    <label>Sustained upload speed (Mbps) <input id="speed" type="number" min="0.001" max="1000000" step="any" required value="40"></label>
+    <label>Minutes until review <input id="budget" type="number" min="0.001" max="525600" step="any" required value="120"></label>
+    <label>Minutes reserved after upload <input id="reserve" type="number" min="0" max="525600" step="any" required value="35"></label>
+  </form>
+  <section class="results" aria-labelledby="result-title">
+    <h2 id="result-title">Your review window</h2>
+    <p><output id="status" for="size unit speed budget reserve" role="status"></output></p>
+    <dl id="details">
+      <dt>Estimated transfer time</dt><dd id="transfer"></dd>
+      <dt>Time before review after transfer</dt><dd id="left"></dd>
+      <dt>Minimum sustained upload speed</dt><dd id="minimum"></dd>
+    </dl>
+  </section>
+  <p>This is a transfer estimate. Your reserved time should cover indexing, the first edit and review. If you also need a finished file by the deadline, include revision, export and download time.</p>
+  <p><a href="https://valmera.io/long-video-ai-editing?utm_source=github.com&amp;utm_medium=referral&amp;utm_campaign=long_video_upload_deadline">See Valmera’s long-video workflow</a>.</p>
+</main>
+<script>
+  const field = (id) => document.getElementById(id);
+  const planner = field('planner');
+  const status = field('status');
+  const details = field('details');
+
+  function duration(seconds) {
+    const time = Math.ceil(seconds);
+    const hours = Math.floor(time / 3600);
+    const minutes = Math.floor(time / 60) % 60;
+    return (hours ? hours + 'h ' : '') + minutes + 'm ' + (time % 60) + 's';
+  }
+
+  function estimate() {
+    const window = field('budget').valueAsNumber * 60;
+    const reserve = field('reserve').valueAsNumber * 60;
+    const valid = planner.checkValidity() && reserve < window;
+    details.hidden = !valid;
+    if (!valid) {
+      status.textContent = 'Enter a positive size, speed and deadline. Reserve less than the full window.';
+      return;
+    }
+
+    const megabits = field('size').valueAsNumber * Number(field('unit').value) * 8 / 1e6;
+    const transfer = megabits / field('speed').valueAsNumber;
+    const left = window - transfer;
+    field('transfer').textContent = duration(transfer);
+    field('left').textContent = left >= 0 ? duration(Math.floor(left)) : duration(-left) + ' past deadline';
+    const minimum = Math.ceil(100 * megabits / (window - reserve)) / 100;
+    field('minimum').textContent = minimum.toLocaleString(undefined, { maximumFractionDigits: 2 }) + ' Mbps';
+    status.textContent = left >= reserve
+      ? 'The estimate leaves room for your post-upload reserve.'
+      : 'The estimate does not leave enough room for your post-upload reserve.';
+  }
+
+  planner.addEventListener('submit', (event) => event.preventDefault());
+  planner.addEventListener('input', estimate);
+  estimate();
+</script>
+</html>
