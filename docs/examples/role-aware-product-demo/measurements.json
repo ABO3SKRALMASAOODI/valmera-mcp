@@ -1,0 +1,39 @@
+{
+  "fps": 24,
+  "resolution": [
+    640,
+    360
+  ],
+  "timebase": "Zero-based, seconds from start of each MP4.",
+  "method": "Sampled badge and confirmation pixels from each decoded frame and checked both same-time stills. This fixture is silent, synthetic, and rendered independently of Valmera.",
+  "exports": [
+    {
+      "file": "01-viewer-source.mp4",
+      "decoded_frames": 96,
+      "manager_role_label_frames": 0,
+      "first_manager_label_frame": null,
+      "completed_action_status_frames": 72
+    },
+    {
+      "file": "02-manager-source.mp4",
+      "decoded_frames": 96,
+      "manager_role_label_frames": 96,
+      "first_manager_label_frame": 0,
+      "completed_action_status_frames": 72
+    },
+    {
+      "file": "03-manager-role-hidden.mp4",
+      "decoded_frames": 192,
+      "manager_role_label_frames": 0,
+      "first_manager_label_frame": null,
+      "completed_action_status_frames": 144
+    },
+    {
+      "file": "04-both-roles-labeled.mp4",
+      "decoded_frames": 192,
+      "manager_role_label_frames": 96,
+      "first_manager_label_frame": 96,
+      "completed_action_status_frames": 144
+    }
+  ]
+}
