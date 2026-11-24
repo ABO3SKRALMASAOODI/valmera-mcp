@@ -1,0 +1,84 @@
+{
+  "fixture": "Synthetic cards and spoken lines assembled locally with macOS speech and FFmpeg.",
+  "video_fps": 24,
+  "files": {
+    "source.mp4": {
+      "frames": 432,
+      "duration_s": 18.0,
+      "sequence": [
+        {
+          "segment": "opening",
+          "start_s": 0,
+          "end_s_exclusive": 4,
+          "speech_rms_pcm_s16": 4694.01
+        },
+        {
+          "segment": "question",
+          "start_s": 4,
+          "end_s_exclusive": 8,
+          "speech_rms_pcm_s16": 2964.2
+        },
+        {
+          "segment": "answer",
+          "start_s": 8,
+          "end_s_exclusive": 11,
+          "speech_rms_pcm_s16": 4028.51
+        },
+        {
+          "segment": "qualification",
+          "start_s": 11,
+          "end_s_exclusive": 15,
+          "speech_rms_pcm_s16": 4224.17
+        },
+        {
+          "segment": "close",
+          "start_s": 15,
+          "end_s_exclusive": 18,
+          "speech_rms_pcm_s16": 2272.61
+        }
+      ]
+    },
+    "answer-only.mp4": {
+      "frames": 72,
+      "duration_s": 3.0,
+      "sequence": [
+        {
+          "segment": "answer",
+          "start_s": 0,
+          "end_s_exclusive": 3,
+          "speech_rms_pcm_s16": 4049.94
+        }
+      ]
+    },
+    "question-and-qualified-answer.mp4": {
+      "frames": 264,
+      "duration_s": 11.0,
+      "sequence": [
+        {
+          "segment": "question",
+          "start_s": 0,
+          "end_s_exclusive": 4,
+          "speech_rms_pcm_s16": 2976.04
+        },
+        {
+          "segment": "answer",
+          "start_s": 4,
+          "end_s_exclusive": 7,
+          "speech_rms_pcm_s16": 4028.51
+        },
+        {
+          "segment": "qualification",
+          "start_s": 7,
+          "end_s_exclusive": 11,
+          "speech_rms_pcm_s16": 4224.17
+        }
+      ]
+    }
+  },
+  "frame_comparison": "Every decoded frame in the qualified version matches source frames 96\u2013359. Every decoded frame in the answer-only version matches source frames 192\u2013263.",
+  "sha256": {
+    "source.mp4": "849063b90dc418a7ed7fa5c413c8a9871ba77de303bb06e10eb142d404e87b58",
+    "answer-only.mp4": "688b670c971292763aa010c0982f820c4ecd6cad494c5e935da694ca5019f43a",
+    "question-and-qualified-answer.mp4": "d46515080dd7e1d853952968ae66cb7e14ff9b1888a6eab200081088038d9b93"
+  }
+}

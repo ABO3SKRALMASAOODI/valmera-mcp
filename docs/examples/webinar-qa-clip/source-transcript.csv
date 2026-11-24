@@ -1,0 +1,6 @@
+start_seconds,end_seconds_exclusive,speaker,line
+0,4,MODERATOR,We have time for one last question on the rollout.
+4,8,AUDIENCE,Can contractors download the training videos?
+8,11,PRESENTER,"Yes, for offline training."
+11,15,PRESENTER,Only on company-managed devices.
+15,18,MODERATOR,Thanks for joining us.
