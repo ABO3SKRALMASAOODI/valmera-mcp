@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Keyboard walkthrough practice</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: system-ui, sans-serif;
+      color: #221b19;
+      background: #f7f3ee;
+      line-height: 1.5;
+    }
+    body { margin: 0; padding: clamp(1.25rem, 6vw, 5rem); }
+    main { max-width: 42rem; margin: auto; }
+    h1, h2 { line-height: 1.1; margin: 0 0 .75rem; }
+    h1 { font-size: clamp(2rem, 6vw, 3.5rem); letter-spacing: -.045em; }
+    h2 { font-size: 1.75rem; letter-spacing: -.025em; }
+    .summary, dialog {
+      box-sizing: border-box;
+      border: 1px solid #d6cac1;
+      border-radius: 1rem;
+      background: #fff;
+      padding: clamp(1rem, 4vw, 2rem);
+    }
+    .summary { margin-top: 2rem; }
+    dialog { width: min(32rem, calc(100% - 2.5rem)); }
+    dialog::backdrop { background: #211916aa; }
+    .actions { display: flex; flex-wrap: wrap; gap: .875rem; margin-top: 1.5rem; }
+    button {
+      border: 1px solid #72645b;
+      border-radius: .625rem;
+      background: #fff;
+      color: inherit;
+      padding: .7rem .95rem;
+      font: inherit;
+      font-weight: 650;
+      cursor: pointer;
+    }
+    .primary { background: #852b1a; border-color: #852b1a; color: #fff; }
+    button:focus-visible { outline: 3px solid #184dc3; outline-offset: 4px; }
+    dl { display: grid; grid-template-columns: max-content 1fr; gap: .5rem 1rem; }
+    dd { margin: 0; }
+    .status { margin-bottom: 0; min-height: 1.5em; color: #4d403a; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Review a training export</h1>
+    <p>Use Tab, Enter and Escape to inspect export settings before opening the review step.</p>
+
+    <section class="summary" aria-labelledby="summary-title">
+      <h2 id="summary-title">Sample lesson</h2>
+      <p>Updating a shared report</p>
+      <div class="actions">
+        <button id="open-settings" class="primary" type="button" aria-haspopup="dialog">
+          View export settings
+        </button>
+        <button id="continue-review" type="button">Continue to review</button>
+      </div>
+      <p id="status" class="status" role="status">Ready to review.</p>
+    </section>
+  </main>
+
+  <dialog id="export-settings" aria-labelledby="settings-title">
+    <h2 id="settings-title">Export settings</h2>
+    <dl>
+      <dt>Picture</dt><dd>MP4, 1920 × 1080</dd>
+      <dt>Captions</dt><dd>Separate SRT file</dd>
+    </dl>
+    <form method="dialog" class="actions">
+      <button value="cancel" autofocus>Cancel</button>
+      <button value="confirm" class="primary">Confirm settings</button>
+    </form>
+  </dialog>
+
+  <script>
+    const settings = document.getElementById("export-settings");
+    const opener = document.getElementById("open-settings");
+    const status = document.getElementById("status");
+
+    opener.addEventListener("click", () => {
+      settings.returnValue = "";
+      settings.showModal();
+    });
+
+    settings.addEventListener("close", () => {
+      status.textContent = settings.returnValue === "confirm"
+        ? "Export settings confirmed."
+        : "Settings closed. The lesson is ready to review.";
+      opener.focus();
+    });
+
+    document.getElementById("continue-review").addEventListener("click", () => {
+      status.textContent = "Review opened for Updating a shared report.";
+    });
+  </script>
+</body>
+</html>
