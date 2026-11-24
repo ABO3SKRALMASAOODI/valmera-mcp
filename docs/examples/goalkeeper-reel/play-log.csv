@@ -1,0 +1,4 @@
+match,period,game_clock,event_id,angle,action,source_in_sec,source_out_sec,first_reel_in_sec,revised_reel_in_sec
+North-South,1H,18:44,NS-1H-1844,A wide,Save with lead-in,0,5,0,0
+North-South,1H,18:44,NS-1H-1844,B tight,Second angle of the same save,5,10,5,
+North-South,2H,07:12,NS-2H-0712,A wide,Receive and distribute to right flank,10,15,,5
