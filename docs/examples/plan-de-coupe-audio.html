@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vérifier un plan de coupe et la voix dans un MP4</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; color: #ecf3f8; background: #111c29; font: 1rem/1.55 system-ui, sans-serif; }
+    main { max-width: 49rem; margin: auto; padding: clamp(1rem, 4vw, 2.5rem); }
+    h1 { font-size: clamp(1.8rem, 5vw, 2.75rem); line-height: 1.12; margin: 0; max-width: 24ch; }
+    p { color: #c0d0e0; }
+    fieldset { padding: .6rem .85rem .75rem; margin: 1.2rem 0; border: 1px solid #6c8599; border-radius: .55rem; }
+    legend { padding: 0 .35rem; }
+    label { display: inline-flex; align-items: center; gap: .3rem; margin-right: 1rem; cursor: pointer; }
+    input { accent-color: #a9eccd; }
+    video { width: 100%; aspect-ratio: 2 / 1; display: block; background: #080e17; border-radius: .55rem; }
+    .controls { display: flex; flex-wrap: wrap; gap: .55rem; margin: .8rem 0; }
+    button { font: inherit; font-weight: 600; padding: .45rem .8rem; border: 1px solid #7895ab;
+      border-radius: .45rem; background: #263b4e; color: #fff; cursor: pointer; }
+    button:last-child { color: #102b22; background: #a9eccd; border-color: #a9eccd; }
+    :focus-visible { outline: 2px solid #f1ca7d; outline-offset: 3px; }
+    a { color: #b3e8ff; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Le plan change. La voix continue.</h1>
+  <p>Comparez la source, l’aperçu et l’export au même instant. Les repères se placent au milieu de chaque image pour éviter de s’arrêter sur un raccord.</p>
+  <fieldset id="versions">
+    <legend>Choisir le fichier public</legend>
+    <label><input type="radio" name="version" value="source"> Source</label>
+    <label><input type="radio" name="version" value="preview" checked> Aperçu</label>
+    <label><input type="radio" name="version" value="final"> MP4 exporté</label>
+  </fieldset>
+  <video id="clip" controls playsinline preload="metadata" aria-label="Extrait à comparer"
+    src="https://valmera.io/examples/b-roll-cutaway/preview.mp4">
+    Votre navigateur ne peut pas lire la vidéo intégrée.
+  </video>
+  <div class="controls">
+    <button type="button" data-frame="63">63 · Avant le plan</button>
+    <button type="button" data-frame="64">64 · Début du plan</button>
+    <button type="button" data-frame="92">92 · Dernière image</button>
+    <button type="button" data-frame="93">93 · Retour à la source</button>
+    <button type="button" id="listen">Écouter la voix</button>
+  </div>
+  <p id="status" role="status">Aperçu sélectionné. Choisissez un repère.</p>
+  <p>Les fichiers sont lus depuis valmera.io. <a id="open" href="https://valmera.io/examples/b-roll-cutaway/preview.mp4">Ouvrir le MP4 sélectionné</a></p>
+</main>
+<script>
+  const versions = {
+    source: { label: 'Source', url: 'https://valmera.io/examples/filler-word-cut/original.mp4' },
+    preview: { label: 'Aperçu', url: 'https://valmera.io/examples/b-roll-cutaway/preview.mp4' },
+    final: { label: 'MP4 exporté', url: 'https://valmera.io/examples/b-roll-cutaway/final.mp4' }
+  };
+  const marks = { 63: 'Avant le plan', 64: 'Début du plan', 92: 'Dernière image', 93: 'Retour à la source' };
+  const clip = document.querySelector('#clip');
+  const status = document.querySelector('#status');
+  const open = document.querySelector('#open');
+  const timeLabel = new Intl.NumberFormat('fr-FR', { maximumFractionDigits: 2 });
+  let targetTime = 0;
+  let current = versions.preview;
+
+  function seek(time) {
+    targetTime = time;
+    if (clip.readyState > 0) clip.currentTime = Math.min(time, clip.duration);
+  }
+
+  clip.addEventListener('loadedmetadata', () => seek(targetTime));
+  clip.addEventListener('error', () => {
+    status.textContent = 'Lecture intégrée indisponible. Ouvrez le MP4 directement avec le lien ci-dessous.';
+  });
+
+  document.querySelector('#versions').addEventListener('change', event => {
+    const time = clip.readyState > 0 ? clip.currentTime : targetTime;
+    clip.pause();
+    current = versions[event.target.value];
+    clip.src = current.url;
+    open.href = current.url;
+    seek(time);
+    status.textContent = `${current.label} sélectionné. Position : ${timeLabel.format(time)} s.`;
+  });
+
+  document.querySelector('.controls').addEventListener('click', async event => {
+    const button = event.target.closest('button');
+    if (!button) return;
+    if (button.id === 'listen') {
+      seek(2.625);
+      status.textContent = `${current.label} · Écoute à partir de 2,625 s.`;
+      try {
+        await clip.play();
+      } catch {
+        status.textContent = 'Utilisez le bouton de lecture pour écouter à partir de 2,625 s.';
+      }
+      return;
+    }
+    const frame = Number(button.dataset.frame);
+    clip.pause();
+    seek((frame + .5) / 25);
+    status.textContent = `${current.label} · Image ${frame} · ${marks[frame]} · ${timeLabel.format(frame / 25)} s.`;
+  });
+</script>
+</body>
+</html>
