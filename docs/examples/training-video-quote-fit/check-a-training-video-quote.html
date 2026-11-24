@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Check a training video editing quote</title>
+<style>
+:root {
+  color-scheme: light;
+  font: 16px/1.55 system-ui, sans-serif;
+  background: #f5f7f3;
+  color: #182b23;
+}
+body { margin: 0; }
+main { max-width: 61rem; margin: auto; padding: 2.5rem 1.25rem 3rem; }
+h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.08; letter-spacing: -.045em; margin: 0 0 .75rem; }
+h2 { font-size: 1.3rem; margin: 1.6rem 0 .45rem; }
+p { max-width: 75ch; margin: .45rem 0 1rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 23rem), 1fr)); gap: 1rem; }
+fieldset { min-width: 0; margin: 0; padding: .8rem 1rem 1rem; background: #fff; border: 1px solid #bdcdc0; border-radius: .8rem; }
+legend { font-weight: 700; padding: 0 .4rem; }
+label { display: grid; grid-template-columns: 1fr 5.8rem; align-items: center; gap: .6rem; margin: .7rem 0; }
+input { width: 100%; min-height: 2.35rem; font: inherit; text-align: right; box-sizing: border-box; border: 1px solid #a4b4a8; border-radius: .4rem; padding: .2rem .55rem; }
+.table { overflow: auto; border: 1px solid #bdcdc0; border-radius: .8rem; background: #fff; }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: .65rem .8rem; border-bottom: 1px solid #dce5dc; vertical-align: top; }
+th { background: #e5eee4; }
+tbody tr:last-child td { border-bottom: 0; }
+[data-state="short"] { color: #8a281a; font-weight: 700; }
+[data-state="fits"] { color: #225b3d; font-weight: 700; }
+[data-state="unknown"] { color: #615122; font-weight: 700; }
+a { color: #18533c; text-underline-offset: .19em; }
+#message:not(:empty) { padding: .5rem .7rem; background: #f7e8da; color: #782818; border-radius: .4rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Check a training video editing quote</h1>
+  <p>Compare your batch with the provider's written limits. The example starts with 50 two-minute lessons. Clear a quoted limit when it is unknown. All values stay in this page.</p>
+  <div class="grid">
+    <fieldset>
+      <legend>What you need each month</legend>
+      <label>Approved lessons <input id="videos" type="number" min="1" step="1" value="50"></label>
+      <label>Average finished minutes per lesson <input id="finished-avg" type="number" min=".01" step="any" value="2"></label>
+      <label>Longest finished lesson, minutes <input id="finished-max" type="number" min=".01" step="any" value="2"></label>
+      <label>Average source minutes per lesson <input id="raw-avg" type="number" min=".01" step="any" value="5"></label>
+      <label>Most source minutes per lesson <input id="raw-max" type="number" min=".01" step="any" value="8"></label>
+    </fieldset>
+    <fieldset>
+      <legend>What the provider quoted</legend>
+      <label>Maximum lessons per month <input id="quote-count" type="number" min="1" step="1" value="50"></label>
+      <label>Maximum finished minutes per month <input id="quote-finished-total" type="number" min=".01" step="any"></label>
+      <label>Maximum finished minutes per lesson <input id="quote-finished-clip" type="number" min=".01" step="any" value="1.5"></label>
+      <label>Maximum source minutes per month <input id="quote-raw-total" type="number" min=".01" step="any"></label>
+      <label>Maximum source minutes per lesson <input id="quote-raw-clip" type="number" min=".01" step="any" value="3"></label>
+    </fieldset>
+  </div>
+  <h2>Quote fit</h2>
+  <p id="message" role="status"></p>
+  <div class="table" id="results">
+    <table>
+      <thead><tr><th scope="col">Requirement</th><th scope="col">Needed</th><th scope="col">Quoted</th><th scope="col">Result</th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
+  <p>Confirm the first delivery date, weekly approvals, caption files and revision rounds separately. Ask the provider how it counts alternate takes and whether a cleaned export, captioned export and vertical export count as one lesson or three.</p>
+  <p><a href="https://valmera.io/subscribe?inquiry=training-video-editing-service&amp;utm_source=github.com&amp;utm_medium=referral&amp;utm_campaign=training_video_quote_fit#enterprise">Scope an Enterprise training-video pilot with Valmera</a>. Use the email draft on the page and include your batch totals and first deadline.</p>
+</main>
+<script>
+  const input = (id) => document.getElementById(id);
+  const needInputs = ['videos', 'finished-avg', 'finished-max', 'raw-avg', 'raw-max'].map(input);
+  const quoteInputs = ['quote-count', 'quote-finished-total', 'quote-finished-clip', 'quote-raw-total', 'quote-raw-clip'].map(input);
+  const labels = [
+    'Lessons per month', 'Finished minutes per month', 'Longest finished lesson',
+    'Source minutes per month', 'Most source minutes for one lesson',
+  ];
+  const format = new Intl.NumberFormat(undefined, { maximumFractionDigits: 3 });
+  const rows = input('rows');
+  const message = input('message');
+  const results = input('results');
+
+  function update() {
+    const [count, average, longest, rawAverage, rawLongest] = needInputs.map((field) => field.valueAsNumber);
+    const invalid = needInputs.some((field) => !field.value || !field.validity.valid)
+      || quoteInputs.some((field) => !field.validity.valid);
+    const rangeError = average > longest || rawAverage > rawLongest;
+    message.textContent = invalid ? 'Enter positive requirements and limits. Leave only unknown quote limits blank.'
+      : rangeError ? 'The longest lesson and source recording must each be at least as long as their average.' : '';
+    results.hidden = Boolean(message.textContent);
+    if (results.hidden) return;
+
+    const needed = [count, count * average, longest, count * rawAverage, rawLongest];
+    rows.replaceChildren(...labels.map((label, i) => {
+      const quoted = quoteInputs[i].valueAsNumber;
+      const state = Number.isNaN(quoted) ? 'unknown'
+        : needed[i] <= quoted + 1e-9 ? 'fits' : 'short';
+      const status = { unknown: 'Confirm limit', fits: 'Fits this limit', short: 'Above quoted limit' }[state];
+      const tr = document.createElement('tr');
+      for (const value of [label, format.format(needed[i]), Number.isNaN(quoted) ? 'Unstated' : format.format(quoted), status]) {
+        const td = document.createElement('td');
+        td.textContent = value;
+        tr.append(td);
+      }
+      tr.lastChild.dataset.state = state;
+      return tr;
+    }));
+  }
+
+  for (const field of [...needInputs, ...quoteInputs]) {
+    field.addEventListener('input', update);
+  }
+  update();
+</script>
+</body>
+</html>
