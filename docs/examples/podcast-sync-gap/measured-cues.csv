@@ -1,0 +1,6 @@
+camera_flash_seconds,offset_only_audio_seconds,endpoints_only_audio_seconds,gap_patched_audio_seconds
+2.000,2.001,2.001,2.001
+5.000,5.001,5.215,5.001
+6.100,missing,missing,6.101
+8.000,7.401,7.787,8.001
+11.000,10.401,11.001,11.001
