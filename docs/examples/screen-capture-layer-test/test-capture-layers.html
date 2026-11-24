@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Screen recording layer test</title>
+<style>
+  :root { color-scheme: light; font: 16px/1.5 system-ui, sans-serif; color: #152840; background: #ecf1f7; }
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  main { width: min(100% - 32px, 850px); margin: clamp(1rem, 7vw, 4rem) auto; padding: clamp(1rem, 4vw, 2rem);
+    border: 1px solid #cbd8e8; border-radius: 16px; background: white; }
+  h1 { font-size: clamp(1.6rem, 5vw, 2.4rem); line-height: 1.15; margin: 0; }
+  p { color: #405873; }
+  fieldset { display: flex; align-items: flex-start; flex-wrap: wrap; gap: 9px 19px; border: 0; padding: 0; margin: 0 0 14px; }
+  legend { font-weight: 650; margin-bottom: 8px; }
+  fieldset label { display: inline-flex; align-items: start; gap: 5px; cursor: pointer; }
+  input { accent-color: #2355a1; margin-top: .35em; }
+  input:focus-visible, button:focus-visible { outline: 3px solid #a05a06; outline-offset: 3px; }
+  canvas { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid #afc1d7; background: #f7faff; }
+  .controls { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+  button { border: 1px solid #2057ab; border-radius: 8px; font: inherit; font-weight: 600; padding: 8px 13px;
+    background: #2355a1; color: white; cursor: pointer; }
+  button:disabled { opacity: .55; cursor: default; }
+  #result { min-height: 3em; }
+</style>
+<main>
+  <h1>Can the editor move your webcam tile?</h1>
+  <p>Compare a finished MP4 with a capture that still has its screen and camera layers. Look for the export confirmation in the lower-right corner.</p>
+  <fieldset>
+    <legend>Source you have</legend>
+    <label><input type="radio" name="source" value="flat" checked> One finished MP4</label>
+    <label><input type="radio" name="source" value="layers"> Clean screen and separate camera</label>
+  </fieldset>
+  <canvas id="preview" width="640" height="360" aria-label="Mock screen capture with a report and a presenter tile.">
+    Read the status after the preview to find out if the confirmation is visible.
+  </canvas>
+  <div class="controls">
+    <button id="move" type="button">Move camera to top</button>
+    <button id="hide" type="button">Hide camera</button>
+    <button id="reset" type="button">Reset layout</button>
+  </div>
+  <p id="result" role="status"></p>
+  <noscript><p>Enable JavaScript to compare the two layouts in this offline sample.</p></noscript>
+</main>
+<script>
+  const preview = document.getElementById('preview');
+  const context = preview.getContext('2d');
+  const status = document.getElementById('result');
+  const move = document.getElementById('move');
+  const hide = document.getElementById('hide');
+  const reset = document.getElementById('reset');
+  const inputs = document.querySelectorAll('input[name="source"]');
+  const screen = document.createElement('canvas');
+  screen.width = preview.width;
+  screen.height = preview.height;
+  const base = screen.getContext('2d');
+
+  function label(ctx, text, x, y, size, color) {
+    ctx.font = '600 ' + size + 'px system-ui, sans-serif';
+    ctx.fillStyle = color;
+    ctx.fillText(text, x, y);
+  }
+
+  function tile(ctx, y) {
+    ctx.fillStyle = '#192d48';
+    ctx.fillRect(371, y, 242, 90);
+    label(ctx, 'Presenter camera', 390, y + 52, 23, '#f6f9ff');
+  }
+
+  base.fillStyle = '#f7faff';
+  base.fillRect(0, 0, 640, 360);
+  base.fillStyle = '#dce7f5';
+  base.fillRect(0, 0, 640, 54);
+  label(base, 'Sample workspace', 24, 36, 23, '#1c3456');
+  label(base, 'November report', 24, 113, 29, '#152840');
+  label(base, 'Activity by project', 24, 157, 19, '#3a5274');
+  base.fillStyle = '#2355a1';
+  base.fillRect(24, 221, 176, 48);
+  label(base, 'Export CSV', 45, 254, 22, '#ffffff');
+  base.fillStyle = '#d1eee4';
+  base.fillRect(383, 271, 222, 66);
+  label(base, 'Export ready', 396, 297, 22, '#17493e');
+  label(base, 'november-report.csv', 396, 322, 17, '#17493e');
+
+  const flat = document.createElement('canvas');
+  flat.width = preview.width;
+  flat.height = preview.height;
+  const flatContext = flat.getContext('2d');
+  flatContext.drawImage(screen, 0, 0);
+  tile(flatContext, 257);
+
+  let placement = 'bottom';
+
+  function render() {
+    const layered = inputs[1].checked;
+    context.drawImage(layered ? screen : flat, 0, 0);
+    if (layered && placement !== 'hidden') tile(context, placement === 'top' ? 61 : 257);
+    move.disabled = !layered;
+    hide.disabled = !layered;
+    reset.disabled = !layered;
+    status.textContent = !layered
+      ? 'Export confirmation is covered. The camera is part of the finished picture.'
+      : placement === 'bottom'
+        ? 'Export confirmation is covered. Move or hide the separate camera to reveal it.'
+        : 'Export confirmation and filename are visible.';
+  }
+
+  for (const input of inputs) input.addEventListener('change', () => {
+    placement = 'bottom';
+    render();
+  });
+  move.addEventListener('click', () => { placement = 'top'; render(); });
+  hide.addEventListener('click', () => { placement = 'hidden'; render(); });
+  reset.addEventListener('click', () => { placement = 'bottom'; render(); });
+  render();
+</script>
+</html>
