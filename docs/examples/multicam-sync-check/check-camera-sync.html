@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Check long-recording sync at three anchors</title>
+<style>
+  :root { color-scheme: light; color: #1d3035; background: #eaf0ee; font: 16px/1.65 system-ui, sans-serif; }
+  * { box-sizing: border-box; }
+  main { max-width: 840px; margin: auto; padding: clamp(14px, 5vw, 54px); }
+  h1 { font-size: clamp(2rem, 6vw, 3.4rem); line-height: 1.12; letter-spacing: -.045em; margin: 0 0 .65rem; }
+  h2 { font-size: 1.32rem; margin: 0 0 .4rem; }
+  p { margin: 0 0 .9rem; }
+  fieldset, #results { min-width: 0; margin: 0 0 .8rem; border-radius: 12px; border: 1px solid #afbfba; padding: 12px 16px; background: #fff; }
+  legend { font-weight: 700; padding: 0 6px; }
+  .pair { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr)); gap: 10px; }
+  label { font-weight: 600; }
+  input { display: block; width: 100%; margin: 3px 0; padding: 7px 10px; border: 1px solid #849d97; border-radius: 7px; background: #fafcfb; color: inherit; font: inherit; }
+  #tolerance { max-width: 11rem; }
+  .actions { display: flex; flex-wrap: wrap; gap: 9px; margin: 15px 0; }
+  button { cursor: pointer; border: 1px solid #0a5e4a; background: white; color: #07513f; border-radius: 8px; font: inherit; font-weight: 700; padding: 8px 14px; }
+  button[type=submit] { color: white; background: #0a5e4a; }
+  :focus-visible { outline: 3px solid #a35118; outline-offset: 3px; }
+  #status { min-height: 1.7em; font-weight: 650; }
+  dl { display: grid; grid-template-columns: 1fr minmax(82px, auto); gap: .3rem 1rem; margin: 0 0 .9rem; font-variant-numeric: tabular-nums; }
+  dd { margin: 0; text-align: right; font-weight: 650; }
+</style>
+<main>
+  <h1>Check long-recording sync</h1>
+  <p>Find the same clap, word or flash in each recording near the start, middle and end. Use elapsed seconds or <code>HH:MM:SS.mmm</code>.</p>
+  <form>
+    <fieldset>
+      <legend>Opening anchor</legend>
+      <div class="pair">
+        <label>Reference time<input name="r0" inputmode="decimal" placeholder="8.000" required></label>
+        <label>Second recording time<input name="s0" inputmode="decimal" placeholder="8.161" required></label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Middle anchor</legend>
+      <div class="pair">
+        <label>Reference time<input name="r1" inputmode="decimal" placeholder="01:00:00" required></label>
+        <label>Second recording time<input name="s1" inputmode="decimal" placeholder="01:00:00.610" required></label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Closing anchor</legend>
+      <div class="pair">
+        <label>Reference time<input name="r2" inputmode="decimal" placeholder="01:59:50" required></label>
+        <label>Second recording time<input name="s2" inputmode="decimal" placeholder="01:59:51.059" required></label>
+      </div>
+    </fieldset>
+    <label>Acceptable difference in milliseconds<input id="tolerance" name="tolerance" type="number" min="1" max="5000" step="1" value="33" required></label>
+    <div class="actions">
+      <button type="submit">Check the three anchors</button>
+      <button type="button" id="example">Load two-hour practice data</button>
+      <button type="reset">Reset</button>
+    </div>
+  </form>
+  <p id="status" role="status"></p>
+  <section id="results" hidden aria-labelledby="results-heading">
+    <h2 id="results-heading">Measured timing</h2>
+    <dl>
+      <dt>Shift to align the opening</dt><dd id="shift"></dd>
+      <dt>Middle difference after opening shift</dt><dd id="mid"></dd>
+      <dt>Closing difference after opening shift</dt><dd id="end"></dd>
+      <dt>Playback speed from the outer anchors</dt><dd id="rate"></dd>
+      <dt>Middle difference after speed and shift</dt><dd id="residual"></dd>
+    </dl>
+    <p>For differences, positive means the second recording plays late. A negative shift moves the second recording earlier. Check the proposed alignment in your editor and in the final export.</p>
+  </section>
+</main>
+<script>
+  const form = document.querySelector('form');
+  const status = document.querySelector('#status');
+  const results = document.querySelector('#results');
+  const names = ['r0', 's0', 'r1', 's1', 'r2', 's2'];
+  const format = new Intl.NumberFormat('en', { maximumFractionDigits: 2, signDisplay: 'exceptZero' });
+
+  function seconds(value) {
+    const parts = value.trim().split(':');
+    if (parts.length > 3) return NaN;
+    const last = parts.at(-1);
+    if (!/^\d+(?:\.\d+)?$/.test(last)) return NaN;
+    if (parts.length === 1) return Number(last);
+    if (Number(last) >= 60 || parts.slice(0, -1).some(part => !/^\d+$/.test(part))) return NaN;
+    if (parts.length === 3 && Number(parts[1]) >= 60) return NaN;
+    return parts.reduce((total, current) => total * 60 + Number(current), 0);
+  }
+
+  function show(id, value) {
+    document.getElementById(id).textContent = value;
+  }
+
+  function clear() {
+    status.textContent = '';
+    results.hidden = true;
+  }
+
+  form.addEventListener('input', clear);
+  form.addEventListener('reset', clear);
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    clear();
+    const data = new FormData(form);
+    const values = names.map(name => seconds(data.get(name)));
+    const [r0, s0, r1, s1, r2, s2] = values;
+    const tolerance = Number(data.get('tolerance'));
+    if (values.some(value => !Number.isFinite(value))) {
+      status.textContent = 'Enter each anchor as elapsed seconds or a time such as 01:15:29.250.';
+      return;
+    }
+    if (!(r0 < r1 && r1 < r2 && s0 < s1 && s1 < s2)) {
+      status.textContent = 'Use opening, middle and closing anchors in increasing order for both recordings.';
+      return;
+    }
+    const shift = r0 - s0;
+    const shiftMid = (s1 + shift - r1) * 1000;
+    const shiftEnd = (s2 + shift - r2) * 1000;
+    const rate = (s2 - s0) / (r2 - r0);
+    const residue = (r0 + (s1 - s0) / rate - r1) * 1000;
+    const milliseconds = value => format.format(value) + ' ms';
+    show('shift', milliseconds(shift * 1000));
+    show('mid', milliseconds(shiftMid));
+    show('end', milliseconds(shiftEnd));
+    show('rate', (rate * 100).toFixed(6) + '%');
+    show('residual', milliseconds(residue));
+    if (Math.max(Math.abs(shiftMid), Math.abs(shiftEnd)) <= tolerance) {
+      status.textContent = 'An opening shift fits all three anchors within your tolerance.';
+    } else if (Math.abs(residue) <= tolerance) {
+      status.textContent = 'One speed and an opening shift fit these three anchors. Check more points before applying the rate throughout.';
+    } else {
+      status.textContent = 'One speed misses the middle anchor. Recheck the matches and look for a recording break before changing speed.';
+    }
+    results.hidden = false;
+  });
+
+  document.querySelector('#example').addEventListener('click', () => {
+    ['8.000', '8.161', '01:00:00.000', '01:00:00.610', '01:59:50.000', '01:59:51.059'].forEach((value, index) => {
+      form.elements[names[index]].value = value;
+    });
+    form.elements.tolerance.value = '33';
+    form.requestSubmit();
+  });
+</script>
+</html>
