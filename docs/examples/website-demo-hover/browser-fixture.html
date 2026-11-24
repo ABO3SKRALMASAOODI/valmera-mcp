@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weekly report schedule demo</title>
+<style>
+:root {
+  color-scheme: light;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  color: #192b2a;
+  background: #eaf0ec;
+}
+body { margin: 0; }
+header {
+  padding: 15px 5%;
+  border-bottom: 1px solid #becbc2;
+  background: #f8fbf7;
+  font-weight: 700;
+  font-size: 19px;
+}
+main {
+  max-width: 565px;
+  margin: 28px auto;
+  padding: 22px 26px;
+  border: 1px solid #bdcbc4;
+  border-radius: 13px;
+  background: #fff;
+  box-shadow: 0 10px 27px #192b2a14;
+}
+h1 { margin: 0 0 21px; font-size: 27px; letter-spacing: -.02em; }
+.field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 17px;
+  font-weight: 650;
+}
+#anchor {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #427063;
+  color: #18584a;
+  background: #f0f8f3;
+  font: inherit;
+  cursor: help;
+}
+#anchor:hover, #anchor:focus-visible { border-color: #12382d; background: #c9ebde; }
+#tooltip {
+  display: none;
+  position: absolute;
+  left: 185px;
+  top: -9px;
+  padding: 13px 15px;
+  border-radius: 8px;
+  background: #133d34;
+  color: white;
+  white-space: nowrap;
+  font-weight: 600;
+}
+#anchor:hover + #tooltip, #anchor:focus-visible + #tooltip { display: block; }
+.value { margin: 9px 0 14px; }
+#preview {
+  padding: 9px 13px;
+  border: 0;
+  border-radius: 7px;
+  background: #185c4b;
+  color: white;
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+}
+#result {
+  min-height: 20px;
+  margin-top: 14px;
+  font-size: 16px;
+  font-weight: 600;
+}
+#pointer {
+  position: fixed;
+  left: -32px;
+  top: -32px;
+  z-index: 2;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+  border-top: 18px solid #c6522d;
+  border-right: 11px solid transparent;
+  filter: drop-shadow(1px 2px 0 white);
+}
+@media (max-width: 620px) {
+  main { margin: 18px; padding: 19px; }
+  #tooltip { left: 0; top: 34px; }
+}
+</style>
+</head>
+<body>
+<header>Report workspace</header>
+<main>
+  <h1>Weekly report schedule</h1>
+  <div class="field">
+    <span>Delivery time</span>
+    <button id="anchor" type="button" aria-label="Explain delivery time" aria-describedby="tooltip">?</button>
+    <span id="tooltip" role="tooltip">Times are shown in UTC</span>
+  </div>
+  <p class="value">Monday, 09:00</p>
+  <button id="preview" type="button">Preview schedule</button>
+  <div id="result" role="status"></div>
+</main>
+<div id="pointer" aria-hidden="true"></div>
+<script>
+  const cursor = document.querySelector('#pointer');
+  addEventListener('pointermove', (event) => {
+    cursor.style.left = event.clientX + 'px';
+    cursor.style.top = event.clientY + 'px';
+  });
+  document.querySelector('#preview').addEventListener('click', () => {
+    document.querySelector('#result').textContent = 'Preview ready · Monday, 09:00 UTC';
+  });
+</script>
+</body>
+</html>
