@@ -44,6 +44,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | A multicamera podcast cut misses a quiet reaction | [Compare a speaker cut and a picture-only guest shot with the same dialogue](KEEP-A-QUIET-REACTION-IN-A-MULTICAM-PODCAST.md) |
 | Outsource a recurring video podcast with a full edit and clips | [Compare five services and test a two-episode delivery and revision](OUTSOURCE-WEEKLY-VIDEO-PODCAST-EDITING.md) |
 | A long podcast needs a full episode and clips | [Run a 90-minute-source buyer pilot](EDIT-A-90-MINUTE-PODCAST.md) and [track all three exports](EPISODE-AND-CLIPS-DELIVERY.csv) |
+| Edit a passage that starts after hour three | [Extract a five-second sample and verify the source-to-excerpt time map](EDIT-PAST-THREE-HOURS-KEEP-SOURCE-TIMESTAMPS.md) |
 | Outsource highlight edits for a sports tournament | [Compare routes, scope a two-file pilot and price the delivery schedule](TOURNAMENT-HIGHLIGHT-EDITING-SERVICE.md) |
 | Make a goalkeeper highlight reel | [Compare two cuts and keep distinct plays with a match-clock log](GOALKEEPER-HIGHLIGHT-REEL-PLAY-LOG.md) |
 | Webinar highlights with a quiet product demo | [Compare four editors and test one focused revision](AI-WEBINAR-HIGHLIGHT-REEL-EDITORS.md) |
