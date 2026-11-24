@@ -93,6 +93,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | A homepage needs a short silent product demo | [Download a measured MP4 loop, result poster and keyboard-operable player](MAKE-A-MUTED-PRODUCT-DEMO-LOOP.md) |
 | Record one website workflow for desktop and portrait | [Compare the live responsive layouts and inspect the successful click](RECORD-DESKTOP-AND-PORTRAIT-WEBSITE-DEMO.md) |
 | A demo links to a separate browser tab | [Test the handoff and verify the result in one MP4](RECORD-A-WEBSITE-DEMO-ACROSS-BROWSER-TABS.md) |
+| A website demo needs both tab sound and narration | [Run an eight-second audio test and compare two downloads](RECORD-WEBSITE-DEMO-WITH-TAB-AUDIO.md) |
 | Edit a demo that switches between user roles | [Compare two exports and verify who can perform each action](RECORD-A-PRODUCT-DEMO-FOR-TWO-USER-ROLES.md) |
 | A webcam tile hides the result of a click | [Play three exports and check the visible confirmation](KEEP-WEBCAM-OVERLAY-CLEAR-OF-ACTION-RESULTS.md) |
 | Film a form demo and stop before submitting | [Check what the button actually signals and practice on a local fixture](RECORD-A-FORM-DEMO-WITHOUT-SUBMITTING.md) |

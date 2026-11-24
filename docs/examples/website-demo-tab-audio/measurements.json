@@ -1,0 +1,31 @@
+{
+  "fixture": "Playback reference assembled locally from screenshots of the actual test page, synthetic speech and two generated notes.",
+  "rate_hz": 48000,
+  "video_frames": 240,
+  "fps": 30,
+  "identical_video_frames": true,
+  "chime_notes": [
+    {
+      "start_s": 3,
+      "hz": 660
+    },
+    {
+      "start_s": 3.38,
+      "hz": 880
+    }
+  ],
+  "measurements": {
+    "include-tab-and-mic.mp4": {
+      "speech_before_rms_s16": 3978.46,
+      "tab_chime_rms_s16": 2127.13,
+      "speech_after_rms_s16": 3748.55,
+      "sha256": "1b3e87916529edbc4a3362598979ed70197efba1a1b81aade46f3f127d10f3d5"
+    },
+    "missing-tab.mp4": {
+      "speech_before_rms_s16": 3978.46,
+      "tab_chime_rms_s16": 0.0,
+      "speech_after_rms_s16": 3748.55,
+      "sha256": "b67a04e486140383ed5ecaa00333cd0c50de5b0c86151b41e8a3d041e723e379"
+    }
+  }
+}
