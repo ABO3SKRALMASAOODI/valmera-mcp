@@ -90,6 +90,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | A long webinar needs a separate MP4 for each selected topic | [Check two source ranges and plan a repeatable delivery](EXPORT-SEPARATE-TOPIC-VIDEOS-FROM-A-WEBINAR.md) |
 | Webinar replay and clips | [Webinar workflow](WEBINARS.md) and [vertical slide readability](SLIDE-READABILITY.md), plus a [replay publishing worksheet](WEBINAR-PUBLISHING-CHECK.md) |
 | A separate microphone falls out of sync in a long recording | [Two-hour fixture, diagnosis and export verification](FIX-AUDIO-DRIFT-IN-LONG-RECORDINGS.md) |
+| A podcast recorder drops part of an otherwise aligned episode | [Recorder gap repair with three playable exports and measured cue times](FIX-PODCAST-AUDIO-SYNC-AFTER-RECORDER-GAP.md) |
 | A phone HDR edit needs an SDR Rec.709 MP4 | [Test whether the export converted the picture or only changed its tags](CHECK-HDR-TO-SDR-PHONE-VIDEO-EXPORT.md) |
 | Conference footage that needs a sponsor proof cut | [Compare event editors and plan the approval](CONFERENCE-SPONSOR-PROOF-VIDEO.md), with a [source and output timing sheet](CONFERENCE-SPONSOR-PROOF-DELIVERY.csv) |
 | YouTube video | [Editor routes, full-episode trial and chapter timing map](YOUTUBE.md), with a [reusable trial record](YOUTUBE-EDITOR-TRIAL.md) |
