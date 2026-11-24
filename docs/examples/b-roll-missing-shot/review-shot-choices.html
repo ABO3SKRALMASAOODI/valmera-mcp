@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B-roll exercise for approved footage</title>
+<style>
+  :root { color-scheme: light; font: 17px/1.55 system-ui, sans-serif; color: #162a34; background: #edf2f2; }
+  *, *::before, *::after { box-sizing: border-box; }
+  main { max-width: 760px; margin: 0 auto; padding: clamp(14px, 4vw, 40px); }
+  h1 { line-height: 1.13; letter-spacing: -.045em; font-size: clamp(2rem, 6vw, 3.35rem); margin: 0 0 .7rem; }
+  p { margin: 0 0 1rem; }
+  dl { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 185px), 1fr)); margin: 0 0 24px; }
+  dl > div { border: 1px solid #aebdbe; background: white; padding: 10px 14px; border-radius: 10px; }
+  dt { font-weight: 700; }
+  dd { margin: 0; color: #38525a; }
+  fieldset { border: 1px solid #aebdbe; padding: 12px 14px; margin: 0 0 15px; border-radius: 10px; }
+  legend { font-weight: 700; padding: 0 5px; }
+  label { display: flex; align-items: center; gap: 9px; min-height: 38px; cursor: pointer; }
+  input { accent-color: #0d5d52; width: 18px; height: 18px; margin: 0; }
+  button { cursor: pointer; margin: 0 8px 12px 0; border: 1px solid #0d5d52; border-radius: 8px; background: #0d5d52; color: white; font: inherit; font-weight: 700; padding: 7px 14px; }
+  button[type=reset] { background: white; color: #0d5d52; }
+  :focus-visible { outline: 3px solid #a85418; outline-offset: 3px; }
+  output:not(:empty) { display: block; background: white; border-left: 4px solid #0d5d52; padding: 12px 15px; }
+  output p:last-child { margin: 0; }
+</style>
+<main>
+  <h1>Choose the right B-roll</h1>
+  <p>Use the two approved recordings below. The current export screen has an MP4 control. There is no footage of the reviewer opening an email.</p>
+  <dl aria-label="Available footage">
+    <div><dt>Presenter</dt><dd>Approved main recording with narration</dd></div>
+    <div><dt>Current export</dt><dd>Approved capture showing Export MP4</dd></div>
+    <div><dt>Previous export</dt><dd>Archive capture showing Export CSV</dd></div>
+  </dl>
+  <form>
+    <fieldset>
+      <legend>“Choose Export MP4.”</legend>
+      <label><input type="radio" name="export" value="presenter" required>Keep the presenter on screen</label>
+      <label><input type="radio" name="export" value="current">Show the current export capture</label>
+      <label><input type="radio" name="export" value="previous">Show the previous export capture</label>
+    </fieldset>
+    <fieldset>
+      <legend>“Your reviewer opens the email.”</legend>
+      <label><input type="radio" name="email" value="presenter" required>Keep the presenter on screen</label>
+      <label><input type="radio" name="email" value="current">Show the current export capture</label>
+      <label><input type="radio" name="email" value="previous">Show the previous export capture</label>
+    </fieldset>
+    <button type="submit">Review choices</button>
+    <button type="reset">Clear choices</button>
+    <output aria-live="polite"></output>
+  </form>
+</main>
+<script>
+  const form = document.querySelector('form');
+  const output = form.querySelector('output');
+  const exportFeedback = {
+    current: 'Export cue passes. The current capture shows the named Export MP4 control.',
+    previous: 'Revise the export cue. The previous capture shows Export CSV. Use the current capture.',
+    presenter: 'Revise the export cue. The presenter explains the step. Use the approved current capture to let the viewer see the control.'
+  };
+  const emailFeedback = {
+    presenter: 'Email cue passes. Keep the presenter until you have approved footage of someone opening the email.',
+    current: 'Revise the email cue. The current capture shows the export step. Return to the presenter for the email sentence.',
+    previous: 'Revise the email cue. The previous capture shows an older export screen. Return to the presenter for the email sentence.'
+  };
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const answers = new FormData(form);
+    const exportResult = document.createElement('p');
+    exportResult.textContent = exportFeedback[answers.get('export')];
+    const emailResult = document.createElement('p');
+    emailResult.textContent = emailFeedback[answers.get('email')];
+    output.replaceChildren(exportResult, emailResult);
+  });
+  form.addEventListener('reset', () => output.replaceChildren());
+</script>
+</html>
