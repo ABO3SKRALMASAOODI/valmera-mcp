@@ -115,6 +115,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Film a form demo and stop before submitting | [Check what the button actually signals and practice on a local fixture](RECORD-A-FORM-DEMO-WITHOUT-SUBMITTING.md) |
 | Choosing a demo generator from a URL | [Compare DemoVisor, Valmera and other options using the same public-page test](DEMOVISOR-VS-VALMERA.md) |
 | Outsource recurring SaaS launch edits | [Compare providers, review dates and final deliverables](SAAS-DEMO-EDITING-SERVICES.md) |
+| Publish SaaS release videos every week | [Compare capture and editing workflows, then verify the archive and current MP4 separately](SAAS-RELEASE-VIDEO-WORKFLOW.md) |
 | Buy an AI editor or outsource recurring product demos | [Compare total cost per approved MP4 and run the same two-file pilot](PRODUCT-DEMO-EDITING-COST-PER-APPROVAL.md) |
 | Outsource 50 training videos a month | [Compare five quote limits and plan a two-lesson pilot](OUTSOURCE-50-TRAINING-VIDEOS-PER-MONTH.md) |
 | Estimate how many training videos can be approved by a deadline | [Test the edit and review schedule in a local browser planner](PLAN-TRAINING-VIDEO-DELIVERY-CAPACITY.md) |
