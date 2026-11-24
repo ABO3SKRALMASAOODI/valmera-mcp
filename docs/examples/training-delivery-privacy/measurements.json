@@ -1,0 +1,20 @@
+{
+  "source": "Derived from the fictional, silent covered.mp4 in the screen-redaction-audit example.",
+  "decoded_video_frames_per_export": 144,
+  "decoded_frames_identical": true,
+  "poster_bytes_identical": true,
+  "deliberate_practice_token_locations": [
+    "Found in media metadata: lesson.mp4",
+    "Found in text: lesson.vtt",
+    "Found in filename: poster-DEMO-4276.jpg"
+  ],
+  "corrected_package_status": 0,
+  "sha256": {
+    "failed/lesson.mp4": "fc3a27164f22b26a7aea762f62fc2978daf91b8e5a7d775af8a9bd6a7ba038b5",
+    "failed/lesson.vtt": "26fd9c7190c0607cb9ec705dacc9359f54e21291d8a08767693caf7137ba8288",
+    "failed/poster-DEMO-4276.jpg": "d990caf0f4637e2d93cf363f5d2d95d7a66c39a310cd3e8f464a3dae24dd62f1",
+    "corrected/lesson.mp4": "25a27df2ede0413a821055220a3a696ee9d5222460b85c06ca9be15014d3f5f8",
+    "corrected/lesson.vtt": "a37f1ae4d2ecfc4d03b7a662512204519c691a01688142ad7e82eb6408dd53c4",
+    "corrected/poster.jpg": "d990caf0f4637e2d93cf363f5d2d95d7a66c39a310cd3e8f464a3dae24dd62f1"
+  }
+}
