@@ -1,0 +1,7 @@
+Client,Approved version,Check,Expected,Observed,Evidence or file,Received or checked at (with time zone),Reviewer,Status
+Client A,,Invitation and review surface,Identity matches written handoff agreement,,,,,
+Client A,,Access to Client B fixture,Guest access matches the review policy,,,,,
+Client A,,Watch and inspect export,Agreed identity and approved title and credits,,,,,
+Client A,,Targeted revision and old link,Correct fix and superseded link behaves as agreed,,,,,
+Client B,,Access to Client A fixture,Guest access matches the review policy,,,,,
+Client B,,Check previously approved delivery,Correct client branding and approved file still available,,,,,
