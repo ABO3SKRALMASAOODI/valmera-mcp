@@ -12,6 +12,7 @@ For free editing, use the [export check and delivery record](FREE-EXPORT-CHECK.m
 | Go from an uploaded recording to a reviewed export | [Complete editing workflow](WORKFLOW.md) |
 | Connect Claude, ChatGPT or another compatible client | [Client setup and hosted-service responsibilities](CLIENTS.md) |
 | Choose between your own assistant and Valmera AI | [Plans, allowances and editing routes](CLIENTS.md#choose-the-plan-for-your-editing-route) |
+| Compare Aisma and Valmera for footage you shot | [Play the difference between erasing an object and cutting a scene](AISMA-VS-VALMERA-EXISTING-FOOTAGE.md) |
 | Compare Vidova and Valmera on the MP4 you approve | [Check the connection routes and play one revision through to export](VIDOVA-VS-VALMERA.md) |
 | Compare EditWithChat alternatives on a targeted speech revision | [Play the two cuts and run the same restoration test](EDITWITHCHAT-ALTERNATIVES-TARGETED-RESTORE.md), then [check the retained source ranges](EDITWITHCHAT-ALTERNATIVES-TARGETED-RESTORE.md#check-that-the-other-cuts-survived) |
 | Use Claude Code to cut and revise existing footage | [Compare four editing routes and verify a 300-frame MP4](EDIT-EXISTING-VIDEO-WITH-CLAUDE-CODE.md) |

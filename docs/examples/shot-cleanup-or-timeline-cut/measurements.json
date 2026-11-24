@@ -1,0 +1,60 @@
+{
+  "scope": "Locally rendered silent reference fixture. Timing and pixels are constructed independently of either commercial service.",
+  "fps": 24,
+  "dimensions": [
+    640,
+    360
+  ],
+  "sampled_zero_based_frame": 48,
+  "files": {
+    "source.mp4": 192,
+    "shot-cleanup-reference.mp4": 192,
+    "timeline-cut-reference.mp4": 144,
+    "both-edits-reference.mp4": 144
+  },
+  "tag_rgb": {
+    "source.mp4": [
+      171,
+      72,
+      30
+    ],
+    "shot-cleanup-reference.mp4": [
+      246,
+      246,
+      237
+    ],
+    "timeline-cut-reference.mp4": [
+      171,
+      72,
+      30
+    ],
+    "both-edits-reference.mp4": [
+      246,
+      246,
+      237
+    ]
+  },
+  "workspace_rgb": {
+    "source.mp4": [
+      119,
+      87,
+      91
+    ],
+    "shot-cleanup-reference.mp4": [
+      119,
+      87,
+      91
+    ],
+    "timeline-cut-reference.mp4": [
+      47,
+      98,
+      154
+    ],
+    "both-edits-reference.mp4": [
+      47,
+      98,
+      154
+    ]
+  },
+  "mean_absolute_pixel_delta_in_workspace_for_shot_cleanup": 0.0032
+}
