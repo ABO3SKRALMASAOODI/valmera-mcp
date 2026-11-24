@@ -43,4 +43,17 @@ The second clip is a copy of the Valmera sample trimmed by half a second for thi
 
 Load the trimmed MP4 with an original SRT in an SRT-capable player to see the half-second delay. Then load the revised SRT for the same language and check that the cue starts at the new time. In the Arabic cue, the English interface label remains `Captions`. Open the actual destination player before approving punctuation and text direction. YouTube accepts basic UTF-8 SubRip files. [YouTube format requirements](https://support.google.com/youtube/answer/2734698?hl=en)
 
+## Check both SRTs before signing off
+
+The [delivery checker](evaluation/verify_srt_cut_delivery.py) compares each language to its own original track. It reports timing and wording differences without printing subtitle text. Download it with [the SRT reader](evaluation/check_srt_revision.py) and [the retiming helper](evaluation/retime_srt_after_cuts.py), or use this command from the repository root.
+
+```sh
+sample=docs/examples/uae-bilingual-video-editing
+python3 docs/evaluation/verify_srt_cut_delivery.py --remove 0 0.500 \
+  --pair ar "$sample/product-demo.ar.srt" "$sample/product-demo-trimmed.ar.srt" \
+  --pair en "$sample/product-demo.en.srt" "$sample/product-demo-trimmed.en.srt"
+```
+
+The command returns 0 for a match, 1 for differences and 2 for unreadable or unsupported files. To reproduce a stale delivery, pass the original Arabic file as both its original and delivered argument. The English track still passes and the Arabic track reports the two mismatched cue times. This check assumes edits only remove time and the wording stays the same. Play the approved MP4 in the destination player to verify sync, text direction and readability.
+
 To ask Valmera about the batch, [open Enterprise contact on /subscribe](https://valmera.io/subscribe#enterprise). Include your monthly recording count, the two subtitle languages, and the first review date. If the contact page is unavailable, [email Valmera Enterprise](mailto:support@valmera.io?subject=Enterprise%20editing%20inquiry%20-%20UAE%20bilingual%20pilot) with the same details.
