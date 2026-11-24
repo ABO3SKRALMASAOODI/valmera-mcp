@@ -1,0 +1,11 @@
+1
+00:00:00,250 --> 00:00:01,854
+We cut review time in half.
+
+2
+00:00:03,250 --> 00:00:05,280
+That was for first-pass approvals only.
+
+3
+00:00:07,500 --> 00:00:09,893
+Final approvals still took the same time.

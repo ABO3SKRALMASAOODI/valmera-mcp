@@ -1,0 +1,3 @@
+Session ID,Source master,Source in,Source out,Approved spoken quote,Slide ID/version,Visible context,Reel start,Reel end,Reviewer,Review state,Approved MP4,Matching SRT
+DEMO-01,qualified-source-slide.mp4,00:00:00.250,00:00:05.280,We cut review time in half. That was for first-pass approvals only.,pilot-slide-qualified-v1,First-pass approvals fell from 12 to 6 minutes across eight internal clips,00:00:00.250,00:00:05.280,,Example,qualified-source-slide.mp4,shared-narration.srt
+,,,,,,,,,,,,

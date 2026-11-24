@@ -1,0 +1,17 @@
+{
+  "fixture": "Synthetic slide exports with fictional data and Mac system voice narration. Both videos use the same audio.",
+  "duration_seconds": 12,
+  "frame_rate": 24,
+  "frames_per_export": 288,
+  "changed_video_frames_inclusive": [
+    0,
+    179
+  ],
+  "source_slide_changes_at_seconds": 7.5,
+  "identical_decoded_mono_pcm_s16le_48000_sha256": "7fea1e0082e74c260ed184a2527cf4260ae36620f6dc11b0ce65262abbe8390b",
+  "files": {
+    "misleading-summary-slide.mp4": "7b285ddb77c19bda716ec4d2baf30186d15fd67298b01c50c29f6a27aa2661a6",
+    "qualified-source-slide.mp4": "0a01f7b33d1cf15a52f6ab0822158758abf7e223e53fffcd549fae0aac9ac0c0",
+    "shared-narration.srt": "46d50f9e49e8f8545611a6c0e1144a1cbf4c3ce8a33e6415ee2756559b68a24a"
+  }
+}
