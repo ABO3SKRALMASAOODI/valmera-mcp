@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Export a CSV report | Demo workspace</title>
+<style>
+  :root {
+    color-scheme: light;
+    font-family: system-ui, sans-serif;
+    color: #182436;
+    background: #edf3f6;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  header {
+    padding: 1rem max(1.25rem, calc((100vw - 52rem) / 2));
+    background: #173247;
+    color: #f0f6f7;
+    font-weight: 650;
+  }
+  main {
+    max-width: 52rem;
+    margin: 0 auto;
+    padding: clamp(1.25rem, 5vw, 3rem) 1.25rem;
+  }
+  h1 { margin: 0; font-size: clamp(1.65rem, 4vw, 2.65rem); }
+  p { line-height: 1.55; }
+  .report {
+    margin-top: 1.5rem;
+    padding: clamp(1rem, 4vw, 1.75rem);
+    border: 1px solid #c8d5de;
+    border-radius: 1rem;
+    background: #fff;
+  }
+  label { display: block; font-weight: 700; margin-bottom: 0.5rem; }
+  select, button {
+    min-height: 2.75rem;
+    padding: 0.6rem 0.9rem;
+    font: inherit;
+    border-radius: 0.5rem;
+  }
+  select { border: 1px solid #627a8d; background: #fff; color: inherit; }
+  button {
+    border: 1px solid #12524e;
+    background: #12524e;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  button:disabled { background: #456862; cursor: wait; }
+  :focus-visible { outline: 3px solid #256bca; outline-offset: 3px; }
+  .actions { display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center; }
+  #status {
+    min-height: 3rem;
+    padding: 0.75rem;
+    margin: 1rem 0 0;
+    border-left: 4px solid #627a8d;
+    background: #f2f6f7;
+    overflow-wrap: anywhere;
+  }
+  #status[data-state="complete"] { background: #e6f4ef; border-color: #12524e; }
+</style>
+</head>
+<body>
+<header>Demo workspace</header>
+<main>
+  <h1>Export an activity report</h1>
+  <p>Choose a week and download the sample activity as a CSV.</p>
+  <section class="report" aria-label="Report export">
+    <label for="week">Report week</label>
+    <div class="actions">
+      <select id="week">
+        <option value="2026-11-09">Nov 9–15, 2026</option>
+        <option value="2026-11-16">Nov 16–22, 2026</option>
+      </select>
+      <button type="button" id="export">Export CSV</button>
+    </div>
+    <p id="status" role="status" data-state="idle">Ready to export.</p>
+  </section>
+</main>
+<script>
+  const activity = {
+    '2026-11-09': [['Reviewed', 19], ['Published', 3]],
+    '2026-11-16': [['Reviewed', 27], ['Published', 6]],
+  };
+  const week = document.getElementById('week');
+  const button = document.getElementById('export');
+  const status = document.getElementById('status');
+
+  function showState(state, message) {
+    status.dataset.state = state;
+    status.textContent = message;
+  }
+
+  week.addEventListener('change', () => showState('idle', 'Ready to export.'));
+
+  button.addEventListener('click', () => {
+    const selectedWeek = week.value;
+    const rows = activity[selectedWeek];
+    button.disabled = true;
+    week.disabled = true;
+    showState('preparing', 'Preparing report…');
+
+    // Keep the intermediate state visible long enough to capture in a recording.
+    window.setTimeout(() => {
+      const name = 'activity-' + selectedWeek + '.csv';
+      const lines = ['week_start,action,count', ...rows.map(row => [selectedWeek, ...row].join(','))];
+      const blob = new Blob([lines.join('\r\n') + '\r\n'], {type: 'text/csv;charset=utf-8'});
+      const url = URL.createObjectURL(blob);
+      const download = document.createElement('a');
+      download.href = url;
+      download.download = name;
+      document.body.append(download);
+      download.click();
+      download.remove();
+      window.setTimeout(() => URL.revokeObjectURL(url), 30_000);
+
+      showState('complete', 'Download started for ' + name + ' (' + rows.length + ' rows).');
+      week.disabled = false;
+      button.disabled = false;
+    }, 1200);
+  });
+</script>
+</body>
+</html>
