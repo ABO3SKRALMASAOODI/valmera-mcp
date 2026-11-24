@@ -31,6 +31,24 @@ Use the [demo refresh delivery sheet](DEMO-REFRESH-DELIVERY.csv) to give each li
 | Help article or course | Open the page as a viewer. Verify the desktop and mobile embed, screenshots, chapter links and any separate subtitles or downloadable copy. |
 | Sales enablement and onboarding emails | Test shared time links and check the attachment or hosted clip in the current template. Send corrected time links to the teams that reuse them. |
 
+## Verify the public MP4 against the approved export
+
+For a direct MP4 download, compare the bytes served to a viewer with the file you approved. A successful response, an old filename or an unchanged player link tells you little about which version the viewer receives. Run the [MP4 verification script](evaluation/verify_published_demo.py) with Python 3.9 or later. It downloads the complete file to calculate its SHA-256 hash without writing a local copy.
+
+```sh
+python3 verify_published_demo.py --approved approved.mp4 https://example.com/demos/current.mp4
+```
+
+| Result | What to do |
+| --- | --- |
+| `match` (exit 0) | This request received the approved bytes. Open the page with the actual player and test the updated action, chapters and captions as a viewer. |
+| `different` (exit 1) | The URL served a different MP4. Check that the public link points to the approved asset. Repeat with `--revalidate` to request cache validation. If that returns the approved file, compare the reported cache headers and inspect the host’s cache settings. If the host transcodes uploads, verify against its approved downloadable rendition. |
+| `unavailable` (exit 2) | Check that the link gives viewers a full MP4. A player page, stream manifest or access error needs a different verification route. |
+
+The script checks the link from the network where you run it. A revalidated response only describes that request, so retain the result of the normal request too. For adaptive streams or hosts that serve different versions by device, play the viewer-facing embed on the relevant devices and compare the updated screen directly. [HTTP request revalidation](https://www.rfc-editor.org/rfc/rfc9111.html#section-5.2.1.4)
+
+To see the two outcomes, save the [revised Captions walkthrough](https://valmera.io/examples/tutorial-click/restored-click.mp4) as `approved.mp4` and check its public URL. At publication it matched at **1,016,111 bytes**. Check the [earlier cut](https://valmera.io/examples/tutorial-click/missing-click.mp4) against the same local file and the script returns `different`. Both are playable MP4s, so a browser can open either even when only one is approved.
+
 ## Brief a pilot before assigning the full library
 
 > Refresh the published “Invite a teammate” walkthrough using our new Settings recording. Keep the approved introduction and confirmation unless the new screen makes either inaccurate. Include the click and the result, update the spoken instructions and captions where the UI changed, and send one reviewed MP4, the revised caption file, and a chapter map with the old and new positions. Tell us which existing links or exports need an update.
