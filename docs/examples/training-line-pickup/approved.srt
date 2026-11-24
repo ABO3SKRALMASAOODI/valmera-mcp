@@ -1,0 +1,11 @@
+1
+00:00:00,250 --> 00:00:02,350
+Open the Download menu.
+
+2
+00:00:02,750 --> 00:00:06,500
+Choose Export MP4 from the Download menu.
+
+3
+00:00:07,250 --> 00:00:09,600
+Send the file to your reviewer.
