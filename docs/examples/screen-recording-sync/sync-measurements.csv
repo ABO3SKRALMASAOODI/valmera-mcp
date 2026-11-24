@@ -1,0 +1,10 @@
+file,frames_after_30fps_sampling,marker,flash_s,tone_s,picture_minus_sound_ms
+source-vfr.mp4,360,1,2.000,2.000,0
+source-vfr.mp4,360,2,6.000,6.000,0
+source-vfr.mp4,360,3,10.000,10.000,0
+ignored-timestamps.mp4,300,1,2.000,2.000,0
+ignored-timestamps.mp4,300,2,5.000,6.000,-1000
+ignored-timestamps.mp4,300,3,8.000,10.000,-2000
+normalized-30fps.mp4,360,1,2.000,2.000,0
+normalized-30fps.mp4,360,2,6.000,6.000,0
+normalized-30fps.mp4,360,3,10.000,10.000,0
