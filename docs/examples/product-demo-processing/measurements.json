@@ -1,0 +1,32 @@
+{
+  "method": "Fictional mock interface authored locally. Decoded yuv420p frame hashes were matched to authored frames and between exports. No product runtime or performance benchmark.",
+  "fps": 30,
+  "reference": {
+    "duration_seconds": 12,
+    "processing_range_seconds": [
+      2,
+      8
+    ],
+    "result_range_seconds": [
+      8,
+      12
+    ],
+    "sha256": "0623100d846dad54760261ff45c327bfe5f2c257f388e6942e5ff7e734974478"
+  },
+  "shortened": {
+    "duration_seconds": 7,
+    "labeled_processing_range_seconds": [
+      2,
+      3
+    ],
+    "result_range_seconds": [
+      3,
+      7
+    ],
+    "sha256": "5ba38915f8251112c87ff6d8a36478de1df16b8cd7b5b3973b553117e87a1eaf"
+  },
+  "initial_frames_matching_between_exports": 60,
+  "activation_frames_unchanged": 6,
+  "result_frames_matching_between_exports": 120,
+  "shortened_wait_label_frames": 30
+}
