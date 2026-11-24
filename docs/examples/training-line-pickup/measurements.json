@@ -1,0 +1,45 @@
+{
+  "fixture": "Locally assembled mock UI with synthetic narration.",
+  "test_time_seconds": 4.0,
+  "files": {
+    "original": {
+      "duration_seconds": 10,
+      "frames": 240,
+      "resolution": [
+        960,
+        540
+      ],
+      "mp4_sha256": "91638a1929609139067838ae63f4c4afbcffa7370bffe6865f95e156238bfbb0",
+      "srt_sha256": "b57d74ef46d3f258f564ac288e7cb00012c35ff6e0c3dc26cde4c7ba93f49196",
+      "decoded_video_sha256": "c3a6f9e2bd50a09a9386a60f4ead2b12fb1ce7ce214e06e76b59a4a030bbcae0",
+      "decoded_audio_sha256": "e97ac90d72740c3c597f131720f7ff9d8b01f529c81a672b261e71070d9fffe5",
+      "cue_2": "Choose Export CSV from the Download menu."
+    },
+    "audio-only": {
+      "duration_seconds": 10,
+      "frames": 240,
+      "resolution": [
+        960,
+        540
+      ],
+      "mp4_sha256": "1b404ee2f82f30c320376b7a1903c11fcf7b51f2e335514856aa94878b1c3ac8",
+      "srt_sha256": "b57d74ef46d3f258f564ac288e7cb00012c35ff6e0c3dc26cde4c7ba93f49196",
+      "decoded_video_sha256": "c3a6f9e2bd50a09a9386a60f4ead2b12fb1ce7ce214e06e76b59a4a030bbcae0",
+      "decoded_audio_sha256": "98788741b2b1eaefa7651b29906ae91877d9713bb51a0d1b86fde9132c8c5080",
+      "cue_2": "Choose Export CSV from the Download menu."
+    },
+    "approved": {
+      "duration_seconds": 10,
+      "frames": 240,
+      "resolution": [
+        960,
+        540
+      ],
+      "mp4_sha256": "7aa17395508af9cbef8ebf74bf61a48398ef9c145f2c2ebdf4c5436e1fd15e46",
+      "srt_sha256": "a243957d80f473189c3eac9a44f2f923c1d479b09c1cf2865e9f6709447af594",
+      "decoded_video_sha256": "9c642885d25817adb41a1197697681ecb9484b09d29cef922de080c5643b0720",
+      "decoded_audio_sha256": "98788741b2b1eaefa7651b29906ae91877d9713bb51a0d1b86fde9132c8c5080",
+      "cue_2": "Choose Export MP4 from the Download menu."
+    }
+  }
+}
