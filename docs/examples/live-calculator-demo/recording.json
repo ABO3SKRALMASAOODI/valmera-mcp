@@ -1,0 +1,68 @@
+{
+  "url": "https://valmera.io/tools/video-editing-cost-calculator#calculator",
+  "orientation": "landscape",
+  "steps": [
+    {
+      "do": "scroll",
+      "to": "Your 3-month project budget",
+      "seconds": 0.9
+    },
+    {
+      "do": "wait",
+      "seconds": 2.5
+    },
+    {
+      "do": "click",
+      "selector": "label:has-text(\"Accepted videos per month\") input[type=\"number\"]",
+      "seconds": 0.35
+    },
+    {
+      "do": "press",
+      "key": "ControlOrMeta+A",
+      "seconds": 0.1
+    },
+    {
+      "do": "press",
+      "key": "4",
+      "seconds": 0.1
+    },
+    {
+      "do": "press",
+      "key": "0",
+      "seconds": 0.1
+    },
+    {
+      "do": "scroll",
+      "to": "Your 3-month project budget",
+      "seconds": 0.8
+    },
+    {
+      "do": "wait",
+      "seconds": 2.5
+    },
+    {
+      "do": "click",
+      "selector": "label:has-text(\"Review and revision hours per month\") input[type=\"number\"]",
+      "seconds": 0.35
+    },
+    {
+      "do": "press",
+      "key": "ControlOrMeta+A",
+      "seconds": 0.1
+    },
+    {
+      "do": "press",
+      "key": "4",
+      "seconds": 0.1
+    },
+    {
+      "do": "scroll",
+      "to": "Your 3-month project budget",
+      "seconds": 0.8
+    },
+    {
+      "do": "wait",
+      "seconds": 3
+    }
+  ]
+}
