@@ -1,0 +1,34 @@
+{
+  "fps": 24,
+  "frame_numbering": "Zero-based. Source out is exclusive.",
+  "verification": "Decoded every frame and sampled the highlight-ring centerline during each output. Source indices identify the annotated screen and scoreboard change. Visually checked the screen frame and the export boundaries. This is a silent teaching diagram.",
+  "exports": [
+    {
+      "file": "01-full-possession.mp4",
+      "source_in_frame": 0,
+      "source_out_frame_exclusive": 192,
+      "decoded_frames": 192,
+      "screen_source_frame_72_at_output_frame": 72,
+      "score_source_frame_156_at_output_frame": 156,
+      "identification_ring_frames": 0
+    },
+    {
+      "file": "02-finish-only.mp4",
+      "source_in_frame": 120,
+      "source_out_frame_exclusive": 192,
+      "decoded_frames": 72,
+      "screen_source_frame_72_at_output_frame": null,
+      "score_source_frame_156_at_output_frame": 36,
+      "identification_ring_frames": 0
+    },
+    {
+      "file": "03-screen-to-score.mp4",
+      "source_in_frame": 24,
+      "source_out_frame_exclusive": 192,
+      "decoded_frames": 168,
+      "screen_source_frame_72_at_output_frame": 48,
+      "score_source_frame_156_at_output_frame": 132,
+      "identification_ring_frames": 24
+    }
+  ]
+}
