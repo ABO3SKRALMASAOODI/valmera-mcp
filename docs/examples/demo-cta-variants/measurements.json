@@ -1,0 +1,36 @@
+{
+  "scope": "These edited video teaching assets reuse a public Valmera screen recording with locally assembled end cards.",
+  "source": "../website-demo-loop/product-demo-loop.mp4",
+  "audio_streams_per_file": 0,
+  "source_frames_identical_between_the_three_variants": 168,
+  "frames_that_changed_in_sales_revision": 90,
+  "variants": {
+    "sales-first": {
+      "duration_seconds": 8.6,
+      "frames": 258,
+      "sha256": "127cd0a74a98e28bee0048e4d3cc5f16cdfc8ab6394cffddbb30bbed26da34ec",
+      "first_end_card_frame": 168,
+      "first_end_card_seconds": 5.6,
+      "shared_decoded_frame_hashes_sha256": "2e3c144b4d57c8a718508e4004bb24a4221cbce7127536b00f04087f42d178db",
+      "first_end_card_frame_md5": "0fd38c2054baec4379180ec603c4de60"
+    },
+    "sales-revised": {
+      "duration_seconds": 8.6,
+      "frames": 258,
+      "sha256": "0831c7b4d70ed19913a256fe44e1d10fca773c453067768ef660bedcedd49445",
+      "first_end_card_frame": 168,
+      "first_end_card_seconds": 5.6,
+      "shared_decoded_frame_hashes_sha256": "2e3c144b4d57c8a718508e4004bb24a4221cbce7127536b00f04087f42d178db",
+      "first_end_card_frame_md5": "bab7cb7a4fc702c61797f226b52598ea"
+    },
+    "onboarding": {
+      "duration_seconds": 8.6,
+      "frames": 258,
+      "sha256": "cc0e16ae2683198a2b0cd0dab965d027eda2d2e994efa4a48963bcd243b64490",
+      "first_end_card_frame": 168,
+      "first_end_card_seconds": 5.6,
+      "shared_decoded_frame_hashes_sha256": "2e3c144b4d57c8a718508e4004bb24a4221cbce7127536b00f04087f42d178db",
+      "first_end_card_frame_md5": "055b4aae8664f16a521840eb9ceb8622"
+    }
+  }
+}
