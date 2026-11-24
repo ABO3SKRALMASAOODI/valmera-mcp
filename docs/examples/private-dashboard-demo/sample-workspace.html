@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sample report workspace</title>
+<style>
+  :root { color-scheme: light; font: 16px/1.5 system-ui, sans-serif; color: #182538; background: #f2f5fa; }
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  [hidden] { display: none; }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 14px;
+    padding: 14px clamp(1rem, 5vw, 4rem); background: #122945; color: #f3f7ff; }
+  header b { font-size: 16px; }
+  header button { background: transparent; border: 1px solid #9cb9da; color: inherit; }
+  main { width: min(100% - 32px, 740px); margin: clamp(2rem, 8vw, 5rem) auto; padding: clamp(1.25rem, 5vw, 2.5rem);
+    border: 1px solid #d6e0ef; border-radius: 16px; background: #fff; }
+  h1 { margin: 0 0 8px; font-size: clamp(1.6rem, 6vw, 2.3rem); line-height: 1.15; letter-spacing: -0.025em; }
+  p { color: #415773; margin: 8px 0 20px; }
+  button, .action { display: inline-block; font: inherit; font-weight: 650; cursor: pointer; text-decoration: none;
+    background: #2452a0; color: white; border: 1px solid transparent; padding: 10px 15px; border-radius: 8px; }
+  button:focus-visible, .action:focus-visible, h1:focus-visible { outline: 3px solid #b25908; outline-offset: 3px; }
+  .summary { display: flex; flex-wrap: wrap; gap: 12px 28px; border-top: 1px solid #d6e0ef; padding: 16px 0; margin: 0; }
+  .summary dt { font-size: 14px; color: #415773; }
+  .summary dd { margin: 0; font-weight: 650; }
+  .status { color: #145945; font-weight: 650; }
+  table { width: 100%; margin-bottom: 18px; border-collapse: collapse; text-align: left; }
+  th, td { padding: 8px 0; border-bottom: 1px solid #d6e0ef; }
+  td:last-child, th:last-child { text-align: right; }
+</style>
+<header>
+  <b>Sample workspace</b>
+  <button type="button" data-show="workspace">Reset demo</button>
+</header>
+<main>
+  <section id="workspace" aria-labelledby="workspace-title">
+    <h1 id="workspace-title" tabindex="-1">Workspace overview</h1>
+    <p>Fictional workspace for rehearsing a product walkthrough.</p>
+    <button type="button" data-show="reports">Reports</button>
+  </section>
+  <section id="reports" aria-labelledby="reports-title" hidden>
+    <h1 id="reports-title" tabindex="-1">Reports</h1>
+    <p>Open the fictional November activity report.</p>
+    <button type="button" data-show="preview">Open November report</button>
+  </section>
+  <section id="preview" aria-labelledby="preview-title" hidden>
+    <h1 id="preview-title" tabindex="-1">November activity report</h1>
+    <dl class="summary">
+      <div><dt>Workspace</dt><dd>Sample workspace</dd></div>
+      <div><dt>Period</dt><dd>November 2026</dd></div>
+    </dl>
+    <table>
+      <thead><tr><th scope="col">Activity</th><th scope="col">Count</th></tr></thead>
+      <tbody><tr><td>Reviews completed</td><td>12</td></tr><tr><td>Reports exported</td><td>3</td></tr></tbody>
+    </table>
+    <a class="action" download="sample-november-report.csv" href="data:text/csv;charset=utf-8,activity%2Ccount%0Areviews%2C12%0Areports%2C3%0A">Export sample CSV</a>
+    <p id="export-status" class="status" role="status" hidden>November report CSV requested</p>
+  </section>
+</main>
+<script>
+  const panels = document.querySelectorAll('main section');
+  const exportStatus = document.querySelector('#export-status');
+  for (const button of document.querySelectorAll('[data-show]')) {
+    button.addEventListener('click', () => {
+      const nextPanel = document.getElementById(button.dataset.show);
+      for (const panel of panels) panel.hidden = panel !== nextPanel;
+      exportStatus.hidden = true;
+      nextPanel.querySelector('h1').focus();
+    });
+  }
+  document.querySelector('[download]').addEventListener('click', () => {
+    exportStatus.hidden = false;
+  });
+</script>
+</html>

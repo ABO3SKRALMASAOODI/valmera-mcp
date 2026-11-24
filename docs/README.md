@@ -68,6 +68,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Audio drifts in a screen recording | [Compare three MP4s and verify sync before editing](FIX-SCREEN-RECORDING-AUDIO-DRIFT.md) |
 | Trim a training video with selectable English and Spanish audio | [Inspect both tracks and test the exported join](TRIM-VIDEO-WITH-TWO-AUDIO-LANGUAGES.md) |
 | Editar uma gravação de tela com IA (português do Brasil) | [Compare dois MP4s em 1080p e teste a legibilidade dos rótulos](EDITAR-GRAVACAO-DE-TELA-IA.md) |
+| Record a dashboard demo behind sign-in | [Rehearse the workflow and hand off an uploaded recording](RECORD-A-PRIVATE-DASHBOARD-DEMO.md) |
 | Private values in a recorded demo | [Test a moving cover and catch a one-frame leak in the downloaded MP4](SCREEN-RECORDING-REDACTION-AUDIT.md) |
 | Choosing a product-demo editor | [Cubix vs Valmera for an uploaded recording or public URL](CUBIX-VS-VALMERA-PRODUCT-DEMOS.md) |
 | Recorded course lesson | [Compare search-result routes and preserve the teaching sequence](COURSE-LESSON-EDITING.md), with a [lesson trial and release worksheet](COURSE-LESSON-REVIEW.md) |
