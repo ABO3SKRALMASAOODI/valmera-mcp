@@ -1,0 +1,61 @@
+{
+  "scope": "Synthetic 24.73-second interview. Two full Valmera export MP4s from consecutive EDL versions.",
+  "source_range_kept_s": [
+    3.1,
+    21.1
+  ],
+  "story_s": 18,
+  "first_edl_version": 4,
+  "revised_edl_version": 5,
+  "sole_edl_change": "Replace the image instance at 10.0\u201313.0 program seconds. The second cutaway at 14.0\u201316.5 seconds remains unchanged.",
+  "sha256": {
+    "source": "82946ac4b64391b3c40b7d60f966462ca04890373eee67007e44ee99d21610ad",
+    "first": "f22e0a0f907be74c60eed333cf803742a5b4e414335a617c7371237012ce3a7e",
+    "revised": "20a911ab6331ffb01b3ce6d7c0ed247a78095e6541fe09bbc90ceb9598ecb745"
+  },
+  "audio_sample_rate_hz": 16000,
+  "decoded_audio_samples_per_export": 368299,
+  "decoded_story_pcm_equal": true,
+  "decoded_story_audio_correlation": 1.0,
+  "source_to_revised_spoken_line_match": {
+    "claim": {
+      "source_start_s": 3.3029,
+      "source_end_s": 6.693,
+      "correlation": 0.999985,
+      "alignment_ms": 0.0
+    },
+    "qualifier": {
+      "source_start_s": 7.5263,
+      "source_end_s": 12.4722,
+      "correlation": 0.999994,
+      "alignment_ms": -0.062
+    },
+    "workflow": {
+      "source_start_s": 13.3055,
+      "source_end_s": 16.1964,
+      "correlation": 0.999993,
+      "alignment_ms": 0.0
+    },
+    "close": {
+      "source_start_s": 17.0298,
+      "source_end_s": 20.8443,
+      "correlation": 0.999995,
+      "alignment_ms": -0.062
+    }
+  },
+  "video": {
+    "fps": 30.0,
+    "frame_count": 690,
+    "changed_window_start_s": 10.0,
+    "changed_window_end_s": 13.0,
+    "frames_in_changed_window": 90,
+    "min_mean_absolute_pixel_difference_in_changed_window": 4.66282,
+    "max_mean_absolute_pixel_difference_in_rest_of_story": 0.23407,
+    "max_mean_absolute_pixel_difference_in_end_card": 0.0,
+    "selected_frame_mean_absolute_pixel_difference": {
+      "180": 0.0,
+      "345": 4.70927,
+      "450": 0.19563
+    }
+  }
+}

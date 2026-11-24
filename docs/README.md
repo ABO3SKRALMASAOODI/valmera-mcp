@@ -70,7 +70,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | A camera puts the host on the left and guest on the right | [Listen to three exports and verify both microphones in the final mix](KEEP-BOTH-MICS-IN-A-PODCAST-VIDEO.md) |
 | Remove an overlapping host aside and keep the guest’s condition | [Listen to three mixes and test your editor on isolated microphone tracks](KEEP-PODCAST-GUEST-QUALIFIER-IN-CROSSTALK.md) |
 | Revise one clip in an approved batch | [Check unchanged MP4s locally and review the replacement](PODCAST-CLIP-BATCH-REVIEW.md) |
-| Customer testimonial from a recorded interview | [Compare AI editors with an approved-quote test and two playable cuts](CUSTOMER-TESTIMONIAL-VIDEO-EDITORS.md) |
+| Customer testimonial from a recorded interview | [Compare AI editors with an approved-quote test and two playable cuts](CUSTOMER-TESTIMONIAL-VIDEO-EDITORS.md) or [download two hosted exports that show a cutaway swap preserving the full quote](INTERVIEW-HIGHLIGHT-KEEP-THE-FULL-QUOTE.md) |
 | Replace one cutaway in an approved case-study video | [Run a four-second revision pilot and check the quote, captions and downloaded MP4](CASE-STUDY-CUTAWAY-REVISION.md), with a [review sheet](CASE-STUDY-CUTAWAY-REVISION.csv) |
 | Record a tooltip in a website demo | [Compare two MP4s with different hover holds](RECORD-HOVER-TOOLTIP-IN-WEBSITE-DEMO.md) |
 | Screen recording or software tutorial | [Preserve the starting state, action and result](SCREEN-RECORDING-TUTORIALS.md) |
