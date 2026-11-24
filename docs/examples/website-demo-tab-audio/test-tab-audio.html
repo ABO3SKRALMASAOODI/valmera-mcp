@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A short test for checking tab audio and microphone narration in a downloaded screen recording.">
+  <title>Website Demo Audio Test | Valmera</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      background: #101923;
+      color: #f6fbff;
+      font: 16px/1.5 system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    main { max-width: 55rem; margin: auto; padding: clamp(1rem, 6vw, 4rem); }
+    h1 { font-size: clamp(1.9rem, 5vw, 3rem); line-height: 1.12; letter-spacing: -.04em; margin: 0; }
+    header p { color: #c4d3de; max-width: 51ch; margin: .75rem 0 1.5rem; }
+    section { background: #1b2b39; border: 1px solid #456071; border-radius: 1.1rem; padding: clamp(1rem, 4vw, 2rem); min-height: 12rem; }
+    #step { font-weight: 750; color: #a0f2d5; }
+    #script { font-size: clamp(1.4rem, 4vw, 2.2rem); line-height: 1.22; margin: 1rem 0 0; }
+    button { margin-top: 1rem; background: #a0f2d5; color: #081e19; padding: .6rem 1rem; border: 0; border-radius: .55rem; font: inherit; font-weight: 700; }
+    button:disabled { opacity: .55; }
+    button:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+    footer { margin-top: 1.25rem; color: #c4d3de; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Website demo audio test</h1>
+      <p>Start your screen recorder on this tab. Then start the test, read the two lines aloud and pause for the tab’s two-note chime.</p>
+    </header>
+    <section aria-live="polite" aria-atomic="true">
+      <div id="step">Ready</div>
+      <p id="script">The test takes eight seconds.</p>
+    </section>
+    <button id="start" type="button">Start audio test</button>
+    <footer>On playback, listen for your voice, two notes, then your voice again.</footer>
+    <script>
+      const start = document.getElementById('start');
+      const Audio = window.AudioContext || window.webkitAudioContext;
+      let context;
+
+      function show(step, script) {
+        document.getElementById('step').textContent = step;
+        document.getElementById('script').textContent = script;
+      }
+
+      function scheduleNote(time, frequency) {
+        const tone = context.createOscillator();
+        const gain = context.createGain();
+        tone.frequency.value = frequency;
+        gain.gain.setValueAtTime(0, time);
+        gain.gain.linearRampToValueAtTime(0.16, time + 0.02);
+        gain.gain.setValueAtTime(0.16, time + 0.12);
+        gain.gain.linearRampToValueAtTime(0, time + 0.22);
+        tone.connect(gain).connect(context.destination);
+        tone.start(time);
+        tone.stop(time + 0.22);
+      }
+
+      start.addEventListener('click', async () => {
+        start.disabled = true;
+        try {
+          context ||= new Audio();
+          await context.resume();
+          const origin = context.currentTime;
+          scheduleNote(origin + 3, 660);
+          scheduleNote(origin + 3.38, 880);
+          show('1 · Read aloud', 'I am checking the microphone.');
+          window.setTimeout(() => show('2 · Listen', 'The tab plays two notes.'), 2800);
+          window.setTimeout(() => show('3 · Read aloud', 'The notification test is complete.'), 4800);
+          window.setTimeout(() => {
+            show('Test finished', 'Stop your recorder and play the downloaded file.');
+            start.disabled = false;
+          }, 8000);
+        } catch {
+          show('Sound unavailable', 'Open this file in a browser with audio playback enabled.');
+          start.disabled = false;
+        }
+      });
+    </script>
+  </main>
+</body>
+</html>
