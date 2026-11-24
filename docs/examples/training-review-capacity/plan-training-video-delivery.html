@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Plan how many training videos can pass editing, review, revisions and final approval before a deadline.">
+  <title>Training Video Delivery Planner | Valmera</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #102733;
+      --muted: #48606c;
+      --line: #cddcde;
+      --accent: #006956;
+      --paper: #fff;
+      background: #edf3f3;
+      color: var(--ink);
+      font: 16px/1.55 system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    main { max-width: 70rem; margin: auto; padding: clamp(1rem, 4vw, 3rem); }
+    h1, h2 { line-height: 1.18; margin: 0 0 .65rem; }
+    h1 { max-width: 22ch; font-size: clamp(2.1rem, 6vw, 4rem); letter-spacing: -.055em; }
+    h2 { font-size: 1.25rem; }
+    header p { max-width: 62ch; color: var(--muted); }
+    a { color: var(--accent); text-underline-offset: .2em; }
+    .panels { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); gap: 1rem; }
+    form, section {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 1.1rem;
+      padding: clamp(1rem, 3vw, 1.5rem);
+      align-self: start;
+    }
+    fieldset { padding: 0; margin: 0 0 1.15rem; border: 0; }
+    legend { margin-bottom: .55rem; padding: 0; font-weight: 720; }
+    .fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; }
+    label { display: grid; gap: .28rem; align-content: space-between; font-size: .88rem; }
+    input, button { font: inherit; border: 1px solid var(--line); border-radius: .45rem; }
+    input { width: 100%; color: inherit; background: #fcfefe; padding: .45rem .55rem; }
+    button { background: var(--accent); color: white; padding: .5rem .85rem; cursor: pointer; }
+    :focus-visible { outline: 3px solid #188ba3; outline-offset: 2px; }
+    .summary { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 0; gap: .65rem; }
+    .summary > div { padding: .65rem .7rem; background: #edf6f4; border-radius: .55rem; }
+    .summary dt { color: var(--muted); font-size: .88rem; }
+    .summary dd { margin: 0; font-size: 1.4rem; font-weight: 750; }
+    .table-box { overflow-x: auto; margin-block: 1rem; }
+    table { width: 100%; border-collapse: collapse; text-align: right; font-variant-numeric: tabular-nums; }
+    th, td { padding: .38rem .45rem; border-bottom: 1px solid var(--line); }
+    th:first-child { text-align: left; white-space: nowrap; }
+    caption { text-align: left; margin-bottom: .35rem; color: var(--muted); }
+    .note { color: var(--muted); font-size: .92rem; }
+    #result-message { margin-block: .9rem .35rem; font-weight: 650; }
+    footer { margin-block: 1rem 0; }
+    footer p { max-width: 72ch; }
+    @media (max-width: 46rem) { .panels { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Training video delivery planner</h1>
+      <p>Estimate how many recorded lessons your team can edit and approve by a deadline. Start with the time you measured on a pilot and enter the minutes your editors and reviewers can actually reserve each workday.</p>
+    </header>
+    <div class="panels">
+      <form id="plan">
+        <h2>Plan a batch</h2>
+        <fieldset>
+          <legend>Deadline and team capacity</legend>
+          <div class="fields">
+            <label>Lessons <input name="lessons" type="number" min="1" max="2000" value="52" required></label>
+            <label>Workdays until delivery <input name="deadline" type="number" min="1" max="260" value="20" required></label>
+            <label>Editor minutes per day <input name="editBudget" type="number" min="1" max="14400" value="210" required></label>
+            <label>Reviewer minutes per day <input name="reviewBudget" type="number" min="1" max="14400" value="40" required></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Minutes per lesson</legend>
+          <div class="fields">
+            <label>First edit <input name="draft" type="number" min="1" max="1440" value="35" required></label>
+            <label>Initial review <input name="review" type="number" min="1" max="1440" value="14" required></label>
+            <label>One revision <input name="revise" type="number" min="0" max="1440" value="10" required></label>
+            <label>Final check and approval <input name="approve" type="number" min="1" max="1440" value="6" required></label>
+          </div>
+        </fieldset>
+        <button type="submit">Calculate delivery plan</button>
+        <p class="note">Use total daily minutes for each team. Set revision minutes to 0 for straight approval. The planner runs locally in this file.</p>
+      </form>
+      <section aria-labelledby="plan-heading">
+        <h2 id="plan-heading">Projected approvals</h2>
+        <p id="result-message" role="status"></p>
+        <dl class="summary">
+          <div><dt>Approved by deadline</dt><dd id="approved">—</dd></div>
+          <div><dt>Remaining at deadline</dt><dd id="remaining">—</dd></div>
+          <div><dt>Full delivery</dt><dd id="completion">—</dd></div>
+          <div><dt>Review time for batch</dt><dd id="review-time">—</dd></div>
+        </dl>
+        <div class="table-box">
+          <table>
+            <caption>Output by workweek</caption>
+            <thead><tr><th scope="col">Workdays</th><th scope="col">First edits</th><th scope="col">Final approvals</th><th scope="col">Approved total</th></tr></thead>
+            <tbody id="weeks"></tbody>
+          </table>
+        </div>
+        <p class="note">The model assumes footage and briefs are ready on day 1, every lesson takes the entered effort, and each handoff starts the next workday. Revisions and final approvals have priority. Set aside separate time for upload, caption checks and delivery where those tasks are outside the timings you enter.</p>
+      </section>
+    </div>
+    <noscript><p>Enable JavaScript to calculate the delivery plan.</p></noscript>
+    <footer>
+      <p>Planning recurring edits from footage you already have? Share your lesson count, delivery deadline and pilot review times with <a href="https://valmera.io/subscribe?inquiry=training-video-editing-service&amp;utm_source=github.com&amp;utm_medium=referral&amp;utm_campaign=training_review_capacity#enterprise">Valmera Enterprise</a>.</p>
+    </footer>
+  </main>
+  <script>
+    function projectDelivery(input) {
+      const { lessons, deadline, editBudget, reviewBudget, draft, review, revise, approve } = input;
+      const work = [draft, review, revise, approve];
+      const queues = [
+        Array.from({ length: lessons }, () => ({ ready: 1, left: draft })),
+        [], [], [],
+      ];
+      const positions = [0, 0, 0, 0];
+      const approved = [];
+      const weeks = [];
+      let drafts = 0;
+      let completion = null;
+
+      function advance(stage, minutes, day) {
+        const queue = queues[stage];
+        while (minutes > 0 && positions[stage] < queue.length) {
+          const task = queue[positions[stage]];
+          if (task.ready > day) break;
+          const spent = Math.min(minutes, task.left);
+          task.left -= spent;
+          minutes -= spent;
+          if (task.left > 0) break;
+          positions[stage] += 1;
+          if (stage === 0) drafts += 1;
+          if (stage === 3) {
+            approved.push(day);
+          } else {
+            const next = stage === 1 && revise === 0 ? 3 : stage + 1;
+            queues[next].push({ ready: day + 1, left: work[next] });
+          }
+        }
+        return minutes;
+      }
+
+      let previousDrafts = 0;
+      let previousApprovals = 0;
+      let from = 1;
+      for (let day = 1; day <= 260; day++) {
+        const remainingEditTime = advance(2, editBudget, day);
+        advance(0, remainingEditTime, day);
+        const remainingReviewTime = advance(3, reviewBudget, day);
+        advance(1, remainingReviewTime, day);
+        const done = approved.length === lessons;
+        if (day % 5 === 0 || day === deadline || done || day === 260) {
+          weeks.push({ from, through: day, drafts: drafts - previousDrafts,
+            approvals: approved.length - previousApprovals, total: approved.length });
+          previousDrafts = drafts;
+          previousApprovals = approved.length;
+          from = day + 1;
+        }
+        if (done) {
+          completion = day;
+          break;
+        }
+      }
+      return {
+        byDeadline: approved.filter(day => day <= deadline).length,
+        completion,
+        reviewMinutes: lessons * (review + approve),
+        weeks,
+      };
+    }
+
+    const form = document.getElementById('plan');
+    const byId = id => document.getElementById(id);
+
+    function renderPlan() {
+      const input = Object.fromEntries(
+        Array.from(new FormData(form), ([name, value]) => [name, Number(value)]),
+      );
+      const result = projectDelivery(input);
+      const remaining = input.lessons - result.byDeadline;
+      byId('approved').textContent = `${result.byDeadline} of ${input.lessons}`;
+      byId('remaining').textContent = remaining;
+      byId('completion').textContent = result.completion ? `Day ${result.completion}` : 'Beyond day 260';
+      byId('review-time').textContent = new Intl.NumberFormat(undefined, {
+        style: 'unit', unit: 'hour', maximumFractionDigits: 1,
+      }).format(result.reviewMinutes / 60);
+      byId('result-message').textContent = remaining === 0
+        ? `All lessons finish by workday ${input.deadline} in this plan.`
+        : `${remaining} ${remaining === 1 ? 'lesson still needs' : 'lessons still need'} approval after workday ${input.deadline}.`;
+
+      const rows = result.weeks.map(week => {
+        const row = document.createElement('tr');
+        const heading = document.createElement('th');
+        heading.scope = 'row';
+        heading.textContent = week.from === week.through ? String(week.from) : `${week.from}–${week.through}`;
+        row.append(heading);
+        for (const value of [week.drafts, week.approvals, week.total]) {
+          const cell = document.createElement('td');
+          cell.textContent = value;
+          row.append(cell);
+        }
+        return row;
+      });
+      byId('weeks').replaceChildren(...rows);
+    }
+
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      renderPlan();
+    });
+    renderPlan();
+  </script>
+</body>
+</html>
