@@ -55,6 +55,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | A basketball reel misses the screen before the basket | [Compare the full play, a finish-only cut and a marked seven-second export](BASKETBALL-HIGHLIGHT-REEL-KEEP-THE-SCREEN.md) |
 | Webinar highlights with a quiet product demo | [Compare four editors and test one focused revision](AI-WEBINAR-HIGHLIGHT-REEL-EDITORS.md) |
 | Make a GoPro highlight reel from consecutive camera chapters | [Compare two real clips and check continuity across the join](GOPRO-HIGHLIGHT-REEL-CHAPTERS.md) |
+| Twitch stream markers into an OBS highlight reel | [Align the stream and local file, then generate an edit brief](TWITCH-MARKERS-TO-A-HIGHLIGHT-REEL.md) |
 | Highlight reels from existing footage | [FullVideoTools vs Valmera and a test for a quiet must-keep moment](FULLVIDEOTOOLS-VS-VALMERA-HIGHLIGHT-REELS.md) |
 | Replace your podcast clip editor and deliver a separate SRT | [Reap alternatives with a playable MP4/SRT handoff test](REAP-ALTERNATIVES-CAPTION-HANDOFF.md) |
 | Podcast captions flash by too fast | [Compare the same clip and words before and after retiming](FIX-FAST-CAPTIONS-IN-PODCAST-CLIPS.md) |
