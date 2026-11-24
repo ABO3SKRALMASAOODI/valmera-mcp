@@ -99,6 +99,8 @@ Play each downloaded file from beginning to end. Check meaning across cuts, name
 
 Record the approved project/version, final filename, dimensions, program duration, total file duration and branding. Keep exports distinguishable—for example, `demo-b-vertical-v3.mp4`—without changing their underlying format merely by renaming them.
 
+For picture-only variants, the [approved audio check](VERIFY-AUDIO-ACROSS-VIDEO-LAYOUTS.md) can flag a replaced narration track before your playback review.
+
 For Valmera's current access and delivery conditions, check the [plan page](https://valmera.io/subscribe). Account creation and uploading are free; editing requires an eligible plan. A compatible external assistant may have separate charges. Do not estimate the whole batch's cost from the subscription price alone: include observed editing usage, failed attempts, corrections and review time.
 
 ## Questions to settle before choosing a batch editor
