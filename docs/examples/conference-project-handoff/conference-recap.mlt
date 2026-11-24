@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<mlt producer="recap" LC_NUMERIC="C">
+  <profile description="Conference test footage" width="384" height="216" progressive="1"
+    sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9"
+    frame_rate_num="12" frame_rate_den="1" colorspace="709"/>
+  <chain id="room-a">
+    <property name="resource">room-a/camera.mp4</property>
+    <property name="mlt_service">avformat</property>
+  </chain>
+  <chain id="room-b">
+    <property name="resource">room-b/camera.mp4</property>
+    <property name="mlt_service">avformat</property>
+  </chain>
+  <playlist id="recap">
+    <entry producer="room-a" in="48" out="83"/>
+    <entry producer="room-b" in="72" out="107"/>
+  </playlist>
+</mlt>
