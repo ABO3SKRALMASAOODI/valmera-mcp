@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "valmera-video-editor",
+  "version": "1.0.0",
+  "description": "Connect Valmera to edit recorded video with a transcript, preview and MP4 export.",
+  "author": {
+    "name": "Valmera",
+    "url": "https://valmera.io"
+  },
+  "homepage": "https://valmera.io/mcp",
+  "repository": "https://github.com/ABO3SKRALMASAOODI/valmera-mcp",
+  "license": "MIT",
+  "keywords": ["valmera", "video editing", "edit video", "video captions", "podcast clips"]
+}
