@@ -1,0 +1,54 @@
+{
+  "sample": "silent 30 fps motion graphic with burned source clocks",
+  "tool": "ffmpeg version 7.1",
+  "source_sha256": "24dc72de92df8e0d212fa9ca068d3ffdacab55f74b91c32249be96e9e74defdf",
+  "output_sha256": "0016dfb0e3b5f6ae581ab084935c204de45433bf15a8c5a9b4c3b3a7b4fbcfb8",
+  "fps": 30,
+  "output_width": 360,
+  "output_height": 360,
+  "source_frames": 750,
+  "output_frames": 300,
+  "verified_frames": 300,
+  "duration_seconds": 10,
+  "kept_source_frame_ranges_end_exclusive": [
+    [
+      90,
+      210
+    ],
+    [
+      360,
+      420
+    ],
+    [
+      570,
+      690
+    ]
+  ],
+  "example_boundary_pairs_output_source_frames": [
+    [
+      0,
+      90
+    ],
+    [
+      119,
+      209
+    ],
+    [
+      120,
+      360
+    ],
+    [
+      179,
+      419
+    ],
+    [
+      180,
+      570
+    ],
+    [
+      299,
+      689
+    ]
+  ],
+  "verification": "Decode the normalized source and rendered video to yuv420p. Compare the FFmpeg framemd5 hashes in the retained source ranges to the output hashes in sequence."
+}
