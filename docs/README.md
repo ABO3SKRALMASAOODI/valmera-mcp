@@ -90,6 +90,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Deliver captions and chapter navigation to a course player | [Try an MP4 and two WebVTT tracks, and decide when to ask for SCORM](TRAINING-VIDEO-MP4-WEBVTT-OR-SCORM.md) |
 | Outsource recurring software tutorials with captions and audio description | [Compare two exports and scope a paid pilot](OUTSOURCE-TRAINING-VIDEO-CAPTIONS-AUDIO-DESCRIPTION.md) |
 | Outsource recurring training videos with consistent terminology | [Test a caption glossary revision and compare providers](TRAINING-VIDEO-CAPTION-GLOSSARY-PILOT.md) |
+| Keep captions from covering controls in software training videos | [Compare caption placements and test an outsourced pilot in your LMS](TRAINING-VIDEO-CAPTION-PLACEMENT-PILOT.md) |
 | Outsourced employee onboarding | [Brief and review a two-site onboarding edit](EMPLOYEE-ONBOARDING-VIDEO-EDITING-SERVICE.md) |
 | Training videos recorded with different cameras or lighting | [Compare three grades and brief a repeatable color-matching pilot](MATCH-COLOR-ACROSS-TRAINING-VIDEOS.md) |
 | Turn an existing onboarding call into a standalone product demo | [Compare workflows and play the three release examples](ONBOARDING-CALL-TO-PRODUCT-DEMO.md) |
