@@ -82,6 +82,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Compare Tella alternatives for an imported screen recording | [Test what changes when the camera is already part of the MP4](TELLA-ALTERNATIVES-FOR-IMPORTED-SCREEN-RECORDINGS.md) |
 | Film a public calculator changing its results | [Run a live three-state browser recording trial](RECORD-A-LIVE-CALCULATOR-DEMO.md) |
 | Record a SaaS product demo from a public URL | [Compare four recorders and verify the target screen in the MP4](COMPARE-AI-PRODUCT-DEMO-RECORDERS.md) |
+| Export a branching product demo as MP4 | [Download two audience paths and compare demo platforms, video editors and delivery options](EXPORT-BRANCHING-PRODUCT-DEMOS-TO-MP4.md) |
 | Choosing a product-demo editor | [Cubix vs Valmera for an uploaded recording or public URL](CUBIX-VS-VALMERA-PRODUCT-DEMOS.md) |
 | Recorded course lesson | [Compare search-result routes and preserve the teaching sequence](COURSE-LESSON-EDITING.md), with a [lesson trial and release worksheet](COURSE-LESSON-REVIEW.md) |
 | Send a recurring training batch with duplicate camera filenames | [Try two decoded MP4s and scope an editor handoff pilot](VIDEO-EDITING-SOURCE-HANDOFF-DUPLICATE-FILENAMES.md) |

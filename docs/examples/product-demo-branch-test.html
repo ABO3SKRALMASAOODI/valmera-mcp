@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Branching product demo to MP4 test</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #111a24; color: #f0f5f8; font: 1rem/1.55 system-ui, sans-serif; }
+    main { max-width: 56rem; margin: auto; padding: clamp(1rem, 5vw, 3rem); }
+    h1 { max-width: 22ch; margin: 0; font-size: clamp(1.9rem, 5vw, 3rem); line-height: 1.12; }
+    h2 { margin: 0 0 .65rem; font-size: 1.15rem; }
+    p { color: #c5d3e0; }
+    label { display: inline-flex; align-items: center; gap: .35rem; margin-right: 1rem; cursor: pointer; }
+    fieldset { border: 1px solid #647c93; padding: .75rem 1rem; border-radius: .6rem; margin: 1.4rem 0 .85rem; }
+    legend { padding: 0 .35rem; }
+    input { accent-color: #9debcf; }
+    .controls { display: flex; gap: .75rem; flex-wrap: wrap; align-items: center; }
+    button, a[download] { font: inherit; font-weight: 650; padding: .55em .85em; border: 0; border-radius: .45rem; }
+    button { background: #9debcf; color: #122620; cursor: pointer; }
+    button:disabled { opacity: .55; cursor: default; }
+    a[download] { color: #bfe9ff; outline: 1px solid #739cb5; outline-offset: -1px; }
+    :focus-visible { outline: 2px solid #e6c681; outline-offset: 3px; }
+    .panels { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: 1.25rem; }
+    canvas, video { display: block; width: 100%; aspect-ratio: 16 / 9; border-radius: .55rem; background: #26384b; }
+    [hidden] { display: none; }
+    #status { min-height: 1.55em; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Which path made it into the MP4?</h1>
+  <p>This simulated product tour has two audience paths. Export one and inspect the result, then switch paths and export again. Both files are made on this device.</p>
+  <fieldset id="paths">
+    <legend>Choose a tour path</legend>
+    <label><input type="radio" name="path" value="reports" checked> Reports</label>
+    <label><input type="radio" name="path" value="members"> Team members</label>
+  </fieldset>
+  <div class="controls">
+    <button id="make" type="button">Create sample MP4</button>
+    <a id="download" href="#" download hidden>Download sample MP4</a>
+  </div>
+  <p id="status" role="status">Reports path selected. Expected ending: Export ready.</p>
+  <div class="panels">
+    <section aria-labelledby="path-heading">
+      <h2 id="path-heading">Selected path</h2>
+      <canvas id="screen" width="640" height="360" aria-label="Simulated product tour preview"></canvas>
+    </section>
+    <section id="output" aria-labelledby="file-heading" hidden>
+      <h2 id="file-heading">Recorded MP4</h2>
+      <video id="preview" controls playsinline aria-label="Recorded product tour of the selected path"></video>
+    </section>
+  </div>
+</main>
+<script>
+  const paths = {
+    reports: { tab: 'Reports', action: 'Export report', result: 'Export ready', file: 'reports-flow.mp4' },
+    members: { tab: 'Team members', action: 'Invite member', result: 'Invitation sent', file: 'team-members-flow.mp4' }
+  };
+
+  const canvas = document.querySelector('#screen');
+  const ctx = canvas.getContext('2d');
+  const choices = document.querySelector('#paths');
+  const make = document.querySelector('#make');
+  const download = document.querySelector('#download');
+  const status = document.querySelector('#status');
+  const output = document.querySelector('#output');
+  const preview = document.querySelector('#preview');
+  const duration = 6000;
+  const canRecordMp4 = window.MediaRecorder?.isTypeSupported('video/mp4') && Boolean(canvas.captureStream);
+  let exportUrl = '';
+
+  function selectedPath() {
+    return paths[document.querySelector('input[name="path"]:checked').value];
+  }
+
+  function box(x, y, w, h, color) {
+    ctx.fillStyle = color;
+    ctx.fillRect(x, y, w, h);
+  }
+
+  function label(text, x, y, size, color, weight = 550) {
+    ctx.font = `${weight} ${size}px system-ui, sans-serif`;
+    ctx.fillStyle = color;
+    ctx.fillText(text, x, y);
+  }
+
+  function draw(path, elapsed) {
+    const step = elapsed < 1500 ? 0 : elapsed < 3300 ? 1 : 2;
+
+    box(0, 0, 640, 360, '#ecf2f8');
+    box(0, 0, 640, 58, '#20354b');
+    label('Product tour', 30, 37, 23, '#ffffff', 700);
+    label('Workspace', 32, 105, 20, '#374d64');
+    label(path.tab, 30, 158, 40, '#102238', 750);
+
+    box(32, 192, 272, 60, step === 1 ? '#15503d' : '#254ba3');
+    label(path.action, 51, 230, 26, '#ffffff');
+    if (step === 1) {
+      label('Click the selected control', 33, 291, 23, '#314760');
+    }
+    if (step === 2) {
+      box(32, 268, 360, 62, '#ceeadc');
+      label(path.result, 50, 307, 28, '#173b2d', 700);
+    }
+  }
+
+  function clearExport() {
+    preview.removeAttribute('src');
+    preview.load();
+    output.hidden = true;
+    download.hidden = true;
+    if (exportUrl) URL.revokeObjectURL(exportUrl);
+    exportUrl = '';
+  }
+
+  choices.addEventListener('change', () => {
+    const path = selectedPath();
+    clearExport();
+    draw(path, 0);
+    if (canRecordMp4) status.textContent = `${path.tab} path selected. Expected ending: ${path.result}.`;
+  });
+
+  make.addEventListener('click', async () => {
+    const path = selectedPath();
+    clearExport();
+    choices.disabled = true;
+    make.disabled = true;
+    status.textContent = `Recording the ${path.tab} path for six seconds. Keep this tab visible.`;
+    let stream;
+    try {
+      draw(path, 0);
+      stream = canvas.captureStream(24);
+      const recorder = new MediaRecorder(stream, { mimeType: 'video/mp4', videoBitsPerSecond: 460000 });
+      const chunks = [];
+      const recorded = new Promise((resolve, reject) => {
+        recorder.addEventListener('dataavailable', event => chunks.push(event.data));
+        recorder.addEventListener('stop', () => resolve(new Blob(chunks, { type: recorder.mimeType })), { once: true });
+        recorder.addEventListener('error', event => reject(event.error), { once: true });
+      });
+      recorder.start();
+      const start = performance.now();
+      function animate(now) {
+        if (recorder.state !== 'recording') return;
+        const elapsed = now - start;
+        draw(path, elapsed);
+        if (elapsed < duration) requestAnimationFrame(animate);
+        else recorder.stop();
+      }
+      requestAnimationFrame(animate);
+      const file = await recorded;
+      if (!file.size) throw new Error('The recording is empty.');
+      exportUrl = URL.createObjectURL(file);
+      preview.src = exportUrl;
+      output.hidden = false;
+      download.href = exportUrl;
+      download.download = path.file;
+      download.hidden = false;
+      status.textContent = `${path.file} is ready. Play it through and check for “${path.result}.”`;
+    } catch {
+      status.textContent = 'Could not create an MP4. Keep the tab visible and try again in a browser that can record MP4.';
+    } finally {
+      stream?.getTracks().forEach(track => track.stop());
+      make.disabled = false;
+      choices.disabled = false;
+    }
+  });
+
+  draw(selectedPath(), 0);
+  if (!canRecordMp4) {
+    make.disabled = true;
+    status.textContent = 'This browser cannot record MP4 from a canvas. Open this file in a current desktop browser with MP4 recording support.';
+  }
+</script>
+</body>
+</html>
