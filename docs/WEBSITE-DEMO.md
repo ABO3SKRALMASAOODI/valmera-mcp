@@ -169,6 +169,29 @@ ffmpeg -v error -ss 3.50 -i public-docs-walkthrough.mp4 -frames:v 1 before-click
 ffmpeg -v error -ss 4.00 -i public-docs-walkthrough.mp4 -frames:v 1 after-click.png
 ```
 
+### Check how long the result stays visible
+
+The [result checker](evaluation/verify_website_demo_result.py) compares a crop of a trusted screenshot with every frame in a time window. It can distinguish a visible result from a recording that scrolls without completing the intended click. The two public captures above provide a pass and a failure to test the check before applying it to your own footage.
+
+From the repository root, with Python and OpenCV (`opencv-python`) installed:
+
+```sh
+curl -fL https://valmera.io/examples/website-capture/public-docs-walkthrough.mp4 -o completed.mp4
+curl -fL https://valmera.io/examples/website-capture/first-attempt.mp4 -o skipped.mp4
+
+python3 docs/evaluation/verify_website_demo_result.py completed.mp4 \
+  docs/examples/website-demo-result-check/completed-4.0.jpg \
+  --crop 367 73 698 112 --window 3.5 5.5 --hold 1
+
+python3 docs/evaluation/verify_website_demo_result.py skipped.mp4 \
+  docs/examples/website-demo-result-check/completed-4.0.jpg \
+  --crop 367 73 698 112 --window 3.5 5.5 --hold 1
+```
+
+The crop isolates the Captions heading. The successful 30 fps recording passes with a 1.833-second match starting at 3.667 seconds. The skipped recording exits with status 1 and zero matching seconds. A malformed input or unreadable window exits with status 2.
+
+For a new demo, capture a trusted screenshot of the result manually, crop to a distinctive label or value, and choose the minimum reading time for your audience. Use a constant-frame-rate MP4 and a reference that matches the export layout. This checks visual similarity at the chosen scale. Re-crop after changing the zoom, locale, theme or layout, and watch the final passage to judge readability and context. [Try Valmera’s website-demo workflow](https://valmera.io/tools/record-website-demo?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=verify_website_demo_result).
+
 For your own demo, write down the text or state that should appear after the action. If two controls share the same label, identify the visible navigation region and give the recorder a target within it. Review that short passage before asking for zooms or narration. On a signed-in dashboard, supply your own screen recording with demonstration data. Valmera’s public URL recorder starts in a separate browser session.
 
 ## Check that every deliverable shows the same outcome
