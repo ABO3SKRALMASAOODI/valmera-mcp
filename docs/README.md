@@ -36,6 +36,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Send an exact revision at 29.97 drop-frame | [Compare the two ten-minute pictures and copy a review brief](FRAME-ACCURATE-REVIEW-AT-29-97-DF.md) |
 | Replace a B-roll shot in an MP4 that already has captions | [Play the covered and restored exports](REPLACE-B-ROLL-WITH-BURNED-IN-CAPTIONS.md) |
 | B-roll over an exact phrase | [Compare placement workflows and check four frames in the export](OWN-FOOTAGE-B-ROLL-CUTAWAY-TEST.md) |
+| B-roll with sound that interrupts narration | [Listen to clean audio, a leaked beep and a missing voice](MUTE-B-ROLL-KEEP-NARRATION.md) |
 | B-roll drifts after removing a pause | [Hear three examples and check the new cue in the export](KEEP-B-ROLL-IN-SYNC-AFTER-CUTTING-PAUSES.md) |
 | Keep stock B-roll out of paid versions of a client edit | [Test the last frame and log approval by destination](APPROVE-B-ROLL-FOR-CLIENT-ADS.md) |
 | Choosing a talking-head editor | [Takehound vs Valmera and how to test a second episode](TAKEHOUND-VS-VALMERA.md) |
