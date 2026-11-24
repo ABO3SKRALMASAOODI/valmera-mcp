@@ -71,6 +71,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Editar uma gravação de tela com IA (português do Brasil) | [Compare dois MP4s em 1080p e teste a legibilidade dos rótulos](EDITAR-GRAVACAO-DE-TELA-IA.md) |
 | Record a dashboard demo behind sign-in | [Rehearse the workflow and hand off an uploaded recording](RECORD-A-PRIVATE-DASHBOARD-DEMO.md) |
 | Private values in a recorded demo | [Test a moving cover and catch a one-frame leak in the downloaded MP4](SCREEN-RECORDING-REDACTION-AUDIT.md) |
+| Compare Tella alternatives for an imported screen recording | [Test what changes when the camera is already part of the MP4](TELLA-ALTERNATIVES-FOR-IMPORTED-SCREEN-RECORDINGS.md) |
 | Choosing a product-demo editor | [Cubix vs Valmera for an uploaded recording or public URL](CUBIX-VS-VALMERA-PRODUCT-DEMOS.md) |
 | Recorded course lesson | [Compare search-result routes and preserve the teaching sequence](COURSE-LESSON-EDITING.md), with a [lesson trial and release worksheet](COURSE-LESSON-REVIEW.md) |
 | Send a recurring training batch with duplicate camera filenames | [Try two decoded MP4s and scope an editor handoff pilot](VIDEO-EDITING-SOURCE-HANDOFF-DUPLICATE-FILENAMES.md) |
