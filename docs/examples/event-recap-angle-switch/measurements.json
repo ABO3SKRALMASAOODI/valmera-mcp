@@ -1,0 +1,123 @@
+{
+  "scope": "Synthetic speaker and camera cards built locally for a buyer exercise.",
+  "fps": 24,
+  "files": {
+    "camera-a": {
+      "seconds": 4,
+      "frames": 96,
+      "sha256": "ec9194ef5d11accfe98ece76dde74325bfec81f95d7b56656991530c92f0d80b",
+      "decoded_angle_regions": [
+        [
+          0,
+          1,
+          "wide"
+        ],
+        [
+          1,
+          4,
+          "wide"
+        ]
+      ]
+    },
+    "camera-b": {
+      "seconds": 8,
+      "frames": 192,
+      "sha256": "122d3ac79c753f1b9b3fbe68d3bd9375a5d448681b9d079d8b899003b1229eaf",
+      "decoded_angle_regions": [
+        [
+          0,
+          3,
+          "close"
+        ],
+        [
+          3,
+          6,
+          "close"
+        ],
+        [
+          6,
+          8,
+          "result"
+        ]
+      ]
+    },
+    "duplicate-reel": {
+      "seconds": 8,
+      "frames": 192,
+      "sha256": "62384aa1f0d805a8a40c3849cf266ebea36a9a660038f6f05a64c3c1c6f381a2",
+      "decoded_angle_regions": [
+        [
+          0,
+          3,
+          "wide"
+        ],
+        [
+          3,
+          6,
+          "close"
+        ],
+        [
+          6,
+          8,
+          "result"
+        ]
+      ]
+    },
+    "single-announcement-reel": {
+      "seconds": 5,
+      "frames": 120,
+      "sha256": "1fc97e0939fe685ed6cd4bfd351f4e7a17293ab4a6a71f06c4043e8c0af41534",
+      "decoded_angle_regions": [
+        [
+          0,
+          1.5,
+          "wide"
+        ],
+        [
+          1.5,
+          3,
+          "close"
+        ],
+        [
+          3,
+          5,
+          "result"
+        ]
+      ]
+    }
+  },
+  "comparisons": {
+    "camera_sources_capture_same_announcement": {
+      "first_file": "camera-a",
+      "first_second": 1.0,
+      "second_file": "camera-b",
+      "second_second": 3.0,
+      "tested_duration": 2.5,
+      "pearson_r": 0.999539
+    },
+    "duplicate_repeats_announcement": {
+      "first_file": "duplicate-reel",
+      "first_second": 0.0,
+      "second_file": "duplicate-reel",
+      "second_second": 3.0,
+      "tested_duration": 2.5,
+      "pearson_r": 0.999118
+    },
+    "single_reel_keeps_wide_angle_master_audio": {
+      "first_file": "camera-a",
+      "first_second": 1.0,
+      "second_file": "single-announcement-reel",
+      "second_second": 0.0,
+      "tested_duration": 2.5,
+      "pearson_r": 0.99907
+    },
+    "single_reel_keeps_distinct_next_event": {
+      "first_file": "camera-b",
+      "first_second": 6.0,
+      "second_file": "single-announcement-reel",
+      "second_second": 3.0,
+      "tested_duration": 1.7,
+      "pearson_r": 0.999185
+    }
+  }
+}
