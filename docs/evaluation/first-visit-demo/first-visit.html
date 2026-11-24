@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>First-visit website demo practice</title>
+  <style>
+    :root {
+      font-family: system-ui, sans-serif;
+      color: #172838;
+      background: #edf3f8;
+      line-height: 1.5;
+      color-scheme: light;
+    }
+    body { margin: 0; padding: clamp(1rem, 6vw, 4rem); }
+    main { max-width: 44rem; margin: auto; }
+    h1, h2 { margin: 0 0 .75rem; line-height: 1.1; }
+    h1 { font-size: clamp(2rem, 6vw, 3.25rem); letter-spacing: -.045em; }
+    h2 { font-size: 1.65rem; letter-spacing: -.025em; }
+    .preview, dialog {
+      box-sizing: border-box;
+      padding: clamp(1rem, 4vw, 2rem);
+      border: 1px solid #b8c9d8;
+      border-radius: 1rem;
+      background: #fff;
+    }
+    .preview { margin-top: 2rem; }
+    .actions { display: flex; flex-wrap: wrap; align-items: center; gap: .8rem; margin-top: 1.25rem; }
+    button, .actions a {
+      padding: .75rem 1rem;
+      border-radius: .65rem;
+      font: inherit;
+      font-weight: 650;
+    }
+    button { border: 1px solid #164e72; background: #164e72; color: #fff; cursor: pointer; }
+    .actions a { color: #174d71; }
+    :is(button, a, summary):focus-visible { outline: 3px solid #ad4619; outline-offset: 4px; }
+    dialog { width: min(30rem, calc(100% - 2rem)); margin: auto; }
+    dialog::backdrop { background: #172838a6; }
+    details { margin-top: .85rem; }
+    .status { color: #1f4a62; font-weight: 650; margin-bottom: 0; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Preview a workspace report</h1>
+    <p>Rehearse the same website demo from a clear page and from a first visit with a notice.</p>
+    <div class="actions">
+      <a href="?view=clear">Start with a clear page</a>
+      <a href="?view=first-visit">Start with a first-visit notice</a>
+    </div>
+    <section class="preview" aria-labelledby="preview-title">
+      <h2 id="preview-title">Sample report</h2>
+      <p>Ready to preview the fictional monthly report.</p>
+      <button id="show-preview" type="button">Open report preview</button>
+      <p class="status" id="result" role="status">Preview closed.</p>
+    </section>
+  </main>
+  <dialog id="notice" aria-labelledby="notice-title">
+    <h2 id="notice-title">First-visit notice</h2>
+    <p>This practice dialog simulates a site notice and stores no preferences.</p>
+    <form method="dialog">
+      <button autofocus>Continue with required settings</button>
+    </form>
+    <details>
+      <summary>About this practice notice</summary>
+      <p>Close the notice to make the report preview available.</p>
+    </details>
+  </dialog>
+  <script>
+    const view = new URLSearchParams(location.search).get("view");
+    if (view === "first-visit") {
+      document.getElementById("notice").showModal();
+    }
+    const result = document.getElementById("result");
+    document.getElementById("show-preview").addEventListener("click", () => {
+      result.textContent = "Monthly report preview ready.";
+    });
+  </script>
+</body>
+</html>

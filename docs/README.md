@@ -94,6 +94,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Training videos recorded with different cameras or lighting | [Compare three grades and brief a repeatable color-matching pilot](MATCH-COLOR-ACROSS-TRAINING-VIDEOS.md) |
 | Turn an existing onboarding call into a standalone product demo | [Compare workflows and play the three release examples](ONBOARDING-CALL-TO-PRODUCT-DEMO.md) |
 | Website demonstration | [Plan and make a website demo](WEBSITE-DEMO.md) |
+| A first-visit notice covers the website demo | [Rehearse both starting states and check the click and result](RECORD-A-FIRST-VISIT-WEBSITE-DEMO.md) |
 | Sales and onboarding videos from one demo recording | [Compare reusable workflows and three exports with different calls to action](MAKE-TWO-PRODUCT-DEMOS-FROM-ONE-RECORDING.md) |
 | Shorten loading waits in a product demo | [Compare two MP4s and verify the edit notice and result](SHORTEN-LOADING-WAITS-IN-PRODUCT-DEMOS.md) |
 | Remove a failed take in a product demo | [Compare two exports and verify the click and matching result](REMOVE-SCREEN-DEMO-RETAKES-WITHOUT-BREAKING-STEPS.md) |
