@@ -8,7 +8,7 @@ We are Valmera. We checked each provider's public service page on November 24, 2
 
 | Provider | What the provider publishes | What to ask for in your quote |
 | --- | --- | --- |
-| [Valmera Enterprise](https://valmera.io/ar/video-editing-services-uae?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=enterprise_uae_vendor_pilot) | Recurring editing from your existing footage. The sample below includes the same product edit with separate English and Arabic WebVTT files. | Confirm who supplies the approved translations, your separate caption-file format and how revisions and cutdowns count toward the monthly scope. |
+| [Valmera Enterprise](https://valmera.io/ar/video-editing-services-uae?utm_source=valmera_mcp_docs&utm_medium=repository&utm_campaign=enterprise_uae_vendor_pilot) | Recurring editing from your existing footage. The sample below includes the same product edit with separate English and Arabic files in SubRip (SRT) and WebVTT. | Confirm who supplies the approved translations, your separate caption-file format and how revisions and cutdowns count toward the monthly scope. |
 | [The Arabic Studio](https://thearabicstudio.com/video-editing/) | Editing with approved multilingual assets. Separate subtitle or audio deliverables and review rounds are scoped for the project. | Ask for editing and translation as separate quote lines if you need both. Confirm the monthly delivery calendar. |
 | [Ranku](https://ranku.ae/video-editing-dubai/) | A published monthly pack for eight short videos, English and Arabic subtitles, and two creative revision rounds. | Ask whether your product walkthroughs count as short edits and whether the subtitle tracks are delivered as files you can upload separately. |
 | [Progmize](https://progmize.ae/en/services/video-editing) | A monthly editing service with Arabic and English subtitles. Product demos are among its listed formats. | Confirm how many edits the monthly quote covers, the revision allowance and separate subtitle-file delivery. |
@@ -31,5 +31,16 @@ To use the included player, save the files from the sample folder together, run 
 2. **Check the words that must survive.** Give an Arabic-language reviewer your glossary. Have them check product names, numbers, punctuation and mixed Arabic and English text on the finished player, including on mobile if your audience uses it.
 3. **Check the delivery as a set.** Put the filenames for the approved MP4 and both matching tracks in one manifest. Include format, language, version and review status. Open the delivery link as a reviewer to make sure they can access every file.
 4. **Price the change at volume.** Ask the provider to put the full monthly deliverable count, included revisions, first review date and any translation work in writing. Separate additional exports from new editorial cuts so you can compare quotes on the same scope.
+
+## Download the Arabic and English SRT review sets
+
+The second clip is a copy of the Valmera sample trimmed by half a second for this exercise. Both revised subtitle files preserve the original wording. Use the matching pair for each video.
+
+| Video | Arabic SRT | English SRT | Guide-opening cue starts at |
+| --- | --- | --- | --- |
+| [Original MP4](examples/uae-bilingual-video-editing/product-demo.mp4) | [Arabic](examples/uae-bilingual-video-editing/product-demo.ar.srt) | [English](examples/uae-bilingual-video-editing/product-demo.en.srt) | 00:00:01,900 |
+| [Trimmed MP4](examples/uae-bilingual-video-editing/product-demo-trimmed.mp4) | [Arabic](examples/uae-bilingual-video-editing/product-demo-trimmed.ar.srt) | [English](examples/uae-bilingual-video-editing/product-demo-trimmed.en.srt) | 00:00:01,400 |
+
+Load the trimmed MP4 with an original SRT in an SRT-capable player to see the half-second delay. Then load the revised SRT for the same language and check that the cue starts at the new time. In the Arabic cue, the English interface label remains `Captions`. Open the actual destination player before approving punctuation and text direction. YouTube accepts basic UTF-8 SubRip files. [YouTube format requirements](https://support.google.com/youtube/answer/2734698?hl=en)
 
 To ask Valmera about the batch, [open Enterprise contact on /subscribe](https://valmera.io/subscribe#enterprise). Include your monthly recording count, the two subtitle languages, and the first review date. If the contact page is unavailable, [email Valmera Enterprise](mailto:support@valmera.io?subject=Enterprise%20editing%20inquiry%20-%20UAE%20bilingual%20pilot) with the same details.
