@@ -51,6 +51,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Both speakers talk at once in a vertical podcast clip | [Compare single-speaker and stacked views with the same audio](KEEP-BOTH-SPEAKERS-IN-VERTICAL-PODCAST-CLIPS.md) |
 | A multicamera podcast cut misses a quiet reaction | [Compare a speaker cut and a picture-only guest shot with the same dialogue](KEEP-A-QUIET-REACTION-IN-A-MULTICAM-PODCAST.md) |
 | Request done-for-you video editing at volume | [Scope a recurring batch and email Valmera Enterprise](REQUEST-ENTERPRISE-VIDEO-EDITING.md) |
+| Compare monthly property video editing services | [Quote branded tours, vertical reels and unbranded portal cuts on the same brokerage brief](COMPARE-MONTHLY-PROPERTY-VIDEO-EDITING.md) |
 | Vet white-label video editing for a multi-client agency | [Compare two exports and test a client-facing handoff](TEST-WHITE-LABEL-VIDEO-EDITING-HANDOFF.md) |
 | Film a demo of a product running on localhost | [Play and reproduce two local recordings that show a saved setting](RECORD-A-LOCALHOST-PRODUCT-DEMO.md) |
 | Outsource a recurring video podcast with a full edit and clips | [Compare five services and test a two-episode delivery and revision](OUTSOURCE-WEEKLY-VIDEO-PODCAST-EDITING.md) |

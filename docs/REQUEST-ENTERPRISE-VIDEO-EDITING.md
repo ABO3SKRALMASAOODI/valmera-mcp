@@ -22,3 +22,4 @@ Choose a representative recording and name a revision that would matter to your 
 - **Webinars.** Use the [monthly webinar pilot](OUTSOURCE-MONTHLY-B2B-WEBINAR-EDITING.md) to specify the replay, caption file and clips.
 - **Product demos.** Use the [SaaS demo editing scope](SAAS-DEMO-EDITING-SERVICES.md) to distinguish a product release from later changes to the same demos.
 - **Training.** Use the [training-video delivery pilot](OUTSOURCE-50-TRAINING-VIDEOS-PER-MONTH.md) to estimate the review load before assigning a full month.
+- **Property walkthroughs.** Use the [brokerage editing brief](COMPARE-MONTHLY-PROPERTY-VIDEO-EDITING.md) to scope branded tours, vertical reels and unbranded portal cuts from your own recordings.
