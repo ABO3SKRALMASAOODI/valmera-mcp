@@ -2,13 +2,17 @@
 
 Valmera Enterprise edits video at volume for businesses. Send us a short brief if your team already records video and wants someone else to handle the edits. We can discuss a pilot for formats such as recurring video podcasts, webinars, product demos and training videos.
 
-[Email Valmera Enterprise with your brief](mailto:support@valmera.io?subject=Enterprise%20editing%20inquiry%20%28GitHub%20guide%29&body=Company%20and%20country%3A%0ASource%20recording%20type%20and%20typical%20length%3A%0ARecordings%20per%20month%3A%0ADeliverables%20per%20recording%20%28format%2C%20caption%20languages%2C%20versions%29%3A%0AFirst%20publish%20date%20and%20time%20zone%3A%0AWho%20approves%20the%20edits%3A%0APilot%20requirement%20or%20hardest%20edit%20to%20get%20right%3A%0A) or write to **support@valmera.io** with the subject **Enterprise editing inquiry (GitHub guide)**. The email route works without a Valmera account. Use a description or an already-public sample in your first message. Ask about a transfer method before sending internal footage or confidential materials.
+[Open the Enterprise quote draft](https://valmera.io/subscribe?utm_source=github.com&utm_medium=referral&utm_campaign=enterprise_editing_quote#enterprise). Use the email link or copy the draft into webmail and send it to **support@valmera.io**. You can do this without a Valmera account. Use a description or an already-public sample in your first message. Ask about a transfer method before sending internal footage or confidential materials.
 
 ## Put the volume in deliverables
 
 Tell us how many recordings arrive each month, how long they run, what should ship from each one, and the first publish deadline and time zone. Include your company and country, any caption languages, and who approves revisions.
 
-For example, four video podcast recordings that each need a full episode, three vertical clips and a separate caption file are **16 videos and four caption files**. Specify whether the clips come from the approved episode or can use other parts of the source. If scheduling is tight, say whether the next recording arrives before the previous episode is approved.
+## Quote four episodes and twelve clips
+
+If you record one 45-minute B2B podcast per week, a four-episode cycle contains **three hours of source video and sixteen video deliverables**. Ask for four full episodes plus twelve captioned vertical clips, three per episode. Specify whether the clips come from the approved episode or can use other parts of the source. If you need separate subtitles for each master, include four subtitle files in the scope. Itemize alternate aspect ratios and publishing if needed.
+
+[Open the prefilled four-episode quote draft](https://valmera.io/subscribe?inquiry=podcast-video-editing-service&episodes=4&clips=3&utm_source=github.com&utm_medium=referral&utm_campaign=monthly_podcast_quote#enterprise). Add your usual recording length, publication date and time zone. Ask for the price and delivery dates for one representative episode and its three clips, plus the quote for a four-episode cycle. Confirm whether the next episode can enter first review while the previous one is being revised. The draft opens an email for you to review and send.
 
 ## Pick one edit to review before committing to the full batch
 

@@ -6,7 +6,7 @@
 
 - [Compare AI video editors on an edit and a revision](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/EDITOR-EVALUATION.md): Download a shared source clip and scorecard. Run the same brief and targeted revision in each editor, then compare the downloaded files.
 - [Record a product demo from localhost](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/RECORD-A-LOCALHOST-PRODUCT-DEMO.md): Play two walkthroughs of the same setting change. Check that the final frame shows the saved result before publishing the walkthrough.
-- [Request a quote for recurring video editing](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/REQUEST-ENTERPRISE-VIDEO-EDITING.md): Valmera Enterprise edits at volume. Email the brief with your company and country, recordings per month, requested formats and first publish deadline.
+- [Request a quote for recurring video editing](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/REQUEST-ENTERPRISE-VIDEO-EDITING.md): Valmera Enterprise provides paid done-for-you editing from recordings you supply. The guide links to a prefilled email quote for four monthly video podcast episodes and twelve captioned vertical clips. It also explains how to request a one-episode pilot.
 - [Test an agency's client-facing video handoff](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/blob/main/docs/TEST-WHITE-LABEL-VIDEO-EDITING-HANDOFF.md): Compare review and client copies. Download the checklist to test review access, approved file versions and delivery branding.
 
 ## Inspect an exported recording
