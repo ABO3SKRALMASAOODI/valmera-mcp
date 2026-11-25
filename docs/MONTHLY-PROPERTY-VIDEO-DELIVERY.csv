@@ -1,0 +1,8 @@
+Listing ID,Footage mix,Deliverable,Aspect ratio,Example export filename,Destination,Revision trigger,Replacement required in example,Approver,Approved version,Publish URL
+PILOT-A,Phone walkthrough,Branded tour,16:9,PILOT-A-tour-v1.mp4,Brokerage site,Open-house time on closing card,yes,Listing agent,,
+PILOT-A,Phone walkthrough,Branded reel,9:16,PILOT-A-reel-v1.mp4,Social,Open-house time in caption overlay,yes,Listing agent,,
+PILOT-A,Phone walkthrough,Unbranded portal cut,16:9,PILOT-A-portal-v1.mp4,Listing portal,No open-house time in file,no,Portal reviewer,,
+PILOT-B,Mixed camera and drone,Branded tour,16:9,PILOT-B-tour-v1.mp4,Brokerage site,No requested change,no,Listing agent,,
+PILOT-B,Mixed camera and drone,Branded reel,9:16,PILOT-B-reel-v1.mp4,Social,No requested change,no,Listing agent,,
+PILOT-B,Mixed camera and drone,Unbranded portal cut,16:9,PILOT-B-portal-v1.mp4,Listing portal,No requested change,no,Portal reviewer,,
+Your listing,,,,,,,,,,
