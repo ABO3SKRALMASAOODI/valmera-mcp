@@ -38,9 +38,9 @@ MIN_CORRELATION = 0.99
 SWATCH_LUMA = 120
 
 
-def download_assets(directory):
+def download_assets(directory, assets=ASSETS):
     files = {}
-    for name, (url, byte_count, expected_digest) in ASSETS.items():
+    for name, (url, byte_count, expected_digest) in assets.items():
         with urlopen(HOST + url, timeout=20) as response:
             data = response.read(byte_count + 1)
         if len(data) != byte_count or hashlib.sha256(data).hexdigest() != expected_digest:
