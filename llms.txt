@@ -11,6 +11,8 @@
 
 ## Inspect an exported recording
 
+- [Restore the pause before a reveal in an AI interview edit](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/tree/main/docs/examples/founder-interview-pause): Compare the input, Valmera’s first captioned preview and a revised MP4. The early wait stays at 0.670 seconds while the pause before the reveal returns from 0.586 to 1.226 seconds.
+
 - [Revise the opening of a captioned interview clip](https://github.com/ABO3SKRALMASAOODI/valmera-mcp/tree/main/docs/examples/interview-opening): Two source passages, three portrait versions, subtitle files and a decoded frame and audio comparison.
 - [Watch a recorded video editing agent revision](https://valmera.io/ai-agent-that-edits-video#recorded-revision). Codex used Valmera MCP to shorten the middle shot. Pause both versions at the revised join, then download the source or the delivered MP4.
 

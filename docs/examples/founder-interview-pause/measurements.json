@@ -1,0 +1,64 @@
+{
+  "method": "Decode AAC to 16-bit PCM with macOS afconvert. Mark consecutive samples below -50 dBFS on all channels for at least 150 ms. Consider gaps between spoken lines, excluding leading or trailing silence and the export end card. The source is a fixture with three lines of synthetic narration. Codex directed the edit via Valmera MCP. v3 is a complete preview. v4 is a full export with an end card and corner branding.",
+  "timeline": {
+    "first_preview_edl": 3,
+    "revised_export_edl": 4,
+    "restore_source_range_s": [
+      6.64,
+      7.52
+    ]
+  },
+  "files": {
+    "source": {
+      "program_duration_s": 10.08,
+      "decoded_audio_duration_s": 10.027,
+      "gaps": [
+        {
+          "start_s": 1.577,
+          "end_s": 4.006,
+          "duration_s": 2.429
+        },
+        {
+          "start_s": 6.327,
+          "end_s": 7.553,
+          "duration_s": 1.225
+        }
+      ],
+      "sha256": "868073633e5c8330f5d240b5effa86da170662f565bb913c5b6d1ca681019d7c"
+    },
+    "first-preview": {
+      "program_duration_s": 7.68,
+      "decoded_audio_duration_s": 7.648,
+      "gaps": [
+        {
+          "start_s": 1.576,
+          "end_s": 2.246,
+          "duration_s": 0.67
+        },
+        {
+          "start_s": 4.567,
+          "end_s": 5.153,
+          "duration_s": 0.586
+        }
+      ],
+      "sha256": "5dd12626a0215aa04be7e0511010c99c851ca33ed657da09a5d535966e3e1965"
+    },
+    "revised-final": {
+      "program_duration_s": 8.32,
+      "decoded_audio_duration_s": 13.32,
+      "gaps": [
+        {
+          "start_s": 1.576,
+          "end_s": 2.246,
+          "duration_s": 0.67
+        },
+        {
+          "start_s": 4.567,
+          "end_s": 5.793,
+          "duration_s": 1.226
+        }
+      ],
+      "sha256": "98161c0b1b3ffbb0b58eecd441e359570e383c87ed84d9b64152466870a3438e"
+    }
+  }
+}
