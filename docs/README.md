@@ -44,6 +44,7 @@ Use the current tool schemas returned by your authorized connection. A successfu
 | Ajouter un plan de coupe à une interview sans couper la voix | [Comparer les images et écouter les raccords dans trois MP4](PLAN-DE-COUPE-GARDER-VOIX-FR.md) |
 | AI B-roll from supplied footage with an uncovered cue | [Compare four workflows and practice choosing an approved shot](AI-B-ROLL-EDITORS-FOR-APPROVED-FOOTAGE.md) |
 | B-roll with sound that interrupts narration | [Listen to clean audio, a leaked beep and a missing voice](MUTE-B-ROLL-KEEP-NARRATION.md) |
+| Add supplied B-roll to a narrated product demo | [Check four frames, the original narration and the supporting clip's test tone](ADD-B-ROLL-TO-A-NARRATED-PRODUCT-DEMO.md) |
 | B-roll drifts after removing a pause | [Hear three examples and check the new cue in the export](KEEP-B-ROLL-IN-SYNC-AFTER-CUTTING-PAUSES.md) |
 | Keep stock B-roll out of paid versions of a client edit | [Test the last frame and log approval by destination](APPROVE-B-ROLL-FOR-CLIENT-ADS.md) |
 | Choosing a talking-head editor | [Takehound vs Valmera and how to test a second episode](TAKEHOUND-VS-VALMERA.md) |
